@@ -153,6 +153,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a5b97d12e8b61484f756a8721992bfae1" id="r_a5b97d12e8b61484f756a8721992bfae1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b97d12e8b61484f756a8721992bfae1">test_function_2</a> ()</td></tr>
 <tr class="memdesc:a5b97d12e8b61484f756a8721992bfae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test function 2 with input array {'100', '200', '+', '2', '/', '5', '*', '7', '+'}.  <br /></td></tr>
 <tr class="memitem:a29c6172e7ccef1d93c1d116f407928dc" id="r_a29c6172e7ccef1d93c1d116f407928dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29c6172e7ccef1d93c1d116f407928dc">test_function_3</a> ()</td></tr>
+<tr class="memitem:ad9612a23271aa99915d1e2ac04b26677" id="r_ad9612a23271aa99915d1e2ac04b26677"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9612a23271aa99915d1e2ac04b26677">test_single_input</a> ()</td></tr>
+<tr class="memitem:a3b7e53fd1c29593da922acd6aae46d81" id="r_a3b7e53fd1c29593da922acd6aae46d81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b7e53fd1c29593da922acd6aae46d81">test_not_enough_operands</a> ()</td></tr>
+<tr class="memitem:ac1ae004b8b5a9dea263d0fb79398df31" id="r_ac1ae004b8b5a9dea263d0fb79398df31"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1ae004b8b5a9dea263d0fb79398df31">test_not_enough_operands_empty_input</a> ()</td></tr>
+<tr class="memitem:a99c34aeb43077d62086a5a5cd4bcd441" id="r_a99c34aeb43077d62086a5a5cd4bcd441"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99c34aeb43077d62086a5a5cd4bcd441">test_too_many_operands</a> ()</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 </table>
@@ -288,18 +292,22 @@ Functions</h2></td></tr>
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  151</span>           {</div>
-<div class="line"><span class="lineno">  152</span>    <a class="code hl_function" href="#a6a8eeb7d346d5cd6335d9780fb7c0f15">test_function_1</a>();</div>
-<div class="line"><span class="lineno">  153</span>    <a class="code hl_function" href="#a5b97d12e8b61484f756a8721992bfae1">test_function_2</a>();</div>
-<div class="line"><span class="lineno">  154</span>    test_function_3();</div>
-<div class="line"><span class="lineno">  155</span> </div>
-<div class="line"><span class="lineno">  156</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nTest implementations passed!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  157</span> </div>
-<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  159</span>}</div>
-<div class="ttc" id="apostfix__evaluation_8cpp_html_a5b97d12e8b61484f756a8721992bfae1"><div class="ttname"><a href="#a5b97d12e8b61484f756a8721992bfae1">test_function_2</a></div><div class="ttdeci">static void test_function_2()</div><div class="ttdoc">Test function 2 with input array {&#39;100&#39;, &#39;200&#39;, &#39;+&#39;, &#39;2&#39;, &#39;/&#39;, &#39;5&#39;, &#39;*&#39;, &#39;7&#39;, &#39;+&#39;}...</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00128">postfix_evaluation.cpp:128</a></div></div>
-<div class="ttc" id="apostfix__evaluation_8cpp_html_a6a8eeb7d346d5cd6335d9780fb7c0f15"><div class="ttname"><a href="#a6a8eeb7d346d5cd6335d9780fb7c0f15">test_function_1</a></div><div class="ttdeci">static void test_function_1()</div><div class="ttdoc">Test function 1 with input array {&#39;2&#39;, &#39;3&#39;, &#39;1&#39;, &#39;*&#39;, &#39;+&#39;, &#39;9&#39;, &#39;-&#39;}.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00115">postfix_evaluation.cpp:115</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00202">202</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  202</span>           {</div>
+<div class="line"><span class="lineno">  203</span>    <a class="code hl_function" href="#a6a8eeb7d346d5cd6335d9780fb7c0f15">test_function_1</a>();</div>
+<div class="line"><span class="lineno">  204</span>    <a class="code hl_function" href="#a5b97d12e8b61484f756a8721992bfae1">test_function_2</a>();</div>
+<div class="line"><span class="lineno">  205</span>    test_function_3();</div>
+<div class="line"><span class="lineno">  206</span>    test_single_input();</div>
+<div class="line"><span class="lineno">  207</span>    test_not_enough_operands();</div>
+<div class="line"><span class="lineno">  208</span>    test_not_enough_operands_empty_input();</div>
+<div class="line"><span class="lineno">  209</span>    test_too_many_operands();</div>
+<div class="line"><span class="lineno">  210</span> </div>
+<div class="line"><span class="lineno">  211</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nTest implementations passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  214</span>}</div>
+<div class="ttc" id="apostfix__evaluation_8cpp_html_a5b97d12e8b61484f756a8721992bfae1"><div class="ttname"><a href="#a5b97d12e8b61484f756a8721992bfae1">test_function_2</a></div><div class="ttdeci">static void test_function_2()</div><div class="ttdoc">Test function 2 with input array {&#39;100&#39;, &#39;200&#39;, &#39;+&#39;, &#39;2&#39;, &#39;/&#39;, &#39;5&#39;, &#39;*&#39;, &#39;7&#39;, &#39;+&#39;}...</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00139">postfix_evaluation.cpp:139</a></div></div>
+<div class="ttc" id="apostfix__evaluation_8cpp_html_a6a8eeb7d346d5cd6335d9780fb7c0f15"><div class="ttname"><a href="#a6a8eeb7d346d5cd6335d9780fb7c0f15">test_function_1</a></div><div class="ttdeci">static void test_function_1()</div><div class="ttdoc">Test function 1 with input array {&#39;2&#39;, &#39;3&#39;, &#39;1&#39;, &#39;*&#39;, &#39;+&#39;, &#39;9&#39;, &#39;-&#39;}.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00126">postfix_evaluation.cpp:126</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -327,30 +335,28 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>stack[stackTop] returns the top value from the stack </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>                                                            {</div>
-<div class="line"><span class="lineno">   87</span>    std::stack&lt;float&gt; <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>;</div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;scan : input) {</div>
-<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a4c27f949c9d6659be9f5bd2ccbe1360a">is_number</a>(scan)) {</div>
-<div class="line"><span class="lineno">   91</span>            <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">push</a>(std::stof(scan));</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   94</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> op2 = <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709">top</a>();</div>
-<div class="line"><span class="lineno">   95</span>            <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0">pop</a>();</div>
-<div class="line"><span class="lineno">   96</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> op1 = <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709">top</a>();</div>
-<div class="line"><span class="lineno">   97</span>            <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0">pop</a>();</div>
-<div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>            evaluate(op1, op2, scan, <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>);</div>
-<div class="line"><span class="lineno">  100</span>        }</div>
-<div class="line"><span class="lineno">  101</span>    }</div>
-<div class="line"><span class="lineno">  102</span> </div>
-<div class="line"><span class="lineno">  103</span>    std::cout &lt;&lt; <a class="code hl_variable" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709">top</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>.top();</div>
-<div class="line"><span class="lineno">  106</span>}</div>
-<div class="ttc" id="aclassstack_html_a3647fb4418890f19e0dc414b8092b8b0"><div class="ttname"><a href="../../d1/dc2/classstack.html#a3647fb4418890f19e0dc414b8092b8b0">stack::pop</a></div><div class="ttdeci">void pop()</div><div class="ttdef"><b>Definition</b> <a href="../../df/d47/stack_8hpp_source.html#l00062">stack.hpp:62</a></div></div>
-<div class="ttc" id="aclassstack_html_ae09630c4384903d187801921b2ddc709"><div class="ttname"><a href="../../d1/dc2/classstack.html#ae09630c4384903d187801921b2ddc709">stack::top</a></div><div class="ttdeci">value_type top() const</div><div class="ttdef"><b>Definition</b> <a href="../../df/d47/stack_8hpp_source.html#l00056">stack.hpp:56</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00097">97</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>                                                            {</div>
+<div class="line"><span class="lineno">   98</span>    std::stack&lt;float&gt; <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>;</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;scan : input) {</div>
+<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="#a4c27f949c9d6659be9f5bd2ccbe1360a">is_number</a>(scan)) {</div>
+<div class="line"><span class="lineno">  102</span>            <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>.<a class="code hl_function" href="../../d1/dc2/classstack.html#a90df277532c23519aa7ac3c08ed90a1d">push</a>(std::stof(scan));</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  105</span>            <span class="keyword">const</span> <span class="keyword">auto</span> op2 = remove_from_stack(<a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>);</div>
+<div class="line"><span class="lineno">  106</span>            <span class="keyword">const</span> <span class="keyword">auto</span> op1 = remove_from_stack(<a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>);</div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>            evaluate(op1, op2, scan, <a class="code hl_class" href="../../d1/dc2/classstack.html">stack</a>);</div>
+<div class="line"><span class="lineno">  109</span>        }</div>
+<div class="line"><span class="lineno">  110</span>    }</div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>    <span class="keyword">const</span> <span class="keyword">auto</span> res = remove_from_stack(<a class="code hl_variable" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>);</div>
+<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>.empty()) {</div>
+<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Too many operands&quot;</span>);</div>
+<div class="line"><span class="lineno">  115</span>    }</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><span class="lineno">  117</span>}</div>
 <div class="ttc" id="aparanthesis__matching_8cpp_html_aa37d24a036d239b3b528f13b9de880c7"><div class="ttname"><a href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a></div><div class="ttdeci">char stack[MAX]</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dc5/paranthesis__matching_8cpp_source.html#l00020">paranthesis_matching.cpp:20</a></div></div>
 <div class="ttc" id="apostfix__evaluation_8cpp_html_a4c27f949c9d6659be9f5bd2ccbe1360a"><div class="ttname"><a href="#a4c27f949c9d6659be9f5bd2ccbe1360a">others::postfix_expression::is_number</a></div><div class="ttdeci">bool is_number(const std::string &amp;s)</div><div class="ttdoc">Checks if scanned string is a number.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00037">postfix_evaluation.cpp:37</a></div></div>
 </div><!-- fragment -->
@@ -382,15 +388,15 @@ Functions</h2></td></tr>
 <p>Test function 1 with input array {'2', '3', '1', '*', '+', '9', '-'}. </p>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  115</span>                              {</div>
-<div class="line"><span class="lineno">  116</span>    std::vector&lt;std::string&gt; input = {<span class="stringliteral">&quot;2&quot;</span>, <span class="stringliteral">&quot;3&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;*&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;9&quot;</span>, <span class="stringliteral">&quot;-&quot;</span>};</div>
-<div class="line"><span class="lineno">  117</span> </div>
-<div class="line"><span class="lineno">  118</span>    <span class="keywordtype">float</span> answer = <a class="code hl_function" href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a>(input);</div>
-<div class="line"><span class="lineno">  119</span> </div>
-<div class="line"><span class="lineno">  120</span>    assert(answer == -4);</div>
-<div class="line"><span class="lineno">  121</span>}</div>
-<div class="ttc" id="apostfix__evaluation_8cpp_html_a55fe33d236f61f7a87548f031418bfa0"><div class="ttname"><a href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a></div><div class="ttdeci">float postfix_evaluation(const std::vector&lt; std::string &gt; &amp;input)</div><div class="ttdoc">Postfix Evaluation algorithm to compute the value from given input array.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00086">postfix_evaluation.cpp:86</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00126">126</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>                              {</div>
+<div class="line"><span class="lineno">  127</span>    std::vector&lt;std::string&gt; input = {<span class="stringliteral">&quot;2&quot;</span>, <span class="stringliteral">&quot;3&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;*&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;9&quot;</span>, <span class="stringliteral">&quot;-&quot;</span>};</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>    <span class="keywordtype">float</span> answer = <a class="code hl_function" href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a>(input);</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>    assert(answer == -4);</div>
+<div class="line"><span class="lineno">  132</span>}</div>
+<div class="ttc" id="apostfix__evaluation_8cpp_html_a55fe33d236f61f7a87548f031418bfa0"><div class="ttname"><a href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a></div><div class="ttdeci">float postfix_evaluation(const std::vector&lt; std::string &gt; &amp;input)</div><div class="ttdoc">Postfix Evaluation algorithm to compute the value from given input array.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00097">postfix_evaluation.cpp:97</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -420,14 +426,14 @@ Functions</h2></td></tr>
 <p>Test function 2 with input array {'100', '200', '+', '2', '/', '5', '*', '7', '+'}. </p>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  128</span>                              {</div>
-<div class="line"><span class="lineno">  129</span>    std::vector&lt;std::string&gt; input = {<span class="stringliteral">&quot;100&quot;</span>, <span class="stringliteral">&quot;200&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;2&quot;</span>, <span class="stringliteral">&quot;/&quot;</span>,</div>
-<div class="line"><span class="lineno">  130</span>                                      <span class="stringliteral">&quot;5&quot;</span>,   <span class="stringliteral">&quot;*&quot;</span>,   <span class="stringliteral">&quot;7&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>};</div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordtype">float</span> answer = <a class="code hl_function" href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a>(input);</div>
-<div class="line"><span class="lineno">  132</span> </div>
-<div class="line"><span class="lineno">  133</span>    assert(answer == 757);</div>
-<div class="line"><span class="lineno">  134</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00139">139</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>                              {</div>
+<div class="line"><span class="lineno">  140</span>    std::vector&lt;std::string&gt; input = {<span class="stringliteral">&quot;100&quot;</span>, <span class="stringliteral">&quot;200&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;2&quot;</span>, <span class="stringliteral">&quot;/&quot;</span>,</div>
+<div class="line"><span class="lineno">  141</span>                                      <span class="stringliteral">&quot;5&quot;</span>,   <span class="stringliteral">&quot;*&quot;</span>,   <span class="stringliteral">&quot;7&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>};</div>
+<div class="line"><span class="lineno">  142</span>    <span class="keywordtype">float</span> answer = <a class="code hl_function" href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a>(input);</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>    assert(answer == 757);</div>
+<div class="line"><span class="lineno">  145</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -454,17 +460,161 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00136">136</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  136</span>                              {</div>
-<div class="line"><span class="lineno">  137</span>    std::vector&lt;std::string&gt; input = {</div>
-<div class="line"><span class="lineno">  138</span>        <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>,</div>
-<div class="line"><span class="lineno">  139</span>        <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>,</div>
-<div class="line"><span class="lineno">  140</span>        <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>,</div>
-<div class="line"><span class="lineno">  141</span>        <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>};</div>
-<div class="line"><span class="lineno">  142</span>    <span class="keywordtype">float</span> answer = <a class="code hl_function" href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a>(input);</div>
-<div class="line"><span class="lineno">  143</span> </div>
-<div class="line"><span class="lineno">  144</span>    assert(answer == 22);</div>
-<div class="line"><span class="lineno">  145</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00147">147</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  147</span>                              {</div>
+<div class="line"><span class="lineno">  148</span>    std::vector&lt;std::string&gt; input = {</div>
+<div class="line"><span class="lineno">  149</span>        <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>,</div>
+<div class="line"><span class="lineno">  150</span>        <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>,</div>
+<div class="line"><span class="lineno">  151</span>        <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>,</div>
+<div class="line"><span class="lineno">  152</span>        <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;+&quot;</span>};</div>
+<div class="line"><span class="lineno">  153</span>    <span class="keywordtype">float</span> answer = <a class="code hl_function" href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a>(input);</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>    assert(answer == 22);</div>
+<div class="line"><span class="lineno">  156</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3b7e53fd1c29593da922acd6aae46d81" name="a3b7e53fd1c29593da922acd6aae46d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b7e53fd1c29593da922acd6aae46d81">&#9670;&#160;</a></span>test_not_enough_operands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test_not_enough_operands </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00165">165</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  165</span>                                       {</div>
+<div class="line"><span class="lineno">  166</span>    std::vector&lt;std::string&gt; input = {<span class="stringliteral">&quot;+&quot;</span>};</div>
+<div class="line"><span class="lineno">  167</span>    <span class="keywordtype">bool</span> <span class="keywordflow">throws</span> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  168</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  169</span>        <a class="code hl_function" href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a>(input);</div>
+<div class="line"><span class="lineno">  170</span>    } <span class="keywordflow">catch</span> (std::invalid_argument &amp;) {</div>
+<div class="line"><span class="lineno">  171</span>        <span class="keywordflow">throws</span> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  172</span>    }</div>
+<div class="line"><span class="lineno">  173</span>    assert(<span class="keywordflow">throws</span>);</div>
+<div class="line"><span class="lineno">  174</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac1ae004b8b5a9dea263d0fb79398df31" name="ac1ae004b8b5a9dea263d0fb79398df31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ae004b8b5a9dea263d0fb79398df31">&#9670;&#160;</a></span>test_not_enough_operands_empty_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test_not_enough_operands_empty_input </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00176">176</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  176</span>                                                   {</div>
+<div class="line"><span class="lineno">  177</span>    std::vector&lt;std::string&gt; input = {};</div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordtype">bool</span> <span class="keywordflow">throws</span> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  179</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  180</span>        <a class="code hl_function" href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a>(input);</div>
+<div class="line"><span class="lineno">  181</span>    } <span class="keywordflow">catch</span> (std::invalid_argument &amp;) {</div>
+<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">throws</span> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  183</span>    }</div>
+<div class="line"><span class="lineno">  184</span>    assert(<span class="keywordflow">throws</span>);</div>
+<div class="line"><span class="lineno">  185</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad9612a23271aa99915d1e2ac04b26677" name="ad9612a23271aa99915d1e2ac04b26677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9612a23271aa99915d1e2ac04b26677">&#9670;&#160;</a></span>test_single_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test_single_input </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00158">158</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>                                {</div>
+<div class="line"><span class="lineno">  159</span>    std::vector&lt;std::string&gt; input = {<span class="stringliteral">&quot;1&quot;</span>};</div>
+<div class="line"><span class="lineno">  160</span>    <span class="keywordtype">float</span> answer = <a class="code hl_function" href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a>(input);</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>    assert(answer == 1);</div>
+<div class="line"><span class="lineno">  163</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a99c34aeb43077d62086a5a5cd4bcd441" name="a99c34aeb43077d62086a5a5cd4bcd441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c34aeb43077d62086a5a5cd4bcd441">&#9670;&#160;</a></span>test_too_many_operands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test_too_many_operands </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html#l00187">187</a> of file <a class="el" href="../../d7/d75/postfix__evaluation_8cpp_source.html">postfix_evaluation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  187</span>                                     {</div>
+<div class="line"><span class="lineno">  188</span>    std::vector&lt;std::string&gt; input = {<span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;2&quot;</span>};</div>
+<div class="line"><span class="lineno">  189</span>    <span class="keywordtype">bool</span> <span class="keywordflow">throws</span> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  191</span>        <a class="code hl_function" href="#a55fe33d236f61f7a87548f031418bfa0">others::postfix_expression::postfix_evaluation</a>(input);</div>
+<div class="line"><span class="lineno">  192</span>    } <span class="keywordflow">catch</span> (std::invalid_argument &amp;) {</div>
+<div class="line"><span class="lineno">  193</span>        <span class="keywordflow">throws</span> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  194</span>    }</div>
+<div class="line"><span class="lineno">  195</span>    assert(<span class="keywordflow">throws</span>);</div>
+<div class="line"><span class="lineno">  196</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
