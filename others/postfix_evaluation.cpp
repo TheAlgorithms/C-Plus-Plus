@@ -77,6 +77,17 @@ void evaluate(float a, float b, const std::string &operation,
     }
 }
 
+namespace {
+float remove_from_stack(std::stack<float> &stack) {
+    if (stack.empty()) {
+        throw std::invalid_argument("Not enough operands");
+    }
+    const auto res = stack.top();
+    stack.pop();
+    return res;
+}
+}  // namespace
+
 /**
  * @brief Postfix Evaluation algorithm to compute the value from given input
  * array
@@ -91,18 +102,18 @@ float postfix_evaluation(const std::vector<std::string> &input) {
             stack.push(std::stof(scan));
 
         } else {
-            const float op2 = stack.top();
-            stack.pop();
-            const float op1 = stack.top();
-            stack.pop();
+            const auto op2 = remove_from_stack(stack);
+            const auto op1 = remove_from_stack(stack);
 
             evaluate(op1, op2, scan, stack);
         }
     }
 
-    std::cout << stack.top() << "\n";
-
-    return stack.top();
+    const auto res = remove_from_stack(stack);
+    if (!stack.empty()) {
+        throw std::invalid_argument("Too many operands");
+    }
+    return res;
 }
 }  // namespace postfix_expression
 }  // namespace others
@@ -144,6 +155,46 @@ static void test_function_3() {
     assert(answer == 22);
 }
 
+static void test_single_input() {
+    std::vector<std::string> input = {"1"};
+    float answer = others::postfix_expression::postfix_evaluation(input);
+
+    assert(answer == 1);
+}
+
+static void test_not_enough_operands() {
+    std::vector<std::string> input = {"+"};
+    bool throws = false;
+    try {
+        others::postfix_expression::postfix_evaluation(input);
+    } catch (std::invalid_argument &) {
+        throws = true;
+    }
+    assert(throws);
+}
+
+static void test_not_enough_operands_empty_input() {
+    std::vector<std::string> input = {};
+    bool throws = false;
+    try {
+        others::postfix_expression::postfix_evaluation(input);
+    } catch (std::invalid_argument &) {
+        throws = true;
+    }
+    assert(throws);
+}
+
+static void test_too_many_operands() {
+    std::vector<std::string> input = {"1", "2"};
+    bool throws = false;
+    try {
+        others::postfix_expression::postfix_evaluation(input);
+    } catch (std::invalid_argument &) {
+        throws = true;
+    }
+    assert(throws);
+}
+
 /**
  * @brief Main function
  * @returns 0 on exit
@@ -152,6 +203,10 @@ int main() {
     test_function_1();
     test_function_2();
     test_function_3();
+    test_single_input();
+    test_not_enough_operands();
+    test_not_enough_operands_empty_input();
+    test_too_many_operands();
 
     std::cout << "\nTest implementations passed!\n";
 
