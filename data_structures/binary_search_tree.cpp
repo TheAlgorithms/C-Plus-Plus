@@ -122,4 +122,8 @@ void Post(node *n) {
     }
 }
 
+static void tests() {
+    // TODO: add tests
+}
+
 int main() { return 0; }
