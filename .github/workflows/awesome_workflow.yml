@@ -90,6 +90,8 @@ jobs:
           cmake -B build -S . -DBENABLE_TESTING=ON
           cmake --build build --parallel 4
 
+      # The timeout below is to catch the files with user input in their main function.
+      # It should be removed eventually when all the files are clear of user input.
       - name: test
         run: |
           ctest build/. --verbose --timeout 5
