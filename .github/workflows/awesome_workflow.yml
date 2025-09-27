@@ -71,7 +71,7 @@ jobs:
           labels: "automated build is failing"
 
   test:
-    name: Testing pullrequest
+    name: Testing pull request
     runs-on: ${{ matrix.os }}
     needs: [build]
 
@@ -92,7 +92,7 @@ jobs:
 
       - name: test
         run: |
-          ctest build --verbose --timeout 5
+          ctest build/. --verbose --timeout 5
 
       - name: Label on PR fail
         uses: actions-ecosystem/action-add-labels@v1
