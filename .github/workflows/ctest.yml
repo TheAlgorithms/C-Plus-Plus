@@ -1,0 +1,23 @@
+# Run unit tests using CTest
+name: Tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  checkout-and-check-formatting:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run unit tests
+        uses: HorstBaerbel/action-ctest@1.1
+        # These are optional (defaults displayed)
+        with:
+          sourcedir: "."
+          builddir: "build"
+          cmakeoptions: "-DENABLE_TESTING ON"
+          ctestoptions: "--timeout 5"
