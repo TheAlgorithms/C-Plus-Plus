@@ -53,6 +53,7 @@ jobs:
     needs: [MainSequence]
     permissions:
       pull-requests: write
+      issues: write
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
@@ -77,6 +78,8 @@ jobs:
 
     permissions:
       pull-requests: write
+      issues: write
+
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
