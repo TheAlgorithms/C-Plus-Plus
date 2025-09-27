@@ -83,10 +83,19 @@ std::vector<std::vector<T> > buildTable(const std::vector<T>& A,
 template <typename T>
 int getMinimum(int beg, int end, const std::vector<T>& logs,
                const std::vector<std::vector<T> >& table) {
+        if(beg<0||end<<beg||end>=(int)table[0].size()){
+        cout<<"Error:querry range ["<<beg<<","<<end<<"] is invalid."<<endl;
+        return -1;
+                }
     int p = logs[end - beg + 1];
     int pLen = 1 << p;
+    if (p >= (int)table.size() || beg >= (int)table[p].size() || (end - pLen + 1) >= (int)table[p].size()) {
+        std::cerr << "Error: index out of bounds when accessing sparse table." << std::endl;
+        return -1;
+    }
     return std::min(table[p][beg], table[p][end - pLen + 1]);
 }
+
 }  // namespace sparse_table
 }  // namespace range_queries
 
