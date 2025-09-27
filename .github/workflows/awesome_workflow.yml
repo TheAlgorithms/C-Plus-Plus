@@ -95,7 +95,7 @@ jobs:
           ctest build --verbose --timeout 5
 
       - name: Label on PR fail
-        uses: actions-ecosystem/action-add-labels
+        uses: actions-ecosystem/action-add-labels@v1
         if: ${{ failure() && github.event_name == 'pull_request' }}
         with:
           labels: "automated tests are failing"
