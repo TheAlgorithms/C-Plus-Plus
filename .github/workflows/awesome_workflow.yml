@@ -66,11 +66,16 @@ jobs:
           cmake --build build --parallel 4
 
       - name: Label on PR fail
-        uses: actions-ecosystem/action-add-labels@v1
+        uses: actions/github-script@v4
         if: ${{ failure() && matrix.os == 'ubuntu-latest' && github.event_name == 'pull_request' }}
         with:
-          labels: "automated build is failing"
-
+          script: |
+            await github.issues.addLabels({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  labels: ['automated build is failing']
+              })
   test:
     name: Testing pull request
     runs-on: ${{ matrix.os }}
@@ -100,7 +105,13 @@ jobs:
           ctest --test-dir build --timeout 5 --parallel 4
 
       - name: Label on PR fail
-        uses: actions-ecosystem/action-add-labels@v1
+        uses: actions/github-script@v4
         if: ${{ failure() && github.event_name == 'pull_request' }}
         with:
-          labels: "automated tests are failing"
+          script: |
+            await github.issues.addLabels({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  labels: ['automated tests are failing']
+              })
