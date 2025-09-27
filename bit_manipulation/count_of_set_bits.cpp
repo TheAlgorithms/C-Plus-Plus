@@ -36,11 +36,19 @@ namespace count_of_set_bits {
  * @returns total number of set-bits in the binary representation of number `n`
  */
 std::uint64_t countSetBits(
-    std ::int64_t n) {  // int64_t is preferred over int so that
+    std ::uint64_t n) {  // uint64_t is preferred over int so that
                         // no Overflow can be there.
+                        //It's preferred over int64_t because it Guarantees that inputs are always non-negative, 
+                        //which matches the algorithmic problem statement.
+                        //set bit counting is conceptually defined only for non-negative numbers.
+                        //Provides a type Safety: Using an unsigned type helps prevent accidental negative values,
 
-    int count = 0;  // "count" variable is used to count number of set-bits('1')
-                    // in binary representation of number 'n'
+    std::uint64_t count = 0;  // "count" variable is used to count number of set-bits('1')
+                            // in binary representation of number 'n'
+                            //Count is uint64_t because it Prevents theoretical overflow if someone passes very large integers.
+                            //  Behavior stays the same for all normal inputs.
+                            // Safer for edge cases.
+
     while (n != 0) {
         ++count;
         n = (n & (n - 1));
