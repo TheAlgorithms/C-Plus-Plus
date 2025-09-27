@@ -8,12 +8,11 @@ foreach(testsourcefile ${APP_SOURCES})
     # I used a simple string replace, to cut off .cpp.
     string(REPLACE ".cpp" "" testname ${testsourcefile})
     add_executable(${testname} ${testsourcefile})
-    add_test(NAME ${testname} COMMAND ${testname})
     set_target_properties(${testname} PROPERTIES LINKER_LANGUAGE CXX)
     if(OpenMP_CXX_FOUND)
         target_link_libraries(${testname} OpenMP::OpenMP_CXX)
     endif()
-    add_test(${testname}_test ${testname})
+    add_test(${testname} ${testname})
     install(TARGETS ${testname} DESTINATION "bin/math")
 
 endforeach(testsourcefile ${APP_SOURCES})
