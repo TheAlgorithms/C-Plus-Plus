@@ -8,7 +8,7 @@ on:
     branches: [master]
 
 jobs:
-  checkout-and-check-formatting:
+  test:
     runs-on: ubuntu-latest
 
     steps:
