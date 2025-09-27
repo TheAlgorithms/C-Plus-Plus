@@ -16,6 +16,10 @@ option(ENABLE_TESTING "flag to test the repo" OFF)
 if(ENABLE_TESTING)
     message(STATUS "Testing enabled")
     enable_testing()
+
+    # 5 second timeout to weed out all the user input algorithms
+    # this should be eventually removed once all the files do not take user input anymore
+    set(CTEST_TEST_TIMEOUT 5)
 endif()
 
 # Additional warnings and errors
