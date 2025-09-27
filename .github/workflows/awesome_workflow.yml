@@ -53,6 +53,7 @@ jobs:
     needs: [MainSequence]
     permissions:
       pull-requests: write
+      issues: write
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
@@ -63,14 +64,31 @@ jobs:
       - run: |
           cmake -B ./build -S .
           cmake --build build --parallel 4
-      - name: Label on PR fail
-        uses: actions/github-script@v6
-        if: ${{ failure() && matrix.os == 'ubuntu-latest' && github.event_name == 'pull_request' }}
-        with:
-          script: |
-            github.rest.issues.addLabels({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ['automated tests are failing']
-            })
+
+  test:
+    name: Testing pull request
+    runs-on: ${{ matrix.os }}
+    needs: [build]
+
+    permissions:
+      pull-requests: write
+      issues: write
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: build
+        run: |
+          cmake -B build -S . -DBENABLE_TESTING=ON
+          cmake --build build --parallel 4
+
+      # The timeout below is to catch the files with user input in their main function.
+      # It should be removed eventually when all the files are clear of user input.
+      - name: test
+        run: |
+          ctest --test-dir build --timeout 5 --parallel 4

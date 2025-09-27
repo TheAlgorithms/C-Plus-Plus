@@ -3,32 +3,46 @@
  * @brief Convert decimal number to hexadecimal representation
  */
 
-#include <iostream>
+#include <cassert>
+#include <cstdint>
+#include <string>
+#include <vector>
+
+/**
+ * @brief converts a given decimal integer value to its equavalent hexadecimal
+ * string
+ *
+ * @param value the value to be converted
+ * @return std::string the hexadecimal string
+ */
+std::string decimal_to_hexadecimal(std::uint32_t value) {
+    std::vector<uint32_t> hexArray{};
+    std::string ret = "";
+    size_t i = 0;
+    const char HexValues[] = "0123456789ABCDEF";
+
+    while (value > 15) {
+        hexArray.at(i++) = value % 16;
+        value /= 16;
+    }
+    while (i >= 0) ret.push_back(HexValues[i--]);
+    return ret;
+}
+
+/**
+ * @brief self test implementation
+ * @returns void
+ */
+static void tests() {
+    assert(decimal_to_hexadecimal(0) == "0");
+    assert(decimal_to_hexadecimal(1) == "1");
+    assert(decimal_to_hexadecimal(10) == "A");
+}
 
 /**
  * Main program
  */
 int main(void) {
-    int valueToConvert = 0;  // Holds user input
-    int hexArray[8];         // Contains hex values backwards
-    int i = 0;               // counter
-    char HexValues[] = "0123456789ABCDEF";
-
-    std::cout << "Enter a Decimal Value"
-              << std::endl;  // Displays request to stdout
-    std::cin >>
-        valueToConvert;  // Stores value into valueToConvert via user input
-
-    while (valueToConvert > 15) {             // Dec to Hex Algorithm
-        hexArray[i++] = valueToConvert % 16;  // Gets remainder
-        valueToConvert /= 16;
-        // valueToConvert >>= 4;  // This will divide by 2^4=16 and is faster
-    }
-    hexArray[i] = valueToConvert;  // Gets last value
-
-    std::cout << "Hex Value: ";
-    while (i >= 0) std::cout << HexValues[hexArray[i--]];
-
-    std::cout << std::endl;
+    tests();  // run self test imlementation
     return 0;
 }
