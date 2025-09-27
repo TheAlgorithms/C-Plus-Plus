@@ -40,7 +40,7 @@ namespace dynamic_programming {
  */
 class UniquePathsSolver {
    private:
-    std::vector<std::vector<int>> memoization_table;  ///< Memoization table to cache intermediate results
+    std::vector<std::vector<int>> memoization_table;  ///< Memoization table to cache intermediate results (-1 = uncomputed)
     std::size_t m;  ///< Number of rows in the grid
     std::size_t n;  ///< Number of columns in the grid
 
@@ -51,11 +51,13 @@ class UniquePathsSolver {
     int solveTabulation() {
         std::vector<std::vector<int>> table(m, std::vector<int>(n, 0));
 
-        for (std::size_t i = 0; i < m; i++) table[i][n - 1] = 1;  ///< last column
-        for (std::size_t j = 0; j < n; j++) table[m - 1][j] = 1;  ///< last row
+        // base cases: last column and last row
+        for (std::size_t i = 0; i < m; i++) table[i][n - 1] = 1;
+        for (std::size_t j = 0; j < n; j++) table[m - 1][j] = 1;
 
-        for (int i = static_cast<int>(m) - 2; i >= 0; i--) {
-            for (int j = static_cast<int>(n) - 2; j >= 0; j--) {
+        // fill the table from bottom-right to top-left
+        for (std::size_t i = m - 1; i-- > 0;) {
+            for (std::size_t j = n - 1; j-- > 0;) {
                 table[i][j] = table[i + 1][j] + table[i][j + 1];
             }
         }
