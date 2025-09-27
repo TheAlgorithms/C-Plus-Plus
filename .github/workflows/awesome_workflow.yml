@@ -94,7 +94,7 @@ jobs:
       # It should be removed eventually when all the files are clear of user input.
       - name: test
         run: |
-          ctest --test-dir build --verbose --timeout 5 --parallel 4
+          ctest --test-dir build --timeout 5 --parallel 4
 
       - name: Label on PR fail
         uses: actions-ecosystem/action-add-labels@v1
