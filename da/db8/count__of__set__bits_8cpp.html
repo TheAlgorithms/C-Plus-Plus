@@ -139,8 +139,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a86c98dc299e4db28b73e08309d977e62" id="r_a86c98dc299e4db28b73e08309d977e62"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86c98dc299e4db28b73e08309d977e62">bit_manipulation::count_of_set_bits::countSetBits</a> (std ::int64_t n)</td></tr>
-<tr class="memdesc:a86c98dc299e4db28b73e08309d977e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function implements set bit count.  <br /></td></tr>
+<tr class="memitem:aea9e56e21fc34d417d702319303a285a" id="r_aea9e56e21fc34d417d702319303a285a"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea9e56e21fc34d417d702319303a285a">bit_manipulation::count_of_set_bits::countSetBits</a> (std ::uint64_t n)</td></tr>
+<tr class="memdesc:aea9e56e21fc34d417d702319303a285a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function implements set bit count.  <br /></td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
@@ -154,8 +154,8 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="../../da/db8/count__of__set__bits_8cpp_source.html">count_of_set_bits.cpp</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a86c98dc299e4db28b73e08309d977e62" name="a86c98dc299e4db28b73e08309d977e62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86c98dc299e4db28b73e08309d977e62">&#9670;&#160;</a></span>countSetBits()</h2>
+<a id="aea9e56e21fc34d417d702319303a285a" name="aea9e56e21fc34d417d702319303a285a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea9e56e21fc34d417d702319303a285a">&#9670;&#160;</a></span>countSetBits()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,7 +163,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">std::uint64_t bit_manipulation::count_of_set_bits::countSetBits </td>
           <td>(</td>
-          <td class="paramtype">std ::int64_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td class="paramtype">std ::uint64_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -179,21 +179,29 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>total number of set-bits in the binary representation of number <span class="tt">n</span> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../da/db8/count__of__set__bits_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../da/db8/count__of__set__bits_8cpp_source.html">count_of_set_bits.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   39</span>                   {  <span class="comment">// int64_t is preferred over int so that</span></div>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                    {  <span class="comment">// uint64_t is preferred over int so that</span></div>
 <div class="line"><span class="lineno">   40</span>                        <span class="comment">// no Overflow can be there.</span></div>
-<div class="line"><span class="lineno">   41</span> </div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordtype">int</span> count = 0;  <span class="comment">// &quot;count&quot; variable is used to count number of set-bits(&#39;1&#39;)</span></div>
-<div class="line"><span class="lineno">   43</span>                    <span class="comment">// in binary representation of number &#39;n&#39;</span></div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">while</span> (n != 0) {</div>
-<div class="line"><span class="lineno">   45</span>        ++count;</div>
-<div class="line"><span class="lineno">   46</span>        n = (n &amp; (n - 1));</div>
-<div class="line"><span class="lineno">   47</span>    }</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">return</span> count;</div>
-<div class="line"><span class="lineno">   49</span>    <span class="comment">// Why this algorithm is better than the standard one?</span></div>
-<div class="line"><span class="lineno">   50</span>    <span class="comment">// Because this algorithm runs the same number of times as the number of</span></div>
-<div class="line"><span class="lineno">   51</span>    <span class="comment">// set-bits in it. Means if my number is having &quot;3&quot; set bits, then this</span></div>
-<div class="line"><span class="lineno">   52</span>    <span class="comment">// while loop will run only &quot;3&quot; times!!</span></div>
-<div class="line"><span class="lineno">   53</span>}</div>
+<div class="line"><span class="lineno">   41</span>                        <span class="comment">//It&#39;s preferred over int64_t because it Guarantees that inputs are always non-negative, </span></div>
+<div class="line"><span class="lineno">   42</span>                        <span class="comment">//which matches the algorithmic problem statement.</span></div>
+<div class="line"><span class="lineno">   43</span>                        <span class="comment">//set bit counting is conceptually defined only for non-negative numbers.</span></div>
+<div class="line"><span class="lineno">   44</span>                        <span class="comment">//Provides a type Safety: Using an unsigned type helps prevent accidental negative values,</span></div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>    std::uint64_t count = 0;  <span class="comment">// &quot;count&quot; variable is used to count number of set-bits(&#39;1&#39;)</span></div>
+<div class="line"><span class="lineno">   47</span>                            <span class="comment">// in binary representation of number &#39;n&#39;</span></div>
+<div class="line"><span class="lineno">   48</span>                            <span class="comment">//Count is uint64_t because it Prevents theoretical overflow if someone passes very large integers.</span></div>
+<div class="line"><span class="lineno">   49</span>                            <span class="comment">//  Behavior stays the same for all normal inputs.</span></div>
+<div class="line"><span class="lineno">   50</span>                            <span class="comment">// Safer for edge cases.</span></div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">while</span> (n != 0) {</div>
+<div class="line"><span class="lineno">   53</span>        ++count;</div>
+<div class="line"><span class="lineno">   54</span>        n = (n &amp; (n - 1));</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> count;</div>
+<div class="line"><span class="lineno">   57</span>    <span class="comment">// Why this algorithm is better than the standard one?</span></div>
+<div class="line"><span class="lineno">   58</span>    <span class="comment">// Because this algorithm runs the same number of times as the number of</span></div>
+<div class="line"><span class="lineno">   59</span>    <span class="comment">// set-bits in it. Means if my number is having &quot;3&quot; set bits, then this</span></div>
+<div class="line"><span class="lineno">   60</span>    <span class="comment">// while loop will run only &quot;3&quot; times!!</span></div>
+<div class="line"><span class="lineno">   61</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -215,11 +223,11 @@ Functions</h2></td></tr>
 <p>Main function. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/db8/count__of__set__bits_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../da/db8/count__of__set__bits_8cpp_source.html">count_of_set_bits.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>           {</div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   83</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/db8/count__of__set__bits_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../da/db8/count__of__set__bits_8cpp_source.html">count_of_set_bits.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>           {</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_function" href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// run self-test implementations</span></div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   91</span>}</div>
 <div class="ttc" id="agenerate__parentheses_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../dd/d1e/generate__parentheses_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">Self-test implementations.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d1e/generate__parentheses_8cpp_source.html#l00082">generate_parentheses.cpp:82</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -247,27 +255,27 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/db8/count__of__set__bits_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../da/db8/count__of__set__bits_8cpp_source.html">count_of_set_bits.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>                   {</div>
-<div class="line"><span class="lineno">   58</span>    <span class="comment">// n = 4 return 1</span></div>
-<div class="line"><span class="lineno">   59</span>    assert(<a class="code hl_function" href="#a86c98dc299e4db28b73e08309d977e62">bit_manipulation::count_of_set_bits::countSetBits</a>(4) == 1);</div>
-<div class="line"><span class="lineno">   60</span>    <span class="comment">// n = 6 return 2</span></div>
-<div class="line"><span class="lineno">   61</span>    assert(<a class="code hl_function" href="#a86c98dc299e4db28b73e08309d977e62">bit_manipulation::count_of_set_bits::countSetBits</a>(6) == 2);</div>
-<div class="line"><span class="lineno">   62</span>    <span class="comment">// n = 13 return 3</span></div>
-<div class="line"><span class="lineno">   63</span>    assert(<a class="code hl_function" href="#a86c98dc299e4db28b73e08309d977e62">bit_manipulation::count_of_set_bits::countSetBits</a>(13) == 3);</div>
-<div class="line"><span class="lineno">   64</span>    <span class="comment">// n = 9 return 2</span></div>
-<div class="line"><span class="lineno">   65</span>    assert(<a class="code hl_function" href="#a86c98dc299e4db28b73e08309d977e62">bit_manipulation::count_of_set_bits::countSetBits</a>(9) == 2);</div>
-<div class="line"><span class="lineno">   66</span>    <span class="comment">// n = 15 return 4</span></div>
-<div class="line"><span class="lineno">   67</span>    assert(<a class="code hl_function" href="#a86c98dc299e4db28b73e08309d977e62">bit_manipulation::count_of_set_bits::countSetBits</a>(15) == 4);</div>
-<div class="line"><span class="lineno">   68</span>    <span class="comment">// n = 25 return 3</span></div>
-<div class="line"><span class="lineno">   69</span>    assert(<a class="code hl_function" href="#a86c98dc299e4db28b73e08309d977e62">bit_manipulation::count_of_set_bits::countSetBits</a>(25) == 3);</div>
-<div class="line"><span class="lineno">   70</span>    <span class="comment">// n = 97 return 3</span></div>
-<div class="line"><span class="lineno">   71</span>    assert(<a class="code hl_function" href="#a86c98dc299e4db28b73e08309d977e62">bit_manipulation::count_of_set_bits::countSetBits</a>(97) == 3);</div>
-<div class="line"><span class="lineno">   72</span>    <span class="comment">// n = 31 return 5</span></div>
-<div class="line"><span class="lineno">   73</span>    assert(<a class="code hl_function" href="#a86c98dc299e4db28b73e08309d977e62">bit_manipulation::count_of_set_bits::countSetBits</a>(31) == 5);</div>
-<div class="line"><span class="lineno">   74</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All test cases successfully passed!&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   75</span>}</div>
-<div class="ttc" id="acount__of__set__bits_8cpp_html_a86c98dc299e4db28b73e08309d977e62"><div class="ttname"><a href="#a86c98dc299e4db28b73e08309d977e62">bit_manipulation::count_of_set_bits::countSetBits</a></div><div class="ttdeci">std::uint64_t countSetBits(std ::int64_t n)</div><div class="ttdoc">The main function implements set bit count.</div><div class="ttdef"><b>Definition</b> <a href="../../da/db8/count__of__set__bits_8cpp_source.html#l00038">count_of_set_bits.cpp:38</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../da/db8/count__of__set__bits_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../da/db8/count__of__set__bits_8cpp_source.html">count_of_set_bits.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>                   {</div>
+<div class="line"><span class="lineno">   66</span>    <span class="comment">// n = 4 return 1</span></div>
+<div class="line"><span class="lineno">   67</span>    assert(<a class="code hl_function" href="#aea9e56e21fc34d417d702319303a285a">bit_manipulation::count_of_set_bits::countSetBits</a>(4) == 1);</div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">// n = 6 return 2</span></div>
+<div class="line"><span class="lineno">   69</span>    assert(<a class="code hl_function" href="#aea9e56e21fc34d417d702319303a285a">bit_manipulation::count_of_set_bits::countSetBits</a>(6) == 2);</div>
+<div class="line"><span class="lineno">   70</span>    <span class="comment">// n = 13 return 3</span></div>
+<div class="line"><span class="lineno">   71</span>    assert(<a class="code hl_function" href="#aea9e56e21fc34d417d702319303a285a">bit_manipulation::count_of_set_bits::countSetBits</a>(13) == 3);</div>
+<div class="line"><span class="lineno">   72</span>    <span class="comment">// n = 9 return 2</span></div>
+<div class="line"><span class="lineno">   73</span>    assert(<a class="code hl_function" href="#aea9e56e21fc34d417d702319303a285a">bit_manipulation::count_of_set_bits::countSetBits</a>(9) == 2);</div>
+<div class="line"><span class="lineno">   74</span>    <span class="comment">// n = 15 return 4</span></div>
+<div class="line"><span class="lineno">   75</span>    assert(<a class="code hl_function" href="#aea9e56e21fc34d417d702319303a285a">bit_manipulation::count_of_set_bits::countSetBits</a>(15) == 4);</div>
+<div class="line"><span class="lineno">   76</span>    <span class="comment">// n = 25 return 3</span></div>
+<div class="line"><span class="lineno">   77</span>    assert(<a class="code hl_function" href="#aea9e56e21fc34d417d702319303a285a">bit_manipulation::count_of_set_bits::countSetBits</a>(25) == 3);</div>
+<div class="line"><span class="lineno">   78</span>    <span class="comment">// n = 97 return 3</span></div>
+<div class="line"><span class="lineno">   79</span>    assert(<a class="code hl_function" href="#aea9e56e21fc34d417d702319303a285a">bit_manipulation::count_of_set_bits::countSetBits</a>(97) == 3);</div>
+<div class="line"><span class="lineno">   80</span>    <span class="comment">// n = 31 return 5</span></div>
+<div class="line"><span class="lineno">   81</span>    assert(<a class="code hl_function" href="#aea9e56e21fc34d417d702319303a285a">bit_manipulation::count_of_set_bits::countSetBits</a>(31) == 5);</div>
+<div class="line"><span class="lineno">   82</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All test cases successfully passed!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   83</span>}</div>
+<div class="ttc" id="acount__of__set__bits_8cpp_html_aea9e56e21fc34d417d702319303a285a"><div class="ttname"><a href="#aea9e56e21fc34d417d702319303a285a">bit_manipulation::count_of_set_bits::countSetBits</a></div><div class="ttdeci">std::uint64_t countSetBits(std ::uint64_t n)</div><div class="ttdoc">The main function implements set bit count.</div><div class="ttdef"><b>Definition</b> <a href="../../da/db8/count__of__set__bits_8cpp_source.html#l00038">count_of_set_bits.cpp:38</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
