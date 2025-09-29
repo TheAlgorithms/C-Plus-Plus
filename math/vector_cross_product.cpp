@@ -45,7 +45,6 @@
  * @author [Shreyas Sable](https://github.com/Shreyas-OwO)
  */
 
-#include <iostream>
 #include <array>
 #include <cmath>
 #include <cassert>
@@ -110,24 +109,5 @@ int main() {
 
 	/// Tests the functions with sample input before asking for user input.
 	test();
-
-	std::array<double, 3> vec1;
-	std::array<double, 3> vec2;
-
-	/// Gets the values for the first vector.
-	std::cout << "\nPass the first Vector: ";
-	std::cin >> vec1[0] >> vec1[1] >> vec1[2];
-
-	/// Gets the values for the second vector.
-	std::cout << "\nPass the second Vector: ";
-	std::cin >> vec2[0] >> vec2[1] >> vec2[2];
-
-	/// Displays the output out.
-	std::array<double, 3> product = math::vector_cross::cross(vec1, vec2);
-	std::cout << "\nThe cross product is: " << product[0] << " " << product[1] << " " << product[2] << std::endl;
-
-	/// Displays the magnitude of the cross product.
-	std::cout << "Magnitude: " << math::vector_cross::mag(product) << "\n" << std::endl;
-
 	return 0;
 }
