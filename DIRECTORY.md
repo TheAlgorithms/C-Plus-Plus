@@ -112,6 +112,7 @@
   * [Longest Increasing Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_increasing_subsequence.cpp)
   * [Longest Increasing Subsequence Nlogn](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_increasing_subsequence_nlogn.cpp)
   * [Longest Palindromic Subsequence](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_palindromic_subsequence.cpp)
+  * [Longest Palindromic Substring](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/longest_palindromic_substring.cpp)
   * [Matrix Chain Multiplication](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/matrix_chain_multiplication.cpp)
   * [Maximum Circular Subarray](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/maximum_circular_subarray.cpp)
   * [Minimum Edit Distance](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/dynamic_programming/minimum_edit_distance.cpp)
