@@ -109,6 +109,14 @@ static void test() {
     /// Tests the mag() function.
     double t_mag = math::vector_cross::mag({6, 8, 0});
     assert(t_mag == 10);
+
+    /// Tests A ⨯ A = 0
+    std::array<double, 3> t_vec2 =
+        math::vector_cross::cross({1, 2, 3}, {1, 2, 3});
+    assert(t_vec2[0] == 0 && t_vec2[1] == 0 &&
+           t_vec2[2] == 0);  // checking each element
+    assert(math::vector_cross::mag(t_vec2) ==
+           0);  // checking the magnitude is also zero
 }
 
 /**
