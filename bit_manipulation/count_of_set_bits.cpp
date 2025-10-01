@@ -1,91 +1,120 @@
 /**
  * @file
- * @brief Implementation to [count number of set bits of a number]
- * (https://www.geeksforgeeks.org/count-set-bits-in-an-integer/) in an
- * integer.
+ * @brief Optimized implementation to count number of set bits in an integer.
  *
  * @details
- * We are given an integer number. We need to calculate the number of set bits
- * in it.
+ * Provides multiple approaches:
+ * 1. Compiler built-ins (fastest)
+ * 2. Lookup table method
+ * 3. Brian Kernighan's algorithm
+ * 4. Naive bit-by-bit method
  *
- * A binary number consists of two digits. They are 0 & 1. Digit 1 is known as
- * set bit in computer terms.
- * Worst Case Time Complexity: O(log n)
- * Space complexity: O(1)
- * @author [Swastika Gupta](https://github.com/Swastyy)
- * @author [Prashant Thakur](https://github.com/prashant-th18)
+ * Time Complexity:
+ * - O(1) for built-ins
+ * - O(log n) for Brian Kernighan
+ * Space Complexity: O(1)
+ *
+ * @author Swastika Gupta, Prashant Thakur
+ * @author [Contributor] (Optimize set bit counting with compiler built-ins and
+ * multiple algorithms)(https://github.com/kokatesaurabh)
  */
-#include <cassert>   /// for assert
+
+#include <cassert>
 #include <cstdint>
-#include <iostream>  /// for IO operations
-/**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
- */
+#include <iostream>
+#include <vector>
+
 namespace bit_manipulation {
-/**
- * @namespace count_of_set_bits
- * @brief Functions for the [count sets
- * bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/)
- * implementation
- */
 namespace count_of_set_bits {
-/**
- * @brief The main function implements set bit count
- * @param n is the number whose set bit will be counted
- * @returns total number of set-bits in the binary representation of number `n`
- */
-std::uint64_t countSetBits(
-    std ::uint64_t n) {  // uint64_t is preferred over int so that
-                        // no Overflow can be there.
-                        //It's preferred over int64_t because it Guarantees that inputs are always non-negative, 
-                        //which matches the algorithmic problem statement.
-                        //set bit counting is conceptually defined only for non-negative numbers.
-                        //Provides a type Safety: Using an unsigned type helps prevent accidental negative values,
 
-    std::uint64_t count = 0;  // "count" variable is used to count number of set-bits('1')
-                            // in binary representation of number 'n'
-                            //Count is uint64_t because it Prevents theoretical overflow if someone passes very large integers.
-                            //  Behavior stays the same for all normal inputs.
-                            // Safer for edge cases.
+// Lookup table for 8-bit numbers
+static constexpr unsigned char lookup_table[256] = {
+    0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4, 1, 2, 2, 3, 2, 3, 3, 4,
+    2, 3, 3, 4, 3, 4, 4, 5, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5,
+    2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 1, 2, 2, 3, 2, 3, 3, 4,
+    2, 3, 3, 4, 3, 4, 4, 5, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6,
+    2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6,
+    4, 5, 5, 6, 5, 6, 6, 7, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5,
+    2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 2, 3, 3, 4, 3, 4, 4, 5,
+    3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7,
+    2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6,
+    4, 5, 5, 6, 5, 6, 6, 7, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7,
+    4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 8};
 
-    while (n != 0) {
+// 1. Compiler built-ins
+inline std::uint64_t countSetBitsBuiltin(std::uint64_t n) {
+#if defined(__GNUC__) || defined(__clang__)
+    return __builtin_popcountll(n);
+#elif defined(_MSC_VER)
+    return __popcnt64(n);
+#else
+    // Fallback
+    std::uint64_t count = 0;
+    while (n) {
+        n &= (n - 1);
         ++count;
-        n = (n & (n - 1));
     }
     return count;
-    // Why this algorithm is better than the standard one?
-    // Because this algorithm runs the same number of times as the number of
-    // set-bits in it. Means if my number is having "3" set bits, then this
-    // while loop will run only "3" times!!
+#endif
 }
+
+// 2. Lookup table method
+inline std::uint64_t countSetBitsLookup(std::uint64_t n) {
+    std::uint64_t count = 0;
+    for (int i = 0; i < 8; ++i) {
+        count += lookup_table[(n >> (i * 8)) & 0xFF];
+    }
+    return count;
+}
+
+// 3. Brian Kernighan's algorithm
+inline std::uint64_t countSetBitsKernighan(std::uint64_t n) {
+    std::uint64_t count = 0;
+    while (n) {
+        n &= (n - 1);
+        ++count;
+    }
+    return count;
+}
+
+// 4. Naive bit-by-bit
+inline std::uint64_t countSetBitsNaive(std::uint64_t n) {
+    std::uint64_t count = 0;
+    while (n) {
+        count += (n & 1);
+        n >>= 1;
+    }
+    return count;
+}
+
+// Default function: uses fastest method available
+inline std::uint64_t countSetBits(std::uint64_t n) {
+    return countSetBitsBuiltin(n);
+}
+
 }  // namespace count_of_set_bits
 }  // namespace bit_manipulation
 
+// ===================== Test Cases =====================
 static void test() {
-    // n = 4 return 1
-    assert(bit_manipulation::count_of_set_bits::countSetBits(4) == 1);
-    // n = 6 return 2
-    assert(bit_manipulation::count_of_set_bits::countSetBits(6) == 2);
-    // n = 13 return 3
-    assert(bit_manipulation::count_of_set_bits::countSetBits(13) == 3);
-    // n = 9 return 2
-    assert(bit_manipulation::count_of_set_bits::countSetBits(9) == 2);
-    // n = 15 return 4
-    assert(bit_manipulation::count_of_set_bits::countSetBits(15) == 4);
-    // n = 25 return 3
-    assert(bit_manipulation::count_of_set_bits::countSetBits(25) == 3);
-    // n = 97 return 3
-    assert(bit_manipulation::count_of_set_bits::countSetBits(97) == 3);
-    // n = 31 return 5
-    assert(bit_manipulation::count_of_set_bits::countSetBits(31) == 5);
-    std::cout << "All test cases successfully passed!" << std::endl;
+    using namespace bit_manipulation::count_of_set_bits;
+    std::cout << "Running set bits counting tests...\n";
+
+    std::vector<std::uint64_t> numbers = {
+        0, 1, 2, 3, 4, 7, 15, 31, 255, 256, 511, 1023, 123456789, ~0ULL};
+
+    for (auto n : numbers) {
+        auto a = countSetBitsBuiltin(n);
+        auto b = countSetBitsLookup(n);
+        auto c = countSetBitsKernighan(n);
+        auto d = countSetBitsNaive(n);
+        assert(a == b && b == c && c == d);
+    }
+
+    std::cout << "All tests passed! All methods produce consistent results.\n";
 }
-/**
- * @brief Main function
- * @returns 0 on exit
- */
+
 int main() {
-    test();  // run self-test implementations
+    test();
     return 0;
 }
