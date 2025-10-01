@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Implementation of the Flash Sort algorithm.
+ * @brief Implementation of the Flash Sort algorithm with self-tests.
  * @details
  * Flash Sort is an in-place, linear-time sorting algorithm for uniformly distributed data.
  * It divides the data into classes, rearranges elements into their respective classes,
@@ -10,50 +10,46 @@
  * @author [Sachin Pangal](https://github.com/orthodox-64)
  */
 
+#include <algorithm>
+#include <cassert>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 /**
  * @brief Sorts an array using the Flash Sort algorithm.
  * @param arr The array to be sorted.
- * @param n The number of elements in the array.
  */
- 
- void flashSort(std::vector<float>& arr) {
+void flashSort(std::vector<float>& arr) {
     int n = arr.size();
     if (n <= 1) return;
 
-    // Step 1: Find the minimum and maximum values in the array
     float minVal = *std::min_element(arr.begin(), arr.end());
     float maxVal = *std::max_element(arr.begin(), arr.end());
+    if (minVal == maxVal) return;
 
-    // Step 2: Calculate the number of classes (buckets)
     int numClasses = 0.45 * n;
     if (numClasses < 2) numClasses = 2;
 
-    // Step 3: Create a histogram of the data
     std::vector<int> count(numClasses, 0);
     for (int i = 0; i < n; ++i) {
         int index = numClasses * (arr[i] - minVal) / (maxVal - minVal);
+        if (index >= numClasses) index = numClasses - 1;  // prevent overflow
         count[index]++;
     }
 
-    // Step 4: Calculate the starting index of each class
     std::vector<int> pos(numClasses, 0);
     pos[0] = 0;
     for (int i = 1; i < numClasses; ++i) {
         pos[i] = pos[i - 1] + count[i - 1];
     }
 
-    // Step 5: Rearrange the array into classes
     std::vector<float> temp = arr;
     for (int i = 0; i < n; ++i) {
         int index = numClasses * (arr[i] - minVal) / (maxVal - minVal);
+        if (index >= numClasses) index = numClasses - 1;
         arr[pos[index]++] = temp[i];
     }
 
-    // Step 6: Sort each class using insertion sort
     for (int i = 0; i < numClasses; ++i) {
         int start = pos[i] - count[i];
         int end = pos[i];
@@ -61,14 +57,43 @@
     }
 }
 
-// Driver code to test the Flash Sort
-int main() {
-    std::vector<float> arr = {0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434};
-    flashSort(arr);
+/**
+ * @brief Self-test implementations
+ */
+static void test() {
+    // Test 1
+    std::vector<float> array1 = {0.897f, 0.565f, 0.656f, 0.1234f, 0.665f, 0.3434f};
+    std::cout << "Test 1... ";
+    flashSort(array1);
+    assert(std::is_sorted(array1.begin(), array1.end()));
+    std::cout << "passed" << std::endl;
 
-    std::cout << "Sorted array is: ";
-    for (float num : arr) {
-        std::cout << num << " ";
-    }
+    // Test 2
+    std::vector<float> array2 = {1.2f, 3.4f, 0.5f, 2.2f, 1.1f};
+    std::cout << "Test 2... ";
+    flashSort(array2);
+    assert(std::is_sorted(array2.begin(), array2.end()));
+    std::cout << "passed" << std::endl;
+
+    // Test 3
+    std::vector<float> array3 = {5.0f, 4.0f, 3.0f, 2.0f, 1.0f};
+    std::cout << "Test 3... ";
+    flashSort(array3);
+    assert(std::is_sorted(array3.begin(), array3.end()));
+    std::cout << "passed" << std::endl;
+
+    // Test 4
+    std::vector<float> array4 = {0.1f, 0.1f, 0.1f, 0.1f};
+    std::cout << "Test 4... ";
+    flashSort(array4);
+    assert(std::is_sorted(array4.begin(), array4.end()));
+    std::cout << "passed" << std::endl;
+}
+
+/**
+ * @brief Main function
+ */
+int main() {
+    test();  // execute the tests
     return 0;
 }
