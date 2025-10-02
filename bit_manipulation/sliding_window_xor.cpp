@@ -1,22 +1,23 @@
 /**
  * @file
- * @brief Implementation to [calculate XOR of sliding window of size k in an array of n integers]
- * (https://cses.fi/problemset/task/3426)
+ * @brief Implementation to [calculate XOR of sliding window of size k in an
+ * array of n integers] (https://cses.fi/problemset/task/3426)
  *
  * @details
- * We are given an array of n integers. Our task is to calculate the bitwise XOR of each
- * window of k elements, from left to right, and cumulatively XOR the results into a single value.
- * 
+ * We are given an array of n integers. Our task is to calculate the bitwise XOR
+ * of each window of k elements, from left to right, and cumulatively XOR the
+ * results into a single value.
+ *
  * Worst Case Time Complexity: O(n)
  * Space Complexity: O(n)
- * 
+ *
  * @author [Abhiraj Mandal](https://github.com/DataWorshipper)
  */
 
-#include <cassert>   /// for assert
-#include <cstdint>   
-#include <vector>   
+#include <cassert>  /// for assert
+#include <cstdint>
 #include <iostream>  /// for IO operations
+#include <vector>
 
 /**
  * @namespace bit_manipulation
@@ -31,7 +32,7 @@ namespace sliding_window_xor {
 
 /**
  * @brief Computes cumulative XOR of all windows of size k
- * 
+ *
  * @param n Size of the array
  * @param k Window size
  * @param x Initial value to generate the array
@@ -39,26 +40,20 @@ namespace sliding_window_xor {
  * @param b Increment in array generation
  * @param c Modulo in array generation
  * @returns std::uint64_t The cumulative XOR of all windows of size k
- * 
+ *
  * @details
  * This function generates the array using the recurrence:
  *   arr[0] = x
  *   arr[i] = (a * arr[i-1] + b) % c
- * 
+ *
  * It maintains a sliding window of size k using two pointers l and r:
  * - x1 stores the XOR of the current window
  * - x2 stores the cumulative XOR of all valid windows
- * 
+ *
  * This approach ensures that the algorithm runs in O(n) time.
  */
-std::uint64_t compute(
-    std::uint64_t n,
-    std::uint64_t k,
-    std::uint64_t x,
-    std::uint64_t a,
-    std::uint64_t b,
-    std::uint64_t c) {
-
+std::uint64_t compute(std::uint64_t n, std::uint64_t k, std::uint64_t x,
+                      std::uint64_t a, std::uint64_t b, std::uint64_t c) {
     // Generate the array of n elements
     std::vector<std::uint64_t> arr(n);
     arr[0] = x;  // First element of the array
@@ -109,7 +104,7 @@ static void test() {
     assert(compute(2, 1, 2, 3, 4, 5) == 2);
 
     // Testcase 3: n = 5, k = 2
-    assert(compute(5, 2, 1, 1, 1, 100) == 0 ^ 3 ^ 1 ^ 7); 
+    assert(compute(5, 2, 1, 1, 1, 100) == 0 ^ 3 ^ 1 ^ 7);
 
     // Testcase 4: n = 3, k = 5, expected = 0
     assert(compute(3, 5, 5, 2, 1, 100) == 0);
