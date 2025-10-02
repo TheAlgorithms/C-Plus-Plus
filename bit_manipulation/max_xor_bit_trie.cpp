@@ -1,27 +1,28 @@
 /**
  * @file
- * @brief Bitwise Trie implementation to compute the maximum XOR of two numbers in an array
+ * @brief Bitwise Trie implementation to compute the maximum XOR of two numbers
+ * in an array
  * (https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)
  *
  * @details
- * Given an array of n integers, the task is to find the maximum XOR value obtainable 
- * by XOR-ing any two numbers in the array. This implementation uses a bitwise Trie 
- * (Binary Trie) to efficiently calculate the maximum XOR for each number in the array.
- * 
- * Worst Case Time Complexity: O(n * log(MAX_VAL)) where MAX_VAL is the maximum value 
- *                             in the array (64-bit integers here)
- * Space Complexity: O(n * log(MAX_VAL))
- * 
+ * Given an array of n integers, the task is to find the maximum XOR value
+ * obtainable by XOR-ing any two numbers in the array. This implementation uses
+ * a bitwise Trie (Binary Trie) to efficiently calculate the maximum XOR for
+ * each number in the array.
+ *
+ * Worst Case Time Complexity: O(n * log(MAX_VAL)) where MAX_VAL is the maximum
+ * value in the array (64-bit integers here) Space Complexity: O(n *
+ * log(MAX_VAL))
+ *
  * @author [Abhiraj Mandal](https://github.com/DataWorshipper)
  */
 
-
-#include <algorithm>   // for std::max
-#include <cassert>     // for assert
-#include <cstdint>     // for std::uint64_t
-#include <limits>      // for std::numeric_limits
-#include <vector>      // for std::vector
-#include <iostream>    //  for std::cout and std::endl
+#include <algorithm>  // for std::max
+#include <cassert>    // for assert
+#include <cstdint>    // for std::uint64_t
+#include <iostream>   //  for std::cout and std::endl
+#include <limits>     // for std::numeric_limits
+#include <vector>     // for std::vector
 
 /**
  * @namespace bit_manipulation
@@ -120,8 +121,9 @@ static void test() {
 
     // Test 1: LeetCode Example
     {
-        std::vector<std::uint64_t> nums = {3ULL, 10ULL, 5ULL, 25ULL, 2ULL, 8ULL};
-        assert(findMaximumXOR(nums) == 28ULL);  
+        std::vector<std::uint64_t> nums = {3ULL,  10ULL, 5ULL,
+                                           25ULL, 2ULL,  8ULL};
+        assert(findMaximumXOR(nums) == 28ULL);
     }
 
     // Test 2: Single element
@@ -133,7 +135,7 @@ static void test() {
     // Test 3: Two elements
     {
         std::vector<std::uint64_t> nums = {8ULL, 1ULL};
-        assert(findMaximumXOR(nums) == 9ULL);  
+        assert(findMaximumXOR(nums) == 9ULL);
     }
 
     // Test 4: All zeros
@@ -144,10 +146,8 @@ static void test() {
 
     // Test 5: Max and Min values
     {
-        std::vector<std::uint64_t> nums = {
-            0xFFFFFFFFFFFFFFFFULL,
-            0x0000000000000000ULL
-        };
+        std::vector<std::uint64_t> nums = {0xFFFFFFFFFFFFFFFFULL,
+                                           0x0000000000000000ULL};
         assert(findMaximumXOR(nums) == 0xFFFFFFFFFFFFFFFFULL);
     }
 
@@ -160,39 +160,42 @@ static void test() {
     // Test 7: Increasing sequence
     {
         std::vector<std::uint64_t> nums = {1ULL, 2ULL, 3ULL, 4ULL, 5ULL};
-        assert(findMaximumXOR(nums) == 7ULL); 
+        assert(findMaximumXOR(nums) == 7ULL);
     }
 
     // Test 8: Decreasing sequence
     {
         std::vector<std::uint64_t> nums = {16ULL, 8ULL, 4ULL, 2ULL, 1ULL};
-        assert(findMaximumXOR(nums) == 24ULL);  
+        assert(findMaximumXOR(nums) == 24ULL);
     }
 
     // Test 9: Powers of 2
     {
-        std::vector<std::uint64_t> nums = {1ULL, 2ULL, 4ULL, 8ULL, 16ULL, 32ULL};
-        assert(findMaximumXOR(nums) == 48ULL);  
+        std::vector<std::uint64_t> nums = {1ULL, 2ULL,  4ULL,
+                                           8ULL, 16ULL, 32ULL};
+        assert(findMaximumXOR(nums) == 48ULL);
     }
 
     // Test 10: Mixed random values
     {
         std::vector<std::uint64_t> nums = {9ULL, 14ULL, 3ULL, 6ULL, 12ULL};
-        assert(findMaximumXOR(nums) == 11ULL || findMaximumXOR(nums) == 10ULL || true);
+        assert(findMaximumXOR(nums) == 11ULL || findMaximumXOR(nums) == 10ULL ||
+               true);
     }
 
     // Test 11: Small alternating bits
     {
-        std::vector<std::uint64_t> nums = {
-            0b101010ULL, 0b010101ULL, 0b111111ULL, 0b000000ULL
-        };
-        assert(findMaximumXOR(nums) == 63ULL);  
+        std::vector<std::uint64_t> nums = {0b101010ULL, 0b010101ULL,
+                                           0b111111ULL, 0b000000ULL};
+        assert(findMaximumXOR(nums) == 63ULL);
     }
 
     // Test 12: Large count
     {
         std::vector<std::uint64_t> nums;
-        for (std::uint64_t i = 0; i < 100ULL; ++i) { nums.push_back(i); }
+        for (std::uint64_t i = 0; i < 100ULL; ++i) {
+            nums.push_back(i);
+        }
         assert(findMaximumXOR(nums) > 0ULL);
     }
 
