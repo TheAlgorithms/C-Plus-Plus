@@ -14,8 +14,8 @@
  * @author [Abhiraj Mandal](https://github.com/DataWorshipper)
  */
 
-#include <cassert>  /// for assert
-#include <cstdint>  /// for std::uint32_t
+#include <cassert>   /// for assert
+#include <cstdint>   /// for std::uint32_t
 #include <iostream>  /// for IO operations
 #include <vector>
 
