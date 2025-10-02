@@ -15,7 +15,7 @@
  */
 
 #include <cassert>  /// for assert
-#include <cstdint>
+#include <cstdint>  /// for std::uint32_t
 #include <iostream>  /// for IO operations
 #include <vector>
 
