@@ -11,10 +11,10 @@
  * each number in the array.
  *
  * Worst Case Time Complexity: O(n * log(MAX_VAL)) where MAX_VAL is the maximum
- *  value in the array (64-bit integers here) 
- * 
+ *  value in the array (64-bit integers here)
+ *
  * Space Complexity: O(n * log(MAX_VAL))
- * 
+ *
  *@author [Abhiraj Mandal](https://github.com/DataWorshipper)
  */
 
@@ -119,7 +119,7 @@ std::uint64_t find_maximum_xor(const std::vector<std::uint64_t>& nums) {
  */
 static void test() {
     using bit_manipulation::max_xor_bit_trie::find_maximum_xor;
-    
+
     // Test 1: LeetCode Example
     {
         std::vector<std::uint64_t> nums = {3ULL,  10ULL, 5ULL,
@@ -180,8 +180,8 @@ static void test() {
     // Test 10: Mixed random values
     {
         std::vector<std::uint64_t> nums = {9ULL, 14ULL, 3ULL, 6ULL, 12ULL};
-        assert(find_maximum_xor(nums) == 11ULL || find_maximum_xor(nums) == 10ULL ||
-               true);
+        assert(find_maximum_xor(nums) == 11ULL ||
+               find_maximum_xor(nums) == 10ULL || true);
     }
 
     // Test 11: Small alternating bits
@@ -200,11 +200,12 @@ static void test() {
         assert(find_maximum_xor(nums) > 0ULL);
     }
 
-      // Test 13: Empty Vector Test
-    {    std::vector<std::uint64_t> nums = {};
+    // Test 13: Empty Vector Test
+    {
+        std::vector<std::uint64_t> nums = {};
 
         assert(find_maximum_xor(nums) == 0ULL);
-    } 
+    }
 
     std::cout << "All test cases successfully passed!" << std::endl;
 }
