@@ -17,7 +17,7 @@
 #include <cassert>   /// for assert
 #include <cstdint>   /// for std::uint32_t
 #include <iostream>  /// for IO operations
-#include <vector>
+#include <vector>    /// for std::vector
 
 /**
  * @namespace bit_manipulation
@@ -36,15 +36,15 @@ namespace sliding_window_xor {
  * @param n Size of the array
  * @param k Window size
  * @param x Initial value to generate the array
- * @param a Multiplier in array generation
- * @param b Increment in array generation
- * @param c Modulo in array generation
+ * @param multiplier Multiplier in array generation
+ * @param increment Increment in array generation
+ * @param modulo Modulo in array generation
  * @returns std::uint64_t The cumulative XOR of all windows of size k
  *
  * @details
  * This function generates the array using the recurrence:
  *   arr[0] = x
- *   arr[i] = (a * arr[i-1] + b) % c
+ *   arr[i] = (multiplier * arr[i-1] + increment) % modulo
  *
  * It maintains a sliding window of size k using two pointers l and r:
  * - x1 stores the XOR of the current window
@@ -53,36 +53,36 @@ namespace sliding_window_xor {
  * This approach ensures that the algorithm runs in O(n) time.
  */
 std::uint64_t compute(std::uint64_t n, std::uint64_t k, std::uint64_t x,
-                      std::uint64_t a, std::uint64_t b, std::uint64_t c) {
+                      std::uint64_t multiplier, std::uint64_t increment, std::uint64_t modulo) {
     // Generate the array of n elements
     std::vector<std::uint64_t> arr(n);
     arr[0] = x;  // First element of the array
 
     for (std::uint64_t i = 1; i < n; ++i) {
-        arr[i] = (a * arr[i - 1] + b) % c;  // recurrence relation
+        arr[i] = (multiplier* arr[i - 1] + increment) % modulo;  // recurrence relation
     }
 
     std::uint64_t x1 = 0;  // XOR of the current window
     std::uint64_t x2 = 0;  // Cumulative XOR of all windows of size k
-    std::uint64_t l = 0;   // Left pointer of sliding window
-    std::uint64_t r = 0;   // Right pointer of sliding window
+    std::uint64_t left = 0;   // Left pointer of sliding window
+    std::uint64_t right = 0;   // Right pointer of sliding window
 
     // Slide the window over the array
-    while (r < n) {
-        x1 ^= arr[r];  // include current element in window XOR
+    while (right < n) {
+        x1 ^= arr[right];  // include current element in window XOR
 
         // Shrink window from left if size exceeds k
-        while (r - l + 1 > k) {
-            x1 ^= arr[l];  // remove leftmost element from window XOR
-            ++l;
+        while (right - left + 1 > k) {
+            x1 ^= arr[left];  // remove leftmost element from window XOR
+            ++left;
         }
 
         // If window size equals k, add it to cumulative XOR
-        if (r - l + 1 == k) {
+        if (right - left + 1 == k) {
             x2 ^= x1;
         }
 
-        ++r;  // Move right pointer
+        ++right;  // Move right pointer
     }
 
     return x2;  // Return cumulative XOR of all windows
@@ -122,4 +122,5 @@ static void test() {
 int main() {
     test();  // run self-test implementations
     return 0;
+
 }
