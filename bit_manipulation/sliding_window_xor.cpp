@@ -53,19 +53,21 @@ namespace sliding_window_xor {
  * This approach ensures that the algorithm runs in O(n) time.
  */
 std::uint64_t compute(std::uint64_t n, std::uint64_t k, std::uint64_t x,
-                      std::uint64_t multiplier, std::uint64_t increment, std::uint64_t modulo) {
+                      std::uint64_t multiplier, std::uint64_t increment,
+                      std::uint64_t modulo) {
     // Generate the array of n elements
     std::vector<std::uint64_t> arr(n);
     arr[0] = x;  // First element of the array
 
     for (std::uint64_t i = 1; i < n; ++i) {
-        arr[i] = (multiplier* arr[i - 1] + increment) % modulo;  // recurrence relation
+        arr[i] = (multiplier * arr[i - 1] + increment) %
+                 modulo;  // recurrence relation
     }
 
-    std::uint64_t x1 = 0;  // XOR of the current window
-    std::uint64_t x2 = 0;  // Cumulative XOR of all windows of size k
+    std::uint64_t x1 = 0;     // XOR of the current window
+    std::uint64_t x2 = 0;     // Cumulative XOR of all windows of size k
     std::uint64_t left = 0;   // Left pointer of sliding window
-    std::uint64_t right = 0;   // Right pointer of sliding window
+    std::uint64_t right = 0;  // Right pointer of sliding window
 
     // Slide the window over the array
     while (right < n) {
@@ -122,5 +124,4 @@ static void test() {
 int main() {
     test();  // run self-test implementations
     return 0;
-
 }
