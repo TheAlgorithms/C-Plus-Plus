@@ -2,7 +2,7 @@
  * @file
  * @brief Aho-Corasick Algorithm[](https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick) - Multi-pattern string search.
  * @details Builds a trie + failure links for O(n + m + z) multi-pattern matching. Inspired by GFG/LeetCode #30.
- * @author [Your Name](https://github.com/yourhandle)
+ * @author [Saurabh Kokate](https://github.com/kokatesaurabh)
  */
 #include <cassert>
 #include <iostream>
