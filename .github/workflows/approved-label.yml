@@ -1,4 +1,6 @@
 on: pull_request_review
+permissions:
+  pull-requests: write
 name: Add "approved" label when approved
 permissions:
   pull-requests: write
