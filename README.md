@@ -15,26 +15,26 @@
 
 ## Overview
 
-This repository is a collection of open-source implementation of a variety of algorithms implemented in C++ and licensed under [MIT License](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/LICENSE). These algorithms span a variety of topics from computer science, mathematics and statistics, data science, machine learning, engineering, etc.. The implementations and the associated documentation are meant to provide a learning resource for educators and students. Hence, one may find more than one implementation for the same objective but using a different algorithm strategies and optimizations.
+This repository is a collection of open-source implementation of a variety of algorithms implemented in C++ and licensed under the [MIT License](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/LICENSE). These algorithms span a variety of topics from computer science, mathematics and statistics, data science, machine learning, engineering, etc.. The goal of this project is to provide well-documented, accessible implementations that support learning and experimentation. Hence, one may find more than one implementation for the same objective but using different algorithm strategies and optimizations.
 
 ## Features
 
-- The repository provides implementations of various algorithms in one of the most fundamental general purpose languages - [C++](https://en.wikipedia.org/wiki/C%2B%2B).
-- Well documented source code with detailed explanations provide a valuable resource for educators and students alike.
-- Each source code is atomic using [STL classes](https://en.wikipedia.org/wiki/Standard_Template_Library) and _no external libraries_ are required for their compilation and execution. Thus, the fundamentals of the algorithms can be studied in much depth.
-- Source codes are [compiled and tested](https://github.com/TheAlgorithms/C-Plus-Plus/actions?query=workflow%3A%22Awesome+CI+Workflow%22) for every commit on the latest versions of three major operating systems viz., Windows, MacOS, and Ubuntu (Linux) using MSVC 19 2022, AppleClang 15.0.15, and GNU 13.3.0 respectively.
-- Strict adherence to [C++17](https://en.wikipedia.org/wiki/C%2B%2B17) standard ensures portability of code to embedded systems as well like [ESP32](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/cplusplus.html#c-language-standard), [ARM Cortex](https://developer.arm.com/documentation/101458/2404/Standards-support/Supported-C-C---standards-in-Arm-C-C---Compiler), etc. with little to no changes.
+- The repository provides implementations of various algorithms in one of the most fundamental and versatile general purpose languages - [C++](https://en.wikipedia.org/wiki/C%2B%2B).
+- Well-documented source code with detailed explanations provides a valuable resource for educators and students alike.
+- Each source code is atomic using [STL classes](https://en.wikipedia.org/wiki/Standard_Template_Library), and _no external libraries_ are required for their compilation and execution. Thus, the fundamentals of the algorithms can be studied in much depth.
+- Source codes are [compiled and tested](https://github.com/TheAlgorithms/C-Plus-Plus/actions?query=workflow%3A%22Awesome+CI+Workflow%22) for every commit on the latest versions of three major operating systems viz., Windows, MacOS, and Ubuntu (Linux), using MSVC 19 2022, AppleClang 15.0.15, and GNU 13.3.0, respectively.
+- Adheres strictly to the [C++17](https://en.wikipedia.org/wiki/C%2B%2B17) standard ensures portability of code to embedded systems as well, like [ESP32](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/cplusplus.html#c-language-standard), [ARM Cortex](https://developer.arm.com/documentation/101458/2404/Standards-support/Supported-C-C---standards-in-Arm-C-C---Compiler), etc. with little to no changes.
 - Self-checks within programs ensure correct implementations with confidence.
-- Modular implementations and OpenSource licensing enable the functions to be utilized conveniently in other applications.
+- Modular implementations and Open-Source licensing enable the functions to be utilized conveniently in other applications.
 
 ## Documentation
 
-[Online Documentation](https://TheAlgorithms.github.io/C-Plus-Plus) is generated from the repository source codes directly. The documentation contains all resources including source code snippets, details on execution of the programs, diagrammatic representation of program flow, and links to external resources where necessary. The documentation also introduces interactive source code with links to documentation for C++ STL library functions used.
+[Online Documentation](https://TheAlgorithms.github.io/C-Plus-Plus) is generated from the repository's source codes directly. The documentation contains all resources, including source code snippets, details on execution of the programs, diagrammatic representation of program flow, and links to external resources where necessary. The documentation also introduces interactive source code with links to documentation for the C++ STL library functions used.
 Click on [Files menu](https://TheAlgorithms.github.io/C-Plus-Plus/files.html) to see the list of all the files documented with the code.
 
-[Documentation of Algorithms in C++](https://thealgorithms.github.io/C-Plus-Plus) by [The Algorithms Contributors](https://github.com/TheAlgorithms/C-Plus-Plus/graphs/contributors) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)<br/>
+[Documentation of Algorithms in C++](https://thealgorithms.github.io/C-Plus-Plus) by [The Algorithms Contributors](https://github.com/TheAlgorithms/C-Plus-Plus/graphs/contributors) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)<br/><br>
 <a href="https://creativecommons.org/licenses/by-sa/4.0"><img alt="Creative Commons License" style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" /><img  alt="Credit must be given to the creator" style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" /><img alt="Adaptations must be shared under the same terms" style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" /></a>
 
 ## Contributions
 
-As a community developed and maintained repository, we welcome new un-plagiarized quality contributions. Please read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md).
+As a community developed and maintained repository, we welcome new, un-plagiarized, high-quality contributions. Please read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md) to ensure your submissions meet project standards.
