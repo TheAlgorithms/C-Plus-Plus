@@ -117,71 +117,64 @@ $(function(){initNavTree('df/d66/vector__cross__product_8cpp_source.html','../..
 </div><!--header-->
 <div class="contents">
 <a href="../../df/d66/vector__cross__product_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#include &lt;array&gt;</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dd/d47/namespacemath.html">math</a> {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d91/namespacevector__cross.html">vector_cross</a> {</div>
-<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9">   69</a></span>        std::array&lt;double, 3&gt; <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9">cross</a>(<span class="keyword">const</span> std::array&lt;double, 3&gt; &amp;A, <span class="keyword">const</span> std::array&lt;double, 3&gt; &amp;B) {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            std::array&lt;double, 3&gt; product;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            product[0] = (A[1] * B[2]) - (A[2] * B[1]);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            product[1] = -((A[0] * B[2]) - (A[2] * B[0]));</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            product[2] = (A[0] * B[1]) - (A[1] * B[0]);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">return</span> product;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dd/d47/namespacemath.html">math</a> {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d91/namespacevector__cross.html">vector_cross</a> {</div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9">   74</a></span>std::array&lt;double, 3&gt; <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9">cross</a>(<span class="keyword">const</span> std::array&lt;double, 3&gt; &amp;A,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                            <span class="keyword">const</span> std::array&lt;double, 3&gt; &amp;B) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    std::array&lt;double, 3&gt; product;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    product[0] = (A[1] * B[2]) - (A[2] * B[1]);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    product[1] = -((A[0] * B[2]) - (A[2] * B[0]));</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    product[2] = (A[0] * B[1]) - (A[1] * B[0]);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span> product;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
 </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
-<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8">   83</a></span>        <span class="keywordtype">double</span> <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8">mag</a>(<span class="keyword">const</span> std::array&lt;double, 3&gt; &amp;vec) {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordtype">double</span> magnitude = sqrt((vec[0] * vec[0]) + (vec[1] * vec[1]) + (vec[2] * vec[2]));</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">return</span> magnitude;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span></div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8">   91</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8">mag</a>(<span class="keyword">const</span> std::array&lt;double, 3&gt; &amp;vec) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">double</span> magnitude =</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        sqrt((vec[0] * vec[0]) + (vec[1] * vec[1]) + (vec[2] * vec[2]));</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">return</span> magnitude;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
 </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    } </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>} </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
-<div class="foldopen" id="foldopen00094" data-start="{" data-end="}">
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">   94</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    std::array&lt;double, 3&gt; t_vec = <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a>({1, 2, 3}, {4, 5, 6});</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    assert(t_vec[0] == -3 &amp;&amp; t_vec[1] == 6 &amp;&amp; t_vec[2] == -3);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}  <span class="comment">// namespace vector_cross</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}  <span class="comment">// namespace math</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">double</span> t_mag = <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a>({6, 8, 0});</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    assert(t_mag == 10);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">  103</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    std::array&lt;double, 3&gt; t_vec =</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a>({1, 2, 3}, {4, 5, 6});</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    assert(t_vec[0] == -3 &amp;&amp; t_vec[1] == 6 &amp;&amp; t_vec[2] == -3);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">double</span> t_mag = <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a>({6, 8, 0});</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    assert(t_mag == 10);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    std::array&lt;double, 3&gt; t_vec2 =</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a>({1, 2, 3}, {1, 2, 3});</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    assert(t_vec2[0] == 0 &amp;&amp; t_vec2[1] == 0 &amp;&amp;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>           t_vec2[2] == 0);  <span class="comment">// checking each element</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    assert(<a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a>(t_vec2) ==</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>           0);  <span class="comment">// checking the magnitude is also zero</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}</div>
 </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
-<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../df/d66/vector__cross__product_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">  109</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    std::array&lt;double, 3&gt; vec1;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    std::array&lt;double, 3&gt; vec2;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nPass the first Vector: &quot;</span>;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    std::cin &gt;&gt; vec1[0] &gt;&gt; vec1[1] &gt;&gt; vec1[2];</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nPass the second Vector: &quot;</span>;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    std::cin &gt;&gt; vec2[0] &gt;&gt; vec2[1] &gt;&gt; vec2[2];</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    std::array&lt;double, 3&gt; product = <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a>(vec1, vec2);</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nThe cross product is: &quot;</span> &lt;&lt; product[0] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; product[1] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; product[2] &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Magnitude: &quot;</span> &lt;&lt; <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a>(product) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span></div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../df/d66/vector__cross__product_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">  128</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <a class="code hl_function" href="../../df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
 </div>
 <div class="ttc" id="anamespacemath_html"><div class="ttname"><a href="../../dd/d47/namespacemath.html">math</a></div><div class="ttdoc">for assert</div></div>
 <div class="ttc" id="anamespacevector__cross_html"><div class="ttname"><a href="../../d4/d91/namespacevector__cross.html">vector_cross</a></div><div class="ttdoc">Functions for Vector Cross Product algorithms.</div></div>
-<div class="ttc" id="avector__cross__product_8cpp_html_a225732399c5c076976eae5b180a9f8c9"><div class="ttname"><a href="../../df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a></div><div class="ttdeci">std::array&lt; double, 3 &gt; cross(const std::array&lt; double, 3 &gt; &amp;A, const std::array&lt; double, 3 &gt; &amp;B)</div><div class="ttdoc">Function to calculate the cross product of the passed arrays containing the direction ratios of the t...</div><div class="ttdef"><b>Definition</b> <a href="#l00069">vector_cross_product.cpp:69</a></div></div>
-<div class="ttc" id="avector__cross__product_8cpp_html_a4b2a9757a87c18e1642d72410ecfaba8"><div class="ttname"><a href="../../df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a></div><div class="ttdeci">double mag(const std::array&lt; double, 3 &gt; &amp;vec)</div><div class="ttdoc">Calculates the magnitude of the mathematical vector from it&#39;s direction ratios.</div><div class="ttdef"><b>Definition</b> <a href="#l00083">vector_cross_product.cpp:83</a></div></div>
-<div class="ttc" id="avector__cross__product_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">namespace math</div><div class="ttdef"><b>Definition</b> <a href="#l00094">vector_cross_product.cpp:94</a></div></div>
-<div class="ttc" id="avector__cross__product_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../df/d66/vector__cross__product_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main Function.</div><div class="ttdef"><b>Definition</b> <a href="#l00109">vector_cross_product.cpp:109</a></div></div>
+<div class="ttc" id="avector__cross__product_8cpp_html_a225732399c5c076976eae5b180a9f8c9"><div class="ttname"><a href="../../df/d66/vector__cross__product_8cpp.html#a225732399c5c076976eae5b180a9f8c9">math::vector_cross::cross</a></div><div class="ttdeci">std::array&lt; double, 3 &gt; cross(const std::array&lt; double, 3 &gt; &amp;A, const std::array&lt; double, 3 &gt; &amp;B)</div><div class="ttdoc">Function to calculate the cross product of the passed arrays containing the direction ratios of the t...</div><div class="ttdef"><b>Definition</b> <a href="#l00074">vector_cross_product.cpp:74</a></div></div>
+<div class="ttc" id="avector__cross__product_8cpp_html_a4b2a9757a87c18e1642d72410ecfaba8"><div class="ttname"><a href="../../df/d66/vector__cross__product_8cpp.html#a4b2a9757a87c18e1642d72410ecfaba8">math::vector_cross::mag</a></div><div class="ttdeci">double mag(const std::array&lt; double, 3 &gt; &amp;vec)</div><div class="ttdoc">Calculates the magnitude of the mathematical vector from it&#39;s direction ratios.</div><div class="ttdef"><b>Definition</b> <a href="#l00091">vector_cross_product.cpp:91</a></div></div>
+<div class="ttc" id="avector__cross__product_8cpp_html_aa8dca7b867074164d5f45b0f3851269d"><div class="ttname"><a href="../../df/d66/vector__cross__product_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a></div><div class="ttdeci">static void test()</div><div class="ttdoc">test function.</div><div class="ttdef"><b>Definition</b> <a href="#l00103">vector_cross_product.cpp:103</a></div></div>
+<div class="ttc" id="avector__cross__product_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../df/d66/vector__cross__product_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main Function.</div><div class="ttdef"><b>Definition</b> <a href="#l00128">vector_cross_product.cpp:128</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
