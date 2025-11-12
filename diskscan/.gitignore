@@ -1,0 +1,24 @@
+# Binaries
+diskscan
+diskscan.exe
+diskscan-*
+
+# Test files
+test/
+*.test
+*.out
+
+# Build artifacts
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
