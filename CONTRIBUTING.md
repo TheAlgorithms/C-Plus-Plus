@@ -65,7 +65,7 @@ You can add new algorithms or data structures that are **not present in the repo
 // Let's make sure the array of numbers is ordered after calling the function.
 std::vector<uint64_t> arr = {5, 3, 8, 12, 14, 16, 28, 96, 2, 5977};
 std::vector<uint64_t> arr_sorted = sorting::quick_sort::quick_sort(
-    arr, 0, int(std::end(arr) - std::begin(arr)) - 1);
+    arr, 0, arr.size() - 1);
 
 assert(std::is_sorted(std::begin(arr_sorted), std::end(arr_sorted)));
 ```
