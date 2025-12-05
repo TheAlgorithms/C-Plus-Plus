@@ -97,8 +97,8 @@ assert(backtracking::subset_sum::number_of_subsets(0, array1) ==
  */
 template <typename T>
 bool is_number_on_array(const std::vector<T> &arr, const int &number) {
-    for (int i = 0; i < arr.size(); i++) {
-        if (arr[i] == number) {
+    for (const auto &x : arr) {
+        if (x == number) {
             return true;
         }
         else {
