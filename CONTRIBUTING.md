@@ -65,7 +65,7 @@ You can add new algorithms or data structures that are **not present in the repo
 // Let's make sure the array of numbers is ordered after calling the function.
 std::vector<uint64_t> arr = {5, 3, 8, 12, 14, 16, 28, 96, 2, 5977};
 std::vector<uint64_t> arr_sorted = sorting::quick_sort::quick_sort(
-    arr, 0, int(std::end(arr) - std::begin(arr)) - 1);
+    arr, 0, arr.size() - 1);
 
 assert(std::is_sorted(std::begin(arr_sorted), std::end(arr_sorted)));
 ```
@@ -97,8 +97,8 @@ assert(backtracking::subset_sum::number_of_subsets(0, array1) ==
  */
 template <typename T>
 bool is_number_on_array(const std::vector<T> &arr, const int &number) {
-    for (int i = 0; i < sizeof(arr) / sizeof(int); i++) {
-        if (arr[i] == number) {
+    for (const auto &x : arr) {
+        if (x == number) {
             return true;
         }
         else {
