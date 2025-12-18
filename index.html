@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Algorithm Visualizer</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="module" >
+    import {LISVisualizer, displayResult} from "./app.js";
+    function render(step){
+        if(!step)   return;
+        const bars = document.getElementById("bars");
+        bars.innerHTML = "";
+        step.array.forEach((val,idx)=>{
+            const bar = document.createElement("div");
+            bar.className = "bar bg-blue-500 flex justify-center items-end text-white font-bold";
+            bar.style.height = (val*20)+"px";
+            bar.style.width = "40px";
+            if(step.highlight.includes(idx)){
+                bar.classList.add("bg-red-500");
+            }
+            bar.textContent = val;
+            bars.appendChild(bar);
+        });
+        document.getElementById("msg").textContent = step.message;
+    }
+
+    document.getElementById("startBtn").onclick = () =>{
+        const arr = document.getElementById("inputArr").value.trim().split(" ").map(Number);
+        const res = LISVisualizer.LISLogic(arr);
+        window.LIS_Steps = res.steps;
+        window.LIS_dp = res.dp;
+        window.LIS_Parent = res.parent;
+        window.LIS_array = arr;
+        render(LISVisualizer.resetStep());
+
+    };
+    document.getElementById("stepBtn").onclick = ()=> render(LISVisualizer.nextStep());
+    document.getElementById("backBtn").onclick = ()=> render(LISVisualizer.prevStep());
+    document.getElementById("playBtn").onclick = ()=> LISVisualizer.playSteps((frame)=>render(frame),window.LIS_dp, window.LIS_Parent, window.LIS_array);
+    document.getElementById("stopBtn").onclick = () => render(LISVisualizer.stopPlay());
+    // document.getElementById("resetBtn").onclick = () => render(LISVisualizer.resetStep());
+    document.getElementById("resetBtn").onclick = () => location.reload();
+    document.getElementById("resultBtn").onclick = ()=> {
+        LISVisualizer.stopPlay();
+        render(LIS_Steps[LIS_Steps.length - 1]);
+        const final = displayResult(LIS_dp,LIS_Parent,LIS_array);
+        const box = document.getElementById("lisResult");
+        box.textContent = "LIS Subsequence: " + final.join(" ");
+        box.classList.remove("hidden");
+    };
+</script>
+
+<style>
+  .bar {
+    transition: all 0.25s ease;
+  }
+</style>
+
+</head>
+<body class="text-black p-6">
+
+<h1 class="text-3xl font-bold mb-2">Algorithm Visualizer</h1>
+<h1 class="mb-2">Longest Increasing Subsequence(LIS)</h1>
+<div class="flex items-center space-x-3 mb-6">
+    <input id="inputArr" type="text"
+           placeholder="Enter numbers: e.g. 3 1 8 2 5"
+           class="px-4 py-2 w-[400px] text-black border-2 rounded " />
+
+    <button id="startBtn"
+            class="px-4 py-2 bg-gray-300 border-2 rounded hover:bg-gray-200">
+        Start
+    </button>
+</div>
+
+<div class="space-x-3 mb-8">
+    <button id="backBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> prev </button>
+    <button id="stepBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> next  </button>
+    <button id="playBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> Play </button>
+    <button id="stopBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> Stop </button>
+    <button id="resetBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200 text-black"> Reset </button>
+    <button id="resultBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> Show Result </button>
+</div>
+
+<div id="bars" class="flex items-end space-x-4 h-72 mb-6"></div>
+
+<div id="msg" class="text-xl font-semibold"></div>
+<div id="lisResult" class="text-black border-2 hidden border-green-700 text-xl mt-4"></div>
+
+</body>
+</html>
