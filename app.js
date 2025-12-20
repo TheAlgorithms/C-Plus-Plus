@@ -20,15 +20,20 @@ function LISLogic(arr){
     let parent = Array(n).fill(-1);
 
     for(let i=0;i<n;i++){
+        recordStep(arr,dp,i,-1,`starting dp for ${i}`);
         for(let j=0;j<i;j++){
-            recordStep(arr,dp,i,j,`checking ${arr[j]} < ${arr[i]}`);
+            recordStep(arr,dp,i,j,`check arr[${j}]=${arr[j]} extend subsequence a[${i}]=${arr[i]} `);
 
-            if(arr[j]<arr[i] && dp[j]+1 > dp[i]){
-                dp[i] = dp[j]+1;
-                parent[i] = j;
-                recordStep(arr,dp,i,j,`updating dp[${i}] = dp[${j}]`);
+            if(arr[j]<arr[i]){
+                let nl = dp[j]+1;
+                if(nl > dp[i]){
+                    dp[i] = nl;
+                    parent[i] = j;
+                    recordStep(arr,dp,i,j,`updating dp[${i}] = ${dp[i]} to dp[${j}]+1`);
+                }
             }
         }
+        recordStep(arr,dp,i,-1,`Done Processing index i = ${i}`)
     }
     return {steps,dp,parent};
 }
@@ -67,7 +72,7 @@ function playSteps(onFrame, dp, parent, arr){
     if(playtime)    return;
     playtime = setInterval(()=>{
         if(currStep >= steps.length-1){
-            clearInterval(playTimer);
+            clearInterval(playtime);
             playtime = null;
             const final = displayResult(dp,parent,arr);
             const temp = document.getElementById("lisResult");
@@ -89,8 +94,8 @@ function stopPlay(){
     playtime = null;
 }
 function resetStep(){
-    currStep =0;
-    return steps[currStep];
+    currStep = 0;
+    return steps.length > 0 ? steps[0] : null;
 }
 
 export const LISVisualizer = {

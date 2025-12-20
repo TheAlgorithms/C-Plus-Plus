@@ -5,6 +5,46 @@
 <title>Algorithm Visualizer</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  .bar {
+    transition: all 0.25s ease;
+  }
+</style>
+
+</head>
+<body class="text-black p-6">
+<div class="min-h-screen flex flex-col bg-gray-100 items-center p-6 ">
+    <div class="w-full max-w-3xl shadow-xl p-6">
+        <h1 class="text-3xl font-bold mb-2">Algorithm Visualizer</h1>
+        <h1 class="mb-2">Longest Increasing Subsequence(LIS)</h1>
+        <div class="flex items-center space-x-3 mb-6">
+            <input id="inputArr" type="text"
+                   placeholder="Enter numbers: e.g. 3 1 8 2 5"
+                   class="px-4 py-2 w-[400px] text-black border-2 rounded " />
+        
+            <button id="startBtn"
+                    class="px-4 py-2 bg-gray-300 border-2 rounded hover:bg-gray-200">
+                Start
+            </button>
+        </div>
+        
+        <div class="space-x-3 mb-8">
+            <button id="backBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> prev </button>
+            <button id="stepBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> next  </button>
+            <button id="playBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> Play </button>
+            <button id="stopBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> Stop </button>
+            <button id="resetBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200 text-black"> Reset </button>
+            <button id="resultBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> Show Result </button>
+        </div>
+        
+        <div id="bars" class="flex items-end space-x-4 h-72 mb-6"></div>
+        
+        <div id="msg" class="text-xl font-semibold"></div>
+        <div id="lisResult" class="text-black border-2 hidden border-green-700 text-xl mt-4"></div>
+    </div>
+</div>
+
 <script type="module" >
     import {LISVisualizer, displayResult} from "./app.js";
     function render(step){
@@ -50,42 +90,6 @@
         box.classList.remove("hidden");
     };
 </script>
-
-<style>
-  .bar {
-    transition: all 0.25s ease;
-  }
-</style>
-
-</head>
-<body class="text-black p-6">
-
-<h1 class="text-3xl font-bold mb-2">Algorithm Visualizer</h1>
-<h1 class="mb-2">Longest Increasing Subsequence(LIS)</h1>
-<div class="flex items-center space-x-3 mb-6">
-    <input id="inputArr" type="text"
-           placeholder="Enter numbers: e.g. 3 1 8 2 5"
-           class="px-4 py-2 w-[400px] text-black border-2 rounded " />
-
-    <button id="startBtn"
-            class="px-4 py-2 bg-gray-300 border-2 rounded hover:bg-gray-200">
-        Start
-    </button>
-</div>
-
-<div class="space-x-3 mb-8">
-    <button id="backBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> prev </button>
-    <button id="stepBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> next  </button>
-    <button id="playBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> Play </button>
-    <button id="stopBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> Stop </button>
-    <button id="resetBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200 text-black"> Reset </button>
-    <button id="resultBtn" class="px-3 py-2 bg-gray-300 rounded hover:bg-gray-200"> Show Result </button>
-</div>
-
-<div id="bars" class="flex items-end space-x-4 h-72 mb-6"></div>
-
-<div id="msg" class="text-xl font-semibold"></div>
-<div id="lisResult" class="text-black border-2 hidden border-green-700 text-xl mt-4"></div>
 
 </body>
 </html>
