@@ -93,6 +93,11 @@ std::vector<T> bubble_sort(std::vector<T>& array) {
  * @brief Self-test implementation
  * @return void
  */
+// Example:
+// Input:  5 1 4 2 8
+// Output: 1 2 4 5 8
+
+
 static void test() {
   std::vector<int> vec_1 = {3, 1, -9, 0};
   std::vector<int> sorted_1 = sorting::bubble_sort::bubble_sort(vec_1);
