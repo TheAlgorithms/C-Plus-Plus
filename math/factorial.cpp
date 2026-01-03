@@ -10,7 +10,7 @@
  *
  * @author [Akshay Gupta](https://github.com/Akshay1910)
  */
-
+#include <stdexcept>  /// for std::invalid_argument
 #include <cassert>   /// for assert
 #include <cstdint>
 #include <iostream>  /// for I/O operations
@@ -23,12 +23,13 @@ namespace math {
 /**
  * @brief function to find factorial of given number
  * @param n is the number which is to be factorialized
- * @warning Maximum value for the parameter is 20 as 21!
- * cannot be represented in 64 bit unsigned int
+ * @warning Maximum value for the parameter is 20, as 21!
+ * cannot be represented using 64-bit unsigned integers
  */
 uint64_t factorial(uint8_t n) {
     if (n > 20) {
-        throw std::invalid_argument("maximum value is 20\n");
+        throw std::invalid_argument("Factorial is only supported for values up to 20");
+
     }
     if (n == 0) {
         return 1;
