@@ -40,3 +40,4 @@ a.out
 # Build
 build/
 git_diff.txt
+.vs/ 
