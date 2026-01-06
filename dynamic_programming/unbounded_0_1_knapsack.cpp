@@ -17,8 +17,8 @@
  *
  * ### Algorithm
  * The approach uses dynamic programming to build a solution iteratively.
- * A 2D array is used for memoization to store intermediate results, allowing
- * the function to avoid redundant calculations.
+ * A bottom-up dynamic programming approach is used.
+ * The solution is optimized to use a 1-D DP array to improve space efficiency.
  *
  * @author [Sanskruti Yeole](https://github.com/yeolesanskruti)
  * @see dynamic_programming/0_1_knapsack.cpp
@@ -42,62 +42,39 @@ namespace dynamic_programming {
 namespace unbounded_knapsack {
 
 /**
- * @brief Recursive function to calculate the maximum value obtainable using
+ * @brief Iterative function to calculate the maximum value obtainable using
  *        an unbounded knapsack approach.
  *
- * @param i Current index in the value and weight vectors.
- * @param W Remaining capacity of the knapsack.
+ * @param capacity Maximum capacity of the knapsack.
  * @param val Vector of values corresponding to the items.
  * @note "val" data type can be changed according to the size of the input.
  * @param wt Vector of weights corresponding to the items.
  * @note "wt" data type can be changed according to the size of the input.
- * @param dp 2D vector for memoization to avoid redundant calculations.
  * @return The maximum value that can be obtained for the given index and
  * capacity.
  */
-std::uint16_t KnapSackFilling(std::uint16_t i, std::uint16_t W,
-                              const std::vector<std::uint16_t>& val,
-                              const std::vector<std::uint16_t>& wt,
-                              std::vector<std::vector<int>>& dp) {
-    if (i == 0) {
-        if (wt[0] <= W) {
-            return (W / wt[0]) *
-                   val[0];  // Take as many of the first item as possible
-        } else {
-            return 0;  // Can't take the first item
-        }
-    }
-    if (dp[i][W] != -1)
-        return dp[i][W];  // Return result if available
-
-    int nottake =
-        KnapSackFilling(i - 1, W, val, wt, dp);  // Value without taking item i
-    int take = 0;
-    if (W >= wt[i]) {
-        take = val[i] + KnapSackFilling(i, W - wt[i], val, wt,
-                                        dp);  // Value taking item i
-    }
-    return dp[i][W] =
-               std::max(take, nottake);  // Store and return the maximum value
-}
-
-/**
- * @brief Wrapper function to initiate the unbounded knapsack calculation.
- *
- * @param N Number of items.
- * @param W Maximum weight capacity of the knapsack.
- * @param val Vector of values corresponding to the items.
- * @param wt Vector of weights corresponding to the items.
- * @return The maximum value that can be obtained for the given capacity.
- */
-std::uint16_t unboundedKnapsack(std::uint16_t N, std::uint16_t W,
+std::uint16_t unboundedKnapsack(const std::uint16_t& capacity,
                                 const std::vector<std::uint16_t>& val,
                                 const std::vector<std::uint16_t>& wt) {
-    if (N == 0)
-        return 0;  // Expect 0 since no items
-    std::vector<std::vector<int>> dp(
-        N, std::vector<int>(W + 1, -1));  // Initialize memoization table
-    return KnapSackFilling(N - 1, W, val, wt, dp);  // Start the calculation
+    if (val.size() != wt.size())
+        throw std::invalid_argument("Value and Weight array sizes must match");
+
+    uint16_t N = val.size(), M = capacity;
+    std::vector<uint16_t> dp(M + 1, 0);
+    for (int i = 0; i < N; i++) {
+        std::vector<uint16_t> curr(M + 1, 0);
+        for (int j = 1; j <= M; j++) {
+            uint16_t skip = dp[j];
+            uint16_t include = 0;
+
+            if (j - wt[i] >= 0) {
+                include = val[i] + curr[j - wt[i]];
+            }
+            curr[j] = std::max(include, skip);
+        }
+        dp = curr;
+    }
+    return dp[M];
 }
 
 }  // namespace unbounded_knapsack
@@ -110,56 +87,69 @@ std::uint16_t unboundedKnapsack(std::uint16_t N, std::uint16_t W,
  */
 static void tests() {
     // Test Case 1
-    std::uint16_t N1 = 4;                            // Number of items
     std::vector<std::uint16_t> wt1 = {1, 3, 4, 5};   // Weights of the items
     std::vector<std::uint16_t> val1 = {6, 1, 7, 7};  // Values of the items
     std::uint16_t W1 = 8;  // Maximum capacity of the knapsack
     // Test the function and assert the expected output
     assert(dynamic_programming::unbounded_knapsack::unboundedKnapsack(
-               N1, W1, val1, wt1) == 48);
+               W1, val1, wt1) == 48);
     std::cout << "Maximum Knapsack value "
               << dynamic_programming::unbounded_knapsack::unboundedKnapsack(
-                     N1, W1, val1, wt1)
+                     W1, val1, wt1)
               << std::endl;
 
     // Test Case 2
-    std::uint16_t N2 = 3;                              // Number of items
     std::vector<std::uint16_t> wt2 = {10, 20, 30};     // Weights of the items
     std::vector<std::uint16_t> val2 = {60, 100, 120};  // Values of the items
     std::uint16_t W2 = 5;  // Maximum capacity of the knapsack
     // Test the function and assert the expected output
     assert(dynamic_programming::unbounded_knapsack::unboundedKnapsack(
-               N2, W2, val2, wt2) == 0);
+               W2, val2, wt2) == 0);
     std::cout << "Maximum Knapsack value "
               << dynamic_programming::unbounded_knapsack::unboundedKnapsack(
-                     N2, W2, val2, wt2)
+                     W2, val2, wt2)
               << std::endl;
 
     // Test Case 3
-    std::uint16_t N3 = 3;                           // Number of items
     std::vector<std::uint16_t> wt3 = {2, 4, 6};     // Weights of the items
     std::vector<std::uint16_t> val3 = {5, 11, 13};  // Values of the items
     std::uint16_t W3 = 27;  // Maximum capacity of the knapsack
     // Test the function and assert the expected output
     assert(dynamic_programming::unbounded_knapsack::unboundedKnapsack(
-               N3, W3, val3, wt3) == 27);
+               W3, val3, wt3) == 71);
     std::cout << "Maximum Knapsack value "
               << dynamic_programming::unbounded_knapsack::unboundedKnapsack(
-                     N3, W3, val3, wt3)
+                     W3, val3, wt3)
               << std::endl;
 
     // Test Case 4
-    std::uint16_t N4 = 0;                  // Number of items
     std::vector<std::uint16_t> wt4 = {};   // Weights of the items
     std::vector<std::uint16_t> val4 = {};  // Values of the items
     std::uint16_t W4 = 10;                 // Maximum capacity of the knapsack
     assert(dynamic_programming::unbounded_knapsack::unboundedKnapsack(
-               N4, W4, val4, wt4) == 0);
+               W4, val4, wt4) == 0);
     std::cout << "Maximum Knapsack value for empty arrays: "
               << dynamic_programming::unbounded_knapsack::unboundedKnapsack(
-                     N4, W4, val4, wt4)
+                     W4, val4, wt4)
               << std::endl;
 
+    // Test Case 5
+    std::vector<std::uint16_t> wt5 = {1};
+    std::vector<std::uint16_t> val5 = {2, 5};
+    std::uint16_t W5 = 10;
+
+    bool thrown = false;
+    try {
+        dynamic_programming::unbounded_knapsack::unboundedKnapsack(W5, val5,
+                                                                   wt5);
+    } catch (const std::invalid_argument&) {
+        thrown = true;
+    }
+
+    assert(thrown);
+    std::cout << "Exception correctly thrown for mismatched input sizes\n";
+
+    // All cases passed
     std::cout << "All test cases passed!" << std::endl;
 }
 
