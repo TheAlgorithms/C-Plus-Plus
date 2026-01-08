@@ -45,7 +45,7 @@ bool is_prime(int64_t num) {
     } else if (num % 2 == 0 || num % 3 == 0) {
         return false;
     } else {
-        for (int64_t i = 5; i * i <= num; i = i + 6) {
+        for (int64_t i = 5; i<= num/i; i = i + 6) {
             if (num % i == 0 || num % (i + 2) == 0) {
                 return false;
             }
