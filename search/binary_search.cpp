@@ -4,7 +4,7 @@
  * algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
  * @details
  * Binary search is a search algorithm that finds the position of a target value
- * within a sorted array.Just like looking for a word in a dictionary, in binary search we compare the target value to the middle
+ * within a sorted array. Just like looking for a word in a dictionary, in binary search we compare the target value to the middle
  * element of the array. If they are not equal, then the half in which the target
  * cannot lie is eliminated and the search continues on the remaining half,
  * again taking the middle element to compare to the target value, and repeating
@@ -23,7 +23,7 @@
  *
  * ### Complexities
  *
- * //n is the number of element in the array.
+ * // n is the number of element in the array.
  *
  * Worst-case time complexity	O(log n)
  * Best-case time complexity	O(1)
@@ -48,7 +48,7 @@ namespace search {
 
 /******************************************************************************
  * @namespace binary_search
- * @brief Binary search searching algorihm
+ * @brief Binary search searching algorithm
  *******************************************************************************/
 namespace binary_search {
 
@@ -58,12 +58,15 @@ namespace binary_search {
  * @param val value to be searched
  * @returns @param int index of val in vector arr
  *******************************************************************************/
-uint64_t binarySearch(std::vector<uint64_t> arr, uint64_t val) {
-    uint64_t low = 0;                // set the lowest point of the vector.
-    uint64_t high = arr.size() - 1;  // set the highest point of the vector.
+int64_t binarySearch(std::vector<uint64_t> &arr, uint64_t val) {
+    if(arr.empty()){
+        return -1;
+    }
+    int64_t low = 0;                // set the lowest point of the vector.
+    int64_t high = static_cast<int64_t>(arr.size()) - 1;  // set the highest point of the vector.
 
     while (low <= high) {
-        uint64_t m = low + (high - low) / 2;  // set the pivot point
+        int64_t m = low + (high - low) / 2;  // set the pivot point
 
         if (val == arr[m]) {
             return m;
