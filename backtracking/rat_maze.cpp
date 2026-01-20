@@ -16,9 +16,9 @@
  * @author [David Leal](https://github.com/Panquesito7)
  */
 
-#include <array>
-#include <iostream>
-#include <cassert>
+#include <array>     /// for std::array
+#include <cassert>   /// for assert
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace backtracking
@@ -39,12 +39,14 @@ namespace rat_maze {
  * @param currposcol current position in columns
  * @param maze matrix where numbers are saved
  * @param soln matrix to problem solution
- * @returns 0 on end
+ * @returns `true` if there exists a solution to move one step ahead in a column
+ * or in a row
+ * @returns `false` for the backtracking part
  */
 template <size_t size>
 bool solveMaze(int currposrow, int currposcol,
-              const std::array<std::array<int, size>, size> &maze,
-              std::array<std::array<int, size>, size> soln) {
+               const std::array<std::array<int, size>, size> &maze,
+               std::array<std::array<int, size>, size> soln) {
     if ((currposrow == size - 1) && (currposcol == size - 1)) {
         soln[currposrow][currposcol] = 1;
         for (int i = 0; i < size; ++i) {
@@ -78,10 +80,10 @@ bool solveMaze(int currposrow, int currposcol,
 }  // namespace backtracking
 
 /**
- * @brief Test implementations
+ * @brief Self-test implementations
  * @returns void
  */
-static void test(){
+static void test() {
     const int size = 4;
     std::array<std::array<int, size>, size> maze = {
         std::array<int, size>{1, 0, 1, 0}, std::array<int, size>{1, 0, 1, 1},
@@ -96,8 +98,8 @@ static void test(){
         }
     }
 
-    int currposrow = 0;  // Current position in rows
-    int currposcol = 0;  // Current position in columns
+    int currposrow = 0;  // Current position in the rows
+    int currposcol = 0;  // Current position in the columns
 
     assert(backtracking::rat_maze::solveMaze<size>(currposrow, currposcol, maze,
                                                    soln) == 1);
@@ -108,6 +110,6 @@ static void test(){
  * @returns 0 on exit
  */
 int main() {
-    test(); // run the tests
+    test();  // run self-test implementations
     return 0;
 }

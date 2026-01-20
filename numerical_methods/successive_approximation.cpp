@@ -18,7 +18,7 @@ static float eqd(float y) { return 0.5 * (cos(y) + 2); }
 
 /** Main function */
 int main() {
-    float y, x1, x2, x3, sum, s, a, f1, f2, gd;
+    float y, x1, x2, sum;
     int i, n;
 
     for (i = 0; i < 10; i++) {

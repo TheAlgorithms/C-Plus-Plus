@@ -3,7 +3,7 @@
 Thank you for your Pull Request. Please provide a description above and review
 the requirements below.
 
-Contributors guide: https://github.com/TheAlgorithms/C-Plus-Plus/CONTRIBUTING.md
+Contributors guide: https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTING.md
 -->
 
 #### Checklist

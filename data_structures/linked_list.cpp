@@ -34,7 +34,7 @@ namespace linked_list {
  * This function checks if the string passed consists
  * of only digits.
  * @param s To be checked if s contains only integers
- * @returns true if there are only only digits present in the string
+ * @returns true if there are only digits present in the string
  * @returns false if any other character is found
  */
 bool isDigit(const std::string& s) {
@@ -167,6 +167,9 @@ void list::erase(int old_elem) {
     t->succ() = t->succ()->succ();
     to_be_removed.reset();
     if (t->succ() == nullptr) {
+        last = t;
+    }
+    if (first == last){
         last = nullptr;
     }
 }
@@ -230,6 +233,9 @@ int main() {
         std::cout << "\n\nEnter you choice : ";
         std::cin >> choice;
         switch (choice) {
+            case 0:
+                std::cout << "\nQuitting the program...\n";
+                break;
             case 1:
                 std::cout << "\nEnter the element to be inserted : ";
                 std::cin >> s;

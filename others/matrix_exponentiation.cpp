@@ -128,7 +128,7 @@ int main() {
     cout.tie(0);
     ll t;
     cin >> t;
-    ll i, j, x;
+    ll i, x;
     while (t--) {
         cin >> mat_size;
         for (i = 0; i < mat_size; i++) {

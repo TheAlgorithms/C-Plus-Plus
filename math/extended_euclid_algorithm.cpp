@@ -11,6 +11,7 @@
  */
 #include <algorithm>  // for swap function
 #include <iostream>
+#include <cstdint>
 
 /**
  * function to update the coefficients per iteration

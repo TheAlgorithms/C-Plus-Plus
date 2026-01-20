@@ -222,7 +222,7 @@ using linear_probing::totalSize;
  * @returns 0 on success
  */
 int main() {
-    int cmd = 0, hash = 0, key = 0;
+    int cmd = 0, key = 0;
     std::cout << "Enter the initial size of Hash Table. = ";
     std::cin >> totalSize;
     table = std::vector<Entry>(totalSize);

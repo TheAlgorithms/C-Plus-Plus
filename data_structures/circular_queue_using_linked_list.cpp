@@ -2,35 +2,38 @@
 
 struct node {
     int data;
-    struct node *next;
+    struct node* next;
 };
 class Queue {
-    node *front;
-    node *rear;
+    node* front = nullptr;
+    node* rear = nullptr;
+
+    Queue(const Queue&) = delete;
+    Queue& operator=(const Queue&) = delete;
 
  public:
-    Queue() {
-        front = NULL;
-        rear = NULL;
+    Queue() = default;
+    ~Queue() {
+        while (front) {
+            dequeue();
+        }
     }
+
+ private:
     void createNode(int val) {
-        node *ptr;
-        node *nn;
-        nn = new node;
-        ptr = front;
+        auto* nn = new node;
         nn->data = val;
-        nn->next = NULL;
+        nn->next = nullptr;
         front = nn;
         rear = nn;
     }
+
+ public:
     void enqueue(int val) {
-        if (front == NULL || rear == NULL) {
+        if (front == nullptr || rear == nullptr) {
             createNode(val);
         } else {
-            node *ptr;
-            node *nn;
-            ptr = front;
-            nn = new node;
+            node* nn = new node;
             nn->data = val;
             rear->next = nn;
             nn->next = front;
@@ -38,19 +41,29 @@ class Queue {
         }
     }
     void dequeue() {
-        node *n;
-        n = front;
-        front = front->next;
-        delete (n);
+        if (front == nullptr) {
+            return;
+        }
+        const node* const n = front;
+        if (front == rear) {
+            front = nullptr;
+            rear = nullptr;
+        } else {
+            front = front->next;
+            rear->next = front;
+        }
+        delete n;
     }
     void traverse() {
-        node *ptr;
-        ptr = front;
+        if (front == nullptr) {
+            return;
+        }
+        const node* ptr = front;
         do {
-            std::cout << ptr->data << " ";
+            std::cout << ptr->data << ' ';
             ptr = ptr->next;
-        } while (ptr != rear->next);
-        std::cout << front->data << std::endl;
+        } while (ptr != front);
+        std::cout << '\n';
     }
 };
 int main(void) {

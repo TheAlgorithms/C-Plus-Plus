@@ -1,4 +1,7 @@
+#include <algorithm>
+#include <cmath>
 #include <iostream>
+
 using namespace std;
 const int N = 1e6 + 5;
 int a[N], bucket[N], cnt[N];
@@ -26,7 +29,7 @@ bool mycmp(query x, query y) {
 }
 
 int main() {
-    int n, t, i, j, k = 0;
+    int n, t, i;
     scanf("%d", &n);
     for (i = 0; i < n; i++) scanf("%d", &a[i]);
     bucket_size = ceil(sqrt(n));

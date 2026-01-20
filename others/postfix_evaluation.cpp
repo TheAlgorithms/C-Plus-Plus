@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Evaluation of [Postfix Expression](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
+ * @brief Evaluation of [Postfix
+ * Expression](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
  * @author [Darshana Sarma](https://github.com/Darshana-Sarma)
  * @details
  * Create a stack to store operands (or values).
@@ -11,10 +12,11 @@
  * When the expression is ended, the number in the stack is the final answer
  */
 #include <algorithm>  // for all_of
-#include <array>      // for std::array
 #include <cassert>    // for assert
 #include <iostream>   // for io operations
+#include <stack>      // for std::stack
 #include <string>     // for stof
+#include <vector>     // for std::vector
 
 /**
  * @namespace others
@@ -26,36 +28,6 @@ namespace others {
  * @brief Functions for Postfix Expression algorithm
  */
 namespace postfix_expression {
- /**
- * @brief Creates an array to be used as stack for storing values
- */
-class Stack {
- public:
-    std::array<float, 20> stack{}; ///< Array which will be used to store numbers in the input
-    int stackTop = -1;            ///< Represents the index of the last value added to array. -1 means array is empty
-};
-
-/**
- * @brief Pushing operand, also called the number in the array to the stack
- * @param operand float value from the input array or evaluation
- * @param stack stack containing numbers
- * @returns none
- */
-void push(float operand, Stack *stack) {
-    stack->stackTop++;
-    stack->stack[stack->stackTop] = operand;
-}
-
-/**
- * @brief Popping operand, also called the number from the stack
- * @param stack stack containing numbers
- * @returns operand float on top of stack
- */
-float pop(Stack *stack) {
-    float operand = stack->stack[stack->stackTop];
-    stack->stackTop--;
-    return operand;
-}
 
 /**
  * @brief Checks if scanned string is a number
@@ -74,28 +46,29 @@ bool is_number(const std::string &s) {
  * @param stack containing numbers
  * @returns none
  */
-void evaluate(float a, float b, const std::string &operation, Stack *stack) {
+void evaluate(float a, float b, const std::string &operation,
+              std::stack<float> &stack) {
     float c = 0;
     const char *op = operation.c_str();
     switch (*op) {
         case '+':
-            c = a + b; // Addition of numbers
-            others::postfix_expression::push(c, stack);
+            c = a + b;  // Addition of numbers
+            stack.push(c);
             break;
 
         case '-':
-            c = a - b; // Subtraction of numbers
-            others::postfix_expression::push(c, stack);
+            c = a - b;  // Subtraction of numbers
+            stack.push(c);
             break;
 
         case '*':
-            c = a * b; // Multiplication of numbers
-            others::postfix_expression::push(c, stack);
+            c = a * b;  // Multiplication of numbers
+            stack.push(c);
             break;
 
         case '/':
-            c = a / b; // Division of numbers
-            others::postfix_expression::push(c, stack);
+            c = a / b;  // Division of numbers
+            stack.push(c);
             break;
 
         default:
@@ -104,39 +77,46 @@ void evaluate(float a, float b, const std::string &operation, Stack *stack) {
     }
 }
 
+namespace {
+float remove_from_stack(std::stack<float> &stack) {
+    if (stack.empty()) {
+        throw std::invalid_argument("Not enough operands");
+    }
+    const auto res = stack.top();
+    stack.pop();
+    return res;
+}
+}  // namespace
+
 /**
  * @brief Postfix Evaluation algorithm to compute the value from given input
  * array
- * @tparam N number of array size
- * @param input Array of characters consisting of numbers and operations
+ * @param input vector of strings consisting of numbers and operations
  * @returns stack[stackTop] returns the top value from the stack
  */
-template <std::size_t N>
-float postfix_evaluation(std::array<std::string, N> input) {
-    Stack stack;
-    int j = 0;
+float postfix_evaluation(const std::vector<std::string> &input) {
+    std::stack<float> stack;
 
-    while (j < N) {
-        std::string scan = input[j];
+    for (const auto &scan : input) {
         if (is_number(scan)) {
-            push(std::stof(scan), &stack);
+            stack.push(std::stof(scan));
 
         } else {
-            float op2 = pop(&stack);
-            float op1 = pop(&stack);
+            const auto op2 = remove_from_stack(stack);
+            const auto op1 = remove_from_stack(stack);
 
-            evaluate(op1, op2, scan, &stack);
+            evaluate(op1, op2, scan, stack);
         }
-        j++;
     }
 
-    std::cout << stack.stack[stack.stackTop] << "\n";
-
-    return stack.stack[stack.stackTop];
+    const auto res = remove_from_stack(stack);
+    if (!stack.empty()) {
+        throw std::invalid_argument("Too many operands");
+    }
+    return res;
 }
 }  // namespace postfix_expression
 }  // namespace others
-
 
 /**
  * @brief Test function 1 with input array
@@ -144,7 +124,7 @@ float postfix_evaluation(std::array<std::string, N> input) {
  * @returns none
  */
 static void test_function_1() {
-    std::array<std::string, 7> input = {"2", "3", "1", "*", "+", "9", "-"};
+    std::vector<std::string> input = {"2", "3", "1", "*", "+", "9", "-"};
 
     float answer = others::postfix_expression::postfix_evaluation(input);
 
@@ -153,15 +133,66 @@ static void test_function_1() {
 
 /**
  * @brief Test function 2 with input array
- * {'1', '2', '+', '2', '/', '5', '*', '7', '+'}
+ * {'100', '200', '+', '2', '/', '5', '*', '7', '+'}
  * @returns none
  */
 static void test_function_2() {
-    std::array<std::string, 9> input = {"100", "200", "+", "2", "/",
-                                        "5",   "*",   "7", "+"};
+    std::vector<std::string> input = {"100", "200", "+", "2", "/",
+                                      "5",   "*",   "7", "+"};
     float answer = others::postfix_expression::postfix_evaluation(input);
 
     assert(answer == 757);
+}
+
+static void test_function_3() {
+    std::vector<std::string> input = {
+        "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1",
+        "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1",
+        "+", "+", "+", "+", "+", "+", "+", "+", "+", "+", "+",
+        "+", "+", "+", "+", "+", "+", "+", "+", "+", "+"};
+    float answer = others::postfix_expression::postfix_evaluation(input);
+
+    assert(answer == 22);
+}
+
+static void test_single_input() {
+    std::vector<std::string> input = {"1"};
+    float answer = others::postfix_expression::postfix_evaluation(input);
+
+    assert(answer == 1);
+}
+
+static void test_not_enough_operands() {
+    std::vector<std::string> input = {"+"};
+    bool throws = false;
+    try {
+        others::postfix_expression::postfix_evaluation(input);
+    } catch (std::invalid_argument &) {
+        throws = true;
+    }
+    assert(throws);
+}
+
+static void test_not_enough_operands_empty_input() {
+    std::vector<std::string> input = {};
+    bool throws = false;
+    try {
+        others::postfix_expression::postfix_evaluation(input);
+    } catch (std::invalid_argument &) {
+        throws = true;
+    }
+    assert(throws);
+}
+
+static void test_too_many_operands() {
+    std::vector<std::string> input = {"1", "2"};
+    bool throws = false;
+    try {
+        others::postfix_expression::postfix_evaluation(input);
+    } catch (std::invalid_argument &) {
+        throws = true;
+    }
+    assert(throws);
 }
 
 /**
@@ -171,6 +202,11 @@ static void test_function_2() {
 int main() {
     test_function_1();
     test_function_2();
+    test_function_3();
+    test_single_input();
+    test_not_enough_operands();
+    test_not_enough_operands_empty_input();
+    test_too_many_operands();
 
     std::cout << "\nTest implementations passed!\n";
 

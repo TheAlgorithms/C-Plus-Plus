@@ -9,16 +9,17 @@
  ************************************************************
  * */
 #include <cassert>
+#include <cmath>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <string>
 
-#include "./stack.h"
+#include "./stack.hpp"
 
 int main(int argc, char* argv[]) {
-    double GPA;
-    double highestGPA;
+    double GPA = NAN;
+    double highestGPA = NAN;
     std::string name;
 
     assert(argc == 2);

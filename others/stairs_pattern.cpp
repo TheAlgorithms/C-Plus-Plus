@@ -16,7 +16,7 @@ where number of pairs line is given by user
 /** main function */
 int main() {
     int l, st = 2, x, r, z, n, sp;
-    std::cout << "enter Index ";
+    std::cout << "Enter number of pair - ";
     std::cin >> x;
     z = x;
     for (r = 1; r <= x; r++) {
@@ -26,7 +26,7 @@ int main() {
                 std::cout << " ";
             }
             for (l = 1; l <= st; l++) {
-                std::cout << "*";
+                std::cout << "\\*";
             }
             std::cout << std::endl;
         }

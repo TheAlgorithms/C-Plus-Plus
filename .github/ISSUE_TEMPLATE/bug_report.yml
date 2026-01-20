@@ -1,0 +1,54 @@
+name: Bug report
+description: Create a report to help us improve. Report bugs found while using the project
+title: "[BUG]"
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a general summary of the issue in the Title above
+    validations:
+      required: true
+  - type: textarea
+    id: expectedbhv
+    attributes:
+      label: Expected behavior
+      description: Tell us what should happen
+    validations:
+      required: true
+  - type: textarea
+    id: actualbhv
+    attributes:
+      label: Actual behavior
+      description: Tell us what happens instead
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: |
+         Provide a link to a live example, or an unambiguous set of steps to
+         reproduce this bug. Include code to reproduce, if relevant
+      placeholder: |
+        1.
+        2.
+        3.
+        4.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: How has this bug affected you? What were you trying to accomplish?
+    validations:
+      required: true
+  - type: textarea
+    id: extrainformation
+    attributes:
+      label: Additional information
+      description: Is there anything else we should know about this bug?
+    validations:
+      required: false

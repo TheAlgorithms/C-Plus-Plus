@@ -23,19 +23,26 @@ struct MinHeapNode {
     }
 };
 
+void deleteAll(const MinHeapNode* const root) {
+    if (root) {
+        deleteAll(root->left);
+        deleteAll(root->right);
+        delete root;
+    }
+}
+
 // For comparison of
 // two heap nodes (needed in min heap)
 struct compare {
-    bool operator()(MinHeapNode* l, MinHeapNode* r)
-
-    {
-        return (l->freq > r->freq);
+    bool operator()(const MinHeapNode* const l,
+                    const MinHeapNode* const r) const {
+        return l->freq > r->freq;
     }
 };
 
 // Prints huffman codes from
 // the root of Huffman Tree.
-void printCodes(struct MinHeapNode* root, string str) {
+void printCodes(struct MinHeapNode* root, const string& str) {
     if (!root)
         return;
 
@@ -48,8 +55,8 @@ void printCodes(struct MinHeapNode* root, string str) {
 
 // The main function that builds a Huffman Tree and
 // print codes by traversing the built Huffman Tree
-void HuffmanCodes(char data[], int freq[], int size) {
-    struct MinHeapNode *left, *right, *top;
+void HuffmanCodes(const char data[], const int freq[], int size) {
+    struct MinHeapNode *left, *right;
 
     // Create a min heap & inserts all characters of data[]
     priority_queue<MinHeapNode*, vector<MinHeapNode*>, compare> minHeap;
@@ -74,7 +81,7 @@ void HuffmanCodes(char data[], int freq[], int size) {
         // of this new node. Add this node
         // to the min heap '$' is a special value
         // for internal nodes, not used
-        top = new MinHeapNode('$', left->freq + right->freq);
+        auto* const top = new MinHeapNode('$', left->freq + right->freq);
 
         top->left = left;
         top->right = right;
@@ -85,6 +92,7 @@ void HuffmanCodes(char data[], int freq[], int size) {
     // Print Huffman codes using
     // the Huffman tree built above
     printCodes(minHeap.top(), "");
+    deleteAll(minHeap.top());
 }
 
 // Driver program to test above functions

@@ -81,6 +81,14 @@ void morrisInorder(Btree *root) {
     }
 }
 
+void deleteAll(const Btree *const root) {
+    if (root) {
+        deleteAll(root->left);
+        deleteAll(root->right);
+        delete root;
+    }
+}
+
 int main() {
     // Testing morrisInorder funtion
     Btree *root = NULL;
@@ -88,5 +96,6 @@ int main() {
     for (i = 1; i <= 7; i++) insert(&root, i);
     cout << "Morris Inorder: ";
     morrisInorder(root);
+    deleteAll(root);
     return 0;
 }

@@ -23,7 +23,6 @@
 **/
 
 #include <cassert>
-#include <iostream>
 
 /**
  * Function to compute the number of positive divisors.
@@ -80,13 +79,5 @@ void tests() {
  */
 int main() {
     tests();
-    int n;
-    std::cin >> n;
-    if (n == 0) {
-        std::cout << "All non-zero numbers are divisors of 0 !" << std::endl;
-    } else {
-        std::cout << "Number of positive divisors is : ";
-        std::cout << number_of_positive_divisors(n) << std::endl;
-    }
     return 0;
 }

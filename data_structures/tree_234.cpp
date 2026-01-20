@@ -39,9 +39,9 @@ class Node {
      * @param item the first value we insert to the node
      */
     explicit Node(int64_t item)
-        : count(1),
-          items({{item, 0, 0}}),
-          children({{nullptr, nullptr, nullptr, nullptr}}) {}
+        : items({{item, 0, 0}}),
+          children({{nullptr, nullptr, nullptr, nullptr}}),
+          count(1) {}
 
     /**
      * @brief Get the item count that current saved in the node
@@ -1291,8 +1291,8 @@ static void test2(int64_t n) {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
+ * @param argc commandline argument count
+ * @param argv commandline array of arguments
  * @returns 0 on exit
  */
 int main(int argc, char *argv[]) {
