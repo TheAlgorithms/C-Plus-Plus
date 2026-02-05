@@ -26,6 +26,9 @@
  */
 template <typename T = double, char iterations = 2>
 inline T Fast_InvSqrt(T x) {
+    if (x <= 0) {
+        return std::numeric_limits<T>::quiet_NaN();
+    }
     using Tint = typename std::conditional<sizeof(T) == 8, std::int64_t,
                                            std::int32_t>::type;
     T y = x;
@@ -57,6 +60,9 @@ inline T Fast_InvSqrt(T x) {
  */
 template <typename T = double>
 T Standard_InvSqrt(T number) {
+    if (number <= 0) {
+        return std::numeric_limits<T>::quiet_NaN();
+    }
     T squareRoot = sqrt(number);
     return 1.0f / squareRoot;
 }
