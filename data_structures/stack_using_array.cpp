@@ -2,7 +2,7 @@
 #include <iostream>   /// For std::cout
 #include <memory>     /// For std::unique_ptr
 #include <stdexcept>  /// For std::out_of_range
-
+#include <string>    ///For std::string
 /**
  * @namespace
  * @brief data_structures
