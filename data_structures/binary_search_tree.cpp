@@ -1,174 +1,199 @@
 /**
- * \file
- * \brief A simple tree implementation using structured nodes
- *
- * \todo update code to use C++ STL library features and OO structure
- * \warning This program is a poor implementation - C style - and does not
- * utilize any of the C++ STL features.
+ * @file
+ * @brief Modern C++ Binary Search Tree implementation using OOP and STL
  */
+
 #include <iostream>
+#include <queue>
 
-struct node {
-    int val;
-    node *left;
-    node *right;
+class BinarySearchTree {
+private:
+    struct Node {
+        int data;
+        Node* left;
+        Node* right;
+
+        Node(int value) : data(value), left(nullptr), right(nullptr) {}
+    };
+
+    Node* root;
+
+    /* ================= Private Helper Functions ================= */
+
+    Node* insert(Node* node, int value) {
+        if (node == nullptr)
+            return new Node(value);
+
+        if (value < node->data)
+            node->left = insert(node->left, value);
+        else if (value > node->data)
+            node->right = insert(node->right, value);
+
+        return node;
+    }
+
+    Node* findMax(Node* node) {
+        while (node->right != nullptr)
+            node = node->right;
+        return node;
+    }
+
+    Node* remove(Node* node, int value) {
+        if (node == nullptr)
+            return nullptr;
+
+        if (value < node->data) {
+            node->left = remove(node->left, value);
+        } else if (value > node->data) {
+            node->right = remove(node->right, value);
+        } else {
+            // Case 1: No child
+            if (node->left == nullptr && node->right == nullptr) {
+                delete node;
+                return nullptr;
+            }
+
+            // Case 2: One child
+            if (node->left == nullptr) {
+                Node* temp = node->right;
+                delete node;
+                return temp;
+            }
+
+            if (node->right == nullptr) {
+                Node* temp = node->left;
+                delete node;
+                return temp;
+            }
+
+            // Case 3: Two children
+            Node* temp = findMax(node->left);
+            node->data = temp->data;
+            node->left = remove(node->left, temp->data);
+        }
+
+        return node;
+    }
+
+    void inorder(Node* node) const {
+        if (node == nullptr)
+            return;
+
+        inorder(node->left);
+        std::cout << node->data << " ";
+        inorder(node->right);
+    }
+
+    void preorder(Node* node) const {
+        if (node == nullptr)
+            return;
+
+        std::cout << node->data << " ";
+        preorder(node->left);
+        preorder(node->right);
+    }
+
+    void postorder(Node* node) const {
+        if (node == nullptr)
+            return;
+
+        postorder(node->left);
+        postorder(node->right);
+        std::cout << node->data << " ";
+    }
+
+    void destroy(Node* node) {
+        if (node == nullptr)
+            return;
+
+        destroy(node->left);
+        destroy(node->right);
+        delete node;
+    }
+
+public:
+    BinarySearchTree() : root(nullptr) {}
+
+    ~BinarySearchTree() {
+        destroy(root);
+    }
+
+    void insert(int value) {
+        root = insert(root, value);
+    }
+
+    void remove(int value) {
+        root = remove(root, value);
+    }
+
+    void inorder() const {
+        inorder(root);
+        std::cout << "\n";
+    }
+
+    void preorder() const {
+        preorder(root);
+        std::cout << "\n";
+    }
+
+    void postorder() const {
+        postorder(root);
+        std::cout << "\n";
+    }
+
+    void breadthFirstTraversal() const {
+        if (root == nullptr)
+            return;
+
+        std::queue<Node*> q;
+        q.push(root);
+
+        while (!q.empty()) {
+            Node* temp = q.front();
+            q.pop();
+
+            std::cout << temp->data << " ";
+
+            if (temp->left != nullptr)
+                q.push(temp->left);
+
+            if (temp->right != nullptr)
+                q.push(temp->right);
+        }
+
+        std::cout << "\n";
+    }
 };
 
-struct Queue {
-    node *t[100];
-    int front;
-    int rear;
-};
-
-Queue queue;
-
-void enqueue(node *n) { queue.t[queue.rear++] = n; }
-
-node *dequeue() { return (queue.t[queue.front++]); }
-
-void Insert(node *n, int x) {
-    if (x < n->val) {
-        if (n->left == NULL) {
-            node *temp = new node;
-            temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
-            n->left = temp;
-        } else {
-            Insert(n->left, x);
-        }
-    } else {
-        if (n->right == NULL) {
-            node *temp = new node;
-            temp->val = x;
-            temp->left = NULL;
-            temp->right = NULL;
-            n->right = temp;
-        } else {
-            Insert(n->right, x);
-        }
-    }
-}
-
-int findMaxInLeftST(node *n) {
-    while (n->right != NULL) {
-        n = n->right;
-    }
-    return n->val;
-}
-
-void Remove(node *p, node *n, int x) {
-    if (n->val == x) {
-        if (n->right == NULL && n->left == NULL) {
-            if (x < p->val) {
-                p->right = NULL;
-            } else {
-                p->left = NULL;
-            }
-        } else if (n->right == NULL) {
-            if (x < p->val) {
-                p->right = n->left;
-            } else {
-                p->left = n->left;
-            }
-        } else if (n->left == NULL) {
-            if (x < p->val) {
-                p->right = n->right;
-            } else {
-                p->left = n->right;
-            }
-        } else {
-            int y = findMaxInLeftST(n->left);
-            n->val = y;
-            Remove(n, n->right, y);
-        }
-    } else if (x < n->val) {
-        Remove(n, n->left, x);
-    } else {
-        Remove(n, n->right, x);
-    }
-}
-
-void BFT(node *n) {
-    if (n != NULL) {
-        std::cout << n->val << "  ";
-        enqueue(n->left);
-        enqueue(n->right);
-        BFT(dequeue());
-    }
-}
-
-void Pre(node *n) {
-    if (n != NULL) {
-        std::cout << n->val << "  ";
-        Pre(n->left);
-        Pre(n->right);
-    }
-}
-
-void In(node *n) {
-    if (n != NULL) {
-        In(n->left);
-        std::cout << n->val << "  ";
-        In(n->right);
-    }
-}
-
-void Post(node *n) {
-    if (n != NULL) {
-        Post(n->left);
-        Post(n->right);
-        std::cout << n->val << "  ";
-    }
-}
+/* ================= Example Usage ================= */
 
 int main() {
-    queue.front = 0;
-    queue.rear = 0;
-    int value;
-    int ch;
-    node *root = new node;
-    std::cout << "\nEnter the value of root node :";
-    std::cin >> value;
-    root->val = value;
-    root->left = NULL;
-    root->right = NULL;
-    do {
-        std::cout << "\n1. Insert"
-                  << "\n2. Delete"
-                  << "\n3. Breadth First"
-                  << "\n4. Preorder Depth First"
-                  << "\n5. Inorder Depth First"
-                  << "\n6. Postorder Depth First";
+    BinarySearchTree bst;
 
-        std::cout << "\nEnter Your Choice : ";
-        std::cin >> ch;
-        int x;
-        switch (ch) {
-        case 1:
-            std::cout << "\nEnter the value to be Inserted : ";
-            std::cin >> x;
-            Insert(root, x);
-            break;
-        case 2:
-            std::cout << "\nEnter the value to be Deleted : ";
-            std::cin >> x;
-            Remove(root, root, x);
-            break;
-        case 3:
-            BFT(root);
-            break;
-        case 4:
-            Pre(root);
-            break;
-        case 5:
-            In(root);
-            break;
-        case 6:
-            Post(root);
-            break;
-        }
-    } while (ch != 0);
+    bst.insert(50);
+    bst.insert(30);
+    bst.insert(70);
+    bst.insert(20);
+    bst.insert(40);
+    bst.insert(60);
+    bst.insert(80);
+
+    std::cout << "Inorder: ";
+    bst.inorder();
+
+    std::cout << "Preorder: ";
+    bst.preorder();
+
+    std::cout << "Postorder: ";
+    bst.postorder();
+
+    std::cout << "BFS: ";
+    bst.breadthFirstTraversal();
+
+    bst.remove(70);
+
+    std::cout << "After deleting 70 (Inorder): ";
+    bst.inorder();
 
     return 0;
 }
