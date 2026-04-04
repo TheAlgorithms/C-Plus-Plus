@@ -1,7 +1,7 @@
 
 /**
  * @file
- * @brief [Lazy Segment Tree](https://en.wikipedia.org/wiki/Segment_tree)
+ * @brief [Lazy Segment Tree](https://cp-algorithms.com/data_structures/segment_tree.html)
  * implementation for range updates and range queries.
  * @details A segment tree is a data structure that allows answering range
  * queries over an array effectively, while still being flexible enough to allow
