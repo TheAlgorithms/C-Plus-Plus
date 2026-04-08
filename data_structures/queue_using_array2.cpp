@@ -1,52 +1,70 @@
 #include <iostream>
 
-int queue[10];
+/**
+ * @brief Global array to store queue elements. 
+ * Changed name from 'queue' to 'q_arr' to avoid ambiguity with std::queue.
+ */
+int q_arr[10]; 
 int front = 0;
 int rear = 0;
 
-void Enque(int x) {
+/**
+ * @brief Adds an element to the rear of the queue.
+ * @param x The value to be inserted.
+ */
+void enqueue(int x) {
     if (rear == 10) {
-        std::cout << "\nOverflow";
+        std::cout << "\nQueue Overflow";
     } else {
-        queue[rear++] = x;
+        q_arr[rear++] = x;
     }
 }
 
-void Deque() {
+/**
+ * @brief Removes an element from the front of the queue.
+ */
+void dequeue() {
     if (front == rear) {
-        std::cout << "\nUnderflow";
-    }
-
-    else {
-        std::cout << "\n" << queue[front++] << " deleted";
+        std::cout << "\nQueue Underflow";
+    } else {
+        std::cout << "\n" << q_arr[front++] << " deleted";
+        // Shifting elements to maintain the queue at the start of the array
         for (int i = front; i < rear; i++) {
-            queue[i - front] = queue[i];
+            q_arr[i - front] = q_arr[i];
         }
         rear = rear - front;
         front = 0;
     }
 }
 
+/**
+ * @brief Displays all elements in the queue.
+ */
 void show() {
+    if (front == rear) {
+        std::cout << "\nQueue is Empty";
+        return;
+    }
     for (int i = front; i < rear; i++) {
-        std::cout << queue[i] << "\t";
+        std::cout << q_arr[i] << "\t";
     }
 }
 
 int main() {
     int ch, x;
     do {
-        std::cout << "\n1. Enque";
-        std::cout << "\n2. Deque";
+        std::cout << "\n1. Enqueue";
+        std::cout << "\n2. Dequeue";
         std::cout << "\n3. Print";
+        std::cout << "\n0. Exit";
         std::cout << "\nEnter Your Choice : ";
         std::cin >> ch;
         if (ch == 1) {
-            std::cout << "\nInsert : ";
+            std::cout << "Insert : ";
             std::cin >> x;
-            Enque(x);
+            enqueue(x);
         } else if (ch == 2) {
-            Deque();
+            dequeue();
         } else if (ch == 3) {
             show();
         }
