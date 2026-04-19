@@ -11,12 +11,13 @@
  */
 int jumpSearch(int arr[], int x, int n) {
     // Finding block size to be jumped
+    if(n <= 0) {return -1;}
     int step = std::sqrt(n);
 
     // Finding the block where element is
     // present (if it is present)
     int prev = 0;
-    while (arr[std::min(step, n) - 1] < x) {
+    while (step < n && arr[std::min(step, n) - 1] < x) {
         prev = step;
         step += std::sqrt(n);
         if (prev >= n)
@@ -25,7 +26,7 @@ int jumpSearch(int arr[], int x, int n) {
 
     // Doing a linear search for x in block
     // beginning with prev.
-    while (arr[prev] < x) {
+    while (prev <= std::min(step, n) && arr[prev] < x) {
         prev++;
 
         // If we reached next block or end of
@@ -34,7 +35,7 @@ int jumpSearch(int arr[], int x, int n) {
             return -1;
     }
     // If element is found
-    if (arr[prev] == x)
+    if (prev < n && arr[prev] == x)
         return prev;
 
     return -1;
