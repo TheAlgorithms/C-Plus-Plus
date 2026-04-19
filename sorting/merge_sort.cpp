@@ -12,9 +12,10 @@
  *  based sorting algorithm.
  *  Merge Sort is a divide and conquer algorithm
  *  Time  Complexity: O(n log n) 
+ *  Merge Sort is a stable sorting algorithm (preserves relative order of equal elements).
  *  It is  same for all best case, worst case or average case 
- *  Merge Sort is very efficient when for the small data. 
- *  In built-in sort function merge sort along with quick sort is used. 
+ *  Merge Sort performs efficiently for large datasets due to its O(nlogn) complexity.
+ *  Many standard libraries use hybrid sorting algorithms (e.g., introsort). 
  */
 #include <iostream>
 #include <vector>
