@@ -24,7 +24,7 @@ namespace dynamic_programming {
  * @param heights Array representing the heights of walls
  * @return The amount of trapped rainwater
  */
-uint32_t trappedRainwater(const std::vector<uint32_t>& heights) {
+uint64_t trappedRainwater(const std::vector<uint32_t>& heights) {
     std::size_t n = heights.size();
     if (n <= 2)
         return 0;  // No water can be trapped with less than 3 walls
@@ -39,12 +39,12 @@ uint32_t trappedRainwater(const std::vector<uint32_t>& heights) {
 
     // Calculate the maximum height of wall to the right of each wall
     rightMax[n - 1] = heights[n - 1];
-    for (std::size_t i = n - 2; i < n; --i) {
+    for (std::size_t i = n - 2; i != static_cast<std::size_t>(-1); --i) {
         rightMax[i] = std::max(rightMax[i + 1], heights[i]);
     }
 
     // Calculate the trapped rainwater between walls
-    uint32_t trappedWater = 0;
+    uint64_t trappedWater = 0;
     for (std::size_t i = 0; i < n; ++i) {
         trappedWater +=
             std::max(0u, std::min(leftMax[i], rightMax[i]) - heights[i]);
