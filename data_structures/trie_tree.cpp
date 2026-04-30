@@ -65,7 +65,7 @@ class trie {
      */
     bool search(const std::shared_ptr<trie>& root, const std::string& str,
                 int index) {
-        if (index == str.length()) {
+        if (index == (int)str.length()) {
             if (!root->isEndofWord) {
                 return false;
             }
@@ -115,7 +115,7 @@ class trie {
      * @returns `false` if not found
      */
     bool search(const std::string& str, int index) {
-        if (index == str.length()) {
+        if (index == (int)str.length()) {
             if (!isEndofWord) {
                 return false;
             }
@@ -142,7 +142,7 @@ class trie {
      * @returns `false` if unsuccessful
      */
     bool deleteString(const std::string& str, int index) {
-        if (index == str.length()) {
+        if (index == (int)str.length()) {
             if (!isEndofWord) {
                 return false;
             }
