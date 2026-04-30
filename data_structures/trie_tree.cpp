@@ -29,6 +29,16 @@ class trie {
     std::array<std::shared_ptr<trie>, NUM_CHARS << 1> arr;
     bool isEndofWord = false;  ///< identifier if a node is terminal node
 
+    /** @brief Check whether the current trie node has any children */
+    bool hasChildren() const {
+        for (const auto& child : arr) {
+            if (child) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /**
      * @brief Convert a character to integer for indexing
      *
@@ -137,36 +147,22 @@ class trie {
                 return false;
             }
             isEndofWord = false;
-            // following lines - possible source of error?
-            // for (int i = 0; i < NUM_CHARS; i++)
-            //     if (!arr[i])
-            //         return false;
             return true;
         }
         int j = char_to_int(str[index]);
         if (!arr[j]) {
             return false;
         }
-        bool var = deleteString(str, index + 1);
-        if (var) {
-            arr[j].reset();
-            if (isEndofWord) {
-                return false;
-            } else {
-                int i = 0;
-                for (i = 0; i < NUM_CHARS; i++) {
-                    if (arr[i]) {
-                        return false;
-                    }
-                }
-                return true;
-            }
+        bool deleted = arr[j]->deleteString(str, index + 1);
+        if (!deleted) {
+            return false;
         }
 
-        /* should not return here */
-        std::cout << __func__ << ":" << __LINE__
-                  << "Should not reach this line\n";
-        return false;
+        if (!arr[j]->isEndofWord && !arr[j]->hasChildren()) {
+            arr[j].reset();
+        }
+
+        return true;
     }
 };
 }  // namespace data_structures
@@ -192,10 +188,13 @@ static void test() {
     assert(root.search("World", 0));
     std::cout << "World - " << root.search("World", 0) << "\n";
 
-    // Following lines of code give erroneous output
-    // root.deleteString("hello", 0);
-    // assert(!root.search("hello", 0));
-    // std::cout << "hello - " << root.search("world", 0) << "\n";
+    root.insert("Hell");
+    assert(root.search("Hell", 0));
+    assert(root.search("Hello", 0));
+
+    assert(root.deleteString("Hello", 0));
+    assert(!root.search("Hello", 0));
+    assert(root.search("Hell", 0));
 }
 
 /**
