@@ -4,7 +4,6 @@
  * @author [Krishna Vedala](https://github.com/kvedala)
  * @brief Implementation of [Trie](https://en.wikipedia.org/wiki/Trie) data
  * structure for English alphabets in small characters.
- * @note the function ::data_structure::trie::deleteString might be erroneous
  * @see trie_modern.cpp
  */
 #include <array>
@@ -45,6 +44,20 @@ class trie {
         std::cerr << "Invalid character present. Exiting...";
         std::exit(EXIT_FAILURE);
         return 0;
+    }
+
+    /**
+     * @brief Check if this node has any children
+     * @returns `true` if at least one child exists
+     * @returns `false` if no children exist
+     */
+    bool hasChildren() const {
+        for (int i = 0; i < NUM_CHARS << 1; i++) {
+            if (arr[i]) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /** search a string exists inside a given root trie
@@ -119,13 +132,10 @@ class trie {
     }
 
     /**
-     * removes the string if it is not a prefix of any  other
-     * string, if it is then just sets the ::data_structure::trie::isEndofWord
-     * to false, else removes the given string
-     * @note the function ::data_structure::trie::deleteString might be
-     * erroneous
-     * @todo review the function ::data_structure::trie::deleteString and the
-     * commented lines
+     * @brief Removes the string from the trie.
+     * If the string is a prefix of another word, only unmarks the end
+     * of word flag. Nodes are only pruned when they have no children
+     * and are not the end of another word.
      * @param str string to remove
      * @param index index to remove from
      * @returns `true` if successful
@@ -137,35 +147,25 @@ class trie {
                 return false;
             }
             isEndofWord = false;
-            // following lines - possible source of error?
-            // for (int i = 0; i < NUM_CHARS; i++)
-            //     if (!arr[i])
-            //         return false;
             return true;
         }
         int j = char_to_int(str[index]);
         if (!arr[j]) {
             return false;
         }
-        bool var = deleteString(str, index + 1);
+        bool var = arr[j]->deleteString(str, index + 1);
         if (var) {
-            arr[j].reset();
+            // Only remove the child node if it has no children
+            // and is not the end of another word
+            if (!arr[j]->isEndofWord && !arr[j]->hasChildren()) {
+                arr[j].reset();
+            }
             if (isEndofWord) {
                 return false;
             } else {
-                int i = 0;
-                for (i = 0; i < NUM_CHARS; i++) {
-                    if (arr[i]) {
-                        return false;
-                    }
-                }
-                return true;
+                return !hasChildren();
             }
         }
-
-        /* should not return here */
-        std::cout << __func__ << ":" << __LINE__
-                  << "Should not reach this line\n";
         return false;
     }
 };
@@ -192,10 +192,24 @@ static void test() {
     assert(root.search("World", 0));
     std::cout << "World - " << root.search("World", 0) << "\n";
 
-    // Following lines of code give erroneous output
-    // root.deleteString("hello", 0);
-    // assert(!root.search("hello", 0));
-    // std::cout << "hello - " << root.search("world", 0) << "\n";
+    // Test fix: deleting "Hello" should not delete "Hell"
+    data_structures::trie root2;
+    root2.insert("Hell");
+    root2.insert("Hello");
+
+    assert(root2.search("Hell", 0));
+    assert(root2.search("Hello", 0));
+    std::cout << "Before delete - Hell: " << root2.search("Hell", 0)
+              << ", Hello: " << root2.search("Hello", 0) << "\n";
+
+    root2.deleteString("Hello", 0);
+
+    assert(root2.search("Hell", 0));   // Hell must still exist
+    assert(!root2.search("Hello", 0)); // Hello must be gone
+    std::cout << "After delete  - Hell: " << root2.search("Hell", 0)
+              << ", Hello: " << root2.search("Hello", 0) << "\n";
+
+    std::cout << "All tests passed!\n";
 }
 
 /**
@@ -204,6 +218,5 @@ static void test() {
  */
 int main() {
     test();
-
     return 0;
 }
