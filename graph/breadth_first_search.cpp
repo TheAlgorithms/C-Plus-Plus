@@ -33,7 +33,7 @@
  * We maintain a bool array or a vector to keep track of the vertices
  * which we have visited so that we do not traverse the visited vertices
  * again and again and eventually fall into an infinite loop. Along with this
- * boolen array we use a Queue.
+ * boolean array we use a Queue.
  *
  * 1. First we mark the start vertex as visited.
  * 2. Push this visited vertex in the Queue.
@@ -96,15 +96,15 @@ class Graph {
         /// mapping to keep track of all visited nodes
         std::map<T, bool> visited;
         /// initialise every possible vertex to map to false
-        /// initially none of the vertices are unvisited
-        for (auto const &adjlist : adjacency_list) {
+        /// initially all vertices are marked as unvisited
+        for (auto const& adjlist : adjacency_list) {
             visited[adjlist.first] = false;
-            for (auto const &node : adjacency_list[adjlist.first]) {
+            for (auto const& node : adjacency_list[adjlist.first]) {
                 visited[node] = false;
             }
         }
 
-        /// queue to store the nodes which are yet to be traversed
+        /// queue to store nodes that are yet to be traversed
         std::queue<T> tracker;
 
         /// push the source vertex to queue to begin traversing
@@ -112,12 +112,12 @@ class Graph {
         /// mark the source vertex as visited
         visited[src] = true;
         while (!tracker.empty()) {
-            /// traverse the graph till no connected vertex are left
+            /// traverse the graph until no connected vertices are left
             /// extract a node from queue for further traversal
             T node = tracker.front();
             /// remove the node from the queue
             tracker.pop();
-            for (T const &neighbour : adjacency_list[node]) {
+            for (T const& neighbour : adjacency_list[node]) {
                 /// check every vertex connected to the node which are still
                 /// unvisited
                 if (!visited[neighbour]) {
