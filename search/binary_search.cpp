@@ -67,19 +67,19 @@ int64_t binarySearch(const std::vector<int64_t> & arr, const int64_t val) {
      int64_t high = (int64_t)arr.size() - 1; // set the highest point of the vector.
 
     while (low <= high) {
-        int64_t m = low + (high - low) / 2;  // set the pivot point
+        int64_t mid = low + (high - low) / 2;  // set the pivot point
 
-        if (val == arr[m]) {
-            return m;
+        if (val == arr[mid]) {
+            return mid;
         } /****************************************************
            * if pivot point is the val, return it,
            * else check if val is greater or smaller than pivot value
            * and set the next pivot point accordingly.
            ****************************************************/
-        else if (val < arr[m]) {
-            high = m - 1;
+        else if (val < arr[mid]) {
+            high = mid - 1;
         } else {
-            low = m + 1;
+            low = mid + 1;
         }
     }
     return -1;  // if val is not in the array, return -1.
