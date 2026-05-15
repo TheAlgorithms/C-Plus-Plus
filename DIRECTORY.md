@@ -206,6 +206,7 @@
   * [Double Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/double_factorial.cpp)
   * [Eratosthenes](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/eratosthenes.cpp)
   * [Eulers Totient Function](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/eulers_totient_function.cpp)
+  * [Express N as Power Of A Plus Multiple Of B](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/express_n_as_power_of_a_plus_multiple_of_b.cpp)
   * [Extended Euclid Algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/extended_euclid_algorithm.cpp)
   * [Factorial](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/factorial.cpp)
   * [Fast Power](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/math/fast_power.cpp)
