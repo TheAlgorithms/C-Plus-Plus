@@ -57,13 +57,13 @@ class Queue_Array {
  * @param ele to be added to the end of the queue
  */
 void Queue_Array::enqueue(const int16_t& ele) {
-    if (rear == arr.size() - 1) {
+    if (rear == static_cast<int>(arr.size()) - 1) {
         std::cout << "\nStack is full";
     } else if (front == -1 && rear == -1) {
         front = 0;
         rear = 0;
         arr[rear] = ele;
-    } else if (rear < arr.size()) {
+    } else if (rear < static_cast<int>(arr.size())) {
         ++rear;
         arr[rear] = ele;
     }
