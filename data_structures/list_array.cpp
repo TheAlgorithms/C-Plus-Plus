@@ -46,7 +46,7 @@ struct list {
      * @param val element that will be searched
      * @return index of element in the list if present else -1
      */
-    uint64_t BinarySearch(const std::array<uint64_t, N> &dataArr,
+    int64_t BinarySearch(const std::array<uint64_t, N> &dataArr,
                           const uint64_t &first, const uint64_t &last,
                           const uint64_t &val) {
         // If both pointer cross each other means no element present in the list
@@ -77,7 +77,7 @@ struct list {
      * @param val element that will be searched
      * @return index of element in the list if present else -1
      */
-    uint64_t LinearSearch(const std::array<uint64_t, N> &dataArr,
+    int64_t LinearSearch(const std::array<uint64_t, N> &dataArr,
                           const uint64_t &val) const {
         // Going through each element in the list
         for (uint64_t i = 0; i < top; i++) {
@@ -94,8 +94,8 @@ struct list {
      * @param val element that will be searched
      * @return index of element in the list if present else -1
      */
-    uint64_t search(const uint64_t &val) {
-        uint64_t pos;  // pos variable to store index value of element.
+    int64_t search(const uint64_t &val) {
+        int64_t pos;  // pos variable to store index value of element.
         // if list is sorted, binary search works efficiently else linear search
         // is the only option
         if (isSorted) {
@@ -181,7 +181,7 @@ struct list {
      * @returns void
      */
     void remove(const uint64_t &val) {
-        uint64_t pos = search(val);  // search the index of the value
+        int64_t pos = search(val);  // search the index of the value
         // if search returns -1, element does not present in the list
         if (pos == -1) {
             std::cout << "\n Element does not present in the list ";
