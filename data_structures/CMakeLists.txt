@@ -18,3 +18,5 @@ foreach( testsourcefile ${APP_SOURCES} )
 endforeach( testsourcefile ${APP_SOURCES} )
 
 add_subdirectory(cll)
+
+add_executable(binary_search_tree3 binary_search_tree3.cpp)
