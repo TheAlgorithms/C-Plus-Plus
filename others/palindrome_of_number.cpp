@@ -21,15 +21,23 @@ int main() {
     std::cout << "Enter number = ";
     std::cin >> num;
 
-    std::string s1 = std::to_string(num);  // convert number to string
-    std::string s2 = s1;
+    std::string s = std::to_string(num);
 
-    std::reverse(s1.begin(), s1.end());  // reverse the string
+    int left = 0;
+    int right = s.length() - 1;
 
-    if (s1 == s2)  // check if reverse and original string are identical
-        std::cout << "true";
-    else
-        std::cout << "false";
+    bool is_palindrome = true;
+
+    while (left < right) {
+        if (s[left] != s[right]) {
+            is_palindrome = false;
+            break;
+        }
+        left++;
+        right--;
+    }
+
+    std::cout << (is_palindrome ? "true" : "false");
 
     return 0;
 }
