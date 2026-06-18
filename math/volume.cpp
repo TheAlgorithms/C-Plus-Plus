@@ -103,6 +103,43 @@ template <typename T>
 T cylinder_volume(T radius, T height, double PI = 3.14) {
     return PI * std::pow(radius, 2) * height;
 }
+
+/**
+ * @brief The volume of a [hemi-sphere](https://en.wikipedia.org/wiki/Hemisphere)
+ * @param radius The radius of the hemi-sphere
+ * @param PI The definition of the constant PI
+ * @returns The volume of the hemi-sphere
+ */
+template <typename T>
+T hemisphere_volume(T radius, double PI = 3.14) {
+    return PI * std::pow(radius, 3) * 2 / 3;
+}
+
+/**
+ * @brief The volume of a [capsule](https://en.wikipedia.org/wiki/Capsule_(geometry))
+ * @details A capsule is formed by joining two hemispheres to the ends of a cylinder.
+ * @param radius The radius of the cylindrical and hemispherical parts
+ * @param height The height of the cylindrical part only
+ * @param PI The definition of the constant PI
+ * @returns The volume of the capsule
+ */
+template <typename T>
+T capsule_volume(T radius, T height, double PI = 3.14) {
+    return PI * std::pow(radius, 2) * ((4.0 / 3.0) * radius + height);
+}
+
+/**
+ * @brief The volume of a [torus](https://en.wikipedia.org/wiki/Torus)
+ * @details A torus is a doughnut-shaped object.
+ * @param small_radius The radius of the tube (inner circle radius)
+ * @param large_radius The distance from the center of the torus to the center of the tube
+ * @param PI The definition of the constant PI
+ * @returns The volume of the torus
+ */
+template <typename T>
+T torus_volume(T small_radius, T large_radius, double PI = 3.14) {
+    return 2 * std::pow(PI, 2) * large_radius * std::pow(small_radius, 2);
+}
 }  // namespace math
 
 /**
@@ -225,6 +262,46 @@ static void test() {
     std::cout << "Expected Output: " << double_expected << std::endl;
     std::cout << "Output: " << double_volume << std::endl;
     assert(double_volume == double_expected);
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+
+    // 8th test
+    double_radius = 3.0;
+    double_expected = 56.52; // (3.14 * 3^3 * 2) / 3 = 56.52
+    double_volume = math::hemisphere_volume(double_radius);
+
+    std::cout << "VOLUME OF A HEMI-SPHERE" << std::endl;
+    std::cout << "Input Radius: " << double_radius << std::endl;
+    std::cout << "Expected Output: " << double_expected << std::endl;
+    std::cout << "Output: " << double_volume << std::endl;
+    assert(double_volume == double_expected);
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+
+    // 9th test (Capsule)
+    double_radius = 3.0;
+    double_height = 5.0;
+    // Calculation: 3.14 * 3^2 * ((4/3)*3 + 5) = 28.26 * (4 + 5) = 254.34
+    double_expected = 254.34;
+    double_volume = math::capsule_volume(double_radius, double_height);
+
+    std::cout << "VOLUME OF A CAPSULE" << std::endl;
+    std::cout << "Input Radius: " << double_radius << " Height: " << double_height << std::endl;
+    std::cout << "Expected Output: " << double_expected << std::endl;
+    std::cout << "Output: " << double_volume << std::endl;
+    assert(std::abs(double_volume - double_expected) < 0.0001); // accounting for small floating point variations
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+
+    // 10th test (Torus)
+    double_radius = 2.0;       // small_radius (r)
+    double_height = 6.0;       // using double_height as large_radius (R)
+    // Calculation: 2 * 3.14^2 * 6 * 2^2 = 2 * 9.8596 * 6 * 4 = 473.2608
+    double_expected = 473.2608;
+    double_volume = math::torus_volume(double_radius, double_height);
+
+    std::cout << "VOLUME OF A TORUS" << std::endl;
+    std::cout << "Input Inner Radius: " << double_radius << " Outer Radius: " << double_height << std::endl;
+    std::cout << "Expected Output: " << double_expected << std::endl;
+    std::cout << "Output: " << double_volume << std::endl;
+    assert(std::abs(double_volume - double_expected) < 0.0001);
     std::cout << "TEST PASSED" << std::endl << std::endl;
 }
 
