@@ -121,6 +121,29 @@ template <typename T>
 T hemi_sphere_surface_area(T radius) {
     return 3 * M_PI * pow(radius, 2);
 }
+
+/**
+ * @brief area of a [rhombus](https://en.wikipedia.org/wiki/Rhombus) (d1 * d2 / 2)
+ * @param diagonal1 is the length of the first diagonal
+ * @param diagonal2 is the length of the second diagonal
+ * @returns area of the rhombus
+ */
+template <typename T>
+T rhombus_area(T diagonal1, T diagonal2) {
+    return (diagonal1 * diagonal2) / 2;
+}
+
+/**
+ * @brief area of a [trapezoid](https://en.wikipedia.org/wiki/Trapezoid) ((a + b) * h / 2)
+ * @param base1 is the length of the top parallel side
+ * @param base2 is the length of the bottom parallel side
+ * @param height is the perpendicular distance between the bases
+ * @returns area of the trapezoid
+ */
+template <typename T>
+T trapezoid_area(T base1, T base2, T height) {
+    return ((base1 + base2) * height) / 2;
+}
 }  // namespace math
 
 /**
@@ -287,6 +310,33 @@ static void test() {
 
     std::cout << "SURFACE AREA OF A HEMI-SPHERE" << std::endl;
     std::cout << "Input Radius: " << double_radius << std::endl;
+    std::cout << "Expected Output: " << double_expected << std::endl;
+    std::cout << "Output: " << double_area << std::endl;
+    assert(double_area == double_expected);
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+
+    // 12th test (Rhombus)
+    int_base = 8;     // Using existing int variables for diagonal 1
+    int_height = 10;  // Using existing int variables for diagonal 2
+    int_expected = 40; // (8 * 10) / 2
+    int_area = math::rhombus_area(int_base, int_height);
+
+    std::cout << "AREA OF A RHOMBUS" << std::endl;
+    std::cout << "Input Diagonal 1: " << int_base << " Diagonal 2: " << int_height << std::endl;
+    std::cout << "Expected Output: " << int_expected << std::endl;
+    std::cout << "Output: " << int_area << std::endl;
+    assert(int_area == int_expected);
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+
+    // 13th test (Trapezoid)
+    double_length = 5.0;  // base 1
+    double_width = 9.0;   // base 2
+    double_height = 4.0;  // height
+    double_expected = 28.0; // ((5 + 9) * 4) / 2
+    double_area = math::trapezoid_area(double_length, double_width, double_height);
+
+    std::cout << "AREA OF A TRAPEZOID" << std::endl;
+    std::cout << "Input Base 1: " << double_length << " Base 2: " << double_width << " Height: " << double_height << std::endl;
     std::cout << "Expected Output: " << double_expected << std::endl;
     std::cout << "Output: " << double_area << std::endl;
     assert(double_area == double_expected);
