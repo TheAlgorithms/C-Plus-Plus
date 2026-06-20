@@ -13,6 +13,7 @@
  */
 #include <cassert>
 #include <iostream>
+#include <stdexcept>
 #include <string>
 #include <vector>
 
@@ -30,7 +31,7 @@ namespace morse {
  * @param c Character
  * @returns morse representation string of character
  */
-std::string char_to_morse(const char &c) {
+std::string char_to_morse(const char& c) {
     // return corresponding morse code
     switch (c) {
         case 'a':
@@ -106,8 +107,7 @@ std::string char_to_morse(const char &c) {
         case '0':
             return "-----";
         default:
-            std::cerr << "Found invalid character: " << c << ' ' << std::endl;
-            std::exit(0);
+            throw std::invalid_argument("Found invalid character");
     }
 }
 /**
@@ -115,7 +115,7 @@ std::string char_to_morse(const char &c) {
  * @param s Morse representation
  * @returns corresponding character
  */
-char morse_to_char(const std::string &s) {
+char morse_to_char(const std::string& s) {
     // return corresponding character
     if (s == ".-") {
         return 'a';
@@ -190,8 +190,7 @@ char morse_to_char(const std::string &s) {
     } else if (s == "-----") {
         return '0';
     } else {
-        std::cerr << "Found invalid Morse code: " << s << ' ' << std::endl;
-        std::exit(0);
+        throw std::invalid_argument("Found invalid Morse code");
     }
 }
 /**
@@ -199,11 +198,11 @@ char morse_to_char(const std::string &s) {
  * @param text text to be encrypted
  * @returns new encrypted text
  */
-std::string encrypt(const std::string &text) {
+std::string encrypt(const std::string& text) {
     std::string encrypted_text = "";  // Empty string to store encrypted text
     // Going through each character of text and converting it
     // to morse representation
-    for (const char &c : text) {
+    for (const char& c : text) {
         encrypted_text += ciphers::morse::char_to_morse(c) + " ";
     }
     return encrypted_text;  // Returning encrypted text
@@ -213,7 +212,7 @@ std::string encrypt(const std::string &text) {
  * @param text text to be decrypted
  * @returns new decrypted text
  */
-std::string decrypt(const std::string &text) {
+std::string decrypt(const std::string& text) {
     // Going through each character of text and converting it
     // back to normal representation.
     std::string decrypted_text = "";  // Empty string to store decrypted text
@@ -228,7 +227,7 @@ std::string decrypt(const std::string &text) {
     }
 
     // Traversing through each morse code string
-    for (const std::string &s : splits) {
+    for (const std::string& s : splits) {
         // Add corresponding character
         decrypted_text += ciphers::morse::morse_to_char(s);
     }
