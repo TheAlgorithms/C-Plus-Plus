@@ -66,14 +66,14 @@ T circle_perimeter(T radius) {
 
 /**
  * @brief perimeter of a
- * [parallelogram](https://en.wikipedia.org/wiki/Parallelogram) 2(b + h)
+ * [parallelogram](https://en.wikipedia.org/wiki/Parallelogram) 2(b + s)
  * @param base is the length of the bottom side of the parallelogram
- * @param height is the length of the tallest point in the parallelogram
+ * @param side is the length of the adjacent side of the parallelogram
  * @returns perimeter of the parallelogram
  */
 template <typename T>
-T parallelogram_perimeter(T base, T height) {
-    return 2 * (base + height);
+T parallelogram_perimeter(T base, T side) {
+    return 2 * (base + side);
 }
 
 /**
@@ -119,10 +119,11 @@ T cylinder_surface_perimeter(T radius, T height) {
  */
 static void test() {
     // I/O variables for testing
-    uint16_t int_length = 0;      // 16 bit integer length input
-    uint16_t int_width = 0;       // 16 bit integer width input
-    uint16_t int_base = 0;        // 16 bit integer base input
-    uint16_t int_height = 0;      // 16 bit integer height input
+    uint16_t int_length = 0;  // 16 bit integer length input
+    uint16_t int_width = 0;   // 16 bit integer width input
+    uint16_t int_base = 0;
+    uint16_t int_height = 0;
+    uint16_t int_side = 0;
     uint16_t int_hypotenuse = 0;  // 16 bit integer hypotenuse input
     uint16_t int_sides = 0;       // 16 bit integer sides input
     uint16_t int_expected = 0;    // 16 bit integer expected output
@@ -223,13 +224,13 @@ static void test() {
 
     // 7th test
     int_base = 6;
-    int_height = 7;
+    int_side = 7;
     int_expected = 26;
-    int_perimeter = math::parallelogram_perimeter(int_base, int_height);
+    int_perimeter = math::parallelogram_perimeter(int_base, int_side);
 
     std::cout << "perimeter OF A PARALLELOGRAM" << std::endl;
     std::cout << "Input Base: " << int_base << std::endl;
-    std::cout << "Input Height: " << int_height << std::endl;
+    std::cout << "Input Side: " << int_side << std::endl;
     std::cout << "Expected Output: " << int_expected << std::endl;
     std::cout << "Output: " << int_perimeter << std::endl;
     assert(int_perimeter == int_expected);
