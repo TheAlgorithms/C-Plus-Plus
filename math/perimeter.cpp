@@ -2,7 +2,7 @@
  * @file
  * @brief Implementations for the
  * [perimeter](https://en.wikipedia.org/wiki/Perimeter) of various shapes
- * @details The  of a shape is the amount of 2D space it takes up.
+ * @details The perimeter of a shape is the total length of its boundary.
  * All shapes have a formula for their perimeter.
  * These implementations support multiple return types.
  *
@@ -46,6 +46,7 @@ T rect_perimeter(T length, T width) {
  * b + c)
  * @param base is the length of the bottom side of the triangle
  * @param height is the length of the tallest point in the triangle
+ * @param hypotenuse is the length of the hypotenuse of the triangle
  * @returns perimeter of the triangle
  */
 template <typename T>
@@ -66,14 +67,17 @@ T circle_perimeter(T radius) {
 
 /**
  * @brief perimeter of a
- * [parallelogram](https://en.wikipedia.org/wiki/Parallelogram) 2(b + h)
- * @param base is the length of the bottom side of the parallelogram
- * @param height is the length of the tallest point in the parallelogram
+ * [parallelogram](https://en.wikipedia.org/wiki/Parallelogram) 2(b + s)
+ * @details The perimeter of a parallelogram is twice the sum of its two
+ * distinct side lengths. Note that the slant side length is NOT the same as
+ * the perpendicular height of the parallelogram.
+ * @param base is the length of the base of the parallelogram
+ * @param side is the length of the slant side of the parallelogram
  * @returns perimeter of the parallelogram
  */
 template <typename T>
-T parallelogram_perimeter(T base, T height) {
-    return 2 * (base + height);
+T parallelogram_perimeter(T base, T side) {
+    return 2 * (base + side);
 }
 
 /**
@@ -122,6 +126,7 @@ static void test() {
     uint16_t int_length = 0;      // 16 bit integer length input
     uint16_t int_width = 0;       // 16 bit integer width input
     uint16_t int_base = 0;        // 16 bit integer base input
+    uint16_t int_side = 0;        // 16 bit integer side input
     uint16_t int_height = 0;      // 16 bit integer height input
     uint16_t int_hypotenuse = 0;  // 16 bit integer hypotenuse input
     uint16_t int_sides = 0;       // 16 bit integer sides input
@@ -222,14 +227,17 @@ static void test() {
     std::cout << "TEST PASSED" << std::endl << std::endl;
 
     // 7th test
+    // A parallelogram with base=6 and slant side=7 has perimeter 2*(6+7)=26.
+    // Note: the second argument is the slant side length, not the
+    // perpendicular height.
     int_base = 6;
-    int_height = 7;
+    int_side = 7;
     int_expected = 26;
-    int_perimeter = math::parallelogram_perimeter(int_base, int_height);
+    int_perimeter = math::parallelogram_perimeter(int_base, int_side);
 
     std::cout << "perimeter OF A PARALLELOGRAM" << std::endl;
     std::cout << "Input Base: " << int_base << std::endl;
-    std::cout << "Input Height: " << int_height << std::endl;
+    std::cout << "Input Side: " << int_side << std::endl;
     std::cout << "Expected Output: " << int_expected << std::endl;
     std::cout << "Output: " << int_perimeter << std::endl;
     assert(int_perimeter == int_expected);
