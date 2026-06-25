@@ -115,5 +115,25 @@ static void test() {
  */
 int main() {
     test();  // run self-test implementations
+    // Edge Case 1: Single element stack
+    data_structures::stack_using_queue::Stack single;
+    single.push(100);
+    assert(single.top() == 100);
+    assert(single.size() == 1);
+    single.pop();
+    assert(single.size() == 0);
+
+// Edge Case 2: Pop from empty stack
+    data_structures::stack_using_queue::Stack empty;
+    empty.pop();
+    assert(empty.size() == 0);
+
+// Edge Case 3: Negative numbers
+    data_structures::stack_using_queue::Stack negative;
+    negative.push(-5);
+    negative.push(-10);
+    assert(negative.top() == -10);
+    negative.pop();
+    assert(negative.top() == -5);
     return 0;
 }
