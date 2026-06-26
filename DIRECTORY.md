@@ -321,6 +321,7 @@
   * [Stairs Pattern](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/stairs_pattern.cpp)
   * [Tower Of Hanoi](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/tower_of_hanoi.cpp)
   * [Vector Important Functions](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/others/vector_important_functions.cpp)
+  * [Sliding Window Maximum](https://github.com/TheAlgorithms/C-Plus-Plus/others/sliding_window_maximum.cpp)
 
 ## Physics
   * [Ground To Ground Projectile Motion](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/physics/ground_to_ground_projectile_motion.cpp)

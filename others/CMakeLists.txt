@@ -16,3 +16,5 @@ foreach( testsourcefile ${APP_SOURCES} )
     install(TARGETS ${testname} DESTINATION "bin/others")
 
 endforeach( testsourcefile ${APP_SOURCES} )
+
+add_executable(sliding_window_maximum sliding_window_maximum.cpp)
