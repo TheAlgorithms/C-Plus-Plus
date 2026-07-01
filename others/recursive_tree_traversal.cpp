@@ -380,6 +380,83 @@ void test3() {
 }
 
 /**
+ * @brief 4th test-case
+ * @returns void
+ */
+void test4() {
+    others::recursive_tree_traversals::BT obj4;
+    others::recursive_tree_traversals::Node *root = obj4.createNewNode(1);
+    root->left = obj4.createNewNode(2);
+    root->right = obj4.createNewNode(3);
+
+    root->left->right = obj4.createNewNode(4);
+
+    root->right->left = obj4.createNewNode(5);
+    root->right->right = obj4.createNewNode(6);
+
+    root->left->right->left = obj4.createNewNode(7);
+    root->left->right->right = obj4.createNewNode(8);
+
+    root->right->left->left = obj4.createNewNode(9);
+    root->right->left->right = obj4.createNewNode(10);
+
+    root->right->right->left = obj4.createNewNode(11);
+    root->right->right->right = obj4.createNewNode(12);
+
+    root->left->right->left->left = obj4.createNewNode(13);
+    root->left->right->right->left = obj4.createNewNode(14);
+
+    std::vector<std::uint64_t> actual_result_inorder{2, 13, 7,  4, 14, 8, 1,
+                                                     9, 5,  10, 3, 11, 6, 12};
+    std::vector<std::uint64_t> actual_result_preorder{1, 2, 4, 7,  13, 8,  14,
+                                                      3, 5, 9, 10, 6,  11, 12};
+    std::vector<std::uint64_t> actual_result_postorder{13, 7, 14, 8,  4, 2, 9,
+                                                       10, 5, 11, 12, 6, 3, 1};
+
+    std::vector<std::uint64_t>
+        result_inorder;  ///< result stores the inorder
+                         ///< traversal of the binary tree
+    std::vector<std::uint64_t>
+        result_preorder;  ///< result stores the preorder
+                          ///< traversal of the binary tree
+    std::vector<std::uint64_t>
+        result_postorder;  ///< result stores the postorder
+                           ///< traversal of the binary tree
+
+    std::uint64_t size = actual_result_inorder.size();
+
+    // Calling inorder() function by passing a root node,
+    // and storing the inorder traversal in result_inorder.
+    result_inorder = obj4.inorder(root);
+    std::cout << "Testcase #4: Inorder Traversal...";
+    for (auto i = 0; i < size; ++i) {
+        assert(actual_result_inorder[i] == result_inorder[i]);
+    }
+    std::cout << "Passed!" << std::endl;
+
+    // Calling preorder() function by passing a root node,
+    // and storing the preorder traversal in result_preorder.
+    result_preorder = obj4.preorder(root);
+    std::cout << "Testcase #4: Preorder Traversal...";
+    for (auto i = 0; i < size; ++i) {
+        assert(actual_result_preorder[i] == result_preorder[i]);
+    }
+    std::cout << "Passed!" << std::endl;
+
+    // Calling postorder() function by passing a root node,
+    // and storing the postorder traversal in result_postorder.
+    result_postorder = obj4.postorder(root);
+    std::cout << "Testcase #4: Postorder Traversal...";
+    for (auto i = 0; i < size; ++i) {
+        assert(actual_result_postorder[i] == result_postorder[i]);
+    }
+    std::cout << "Passed!" << std::endl;
+
+    std::cout << std::endl;
+    deleteAll(root);
+}
+
+/**
  * @brief Self-test implementations
  * @returns void
  */
@@ -390,6 +467,8 @@ static void tests() {
     test2();  // run 2nd test-case
     std::cout << "3rd test-case" << std::endl;
     test3();  // run 3rd test-case
+    std::cout << "4th test-case" << std::endl;
+    test4();  // run 4th test-case
 }
 /**
  * @brief Main function
