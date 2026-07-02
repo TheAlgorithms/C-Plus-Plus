@@ -3,7 +3,7 @@
  * @brief GCD using [extended Euclid's algorithm]
  * (https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)
  *
- * Finding coefficients of a and b ie x and y in  Bézout's identity
+ * Finding coefficients of a and b ie x and y in Bézout's identity
  * \f[\text{gcd}(a, b) = a \times x + b \times y \f]
  * This is also used in finding Modular
  * multiplicative inverse of a number. (A * B)%M == 1 Here B is the MMI of A for
@@ -12,6 +12,7 @@
 #include <algorithm>  // for swap function
 #include <iostream>
 #include <cstdint>
+#include <cassert>    // Required for automated testing assertions
 
 /**
  * function to update the coefficients per iteration
@@ -84,14 +85,39 @@ void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y) {
     }
 }
 
+/**
+ * @brief Automated self-test cases matching repository CI standards
+ * @return void
+ */
+/**
+ * @brief Automated self-test cases matching repository CI standards
+ * @return void
+ */
+static void test() {
+    uint32_t gcd;
+    int32_t x, y;
+
+    // Test Case 1: Standard positive integers using recursive function
+    extendedEuclid(uint32_t(35), uint32_t(15), &gcd, &x, &y);
+    assert(gcd == 5);
+
+    // Test Case 2: Standard positive integers using iterative function
+    extendedEuclid_1(uint32_t(35), uint32_t(15), &gcd, &x, &y);
+    assert(gcd == 5);
+
+    // Test Case 3: Coprime numbers (GCD should be 1)
+    extendedEuclid(uint32_t(13), uint32_t(7), &gcd, &x, &y);
+    assert(gcd == 1);
+
+    // Test Case 4: One input is zero
+    extendedEuclid(uint32_t(0), uint32_t(5), &gcd, &x, &y);
+    assert(gcd == 5);
+
+    std::cout << "All automated tests passed successfully!" << std::endl;
+}
+
 /// Main function
 int main() {
-    uint32_t a, b, gcd;
-    int32_t x, y;
-    std::cin >> a >> b;
-    extendedEuclid(a, b, &gcd, &x, &y);
-    std::cout << gcd << " " << x << " " << y << std::endl;
-    extendedEuclid_1(a, b, &gcd, &x, &y);
-    std::cout << gcd << " " << x << " " << y << std::endl;
+    test(); // Execute the non-interactive automated test suite
     return 0;
 }
