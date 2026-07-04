@@ -6,32 +6,42 @@
  * arrives first, gets executed first. If two or more processes arrive
  * simultaneously, the process with smaller process ID gets executed first.
  * @link https://bit.ly/3ABNXOC
- * @author [Pratyush Vatsa](https://github.com/Pratyush219)
+ * @author [Pratyush Vatsa](https://github.com/Pratyush219) (original
+ * skeleton)
  */
 
 #include <algorithm>      /// for sorting
 #include <cassert>        /// for assert
-#include <cstdint>
-#include <cstdlib>        /// random number generation
-#include <ctime>          /// for time
+#include <cstdint>        /// for uint32_t
 #include <iomanip>        /// for formatting the output
 #include <iostream>       /// for IO operations
 #include <queue>          /// for std::priority_queue
+#include <random>         /// for std::mt19937 based random number generation
+#include <tuple>          /// for std::tuple
 #include <unordered_set>  /// for std::unordered_set
 #include <vector>         /// for std::vector
 
-using std::cin;
+/**
+ * @namespace scheduling
+ * @brief CPU scheduling algorithms
+ */
+namespace scheduling {
+/**
+ * @namespace fcfs
+ * @brief Functions for the First Come First Serve algorithm
+ */
+namespace fcfs {
+
 using std::cout;
 using std::endl;
 using std::get;
 using std::left;
 using std::make_tuple;
 using std::priority_queue;
-using std::rand;
-using std::srand;
 using std::tuple;
 using std::unordered_set;
 using std::vector;
+
 /**
  * @brief Comparator function for sorting a vector
  * @tparam S Data type of Process ID
@@ -43,7 +53,7 @@ using std::vector;
  * @returns false if t1 and t2 are in the INCORRECT order
  */
 template <typename S, typename T, typename E>
-bool sortcol(tuple<S, T, E>& t1, tuple<S, T, E>& t2) {
+bool sortcol(const tuple<S, T, E>& t1, const tuple<S, T, E>& t2) {
     if (get<1>(t1) < get<1>(t2)) {
         return true;
     } else if (get<1>(t1) == get<1>(t2) && get<0>(t1) < get<0>(t2)) {
@@ -73,8 +83,8 @@ class Compare {
      * @returns true if the tuples SHOULD be swapped
      * @returns false if the tuples SHOULDN'T be swapped
      */
-    bool operator()(tuple<S, T, E, double, double, double>& t1,
-                    tuple<S, T, E, double, double, double>& t2) {
+    bool operator()(const tuple<S, T, E, double, double, double>& t1,
+                    const tuple<S, T, E, double, double, double>& t2) {
         // Compare arrival times
         if (get<1>(t2) < get<1>(t1)) {
             return true;
@@ -189,7 +199,7 @@ class FCFS {
      * execution
      * @returns void
      */
-    void printResult() {
+    void printResult() const {
         cout << "Status of all the proceses post completion is as follows:"
              << endl;
 
@@ -214,6 +224,9 @@ class FCFS {
 /**
  * @brief Function to be used for testing purposes. This function guarantees the
  * correct solution for FCFS scheduling algorithm.
+ * @tparam S Data type of Process ID
+ * @tparam T Data type of Arrival time
+ * @tparam E Data type of Burst time
  * @param input the input data
  * @details Sorts the input vector according to arrival time. Processes whose
  * arrival times are same get sorted according to process ID For each process,
@@ -224,7 +237,13 @@ class FCFS {
  */
 template <typename S, typename T, typename E>
 vector<tuple<S, T, E, double, double, double>> get_final_status(
-    vector<tuple<uint32_t, uint32_t, uint32_t>> input) {
+    vector<tuple<S, T, E>> input) {
+    // BUG FIX: this used to be hardcoded to
+    // vector<tuple<uint32_t, uint32_t, uint32_t>>, which silently discarded
+    // the S, T, E template parameters for the input type (it only "worked"
+    // because the self-test happened to instantiate everything as
+    // uint32_t). It now genuinely matches the class template like the SJF
+    // file's equivalent function does.
     sort(input.begin(), input.end(), sortcol<S, T, E>);
     vector<tuple<S, T, E, double, double, double>> result(input.size());
     double timeElapsed = 0;
@@ -255,23 +274,31 @@ vector<tuple<S, T, E, double, double, double>> get_final_status(
  * @returns void
  */
 static void test() {
+    // BUG FIX: the original called `srand(time(nullptr))` up to three
+    // times PER PROCESS, inside a tight loop. `time(nullptr)` only has
+    // one-second resolution, so many of those reseeds happened within the
+    // same second and reseeded the generator to the *same* value,
+    // correlating arrival/burst times instead of randomizing them. Seed a
+    // proper Mersenne Twister engine exactly once instead.
+    std::random_device rd;
+    std::mt19937 eng(rd());
+    std::uniform_int_distribution<uint32_t> countDist(1, 1000);
+    std::uniform_int_distribution<uint32_t> timeDist(1, 10000);
+
     for (int i{}; i < 1000; i++) {
-        srand(time(nullptr));
-        uint32_t n = 1 + rand() % 1000;
+        uint32_t n = countDist(eng);
         FCFS<uint32_t, uint32_t, uint32_t> readyQueue;
         vector<tuple<uint32_t, uint32_t, uint32_t>> input(n);
 
-        for (uint32_t i{}; i < n; i++) {
-            get<0>(input[i]) = i;
-            srand(time(nullptr));
-            get<1>(input[i]) = 1 + rand() % 10000;
-            srand(time(nullptr));
-            get<2>(input[i]) = 1 + rand() % 10000;
+        for (uint32_t j{}; j < n; j++) {
+            get<0>(input[j]) = j;
+            get<1>(input[j]) = timeDist(eng);
+            get<2>(input[j]) = timeDist(eng);
         }
 
-        for (uint32_t i{}; i < n; i++) {
-            readyQueue.addProcess(get<0>(input[i]), get<1>(input[i]),
-                                  get<2>(input[i]));
+        for (uint32_t j{}; j < n; j++) {
+            readyQueue.addProcess(get<0>(input[j]), get<1>(input[j]),
+                                  get<2>(input[j]));
         }
         vector<tuple<uint32_t, uint32_t, uint32_t, double, double, double>>
             res = get_final_status<uint32_t, uint32_t, uint32_t>(input);
@@ -281,11 +308,14 @@ static void test() {
     cout << "All the tests have successfully passed!" << endl;
 }
 
+}  // namespace fcfs
+}  // namespace scheduling
+
 /**
  * @brief Entry point of the program
  * @returns 0 on exit
  */
 int main() {
-    test();  // run self-test implementations
+    scheduling::fcfs::test();  // run self-test implementations
     return 0;
 }
