@@ -16,7 +16,7 @@
  * selecting an activity whose start time is not earlier than the finish
  * time of the previously selected activity, yields an optimal solution in
  * O(n log n) time.
- * @author [Your Name](https://github.com/your-github-handle)
+ * @author Humais Ali-https://github.com/humaisali
  */
 
 #include <algorithm>  /// for std::sort
