@@ -1,0 +1,222 @@
+/**
+ *
+ * \file
+ * \brief [Borůvka's Algorithm](https://en.wikipedia.org/wiki/Bor%C5%AFvka%27s_algorithm)
+ * for finding the Minimum Spanning Tree (MST) of a graph.
+ *
+ * \author [Mohammad Tabish](https://github.com/tabishfarhan7)
+ *
+ * \details
+ * Borůvka's algorithm is a greedy method for finding a minimum spanning tree
+ * in a graph. It begins by treating each node as its own separate group. 
+ * Then, it repeatedly finds the cheapest edge connecting each group to a different 
+ * group. It merges these groups together until all nodes form a single connected tree.
+ *
+ * Time Complexity: O(E log V), where V is the number of vertices and E
+ * is the number of edges in the graph.
+ *
+ * <h4>Working</h4>
+ * 1. Place each node in its own separate group.
+ * 2. Create a list to track the cheapest outgoing edge for each group.
+ * 3. Loop while more than 1 group remains:
+ *      a. Check every edge. If it connects two different groups, verify if it's
+ *         the cheapest edge seen so far for either group.
+ *      b. Go through the chosen cheapest edges. If the two ends of an edge
+ *         are still in different groups, merge those groups and add the edge's 
+ *         cost to our total.
+ *
+ */
+
+#include <bits/stdc++.h>
+
+/**
+ *
+ * \namespace graph
+ * \brief Graph Algorithms
+ *
+ */
+namespace graph {
+
+/**
+ * \brief Structure representing a connection (edge) between two nodes
+ */
+struct Edge {
+    int src;    ///< Starting node of the edge
+    int dest;   ///< Ending node of the edge
+    int weight; ///< Cost or distance of this edge
+};
+
+/**
+ * \brief Disjoint Set (Union-Find) data structure
+ * \details Keeps track of which group each node belongs to, and helps merge groups
+ */
+class DisjointSet {
+    std::vector<int> parent_node;
+    std::vector<int> tree_rank;
+
+ public:
+    /**
+     * \brief Setup the groups. Initially, every node is its own boss (parent)
+     * @param total_nodes Number of elements in the graph
+     */
+    explicit DisjointSet(int total_nodes) {
+        parent_node.resize(total_nodes);
+        tree_rank.assign(total_nodes, 0);
+        
+        // At the start, each node is in its own separate group
+        for (int i = 0; i < total_nodes; ++i) {
+            parent_node[i] = i; 
+        }
+    }
+
+    /**
+     * \brief Finds the main representative (root) of the group a node belongs to
+     * @param node The node we want to check
+     * @return int The root node of this group
+     */
+    int find_root(int node) {
+        // If the node is its own parent, we found the root
+        if (parent_node[node] == node) {
+            return node;
+        }
+        // Otherwise, ask the parent, and update the parent to point directly 
+        // to the root for faster lookups next time (Path Compression).
+        return parent_node[node] = find_root(parent_node[node]); 
+    }
+
+    /**
+     * \brief Merges the two groups that node1 and node2 belong to
+     * @param node1 First node
+     * @param node2 Second node
+     */
+    void merge_groups(int node1, int node2) {
+        int root1 = find_root(node1);
+        int root2 = find_root(node2);
+
+        // Only merge if they are in different groups
+        if (root1 != root2) {
+            // Attach the smaller tree under the taller tree to keep it balanced
+            if (tree_rank[root1] < tree_rank[root2]) {
+                parent_node[root1] = root2;
+            } else if (tree_rank[root1] > tree_rank[root2]) {
+                parent_node[root2] = root1;
+            } else {
+                parent_node[root2] = root1;
+                tree_rank[root1]++;     // Increase height if they were the same size
+            }
+        }
+    }
+};
+
+/**
+ * \brief Executes Borůvka's algorithm to find the Minimum Spanning Tree
+ *
+ * @param total_nodes Number of vertices in the graph
+ * @param edges List of all edges in the graph
+ * @return int Total cost of the Minimum Spanning Tree. Returns -1 if 
+ * the graph is completely disconnected.
+ */
+int boruvka(int total_nodes, const std::vector<Edge>& edges) {
+    // If the graph is empty, the cost is 0.
+    if (total_nodes==0) {
+        return 0;
+    }
+
+    DisjointSet union_find(total_nodes);
+    int total_cost =0;
+    int remaining_groups=total_nodes;
+
+    // Keep combining groups until everything is connected into 1 big group
+    while (remaining_groups>1){
+        // This array holds the index of the cheapest edge for each group
+        // We fill it with -1 to mean "we haven't found an edge yet"
+        std::vector<int> cheapest_edge_index(total_nodes, -1);
+
+        // Step 1: Look at every edge to find the cheapest outgoing connection for every group
+        for (int i = 0;i<edges.size();++i){
+            int root1 = union_find.find_root(edges[i].src);
+            int root2 = union_find.find_root(edges[i].dest);
+
+            // If this edge connects two different groups
+            if (root1 !=root2){
+                // Check if it's the cheapest edge for group 1
+                if (cheapest_edge_index[root1] == -1 || 
+                    edges[cheapest_edge_index[root1]].weight > edges[i].weight) {
+                    cheapest_edge_index[root1] = i;
+                }
+                // Check if it's the cheapest edge for group 2
+                if (cheapest_edge_index[root2] == -1 || 
+                    edges[cheapest_edge_index[root2]].weight > edges[i].weight) {
+                    cheapest_edge_index[root2] = i;
+                }
+            }
+        }
+
+        bool did_we_merge_anything = false;
+
+        // Step 2: Actually merge the groups using the cheapest edges we just found
+        for (int i = 0;i<total_nodes;++i){
+            if (cheapest_edge_index[i] != -1){
+                int edge_idx = cheapest_edge_index[i];
+                int root1 = union_find.find_root(edges[edge_idx].src);
+                int root2 = union_find.find_root(edges[edge_idx].dest);
+
+                // If they haven't been merged by another edge already
+                if (root1 != root2){
+                    union_find.merge_groups(root1, root2);
+                    total_cost += edges[edge_idx].weight;
+                    remaining_groups--;
+                    did_we_merge_anything = true;
+                }
+            }
+        }
+
+        // If we looked at all edges and couldn't merge anything, but we still 
+        // have more than 1 group, the graph is impossible to fully connect.
+        if (!did_we_merge_anything && remaining_groups > 1){
+            return -1; 
+        }
+    }
+
+    return total_cost;
+}
+
+}  // namespace graph
+
+/**
+ * \brief Self-test implementations to verify the algorithm
+ */
+void test(){
+    // Test Case 1: Simple connected graph
+    // Node 0 connected to 1, 2, and 3. Nodes 1 and 2 also connected to 3.
+    std::vector<graph::Edge> edges1 = {
+        {0, 1, 10}, {0, 2, 6}, {0, 3, 5}, {1, 3, 15}, {2, 3, 4}
+    };
+    assert(graph::boruvka(4, edges1) == 19);
+    std::cout << "Test Case 1 Passed!" << std::endl;
+
+    // Test Case 2: Disconnected graph (0 connects to 1, 2 connects to 3)
+    std::vector<graph::Edge> edges2 ={
+        {0, 1, 10},{2, 3, 5}
+    };
+    assert(graph::boruvka(4, edges2) == -1);
+    std::cout << "Test Case 2 Passed!" << std::endl;
+
+    // Test Case 3: Graph with a single node (0 edges)
+    std::vector<graph::Edge> edges3 = {};
+    assert(graph::boruvka(1, edges3) == 0);
+    std::cout << "Test Case 3 Passed!" << std::endl;
+
+    // Test Case 4: Triangle graph
+    std::vector<graph::Edge> edges4 = {
+        {0, 1, 1}, {1, 2, 2}, {2, 0, 3}
+    };
+    assert(graph::boruvka(3, edges4) == 3);
+    std::cout << "Test Case 4 Passed!" << std::endl;
+}
+
+/** Main function */
+int main() {
+    test();
+    return 0;
+}
