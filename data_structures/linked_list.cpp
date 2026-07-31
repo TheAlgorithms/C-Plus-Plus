@@ -14,6 +14,7 @@
  * to point to the node that the current node is pointing to, and then returning
  * the current node to heap store.
  */
+#include <cassert>
 #include <iostream>
 #include <memory>
 #include <string>
@@ -100,6 +101,7 @@ class list {
     void erase(int old_elem);
     void display();
     std::shared_ptr<link> search(int find_elem);
+    std::shared_ptr<link> find_middle();
     void reverse();
 };
 
@@ -169,7 +171,7 @@ void list::erase(int old_elem) {
     if (t->succ() == nullptr) {
         last = t;
     }
-    if (first == last){
+    if (first == last) {
         last = nullptr;
     }
 }
@@ -210,8 +212,62 @@ std::shared_ptr<link> list::search(int find_elem) {
     std::cout << "Element was found\n";
     return t->succ();
 }
+
+/**
+ * @brief Finds the middle node of the list using Fast and Slow pointers.
+ * @details The fast pointer moves two steps while the slow pointer moves one.
+ * @return std::shared_ptr<link> pointing to the middle element, or nullptr if
+ * empty.
+ */
+std::shared_ptr<link> list::find_middle() {
+    if (isEmpty()) {
+        return nullptr;
+    }
+
+    std::shared_ptr<link> slow = first->succ();
+    std::shared_ptr<link> fast = first->succ();
+
+    while (fast != nullptr && fast->succ() != nullptr) {
+        slow = slow->succ();
+        fast = fast->succ()->succ();
+    }
+    return slow;
+}
+
 }  // namespace linked_list
 }  // namespace data_structures
+
+/**
+ * @brief Self-test implementations using assertions to fulfill repository
+ * checks
+ */
+void test() {
+    data_structures::linked_list::list odd_list;
+    odd_list.push_back(10);
+    odd_list.push_back(20);
+    odd_list.push_back(30);
+    odd_list.push_back(40);
+    odd_list.push_back(50);
+    // Middle of 10->20->30->40->50 should be 30
+    assert(odd_list.find_middle() != nullptr);
+    assert(odd_list.find_middle()->val() == 30);
+
+    data_structures::linked_list::list even_list;
+    even_list.push_back(10);
+    even_list.push_back(20);
+    even_list.push_back(30);
+    even_list.push_back(40);
+    // Middle of 10->20->30->40 (even elements) returns the second middle: 30
+    assert(even_list.find_middle() != nullptr);
+    assert(even_list.find_middle()->val() == 30);
+
+    data_structures::linked_list::list empty_list;
+    // An empty list should return a nullptr safely
+    assert(empty_list.find_middle() == nullptr);
+
+    std::cout
+        << "All fast & slow pointer test assertions passed successfully!\n";
+}
 
 /**
  * Main function:
@@ -220,6 +276,7 @@ std::shared_ptr<link> list::search(int find_elem) {
  * @returns 0 on exit
  */
 int main() {
+    test();
     data_structures::linked_list::list l;
     int choice = 0;
     int x = 0;
@@ -229,6 +286,7 @@ int main() {
         std::cout << "\n2. Delete";
         std::cout << "\n3. Search";
         std::cout << "\n4. Print";
+        std::cout << "\n5. Find Middle (Fast/Slow)";
         std::cout << "\n0. Exit";
         std::cout << "\n\nEnter you choice : ";
         std::cin >> choice;
@@ -272,6 +330,17 @@ int main() {
                 l.display();
                 std::cout << "\n";
                 break;
+            case 5: {
+                std::shared_ptr<data_structures::linked_list::link> mid =
+                    l.find_middle();
+                if (mid != nullptr) {
+                    std::cout << "The middle element is: " << mid->val()
+                              << "\n";
+                } else {
+                    std::cout << "The list is empty.\n";
+                }
+                break;
+            }
             default:
                 std::cout << "Invalid Input\n" << std::endl;
                 break;
