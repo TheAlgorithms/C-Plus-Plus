@@ -10,7 +10,8 @@
  * given M, so extendedEuclid (A, M) gives B.
  */
 #include <algorithm>  // for swap function
-#include <iostream>
+#include <cassert>  /// for assert
+#include <iostream>  /// for IO operations
 #include <cstdint>
 
 /**
@@ -84,14 +85,53 @@ void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y) {
     }
 }
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    uint32_t gcd = 0;
+    int32_t x = 0;
+    int32_t y = 0;
+
+    // 240 * (-9) + 46 * 47 = 2
+    extendedEuclid(240u, 46u, &gcd, &x, &y);
+    assert(gcd == 2);
+    assert(static_cast<int32_t>(240) * x + static_cast<int32_t>(46) * y == static_cast<int32_t>(gcd));
+
+    gcd = 0;
+    x = 0;
+    y = 0;
+    extendedEuclid_1(240u, 46u, &gcd, &x, &y);
+    assert(gcd == 2);
+    assert(static_cast<int32_t>(240) * x + static_cast<int32_t>(46) * y == static_cast<int32_t>(gcd));
+
+    // gcd(35, 15) = 5
+    gcd = 0;
+    x = 0;
+    y = 0;
+    extendedEuclid(35u, 15u, &gcd, &x, &y);
+    assert(gcd == 5);
+    assert(static_cast<int32_t>(35) * x + static_cast<int32_t>(15) * y == static_cast<int32_t>(gcd));
+
+    gcd = 0;
+    x = 0;
+    y = 0;
+    extendedEuclid_1(35u, 15u, &gcd, &x, &y);
+    assert(gcd == 5);
+
+    // coprime pair
+    gcd = 0;
+    x = 0;
+    y = 0;
+    extendedEuclid(17u, 13u, &gcd, &x, &y);
+    assert(gcd == 1);
+
+    std::cout << "All tests have successfully passed!\n";
+}
+
 /// Main function
 int main() {
-    uint32_t a, b, gcd;
-    int32_t x, y;
-    std::cin >> a >> b;
-    extendedEuclid(a, b, &gcd, &x, &y);
-    std::cout << gcd << " " << x << " " << y << std::endl;
-    extendedEuclid_1(a, b, &gcd, &x, &y);
-    std::cout << gcd << " " << x << " " << y << std::endl;
+    test();  // run self-test implementations
     return 0;
 }
