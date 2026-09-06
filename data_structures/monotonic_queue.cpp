@@ -1,27 +1,31 @@
 /**
  * @file
- * @brief Implementation of the [Monotonic Queue](https://en.wikipedia.org/wiki/Monotone_priority_queue) data structure.
+ * @brief Implementation of the
+ * [Monotonic Queue](https://en.wikipedia.org/wiki/Monotone_priority_queue)
+ * data structure.
  * @details
- * A Monotonic Queue is a specialized queue that maintains its elements in a monotonically
- * increasing or decreasing order. It supports efficient O(1) amortized insertion, deletion,
- * and minimum/maximum retrieval. It is frequently applied to sliding window problems to achieve
- * an optimal O(N) overall time complexity, outperforming O(N * K) brute-force or O(N log K) heap approaches.
+ * A Monotonic Queue is a specialized queue that maintains its elements in a
+ * monotonically increasing or decreasing order. It supports efficient O(1)
+ * amortized insertion, deletion, and minimum/maximum retrieval. It is
+ * frequently applied to sliding window problems to achieve an optimal O(N)
+ * overall time complexity, outperforming O(N * K) brute-force or O(N log K)
+ * heap approaches.
  *
  * ### Complexity Analysis
- * - **Push**: O(1) amortized (each element is added and removed from the deque at most once)
+ * - **Push**: O(1) amortized (each element added/removed at most once)
  * - **Pop**: O(1)
  * - **Max / Min Query**: O(1)
- * - **Space Complexity**: O(K), bounded by the maximum window capacity
+ * - **Space Complexity**: O(K), bounded by maximum window capacity
  *
  * @author [Pitta Rupesh Vinay](https://github.com/rupeshvinay2122)
  * @see data_structures/queue_using_array.cpp
  */
 
-#include <cassert>   /// for assert
-#include <deque>     /// for std::deque
-#include <functional> /// for std::less
-#include <iostream>  /// for IO operations
-#include <vector>    /// for std::vector
+#include <cassert>     /// for assert
+#include <deque>       /// for std::deque
+#include <functional>  /// for std::less
+#include <iostream>    /// for IO operations
+#include <vector>      /// for std::vector
 
 /**
  * @namespace data_structures
@@ -44,7 +48,7 @@ namespace monotonic_queue {
 template <typename T, typename Compare = std::less<T>>
 class MonotonicQueue {
  private:
-    std::deque<T> deque_;  ///< Internal double-ended queue storing monotonic elements
+    std::deque<T> deque_;  ///< Internal deque storing monotonic elements
     Compare comp_;         ///< Comparator instance
 
  public:
@@ -54,8 +58,8 @@ class MonotonicQueue {
     MonotonicQueue() : comp_(Compare()) {}
 
     /**
-     * @brief Inserts a new element into the queue while preserving monotonicity.
-     * @details Pops elements from the back that violate the monotonic invariant.
+     * @brief Inserts a new element while preserving monotonicity.
+     * @details Pops elements from back violating the monotonic invariant.
      * @param val value to be inserted
      */
     void push(const T& val) {
@@ -66,7 +70,7 @@ class MonotonicQueue {
     }
 
     /**
-     * @brief Removes an element from the queue if it matches the current front.
+     * @brief Removes an element from the queue if it matches current front.
      * @details Used when an element leaves the sliding window.
      * @param val value exiting the window
      */
@@ -81,7 +85,8 @@ class MonotonicQueue {
      * @return T the extreme element at the front of the queue
      */
     [[nodiscard]] T top() const {
-        assert(!deque_.empty() && "Cannot query top from an empty MonotonicQueue");
+        assert(!deque_.empty() &&
+               "Cannot query top from an empty MonotonicQueue");
         return deque_.front();
     }
 
@@ -110,7 +115,7 @@ class MonotonicQueue {
 };
 
 /**
- * @brief Computes the maximum element for every sliding window of size k in O(N) time.
+ * @brief Computes maximum element for each sliding window of size k in O(N).
  * @tparam T element type
  * @param nums input sequence of numbers
  * @param k sliding window size
@@ -135,7 +140,7 @@ std::vector<T> sliding_window_maximum(const std::vector<T>& nums, size_t k) {
     // Slide window across the rest of the array
     for (size_t i = k; i < nums.size(); ++i) {
         mq.pop(nums[i - k]);   // Remove outgoing element
-        mq.push(nums[i]);       // Insert incoming element
+        mq.push(nums[i]);      // Insert incoming element
         result.push_back(mq.top());
     }
 
@@ -146,7 +151,7 @@ std::vector<T> sliding_window_maximum(const std::vector<T>& nums, size_t k) {
 }  // namespace data_structures
 
 /**
- * @brief Self-test implementations verifying MonotonicQueue correctness and edge cases.
+ * @brief Self-test implementations verifying correctness and edge cases.
  * @returns void
  */
 static void test() {
@@ -169,7 +174,7 @@ static void test() {
         mq.push(5);
         assert(mq.top() == 5);
 
-        mq.pop(3);  // 3 was already popped when 5 entered, top remains 5
+        mq.pop(3);  // 3 was popped when 5 entered, top remains 5
         assert(mq.top() == 5);
 
         mq.pop(5);  // Now 5 is popped
