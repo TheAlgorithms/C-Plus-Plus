@@ -1,3 +1,4 @@
+---
 # CONTRIBUTION GUIDELINES
 
 ## Before contributing
@@ -216,7 +217,7 @@ int main() {
 
 #### File Name guidelines
 
-- Use lowercase words with ``"_"`` as a separator
+- Use lowercase words with `"_"` as a separator
 - For instance
 
 ```markdown
@@ -231,7 +232,7 @@ my_new_cpp_class.cpp    is correct format
 #### Directory guidelines
 
 - We recommend adding files to existing directories as much as possible.
-- Use lowercase words with ``"_"`` as separator ( no spaces or ```"-"``` allowed )
+- Use lowercase words with `"_"` as separator ( no spaces or `"-"` allowed )
 - For instance
 
 ```markdown
