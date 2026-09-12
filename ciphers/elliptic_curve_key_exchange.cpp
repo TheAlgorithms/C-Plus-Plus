@@ -24,7 +24,14 @@
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
 
+#if defined(__clang__)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-specialization"
+#endif
 #include "uint256_t.hpp"  /// for 256-bit integer
+#if defined(__clang__)
+#pragma clang diagnostic pop
+#endif
 
 /**
  * @namespace ciphers
