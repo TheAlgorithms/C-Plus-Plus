@@ -1,4 +1,4 @@
-add_executable( avl_tree 
+add_executable(avl_tree
     avl_tree.hpp
     main_avl_tree.cpp
 )

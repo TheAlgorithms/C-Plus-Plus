@@ -1,5 +1,5 @@
 /**
- * @file avltree.hpp
+ * @file avl_tree.hpp
  * @author Bertrand Awenze (https://github.com/bertrand-awz)
  * @brief Implementation of an AVL Tree data structure.
  *
@@ -13,10 +13,10 @@
  *
  * @note This implementation try to resolve the issue mentioned in the following
  * link: https://thealgorithms.github.io/C-Plus-Plus/d8/dee/avltree_8cpp.html
- * 
+ *
  * @note This implementation uses C++17 features and requires the type T to be
  * comparable (i.e., support == and < operators).
- * 
+ *
  * @version 0.1
  * @date 2026-09-14
  *
@@ -61,73 +61,73 @@ struct IsComparable<
 template <typename T>
 inline constexpr bool Comparable = avltree_requirements::IsComparable<T>::value;
 
-
 template <typename T>
 /**
  * @brief AVL Tree implementation
  * @requires T to be comparable (i.e., support == and < operators)
- * 
+ *
  */
+// Copy-and-swap assignment handles both copy and move assignment.
+// NOLINTNEXTLINE(cppcoreguidelines-special-member-functions)
 class AvlTree {
     static_assert(Comparable<T>,
                   "AvlTree<T> requires == and < on const T&, with results "
                   "convertible to bool");
 
  public:
-
     /**
      * @brief Construct a new Avl Tree object
-     * 
+     *
      */
     AvlTree() = default;
 
     /**
-     * @brief Construct a new Avl Tree object by initializing it with a list of items
-     * 
-     * @param items 
+     * @brief Construct a new Avl Tree object by initializing it with a list of
+     * items
+     *
+     * @param items
      */
     AvlTree(std::initializer_list<T> items);
 
     /**
      * @brief Construct a new Avl Tree object by copying another AvlTree
-     * 
-     * @param other 
+     *
+     * @param other
      */
     AvlTree(const AvlTree& other);
-    
+
     /**
      * @brief Construct a new Avl Tree object by moving another AvlTree
-     * 
-     * @param other 
+     *
+     * @param other
      */
     AvlTree(AvlTree&& other) noexcept;
 
     /**
      * @brief Assign the contents of another AvlTree to this one
-     * 
-     * @param other 
-     * @return AvlTree& 
+     *
+     * @param other
+     * @return AvlTree&
      */
     AvlTree& operator=(AvlTree other) noexcept;
 
     /**
      * @brief Destroy the Avl Tree object
-     * 
+     *
      */
     ~AvlTree() = default;
-    
-    
+
     /**
      * @brief Insert an item into the AVL tree
-     * 
-     * @param item 
+     *
+     * @param item
      */
     void insert(const T& item);
 
     /**
      * @brief Remove an item from the AVL tree
-     * 
-     * @param item 
+     *
+     * @param item
      */
     void remove(const T& item);
 
@@ -137,7 +137,8 @@ class AvlTree {
     void clear() noexcept;
 
     /**
-     * @brief Display AVL Tree's contents with the root above its children with diagonal arrows
+     * @brief Display AVL Tree's contents with the root above its children with
+     * diagonal arrows
      *
      * @param out Output stream, defaults to the terminal
      * @requires T to support insertion into std::ostream when display is used
@@ -147,44 +148,45 @@ class AvlTree {
 
     /**
      * @brief Check if the AVL tree is empty
-     * 
+     *
      * @return true if the tree is empty, false otherwise
      */
     [[nodiscard]] bool isEmpty() const noexcept;
 
     /**
      * @brief Check if the AVL tree contains a specific item
-     * 
-     * @param item 
+     *
+     * @param item
      * @return true if the tree contains the item, false otherwise
      */
     [[nodiscard]] bool hasItem(const T& item) const;
 
     /**
      * @brief Return the height of the AVL tree
-     * 
-     * @return int 
+     *
+     * @return int
      */
     [[nodiscard]] int height() const noexcept;
 
     /**
      * @brief Return the number of items in the AVL tree
-     * 
-     * @return int 
+     *
+     * @return int
      */
     [[nodiscard]] int size() const noexcept;
 
     /**
      * @brief Swap the contents of this AVL tree with another AVL tree
-     * 
-     * @param other 
+     *
+     * @param other
      */
     void swap(AvlTree& other) noexcept;
     friend void swap(AvlTree& lhs, AvlTree& rhs) noexcept { lhs.swap(rhs); }
 
  private:
-    
     struct Node {
+        // Accept copyable values even when their move constructor is deleted.
+        // NOLINTNEXTLINE(modernize-pass-by-value)
         explicit Node(const T& value) : item(value) {}
 
         T item;
@@ -328,7 +330,6 @@ void AvlTree<T>::display(std::ostream& out) const {
         const auto end = line.find_last_not_of(' ');
         if (end != std::string::npos) {
             for (std::size_t column = 0; column <= end; ++column) {
-                
                 if (row % 2 == 1 && line[column] == '/') {
                     out << "\u2199";
                 } else if (row % 2 == 1 && line[column] == '\\') {
@@ -374,30 +375,33 @@ typename AvlTree<T>::DisplayLayout AvlTree<T>::makeDisplayLayout(
     }
 
     // A wide parent label may extend past the left edge of its children.
-    const auto padding = center < label.size() / 2 ? label.size() / 2 - center : 0;
+    const auto padding =
+        center < label.size() / 2 ? label.size() / 2 - center : 0;
     center += padding;
     leftOffset += padding;
     rightOffset += padding;
     const auto labelStart = center - label.size() / 2;
-    const auto width = std::max({labelStart + label.size(),
-                                 leftOffset + left.width,
-                                 rightOffset + right.width});
+    const auto width =
+        std::max({labelStart + label.size(), leftOffset + left.width,
+                  rightOffset + right.width});
     const auto rows = 2 + std::max(left.lines.size(), right.lines.size());
-    DisplayLayout layout{std::vector<std::string>(rows, std::string(width, ' ')),
-                         width, center};
+    DisplayLayout layout{
+        std::vector<std::string>(rows, std::string(width, ' ')), width, center};
     layout.lines[0].replace(labelStart, label.size(), label);
 
     if (node->left) {
         layout.lines[1][(leftOffset + left.rootColumn + center) / 2] = '/';
     }
     if (node->right) {
-        layout.lines[1][(rightOffset + right.rootColumn + center + 1) / 2] = '\\';
+        layout.lines[1][(rightOffset + right.rootColumn + center + 1) / 2] =
+            '\\';
     }
     for (std::size_t row = 0; row < left.lines.size(); ++row) {
         layout.lines[row + 2].replace(leftOffset, left.width, left.lines[row]);
     }
     for (std::size_t row = 0; row < right.lines.size(); ++row) {
-        layout.lines[row + 2].replace(rightOffset, right.width, right.lines[row]);
+        layout.lines[row + 2].replace(rightOffset, right.width,
+                                      right.lines[row]);
     }
     return layout;
 }

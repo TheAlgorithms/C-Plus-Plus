@@ -10,6 +10,7 @@
 #undef NDEBUG
 #endif
 
+#include <array>
 #include <cassert>
 #include <initializer_list>
 #include <iostream>
@@ -53,7 +54,8 @@ static void test_empty_and_clear() {
     assert(tree.height() == 0);
 }
 
-/** @brief Check initializer lists, ignored duplicates, and all four rotations. */
+/** @brief Check initializer lists, ignored duplicates, and all four rotations.
+ */
 static void test_insertion() {
     AvlTree<int> tree{5, 3, 8, 1, 4, 7, 9, 5};
     assert_items(tree, {1, 3, 4, 5, 7, 8, 9});
@@ -62,12 +64,12 @@ static void test_insertion() {
     assert_items(tree, {1, 3, 4, 5, 7, 8, 9});
     assert(!tree.hasItem(6));
 
-    const std::initializer_list<int> rotations[] = {
+    const std::array<std::initializer_list<int>, 4> rotations{{
         {3, 2, 1},  // Left-left: rotate right.
         {1, 2, 3},  // Right-right: rotate left.
         {3, 1, 2},  // Left-right: double rotation.
         {1, 3, 2}   // Right-left: double rotation.
-    };
+    }};
     for (const auto& items : rotations) {
         const AvlTree<int> rotated(items);
         assert_items(rotated, {1, 2, 3});
@@ -75,7 +77,8 @@ static void test_insertion() {
     }
 }
 
-/** @brief Check leaf, single-child, and two-child deletion, including the root. */
+/** @brief Check leaf, single-child, and two-child deletion, including the root.
+ */
 static void test_removal() {
     AvlTree<int> tree{2, 1, 3};
     tree.remove(99);
@@ -115,7 +118,8 @@ static void assert_removal_rotation(std::initializer_list<int> items,
     }
 }
 
-/** @brief Regression checks for rebalancing after deletion in both directions. */
+/** @brief Regression checks for rebalancing after deletion in both directions.
+ */
 static void test_removal_rotations() {
     assert_removal_rotation({3, 2, 4, 1}, 4);  // Left-left.
     assert_removal_rotation({2, 1, 3, 4}, 1);  // Right-right.
@@ -140,6 +144,8 @@ static void test_copy_move_and_swap() {
     AvlTree<int> moved(std::move(copied));
     assert_items(moved, {2, 3});
     assert_items(copied, {});
+    // AvlTree explicitly guarantees that moved-from trees are empty and usable.
+    // NOLINTNEXTLINE(clang-analyzer-cplusplus.Move)
     assert(copied.height() == -1);
     copied.insert(42);
     assert_items(copied, {42});
@@ -148,6 +154,8 @@ static void test_copy_move_and_swap() {
     assert_items(assigned, {2, 3});
     assert(!assigned.hasItem(1));
     assert_items(moved, {});
+    // Check the same guarantee after move assignment.
+    // NOLINTNEXTLINE(clang-analyzer-cplusplus.Move)
     assert(moved.height() == -1);
     moved.insert(7);
     swap(assigned, moved);
@@ -169,7 +177,8 @@ static void test_strings() {
     assert(tree.size() == 2);
 }
 
-/** @brief Check output through a stream without writing diagrams to the terminal. */
+/** @brief Check output through a stream without writing diagrams to the
+ * terminal. */
 static void test_display() {
     std::ostringstream empty;
     AvlTree<int>{}.display(empty);
