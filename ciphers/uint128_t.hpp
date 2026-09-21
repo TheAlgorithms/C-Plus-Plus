@@ -9,9 +9,9 @@
 
 #include <algorithm>  /// for `std::reverse` and other operations
 #include <cstdint>
-#include <ostream>    /// for `std::cout` overload
-#include <string>     /// for `std::string`
-#include <utility>    /// for `std::pair` library
+#include <ostream>  /// for `std::cout` overload
+#include <string>   /// for `std::string`
+#include <utility>  /// for `std::pair` library
 
 #ifdef _MSC_VER
 #include <intrin.h>  /// for _BitScanForward64 and __BitScanReverse64 operation

@@ -17,7 +17,6 @@
 
 class uint256_t;
 
-
 /**
  * @class uint256_t
  * @brief class for 256-bit unsigned integer
