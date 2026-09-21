@@ -136,14 +136,6 @@ var hierarchy =
     [ "Trie", "dd/d2f/class_trie.html", null ],
     [ "data_structures::trie", "d0/d3e/classdata__structures_1_1trie.html", null ],
     [ "Trie::TrieNode", "de/d48/struct_trie_1_1_trie_node.html", null ],
-    [ "std::true_type", null, [
-      [ "std::is_arithmetic< uint128_t >", "d2/dfc/structstd_1_1is__arithmetic_3_01uint128__t_01_4.html", null ],
-      [ "std::is_arithmetic< uint256_t >", "dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html", null ],
-      [ "std::is_integral< uint128_t >", "d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html", null ],
-      [ "std::is_integral< uint256_t >", "d7/d47/structstd_1_1is__integral_3_01uint256__t_01_4.html", null ],
-      [ "std::is_unsigned< uint128_t >", "d5/d25/structstd_1_1is__unsigned_3_01uint128__t_01_4.html", null ],
-      [ "std::is_unsigned< uint256_t >", "df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html", null ]
-    ] ],
     [ "uint128_t", "db/d9a/classuint128__t.html", null ],
     [ "uint256_t", "d1/d83/classuint256__t.html", null ],
     [ "unordered_set&lt; K &gt;", "d3/d6d/classunordered__set.html", null ],

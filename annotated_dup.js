@@ -173,14 +173,6 @@ var annotated_dup =
       [ "stats_computer1", "d7/d7c/classstatistics_1_1stats__computer1.html", "d7/d7c/classstatistics_1_1stats__computer1" ],
       [ "stats_computer2", "d8/dab/classstatistics_1_1stats__computer2.html", "d8/dab/classstatistics_1_1stats__computer2" ]
     ] ],
-    [ "std", null, [
-      [ "is_arithmetic&lt; uint128_t &gt;", "d2/dfc/structstd_1_1is__arithmetic_3_01uint128__t_01_4.html", null ],
-      [ "is_arithmetic&lt; uint256_t &gt;", "dc/d6d/structstd_1_1is__arithmetic_3_01uint256__t_01_4.html", null ],
-      [ "is_integral&lt; uint128_t &gt;", "d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html", null ],
-      [ "is_integral&lt; uint256_t &gt;", "d7/d47/structstd_1_1is__integral_3_01uint256__t_01_4.html", null ],
-      [ "is_unsigned&lt; uint128_t &gt;", "d5/d25/structstd_1_1is__unsigned_3_01uint128__t_01_4.html", null ],
-      [ "is_unsigned&lt; uint256_t &gt;", "df/d99/structstd_1_1is__unsigned_3_01uint256__t_01_4.html", null ]
-    ] ],
     [ "strings", "df/dcb/namespacestrings.html", [
       [ "boyer_moore", "d0/dbc/namespacestrings_1_1boyer__moore.html", [
         [ "pattern", "dd/d5a/structstrings_1_1boyer__moore_1_1pattern.html", "dd/d5a/structstrings_1_1boyer__moore_1_1pattern" ]

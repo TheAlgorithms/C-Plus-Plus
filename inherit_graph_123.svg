@@ -11,9 +11,9 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="db/d9a/classuint128__t.html" target="_top" xlink:title="class for 128&#45;bit unsigned integer">
+<g id="a_Node000000"><a xlink:href="d1/d83/classuint256__t.html" target="_top" xlink:title="class for 256&#45;bit unsigned integer">
 <polygon fill="white" stroke="#666666" points="55.75,-19.25 0,-19.25 0,0 55.75,0 55.75,-19.25"/>
-<text xml:space="preserve" text-anchor="middle" x="27.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">uint128_t</text>
+<text xml:space="preserve" text-anchor="middle" x="27.88" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">uint256_t</text>
 </a>
 </g>
 </g>

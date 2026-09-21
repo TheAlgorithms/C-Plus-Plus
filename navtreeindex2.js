@@ -1,7 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"d3/d06/ode__semi__implicit__euler_8cpp_source.html":[10,0,15,17],
-"d3/d09/node_8hpp.html":[10,0,4,15],
 "d3/d09/node_8hpp_source.html":[10,0,4,15],
 "d3/d17/namespaceutil__functions.html":[8,0,135],
 "d3/d19/sparse__matrix_8cpp.html":[10,0,17,22],
@@ -56,8 +54,8 @@ var NAVTREEINDEX2 =
 "d3/d61/vector__important__functions_8cpp.html":[10,0,17,26],
 "d3/d61/vector__important__functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,17,26,0],
 "d3/d61/vector__important__functions_8cpp_source.html":[10,0,17,26],
-"d3/d6d/classunordered__set.html":[9,0,71],
-"d3/d6d/classunordered__set.html#a9401ae48c5b80204409ee475f277cdb0":[9,0,71,4],
+"d3/d6d/classunordered__set.html":[9,0,70],
+"d3/d6d/classunordered__set.html#a9401ae48c5b80204409ee475f277cdb0":[9,0,70,4],
 "d3/d6d/namespacesimpson__method.html":[8,0,113],
 "d3/d7d/brute__force__string__searching_8cpp.html":[10,0,24,1],
 "d3/d7d/brute__force__string__searching_8cpp.html#ae2abaa9caa13fff35e45edca00bee123":[10,0,24,1,3],
@@ -119,10 +117,10 @@ var NAVTREEINDEX2 =
 "d3/db3/lru__cache_8cpp.html":[10,0,17,12],
 "d3/db3/lru__cache_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,17,12,2],
 "d3/db3/lru__cache_8cpp_source.html":[10,0,17,12],
-"d3/dbb/class_cycle_check.html":[9,0,30],
-"d3/dbb/class_cycle_check.html#a2f4485c08b45e7a21a2e86f9c3f01d8b":[9,0,30,2],
-"d3/dbb/class_cycle_check.html#a399292a33edf87499daa52b51315aca5":[9,0,30,0],
-"d3/dbb/class_cycle_check.html#ad9a270ffba3a68539b92272c702e3474":[9,0,30,1],
+"d3/dbb/class_cycle_check.html":[9,0,29],
+"d3/dbb/class_cycle_check.html#a2f4485c08b45e7a21a2e86f9c3f01d8b":[9,0,29,2],
+"d3/dbb/class_cycle_check.html#a399292a33edf87499daa52b51315aca5":[9,0,29,0],
+"d3/dbb/class_cycle_check.html#ad9a270ffba3a68539b92272c702e3474":[9,0,29,1],
 "d3/dc1/bucket__sort_8cpp_source.html":[10,0,23,5],
 "d3/dc9/namespacefibonacci__sum.html":[8,0,33],
 "d3/dce/linkedlist__implentation__usingarray_8cpp.html":[10,0,4,12],
@@ -249,5 +247,7 @@ var NAVTREEINDEX2 =
 "d4/d8d/jarvis__algorithm_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,8,2,2],
 "d4/d8d/jarvis__algorithm_8cpp_source.html":[10,0,8,2],
 "d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html":[10,0,1,10],
-"d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,1,10,1]
+"d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,1,10,1],
+"d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,1,10,0],
+"d4/d8f/travelling__salesman__using__bit__manipulation_8cpp_source.html":[10,0,1,10]
 };

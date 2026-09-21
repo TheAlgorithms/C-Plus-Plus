@@ -157,9 +157,6 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:std_3A_3Ais_5Fintegral_3C_20uint128_5Ft_20_3E" id="r_std_3A_3Ais_5Fintegral_3C_20uint128_5Ft_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="../../d2/dd4/structstd_1_1is__integral_3_01uint128__t_01_4.html">std::is_integral&lt; uint128_t &gt;</a></td></tr>
-<tr class="memitem:std_3A_3Ais_5Farithmetic_3C_20uint128_5Ft_20_3E" id="r_std_3A_3Ais_5Farithmetic_3C_20uint128_5Ft_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="../../d2/dfc/structstd_1_1is__arithmetic_3_01uint128__t_01_4.html">std::is_arithmetic&lt; uint128_t &gt;</a></td></tr>
-<tr class="memitem:std_3A_3Ais_5Funsigned_3C_20uint128_5Ft_20_3E" id="r_std_3A_3Ais_5Funsigned_3C_20uint128_5Ft_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="../../d5/d25/structstd_1_1is__unsigned_3_01uint128__t_01_4.html">std::is_unsigned&lt; uint128_t &gt;</a></td></tr>
 <tr class="memitem:uint128_5Ft" id="r_uint128_5Ft"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="../../db/d9a/classuint128__t.html">uint128_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">class for 128-bit unsigned integer  <a href="../../db/d9a/classuint128__t.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
@@ -260,25 +257,25 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string denoting the addition of both the strings </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l00038">38</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>                                                               {</div>
-<div class="line"><span class="lineno">   39</span>    std::string third;</div>
-<div class="line"><span class="lineno">   40</span>    int16_t <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a> = 0, carry = 0;</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">for</span> (int32_t i = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(first.size()) - 1,</div>
-<div class="line"><span class="lineno">   42</span>                 j = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(second.size()) - 1;</div>
-<div class="line"><span class="lineno">   43</span>         i &gt;= 0 || j &gt;= 0; --i, --j) {</div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a> = ((i &gt;= 0 ? first[i] - <span class="charliteral">&#39;0&#39;</span> : 0) + (j &gt;= 0 ? second[j] - <span class="charliteral">&#39;0&#39;</span> : 0) +</div>
-<div class="line"><span class="lineno">   45</span>               carry);</div>
-<div class="line"><span class="lineno">   46</span>        carry = <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a> / 10;</div>
-<div class="line"><span class="lineno">   47</span>        <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a> %= 10;</div>
-<div class="line"><span class="lineno">   48</span>        third.push_back(sum + <span class="charliteral">&#39;0&#39;</span>);</div>
-<div class="line"><span class="lineno">   49</span>    }</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (carry) {</div>
-<div class="line"><span class="lineno">   51</span>        third.push_back(<span class="charliteral">&#39;1&#39;</span>);</div>
-<div class="line"><span class="lineno">   52</span>    }</div>
-<div class="line"><span class="lineno">   53</span>    std::reverse(third.begin(), third.end());</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> third;</div>
-<div class="line"><span class="lineno">   55</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l00031">31</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                                               {</div>
+<div class="line"><span class="lineno">   32</span>    std::string third;</div>
+<div class="line"><span class="lineno">   33</span>    int16_t <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a> = 0, carry = 0;</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">for</span> (int32_t i = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(first.size()) - 1,</div>
+<div class="line"><span class="lineno">   35</span>                 j = <span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(second.size()) - 1;</div>
+<div class="line"><span class="lineno">   36</span>         i &gt;= 0 || j &gt;= 0; --i, --j) {</div>
+<div class="line"><span class="lineno">   37</span>        <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a> = ((i &gt;= 0 ? first[i] - <span class="charliteral">&#39;0&#39;</span> : 0) + (j &gt;= 0 ? second[j] - <span class="charliteral">&#39;0&#39;</span> : 0) +</div>
+<div class="line"><span class="lineno">   38</span>               carry);</div>
+<div class="line"><span class="lineno">   39</span>        carry = <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a> / 10;</div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a> %= 10;</div>
+<div class="line"><span class="lineno">   41</span>        third.push_back(sum + <span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span> (carry) {</div>
+<div class="line"><span class="lineno">   44</span>        third.push_back(<span class="charliteral">&#39;1&#39;</span>);</div>
+<div class="line"><span class="lineno">   45</span>    }</div>
+<div class="line"><span class="lineno">   46</span>    std::reverse(third.begin(), third.end());</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> third;</div>
+<div class="line"><span class="lineno">   48</span>}</div>
 <div class="ttc" id="anamespacemachine__learning_html_a6f1c98c016ad34ff3d9f39372161bd35"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d95/vector__ops_8hpp_source.html#l00232">vector_ops.hpp:232</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -312,11 +309,11 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01079">1079</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1079</span>                                                    {</div>
-<div class="line"><span class="lineno"> 1080</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) != q;</div>
-<div class="line"><span class="lineno"> 1081</span>}</div>
-<div class="ttc" id="aclassuint128__t_html"><div class="ttname"><a href="../../db/d9a/classuint128__t.html">uint128_t</a></div><div class="ttdoc">class for 128-bit unsigned integer</div><div class="ttdef"><b>Definition</b> <a href="../../da/d41/uint128__t_8hpp_source.html#l00060">uint128_t.hpp:60</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01072">1072</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1072</span>                                                    {</div>
+<div class="line"><span class="lineno"> 1073</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) != q;</div>
+<div class="line"><span class="lineno"> 1074</span>}</div>
+<div class="ttc" id="aclassuint128__t_html"><div class="ttname"><a href="../../db/d9a/classuint128__t.html">uint128_t</a></div><div class="ttdoc">class for 128-bit unsigned integer</div><div class="ttdef"><b>Definition</b> <a href="../../da/d41/uint128__t_8hpp_source.html#l00053">uint128_t.hpp:53</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -349,10 +346,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01034">1034</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1034</span>                                                          {</div>
-<div class="line"><span class="lineno"> 1035</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) % q;</div>
-<div class="line"><span class="lineno"> 1036</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01027">1027</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1027</span>                                                          {</div>
+<div class="line"><span class="lineno"> 1028</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) % q;</div>
+<div class="line"><span class="lineno"> 1029</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -385,10 +382,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01041">1041</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1041</span>                                                           {</div>
-<div class="line"><span class="lineno"> 1042</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &amp; q;</div>
-<div class="line"><span class="lineno"> 1043</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01034">1034</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1034</span>                                                           {</div>
+<div class="line"><span class="lineno"> 1035</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &amp; q;</div>
+<div class="line"><span class="lineno"> 1036</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -421,10 +418,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01060">1060</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1060</span>                                                      {</div>
-<div class="line"><span class="lineno"> 1061</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &amp;&amp; q;</div>
-<div class="line"><span class="lineno"> 1062</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01053">1053</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1053</span>                                                      {</div>
+<div class="line"><span class="lineno"> 1054</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &amp;&amp; q;</div>
+<div class="line"><span class="lineno"> 1055</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -457,10 +454,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01022">1022</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1022</span>                                                          {</div>
-<div class="line"><span class="lineno"> 1023</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) * q;</div>
-<div class="line"><span class="lineno"> 1024</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01015">1015</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1015</span>                                                          {</div>
+<div class="line"><span class="lineno"> 1016</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) * q;</div>
+<div class="line"><span class="lineno"> 1017</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -493,10 +490,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01010">1010</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1010</span>                                                           {</div>
-<div class="line"><span class="lineno"> 1011</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) + q;</div>
-<div class="line"><span class="lineno"> 1012</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01003">1003</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1003</span>                                                           {</div>
+<div class="line"><span class="lineno"> 1004</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) + q;</div>
+<div class="line"><span class="lineno"> 1005</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -529,10 +526,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01016">1016</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1016</span>                                                          {</div>
-<div class="line"><span class="lineno"> 1017</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) - q;</div>
-<div class="line"><span class="lineno"> 1018</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01009">1009</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1009</span>                                                          {</div>
+<div class="line"><span class="lineno"> 1010</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) - q;</div>
+<div class="line"><span class="lineno"> 1011</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -565,10 +562,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01028">1028</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1028</span>                                                          {</div>
-<div class="line"><span class="lineno"> 1029</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) / q;</div>
-<div class="line"><span class="lineno"> 1030</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01021">1021</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1021</span>                                                          {</div>
+<div class="line"><span class="lineno"> 1022</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) / q;</div>
+<div class="line"><span class="lineno"> 1023</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -601,10 +598,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01085">1085</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1085</span>                                                     {</div>
-<div class="line"><span class="lineno"> 1086</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &lt; q;</div>
-<div class="line"><span class="lineno"> 1087</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01078">1078</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1078</span>                                                     {</div>
+<div class="line"><span class="lineno"> 1079</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &lt; q;</div>
+<div class="line"><span class="lineno"> 1080</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -637,10 +634,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01091">1091</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1091</span>                                                    {</div>
-<div class="line"><span class="lineno"> 1092</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &lt;= q;</div>
-<div class="line"><span class="lineno"> 1093</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01084">1084</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1084</span>                                                    {</div>
+<div class="line"><span class="lineno"> 1085</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &lt;= q;</div>
+<div class="line"><span class="lineno"> 1086</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -673,10 +670,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01073">1073</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1073</span>                                                    {</div>
-<div class="line"><span class="lineno"> 1074</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) == q;</div>
-<div class="line"><span class="lineno"> 1075</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01066">1066</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1066</span>                                                    {</div>
+<div class="line"><span class="lineno"> 1067</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) == q;</div>
+<div class="line"><span class="lineno"> 1068</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -709,10 +706,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01097">1097</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1097</span>                                                     {</div>
-<div class="line"><span class="lineno"> 1098</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &gt; q;</div>
-<div class="line"><span class="lineno"> 1099</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01090">1090</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1090</span>                                                     {</div>
+<div class="line"><span class="lineno"> 1091</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &gt; q;</div>
+<div class="line"><span class="lineno"> 1092</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -745,10 +742,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01103">1103</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1103</span>                                                    {</div>
-<div class="line"><span class="lineno"> 1104</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &gt;= q;</div>
-<div class="line"><span class="lineno"> 1105</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01096">1096</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1096</span>                                                    {</div>
+<div class="line"><span class="lineno"> 1097</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) &gt;= q;</div>
+<div class="line"><span class="lineno"> 1098</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -781,10 +778,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01053">1053</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1053</span>                                                          {</div>
-<div class="line"><span class="lineno"> 1054</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) ^ q;</div>
-<div class="line"><span class="lineno"> 1055</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01046">1046</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1046</span>                                                          {</div>
+<div class="line"><span class="lineno"> 1047</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) ^ q;</div>
+<div class="line"><span class="lineno"> 1048</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -817,10 +814,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01047">1047</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1047</span>                                                          {</div>
-<div class="line"><span class="lineno"> 1048</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) | q;</div>
-<div class="line"><span class="lineno"> 1049</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01040">1040</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1040</span>                                                          {</div>
+<div class="line"><span class="lineno"> 1041</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) | q;</div>
+<div class="line"><span class="lineno"> 1042</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -853,10 +850,10 @@ template&lt;typename T, typename = typename std::enable_if&lt;                  
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01066">1066</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1066</span>                                                      {</div>
-<div class="line"><span class="lineno"> 1067</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) || q;</div>
-<div class="line"><span class="lineno"> 1068</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d41/uint128__t_8hpp_source.html#l01059">1059</a> of file <a class="el" href="../../da/d41/uint128__t_8hpp_source.html">uint128_t.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1059</span>                                                      {</div>
+<div class="line"><span class="lineno"> 1060</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../db/d9a/classuint128__t.html">uint128_t</a>(p) || q;</div>
+<div class="line"><span class="lineno"> 1061</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
