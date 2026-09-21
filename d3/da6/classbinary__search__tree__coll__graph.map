@@ -1,10 +1,10 @@
 <map id="binary_search_tree&lt; T &gt;" name="binary_search_tree&lt; T &gt;">
 <area shape="rect" id="Node000001" title="The Binary Search Tree class." alt="" coords="5,145,169,170"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="88,5,257,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,57,111,72,101,90,95,110,90,145,85,144,90,109,96,88,106,68,120,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,54,111,72,101,90,95,110,90,146,85,144,90,109,96,88,106,68,120,57"/>
 <area shape="rect" id="Node000003" href="$dd/db6/structbinary__search__tree_1_1bst__node.html" title="A struct to represent a node in the Binary Search Tree." alt="" coords="193,137,325,178"/>
-<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="168,61,169,88,178,112,188,125,202,135,199,139,185,128,173,115,164,89,163,62"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="242,125,211,72,191,48,195,45,216,68,247,122"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="167,59,169,88,178,112,188,125,203,137,198,136,185,128,173,115,164,89,164,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="242,123,211,72,193,49,194,44,216,68,247,124"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="281,13,320,38"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="294,54,268,138,263,136,289,52"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="294,52,267,139,263,135,290,55"/>
 </map>

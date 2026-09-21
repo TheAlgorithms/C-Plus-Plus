@@ -32,7 +32,7 @@ let clipboard_icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24
 let clipboard_successIcon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>`
 let clipboard_successDuration = 1000
 
-$(function() {
+document.addEventListener('DOMContentLoaded', function() {
   if(navigator.clipboard) {
     const fragments = document.getElementsByClassName("fragment")
     for(const fragment of fragments) {
@@ -40,7 +40,7 @@ $(function() {
       clipboard_div.classList.add("clipboard")
       clipboard_div.innerHTML = clipboard_icon
       clipboard_div.title = clipboard_title
-      $(clipboard_div).click(function() {
+      clipboard_div.addEventListener('click', function() {
         const content = this.parentNode.cloneNode(true)
         // filter out line number and folded fragments from file listings
         content.querySelectorAll(".lineno, .ttc, .foldclosed").forEach((node) => { node.remove() })

@@ -1,11 +1,11 @@
 <map id="math/binomial_calculate.cpp" name="math/binomial_calculate.cpp">
-<area shape="rect" id="Node000001" title="Program to calculate Binomial coefficients" alt="" coords="72,5,259,31"/>
+<area shape="rect" id="Node000001" title="Program to calculate Binomial coefficients." alt="" coords="72,5,259,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,70,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,34,74,73,71,69,142,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,34,74,73,71,69,142,30"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,79,154,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,33,141,67,136,64,156,30"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,30,141,67,137,64,156,33"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="178,79,238,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,30,195,64,191,67,170,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,29,196,66,191,65,171,34"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="262,79,333,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="189,29,263,69,261,74,187,34"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="189,29,265,71,259,72,187,34"/>
 </map>

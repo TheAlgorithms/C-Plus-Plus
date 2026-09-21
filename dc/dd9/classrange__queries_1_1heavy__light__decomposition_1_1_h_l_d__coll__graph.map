@@ -1,19 +1,19 @@
 <map id="range_queries::heavy_light_decomposition::HLD&lt; X &gt;" name="range_queries::heavy_light_decomposition::HLD&lt; X &gt;">
 <area shape="rect" id="Node000001" title="The Heavy&#45;Light Decomposition class." alt="" coords="668,164,813,220"/>
 <area shape="rect" id="Node000002" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html" title="A Basic Tree, which supports binary lifting." alt="" coords="473,84,618,140"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="630,144,672,162,670,166,628,149"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="629,144,674,164,668,164,629,149"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="226,71,364,111"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="380,96,473,104,473,109,380,101"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="380,96,475,105,470,107,380,101"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="5,78,108,104"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,88,226,88,226,94,123,94"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="122,88,228,89,224,93,124,94"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="217,5,374,46"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="389,48,450,68,483,81,481,86,448,74,387,53"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="388,48,450,68,484,84,479,84,448,74,388,54"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="235,274,356,300"/>
-<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="366,301,422,309,486,313,553,309,617,293,646,279,673,260,715,219,719,222,676,264,649,284,619,299,554,315,486,319,421,315,365,306"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="371,278,412,264,431,254,447,241,459,220,460,198,460,175,471,151,483,139,486,143,475,154,465,177,465,199,464,221,451,244,434,258,414,269,373,283"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="366,301,422,309,486,313,553,309,617,293,646,279,673,260,714,222,719,220,676,264,649,284,619,299,554,315,486,319,421,315,365,306"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="371,278,412,264,431,254,447,241,459,220,460,198,460,175,471,151,482,142,487,139,475,154,465,177,465,199,464,221,451,244,434,258,414,269,372,283"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="237,157,354,182"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="368,150,472,126,473,132,369,156"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="368,150,475,128,470,130,369,156"/>
 <area shape="rect" id="Node000008" href="$d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html" title="Segment Tree, to store heavy chains." alt="" coords="473,164,618,220"/>
-<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="369,183,398,187,472,191,472,196,398,193,368,188"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="634,190,667,190,667,195,634,195"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="368,183,398,187,475,193,470,194,398,193,369,188"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="633,190,670,192,665,193,634,195"/>
 </map>

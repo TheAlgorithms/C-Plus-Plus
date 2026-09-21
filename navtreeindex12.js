@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"de/dc3/fibonacci__sum_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,14,21,1],
 "de/dc3/fibonacci__sum_8cpp_source.html":[10,0,14,21],
 "de/dc5/intersection__of__two__arrays_8cpp.html":[10,0,16,6],
 "de/dc5/intersection__of__two__arrays_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,16,6,5],
@@ -16,16 +15,16 @@ var NAVTREEINDEX12 =
 "de/dcf/binary__exponent_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,14,4,2],
 "de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73":[10,0,14,4,0],
 "de/dcf/binary__exponent_8cpp_source.html":[10,0,14,4],
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html":[9,0,12,2,0],
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a1c0d27198372b36ef71bc58af8336b9c":[9,0,12,2,0,6],
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a2e683b271d8d5cd63e0d09cf8aaa325c":[9,0,12,2,0,3],
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a534645d1aabdf1a7e5897c85376f173d":[9,0,12,2,0,2],
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a5cf972a2c994a4fa1a89fc77bd5ad503":[9,0,12,2,0,5],
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#ab6a17a04aa93aaaef71e038e8cc2edeb":[9,0,12,2,0,8],
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#abb44646a26a446efae7704c80efc011b":[9,0,12,2,0,1],
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#abcb1cc8da7b6759dc92cbe0254697c56":[9,0,12,2,0,0],
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#adb2b6be741b0500ee75d89b6d06b5d50":[9,0,12,2,0,4],
-"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#af6f974381f523fdb981fc2d843bbf4a1":[9,0,12,2,0,7],
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html":[9,0,12,2,1],
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a1c0d27198372b36ef71bc58af8336b9c":[9,0,12,2,1,6],
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a2e683b271d8d5cd63e0d09cf8aaa325c":[9,0,12,2,1,3],
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a534645d1aabdf1a7e5897c85376f173d":[9,0,12,2,1,2],
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#a5cf972a2c994a4fa1a89fc77bd5ad503":[9,0,12,2,1,5],
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#ab6a17a04aa93aaaef71e038e8cc2edeb":[9,0,12,2,1,8],
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#abb44646a26a446efae7704c80efc011b":[9,0,12,2,1,1],
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#abcb1cc8da7b6759dc92cbe0254697c56":[9,0,12,2,1,0],
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#adb2b6be741b0500ee75d89b6d06b5d50":[9,0,12,2,1,4],
+"de/dcf/classoperations__on__datastructures_1_1reverse__binary__tree_1_1_binary_tree.html#af6f974381f523fdb981fc2d843bbf4a1":[9,0,12,2,1,7],
 "de/dd1/segment__tree_8cpp.html":[10,0,4,24],
 "de/dd1/segment__tree_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,4,24,2],
 "de/dd1/segment__tree_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,4,24,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "dir_9510827d0b234b3cc54b29892f217477.html":[10,0,17],
 "dir_9c6faab82c22511b50177aa2e38e2780.html":[10,0,15],
 "dir_bb1b521853a9c46347182a9d10420771.html":[10,0,23],
-"dir_c11585dfcef32a26e29098facab6c144.html":[10,0,0]
+"dir_c11585dfcef32a26e29098facab6c144.html":[10,0,0],
+"dir_cc8e79ed9d2b7756c78e8d0c87c6c0c7.html":[10,0,3]
 };

@@ -597,9 +597,9 @@ function SearchResults() {
 function createResults(resultsPath) {
 
   function setKeyActions(elem,action) {
-    elem.setAttribute('onkeydown',action);
-    elem.setAttribute('onkeypress',action);
-    elem.setAttribute('onkeyup',action);
+    elem.addEventListener('keydown', action);
+    elem.addEventListener('keypress', action);
+    elem.addEventListener('keyup', action);
   }
 
   function setClassAttr(elem,attr) {
@@ -624,7 +624,7 @@ function createResults(resultsPath) {
     setClassAttr(srEntry,'SREntry');
     const srLink = document.createElement('a');
     srLink.setAttribute('id','Item'+index);
-    setKeyActions(srLink,'return searchResults.Nav(event,'+index+')');
+    setKeyActions(srLink, function(e) { return searchResults.Nav(e, index); });
     setClassAttr(srLink,'SRSymbol');
     srLink.innerHTML = decodeHtml(elem[1][0]);
     srEntry.appendChild(srLink);
@@ -634,7 +634,7 @@ function createResults(resultsPath) {
       } else { // relative path
         srLink.setAttribute('href',resultsPath+elem[1][1][0]);
       }
-      srLink.setAttribute('onclick','searchBox.CloseResultsWindow()');
+      srLink.addEventListener('click', function() { searchBox.CloseResultsWindow(); });
       if (elem[1][1][1]) {
        srLink.setAttribute('target','_parent');
       } else {
@@ -645,20 +645,21 @@ function createResults(resultsPath) {
       srScope.innerHTML = decodeHtml(elem[1][1][2]);
       srEntry.appendChild(srScope);
     } else { // multiple results
-      srLink.setAttribute('href','javascript:searchResults.Toggle("SR_'+id+'")');
+      srLink.setAttribute('href','#');
+      srLink.addEventListener('click', function(e) { e.preventDefault(); searchResults.Toggle("SR_"+id); });
       const srChildren = document.createElement('div');
       setClassAttr(srChildren,'SRChildren');
       for (let c=0; c<elem[1].length-1; c++) {
         const srChild = document.createElement('a');
         srChild.setAttribute('id','Item'+index+'_c'+c);
-        setKeyActions(srChild,'return searchResults.NavChild(event,'+index+','+c+')');
+        setKeyActions(srChild, function(e) { return searchResults.NavChild(e, index, c); });
         setClassAttr(srChild,'SRScope');
         if (elem[1][c+1][0].startsWith('http://') || elem[1][c+1][0].startsWith('https://')) { // absolute path
           srChild.setAttribute('href',elem[1][c+1][0]);
         } else { // relative path
           srChild.setAttribute('href',resultsPath+elem[1][c+1][0]);
         }
-        srChild.setAttribute('onclick','searchBox.CloseResultsWindow()');
+        srChild.addEventListener('click', function() { searchBox.CloseResultsWindow(); });
         if (elem[1][c+1][1]) {
          srChild.setAttribute('target','_parent');
         } else {
@@ -678,12 +679,16 @@ function init_search() {
   const results = document.getElementById("MSearchSelectWindow");
 
   results.tabIndex=0;
+  results.addEventListener('mouseover', function() { searchBox.OnSearchSelectShow(); });
+  results.addEventListener('mouseout', function() { searchBox.OnSearchSelectHide(); });
+  results.addEventListener('keydown', function(event) { searchBox.OnSearchSelectKey(event); });
   for (let key in indexSectionLabels) {
     const link = document.createElement('a');
     link.setAttribute('class','SelectItem');
-    link.setAttribute('onclick','searchBox.OnSelectItem('+key+')');
-    link.href='javascript:void(0)';
-    link.innerHTML='<span class="SelectionMark">&#160;</span>'+indexSectionLabels[key];
+    link.addEventListener('click', function() { searchBox.OnSelectItem(key); });
+    link.href='#';
+    link.innerHTML='<span class="SelectionMark">&#160;</span>';
+    link.appendChild(document.createTextNode(indexSectionLabels[key]));
     results.appendChild(link);
   }
 
@@ -701,8 +706,41 @@ function init_search() {
       }
     }
   });
+
+  if (input) {
+    input.addEventListener("mouseover", function() { searchBox.OnSearchSelectShow(); });
+    input.addEventListener("mouseout", function() { searchBox.OnSearchSelectHide(); });
+  }
+
+  const searchField = document.getElementById("MSearchField");
+  if (searchField) {
+    searchField.addEventListener("focus", function() { searchBox.OnSearchFieldFocus(true); });
+    searchField.addEventListener("blur", function() { searchBox.OnSearchFieldFocus(false); });
+    searchField.addEventListener("keyup", function(e) { searchBox.OnSearchFieldChange(e); });
+  }
+
   const name = Cookie.readSetting(SEARCH_COOKIE_NAME,0);
   const id = searchBox.GetSelectionIdByName(name);
   searchBox.OnSelectItem(id);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const configElem = document.getElementById('doxygen-config');
+  if (configElem) {
+    const config = JSON.parse(configElem.textContent);
+    if (!config.serverBasedSearch) {
+      if (config.disableIndex || !config.dynamicMenus || config.fullSidebar) {
+        init_search();
+      }
+    } else {
+      if (config.disableIndex || !config.dynamicMenus) {
+        if (document.querySelector('.searchresults')) {
+          const searchField = document.getElementById("MSearchField");
+          if (searchField) searchField.focus();
+        }
+      }
+    }
+  }
+});
+
 /* @license-end */

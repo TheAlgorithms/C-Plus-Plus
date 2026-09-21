@@ -1,6 +1,6 @@
 var classhash__chain =
 [
-    [ "Node", "dd/d1c/classhash__chain.html#a8b204861e9470377c956d3b5cd313036", null ],
+    [ "Node", "dd/d1c/classhash__chain.html#a534671ef7adc936f39e1382bb70d7300", null ],
     [ "hash_chain", "dd/d1c/classhash__chain.html#a80c8b902a15b4fd062ed727ecf8f3595", null ],
     [ "add", "dd/d1c/classhash__chain.html#a6b4b4de1a8c96f98a63a77f650a9dcff", null ],
     [ "display", "dd/d1c/classhash__chain.html#a706964ad13587fc9a8b3fe8381d410ed", null ],

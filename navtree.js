@@ -23,17 +23,89 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
  */
 
+let initResizableFunc;
+
 function initNavTree(toroot,relpath,allMembersFile) {
   let navTreeSubIndices = [];
   const ARROW_DOWN = '<span class="arrowhead opened"></span>';
   const ARROW_RIGHT = '<span class="arrowhead closed"></span>';
   const NAVPATH_COOKIE_NAME = ''+'navpath';
-  const fullSidebar = typeof page_layout!=='undefined' && page_layout==1;
+  const fullSidebar = document.querySelector('meta[name="doxygen-page-layout"]') !== null;
+
+  // Helper functions to replace jQuery
+  const $  = (selector) => document.querySelector(selector);
+  const $$ = (selector) => Array.from(document.querySelectorAll(selector));
+  const hasClass = (el, className) => el ? el.classList.contains(className) : false;
+  const offsetTop = (el) => el ? (el.getBoundingClientRect().top + window.pageYOffset) : 0;
+
+  const slideUp = function(el, duration, callback) {
+    if (!el) return;
+    el.style.overflow = 'hidden';
+    el.style.transition = `height ${duration}ms ease`;
+    el.style.height = el.scrollHeight + 'px';
+    setTimeout(() => {
+      el.style.height = '0';
+      setTimeout(() => {
+        el.style.display = 'none';
+        el.style.transition = '';
+        el.style.overflow = '';
+        el.style.height = '';
+        if (callback) callback();
+      }, duration);
+    }, 10);
+  };
+
+  const slideDown = function(el, duration, callback) {
+    if (!el) return;
+    el.style.display = 'block';
+    const height = el.scrollHeight;
+    el.style.overflow = 'hidden';
+    el.style.height = '0';
+    el.style.transition = `height ${duration}ms ease`;
+    setTimeout(() => {
+      el.style.height = height + 'px';
+      setTimeout(() => {
+        el.style.transition = '';
+        el.style.overflow = '';
+        el.style.height = '';
+        if (callback) callback();
+      }, duration);
+    }, 10);
+  };
+
+  const animateScrolling = function(el, targetPos, duration, callback) {
+    if (!el) return;
+    const start = performance.now();
+    const startVal = el.scrollTop;
+    const tick = (now) => {
+      const elapsed  = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const endVal   = targetPos;
+      el.scrollTop   = startVal + (endVal - startVal) * progress;
+
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      } else if (callback) {
+        callback();
+      }
+    };
+    requestAnimationFrame(tick);
+  };
 
   function getScrollBarWidth () {
-    let outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll', scrollbarWidth: 'thin'}).appendTo('body');
-    let widthWithScroll = $('<div>').css({width: '100%'}).appendTo(outer).outerWidth();
-    outer.remove();
+    const outer = document.createElement('div');
+    outer.style.visibility='hidden';
+    outer.style.width='100px';
+    outer.style.overflow='scroll';
+    outer.style.scrollbarWidth='thin';
+    document.body.appendChild(outer);
+
+    const inner = document.createElement('div');
+    inner.style.width='100%';
+    outer.appendChild(inner);
+
+    const widthWithScroll = inner.offsetWidth;
+    document.body.removeChild(outer);
     return 100 - widthWithScroll;
   }
   const scrollbarWidth = getScrollBarWidth();
@@ -42,7 +114,8 @@ function initNavTree(toroot,relpath,allMembersFile) {
     if (!fullSidebar) {
       const nt = document.getElementById("nav-tree");
       const hasVerticalScrollbar = nt.scrollHeight > nt.clientHeight;
-      $("#nav-sync").css({right:parseInt(hasVerticalScrollbar?scrollbarWidth:0)});
+      const navSync = $("#nav-sync");
+      navSync.style.right = (hasVerticalScrollbar ? scrollbarWidth : 0) + 'px';
     }
   }
 
@@ -50,12 +123,12 @@ function initNavTree(toroot,relpath,allMembersFile) {
     const i = varName.lastIndexOf('/');
     const n = i>=0 ? varName.substring(i+1) : varName;
     const e = n.replace(/-/g,'_');
-    return window[e];
+    const r = (e[0] >= '0' && e[0] <= '9') ? '_' + e : e;
+
+    return window[r];
   }
 
-  const stripPath = function(uri) {
-    return uri.substring(uri.lastIndexOf('/')+1);
-  }
+  const stripPath = (uri) => uri.substring(uri.lastIndexOf('/')+1);
 
   const stripPath2 = function(uri) {
     const i = uri.lastIndexOf('/');
@@ -64,20 +137,13 @@ function initNavTree(toroot,relpath,allMembersFile) {
     return m ? uri.substring(i-6) : s;
   }
 
-  const hashValue = function() {
-    return $(location).attr('hash').substring(1).replace(/[^\w-]/g,'');
-  }
-
-  const hashUrl = function() {
-    return '#'+hashValue();
-  }
-
-  const pathName = function() {
-    return $(location).attr('pathname').replace(/[^-A-Za-z0-9+&@#/%?=~_|!:,.;()]/g, '');
-  }
+  const hashValue = () => location.hash.substring(1).replace(/[^\w-]/g,'');
+  const hashUrl = () => '#'+hashValue();
+  const pathName = () => location.pathname.replace(/[^-A-Za-z0-9+&@#/%?=~_|!:,.;()]/g, '');
 
   const storeLink = function(link) {
-    if (!$("#nav-sync").hasClass('sync')) {
+    const navSync = $("#nav-sync");
+    if (!hasClass(navSync, 'sync')) {
       Cookie.writeSetting(NAVPATH_COOKIE_NAME,link,0);
     }
   }
@@ -86,9 +152,7 @@ function initNavTree(toroot,relpath,allMembersFile) {
     Cookie.eraseSetting(NAVPATH_COOKIE_NAME);
   }
 
-  const cachedLink = function() {
-    return Cookie.readSetting(NAVPATH_COOKIE_NAME,'');
-  }
+  const cachedLink = () => Cookie.readSetting(NAVPATH_COOKIE_NAME,'');
 
   const getScript = function(scriptName,func) {
     const head = document.getElementsByTagName("head")[0];
@@ -114,8 +178,12 @@ function initNavTree(toroot,relpath,allMembersFile) {
       node.expandToggle.href = "javascript:void(0)";
       node.expandToggle.onclick = function() {
         if (node.expanded) {
-          $(node.getChildrenUL()).slideUp("fast",adjustSyncIconPosition);
-          $(node.plus_img.childNodes[0]).removeClass('opened').addClass('closed');
+          slideUp(node.getChildrenUL(), 200, adjustSyncIconPosition);
+          const child0 = node.plus_img.childNodes[0]
+          if (child0) {
+            child0.classList.remove('opened');
+            child0.classList.add('closed');
+          }
           node.expanded = false;
         } else {
           expandNode(o, node, false, true);
@@ -126,7 +194,7 @@ function initNavTree(toroot,relpath,allMembersFile) {
     } else {
       let span = document.createElement("span");
       span.className = 'arrow';
-      span.style.width   = 16*(level+1)+'px';
+      span.style.width = 16*(level+1)+'px';
       span.innerHTML = '&#160;';
       domNode.appendChild(span);
     }
@@ -135,37 +203,44 @@ function initNavTree(toroot,relpath,allMembersFile) {
   let animationInProgress = false;
 
   const gotoAnchor = function(anchor,aname) {
+    if (!anchor) return;
     let pos, docContent = $('#doc-content');
-    let ancParent = $(anchor.parent());
-    if (ancParent.hasClass('memItemLeft') || ancParent.hasClass('memtitle')  ||
-        ancParent.hasClass('fieldname')   || ancParent.hasClass('fieldtype') ||
-        ancParent.is(':header')) {
-      pos = ancParent.offset().top;
-    } else if (anchor.position()) {
-      pos = anchor.offset().top;
+    if (!docContent) return;
+
+    const anchorParent = anchor.parentElement;
+    if (!anchorParent) return;
+
+    const parentClass = anchorParent.className;
+    if (hasClass(anchorParent, 'memItemLeft') || hasClass(anchorParent, 'memtitle') ||
+        hasClass(anchorParent, 'fieldname')   || hasClass(anchorParent, 'fieldtype') ||
+        anchorParent.tagName.match(/^H[1-6]$/)) {
+      pos = offsetTop(anchorParent); // goto anchor's parent
+    } else {
+      pos = offsetTop(anchor); // goto anchor
     }
     if (pos) {
-      const dcOffset    = docContent.offset().top;
-      const dcHeight    = docContent.height();
-      const dcScrHeight = docContent[0].scrollHeight
-      const dcScrTop    = docContent.scrollTop();
+      const dcOffset    = offsetTop(docContent);
+      const dcHeight    = docContent.clientHeight;
+      const dcScrHeight = docContent.scrollHeight;
+      const dcScrTop    = docContent.scrollTop;
       let dist = Math.abs(Math.min(pos-dcOffset,dcScrHeight-dcHeight-dcScrTop));
       animationInProgress = true;
-      docContent.animate({
-        scrollTop: pos + dcScrTop - dcOffset
-      },Math.max(50,Math.min(500,dist)),function() {
+      animateScrolling(docContent, pos+dcScrTop-dcOffset, Math.max(50,Math.min(500,dist)), function() {
         animationInProgress=false;
-        if (anchor.parent().attr('class')=='memItemLeft') {
-          let rows = $('.memberdecls tr[class$="'+hashValue()+'"]');
-          glowEffect(rows.children(),300); // member without details
-        } else if (anchor.parent().attr('class')=='fieldname') {
-          glowEffect(anchor.parent().parent(),1000); // enum value
-        } else if (anchor.parent().attr('class')=='fieldtype') {
-          glowEffect(anchor.parent().parent(),1000); // struct field
-        } else if (anchor.parent().is(":header")) {
-          glowEffect(anchor.parent(),1000); // section header
+        if (parentClass=='memItemLeft') {
+          const rows = $$('.memberdecls tr[class$="'+hashValue()+'"]');
+          rows.forEach(row => {
+            const children = Array.from(row.children);
+            children.forEach(child => glowEffect(child, 300));
+          });
+        } else if (parentClass=='fieldname') {
+          glowEffect(anchorParent.parentElement, 1000); // enum value
+        } else if (parentClass=='fieldtype') {
+          glowEffect(anchorParent.parentElement, 1000); // struct field
+        } else if (anchorParent.tagName.match(/^H[1-6]$/)) {
+          glowEffect(anchorParent, 1000); // section header
         } else {
-          glowEffect(anchor.next(),1000); // normal member
+          glowEffect(anchor.nextElementSibling, 1000); // normal member
         }
       });
     }
@@ -231,14 +306,16 @@ function initNavTree(toroot,relpath,allMembersFile) {
         a.href = srcPage!=targetPage ? url : aname;
         a.onclick = function() {
           storeLink(link);
-          aPPar = $(a).parent().parent();
-          if (!aPPar.hasClass('selected')) {
-            $('.item').removeClass('selected');
-            $('.item').removeAttr('id');
-            aPPar.addClass('selected');
-            aPPar.attr('id','selected');
+          const aPPar = a.parentElement.parentElement;
+          if (!hasClass(aPPar, 'selected')) {
+            $$('.item').forEach(item => {
+              item.classList.remove('selected');
+              item.removeAttribute('id');
+            });
+            aPPar.classList.add('selected');
+            aPPar.setAttribute('id', 'selected');
           }
-          const anchor = $(aname);
+          const anchor = document.querySelector(aname);
           gotoAnchor(anchor,aname);
         };
       } else {
@@ -254,15 +331,24 @@ function initNavTree(toroot,relpath,allMembersFile) {
   }
 
   const showRoot = function() {
-    const headerHeight = $("#top").height();
-    const footerHeight = $("#nav-path").height();
-    const windowHeight = $(window).height() - headerHeight - footerHeight;
-    (function() { // retry until we can scroll to the selected item
+    const top = $("#top");
+    const navPath = $("#nav-path");
+    const headerHeight = top ? top.clientHeight : 0;
+    const footerHeight = navPath ? navPath.clientHeight : 0;
+    const windowHeight = window.innerHeight - headerHeight - footerHeight;
+    (function retry() { // retry until we can scroll to the selected item
       try {
-        const navtree=$('#nav-tree');
-        navtree.scrollTo('#selected',100,{offset:-windowHeight/2});
+        const navtree = $('#nav-tree');
+        if (navtree) {
+          const selected = navtree.querySelector('#selected');
+          if (selected) {
+            const offset = -windowHeight/2;
+            const targetPos = selected.offsetTop + offset;
+            animateScrolling(navtree, Math.max(0, targetPos), 100);
+          }
+        }
       } catch (err) {
-        setTimeout(arguments.callee, 0);
+        setTimeout(retry, 0);
       }
     })();
   }
@@ -279,25 +365,31 @@ function initNavTree(toroot,relpath,allMembersFile) {
         if (!node.childrenVisited) {
           getNode(o, node);
         }
-        $(node.getChildrenUL()).slideDown("fast",adjustSyncIconPosition);
-        $(node.plus_img.childNodes[0]).addClass('opened').removeClass('closed');
+        slideDown(node.getChildrenUL(), 200, adjustSyncIconPosition);
+        const child0 = node.plus_img.childNodes[0]
+        if (child0) {
+            child0.classList.add('opened');
+            child0.classList.remove('closed');
+        }
         node.expanded = true;
         if (setFocus) {
-          $(node.expandToggle).focus();
+          node.expandToggle.focus();
         }
       }
     }
   }
 
-  const glowEffect = function(n,duration) {
-    n.addClass('glow').delay(duration).queue(function(next) {
-      $(this).removeClass('glow');next();
-    });
+  const glowEffect = function(n, duration) {
+    if (!n) return;
+    n.classList.add('glow');
+    setTimeout(() => {
+      n.classList.remove('glow');
+    }, duration);
   }
 
   const highlightAnchor = function() {
     const aname = hashUrl();
-    const anchor = $(aname);
+    const anchor = document.querySelector(aname);
     gotoAnchor(anchor,aname);
   }
 
@@ -305,18 +397,22 @@ function initNavTree(toroot,relpath,allMembersFile) {
     let a;
     if (hash) {
       const link=stripPath(pathName())+':'+hash.substring(1);
-      a=$('.item a[class$="'+link+'"]');
+      a=document.querySelector('.item a[class$="'+link+'"]');
     }
-    if (a && a.length) {
-      a.parent().parent().addClass('selected');
-      a.parent().parent().attr('id','selected');
+    if (a) {
+      const parent = a.parentElement.parentElement;
+      if (parent) {
+        parent.classList.add('selected');
+        parent.setAttribute('id', 'selected');
+      }
       highlightAnchor();
-    } else if (n) {
-      $(n.itemDiv).addClass('selected');
-      $(n.itemDiv).attr('id','selected');
+    } else if (n && n.itemDiv) {
+      n.itemDiv.classList.add('selected');
+      n.itemDiv.setAttribute('id', 'selected');
     }
     let topOffset=5;
-    if ($('#nav-tree-contents .item:first').hasClass('selected')) {
+    const firstItem = document.querySelector('#nav-tree-contents .item:first-child');
+    if (firstItem && hasClass(firstItem, 'selected')) {
       topOffset+=25;
     }
     showRoot();
@@ -334,8 +430,15 @@ function initNavTree(toroot,relpath,allMembersFile) {
         if (!node.childrenVisited) {
           getNode(o, node);
         }
-        $(node.getChildrenUL()).css({'display':'block'});
-        $(node.plus_img.childNodes[0]).removeClass('closed').addClass('opened');
+        const childUL = node.getChildrenUL();
+        if (childUL) {
+          childUL.style.display='block';
+        }
+        const child0 = node.plus_img.childNodes[0];
+        if (child0) {
+          child0.classList.remove('closed');
+          child0.classList.add('opened');
+        }
         node.expanded = true;
         const n = node.children[o.breadcrumbs[index]];
         if (index+1<o.breadcrumbs.length) {
@@ -374,11 +477,13 @@ function initNavTree(toroot,relpath,allMembersFile) {
     if (nti==undefined && hash.length>0) { // try root page without hash as fallback
       gotoUrl(o,root,'',relpath);
     } else {
-      o.breadcrumbs = $.extend(true, [], nti);
+      o.breadcrumbs = nti ? JSON.parse(JSON.stringify(nti)) : null;
       if (!o.breadcrumbs && root!=NAVTREE[0][1]) { // fallback: show index
         navTo(o,NAVTREE[0][1],"",relpath);
-        $('.item').removeClass('selected');
-        $('.item').removeAttr('id');
+        $$('.item').forEach(item => {
+          item.classList.remove('selected');
+          item.removeAttribute('id');
+        });
       }
       if (o.breadcrumbs) {
         o.breadcrumbs.unshift(0); // add 0 for root node
@@ -412,19 +517,21 @@ function initNavTree(toroot,relpath,allMembersFile) {
       hash = parts.length>1 ? '#'+parts[1].replace(/[^\w-]/g,'') : '';
     }
     if (hash.match(/^#l\d+$/)) {
-      const anchor=$('a[name='+hash.substring(1)+']');
-      glowEffect(anchor.parent(),1000); // line number
+      const anchor = document.querySelector('a[name='+hash.substring(1)+']');
+      if (anchor && anchor.parentElement) {
+        glowEffect(anchor.parentElement, 1000); // line number
+      }
       hash=''; // strip line number anchors
     }
     gotoUrl(o,root,hash,relpath);
   }
 
   const showSyncOff = function(n,relpath) {
-    n.html('<div class="nav-sync-icon" title="'+SYNCOFFMSG+'"><span class="sync-icon-left"></span><span class="sync-icon-right"></span></div>');
+    if (n) n.innerHTML = '<div class="nav-sync-icon" title="'+SYNCOFFMSG+'"><span class="sync-icon-left"></span><span class="sync-icon-right"></span></div>';
   }
 
   const showSyncOn = function(n,relpath) {
-    n.html('<div class="nav-sync-icon active" title="'+SYNCONMSG+'"><span class="sync-icon-left"></span><span class="sync-icon-right"></span></div>');
+    if (n) n.innerHTML = '<div class="nav-sync-icon active" title="'+SYNCONMSG+'"><span class="sync-icon-left"></span><span class="sync-icon-right"></span></div>';
   }
 
   const o = {
@@ -449,51 +556,58 @@ function initNavTree(toroot,relpath,allMembersFile) {
   const navSync = $('#nav-sync');
   if (cachedLink()) {
     showSyncOff(navSync,relpath);
-    navSync.removeClass('sync');
+    navSync.classList.remove('sync');
   } else {
     showSyncOn(navSync,relpath);
   }
 
-  navSync.click(() => {
-    const navSync = $('#nav-sync');
-    if (navSync.hasClass('sync')) {
-      navSync.removeClass('sync');
-      showSyncOff(navSync,relpath);
-      storeLink(stripPath2(pathName())+hashUrl());
-    } else {
-      navSync.addClass('sync');
-      showSyncOn(navSync,relpath);
-      deleteLink();
-    }
-  });
+  if (navSync) {
+    navSync.addEventListener('click', () => {
+      const navSync = $('#nav-sync');
+      if (hasClass(navSync, 'sync')) {
+        navSync.classList.remove('sync');
+        showSyncOff(navSync,relpath);
+        storeLink(stripPath2(pathName())+hashUrl());
+      } else {
+        navSync.classList.add('sync');
+        showSyncOn(navSync,relpath);
+        deleteLink();
+      }
+    });
+  }
 
   navTo(o,toroot,hashUrl(),relpath);
   showRoot();
 
-  $(window).bind('hashchange', () => {
+  window.addEventListener('hashchange', () => {
     if (!animationInProgress) {
       if (window.location.hash && window.location.hash.length>1) {
         let a;
-        if ($(location).attr('hash')) {
+        if (location.hash) {
           const clslink=stripPath(pathName())+':'+hashValue();
-          a=$('.item a[class$="'+clslink.replace(/</g,'\\3c ')+'"]');
+          a=document.querySelector('.item a[class$="'+clslink.replace(/</g,'\\3c ')+'"]');
         }
-        if (a==null || !$(a).parent().parent().hasClass('selected')) {
-          $('.item').removeClass('selected');
-          $('.item').removeAttr('id');
+        if (a==null || !hasClass(a.parentElement.parentElement, 'selected')) {
+          $$('.item').forEach(item => {
+            item.classList.remove('selected');
+            item.removeAttribute('id');
+          });
         }
         const link=stripPath2(pathName());
         navTo(o,link,hashUrl(),relpath);
-        } else {
-        $('#doc-content').scrollTop(0);
-        $('.item').removeClass('selected');
-        $('.item').removeAttr('id');
+      } else {
+        const docContent = $('#doc-content');
+        if (docContent) docContent.scrollTop = 0;
+        $$('.item').forEach(item => {
+          item.classList.remove('selected');
+          item.removeAttribute('id');
+        });
         navTo(o,toroot,hashUrl(),relpath);
       }
     }
   });
 
-  $(window).resize(function() { adjustSyncIconPosition(); });
+  window.addEventListener('resize', function() { adjustSyncIconPosition(); });
 
   let navtree_trampoline = {
     updateContentTop : function() {}
@@ -503,21 +617,21 @@ function initNavTree(toroot,relpath,allMembersFile) {
     let sidenav,mainnav,pagenav,container,navtree,content,header,footer,barWidth=6;
     const RESIZE_COOKIE_NAME = ''+'width';
     const PAGENAV_COOKIE_NAME = ''+'pagenav';
-    const fullSidebar = typeof page_layout!=='undefined' && page_layout==1;
+    const fullSidebar = document.querySelector('meta[name="doxygen-page-layout"]') !== null;
 
     function showHideNavBar() {
-      let bar = $('div.sm-dox');
+      const bar = document.querySelector('div.sm-dox');
       if (fullSidebar && mainnav && bar) {
-        if (mainnav.width()<768) {
-          bar.hide();
+        if (mainnav.clientWidth < 768) {
+          bar.style.display = 'none';
         } else {
-          bar.show();
+          bar.style.display = '';
         }
       }
     }
 
     function constrainPanelWidths(leftPanelWidth,rightPanelWidth,dragLeft) {
-      const contentWidth = container.width()-leftPanelWidth-rightPanelWidth;
+      const contentWidth = container.clientWidth - leftPanelWidth - rightPanelWidth;
       const minContentWidth = 250;
       const minPanelWidth = barWidth;
       if (contentWidth<minContentWidth) // need to shrink panels
@@ -537,37 +651,39 @@ function initNavTree(toroot,relpath,allMembersFile) {
           leftPanelWidth -= shrinkLeft;
         }
       } else {
-        rightPanelWidth = pagenav.length ? Math.max(minPanelWidth,rightPanelWidth) : 0;
+        rightPanelWidth = pagenav ? Math.max(minPanelWidth,rightPanelWidth) : 0;
         leftPanelWidth = Math.max(minPanelWidth,leftPanelWidth);
-        }
+      }
       return { leftPanelWidth, rightPanelWidth }
     }
 
     function updateWidths(sidenavWidth,pagenavWidth,dragLeft)
     {
       const widths = constrainPanelWidths(sidenavWidth,pagenavWidth,dragLeft);
-      const widthStr = parseInt(widths.leftPanelWidth)+"px";
-      content.css({marginLeft:widthStr});
+      const widthStr = parseFloat(widths.leftPanelWidth)+"px";
+      content.style.marginLeft = widthStr;
       if (fullSidebar) {
-        footer.css({marginLeft:widthStr});
+        footer.style.marginLeft = widthStr;
         if (mainnav) {
-          mainnav.css({marginLeft:widthStr});
+          mainnav.style.marginLeft = widthStr;
         }
       }
-      sidenav.css({width:widthStr});
-      if (pagenav.length) {
-        container.css({gridTemplateColumns:'auto '+parseInt(widths.rightPanelWidth)+'px'});
-        pagenav.css({width:parseInt(widths.rightPanelWidth-1)+'px'});
+      sidenav.style.width = widthStr;
+      if (pagenav) {
+        container.style.gridTemplateColumns = 'auto '+parseFloat(widths.rightPanelWidth)+'px';
+        if (!dragLeft) {
+          pagenav.style.width = parseFloat(widths.rightPanelWidth-1)+'px';
+        }
       }
       return widths;
     }
 
     function resizeWidth(dragLeft) {
-      const sidenavWidth = $(sidenav).outerWidth()-barWidth;
-      const pagenavWidth = pagenav.length ? $(pagenav).outerWidth() : 0;
+      const sidenavWidth = sidenav.offsetWidth - barWidth;
+      let pagenavWidth = pagenav ? pagenav.offsetWidth : 0;
       const widths = updateWidths(sidenavWidth,pagenavWidth,dragLeft);
       Cookie.writeSetting(RESIZE_COOKIE_NAME,widths.leftPanelWidth-barWidth);
-      if (pagenav.length) {
+      if (pagenav) {
         Cookie.writeSetting(PAGENAV_COOKIE_NAME,widths.rightPanelWidth);
       }
     }
@@ -578,10 +694,10 @@ function initNavTree(toroot,relpath,allMembersFile) {
     }
 
     function resizeHeight() {
-      const headerHeight = header.outerHeight();
-      const windowHeight = $(window).height();
+      const headerHeight = header.offsetHeight;
+      const windowHeight = window.innerHeight;
       let contentHeight;
-      const footerHeight = footer.outerHeight();
+      const footerHeight = footer.offsetHeight;
       let navtreeHeight,sideNavHeight;
       if (!fullSidebar) {
         contentHeight = windowHeight - headerHeight - footerHeight - 1;
@@ -592,12 +708,12 @@ function initNavTree(toroot,relpath,allMembersFile) {
         navtreeHeight = windowHeight - headerHeight - 1;
         sideNavHeight = windowHeight - 1;
         if (mainnav) {
-          contentHeight -= mainnav.outerHeight();
+          contentHeight -= mainnav.offsetHeight;
         }
       }
-      navtree.css({height:navtreeHeight + "px"});
-      sidenav.css({height:sideNavHeight + "px"});
-      content.css({height:contentHeight + "px"});
+      navtree.style.height = navtreeHeight + "px";
+      sidenav.style.height = sideNavHeight + "px";
+      content.style.height = contentHeight + "px";
       resizeWidth(false);
       showHideNavBar();
       if (location.hash.slice(1)) {
@@ -612,34 +728,94 @@ function initNavTree(toroot,relpath,allMembersFile) {
     if (document.getElementById('main-nav')) {
       mainnav = $("#main-nav");
     }
-    navtree = $("#nav-tree");
+    navtree   = $("#nav-tree");
     pagenav   = $("#page-nav");
     container = $("#container");
-    $(".side-nav-resizable").resizable({resize: function(e, ui) { resizeWidth(true); } });
-    $(sidenav).resizable({ minWidth: 0 });
-    if (pagenav.length) {
-      pagehandle  = $("#page-nav-resize-handle");
-      pagehandle.on('mousedown touchstart',function(e) { 
-         $('body').addClass('resizing');
-         pagehandle.addClass('dragging');
-         $(document).on('mousemove touchmove',function(e) {
-           const clientX = e.clientX || e.originalEvent.touches[0].clientX;
-           let pagenavWidth = container[0].offsetWidth-clientX+barWidth/2;
-           const sidenavWidth = sidenav.width();
-           const widths = constrainPanelWidths(sidenavWidth,pagenavWidth,false);
-           container.css({gridTemplateColumns:'auto '+parseInt(widths.rightPanelWidth)+'px'});
-           pagenav.css({width:parseInt(widths.rightPanelWidth-1)+'px'});
-           content.css({marginLeft:parseInt(widths.leftPanelWidth)+'px'});
-           Cookie.writeSetting(PAGENAV_COOKIE_NAME,pagenavWidth);
-         });
-         $(document).on('mouseup touchend', function(e) {
-           $('body').removeClass('resizing');
-           pagehandle.removeClass('dragging');
-           $(document).off('mousemove mouseup touchmove touchend');
-         });
-      });
+
+    // Native JavaScript implementation for resizable side navigation
+    const splitbar = $("#splitbar");
+    if (splitbar) {
+      // Add the ui-resizable-e class to make the splitbar visible and styled correctly
+      splitbar.classList.add('ui-resizable-e');
+      splitbar.style.zIndex = 90;
+
+      let isResizing = false;
+      let startX = 0;
+      let startWidth = 0;
+
+      const startResize = (e) => {
+        startX = e.clientX ?? e.touches?.[0]?.clientX;
+        startWidth = sidenav.offsetWidth - barWidth;
+        document.body.classList.add('resizing');
+        document.body.style.cursor = 'col-resize';
+
+        const doResize = (e) => {
+          const clientX = e.clientX ?? e.touches?.[0]?.clientX;
+          if (clientX === undefined) return;
+          const delta = clientX - startX;
+          const newWidth = startWidth + delta;
+          sidenav.style.width = newWidth + 'px';
+          resizeWidth(true);
+        };
+
+        const stopResize = () => {
+          document.body.classList.remove('resizing');
+          document.body.style.cursor = 'auto';
+          document.removeEventListener('mousemove', doResize);
+          document.removeEventListener('touchmove', doResize);
+          document.removeEventListener('mouseup',   stopResize);
+          document.removeEventListener('touchend',  stopResize);
+        };
+
+        document.addEventListener('mousemove', doResize);
+        document.addEventListener('touchmove', doResize);
+        document.addEventListener('mouseup', stopResize);
+        document.addEventListener('touchend', stopResize);
+      };
+
+      splitbar.addEventListener('mousedown', startResize);
+      splitbar.addEventListener('touchstart', startResize, { passive: false });
+    }
+
+    if (pagenav) {
+      const pagehandle = $("#page-nav-resize-handle");
+      if (pagehandle) {
+        const startDrag = (e) => {
+          document.body.classList.add('resizing');
+          pagehandle.classList.add('dragging');
+
+          const mouseMoveHandler = (e) => {
+            const clientX = e.clientX ?? e.touches?.[0]?.clientX;
+            if (clientX === undefined) return;
+            let pagenavWidth = container.offsetWidth - clientX + barWidth/2;
+            const sidenavWidth = sidenav.clientWidth;
+            const widths = constrainPanelWidths(sidenavWidth,pagenavWidth,false);
+            container.style.gridTemplateColumns = 'auto '+parseFloat(widths.rightPanelWidth)+'px';
+            pagenav.style.width = parseFloat(widths.rightPanelWidth-1)+'px';
+            content.style.marginLeft = parseFloat(widths.leftPanelWidth - barWidth)+'px';
+            Cookie.writeSetting(PAGENAV_COOKIE_NAME,pagenavWidth);
+          };
+
+          const mouseUpHandler = (e) => {
+            document.body.classList.remove('resizing');
+            pagehandle.classList.remove('dragging');
+            document.removeEventListener('mousemove', mouseMoveHandler);
+            document.removeEventListener('mouseup',   mouseUpHandler);
+            document.removeEventListener('touchmove', mouseMoveHandler);
+            document.removeEventListener('touchend',  mouseUpHandler);
+          };
+
+          document.addEventListener('mousemove', mouseMoveHandler);
+          document.addEventListener('touchmove', mouseMoveHandler);
+          document.addEventListener('mouseup',   mouseUpHandler);
+          document.addEventListener('touchend',  mouseUpHandler);
+        };
+
+        pagehandle.addEventListener('mousedown', startDrag);
+        pagehandle.addEventListener('touchstart', startDrag, { passive: false });
+      }
     } else {
-      container.css({gridTemplateColumns:'auto'});
+      container.style.gridTemplateColumns = 'auto';
     }
     const width = parseInt(Cookie.readSetting(RESIZE_COOKIE_NAME,250));
     const pagenavWidth = parseInt(Cookie.readSetting(PAGENAV_COOKIE_NAME,250));
@@ -647,34 +823,35 @@ function initNavTree(toroot,relpath,allMembersFile) {
     const url = location.href;
     const i=url.indexOf("#");
     if (i>=0) window.location.hash=url.substr(i);
-    const _preventDefault = function(evt) { evt.preventDefault(); };
-    $("#splitbar").bind("dragstart", _preventDefault).bind("selectstart", _preventDefault);
-    $(window).ready(function() {
-      let lastWidth = -1;
-      let lastHeight = -1;
-      $(window).resize(function() {
-          const newWidth  = $(this).width(), newHeight = $(this).height();
-          if (newWidth!=lastWidth || newHeight!=lastHeight) {
-            resizeHeight();
-            navtree_trampoline.updateContentTop();
-            lastWidth = newWidth;
-            lastHeight = newHeight;
-          }
-      });
-      resizeHeight();
-      lastWidth = $(window).width();
-      lastHeight = $(window).height();
-      content.scroll(function() {
+
+
+    let lastWidth = -1;
+    let lastHeight = -1;
+    window.addEventListener('resize', function() {
+        const newWidth = window.innerWidth;
+        const newHeight = window.innerHeight;
+        if (newWidth!=lastWidth || newHeight!=lastHeight) {
+          resizeHeight();
+          navtree_trampoline.updateContentTop();
+          lastWidth = newWidth;
+          lastHeight = newHeight;
+        }
+    });
+    resizeHeight();
+    lastWidth = window.innerWidth;
+    lastHeight = window.innerHeight;
+    if (content) {
+      content.addEventListener('scroll', function() {
         navtree_trampoline.updateContentTop();
       });
-    });
+    }
   }
-
 
   function initPageToc() {
     const topMapping = [];
     const toc_contents = $('#page-nav-contents');
-    const content=$('<ul>').addClass('page-outline');
+    const content = document.createElement('ul');
+    content.className = 'page-outline';
 
     var entityMap = {
       '&': '&amp;',
@@ -695,34 +872,46 @@ function initNavTree(toroot,relpath,allMembersFile) {
     // for ClassDef/GroupDef/ModuleDef/ConceptDef/DirDef
     const groupSections = [];
     let currentGroup = null;
-    $('h2.groupheader, h2.memtitle').each(function(){
-      const $element = $(this);
-      if ($element.hasClass('groupheader')) {
-        currentGroup = { groupHeader: $element, memTitles: [] };
+    $$('h2.groupheader, h2.memtitle').forEach(function(element){
+      if (hasClass(element, 'groupheader')) {
+        currentGroup = { groupHeader: element, memTitles: [] };
         groupSections.push(currentGroup);
-      } else if ($element.hasClass('memtitle') && currentGroup) {
-        currentGroup.memTitles.push($element);
+      } else if (hasClass(element, 'memtitle') && currentGroup) {
+        currentGroup.memTitles.push(element);
       }
     });
     groupSections.forEach(function(item){
-      const title = item.groupHeader.text().trim();
-      let id = item.groupHeader.attr('id');
-      const table = item.groupHeader.parents('table.memberdecls');
-      let rows = $();
-      if (table.length>0) {
-        rows = table.find("tr[class^='memitem:'] td.memItemRight, tr[class^='memitem:'] td.memItemLeft.anon, tr[class=groupHeader] td");
+      const title = item.groupHeader.textContent.trim();
+      let id = item.groupHeader.getAttribute('id');
+      let table = item.groupHeader.closest('table.memberdecls');
+      let rows = [];
+      if (table) {
+        rows = Array.from(table.querySelectorAll("tr[class^='memitem:'] td.memItemRight, tr[class^='memitem:'] td.memItemLeft.anon, tr[class=groupHeader] td"));
       }
       function hasSubItems() {
-        return item.memTitles.length>0 || rows.toArray().some(function(el) { return $(el).is(':visible'); });
+        return item.memTitles.length>0 || rows.some(function(el) { 
+          return el.offsetParent !== null; // check if visible
+        });
       }
-      const li = $('<li>').attr('id','nav-'+id);
-      const div = $('<div>').addClass('item');
-      const span = $('<span>').addClass('arrow').css({ paddingLeft:'0' });
+      const li = document.createElement('li');
+      li.setAttribute('id', 'nav-'+id);
+      const div = document.createElement('div');
+      div.classList.add('item');
+      const span = document.createElement('span');
+      span.classList.add('arrow');
+      span.style.paddingLeft='0px';
       if (hasSubItems()) {
-        span.append($('<span>').addClass('arrowhead opened'));
+        const arrowSpan = document.createElement('span');
+        arrowSpan.classList.add('arrowhead', 'opened');
+        span.appendChild(arrowSpan);
       }
-      const ahref = $('<a>').attr('href','#'+id).append(title);
-      content.append(li.append(div.append(span).append(ahref)));
+      const ahref = document.createElement('a');
+      ahref.setAttribute('href', '#'+id);
+      ahref.textContent = title;
+      div.appendChild(span);
+      div.appendChild(ahref);
+      li.appendChild(div);
+      content.appendChild(li);
       topMapping.push(id);
       const ulStack = [];
       ulStack.push(content);
@@ -730,51 +919,78 @@ function initNavTree(toroot,relpath,allMembersFile) {
         let last_id = undefined;
         let inMemberGroup = false;
         // declaration sections have rows for items
-        rows.each(function(){
-          let td = $(this);
-          let tr = $(td).parent();
-          const is_anon_enum = td.contents().first().text().trim()=='{';
-          if (tr.hasClass('template')) {
-            tr = tr.prev();
+        rows.forEach(function(td) {
+          let tr = td.parentElement;
+          const firstChild = td.childNodes[0];
+          const is_anon_enum = firstChild && firstChild.textContent.trim()=='{';
+          if (hasClass(tr, 'template')) {
+            tr = tr.previousElementSibling;
           }
-          id = $(tr).attr('id');
-          const text = is_anon_enum ? 'anonymous enum' : $(this).find('a:first,b,div.groupHeader').text();
-          let isMemberGroupHeader = $(tr).hasClass('groupHeader');
-          if ($(tr).is(":visible") && last_id!=id && id!==undefined) {
+          id = tr.getAttribute('id');
+          let text = is_anon_enum ? 'anonymous enum' : (td.querySelector(':first-child') ? td.querySelector(':first-child').textContent : '');
+          let isMemberGroupHeader = hasClass(tr, 'groupHeader');
+          if (tr.offsetParent !== null && last_id!=id && id!==undefined && id!==null) {
             if (isMemberGroupHeader && inMemberGroup) {
               ulStack.pop();
               inMemberGroup=false;
             }
-            const li2 = $('<li>').attr('id','nav-'+id);
-            const div2 = $('<div>').addClass('item');
-            const span2 = $('<span>').addClass('arrow').css({ paddingLeft:parseInt(ulStack.length*16)+'px' });
-            const ahref = $('<a>').attr('href','#'+id).append(escapeHtml(text));
-            li2.append(div2.append(span2).append(ahref));
+            const li2 = document.createElement('li');
+            li2.setAttribute('id', 'nav-'+id);
+            const div2 = document.createElement('div');
+            div2.classList.add('item');
+            const span2 = document.createElement('span');
+            span2.classList.add('arrow');
+            span2.style.paddingLeft = parseInt(ulStack.length*16)+'px';
+            const ahref = document.createElement('a');
+            ahref.setAttribute('href', '#'+id);
+            ahref.textContent = escapeHtml(text);
+            div2.appendChild(span2);
+            div2.appendChild(ahref);
+            li2.appendChild(div2);
             topMapping.push(id);
             if (isMemberGroupHeader) {
-              span2.append($('<span>').addClass('arrowhead opened'));
-              ulStack[ulStack.length-1].append(li2);
-              const ul2 = $('<ul>');
+              const arrowSpan = document.createElement('span');
+              arrowSpan.classList.add('arrowhead','opened');
+              span2.appendChild(arrowSpan);
+              ulStack[ulStack.length-1].appendChild(li2);
+              const ul2 = document.createElement('ul');
               ulStack.push(ul2);
-              li2.append(div2).append(ul2);
+              li2.appendChild(ul2);
               inMemberGroup=true;
             } else {
-              ulStack[ulStack.length-1].append(li2);
+              ulStack[ulStack.length-1].appendChild(li2);
             }
             last_id=id;
           }
         });
         // detailed documentation has h2.memtitle sections for items
         item.memTitles.forEach(function(data) {
-          const text = $(data).contents().not($(data).children().first()).text();
+          const childNodes = Array.from(data.childNodes);
+          const firstChild = data.children[0];
+          let text = '';
+          childNodes.forEach(node => {
+            if (node !== firstChild) {
+              text += node.textContent || '';
+            }
+          });
           const name = text.replace(/\(\)(\s*\[\d+\/\d+\])?$/, '') // func() [2/8] -> func
-          id = $(data).find('span.permalink a').attr('href')
+          const permalinkAnchor = data.querySelector('span.permalink a');
+          id = permalinkAnchor ? permalinkAnchor.getAttribute('href') : undefined;
           if (id!==undefined && name!==undefined) {
-            const li2 = $('<li>').attr('id','nav-'+id.substring(1));
-            const div2 = $('<div>').addClass('item');
-            const span2 = $('<span>').addClass('arrow').css({paddingLeft:parseInt(ulStack.length*16)+'px'});
-            const ahref = $('<a>').attr('href',id).append(escapeHtml(name));
-            ulStack[ulStack.length-1].append(li2.append(div2.append(span2).append(ahref)));
+            const li2 = document.createElement('li');
+            li2.setAttribute('id', 'nav-'+id.substring(1));
+            const div2 = document.createElement('div');
+            div2.classList.add('item');
+            const span2 = document.createElement('span');
+            span2.classList.add('arrow');
+            span2.style.paddingLeft = parseInt(ulStack.length*16)+'px';
+            const ahref = document.createElement('a');
+            ahref.setAttribute('href', id);
+            ahref.textContent = escapeHtml(name);
+            div2.appendChild(span2);
+            div2.appendChild(ahref);
+            li2.appendChild(div2);
+            ulStack[ulStack.length-1].appendChild(li2);
             topMapping.push(id.substring(1));
           }
         });
@@ -789,20 +1005,32 @@ function initNavTree(toroot,relpath,allMembersFile) {
         dstBaseUrl = allMembersFile.substr(0, allMembersFile.lastIndexOf('/'))+'/';
       }
       const pageName = url.split('/').pop().split('#')[0].replace(/(\.[^/.]+)$/, '-members$1');
-      const li = $('<li>');
-      const div = $('<div>').addClass('item');
-      const span = $('<span>').addClass('arrow').css({ paddingLeft:'0' });
-      const ahref = $('<a>').attr('href',srcBaseUrl+dstBaseUrl+pageName).addClass('noscroll');
-      content.append(li.append(div.append(span).append(ahref.append(LISTOFALLMEMBERS))));
+      const li = document.createElement('li');
+      const div = document.createElement('div');
+      div.classList.add('item');
+      const span = document.createElement('span');
+      span.classList.add('arrow');
+      span.style.paddingLeft='0px';
+      const ahref = document.createElement('a');
+      ahref.setAttribute('href', srcBaseUrl+dstBaseUrl+pageName);
+      ahref.classList.add('noscroll');
+      ahref.textContent = LISTOFALLMEMBERS;
+      div.appendChild(span);
+      div.appendChild(ahref);
+      li.appendChild(div);
+      content.appendChild(li);
     }
 
     if (groupSections.length==0) {
       // for PageDef
       const sectionTree = [], sectionStack = [];
-      $('h1.doxsection, h2.doxsection, h3.doxsection, h4.doxsection, h5.doxsection, h6.doxsection').each(function(){
-        const level = parseInt(this.tagName[1]);
-        const anchor = $(this).find('a.anchor').attr('id');
-        const node = { text: $(this).html(), id: anchor, children: [] };
+      $$('h1.doxsection, h2.doxsection, h3.doxsection, h4.doxsection, h5.doxsection, h6.doxsection').forEach(function(element){
+        const level = parseInt(element.tagName[1]);
+        const anchorEl = element.querySelector('a.anchor');
+        const anchor = anchorEl ? anchorEl.getAttribute('id') : null;
+        // Note: innerHTML is used here to preserve HTML formatting in section headings
+        // This content is generated by doxygen, not from user input
+        const node = { text: element.innerHTML, id: anchor, children: [] };
         while (sectionStack.length && sectionStack[sectionStack.length - 1].level >= level) sectionStack.pop();
         (sectionStack.length ? sectionStack[sectionStack.length - 1].children : sectionTree).push(node);
         sectionStack.push({ ...node, level });
@@ -810,12 +1038,26 @@ function initNavTree(toroot,relpath,allMembersFile) {
       if (sectionTree.length>0) {
         function render(nodes, level=0) {
           nodes.map(n => {
-            const li = $('<li>').attr('id','nav-'+n.id);
-            const div = $('<div>').addClass('item');
-            const span = $('<span>').addClass('arrow').attr('style','padding-left:'+parseInt(level*16)+'px;');
-            if (n.children.length > 0) { span.append($('<span>').addClass('arrowhead opened')); }
-            const url = $('<a>').attr('href','#'+n.id);
-            content.append(li.append(div.append(span).append(url.append(n.text))));
+            const li = document.createElement('li');
+            li.setAttribute('id', 'nav-'+n.id);
+            const div = document.createElement('div');
+            div.classList.add('item');
+            const span = document.createElement('span');
+            span.classList.add('arrow');
+            span.setAttribute('style', 'padding-left:'+parseInt(level*16)+'px;');
+            if (n.children.length > 0) {
+              const arrowSpan = document.createElement('span');
+              arrowSpan.classList.add('arrowhead','opened');
+              span.appendChild(arrowSpan);
+            }
+            const url = document.createElement('a');
+            url.setAttribute('href', '#'+n.id);
+            // innerHTML used to preserve HTML formatting from doxygen-generated content
+            url.innerHTML = n.text;
+            div.appendChild(span);
+            div.appendChild(url);
+            li.appendChild(div);
+            content.appendChild(li);
             topMapping.push(n.id);
             render(n.children,level+1);
           });
@@ -824,12 +1066,16 @@ function initNavTree(toroot,relpath,allMembersFile) {
       }
     }
 
-    toc_contents.append(content);
+    if (toc_contents) {
+      toc_contents.appendChild(content);
+    }
 
-    $(".page-outline a[href]:not(.noscroll)").click(function(e) {
-      e.preventDefault();
-      const aname = $(this).attr("href");
-      gotoAnchor($(aname),aname);
+    $$(".page-outline a[href]:not(.noscroll)").forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const aname = this.getAttribute("href");
+        gotoAnchor(document.querySelector(aname), aname);
+      });
     });
 
     let lastScrollSourceOffset = -1;
@@ -838,52 +1084,59 @@ function initNavTree(toroot,relpath,allMembersFile) {
 
     navtree_trampoline.updateContentTop = function() {
       const pagenavcontents = $("#page-nav-contents");
-      if (pagenavcontents.length) {
+      if (pagenavcontents) {
         const content = $("#doc-content");
-        const height = content.height();
-        const navy = pagenavcontents.offset().top;
-        const yc = content.offset().top;
+        const height = content ? content.clientHeight : 0;
+        const navy = pagenavcontents ? offsetTop(pagenavcontents) : 0;
+        const yc = content ? offsetTop(content) : 0;
         let offsets = []
         for (let i=0;i<topMapping.length;i++) {
-          const heading = $('#'+topMapping[i]);
-          if (heading.parent().hasClass('doxsection')) {
-            offsets.push({id:topMapping[i],y:heading.parent().offset().top-yc});
-          } else {
-            offsets.push({id:topMapping[i],y:heading.offset().top-yc});
+          const heading = document.getElementById(topMapping[i]);
+          if (heading && heading.parentElement && hasClass(heading.parentElement, 'doxsection')) {
+            offsets.push({id:topMapping[i],y:offsetTop(heading.parentElement)-yc});
+          } else if (heading) {
+            offsets.push({id:topMapping[i],y:offsetTop(heading)-yc});
           }
         }
         offsets.push({id:'',y:1e10});
         let scrollTarget = undefined, numItems=0;
-        for (let i=0;i<topMapping.length;i++) {
+        for (let i=0;i<offsets.length-1;i++) {
           const ys = offsets[i].y;
           const ye = offsets[i+1].y;
           const id = offsets[i].id;
-          const nav = $('#nav-'+id);
+          const nav = document.getElementById('nav-'+id);
           const margin = 10; // #pixels before content show as visible
           if ((ys>margin || ye>margin) && (ys<height-margin || ye<height-margin)) {
             if (!scrollTarget) scrollTarget=nav;
-            nav.addClass('vis'); // mark navigation entry as visible within content area
+            if (nav) nav.classList.add('vis'); // mark navigation entry as visible within content area
             numItems+=1;
           } else {
-            nav.removeClass('vis');
+            if (nav) nav.classList.remove('vis');
           }
         }
-        const contentScrollOffset = $('div.contents').offset().top;
-        if (scrollTarget && lastScrollTargetId!=scrollTarget.attr('id')) { // new item to scroll to
+        const contentsDiv = document.querySelector('div.contents');
+        const contentScrollOffset = contentsDiv ? offsetTop(contentsDiv) : 0;
+        if (scrollTarget && lastScrollTargetId!=scrollTarget.getAttribute('id')) { // new item to scroll to
           const scrollDown = contentScrollOffset<lastScrollSourceOffset;
           const range = 22*numItems;
           const my = range/2-height/2;
-          const ulOffset = $('ul.page-outline').offset().top-navy;
-          const targetPos=scrollTarget.offset().top-navy-ulOffset;
+          const pageOutline = document.querySelector('ul.page-outline');
+          const ulOffset = pageOutline ? offsetTop(pageOutline)-navy : 0;
+          const targetPos = offsetTop(scrollTarget)-navy-ulOffset;
           const targetOffset=targetPos+my;
           if ( (scrollDown && targetOffset>lastScrollTargetOffset) ||
               (!scrollDown && targetOffset<lastScrollTargetOffset)) 
           { // force panel to scroll in the same direction as content window
-            pagenavcontents.stop(); // avoid build-up of history
-            pagenavcontents.scrollTo({ left:0, top:targetOffset },{ duration: 500, interrupt: true });
+            if (pagenavcontents) {
+              pagenavcontents.scrollTo({
+                left: 0,
+                top: targetOffset,
+                behavior: 'smooth'
+              });
+            }
             lastScrollTargetOffset = targetOffset;
           }
-          lastScrollTargetId = scrollTarget.attr('id');
+          lastScrollTargetId = scrollTarget.getAttribute('id');
         }
         lastScrollSourceOffset = contentScrollOffset;
       }
@@ -893,7 +1146,18 @@ function initNavTree(toroot,relpath,allMembersFile) {
       navtree_trampoline.updateContentTop();
     },200);
   }
-  $(document).ready(function() { initPageToc(); initResizable(); });
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      initPageToc();
+      initResizable();
+    });
+  } else {
+    initPageToc();
+    initResizable();
+  }
+
+  initResizableFunc = initResizable;
 
 }
 /* @license-end */

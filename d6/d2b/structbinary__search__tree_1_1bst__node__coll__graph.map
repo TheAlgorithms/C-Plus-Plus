@@ -3,9 +3,9 @@
 <area shape="rect" id="Node000002" title=" " alt="" coords="52,5,90,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,47,74,366,68,366,68,47"/>
 <area shape="rect" id="Node000004" href="$dd/db6/structbinary__search__tree_1_1bst__node.html" title="A struct to represent a node in the Binary Search Tree." alt="" coords="87,102,218,143"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="92,42,139,100,135,103,88,45"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="90,41,139,101,134,102,90,46"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="88,234,257,275"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,289,88,367,84,364,146,286"/>
-<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="164,219,156,167,153,143,158,143,162,166,170,218"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="140,158,135,184,139,209,153,232,149,235,133,211,130,183,135,157"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,287,88,367,84,364,145,287"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="164,218,156,167,155,146,156,140,162,166,170,219"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="139,155,135,184,139,209,154,233,148,234,133,211,130,183,137,160"/>
 </map>

@@ -1,23 +1,23 @@
 <map id="numerical_methods/durand_kerner_roots.cpp" name="numerical_methods/durand_kerner_roots.cpp">
-<area shape="rect" id="Node000001" title="Compute all possible approximate roots of any given polynomial using Durand Kerner algorithm" alt="" coords="351,5,528,46"/>
+<area shape="rect" id="Node000001" title="Compute all possible approximate roots of any given polynomial using Durand Kerner algorithm." alt="" coords="351,5,528,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="351,46,95,96,94,91,350,41"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,94,168,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="364,49,184,96,182,91,363,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="366,48,184,96,182,91,362,45"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="192,94,250,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="386,49,266,92,264,87,384,44"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="388,46,265,92,264,87,383,47"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="274,94,344,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="409,49,343,88,341,83,406,44"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="410,46,343,88,341,83,405,47"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="368,94,429,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="432,48,414,81,410,79,427,45"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="432,45,414,82,410,78,427,48"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="453,94,512,120"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="453,45,471,79,466,81,448,48"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="452,44,471,81,466,79,449,49"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="536,94,589,120"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="472,44,532,83,530,88,469,49"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="471,44,534,86,528,85,469,49"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="614,94,679,120"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="492,44,602,86,600,91,491,49"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="492,44,603,88,598,88,491,49"/>
 <area shape="rect" id="Node000010" title=" " alt="" coords="703,94,774,120"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="515,44,689,90,687,95,514,49"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="515,44,690,92,685,92,514,49"/>
 <area shape="rect" id="Node000011" title=" " alt="" coords="798,94,866,120"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="529,40,784,91,783,96,528,45"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="529,40,786,93,781,94,529,45"/>
 </map>

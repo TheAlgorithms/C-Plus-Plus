@@ -1,7 +1,7 @@
 var bloom__filter_8cpp =
 [
     [ "data_structures::Bitset", "d9/dae/classdata__structures_1_1_bitset.html", "d9/dae/classdata__structures_1_1_bitset" ],
-    [ "data_structures::BloomFilter< T >", "dc/dd4/classdata__structures_1_1_bloom_filter.html", "dc/dd4/classdata__structures_1_1_bloom_filter" ],
+    [ "data_structures::BloomFilter&lt; T &gt;", "dc/dd4/classdata__structures_1_1_bloom_filter.html", "dc/dd4/classdata__structures_1_1_bloom_filter" ],
     [ "data_structures::hashDJB2", "d5/d3c/namespacedata__structures.html#a271c753baf6dc5ac6f19fa03c5873eb4", null ],
     [ "data_structures::hashInt_1", "d5/d3c/namespacedata__structures.html#aa6deb9d4a0f63ea97aef3dce4c6c6677", null ],
     [ "data_structures::hashInt_2", "d5/d3c/namespacedata__structures.html#a9ed236419034917c5270c1dccd220b5c", null ],

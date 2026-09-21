@@ -1,8 +1,8 @@
 <map id="others::lru_cache::LRUCache" name="others::lru_cache::LRUCache">
 <area shape="rect" id="Node000001" title="LRU cache class." alt="" coords="509,24,638,65"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,39,140,65"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,37,163,36,324,26,485,31,509,33,508,38,485,36,324,31,164,42,155,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,37,163,36,324,26,485,31,511,35,506,36,485,36,324,31,164,42,156,42"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="249,63,400,119"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="155,62,249,77,248,82,154,68"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="415,71,508,54,509,59,416,77"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="155,62,251,78,246,80,155,68"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="415,71,506,57,511,56,416,77"/>
 </map>

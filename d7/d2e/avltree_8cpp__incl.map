@@ -1,9 +1,9 @@
 <map id="data_structures/avltree.cpp" name="data_structures/avltree.cpp">
 <area shape="rect" id="Node000001" title="A simple tree implementation using nodes." alt="" coords="50,5,230,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,34,72,72,69,68,122,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,31,72,72,69,68,121,32"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,79,176,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,31,142,63,137,63,137,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,29,142,64,137,62,138,33"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="200,79,256,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,29,203,67,200,71,153,34"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,29,204,69,199,69,154,34"/>
 </map>

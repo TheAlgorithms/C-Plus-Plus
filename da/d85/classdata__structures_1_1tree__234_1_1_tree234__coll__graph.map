@@ -1,10 +1,10 @@
 <map id="data_structures::tree_234::Tree234" name="data_structures::tree_234::Tree234">
 <area shape="rect" id="Node000001" title="2&#45;3&#45;4 tree class" alt="" coords="5,214,147,254"/>
 <area shape="rect" id="Node000002" href="$dd/d40/classdata__structures_1_1tree__234_1_1_node.html" title="2&#45;3&#45;4 tree node class" alt="" coords="97,102,239,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,154,104,168,91,191,83,214,78,212,86,189,100,165,115,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,150,104,168,91,191,82,215,78,212,86,189,100,165,115,154"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="171,214,349,254"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="161,158,161,174,167,188,178,201,192,211,189,215,174,205,162,191,156,175,156,158"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="160,156,161,174,167,188,178,201,193,213,188,213,174,205,162,191,156,175,157,160"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="91,5,245,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="171,46,171,102,165,102,165,46"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="247,200,229,168,202,145,205,141,233,165,252,198"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="169,44,171,102,165,101,167,49"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="247,198,229,168,203,146,204,140,233,165,252,200"/>
 </map>

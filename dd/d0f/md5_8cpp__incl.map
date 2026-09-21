@@ -1,19 +1,19 @@
 <map id="hashing/md5.cpp" name="hashing/md5.cpp">
-<area shape="rect" id="Node000001" title="Simple C++ implementation of the MD5 Hashing Algorithm" alt="" coords="278,5,399,31"/>
+<area shape="rect" id="Node000001" title="Simple C++ implementation of the MD5 Hashing Algorithm." alt="" coords="278,5,399,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,34,96,80,94,75,287,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,79,154,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="304,34,170,79,168,74,302,29"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="306,32,170,79,168,74,300,31"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="178,79,243,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="318,34,247,73,244,69,315,29"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="319,31,247,74,245,69,314,32"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="267,79,327,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="334,33,314,67,309,64,329,30"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="334,30,313,68,310,63,329,33"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="351,79,411,105"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="348,30,368,64,364,67,343,33"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="347,29,369,66,364,65,344,34"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="435,79,506,105"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="362,29,436,69,434,74,360,34"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="362,29,438,72,432,71,360,34"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="530,79,584,105"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="376,29,517,75,515,80,375,34"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="376,29,519,77,513,77,375,34"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="608,79,666,105"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="394,29,594,76,592,81,393,34"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="394,29,596,78,590,79,394,34"/>
 </map>

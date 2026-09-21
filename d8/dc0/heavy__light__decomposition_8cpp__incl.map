@@ -1,21 +1,21 @@
 <map id="range_queries/heavy_light_decomposition.cpp" name="range_queries/heavy_light_decomposition.cpp">
 <area shape="rect" id="Node000001" title="Heavy Light Decomposition implementation" alt="" coords="309,5,477,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,80,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="309,48,96,96,95,91,308,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="309,48,96,96,94,91,308,43"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="104,94,168,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="330,49,183,94,182,89,328,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="332,47,183,94,182,89,326,46"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="192,94,250,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="351,49,263,90,260,85,349,44"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="353,46,262,90,261,85,348,47"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="274,94,334,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="373,48,331,86,327,82,369,44"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="374,45,330,86,328,81,369,47"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="358,94,429,120"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="396,46,396,78,390,78,390,46"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="395,44,395,80,391,77,391,48"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="453,94,491,120"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="414,45,451,81,447,85,411,48"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="414,44,452,83,447,82,412,49"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="516,94,583,120"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="433,44,513,84,510,89,431,49"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="433,44,514,87,509,86,431,49"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="606,94,660,120"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="454,44,593,90,591,95,452,49"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="454,44,595,92,590,92,453,49"/>
 <area shape="rect" id="Node000010" title=" " alt="" coords="684,94,742,120"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="478,44,670,91,668,96,477,49"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="478,44,672,93,666,94,477,49"/>
 </map>

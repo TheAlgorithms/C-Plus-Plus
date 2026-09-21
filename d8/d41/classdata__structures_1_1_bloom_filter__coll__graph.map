@@ -1,11 +1,11 @@
 <map id="data_structures::BloomFilter&lt; T &gt;" name="data_structures::BloomFilter&lt; T &gt;">
 <area shape="rect" id="Node000001" title="Bloom filter template class." alt="" coords="72,214,289,239"/>
 <area shape="rect" id="Node000002" href="$d9/dae/classdata__structures_1_1_bitset.html" title="Simple bitset implementation for bloom filter." alt="" coords="13,110,166,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,145,171,211,167,215,108,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,144,172,213,167,214,109,149"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,5,174,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,47,92,109,87,109,87,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,44,92,109,87,109,88,49"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="190,102,357,143"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,156,193,215,189,211,243,152"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="248,153,193,215,190,211,243,155"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="254,5,293,31"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="276,46,276,102,271,102,271,46"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="275,44,276,103,271,101,272,49"/>
 </map>

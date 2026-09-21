@@ -1,7 +1,7 @@
 <map id="divide_and_conquer::strassens_multiplication::Matrix&lt; T, typename &gt;" name="divide_and_conquer::strassens_multiplication::Matrix&lt; T, typename &gt;">
 <area shape="rect" id="Node000001" title="Matrix class." alt="" coords="5,214,175,269"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="11,102,169,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,158,93,213,87,213,87,158"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,156,93,214,87,212,88,160"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="71,5,109,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,46,93,102,87,102,87,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,44,93,102,87,101,89,49"/>
 </map>

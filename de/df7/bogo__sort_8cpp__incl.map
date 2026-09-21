@@ -1,13 +1,13 @@
 <map id="sorting/bogo_sort.cpp" name="sorting/bogo_sort.cpp">
-<area shape="rect" id="Node000001" title="Implementation of Bogosort algorithm" alt="" coords="152,5,298,31"/>
+<area shape="rect" id="Node000001" title="Implementation of Bogosort algorithm." alt="" coords="152,5,298,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,77,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,34,87,75,85,71,193,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="101,79,176,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,34,166,71,163,67,209,29"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,31,166,71,163,67,208,32"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="200,79,250,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,31,228,63,222,63,222,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="227,29,227,65,223,62,223,33"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="274,79,338,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="241,30,283,67,280,71,237,34"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="240,29,284,69,279,68,238,34"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="362,79,426,105"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="255,29,352,70,350,75,253,34"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="254,29,354,72,349,73,253,34"/>
 </map>

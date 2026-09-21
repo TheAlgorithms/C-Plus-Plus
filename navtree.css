@@ -31,6 +31,8 @@
   padding:0px;
   border:0px;
   vertical-align: middle;
+  float: none;
+  max-height: 20px;
 }
 
 #nav-tree a {
@@ -46,10 +48,6 @@
   line-height: 22px;
 }
 
-#nav-tree .label a {
-  padding:2px;
-}
-
 #nav-tree .selected a {
   text-decoration:none;
   color:#3D578C;
@@ -63,7 +61,6 @@
 #nav-tree .item {
   margin: 0 6px 0 -5px;
   padding: 0 0 0 5px;
-  height: 22px;
 }
 
 #nav-tree {
@@ -244,8 +241,13 @@ div.nav-sync-icon:hover span.sync-icon-right {
 	display: block;
 	width: 250px;
 	box-sizing: content-box;
-        position: relative;
+	position: relative;
 	border-left: 1px solid #C4CFE5;
+}
+
+#page-nav img.inline {
+	float: none;
+	max-height: 19px;
 }
 
 #page-nav-tree {

@@ -1,6 +1,6 @@
 <map id="operations_on_datastructures::trie_operations::Tnode" name="operations_on_datastructures::trie_operations::Tnode">
 <area shape="rect" id="Node000001" title="Class defining the structure of trie node and containing the methods to perform operations on them." alt="" coords="5,5,198,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="22,117,181,173"/>
-<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="63,59,55,71,52,81,55,92,70,115,66,118,50,94,47,81,50,69,58,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,102,116,70,109,47,114,46,121,70,120,102"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="59,60,55,71,52,81,55,92,71,116,65,117,50,94,47,81,50,69,62,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,101,116,70,110,49,112,44,121,70,120,103"/>
 </map>
