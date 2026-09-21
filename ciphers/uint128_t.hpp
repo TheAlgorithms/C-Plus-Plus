@@ -21,13 +21,6 @@
 #define CIPHERS_UINT128_T_HPP_
 class uint128_t;
 
-template <>
-struct std::is_integral<uint128_t> : std::true_type {};
-template <>
-struct std::is_arithmetic<uint128_t> : std::true_type {};
-template <>
-struct std::is_unsigned<uint128_t> : std::true_type {};
-
 /**
  * @brief Adding two string
  * @details Adds two long integer, only used for printing numbers
