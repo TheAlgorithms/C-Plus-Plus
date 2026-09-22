@@ -1,0 +1,7 @@
+To Build the game, open your terminal, in the games/rock-paper-scissors directory, and run the following command:
+
+
+cmake --build build
+
+
+The game will be built in the build/ directory, open it, and launch stone-paper-scissors.exe
