@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('de/d89/graham_
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">/******************************************************************************</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * @brief A utility function to find next to top in a stack.</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * @param S Stack to be used for the process.</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * @returns @param Point Co-ordinates of the Point &lt;int, int&gt;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * @returns Co-ordinates of the Point &lt;int, int&gt; below the top of the stack</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> *******************************************************************************/</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><a class="code hl_struct" href="../../d7/d48/structgeometry_1_1grahamscan_1_1_point.html">Point</a> nextToTop(std::stack&lt;Point&gt; *S) {</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_struct" href="../../d7/d48/structgeometry_1_1grahamscan_1_1_point.html">Point</a> p = S-&gt;top();</div>
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('de/d89/graham_
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> * @brief A utility function to return square of distance between p1 and p2.</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> * @param p1 Co-ordinates of Point 1 &lt;int, int&gt;.</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> * @param p2 Co-ordinates of Point 2 &lt;int, int&gt;.</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> * @returns @param int distance between p1 and p2.</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> * @returns square of the distance between p1 and p2.</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> *******************************************************************************/</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">int</span> distSq(<a class="code hl_struct" href="../../d8/dc8/struct_point.html">Point</a> p1, <a class="code hl_struct" href="../../d8/dc8/struct_point.html">Point</a> p2) {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> (p1.x - p2.x) * (p1.x - p2.x) + (p1.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> - p2.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>) * (p1.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> - p2.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a>);</div>
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('de/d89/graham_
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> * @param p Co-ordinates of Point p &lt;int, int&gt;.</span></div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> * @param q Co-ordinates of Point q &lt;int, int&gt;.</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> * @param r Co-ordinates of Point r &lt;int, int&gt;.</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> * @returns @param int 0 --&gt; p, q and r are collinear, 1 --&gt; Clockwise,</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> * @returns 0 --&gt; p, q and r are collinear, 1 --&gt; Clockwise,</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * 2 --&gt; Counterclockwise</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> *******************************************************************************/</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keywordtype">int</span> orientation(<a class="code hl_struct" href="../../d8/dc8/struct_point.html">Point</a> p, <a class="code hl_struct" href="../../d8/dc8/struct_point.html">Point</a> q, <a class="code hl_struct" href="../../d8/dc8/struct_point.html">Point</a> r) {</div>
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('de/d89/graham_
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment"> * points with respect to the first point</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"> * @param vp1 Co-ordinates of Point 1 &lt;int, int&gt;.</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment"> * @param vp2 Co-ordinates of Point 2 &lt;int, int&gt;.</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> * @returns @param int distance between p1 and p2.</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> * @returns -1 if Point 1 sorts before Point 2, 1 otherwise.</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> *******************************************************************************/</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keywordtype">int</span> compare(<span class="keyword">const</span> <span class="keywordtype">void</span> *vp1, <span class="keyword">const</span> <span class="keywordtype">void</span> *vp2) {</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">auto</span> *p1 = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code hl_struct" href="../../d7/d48/structgeometry_1_1grahamscan_1_1_point.html">Point</a> *<span class="keyword">&gt;</span>(vp1);</div>
@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('de/d89/graham_
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment"> * @brief Prints convex hull of a set of n points.</span></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment"> * @param points vector of Point&lt;int, int&gt; with co-ordinates.</span></div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"> * @param size Size of the vector.</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"> * @returns @param vector vector of Conver Hull.</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"> * @returns vector of the Points forming the convex hull.</span></div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"> *******************************************************************************/</span></div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>std::vector&lt;Point&gt; convexHull(std::vector&lt;Point&gt; points, uint64_t size) {</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="comment">// Find the bottom-most point</span></div>
