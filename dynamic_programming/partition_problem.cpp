@@ -1,4 +1,4 @@
-/******************************************************************************
+/**
  * @file
  * @brief Implementation of the [Partition
  * Problem](https://en.wikipedia.org/wiki/Partition_problem )
@@ -26,31 +26,31 @@
  *
  * @author [Lajat Manekar](https://github.com/Lazeeez)
  *
- *******************************************************************************/
+  */
 #include <cassert>   /// for assert
 #include <cstdint>   /// for std::uint64_t
 #include <iostream>  /// for IO Operations
 #include <numeric>   /// for std::accumulate
 #include <vector>    /// for std::vector
-/******************************************************************************
+/**
  * @namespace dp
  * @brief Dynamic programming algorithms
- *******************************************************************************/
+  */
 namespace dp {
 
-/******************************************************************************
+/**
  * @namespace partitionProblem
  * @brief Partition problem algorithm
- *******************************************************************************/
+  */
 namespace partitionProblem {
 
-/******************************************************************************
+/**
  * @brief Returns true if arr can be partitioned in two subsets of equal sum,
  * otherwise false
  * @param arr vector containing elements
  * @param size Size of the vector.
  * @returns @param bool whether the vector can be partitioned or not.
- *******************************************************************************/
+  */
 bool findPartiion(const std::vector<uint64_t> &arr, uint64_t size) {
     uint64_t sum = std::accumulate(arr.begin(), arr.end(),
                                    0);  // Calculate sum of all elements
@@ -82,10 +82,10 @@ bool findPartiion(const std::vector<uint64_t> &arr, uint64_t size) {
 }  // namespace partitionProblem
 }  // namespace dp
 
-/*******************************************************************************
+/**
  * @brief Self-test implementations
  * @returns void
- *******************************************************************************/
+  */
 static void test() {
     std::vector<uint64_t> arr = {{1, 3, 3, 2, 3, 2}};
     uint64_t n = arr.size();
@@ -96,10 +96,10 @@ static void test() {
     std::cout << "Passed!" << std::endl;
 }
 
-/*******************************************************************************
+/**
  * @brief Main function
  * @returns 0 on exit
- *******************************************************************************/
+  */
 int main() {
     test();  // run self-test implementations
     return 0;
