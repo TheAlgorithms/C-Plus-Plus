@@ -15,7 +15,7 @@
  * occurred, "the conditional probability of A given B", or "the probability of
  * A under the condition B" is given by the formula:
  *
- * \f[P(A|B) = \frac{P(A \cap B)}{P(B)}\f]
+ * \f[P(A \mid B) = \frac{P(A \cap B)}{P(B)}\f]
  * where: \f$P(B) > 0\f$.
  *
  *
