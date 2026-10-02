@@ -1,6 +1,7 @@
 /*
     Write a program to implement Queue using linkedlist.
 */
+#include <cassert>
 #include <iostream>
 
 struct linkedlist {
@@ -31,10 +32,10 @@ void stack_linkedList::enqueue(int ele) {
 }
 int stack_linkedList::dequeue() {
     linkedlist *temp;
-    int ele;
-    if (front == NULL)
+    int ele = 0;  // defined sentinel for the empty-queue case below
+    if (front == NULL) {
         std::cout << "\nStack is empty";
-    else {
+    } else {
         temp = front;
         ele = temp->data;
         if (front == rear)  // if length of queue is 1;
@@ -58,7 +59,32 @@ void stack_linkedList::display() {
     }
 }
 
+/*
+    Self-test: dequeue() must never read uninitialized memory. On an empty
+    queue it should return a defined sentinel (0) instead of whatever
+    happens to be on the stack.
+*/
+static void tests() {
+    stack_linkedList q;
+
+    assert(q.dequeue() == 0);  // empty queue before any enqueue
+
+    q.enqueue(10);
+    q.enqueue(20);
+    q.enqueue(30);
+
+    assert(q.dequeue() == 10);
+    assert(q.dequeue() == 20);
+    assert(q.dequeue() == 30);
+
+    assert(q.dequeue() == 0);  // empty again after draining the queue
+
+    std::cout << "All tests have successfully passed!\n";
+}
+
 int main() {
+    tests();
+
     int op, data;
     stack_linkedList ob;
     std::cout << "\n1. enqueue(Insertion) ";
