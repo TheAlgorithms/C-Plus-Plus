@@ -1,9 +1,9 @@
 #include <iostream>
 #include <queue>
 
-/**************************
+/**
     @author shrutisheoran
-**************************/
+ */
 
 using namespace std;
 

@@ -50,7 +50,7 @@
  * \param[in] coeffs coefficients of the polynomial
  * \param[in] x point at which to evaluate the polynomial
  * \returns \f$f(x)\f$
- **/
+  */
 std::complex<double> poly_function(const std::valarray<double> &coeffs,
                                    std::complex<double> x) {
     double real = 0.f, imag = 0.f;
@@ -272,7 +272,7 @@ void test2() {
               << "\n";
 }
 
-/***
+/**
  * Main function.
  * The comandline input arguments are taken as coeffiecients of a
  *polynomial. For example, this command
@@ -280,7 +280,7 @@ void test2() {
  * ./durand_kerner_roots 1 0 -4
  * ```
  * will find roots of the polynomial \f$1\cdot x^2 + 0\cdot x^1 + (-4)=0\f$
- **/
+  */
 int main(int argc, char **argv) {
     /* initialize random seed: */
     std::srand(std::time(nullptr));
