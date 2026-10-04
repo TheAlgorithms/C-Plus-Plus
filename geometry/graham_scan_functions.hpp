@@ -73,7 +73,7 @@ Point p0;
 /******************************************************************************
  * @brief A utility function to find next to top in a stack.
  * @param S Stack to be used for the process.
- * @returns @param Point Co-ordinates of the Point <int, int>
+ * @returns Co-ordinates of the Point <int, int> below the top of the stack
  *******************************************************************************/
 Point nextToTop(std::stack<Point> *S) {
     Point p = S->top();
@@ -87,7 +87,7 @@ Point nextToTop(std::stack<Point> *S) {
  * @brief A utility function to return square of distance between p1 and p2.
  * @param p1 Co-ordinates of Point 1 <int, int>.
  * @param p2 Co-ordinates of Point 2 <int, int>.
- * @returns @param int distance between p1 and p2.
+ * @returns square of the distance between p1 and p2.
  *******************************************************************************/
 int distSq(Point p1, Point p2) {
     return (p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y);
@@ -98,7 +98,7 @@ int distSq(Point p1, Point p2) {
  * @param p Co-ordinates of Point p <int, int>.
  * @param q Co-ordinates of Point q <int, int>.
  * @param r Co-ordinates of Point r <int, int>.
- * @returns @param int 0 --> p, q and r are collinear, 1 --> Clockwise,
+ * @returns 0 --> p, q and r are collinear, 1 --> Clockwise,
  * 2 --> Counterclockwise
  *******************************************************************************/
 int orientation(Point p, Point q, Point r) {
@@ -115,7 +115,7 @@ int orientation(Point p, Point q, Point r) {
  * points with respect to the first point
  * @param vp1 Co-ordinates of Point 1 <int, int>.
  * @param vp2 Co-ordinates of Point 2 <int, int>.
- * @returns @param int distance between p1 and p2.
+ * @returns -1 if Point 1 sorts before Point 2, 1 otherwise.
  *******************************************************************************/
 int compare(const void *vp1, const void *vp2) {
     auto *p1 = static_cast<const Point *>(vp1);
@@ -134,7 +134,7 @@ int compare(const void *vp1, const void *vp2) {
  * @brief Prints convex hull of a set of n points.
  * @param points vector of Point<int, int> with co-ordinates.
  * @param size Size of the vector.
- * @returns @param vector vector of Conver Hull.
+ * @returns vector of the Points forming the convex hull.
  *******************************************************************************/
 std::vector<Point> convexHull(std::vector<Point> points, uint64_t size) {
     // Find the bottom-most point
