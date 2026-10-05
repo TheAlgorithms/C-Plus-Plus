@@ -45,9 +45,11 @@ std::uint64_t countBitsFlip(
     std::int64_t B) {  // int64_t is preferred over int so that
                        // no Overflow can be there.
 
-    int count =
+    std::uint64_t count =
         0;  // "count" variable is used to count number of bits flip of the
             // number A to form B in binary representation of number 'n'
+            // using uint64_t instead of int to prevent overflows and match
+            // the function return type
     A = A ^ B;
     while (A) {
         A = A & (A - 1);
@@ -77,7 +79,9 @@ static void test() {
     assert(bit_manipulation::count_bits_flip::countBitsFlip(21, 22) == 2);
     // A = 7, B = 786 return 5
     assert(bit_manipulation::count_bits_flip::countBitsFlip(7, 786) == 5);
-    std::cout << "All test cases successfully passed!" << std::endl;
+    std::cout << "All test cases successfully passed!" << '\n';
+    // using '\n' instead of std::endl to omit the output buffer
+    // from being flushed at the end of the function
 }
 /**
  * @brief Main function
