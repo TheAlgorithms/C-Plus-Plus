@@ -23,34 +23,46 @@
  */
 namespace math {
 /**
- * Function to compute sum of euler totients in sumOfEulerTotient vector
- * @param num input number
- * @returns int Sum of LCMs, i.e. ∑LCM(i, num) from i = 1 to num
+ * @brief Computes the sum of Least Common Multiples from 1 to n.
+ *
+ * Calculates:
+ * \f[
+ * \sum_{i=1}^{n} \mathrm{LCM}(i,n)
+ * \f]
+ *
+ * using Euler's Totient Function.
+ *
+ * @param num Positive integer n.
+ * @return Sum of LCM(i,n) for all 1 ≤ i ≤ n.
+ *  * @note
+ * Time Complexity: O(n log log n + n log n)
+ * Space Complexity: O(n)
  */
-uint64_t lcmSum(const uint16_t& num) {
-    uint64_t i = 0, j = 0;
+uint64_t lcmSum(uint16_t num) {
+    uint64_t divisor = 0;
+    uint64_t multiple = 0;
     std::vector<uint64_t> eulerTotient(num + 1);
     std::vector<uint64_t> sumOfEulerTotient(num + 1);
 
-    // storing initial values in eulerTotient vector
-    for (i = 1; i <= num; i++) {
-        eulerTotient[i] = i;
+    // Initialize Euler Totient values.
+    for (divisor = 1; divisor <= num; divisor++) {
+        eulerTotient[divisor] = divisor;
     }
 
-    // applying totient sieve
-    for (i = 2; i <= num; i++) {
-        if (eulerTotient[i] == i) {
-            for (j = i; j <= num; j += i) {
-                eulerTotient[j] = eulerTotient[j] / i;
-                eulerTotient[j] = eulerTotient[j] * (i - 1);
+    // Compute Euler's Totient values using the sieve method.
+    for (divisor = 2; divisor <= num; divisor++) {
+        if (eulerTotient[divisor] == divisor) {
+            for (multiple = divisor; multiple <= num; multiple += divisor) {
+                eulerTotient[multiple] = eulerTotient[multiple] / divisor;
+                eulerTotient[multiple] = eulerTotient[multiple] * (divisor - 1);
             }
         }
     }
 
-    // computing sum of euler totients
-    for (i = 1; i <= num; i++) {
-        for (j = i; j <= num; j += i) {
-            sumOfEulerTotient[j] += eulerTotient[i] * i;
+    // Compute Σ(d × φ(d)) for every divisor.
+    for (divisor = 1; divisor <= num; divisor++) {
+        for (multiple = divisor; multiple <= num; multiple += divisor) {
+            sumOfEulerTotient[multiple] += eulerTotient[divisor] * divisor;
         }
     }
 
@@ -64,7 +76,12 @@ uint64_t lcmSum(const uint16_t& num) {
  * @returns `void`
  */
 static void test() {
-    uint64_t n = 2;
+    uint64_t n = 1;
+    uint64_t test_0 = math::lcmSum(n);
+    assert(test_0 == 1);
+    std::cout << "Passed Test 0!" << std::endl;
+    
+    n = 2;
     uint64_t test_1 = math::lcmSum(n);
     assert(test_1 == 4);
     std::cout << "Passed Test 1!" << std::endl;
