@@ -79,9 +79,7 @@ static void test() {
     assert(bit_manipulation::count_bits_flip::countBitsFlip(21, 22) == 2);
     // A = 7, B = 786 return 5
     assert(bit_manipulation::count_bits_flip::countBitsFlip(7, 786) == 5);
-    std::cout << "All test cases successfully passed!" << '\n';
-    // using '\n' instead of std::endl to omit the output buffer
-    // from being flushed at the end of the function
+    std::cout << "All test cases successfully passed!\n";
 }
 /**
  * @brief Main function
