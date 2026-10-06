@@ -30,18 +30,8 @@ namespace math {
  * @param n number to be checked.
  * @return if number is a magic number, returns true, else false.
  */
-bool magic_number(const uint64_t &n) {
-    if (n <= 0) {
-        return false;
-    }
-    // result stores the modulus of @param n with 9
-    uint64_t result = n % 9;
-    // if result is 1 then the number is a magic number else not
-    if (result == 1) {
-        return true;
-    } else {
-        return false;
-    }
+constexpr inline bool magic_number(const uint64_t &n) noexcept {
+    return n > 0 && (n % 9) == 1;
 }
 }  // namespace math
 
@@ -69,6 +59,8 @@ static void tests() {
     std::cout << "Test 5:\t n=-35\n";
     assert(math::magic_number(-35) == false);
     std::cout << "passed\n";
+
+    std::cout << "\nAll tests passed!\n";
 }
 
 /**

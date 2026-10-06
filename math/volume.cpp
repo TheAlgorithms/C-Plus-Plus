@@ -132,12 +132,12 @@ static void test() {
     int_expected = 125;
     int_volume = math::cube_volume(int_length);
 
-    std::cout << "VOLUME OF A CUBE" << std::endl;
-    std::cout << "Input Length: " << int_length << std::endl;
-    std::cout << "Expected Output: " << int_expected << std::endl;
-    std::cout << "Output: " << int_volume << std::endl;
+    std::cout << "VOLUME OF A CUBE\n";
+    std::cout << "Input Length: " << int_length;
+    std::cout << "\nExpected Output: " << int_expected;
+    std::cout << "\nOutput: " << int_volume;
     assert(int_volume == int_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
+    std::cout << "\nTEST PASSED\n\n";
 
     // 2nd test
     int_length = 4;
@@ -146,14 +146,14 @@ static void test() {
     int_expected = 60;
     int_volume = math::rect_prism_volume(int_length, int_width, int_height);
 
-    std::cout << "VOLUME OF A RECTANGULAR PRISM" << std::endl;
-    std::cout << "Input Length: " << int_length << std::endl;
-    std::cout << "Input Width: " << int_width << std::endl;
-    std::cout << "Input Height: " << int_height << std::endl;
-    std::cout << "Expected Output: " << int_expected << std::endl;
-    std::cout << "Output: " << int_volume << std::endl;
+    std::cout << "VOLUME OF A RECTANGULAR PRISM\n";
+    std::cout << "Input Length: " << int_length;
+    std::cout << "\nInput Width: " << int_width;
+    std::cout << "\nInput Height: " << int_height;
+    std::cout << "\nExpected Output: " << int_expected;
+    std::cout << "\nOutput: " << int_volume;
     assert(int_volume == int_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
+    std::cout << "\nTEST PASSED\n\n";
 
     // 3rd test
     double_radius = 5;
@@ -161,13 +161,13 @@ static void test() {
     double_expected = 183.16666666666666;  // truncated to 14 decimal places
     double_volume = math::cone_volume(double_radius, double_height);
 
-    std::cout << "VOLUME OF A CONE" << std::endl;
-    std::cout << "Input Radius: " << double_radius << std::endl;
-    std::cout << "Input Height: " << double_height << std::endl;
-    std::cout << "Expected Output: " << double_expected << std::endl;
-    std::cout << "Output: " << double_volume << std::endl;
+    std::cout << "VOLUME OF A CONE\n";
+    std::cout << "Input Radius: " << double_radius;
+    std::cout << "\nInput Height: " << double_height;
+    std::cout << "\nExpected Output: " << double_expected;
+    std::cout << "\nOutput: " << double_volume;
     assert(double_volume == double_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
+    std::cout << "\nTEST PASSED\n\n";
 
     // 4th test
     int_base = 3;
@@ -176,14 +176,14 @@ static void test() {
     int_expected = 30;
     int_volume = math::triangle_prism_volume(int_base, int_height, int_depth);
 
-    std::cout << "VOLUME OF A TRIANGULAR PRISM" << std::endl;
-    std::cout << "Input Base: " << int_base << std::endl;
-    std::cout << "Input Height: " << int_height << std::endl;
-    std::cout << "Input Depth: " << int_depth << std::endl;
-    std::cout << "Expected Output: " << int_expected << std::endl;
-    std::cout << "Output: " << int_volume << std::endl;
+    std::cout << "VOLUME OF A TRIANGULAR PRISM\n";
+    std::cout << "Input Base: " << int_base;
+    std::cout << "\nInput Height: " << int_height;
+    std::cout << "\nInput Depth: " << int_depth;
+    std::cout << "\nExpected Output: " << int_expected;
+    std::cout << "\nOutput: " << int_volume;
     assert(int_volume == int_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
+    std::cout << "\nTEST PASSED\n\n";
 
     // 5th test
     int_length = 10;
@@ -192,26 +192,26 @@ static void test() {
     int_expected = 50;
     int_volume = math::pyramid_volume(int_length, int_width, int_height);
 
-    std::cout << "VOLUME OF A PYRAMID" << std::endl;
-    std::cout << "Input Length: " << int_length << std::endl;
-    std::cout << "Input Width: " << int_width << std::endl;
-    std::cout << "Input Height: " << int_height << std::endl;
-    std::cout << "Expected Output: " << int_expected << std::endl;
-    std::cout << "Output: " << int_volume << std::endl;
+    std::cout << "VOLUME OF A PYRAMID\n";
+    std::cout << "Input Length: " << int_length;
+    std::cout << "\nInput Width: " << int_width;
+    std::cout << "\nInput Height: " << int_height;
+    std::cout << "\nExpected Output: " << int_expected;
+    std::cout << "\nOutput: " << int_volume;
     assert(int_volume == int_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
+    std::cout << "\nTEST PASSED\n\n";
 
     // 6th test
     double_radius = 3;
     double_expected = 113.04;
     double_volume = math::sphere_volume(double_radius);
 
-    std::cout << "VOLUME OF A SPHERE" << std::endl;
-    std::cout << "Input Radius: " << double_radius << std::endl;
-    std::cout << "Expected Output: " << double_expected << std::endl;
-    std::cout << "Output: " << double_volume << std::endl;
+    std::cout << "VOLUME OF A SPHERE\n";
+    std::cout << "Input Radius: " << double_radius;
+    std::cout << "\nExpected Output: " << double_expected;
+    std::cout << "\nOutput: " << double_volume;
     assert(double_volume == double_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
+    std::cout << "\nTEST PASSED\n\n";
 
     // 7th test
     double_radius = 5;
@@ -219,13 +219,13 @@ static void test() {
     double_expected = 157;
     double_volume = math::cylinder_volume(double_radius, double_height);
 
-    std::cout << "VOLUME OF A CYLINDER" << std::endl;
-    std::cout << "Input Radius: " << double_radius << std::endl;
-    std::cout << "Input Height: " << double_height << std::endl;
-    std::cout << "Expected Output: " << double_expected << std::endl;
-    std::cout << "Output: " << double_volume << std::endl;
+    std::cout << "VOLUME OF A CYLINDER\n";
+    std::cout << "Input Radius: " << double_radius;
+    std::cout << "\nInput Height: " << double_height;
+    std::cout << "\nExpected Output: " << double_expected;
+    std::cout << "\nOutput: " << double_volume;
     assert(double_volume == double_expected);
-    std::cout << "TEST PASSED" << std::endl << std::endl;
+    std::cout << "\nTEST PASSED\n\nALL TESTS HAVE PASSED\n";
 }
 
 /**
