@@ -2,6 +2,8 @@
  * @author [Aarti Gawade](https://github.com/aartigawade2586)
  * @file aggressive_cows.cpp
  * @brief Aggressive Cows problem using binary search.
+ * (https://www.spoj.com/problems/AGGRCOW/)
+ * problem from the USACO February 2005 Gold Division.
  */
 /* Aggressive cow
  *Problem :
