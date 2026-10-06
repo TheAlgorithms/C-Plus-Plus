@@ -30,10 +30,17 @@ uint64_t factorial(uint8_t n) {
     if (n > 20) {
         throw std::invalid_argument("maximum value is 20\n");
     }
-    if (n == 0) {
+    // factorial of both 0 and 1 is 1
+    if (n == 0 || n == 1) {
         return 1;
     }
-    return n * factorial(n - 1);
+
+    uint64_t result{1};
+    for (; n > 1; --n) {
+        result *= n;
+    }
+
+    return result;
 }
 }  // namespace math
 
