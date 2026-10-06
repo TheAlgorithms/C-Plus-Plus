@@ -25,7 +25,7 @@ namespace math {
  * @returns The volume of the cube
  */
 template <typename T>
-T cube_volume(T length) {
+constexpr inline T cube_volume(T length) noexcept {
     return std::pow(length, 3);
 }
 
@@ -38,7 +38,7 @@ T cube_volume(T length) {
  * @returns The volume of the rectangular prism
  */
 template <typename T>
-T rect_prism_volume(T length, T width, T height) {
+constexpr inline T rect_prism_volume(T length, T width, T height) noexcept {
     return length * width * height;
 }
 
@@ -50,7 +50,7 @@ T rect_prism_volume(T length, T width, T height) {
  * @returns The volume of the cone
  */
 template <typename T>
-T cone_volume(T radius, T height, double PI = 3.14) {
+constexpr inline T cone_volume(T radius, T height, double PI = 3.14) noexcept {
     return std::pow(radius, 2) * PI * height / 3;
 }
 
@@ -64,7 +64,7 @@ T cone_volume(T radius, T height, double PI = 3.14) {
  * @returns The volume of the triangular prism
  */
 template <typename T>
-T triangle_prism_volume(T base, T height, T depth) {
+constexpr inline T triangle_prism_volume(T base, T height, T depth) noexcept {
     return base * height * depth / 2;
 }
 
@@ -77,7 +77,7 @@ T triangle_prism_volume(T base, T height, T depth) {
  * @returns The volume of the pyramid
  */
 template <typename T>
-T pyramid_volume(T length, T width, T height) {
+constexpr inline T pyramid_volume(T length, T width, T height) noexcept {
     return length * width * height / 3;
 }
 
@@ -88,7 +88,7 @@ T pyramid_volume(T length, T width, T height) {
  * @returns The volume of the sphere
  */
 template <typename T>
-T sphere_volume(T radius, double PI = 3.14) {
+constexpr inline T sphere_volume(T radius, double PI = 3.14) noexcept {
     return PI * std::pow(radius, 3) * 4 / 3;
 }
 
@@ -100,7 +100,7 @@ T sphere_volume(T radius, double PI = 3.14) {
  * @returns The volume of the cylinder
  */
 template <typename T>
-T cylinder_volume(T radius, T height, double PI = 3.14) {
+constexpr inline T cylinder_volume(T radius, T height, double PI = 3.14) noexcept {
     return PI * std::pow(radius, 2) * height;
 }
 }  // namespace math
@@ -109,7 +109,7 @@ T cylinder_volume(T radius, T height, double PI = 3.14) {
  * @brief Self-test implementations
  * @returns void
  */
-static void test() {
+static void test() noexcept {
     // Input variables
     uint32_t int_length = 0; // 32 bit integer length input
     uint32_t int_width = 0;  // 32 bit integer width input
