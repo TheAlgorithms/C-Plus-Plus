@@ -1,0 +1,13 @@
+QueryDriver: [ D:/Subedara_Unknown/EnigamBrowser/vids/w64devkit/bin/g++.exe ]
+
+CompileFlags:
+  Add:
+    - --target=x86_64-w64-mingw32
+    - -std=c++20
+    - -I.
+    - -Isrc
+    - -Ithird_party/raylib
+    - -Ithird_party/glm
+
+Diagnostics:
+  UnusedIncludes: None
