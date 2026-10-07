@@ -109,6 +109,18 @@ template <typename T>
 T cylinder_surface_area(T radius, T height) {
     return 2 * M_PI * radius * height + 2 * M_PI * pow(radius, 2);
 }
+
+/**
+ * @brief surface area of a [hemi-sphere](https://en.wikipedia.org/wiki/Surface_area) ( 3 *
+ * pi * r^2)
+ * @param radius is the radius of the hemi-sphere
+ * @tparam T datatype of radius
+ * @returns surface area of the hemi-sphere
+ */
+template <typename T>
+T hemi_sphere_surface_area(T radius) {
+    return 3 * M_PI * pow(radius, 2);
+}
 }  // namespace math
 
 /**
@@ -263,6 +275,18 @@ static void test() {
     std::cout << "SURFACE AREA OF A CYLINDER" << std::endl;
     std::cout << "Input Radius: " << double_radius << std::endl;
     std::cout << "Input Height: " << double_height << std::endl;
+    std::cout << "Expected Output: " << double_expected << std::endl;
+    std::cout << "Output: " << double_area << std::endl;
+    assert(double_area == double_expected);
+    std::cout << "TEST PASSED" << std::endl << std::endl;
+
+    // 11th test
+    double_radius = 10.0;
+    double_expected = 942.4777960769379;
+    double_area = math::hemi_sphere_surface_area(double_radius);
+
+    std::cout << "SURFACE AREA OF A HEMI-SPHERE" << std::endl;
+    std::cout << "Input Radius: " << double_radius << std::endl;
     std::cout << "Expected Output: " << double_expected << std::endl;
     std::cout << "Output: " << double_area << std::endl;
     assert(double_area == double_expected);

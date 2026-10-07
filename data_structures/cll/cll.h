@@ -1,5 +1,5 @@
 /*
- * Simple data structure CLL (Cicular Linear Linked List)
+ * Simple data structure CLL (Circular Linear Linked List)
  * */
 #include <cctype>
 #include <cstdlib>

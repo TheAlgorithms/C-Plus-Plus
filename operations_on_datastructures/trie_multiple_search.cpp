@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief [Trie datastructure](https://iq.opengenus.org/autocomplete-using-trie-data-structure/)
+ * @brief [Trie
+ * datastructure](https://iq.opengenus.org/autocomplete-using-trie-data-structure/)
  * with search variants
  * @details
  * This provides multiple variants of search functions
@@ -12,6 +13,7 @@
 #include <algorithm>  /// for std::count
 #include <cassert>    /// for assert
 #include <cctype>     /// for tolower
+#include <cstdint>    /// for std::uint32_t
 #include <cstring>    /// for string operations
 #include <iostream>   /// for IO Operations
 #include <queue>      /// for std::priority_queue
@@ -23,7 +25,8 @@
 namespace operations_on_datastructures {
 /**
  * @namespace trie_operations
- * @brief Functions for [Trie datastructure](https://iq.opengenus.org/autocomplete-using-trie-data-structure/)
+ * @brief Functions for [Trie
+ * datastructure](https://iq.opengenus.org/autocomplete-using-trie-data-structure/)
  * implementation
  */
 namespace trie_operations {
@@ -456,11 +459,9 @@ static void test() {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
  */
-int main(int argc, char const *argv[]) {
+int main() {
     test();  // run self-test implementations
     return 0;
 }

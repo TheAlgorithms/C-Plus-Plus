@@ -11,7 +11,7 @@
 void fastinput(int *number) {
     // variable to indicate sign of input integer
     bool negative = false;
-    register int c;
+    int c;
     *number = 0;
 
     // extract current character from buffer

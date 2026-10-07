@@ -3,9 +3,11 @@
 // tested on : https://cses.fi/problemset/task/1145/
 
 #include <iostream>
+#include <set>
+#include <vector>
 
 using namespace std;
-int LIS(int arr[], int n) {
+int LIS(const std::vector<int>& arr, int n) {
     set<int> active;  // The current built LIS.
     active.insert(arr[0]);
     // Loop through every element.
@@ -27,11 +29,11 @@ int LIS(int arr[], int n) {
     }
     return active.size();  // size of the LIS.
 }
-int main(int argc, char const* argv[]) {
+int main() {
     int n;
     cout << "Enter size of array: ";
     cin >> n;
-    int a[n];
+    std::vector<int> a(n);
     cout << "Enter array elements: ";
     for (int i = 0; i < n; ++i) {
         cin >> a[i];

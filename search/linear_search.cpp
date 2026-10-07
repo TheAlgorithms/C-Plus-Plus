@@ -45,7 +45,10 @@ static void tests() {
     assert(LinearSearch(array, size, 1) == 1);
     assert(LinearSearch(array, size, 2) == 2);
 
+    delete[] array;
+
     size = 6;
+    array = new int[size];
     for (int i = 0; i < size; i++) {
         array[i] = i;
     }

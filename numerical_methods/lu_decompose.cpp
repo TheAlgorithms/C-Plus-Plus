@@ -81,7 +81,7 @@ void test2() {
 }
 
 /** Main function */
-int main(int argc, char **argv) {
+int main() {
     std::srand(std::time(NULL));  // random number initializer
 
     test1();

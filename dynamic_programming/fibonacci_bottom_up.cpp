@@ -11,7 +11,7 @@ int fib(int n) {
     }
     return res[1];
 }
-int main(int argc, char const *argv[]) {
+int main() {
     int n;
     cout << "Enter n: ";
     cin >> n;

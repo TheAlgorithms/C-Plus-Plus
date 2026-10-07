@@ -24,6 +24,7 @@
 
 #include <array>     /// for std::array
 #include <cassert>   /// for assert
+#include <cstdint>
 #include <iostream>  /// for IO operations
 
 /**
@@ -154,11 +155,9 @@ static void test() {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
  */
-int main(int argc, char *argv[]) {
+int main() {
     test();  // run self-test implementations
     return 0;
 }

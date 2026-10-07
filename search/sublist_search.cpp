@@ -26,6 +26,7 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdint>
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
 
@@ -88,6 +89,20 @@ Node *makeLinkedList(const std::vector<uint64_t> &data) {
         }
     }
     return head;
+}
+
+/*
+ * @brief This function dealocates memory related to the given list
+ * It recursively deletes all of the nodes of the input list.
+ * @param room the root/head of the input list
+ * @warning Plese note that the memory for each node has to be alocated using
+ * new.
+ */
+void deleteList(Node *const root) {
+    if (root != NULL) {
+        deleteList(root->next);
+        delete root;
+    }
 }
 
 /**
@@ -217,8 +232,8 @@ class TestCases {
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
             "~");
 
-        delete (sublistLL);
-        delete (mainlistLL);
+        deleteList(mainlistLL);
+        deleteList(sublistLL);
     }
 
     /**
@@ -270,6 +285,9 @@ class TestCases {
         log("[PASS] : TEST CASE 2 PASS!");
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
             "~");
+
+        deleteList(mainlistLL);
+        deleteList(sublistLL);
     }
 
     /**
@@ -318,6 +336,9 @@ class TestCases {
         log("[PASS] : TEST CASE 3 PASS!");
         log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
             "~");
+
+        deleteList(mainlistLL);
+        deleteList(sublistLL);
     }
 };
 
@@ -332,11 +353,9 @@ static void test() {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
  */
-int main(int argc, char *argv[]) {
+int main() {
     test();  // run self-test implementations
 
     std::vector<uint64_t> mainlistData = {
@@ -366,5 +385,8 @@ int main(int argc, char *argv[]) {
     } else {
         std::cout << "[FALSE] - sublist NOT found in main list\n";
     }
+
+    deleteList(mainlistLL);
+    deleteList(sublistLL);
     return 0;
 }

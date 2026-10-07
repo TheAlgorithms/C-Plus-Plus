@@ -31,16 +31,18 @@ namespace range_queries {
  */
 namespace prefix_sum_array {
 
-std::vector<int64_t> PSA(1, 0);
+std::vector<int64_t> PSA{};
 
 /**
  * @brief function that builds the PSA
  * @param original_array original array of values
  * @returns void
  */
-void build(std::vector<int64_t> original_array) {
-    for (int i = 1; i <= static_cast<int>(original_array.size()); i++) {
-        PSA.push_back(PSA[i - 1] + original_array[i]);
+void build(const std::vector<int64_t>& original_array) {
+    PSA.clear();
+    PSA.push_back(0);
+    for (std::size_t i = 1; i < original_array.size(); ++i) {
+        PSA.push_back(PSA.back() + original_array[i]);
     }
 }
 /**

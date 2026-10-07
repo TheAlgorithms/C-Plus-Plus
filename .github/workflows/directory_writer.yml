@@ -1,0 +1,29 @@
+name: Directory writer
+on:
+  schedule:
+  #        ┌───────────── minute (0 - 59)
+  #        │  ┌───────────── hour (0 - 23)
+  #        │  │ ┌───────────── day of the month (1 - 31)
+  #        │  │ │ ┌───────────── month (1 - 12 or JAN-DEC)
+  #        │  │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)
+  #        │  │ │ │ │
+  #        │  │ │ │ │
+  #        │  │ │ │ │
+  #        *  * * * *
+  - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  build:
+    if: github.repository == 'TheAlgorithms/C-Plus-Plus' # We only need this to run in our repository.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build directory
+        uses: TheAlgorithms/scripts/directory_md@main
+        with:
+          language: C-Plus-Plus
+          working-directory: .
+          filetypes: .cpp,.hpp,.h
+          ignored-directories: doc/

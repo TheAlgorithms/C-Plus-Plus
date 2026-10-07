@@ -44,7 +44,7 @@ int main() {
     cout << "\n Enter the number of Items : ";
     int n;
     cin >> n;
-    Item itemArray[n];
+    Item *itemArray = new Item[n];
     for (int i = 0; i < n; i++) {
         cout << "\nEnter the weight and profit of item " << i + 1 << " : ";
         cin >> itemArray[i].weight;
@@ -73,6 +73,6 @@ int main() {
     }
 
     cout << "\nMax Profit : " << maxProfit;
-
+    delete[] itemArray;
     return 0;
 }

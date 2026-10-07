@@ -18,6 +18,7 @@
 #include <algorithm>
 #include <array>
 #include <cassert>
+#include <random>
 
 
 /**
@@ -50,8 +51,10 @@ std::array <T, N> shuffle (std::array <T, N> arr) {
 template <typename T, size_t N>
 std::array <T, N> randomized_bogosort (std::array <T, N> arr) {
     // Untill array is not sorted
+    std::random_device random_device;
+    std::mt19937 generator(random_device());
     while (!std::is_sorted(arr.begin(), arr.end())) {
-        std::random_shuffle(arr.begin(), arr.end());// Shuffle the array
+        std::shuffle(arr.begin(), arr.end(), generator);// Shuffle the array
     }
     return arr;
 }

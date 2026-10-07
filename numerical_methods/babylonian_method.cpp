@@ -87,13 +87,11 @@ static void test() {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
  * calls automated test function to test the working of fast fourier transform.
  * @returns 0 on exit
  */
 
-int main(int argc, char const *argv[]) {
+int main() {
     test();  //  run self-test implementations
              //  with 2 defined test cases
     return 0;

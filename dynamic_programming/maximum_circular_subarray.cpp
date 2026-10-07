@@ -67,7 +67,6 @@ static void test() {
     // Output: 22 
     // Explanation: Subarray 12, 8, -8, 9, -9, 10 gives the maximum sum, that is 22.
 
-    int n = 7; // size of the array
     std::vector<int> arr = {8, -8, 9, -9, 10, -11, 12}; 
     assert(dynamic_programming::maxCircularSum(arr) == 22); // this ensures that the algorithm works as expected
 
@@ -80,11 +79,9 @@ static void test() {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
  */
-int main(int argc, char *argv[]) {
+int main() {
      test();  // run self-test implementations
      return 0;
 }

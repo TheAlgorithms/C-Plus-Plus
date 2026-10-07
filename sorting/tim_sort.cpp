@@ -1,6 +1,8 @@
 // C++ program to perform TimSort.
 #include <algorithm>
+#include <cassert>
 #include <iostream>
+#include <numeric>
 
 const int RUN = 32;
 
@@ -8,9 +10,9 @@ const int RUN = 32;
 // atmost RUN
 void insertionSort(int arr[], int left, int right) {
     for (int i = left + 1; i <= right; i++) {
-        int temp = arr[i];
+        const int temp = arr[i];
         int j = i - 1;
-        while (arr[j] > temp && j >= left) {
+        while (j >= left && arr[j] > temp) {
             arr[j + 1] = arr[j];
             j--;
         }
@@ -21,7 +23,7 @@ void insertionSort(int arr[], int left, int right) {
 // merge function merges the sorted runs
 void merge(int arr[], int l, int m, int r) {
     // original array is broken in two parts, left and right array
-    int len1 = m - l + 1, len2 = r - m;
+    const int len1 = m - l + 1, len2 = r - m;
     int *left = new int[len1], *right = new int[len2];
     for (int i = 0; i < len1; i++) left[i] = arr[l + i];
     for (int i = 0; i < len2; i++) right[i] = arr[m + 1 + i];
@@ -74,8 +76,8 @@ void timSort(int arr[], int n) {
         for (int left = 0; left < n; left += 2 * size) {
             // find ending point of left sub array
             // mid+1 is starting point of right sub array
-            int mid = left + size - 1;
-            int right = std::min((left + 2 * size - 1), (n - 1));
+            const int mid = std::min((left + size - 1), (n - 1));
+            const int right = std::min((left + 2 * size - 1), (n - 1));
 
             // merge sub array arr[left.....mid] & arr[mid+1....right]
             merge(arr, left, mid, right);
@@ -89,10 +91,29 @@ void printArray(int arr[], int n) {
     std::cout << std::endl;
 }
 
+/**
+ * @brief self-test implementation
+ * @returns void
+ */
+void tests() {
+    // Case: array of length 65
+    constexpr int N = 65;
+    int arr[N];
+
+    std::iota(arr, arr + N, 0);
+    std::reverse(arr, arr + N);
+    assert(!std::is_sorted(arr, arr + N));
+
+    timSort(arr, N);
+    assert(std::is_sorted(arr, arr + N));
+}
+
 // Driver program to test above function
 int main() {
+    tests();  // run self test implementations
+
     int arr[] = {5, 21, 7, 23, 19};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    const int n = sizeof(arr) / sizeof(arr[0]);
     printf("Given Array is\n");
     printArray(arr, n);
 

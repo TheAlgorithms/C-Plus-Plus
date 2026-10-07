@@ -8,9 +8,10 @@
  */
 
 #include <algorithm>  /// for `std::reverse` and other operations
-#include <ostream>    /// for `std::cout` overload
-#include <string>     /// for `std::string`
-#include <utility>    /// for `std::pair` library
+#include <cstdint>
+#include <ostream>  /// for `std::cout` overload
+#include <string>   /// for `std::string`
+#include <utility>  /// for `std::pair` library
 
 #ifdef _MSC_VER
 #include <intrin.h>  /// for _BitScanForward64 and __BitScanReverse64 operation
@@ -19,13 +20,6 @@
 #ifndef CIPHERS_UINT128_T_HPP_
 #define CIPHERS_UINT128_T_HPP_
 class uint128_t;
-
-template <>
-struct std::is_integral<uint128_t> : std::true_type {};
-template <>
-struct std::is_arithmetic<uint128_t> : std::true_type {};
-template <>
-struct std::is_unsigned<uint128_t> : std::true_type {};
 
 /**
  * @brief Adding two string
@@ -349,7 +343,7 @@ class uint128_t {
      * @brief operator -- (post-decrement)
      * @returns decremented value of this
      */
-    inline uint128_t operator--(int p) {
+    inline uint128_t operator--(int) {
         --*this;
         return *this;
     }

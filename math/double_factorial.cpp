@@ -10,6 +10,7 @@
  */
 
 #include <cassert>
+#include <cstdint>
 #include <iostream>
 
 /** Compute double factorial using iterative method

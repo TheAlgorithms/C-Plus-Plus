@@ -103,7 +103,7 @@ namespace machine_learning {
 void update_weights(const std::valarray<double> &x,
                     std::vector<std::valarray<double>> *W,
                     std::valarray<double> *D, double alpha, int R) {
-    int j = 0, k = 0;
+    int j = 0;
     int num_out = W->size();  // number of SOM output nodes
     // int num_features = x.size();  // number of data features
 
@@ -454,7 +454,7 @@ double get_clock_diff(clock_t start_t, clock_t end_t) {
 }
 
 /** Main function */
-int main(int argc, char **argv) {
+int main() {
 #ifdef _OPENMP
     std::cout << "Using OpenMP based parallelization\n";
 #else

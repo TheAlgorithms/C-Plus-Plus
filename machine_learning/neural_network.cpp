@@ -136,7 +136,7 @@ class DenseLayer {
      * @param neurons number of neurons
      * @param activation activation function for layer
      * @param kernel_shape shape of kernel
-     * @param random_kernel flag for whether to intialize kernel randomly
+     * @param random_kernel flag for whether to initialize kernel randomly
      */
     DenseLayer(const int &neurons, const std::string &activation,
                const std::pair<size_t, size_t> &kernel_shape,
@@ -502,7 +502,7 @@ class NeuralNetwork {
             auto start =
                 std::chrono::high_resolution_clock::now();  // Start clock
             double loss = 0,
-                   acc = 0;  // Intialize performance metrics with zero
+                   acc = 0;  // Initialize performance metrics with zero
             // For each starting index of batch
             for (size_t batch_start = 0; batch_start < X.size();
                  batch_start += batch_size) {
@@ -515,7 +515,7 @@ class NeuralNetwork {
                     // They will be averaged and applied to kernel
                     std::vector<std::vector<std::valarray<double>>> gradients;
                     gradients.resize(this->layers.size());
-                    // First intialize gradients to zero
+                    // First initialize gradients to zero
                     for (size_t i = 0; i < gradients.size(); i++) {
                         zeroes_initialization(
                             gradients[i], get_shape(this->layers[i].kernel));
@@ -606,7 +606,7 @@ class NeuralNetwork {
     void evaluate(const std::vector<std::vector<std::valarray<double>>> &X,
                   const std::vector<std::vector<std::valarray<double>>> &Y) {
         std::cout << "INFO: Evaluation Started" << std::endl;
-        double acc = 0, loss = 0;  // intialize performance metrics with zero
+        double acc = 0, loss = 0;  // initialize performance metrics with zero
         for (size_t i = 0; i < X.size(); i++) {  // For every sample in input
             // Get predictions
             std::vector<std::valarray<double>> pred =

@@ -13,6 +13,7 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdint>
 #include <iostream>  /// for io operations
 
 /**

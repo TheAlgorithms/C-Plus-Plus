@@ -21,6 +21,7 @@
 
 #include <cassert>   /// for assert
 #include <cmath>     /// for log2
+#include <cstdint>   /// for std::uint64_t
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
 

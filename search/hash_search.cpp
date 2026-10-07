@@ -98,7 +98,7 @@ int hash_search(int key, int* counter) {  // Hash lookup function
 /** main function */
 int main() {
     link p;
-    int key, index, i, counter;  // Key is the value to be found
+    int key = 0, index, i, counter;  // Key is the value to be found
     index = 0;
 
     // You can write the input mode here

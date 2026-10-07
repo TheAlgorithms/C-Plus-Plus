@@ -21,6 +21,7 @@
 #include <array>
 #include <cassert>
 #include <climits>
+#include <cstdint>
 #include <iostream>
 /**
  * @namespace dynamic_programming
@@ -70,8 +71,8 @@ int maxProfitByCuttingRod(const std::array<int, T> &price, const uint64_t &n) {
  */
 static void test() {
     // Test 1
-    const int16_t n1 = 8;                                        // size of rod
-    std::array<int32_t, n1> price1 = {1,2,4,6,8,45,21,9};  // price array
+    const int16_t n1 = 8;                                         // size of rod
+    std::array<int32_t, n1> price1 = {1, 2, 4, 6, 8, 45, 21, 9};  // price array
     const int64_t max_profit1 =
         dynamic_programming::cut_rod::maxProfitByCuttingRod(price1, n1);
     const int64_t expected_max_profit1 = 47;
@@ -86,15 +87,15 @@ static void test() {
         31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
         41, 42, 43, 44, 45, 46, 47, 48, 49, 50};
 
-    const int64_t max_profit2=
+    const int64_t max_profit2 =
         dynamic_programming::cut_rod::maxProfitByCuttingRod(price2, n2);
     const int32_t expected_max_profit2 = 90;
     assert(max_profit2 == expected_max_profit2);
     std::cout << "Maximum profit with " << n2 << " inch road is " << max_profit2
               << std::endl;
-     // Test 3
-    const int16_t n3 = 5;                                        // size of rod
-    std::array<int32_t, n3> price3 = {2,9,17,23,45};  // price array
+    // Test 3
+    const int16_t n3 = 5;                                 // size of rod
+    std::array<int32_t, n3> price3 = {2, 9, 17, 23, 45};  // price array
     const int64_t max_profit3 =
         dynamic_programming::cut_rod::maxProfitByCuttingRod(price3, n3);
     const int64_t expected_max_profit3 = 45;

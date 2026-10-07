@@ -73,6 +73,13 @@ ListNode* middleNode(ListNode* head) {
 
     return (fastptr->next) ? slowptr->next : slowptr;
 }
+
+void deleteAll(const ListNode* const head) {
+    if (head) {
+        deleteAll(head->next);
+        delete head;
+    }
+}
 }  // namespace median_search2
 }  // namespace search
 
@@ -96,8 +103,9 @@ static void test() {
     }
     temp->next = nullptr;
 
-    ListNode* median = search::median_search2::middleNode(head1);
+    const ListNode* const median = search::median_search2::middleNode(head1);
     assert(3 == median->val);  // 3 is the value of the median node.
+    search::median_search2::deleteAll(head1);
     std::cout << "test case:1 passed\n";
 
     // Test case # 2
@@ -116,15 +124,10 @@ static void test() {
     }
     temp2->next = nullptr;
 
-    ListNode* median1 = search::median_search2::middleNode(head2);
+    const ListNode* const median1 = search::median_search2::middleNode(head2);
     assert(4 == median1->val);  // 4 is the value of the median node.
+    search::median_search2::deleteAll(head2);
     std::cout << "test case:2 passed\n";
-
-    delete head1;
-    delete temp;
-
-    delete head2;
-    delete temp2;
 
     std::cout << "--All tests passed--\n";
 }

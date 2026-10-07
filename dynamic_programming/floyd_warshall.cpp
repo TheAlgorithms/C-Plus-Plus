@@ -1,6 +1,7 @@
 #include <climits>
+#include <cstddef>
 #include <iostream>
-#include <string>
+#include <vector>
 
 using std::cin;
 using std::cout;
@@ -24,7 +25,9 @@ class Graph {
     }
 
     ~Graph() {
-        for (int i = 0; i < vertexNum; i++) delete[] edges[i];
+        for (int i = 0; i < vertexNum; i++) {
+            delete[] edges[i];
+        }
         delete[] edges;
     }
 
@@ -35,7 +38,7 @@ class Graph {
 };
 
 // Utility function to print distances
-void print(int dist[], int V) {
+void print(const std::vector<int>& dist, int V) {
     cout << "\nThe Distance matrix for Floyd - Warshall" << endl;
     for (int i = 0; i < V; i++) {
         for (int j = 0; j < V; j++) {
@@ -52,8 +55,8 @@ void print(int dist[], int V) {
 // The main function that finds the shortest path from a vertex
 // to all other vertices using Floyd-Warshall Algorithm.
 void FloydWarshall(Graph graph) {
-    int V = graph.vertexNum;
-    int dist[V][V];
+    std::size_t V = graph.vertexNum;
+    std::vector<std::vector<int> > dist(V, std::vector<int>(V));
 
     // Initialise distance array
     for (int i = 0; i < V; i++)
@@ -76,7 +79,7 @@ void FloydWarshall(Graph graph) {
                     dist[i][j] = dist[i][k] + dist[k][j];
 
     // Convert 2d array to 1d array for print
-    int dist1d[V * V];
+    std::vector<int> dist1d(V * V);
     for (int i = 0; i < V; i++)
         for (int j = 0; j < V; j++) dist1d[i * V + j] = dist[i][j];
 

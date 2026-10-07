@@ -105,7 +105,7 @@ bool check(const std::string &s, const std::unordered_set<std::string> &strSet,
         // if the prefix till current position is present in the dictionary
         // and the remaining substring can also be segmented legally, then
         // set solution at position pos in the memo, and return true
-        if (exists(wordTillNow, strSet) and check(s, strSet, i + 1, dp)) {
+        if (exists(wordTillNow, strSet) && check(s, strSet, i + 1, dp)) {
             dp->at(pos) = 1;
             return true;
         }

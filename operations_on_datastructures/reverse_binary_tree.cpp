@@ -91,6 +91,9 @@ class BinaryTree {
         return pivot;
     }
 
+    BinaryTree(const BinaryTree&) = delete;
+    BinaryTree& operator=(const BinaryTree&) = delete;
+
  public:
     /**
      * @brief Creates a BinaryTree with a root pointing to NULL.
@@ -100,6 +103,21 @@ class BinaryTree {
      * @brief Creates a BinaryTree with a root with an initial value.
      */
     explicit BinaryTree(int64_t data) { root = new Node(data); }
+
+    ~BinaryTree() {
+        std::vector<Node*> nodes;
+        nodes.emplace_back(root);
+        while (!nodes.empty()) {
+            const auto cur_node = nodes.back();
+            nodes.pop_back();
+            if (cur_node) {
+                nodes.emplace_back(cur_node->left);
+                nodes.emplace_back(cur_node->right);
+                delete cur_node;
+            }
+        }
+    }
+
     /**
      * @brief Adds a new Node to the Binary Tree
      */

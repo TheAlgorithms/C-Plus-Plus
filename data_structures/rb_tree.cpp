@@ -33,7 +33,7 @@ public:
 };
 void RBtree::insert()
 {
-	int z, i = 0;
+	int z;
 	cout << "\nEnter key of the node to be inserted: ";
 	cin >> z;
 	node *p, *q;

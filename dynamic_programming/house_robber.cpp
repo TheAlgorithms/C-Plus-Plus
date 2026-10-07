@@ -11,9 +11,9 @@
 
 #include <cassert>   /// for assert
 #include <climits>   /// for std::max
+#include <cstdint>   /// for std::uint32_t
 #include <iostream>  /// for io operations
 #include <vector>    /// for std::vector
-
 /**
  * @namespace dynamic_programming
  * @brief Dynamic Programming algorithms

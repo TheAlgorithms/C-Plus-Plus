@@ -7,6 +7,7 @@
  *
  */
 
+#include <cstdint>
 #include <iostream>     // for std::cout
 #include <map>          // for std::map
 #include <queue>        // for std::queue

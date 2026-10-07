@@ -11,8 +11,8 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdint>
 #include <iostream>  /// for io operations
-
 /**
  * @namespace math
  * @brief Mathematical algorithms
@@ -73,11 +73,9 @@ static void test() {
 
 /**
  * @brief Main function
- * @param argc commandline argument count (ignored)
- * @param argv commandline array of arguments (ignored)
  * @returns 0 on exit
  */
-int main(int argc, char *argv[]) {
+int main() {
     test();  // executing tests
     return 0;
 }
