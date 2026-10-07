@@ -1,0 +1,30 @@
+# The objective of this GitHub Action is to update the leetcode DIRECTORY.md file (if needed)
+# when doing a git push
+name: leetcode_directory_writer
+on:
+  pull_request:
+    paths:
+      - 'leetcode/src/**.cpp'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - name: Add python dependencies
+        run: |
+          pip install requests
+      - name: Write LeetCode DIRECTORY.md
+        run: |
+          python3 scripts/leetcode_directory_md.py 2>&1 | tee leetcode/DIRECTORY.md
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        id: commit-push
+        with:
+          commit_message: 'docs: updating `leetcode/DIRECTORY.md`'
+          branch: 'leetcode-directory-${{ github.sha }}'
+          create_branch: true
