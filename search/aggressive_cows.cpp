@@ -1,12 +1,10 @@
 /**
  * @author [Aarti Gawade](https://github.com/aartigawade2586)
  * @file aggressive_cows.cpp
- * @brief Aggressive Cows problem using binary search.
- * (https://www.spoj.com/problems/AGGRCOW/)
- * problem from the USACO February 2005 Gold Division.
- */
-/* Aggressive cow
- *Problem :
+ * @brief Solves the Aggressive Cows problem using binary search on the
+ * answer.
+ * @details
+ * [Aggressive Cows](https://www.spoj.com/problems/AGGRCOW/)
  * There is a farmer whose cows are really aggressive.
  * Now he has one shelter with multiple stalls for the cows, where one cow
  * can occupy one stall.
@@ -18,48 +16,53 @@
  * As the cows are aggressive, to avoid them fighting, we need to keep them
  * away from each other.
  * The minimum distance between any two cows must be maximized.
- */
-/*
-  ###Time and Space complexity
- * Time complexity in worst case is  O(n log n + n log(maxDistance))
- * Time complexity for best case is O(n log n)
- * Time complexity for average case is O(n log n + n log(maxDistance))
- * Space complexity is O(1) , excluding sorting overhead
+ *
+ * ### Time and Space complexity
+ * Time complexity: \f$O(n \log n + n \log D)\f$, where D is the maximum
+ * possible distance between the first and last stall.
+ *
+ * Space complexity: \f$O(1)\f$, excluding sorting overhead.
  */
 #include <algorithm>  // for std::sort function
 #include <cassert>    /// for std::assert
 #include <iostream>   // for IO operations
 #include <vector>     // for std::vector
-using namespace std;
-/**********************************************************************************************************
- **********************************************************************************************************
+namespace search {
+/**
+ * @brief Checks whether the given minimum distance is valid for placing
+ *        the required number of cows.
+ * @param minDistance Minimum distance between two cows.
+ * @param cows Number of cows to place.
+ * @param stalls Positions of the stalls.
+ * @return true if all cows can be placed, otherwise false.
  */
-// checking if given distance is valid for given number of cows
-bool isValid(int mid, int n, const vector<int>& stalls) {
+bool isValid(int minDistance, int cows, const std::vector<int>& stalls) {
     int lastPosition = stalls[0],
         cowsPlaced =
             1;  // lastPositon represents last position at which cow is placed
     // cowsPlaced represents number cows placed
     for (int i = 1; i < stalls.size(); i++) {
-        if ((stalls[i] - lastPosition) >= mid) {
+        if ((stalls[i] - lastPosition) >= minDistance) {
             ++cowsPlaced;
             lastPosition = stalls[i];
         }
     }
-    if (cowsPlaced >= n)
+    if (cowsPlaced >= cows)
         return true;  //// If all cows can be placed, try a larger minimum
                       /// distance.
     else
         return false;
 }
-/*****************************************************************************************************************
- ****************************************************************************************************************
- ****************************************************************************************************************
+/**
+ * @brief Finds the maximum possible minimum distance between cows.
+ *
+ * @param stalls Positions of the stalls.
+ * @param cows Number of cows to place.
+ * @return Maximum possible minimum distance between any two cows.
  */
-// Will return maximum minimum distance between two cows
-int aggressiveCows(vector<int>& stalls, int n) {
+int aggressiveCows(std::vector<int>& stalls, int cows) {
     int answer = 0;
-    sort(stalls.begin(), stalls.end());  // Sorting array first
+    std::sort(stalls.begin(), stalls.end());  // Sorting array first
     // Here we are sorting array that we can access stalls sequentially rather
     // than accessing them randomly
     int st = 1, end = stalls[stalls.size() - 1] -
@@ -70,7 +73,7 @@ int aggressiveCows(vector<int>& stalls, int n) {
     // between last cow and first cow
     while (st <= end) {
         int mid = st + (end - st) / 2;
-        if (isValid(mid, n, stalls)) {
+        if (isValid(mid, cows, stalls)) {
             answer = mid;
             st = mid + 1;
         } else {
@@ -79,55 +82,44 @@ int aggressiveCows(vector<int>& stalls, int n) {
     }
     return answer;
 }
+}  // namespace search
 /**
- * @brief Self-test implementation #1
+ * @brief Runs self-tests for the Aggressive Cows solution.
  * @returns void
  */
-static void test1() {
-    std::vector<int> stalls = {1, 3, 5, 7};
+static void test() {
+    {
+        std::vector<int> stalls = {1, 3, 5, 7};
+        int expected = 6;
+        int result = search::aggressiveCows(stalls, 2);
 
-    int expected = 6;
-    int result = aggressiveCows(stalls, 2);
+        std::cout << "Test #1: ";
+        assert(result == expected);
+        std::cout << "Passed!" << std::endl;
+    }
 
-    std::cout << "Test #1: ";
-    assert(result == expected);
-    std::cout << "Passed!" << std::endl;
+    {
+        std::vector<int> stalls = {2, 5, 8, 3, 9};
+        int expected = 3;
+        int result = search::aggressiveCows(stalls, 3);
+
+        std::cout << "Test #2: ";
+        assert(result == expected);
+        std::cout << "Passed!" << std::endl;
+    }
+
+    {
+        std::vector<int> stalls = {1, 2, 4, 8};
+        int expected = 1;
+        int result = search::aggressiveCows(stalls, 4);
+
+        std::cout << "Test #3: ";
+        assert(result == expected);
+        std::cout << "Passed!" << std::endl;
+    }
 }
-/**
- * @brief Self-test implementation #2
- * @returns void
- */
-static void test2() {
-    std::vector<int> stalls = {2, 5, 8, 3, 9};
 
-    int expected = 3;
-    int result = aggressiveCows(stalls, 3);
-
-    std::cout << "Test #2: ";
-    assert(result == expected);
-    std::cout << "Passed!" << std::endl;
-}
-/**
- * @brief Self-test implementation #3
- * @returns void
- */
-static void test3() {
-    std::vector<int> stalls = {1, 2, 4, 8};
-
-    int expected = 1;
-    int result = aggressiveCows(stalls, 4);
-
-    std::cout << "Test #3: ";
-    assert(result == expected);
-    std::cout << "Passed!" << std::endl;
-}
-/*************************************************************************************************************
- *************************************************************************************************************
- *************************************************************************************************************
- */
 int main() {
-    test1();  // run self-test implementation #1
-    test2();  // run self-test implementation #2
-    test3();  // run self-test implementation #3
+    test();
     return 0;
 }
