@@ -1,4 +1,5 @@
 /**
+ * @file
  * @details
  * we are given two integer numbers
  * we need to swap their values without temporary variables
@@ -8,9 +9,9 @@
  * @author [vi](https://github.com/ViCppDev)
  */
 
-#include <cassert>
-#include <cstdint>
-#include <iostream>
+#include <cassert>  // for assert
+#include <cstdint>  // for int64_t type
+#include <iostream> // for IO operations
 
 /**
  * @namespace bit_manipulation
@@ -39,7 +40,7 @@ constexpr inline void BitSwap(int64_t& a, int64_t& b) noexcept {
 }
 } // namespace bit_manipulation
 
-inline static void test() noexcept {
+static void test() {
     int64_t a{}, b{};
 
     a = 7;
@@ -65,6 +66,11 @@ inline static void test() noexcept {
     std::cout << "ALL TESTS HAVE PASSED SUCCESSFULLY\n";
 }
 
+/**
+ * @brief main function
+ * @returns 0 on exit
+ */
 int main() {
     test();
+    return 0;
 }
