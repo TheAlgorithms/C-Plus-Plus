@@ -20,7 +20,7 @@ class cll {
     ~cll();
     void display(); /* Show the list */
 
-    /******************************************************
+    /**
      * Useful method for list
      *******************************************************/
     void insert_front(int new_data);  /* Insert a new value at head  */
@@ -28,7 +28,7 @@ class cll {
     int get_size();                   /* Get total element in list */
     bool find_item(int item_to_find); /* Find an item in list */
 
-    /******************************************************
+    /**
      * Overloading method for list
      *******************************************************/
     int operator*(); /* Returns the info contained in head */
