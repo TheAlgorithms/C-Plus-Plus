@@ -2,11 +2,15 @@
  * @file
  * @brief de Broglie Wavelength [Matter
  * Waves](https://en.wikipedia.org/wiki/Matter_wave) implementations
- * 
- * @details The concept that matter behaves like a wave was proposed by French
+ *
+ * @details Matter waves are a central part of the theory of quantum mechanics,
+ * being half of wave–particle duality. At all scales where measurements have
+ * been practical, matter exhibits wave-like behavior.
+ *
+ * The concept that matter behaves like a wave was proposed by French
  * physicist Louis de Broglie in 1924, and so matter waves are also known as de
- * Broglie waves. This implementation finds the wavelength of these matter
- * waves, also called de Broglie wavelength.
+ * Broglie waves. This implementation finds the de Broglie wavelength of these
+ * matter waves
  *
  * @note The relativistic formulas are valid at all speeds. The non-relativistic
  * ones are low-speed approximations. The tests use common rule-of-thumb cutoffs
@@ -41,7 +45,8 @@ static constexpr double SPEED_OF_LIGHT =
     2.99792458e8;  ///< Speed of light (c) in m/s
 static constexpr double PLANCK_CONSTANT =
     6.62607015e-34;  ///< Planck's constant (h) in Js
-static constexpr double ELECTRON_MASS = 9.1093837e-31;  ///< Electron mass in kg
+static constexpr double ELECTRON_MASS = 
+    9.1093837e-31;  ///< Electron mass in kg
 
 /**
  * @brief Kinetic Energy when accelerating voltage given
