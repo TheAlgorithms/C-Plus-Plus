@@ -22,7 +22,7 @@
 
 #include <cassert>    /// for assert()
 #include <cmath>      /// for std::sqrt, std::abs
-#include <iostream>   /// for std::cout, std::endl
+#include <iostream>   /// for std::cout
 #include <stdexcept>  /// for std::invalid_argument, std::domain_error
 #include <string>     /// for std::string
 
@@ -183,15 +183,15 @@ static void test() {
     double lambda =
         0.0;  // declaring lambda variable to be used in all the tests
 
-    std::cout << std::endl;
-    std::cout << std::endl;
+    std::cout << "\n";
+    std::cout << "\n";
 
     // Test Case 1:
     try {
-        std::cout << "Test Case 1" << std::endl;
-        std::cout << "Accelerating voltage given: 100.0 V" << std::endl;
+        std::cout << "Test Case 1" << "\n";
+        std::cout << "Accelerating voltage given: 100.0 V" << "\n";
         std::cout << "Mass of the Particle: 9.1093837e-31 kg (Electron)"
-                  << std::endl;
+                  << "\n";
         // check whether it is relativistic or non-relativistic case:
         if (KE_calculation(100.0) <
             (0.01 * rest_mass_energy_calculation(ELECTRON_MASS))) {
@@ -203,20 +203,20 @@ static void test() {
         }
         assert(is_close(lambda, 1.22643e-10));
         std::cout << "Expected Wavelength: 1.22643e-10" << " meters"
-                  << std::endl;
-        std::cout << "Result Wavelength: " << lambda << " meters" << std::endl;
-        std::cout << "----TEST PASSED----" << std::endl << std::endl;
+                  << "\n";
+        std::cout << "Result Wavelength: " << lambda << " meters" << "\n";
+        std::cout << "----TEST PASSED----" << "\n" << "\n";
     } catch (const std::exception& e) {
-        std::cout << "Test 1 Unexpected Exception: " << e.what() << std::endl;
+        std::cout << "Test 1 Unexpected Exception: " << e.what() << "\n";
         assert(false);
     }
 
     // Test Case 2:
     try {
-        std::cout << "Test Case 2" << std::endl;
-        std::cout << "Accelerating voltage given: 100000.0 V" << std::endl;
+        std::cout << "Test Case 2" << "\n";
+        std::cout << "Accelerating voltage given: 100000.0 V" << "\n";
         std::cout << "Mass of the Particle: 9.1093837e-31 kg (Electron)"
-                  << std::endl;
+                  << "\n";
 
         // check whether it is relativistic or non-relativistic case:
         if (KE_calculation(100000.0) <
@@ -229,20 +229,20 @@ static void test() {
         }
         assert(is_close(lambda, 3.70144e-12));
         std::cout << "Expected Wavelength: 3.70144e-12" << " meters"
-                  << std::endl;
-        std::cout << "Result Wavelength: " << lambda << " meters" << std::endl;
-        std::cout << "----TEST PASSED----" << std::endl << std::endl;
+                  << "\n";
+        std::cout << "Result Wavelength: " << lambda << " meters" << "\n";
+        std::cout << "----TEST PASSED----" << "\n" << "\n";
     } catch (const std::exception& e) {
-        std::cout << "Test 2 Unexpected Exception: " << e.what() << std::endl;
+        std::cout << "Test 2 Unexpected Exception: " << e.what() << "\n";
         assert(false);
     }
 
     // Test Case 3:
     try {
-        std::cout << "Test Case 3" << std::endl;
-        std::cout << "Velocity = 2.19e6 m/s" << std::endl;
+        std::cout << "Test Case 3" << "\n";
+        std::cout << "Velocity = 2.19e6 m/s" << "\n";
         std::cout << "Mass of the Particle: 9.1093837e-31 kg (Electron)"
-                  << std::endl;
+                  << "\n";
         // check whether it is relativistic or non-relativistic case:
         if (2.19e6 < (0.1 * SPEED_OF_LIGHT)) {
             // non relativistic case
@@ -254,20 +254,20 @@ static void test() {
         }
         assert(is_close(lambda, 3.32141e-10));
         std::cout << "Expected Wavelength: 3.32141e-10" << " meters"
-                  << std::endl;
-        std::cout << "Result Wavelength: " << lambda << " meters" << std::endl;
-        std::cout << "----TEST PASSED----" << std::endl << std::endl;
+                  << "\n";
+        std::cout << "Result Wavelength: " << lambda << " meters" << "\n";
+        std::cout << "----TEST PASSED----" << "\n" << "\n";
     } catch (const std::exception& e) {
-        std::cout << "Test 3 Unexpected Exception: " << e.what() << std::endl;
+        std::cout << "Test 3 Unexpected Exception: " << e.what() << "\n";
         assert(false);
     }
 
     // Test Case 4:
     try {
-        std::cout << "Test Case 4" << std::endl;
-        std::cout << "Velocity = 2.4e8 m/s" << std::endl;
+        std::cout << "Test Case 4" << "\n";
+        std::cout << "Velocity = 2.4e8 m/s" << "\n";
         std::cout << "Mass of the Particle: 9.1093837e-31 kg (Electron)"
-                  << std::endl;
+                  << "\n";
         // check whether it is relativistic or non-relativistic case:
         if (2.4e8 < (0.1 * SPEED_OF_LIGHT)) {
             // non relativistic case
@@ -279,19 +279,19 @@ static void test() {
         }
         assert(is_close(lambda, 1.81623e-12));
         std::cout << "Expected Wavelength: 1.81623e-12" << " meters"
-                  << std::endl;
-        std::cout << "Result Wavelength: " << lambda << " meters" << std::endl;
-        std::cout << "----TEST PASSED----" << std::endl << std::endl;
+                  << "\n";
+        std::cout << "Result Wavelength: " << lambda << " meters" << "\n";
+        std::cout << "----TEST PASSED----" << "\n" << "\n";
     } catch (const std::exception& e) {
-        std::cout << "Test 4 Unexpected Exception: " << e.what() << std::endl;
+        std::cout << "Test 4 Unexpected Exception: " << e.what() << "\n";
         assert(false);
     }
 
     // Test Case 5:
     try {
-        std::cout << "Test Case 5" << std::endl;
-        std::cout << "Velocity = 120 m/s" << std::endl;
-        std::cout << "Mass of the Particle: 0.5 kg (Say A Ball)" << std::endl;
+        std::cout << "Test Case 5" << "\n";
+        std::cout << "Velocity = 120 m/s" << "\n";
+        std::cout << "Mass of the Particle: 0.5 kg (Say A Ball)" << "\n";
         // check whether it is relativistic or non-relativistic case:
         if (120 < (0.1 * SPEED_OF_LIGHT)) {
             // non relativistic case
@@ -303,38 +303,38 @@ static void test() {
         }
         assert(is_close(lambda, 1.10435e-35));
         std::cout << "Expected Wavelength: 1.10435e-35" << " meters"
-                  << std::endl;
-        std::cout << "Result Wavelength: " << lambda << " meters" << std::endl;
-        std::cout << "----TEST PASSED----" << std::endl << std::endl;
+                  << "\n";
+        std::cout << "Result Wavelength: " << lambda << " meters" << "\n";
+        std::cout << "----TEST PASSED----" << "\n" << "\n";
     } catch (const std::exception& e) {
-        std::cout << "Test 5 Unexpected Exception: " << e.what() << std::endl;
+        std::cout << "Test 5 Unexpected Exception: " << e.what() << "\n";
         assert(false);
     }
 
     // Test case 6: (error handling test)
     try {
-        std::cout << "Test Case 6" << std::endl;
+        std::cout << "Test Case 6" << "\n";
         std::cout << "Accelerating voltage given: -50.0 V (Invalid)"
-                  << std::endl;
+                  << "\n";
         std::cout << "Mass of the Particle: 9.1093837e-31 kg (Electron)"
-                  << std::endl;
+                  << "\n";
 
         // Trying to calculate with invalid negative input
         lambda = lambda_Vol_given_non_rel(ELECTRON_MASS, -50.0);
 
-        std::cout << "Result Wavelength: " << lambda << " meters" << std::endl;
+        std::cout << "Result Wavelength: " << lambda << " meters" << "\n";
         std::cout << "ERROR: Code allowed a negative voltage input"
-                  << std::endl;
+                  << "\n";
         assert(false);
     } catch (const std::invalid_argument& e) {
-        std::cout << "Caught Exception Message: " << e.what() << std::endl;
+        std::cout << "Caught Exception Message: " << e.what() << "\n";
         std::string expected_error =
             "Mass and accelerating voltage must be positive and non-zero.";
         assert(std::string(e.what()) == expected_error);
 
         std::cout << "Expected Behavior: Exception successfully verified!"
-                  << std::endl;
-        std::cout << "----TEST PASSED----" << std::endl << std::endl;
+                  << "\n";
+        std::cout << "----TEST PASSED----" << "\n" << "\n";
     }
 }
 /**
