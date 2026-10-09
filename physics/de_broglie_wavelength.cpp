@@ -311,7 +311,7 @@ static void test() {
               << "\n";
     thrown = false;
     try {
-        lambda = lambda_Vol_given_non_rel(ELECTRON_MASS, -50.0);
+        lambda_Vol_given_non_rel(ELECTRON_MASS, -50.0);
     } catch (const std::invalid_argument& e) {
         std::cout << "Caught Exception Message: " << e.what() << "\n";
         assert(std::string(e.what()) ==
@@ -331,7 +331,7 @@ static void test() {
               << "\n";
     thrown = false;
     try {
-        lambda = lambda_Vel_given_rel(1.67262192e-27, 4.55e8);
+        lambda_Vel_given_rel(1.67262192e-27, 4.55e8);
     } catch (const std::domain_error& e) {
         std::cout << "Caught Exception Message: " << e.what() << "\n";
         assert(std::string(e.what()) ==
