@@ -5,15 +5,28 @@ import sys
 print("Python {}.{}.{}".format(*sys.version_info))  # Python 3.8
 with open("git_diff.txt") as in_file:
     modified_files = sorted(in_file.read().splitlines())
-    print("{} files were modified.".format(len(modified_files)))
+    print(f"{len(modified_files)} files were modified.")
 
-    cpp_exts = tuple(".c .c++ .cc .cpp .cu .cuh .cxx .h .h++ .hh .hpp .hxx".split())
+    cpp_exts = (
+        ".c",
+        ".c++",
+        ".cc",
+        ".cpp",
+        ".cu",
+        ".cuh",
+        ".cxx",
+        ".h",
+        ".h++",
+        ".hh",
+        ".hpp",
+        ".hxx",
+    )
     cpp_files = [file for file in modified_files if file.lower().endswith(cpp_exts)]
     print(f"{len(cpp_files)} C++ files were modified.")
     if not cpp_files:
         sys.exit(0)
 
-    subprocess.run(
+    _ = subprocess.run(
         [
             "clang-tidy",
             "--fix",
@@ -26,7 +39,7 @@ with open("git_diff.txt") as in_file:
         text=True,
         stderr=subprocess.STDOUT,
     )
-    subprocess.run(
+    _ = subprocess.run(
         ["clang-format", "-i", "-style=file", *cpp_files],
         check=True,
         text=True,
