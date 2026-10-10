@@ -3,6 +3,7 @@
  * @brief Declaration of a circular linked list of integers.
  * @details Defines the node structure and the `cll` class interface for
  *          storing and traversing integer values in a circular list.
+ * @author [Krishna Vedala](https://github.com/kvedala)
  */
 #include <cctype>
 #include <cstdlib>
