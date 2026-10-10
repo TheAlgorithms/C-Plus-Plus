@@ -1,6 +1,10 @@
-/*
- * Simple data structure CLL (Circular Linear Linked List)
- * */
+/**
+ * @file cll.h
+ * @brief Declaration of a circular linked list of integers.
+ * @details Defines the node structure and the `cll` class interface for
+ *          storing and traversing integer values in a circular list.
+ * @author [Krishna Vedala](https://github.com/kvedala)
+ */
 #include <cctype>
 #include <cstdlib>
 #include <cstring>
@@ -8,32 +12,71 @@
 
 #ifndef CLL_H
 #define CLL_H
-/*The data structure is a linear linked list of integers */
+
+/**
+ * @brief A node in a circular linked list of integers.
+ */
 struct node {
     int data;
     node* next;
 };
 
+/**
+ * @brief A circular linked list of integers.
+ */
 class cll {
  public:
-    cll(); /* Construct without parameter */
+    /**
+     * @brief Constructs an empty circular linked list.
+     */
+    cll();
+
+    /**
+     * @brief Destroys the circular linked list object.
+     */
     ~cll();
-    void display(); /* Show the list */
 
-    /******************************************************
-     * Useful method for list
-     *******************************************************/
-    void insert_front(int new_data);  /* Insert a new value at head  */
-    void insert_tail(int new_data);   /* Insert a new value at tail */
-    int get_size();                   /* Get total element in list */
-    bool find_item(int item_to_find); /* Find an item in list */
+    /**
+     * @brief Displays the list contents and its size.
+     */
+    void display();
 
-    /******************************************************
-     * Overloading method for list
-     *******************************************************/
-    int operator*(); /* Returns the info contained in head */
-    /* Overload the pre-increment operator.
-       The iterator is advanced to the next node. */
+    /**
+     * @brief Inserts a value at the beginning of the list.
+     * @param new_data Integer value to insert.
+     */
+    void insert_front(int new_data);
+
+    /**
+     * @brief Inserts a value at the end of the list.
+     * @param new_data Integer value to insert.
+     */
+    void insert_tail(int new_data);
+
+    /**
+     * @brief Gets the number of elements in the list.
+     * @return The number of elements in the list.
+     */
+    int get_size();
+
+    /**
+     * @brief Checks whether the list contains a value.
+     * @param item_to_find Integer value to search for.
+     * @return `true` if the value is found; otherwise, `false`.
+     */
+    bool find_item(int item_to_find);
+
+    /**
+     * @brief Gets the value at the head of the list.
+     * @pre The list is not empty.
+     * @return The integer value stored in the head node.
+     */
+    int operator*();
+
+    /**
+     * @brief Advances the head to the next node in the list.
+     * @pre The list is not empty.
+     */
     void operator++();
 
  protected:
