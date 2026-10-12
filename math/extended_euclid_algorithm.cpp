@@ -12,6 +12,7 @@
 #include <algorithm>  // for swap function
 #include <iostream>
 #include <cstdint>
+#include <cassert>
 
 /**
  * function to update the coefficients per iteration
@@ -84,14 +85,42 @@ void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y) {
     }
 }
 
+/**
+ * @brief self-test implementations with asssertions for both methods
+ */
+
+ static void test(){
+    uint32_t gcd = 0;
+    int32_t x = 0, y = 0;
+
+
+    // test case 1: standard coprime numbers (15,35)
+
+    extendedEuclid(35u ,15u, &gcd, &x, &y);
+    assert(gcd == 5);
+    assert((35 * x) + (15 * y) == 5);
+
+    // test case 2: equal inputs (10,10)
+    extendedEuclid_1(10u, 10u, &gcd, &x, &y);
+    assert(gcd == 10);
+    assert((10 * x) + (10 * y) == 10);
+
+    // test case 3: Prime numbers(31, 2)
+    extendedEuclid(31u, 2u, &gcd, &x, &y);
+    assert((31 * x) + (2 * y) == 1);
+    assert((31 * x) + (2 * y) == 1);
+
+    extendedEuclid_1(31u, 2u, &gcd, &x, &y);
+    assert(gcd == 1);
+    assert((31 * x) + (2 * y) == 1);
+
+    std::cout << "All automated tests passed successfully!"<<std::endl;
+
+
+}
 /// Main function
+
 int main() {
-    uint32_t a, b, gcd;
-    int32_t x, y;
-    std::cin >> a >> b;
-    extendedEuclid(a, b, &gcd, &x, &y);
-    std::cout << gcd << " " << x << " " << y << std::endl;
-    extendedEuclid_1(a, b, &gcd, &x, &y);
-    std::cout << gcd << " " << x << " " << y << std::endl;
+    test(); // Run automated test suite
     return 0;
 }
