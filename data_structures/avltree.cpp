@@ -1,17 +1,17 @@
 /**
- * @file avl_tree.hpp
+ * @file avltree.cpp
  * @author Bertrand Awenze (https://github.com/bertrand-awz)
- * @brief Implementation of an AVL Tree data structure.
+ * @brief Implementation and self-tests of an AVL Tree data structure.
  *
  * @details This implementation is a self-balancing binary search tree that
  * maintains its height to be logarithmic in the number of nodes, ensuring
- * efficient operations. \n The AVL Tree supports insertion, deletion, and
+ * efficient operations. The AVL Tree supports insertion, deletion, and
  * search operations in O(log n) time. It automatically balances itself after
  * insertions and deletions to maintain optimal performance. The tree can be
  * displayed in a structured format in terminal, and it provides methods to
  * check for emptiness, size, and height.
  *
- * @note This implementation try to resolve the issue mentioned in the following
+ * @note This implementation resolves the issue mentioned in the following
  * link: https://thealgorithms.github.io/C-Plus-Plus/d8/dee/avltree_8cpp.html
  *
  * @note This implementation uses C++17 features and requires the type T to be
@@ -24,14 +24,20 @@
  *
  */
 
-#ifndef AVL_TREE_AVL_TREE_HPP
-#define AVL_TREE_AVL_TREE_HPP
+// Keep assertions active when this executable is built in Release mode.
+#ifdef NDEBUG
+#undef NDEBUG
+#endif
 
 #include <algorithm>
+#include <array>
+#include <cassert>
 #include <cstddef>
 #include <initializer_list>
 #include <iostream>
 #include <memory>
+#include <random>
+#include <set>
 #include <sstream>
 #include <string>
 #include <type_traits>
@@ -46,14 +52,14 @@ struct IsComparable : std::false_type {};
 template <typename T>
 struct IsComparable<
     T, std::void_t<decltype(static_cast<bool>(std::declval<const T&>() ==
-                                              std::declval<const T&>())),
+                                            std::declval<const T&>())),
                    decltype(static_cast<bool>(std::declval<const T&>() <
-                                              std::declval<const T&>()))>>
+                                            std::declval<const T&>()))>>
     : std::conjunction<std::is_convertible<decltype(std::declval<const T&>() ==
-                                                    std::declval<const T&>()),
-                                           bool>,
+                                                  std::declval<const T&>()),
+                                          bool>,
                        std::is_convertible<decltype(std::declval<const T&>() <
-                                                    std::declval<const T&>()),
+                                                  std::declval<const T&>()),
                                            bool>> {};
 
 }  // namespace avltree_requirements
@@ -535,4 +541,242 @@ void AvlTree<T>::rotateRight(NodePtr& node) noexcept {
     node = std::move(newRoot);
 }
 
-#endif  // AVL_TREE_AVL_TREE_HPP
+/**
+ * @brief Self-tests of the AVL tree public interface.
+ * @returns void
+ */
+static void tests() {
+    const auto assert_items = [](const AvlTree<int>& tree,
+                                 std::initializer_list<int> items) {
+        assert(tree.size() == static_cast<int>(items.size()));
+        assert(tree.isEmpty() == (items.size() == 0));
+        for (int item : items) {
+            assert(tree.hasItem(item));
+        }
+    };
+
+    // Empty operations, repeated clearing, and reuse.
+    {
+        AvlTree<int> tree;
+        assert_items(tree, {});
+        assert(tree.height() == -1);
+        assert(!tree.hasItem(42));
+        tree.remove(42);
+        tree.clear();
+        assert_items(tree, {});
+        assert(tree.height() == -1);
+
+        tree = AvlTree<int>{5, 3, 8, 1, 4, 7, 9};
+        tree.clear();
+        assert_items(tree, {});
+        assert(tree.height() == -1);
+        assert(!tree.hasItem(5));
+        tree.clear();
+        tree.insert(42);
+        assert_items(tree, {42});
+        assert(tree.height() == 0);
+    }
+
+    // Initializer lists, duplicate values, and all four insertion rotations.
+    {
+        AvlTree<int> tree{5, 3, 8, 1, 4, 7, 9, 5};
+        assert_items(tree, {1, 3, 4, 5, 7, 8, 9});
+        assert(tree.height() == 2);
+        tree.insert(3);
+        assert_items(tree, {1, 3, 4, 5, 7, 8, 9});
+        assert(!tree.hasItem(6));
+
+        const std::array<std::initializer_list<int>, 4> rotations{{
+            {3, 2, 1},  // Left-left: rotate right.
+            {1, 2, 3},  // Right-right: rotate left.
+            {3, 1, 2},  // Left-right: double rotation.
+            {1, 3, 2}   // Right-left: double rotation.
+        }};
+        for (const auto& items : rotations) {
+            const AvlTree<int> rotated(items);
+            assert_items(rotated, {1, 2, 3});
+            assert(rotated.height() == 1);
+        }
+    }
+
+    // Leaf, single-child, and two-child deletion, including the root.
+    {
+        AvlTree<int> tree{2, 1, 3};
+        tree.remove(99);
+        assert_items(tree, {1, 2, 3});
+        tree.remove(1);  // Leaf.
+        assert_items(tree, {2, 3});
+        tree.remove(2);  // Root with one child.
+        assert_items(tree, {3});
+        assert(tree.height() == 0);
+        tree.remove(3);  // Last node.
+        assert_items(tree, {});
+        assert(tree.height() == -1);
+
+        tree = AvlTree<int>{4, 2, 6, 1};
+        tree.remove(2);  // Non-root node with one child.
+        assert_items(tree, {1, 4, 6});
+        assert(tree.height() == 1);
+        tree.remove(4);  // Successor is the immediate right child.
+        assert_items(tree, {1, 6});
+
+        tree = AvlTree<int>{20, 10, 40, 5, 15, 30, 50, 35};
+        // Successor 30 has a right child that must be preserved.
+        tree.remove(20);
+        assert_items(tree, {5, 10, 15, 30, 35, 40, 50});
+        assert(!tree.hasItem(20));
+        assert(tree.height() == 2);
+    }
+
+    // All four deletion rotations leave three nodes of height one.
+    {
+        const std::array<std::pair<std::array<int, 4>, int>, 4>
+            rotations{{
+                {{3, 2, 4, 1}, 4},  // Left-left.
+                {{2, 1, 3, 4}, 1},  // Right-right.
+                {{3, 1, 4, 2}, 4},  // Left-right.
+                {{2, 1, 4, 3}, 1}   // Right-left.
+            }};
+        for (const auto& rotation : rotations) {
+            AvlTree<int> tree;
+            for (int item : rotation.first) {
+                tree.insert(item);
+            }
+            tree.remove(rotation.second);
+            assert(tree.size() == 3);
+            assert(tree.height() == 1);
+            for (int item : rotation.first) {
+                assert(tree.hasItem(item) == (item != rotation.second));
+            }
+        }
+    }
+
+    // Independent copies and reusable moved-from trees.
+    {
+        AvlTree<int> original{2, 1, 3};
+        AvlTree<int> copied(original);
+        copied.remove(1);
+        assert_items(original, {1, 2, 3});
+        assert_items(copied, {2, 3});
+
+        AvlTree<int> assigned{99};
+        assigned = original;
+        original.clear();
+        assert_items(assigned, {1, 2, 3});
+        assert(assigned.height() == 1);
+
+        AvlTree<int> moved(std::move(copied));
+        assert_items(moved, {2, 3});
+        assert_items(copied, {});
+        // AvlTree guarantees that moved-from trees are empty and usable.
+        // NOLINTNEXTLINE(clang-analyzer-cplusplus.Move)
+        assert(copied.height() == -1);
+        copied.insert(42);
+        assert_items(copied, {42});
+
+        assigned = std::move(moved);
+        assert_items(assigned, {2, 3});
+        assert(!assigned.hasItem(1));
+        assert_items(moved, {});
+        // Check the same guarantee after move assignment.
+        // NOLINTNEXTLINE(clang-analyzer-cplusplus.Move)
+        assert(moved.height() == -1);
+        moved.insert(7);
+        swap(assigned, moved);
+        assert_items(assigned, {7});
+        assert_items(moved, {2, 3});
+        assert(assigned.height() == 0);
+        assert(moved.height() == 1);
+    }
+
+    // Non-integer values.
+    {
+        AvlTree<std::string> tree{"pear", "apple", "orange", "pear"};
+        assert(tree.size() == 3);
+        assert(tree.height() == 1);
+        tree.remove("orange");
+        assert(!tree.hasItem("orange"));
+        assert(tree.hasItem("apple"));
+        assert(tree.hasItem("pear"));
+        assert(tree.size() == 2);
+    }
+
+    // Terminal output through a stream.
+    {
+        std::ostringstream empty;
+        AvlTree<int>{}.display(empty);
+        assert(empty.str() == "(empty)\n");
+
+        std::ostringstream singleton;
+        AvlTree<int>{500}.display(singleton);
+        assert(singleton.str() == "500\n");
+
+        std::ostringstream left;
+        AvlTree<int>{2, 1}.display(left);
+        assert(left.str() == "  2\n \u2199\n1\n");
+        std::ostringstream right;
+        AvlTree<int>{1, 2}.display(right);
+        assert(right.str() == "1\n \u2198\n  2\n");
+
+        const AvlTree<int> tree{2, 1, 3};
+        std::ostringstream output;
+        tree.display(output);
+        assert(output.str() == "  2\n \u2199 \u2198\n1   3\n");
+        assert_items(tree, {1, 2, 3});
+        assert(tree.height() == 1);
+    }
+
+    // Mixed operations compared with std::set using a fixed random seed.
+    {
+        AvlTree<int> tree;
+        std::set<int> expected;
+        std::mt19937 generator(42);
+        std::uniform_int_distribution<int> value(-50, 50);
+        std::bernoulli_distribution insert(0.5);
+
+        for (int step = 0; step < 2000; ++step) {
+            const int item = value(generator);
+            if (insert(generator)) {
+                tree.insert(item);
+                expected.insert(item);
+            } else {
+                tree.remove(item);
+                expected.erase(item);
+            }
+            assert(tree.size() == static_cast<int>(expected.size()));
+            assert(tree.isEmpty() == expected.empty());
+            for (int candidate = -50; candidate <= 50; ++candidate) {
+                assert(tree.hasItem(candidate) ==
+                       (expected.count(candidate) != 0));
+            }
+
+            // An AVL of height h needs at least 1 + N(h-1) + N(h-2) nodes.
+            int previous = 0;
+            int minimum_nodes = 1;
+            int maximum_height = -1;
+            while (minimum_nodes <= static_cast<int>(expected.size())) {
+                const int next = 1 + minimum_nodes + previous;
+                previous = minimum_nodes;
+                minimum_nodes = next;
+                ++maximum_height;
+            }
+            assert(tree.height() >= (expected.empty() ? -1 : 0));
+            assert(tree.height() <= maximum_height);
+        }
+    }
+
+    std::cout << "All AVL tree tests passed!\n";
+}
+
+/**
+ * @brief Run the self-tests and display an example tree.
+ * @returns 0 on exit
+ */
+int main() {
+    tests();
+    AvlTree<int> tree{5, 3, 8, 1, 4, 7, 500};
+    tree.display();
+    tree.clear();
+    std::cout << tree.isEmpty() << '\n';
+    return 0;
+}
