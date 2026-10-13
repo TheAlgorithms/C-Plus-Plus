@@ -44,7 +44,10 @@
   * [Non Preemptive Sjf Scheduling](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/cpu_scheduling_algorithms/non_preemptive_sjf_scheduling.cpp)
 
 ## Data Structures
-  * [Avltree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/avltree.cpp)
+  * Avl Tree
+    * [Avl Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/avl_tree/avl_tree.hpp)
+    * [Main Avl Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/avl_tree/main_avl_tree.cpp)
+    * [Test Avl Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/avl_tree/test_avl_tree.cpp)
   * [Binary Search Tree](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/binary_search_tree.cpp)
   * [Binary Search Tree2](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/binary_search_tree2.cpp)
   * [Binaryheap](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/data_structures/binaryheap.cpp)
