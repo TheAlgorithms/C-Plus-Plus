@@ -20,11 +20,12 @@
  *
  * @author [Neha Hasija](https://github.com/neha-hasija17)
  * @author [Rijul.S](https://github.com/Rijul24)
+ * @author [Akhila Pynam](https://github.com/akhila-pynam)
  */
 
-#include <iostream>  /// for IO operations
 #include <cassert>   /// for assert
-
+#include <cstdint>   /// for std::uint64_t
+#include <iostream>  /// for IO operations
 
 /**
  * @namespace math
@@ -32,23 +33,18 @@
  */
 namespace math {
 /**
- * @brief This function finds whether a number is power of 2 or not
- * @param n value for which we want to check
- * prints the result, as "Yes, the number n is a power of 2" or
- * "No, the number is not a power of 2" without quotes
- * @returns 1 if `n` IS the power of 2
- * @returns 0 if n is NOT a power of 2
+ * @brief This function finds whether a number is a power of 2 or not.
+ * @param n Value for which we want to check.
+ * @return `true` if `n` is a power of 2.
+ * @return `false` if `n` is not a power of 2.
  */
-int power_of_two(int n) {
+bool is_power_of_two(uint64_t n) {
     /// result stores the
     /// bitwise and of n and n-1
-    int result = n & (n - 1);
-    
-    if (result == 0) {
-        return 1;
+    if (n == 0) {
+        return false;
     }
-
-    return 0;
+    return (n & (n - 1)) == 0;
 }
 }  // namespace math
 
@@ -57,50 +53,41 @@ int power_of_two(int n) {
  * @returns void
  */
 static void test() {
-    std::cout << "First case testing... \n"; // for n = 32 return 1
-    assert(math::power_of_two(32) == 1);
-    std::cout << "\nPassed!\n";
+    // 0 is not a power of 2
+    assert(math::is_power_of_two(0) == false);
 
-    std::cout << "Second case testing... \n"; // for n = 5 return 0
-    assert(math::power_of_two(5) == 0);
-    std::cout << "\nPassed!\n";
+    // 1 is 2^0 (true)
+    assert(math::is_power_of_two(1) == true);
 
-    std::cout << "Third case testing... \n"; // for n = 232 return 0
-    assert(math::power_of_two(232) == 0);
-    std::cout << "\nPassed!\n";
+    // Powers of 2
+    assert(math::is_power_of_two(2) == true);
+    assert(math::is_power_of_two(4) == true);
+    assert(math::is_power_of_two(8) == true);
+    assert(math::is_power_of_two(16) == true);
+    assert(math::is_power_of_two(32) == true);
+    assert(math::is_power_of_two(64) == true);
+    assert(math::is_power_of_two(1024) == true);
+    assert(math::is_power_of_two(1ULL << 30) == true);
+    assert(math::is_power_of_two(1ULL << 62) == true);
 
-    std::cout << "\nAll test cases have successfully passed!\n";
-}
+    // Non-powers of 2
+    assert(math::is_power_of_two(3) == false);
+    assert(math::is_power_of_two(5) == false);
+    assert(math::is_power_of_two(6) == false);
+    assert(math::is_power_of_two(7) == false);
+    assert(math::is_power_of_two(9) == false);
+    assert(math::is_power_of_two(232) == false);
+    assert(math::is_power_of_two(1000) == false);
 
-/**
- * @brief Take user input in the test cases (optional; currently commented)
- * @returns void
- */
-void user_input_test() {
-    int n = 0; // input from user
-    
-    std::cout << "Enter a number " << std::endl;
-    std::cin >> n; 
-
-    /// function call with @param n
-    int result = math::power_of_two(n);
-    if (result == 1) {
-        std::cout << "Yes, the number " << n << " is a power of 2\n";
-    }
-    else { 
-        std::cout << "No, the number " << n << " is not a power of 2\n";
-    }
+    std::cout << "All tests have successfully passed!\n";
 }
 
 /**
  * @brief Main function
  * @returns 0 on exit
  */
+
 int main() {
-    test(); // run self-test implementations
-
-    // uncomment the line below to take user inputs
-    //user_input_test();
-
+    test();  // run self-test implementations
     return 0;
 }
