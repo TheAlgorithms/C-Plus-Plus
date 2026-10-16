@@ -1,11 +1,10 @@
-
-/******************************************************************************
+/**
  * @file
  * @brief [Interpolation search
  * algorithm](https://en.wikipedia.org/wiki/interpolation_search)
  *
  * @details
- * interpolation search resembles the method by which people search a telephone
+ * Interpolation search resembles the method by which people search a telephone
  * directory for a name (the key value by which the book's entries are ordered):
  * in each step the algorithm calculates where in the remaining search space
  * the sought item might be, based on the key values at the bounds of the search
@@ -15,46 +14,46 @@
  * comparison, the remaining search space is reduced to the part before or
  * after the estimated position. This method will only work if calculations
  * on the size of differences between key values are sensible.
-
+ *
  * ### Complexities
  *
  * //n is the number of element in the array.
  *
  * Worst-case time complexity	O(n)                (when items are distributed
- exponentially)
+ * exponentially)
  * Average time complexity	    O(log2(log2 n))
  * space complexity  0(1)
  *
  * @author [Lajat Manekar](https://github.com/Lazeeez)
  * @author Unknown author
- *******************************************************************************/
+ */
 
 #include <algorithm>  /// for std::sort function
 #include <cassert>    /// for std::assert
 #include <cstdint>
-#include <iostream>   /// for IO operations
-#include <vector>     /// for std::vector
+#include <iostream>  /// for IO operations
+#include <vector>    /// for std::vector
 
-/******************************************************************************
+/**
  * @namespace search
  * @brief Searching algorithms
- *******************************************************************************/
+ */
 namespace search {
 
-/******************************************************************************
+/**
  * @namespace interpolation_search
  * @brief Functions for the [Interpolation
- *Search](https://en.wikipedia.org/wiki/interpolation_search) algorithm
- *implementation
- *******************************************************************************/
+ * Search](https://en.wikipedia.org/wiki/interpolation_search) algorithm
+ * implementation
+ */
 namespace interpolation_search {
 
-/******************************************************************************
+/**
  * @brief The main function which implements interpolation search
  * @param arr vector to be searched in
  * @param number value to be searched
  * @returns integer index of `number` in vector `arr`
- *******************************************************************************/
+ */
 uint64_t interpolationSearch(const std::vector<uint64_t> &arr,
                              uint64_t number) {
     uint64_t size = arr.size();
@@ -94,10 +93,10 @@ uint64_t interpolationSearch(const std::vector<uint64_t> &arr,
 
 }  // namespace search
 
-/*******************************************************************************
+/**
  * @brief Self-test implementation
  * @returns void
- *******************************************************************************/
+ */
 static void tests() {
     // testcase
     // array = [10, 12, 13, 16, 18, 19, 20, 21, 1, 2, 3, 4, 22, 23, 24, 33, 35,
@@ -114,10 +113,10 @@ static void tests() {
     std::cout << "Passed!\n";
 }
 
-/*******************************************************************************
+/**
  * @brief Main function
  * @returns 0 on exit
- *******************************************************************************/
+ */
 int main() {
     tests();  // run self-test implementations
     return 0;
