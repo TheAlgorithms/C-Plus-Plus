@@ -93,7 +93,7 @@ static void test() {
     bool derived_result = dp::partitionProblem::findPartiion(arr, n);
     std::cout << "1st test: ";
     assert(expected_result == derived_result);
-    std::cout << "Passed!" << std::endl;
+    std::cout << "Passed!\n";
 }
 
 /**
