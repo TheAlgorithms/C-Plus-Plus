@@ -1,4 +1,4 @@
-/******************************************************************************
+/**
  * @file
  * @brief Implementation of the [Convex
  * Hull](https://en.wikipedia.org/wiki/Convex_hull) implementation using [Graham
@@ -37,17 +37,17 @@
  *
  * @author [Lajat Manekar](https://github.com/Lazeeez)
  *
- *******************************************************************************/
+ */
 #include <cassert>   /// for std::assert
 #include <iostream>  /// for IO Operations
 #include <vector>    /// for std::vector
 
 #include "./graham_scan_functions.hpp"  /// for all the functions used
 
-/*******************************************************************************
+/**
  * @brief Self-test implementations
  * @returns void
- *******************************************************************************/
+ */
 static void test() {
     std::vector<geometry::grahamscan::Point> points = {
         {0, 3}, {1, 1}, {2, 2}, {4, 4}, {0, 0}, {1, 2}, {3, 1}, {3, 3}};
@@ -63,13 +63,13 @@ static void test() {
         assert(derived_result[i].x == expected_result[i].x);
         assert(derived_result[i].y == expected_result[i].y);
     }
-    std::cout << "passed!" << std::endl;
+    std::cout << "passed!\n";
 }
 
-/*******************************************************************************
+/**
  * @brief Main function
  * @returns 0 on exit
- *******************************************************************************/
+ */
 int main() {
     test();  // run self-test implementations
     return 0;
