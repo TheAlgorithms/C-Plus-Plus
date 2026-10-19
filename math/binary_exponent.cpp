@@ -21,6 +21,8 @@
  * skipping \f$2^1\f$ and \f$2^4\f$.
  */
 
+#include <cassert>  /// for assert
+#include <climits>  /// for INT_MAX
 #include <iostream>
 
 /// Recursive function to calculate exponent in \f$O(\log(n))\f$ using binary
@@ -39,20 +41,39 @@ int binExpo(int a, int b) {
 
 /// Iterative function to calculate exponent in \f$O(\log(n))\f$ using binary
 /// exponent.
+/// Requires a nonnegative exponent and a result representable by int.
 int binExpo_alt(int a, int b) {
     int res = 1;
     while (b > 0) {
         if (b % 2) {
             res = res * a;
         }
-        a = a * a;
         b /= 2;
+        // The final square is unused and may overflow even when the result fits.
+        if (b > 0) {
+            a = a * a;
+        }
     }
     return res;
 }
 
+/**
+ * @brief Check representable results whose unused final square would overflow.
+ * @returns void
+ */
+static void tests() {
+    assert(binExpo_alt(INT_MAX, 1) == INT_MAX);
+    assert(binExpo_alt(50000, 1) == 50000);
+    assert(binExpo_alt(-50000, 1) == -50000);
+    assert(binExpo_alt(2, 30) == 1073741824);
+    assert(binExpo_alt(3, 0) == 1);
+    assert(binExpo_alt(0, 3) == 0);
+    assert(binExpo_alt(2, 10) == binExpo(2, 10));
+}
+
 /// Main function
 int main() {
+    tests();
     int a, b;
     /// Give two numbers a, b
     std::cin >> a >> b;
@@ -68,4 +89,5 @@ int main() {
         std::cout << resRecurse << std::endl;
         /// std::cout << resIterate << std::endl;
     }
+    return 0;
 }
