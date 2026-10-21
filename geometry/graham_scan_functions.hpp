@@ -1,4 +1,4 @@
-/******************************************************************************
+/**
  * @file
  * @brief Implementation of the [Convex
  * Hull](https://en.wikipedia.org/wiki/Convex_hull) implementation using [Graham

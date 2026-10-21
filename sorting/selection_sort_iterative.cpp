@@ -1,4 +1,4 @@
-/******************************************************************************
+/**
  * @file
  * @brief Implementation of the [Selection
  * sort](https://en.wikipedia.org/wiki/Selection_sort) implementation using

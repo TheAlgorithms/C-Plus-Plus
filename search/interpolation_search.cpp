@@ -1,5 +1,5 @@
 
-/******************************************************************************
+/**
  * @file
  * @brief [Interpolation search
  * algorithm](https://en.wikipedia.org/wiki/interpolation_search)
