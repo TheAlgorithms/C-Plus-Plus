@@ -1,4 +1,4 @@
-/******************************************************************************
+/**
  * @file
  * @brief Implementation of the [Partition
  * Problem](https://en.wikipedia.org/wiki/Partition_problem )
