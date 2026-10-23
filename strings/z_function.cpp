@@ -58,7 +58,7 @@ std::vector<uint64_t> find_pat_in_text(const std::string &pattern,
     std::vector<uint64_t> matching_indexes;
 
     for (uint64_t i = 0; i < text_length; i++) {
-        if (z[i + pattern_length + 1] == pattern_length) {
+        if (z[i + pattern_length + 1] >= pattern_length) {
             matching_indexes.push_back(i);
         }
     }
@@ -70,6 +70,11 @@ std::vector<uint64_t> find_pat_in_text(const std::string &pattern,
  * @returns void
  */
 static void test() {
+    // A match may extend across the separator when inputs also contain '#'.
+    assert((find_pat_in_text("#", "##") == std::vector<uint64_t>{0, 1}));
+    assert((find_pat_in_text("##", "###") == std::vector<uint64_t>{0, 1}));
+    assert((find_pat_in_text("a#", "a#a#") == std::vector<uint64_t>{0, 2}));
+
     // usual case
     std::string text1 = "alskfjaldsabc1abc1abcbksbcdnsdabcabc";
     std::string pattern1 = "abc";
