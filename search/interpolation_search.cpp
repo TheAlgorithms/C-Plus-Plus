@@ -57,13 +57,17 @@ namespace interpolation_search {
  *******************************************************************************/
 uint64_t interpolationSearch(const std::vector<uint64_t> &arr,
                              uint64_t number) {
+    if (arr.empty()) {
+        return -1;
+    }
+
     uint64_t size = arr.size();
     uint64_t low = 0, high = (size - 1);
 
     // Since vector is sorted, an element present in array must be in range
     // defined by corner
     while (low <= high && number >= arr[low] && number <= arr[high]) {
-        if (low == high) {
+        if (arr[low] == arr[high]) {
             if (arr[low] == number) {
                 return low;
             }
@@ -99,6 +103,14 @@ uint64_t interpolationSearch(const std::vector<uint64_t> &arr,
  * @returns void
  *******************************************************************************/
 static void tests() {
+    using search::interpolation_search::interpolationSearch;
+    const auto not_found = static_cast<uint64_t>(-1);
+    assert(interpolationSearch({}, 7) == not_found);
+    assert(interpolationSearch({7}, 7) == 0);
+    assert(interpolationSearch({7}, 8) == not_found);
+    assert(interpolationSearch({7, 7, 7}, 7) == 0);
+    assert(interpolationSearch({7, 7, 7}, 8) == not_found);
+
     // testcase
     // array = [10, 12, 13, 16, 18, 19, 20, 21, 1, 2, 3, 4, 22, 23, 24, 33, 35,
     // 42, 47] , Value = 33 should return 15
