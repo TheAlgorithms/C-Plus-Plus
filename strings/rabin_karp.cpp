@@ -6,6 +6,7 @@
  */
 #include <cassert>
 #include <cmath>
+#include <cstdint>
 #include <iostream>
 #ifdef _MSC_VER
 #include <string>  // use this for MS Visucal C++
@@ -81,6 +82,10 @@ bool check_if_equal(const std::string& str1, const std::string& str2,
  */
 
 int rabin_karp(const std::string& str, const std::string& pat) {
+    if (pat.size() > str.size()) {
+        return -1;
+    }
+
     int64_t pat_hash = create_hash(pat, pat.size());
     int64_t str_hash = create_hash(str, pat.size());
     for (int i = 0; i <= str.size() - pat.size(); ++i) {
@@ -103,6 +108,10 @@ using string_search::rabin_karp;
 
 /** Main function */
 int main(void) {
+    assert(rabin_karp("a", "abcdef") == -1);
+    assert(rabin_karp("", "a") == -1);
+    assert(rabin_karp("", "") == 0);
+    assert(rabin_karp("abc", "abc") == 0);
     assert(rabin_karp("helloWorld", "world") == -1);
     assert(rabin_karp("helloWorld", "World") == 5);
     assert(rabin_karp("this_is_c++", "c++") == 8);
