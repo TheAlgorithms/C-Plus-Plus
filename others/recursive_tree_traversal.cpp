@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Recursive version of Inorder, Preorder, and Postorder [Traversal of
+ * \file
+ * \brief Recursive version of Inorder, Preorder, and Postorder [Traversal of
  * the Tree] (https://en.wikipedia.org/wiki/Tree_traversal)
  *
- * @details
+ * \details
  *
  * ### Iterative Inorder Traversal of a tree
  * For traversing a (non-empty) binary tree in an inorder fashion, we must do
@@ -47,7 +47,7 @@
  * subtree. If we visit the right subtree before visiting the left subtree, it
  * is referred to as reverse postorder traversal.
  *
- * @author [Lajat Manekar](https://github.com/Lazeeez)
+ * \author [Lajat Manekar](https://github.com/Lazeeez)
  *
  */
 
@@ -57,24 +57,24 @@
 #include <vector>    /// for vector
 
 /**
- * @namespace others
- * @brief Other algorithms
+ * \namespace others
+ * \brief Other algorithms
  */
 namespace others {
 
 /**
- * @namespace interpolation_search
- * @brief Functions for the Recursive version of Inorder, Preorder, and
+ * \namespace interpolation_search
+ * \brief Functions for the Recursive version of Inorder, Preorder, and
  * Postorder [Traversal of the
  * Tree](https://en.wikipedia.org/wiki/Tree_traversal) algorithm implementation
  */
 namespace recursive_tree_traversals {
 
 /**
- * @brief The structure to hold Nodes of the tree.
- * @param data Value that will be stored in the node.
- * @param left follow up left subtree.
- * @param right follow up right subtree.
+ * \brief The structure to hold Nodes of the tree.
+ * \param data Value that will be stored in the node.
+ * \param left follow up left subtree.
+ * \param right follow up right subtree.
  */
 struct Node {
     std::uint64_t data = 0;  ///< The value/key of the node.
@@ -82,7 +82,7 @@ struct Node {
     struct Node *right{};    ///< struct pointer to right subtree.
 };
 /**
- * @brief BT used to make the entire structure of the binary tree and the
+ * \brief BT used to make the entire structure of the binary tree and the
  * functions associated with the binary tree
  */
 class BT {
@@ -110,10 +110,10 @@ class BT {
 };
 
 /**
- * @brief will allocate the memory for a node and, along the data and return the
+ * \brief will allocate the memory for a node and, along the data and return the
  * node.
- * @param data value that a particular node will contain.
- * @return pointer to the newly created node with assigned data.
+ * \param data value that a particular node will contain.
+ * \return pointer to the newly created node with assigned data.
  */
 Node *BT::createNewNode(std::uint64_t data) {
     Node *node = new Node();
@@ -123,11 +123,11 @@ Node *BT::createNewNode(std::uint64_t data) {
 }
 
 /*
- * @brief inorder() function that will perform the inorder traversal
+ * \brief inorder() function that will perform the inorder traversal
  * recursively, and return the resultant vector that contain the inorder
  * traversal of a tree.
- * @param root head/root node of a tree
- * @return result that is containing the inorder traversal of a tree
+ * \param root head/root node of a tree
+ * \return result that is containing the inorder traversal of a tree
  **/
 std::vector<std::uint64_t> BT::inorder(Node *root) {
     if (root == nullptr) {  // return if the current node is empty
@@ -143,11 +143,11 @@ std::vector<std::uint64_t> BT::inorder(Node *root) {
 }
 
 /**
- * @brief preorder function that will perform the preorder traversal
+ * \brief preorder function that will perform the preorder traversal
  * recursively, and return the resultant vector that contain the preorder
  * traversal of a tree.
- * @param root head/root node of a tree
- * @return result that is containing the preorder traversal of a tree
+ * \param root head/root node of a tree
+ * \return result that is containing the preorder traversal of a tree
  */
 std::vector<std::uint64_t> BT::preorder(Node *root) {
     if (root == nullptr) {  // if the current node is empty
@@ -163,11 +163,11 @@ std::vector<std::uint64_t> BT::preorder(Node *root) {
 }
 
 /**
- * @brief postorder function that will perform the postorder traversal
+ * \brief postorder function that will perform the postorder traversal
  * recursively, and return the result vector that contain the postorder
  * traversal of a tree.
- * @param root head/root node of a tree
- * @return result that is containing the postorder traversal of a tree
+ * \param root head/root node of a tree
+ * \return result that is containing the postorder traversal of a tree
  */
 std::vector<std::uint64_t> BT::postorder(Node *root) {
     if (root == nullptr) {  // if the current node is empty
@@ -195,8 +195,8 @@ void deleteAll(const Node *const root) {
 }  // namespace others
 
 /**
- * @brief 1st test-case
- * @returns void
+ * \brief 1st test-case
+ * \returns void
  */
 void test1() {
     others::recursive_tree_traversals::BT obj1;
@@ -260,8 +260,8 @@ void test1() {
 }
 
 /**
- * @brief 2nd test-case
- * @returns void
+ * \brief 2nd test-case
+ * \returns void
  */
 void test2() {
     others::recursive_tree_traversals::BT obj2;
@@ -321,8 +321,8 @@ void test2() {
 }
 
 /**
- * @brief 3rd test-case
- * @returns void
+ * \brief 3rd test-case
+ * \returns void
  */
 void test3() {
     others::recursive_tree_traversals::BT obj3;
@@ -380,8 +380,8 @@ void test3() {
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     std::cout << "1st test-case" << std::endl;
@@ -392,8 +392,8 @@ static void tests() {
     test3();  // run 3rd test-case
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // run self-test implementations

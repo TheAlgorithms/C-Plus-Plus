@@ -1,5 +1,5 @@
 /**
- * @file
+ * \file
  * \brief Linear regression example using [Ordinary least
  * squares](https://en.wikipedia.org/wiki/Ordinary_least_squares)
  *

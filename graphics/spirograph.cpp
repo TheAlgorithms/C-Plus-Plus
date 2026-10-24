@@ -1,10 +1,10 @@
 /**
- * @file
- * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief Implementation of
+ * \file
+ * \author [Krishna Vedala](https://github.com/kvedala)
+ * \brief Implementation of
  * [Spirograph](https://en.wikipedia.org/wiki/Spirograph)
  *
- * @details
+ * \details
  * Implementation of the program is based on the geometry shown in the figure
  * below:
  *
@@ -34,7 +34,7 @@
 #endif
 
 /**
- * @namespace spirograph Functions related to spirograph.cpp
+ * \namespace spirograph Functions related to spirograph.cpp
  */
 namespace spirograph {
 /** Generate spirograph curve into arrays `x` and `y` such that the i^th point
@@ -59,12 +59,12 @@ namespace spirograph {
  * Since we are considering ratios, the actual values of \f$r\f$ and
  * \f$R\f$ are immaterial.
  *
- * @tparam N number of points = size of array
- * @param [out] points Array of 2D points represented as std::pair
- * @param l the relative distance of marker from the centre of
+ * \tparam N number of points = size of array
+ * \param [out] points Array of 2D points represented as std::pair
+ * \param l the relative distance of marker from the centre of
  * inner circle and \f$0\le l\le1\f$
- * @param k the ratio of radius of inner circle to outer circle and \f$0<k<1\f$
- * @param rot the number of rotations to perform (can be fractional value)
+ * \param k the ratio of radius of inner circle to outer circle and \f$0<k<1\f$
+ * \param rot the number of rotations to perform (can be fractional value)
  */
 template <std::size_t N>
 void spirograph(std::array<std::pair<double, double>, N> *points, double l,
@@ -87,7 +87,7 @@ void spirograph(std::array<std::pair<double, double>, N> *points, double l,
 }
 
 /**
- * @brief Test function to save resulting points to a CSV file.
+ * \brief Test function to save resulting points to a CSV file.
  *
  */
 void test() {
@@ -132,13 +132,13 @@ static inline void glutBitmapString(void *font, char *message) {
 }
 
 /**
- * @brief Function to graph (x,y) points on the OpenGL graphics window.
+ * \brief Function to graph (x,y) points on the OpenGL graphics window.
  *
- * @tparam N number of points = size of array
- * @param [in] points Array of 2D points represented as std::pair
- * @param l the relative distance of marker from the centre of
+ * \tparam N number of points = size of array
+ * \param [in] points Array of 2D points represented as std::pair
+ * \param l the relative distance of marker from the centre of
  * inner circle and \f$0\le l\le1\f$ to display info
- * @param k the ratio of radius of inner circle to outer circle and \f$0<k<1\f$
+ * \param k the ratio of radius of inner circle to outer circle and \f$0<k<1\f$
  * to display info
  */
 template <size_t N>
@@ -175,7 +175,7 @@ void display_graph(const std::array<std::pair<double, double>, N> &points,
 }
 
 /**
- * @brief Test function with animation
+ * \brief Test function with animation
  *
  */
 void test2() {
@@ -220,7 +220,7 @@ void test2() {
 }
 
 /**
- * @brief GLUT timer callback function to add animation delay.
+ * \brief GLUT timer callback function to add animation delay.
  */
 void timer_cb(int t) {
     glutTimerFunc(animation_speed, timer_cb, 0);
@@ -228,11 +228,11 @@ void timer_cb(int t) {
 }
 
 /**
- * @brief Keypress event call back function.
+ * \brief Keypress event call back function.
  *
- * @param key ID of the key pressed
- * @param x mouse pointer position at event
- * @param y mouse pointer position at event
+ * \param key ID of the key pressed
+ * \param x mouse pointer position at event
+ * \param y mouse pointer position at event
  */
 void keyboard_cb(unsigned char key, int x, int y) {
     switch (key) {

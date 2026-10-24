@@ -1,16 +1,16 @@
 /**
- * @file
- * @brief Implementation of [Saddleback
+ * \file
+ * \brief Implementation of [Saddleback
  * Algorithm](https://www.geeksforgeeks.org/saddleback-search-algorithm-in-a-2d-array)
  * for 2D arrays.
  *
- * @details
+ * \details
  * Saddleback Algorithm is an algorithm that searches 2D array in linear time,
  * i.e, O(m + n), where m is number of rows and n is number of columns of 2D
  * array. Also, each row and column of the matrix should be sorted beforehand
  * for this algorithm to work.
  *
- * @author [Hashir Niazi](https://github.com/HashirGJ8842)
+ * \author [Hashir Niazi](https://github.com/HashirGJ8842)
  */
 #include <cassert>   /// for assert
 #include <cstdint>
@@ -30,11 +30,11 @@ namespace saddleback {
  * This function implements [Saddleback
  * Algorithm](https://www.geeksforgeeks.org/saddleback-search-algorithm-in-a-2d-array),
  * on a sorted 2D array, and finds the location of the element needed to search
- * @param matrix 2D matrix which is sorted on the basis of rows and columns
- * @param element element to be searched
- * @return An std::pair of with row and column populated within it, if the
+ * \param matrix 2D matrix which is sorted on the basis of rows and columns
+ * \param element element to be searched
+ * \return An std::pair of with row and column populated within it, if the
  * element is present.
- * @return An std::pair with (0, 0), if the element is not present.
+ * \return An std::pair with (0, 0), if the element is not present.
  */
 std::pair<uint32_t, uint32_t> saddleback(
     std::vector<std::vector<int32_t>> matrix, int32_t element) {
@@ -72,8 +72,8 @@ std::pair<uint32_t, uint32_t> saddleback(
 }  // namespace search
 
 /**
- * @brief Test implementations
- * @returns void
+ * \brief Test implementations
+ * \returns void
  */
 static void test() {
     std::vector<std::vector<int32_t>> matrix = {{1, 10, 100, 1000, 10000},
@@ -106,8 +106,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the tests

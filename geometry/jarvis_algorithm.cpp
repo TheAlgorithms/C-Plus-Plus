@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Implementation of [Jarvis’s](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm) algorithm.
+ * \file
+ * \brief Implementation of [Jarvis’s](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm) algorithm.
  *
- * @details
+ * \details
  * Given a set of points in the plane. the convex hull of the set
  * is the smallest convex polygon that contains all the points of it.
  *
@@ -23,7 +23,7 @@
  * then the convex hull is
  * (0, 3), (0, 0), (3, 0), (3, 3)
  *
- * @author [Rishabh Agarwal](https://github.com/rishabh-997)
+ * \author [Rishabh Agarwal](https://github.com/rishabh-997)
  */
 
 #include <vector>
@@ -31,13 +31,13 @@
 #include <iostream>
 
 /**
- *  @namespace geometry
- *  @brief Geometry algorithms
+ *  \namespace geometry
+ *  \brief Geometry algorithms
  */
 namespace geometry {
     /**
-     * @namespace jarvis
-     * @brief Functions for [Jarvis’s](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm) algorithm
+     * \namespace jarvis
+     * \brief Functions for [Jarvis’s](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm) algorithm
      */
     namespace jarvis {
         /**
@@ -60,8 +60,8 @@ namespace geometry {
             /**
              * Constructor of given class
              *
-             * @param pointList list of all points in the space
-             * @param n number of points in space
+             * \param pointList list of all points in the space
+             * \param n number of points in space
              */
             explicit Convexhull(const std::vector<Point> &pointList) {
                 points = pointList;
@@ -72,7 +72,7 @@ namespace geometry {
              * Creates convex hull of a set of n points.
              * There must be 3 points at least for the convex hull to exist
              *
-             * @returns an vector array containing points in space
+             * \returns an vector array containing points in space
              * which enclose all given points thus forming a hull
              */
             std::vector<Point> getConvexHull() const {
@@ -122,13 +122,13 @@ namespace geometry {
              * This function returns the geometric orientation for the three points
              * in a space, ie, whether they are linear ir clockwise or
              * anti-clockwise
-             * @param p first point selected
-             * @param q adjacent point for q
-             * @param r adjacent point for q
+             * \param p first point selected
+             * \param q adjacent point for q
+             * \param r adjacent point for q
              *
-             * @returns 0 -> Linear
-             * @returns 1 -> Clock Wise
-             * @returns 2 -> Anti Clock Wise
+             * \returns 0 -> Linear
+             * \returns 1 -> Clock Wise
+             * \returns 2 -> Anti Clock Wise
              */
             static int orientation(const Point &p, const Point &q, const Point &r) {
                 int val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
@@ -146,7 +146,7 @@ namespace geometry {
 
 /**
  * Test function
- * @returns void
+ * \returns void
  */
 static void test() {
     std::vector<geometry::jarvis::Point> points = {{0, 3},

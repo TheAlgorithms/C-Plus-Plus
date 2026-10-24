@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Gale Shapley
+ * \file
+ * \brief [Gale Shapley
  * Algorithm](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
- * @details
+ * \details
  * This implementation utilizes the Gale-Shapley algorithm to find stable
  * matches.
  *
@@ -14,7 +14,7 @@
  * [Wikipedia](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
  * [Wikipedia](https://en.wikipedia.org/wiki/Stable_matching_problem)
  *
- * @author [B Karthik](https://github.com/BKarthik7)
+ * \author [B Karthik](https://github.com/BKarthik7)
  */
 
 #include <algorithm>  /// for std::find
@@ -23,25 +23,25 @@
 #include <vector>     /// for std::vector
 
 /**
- * @namespace
- * @brief Greedy Algorithms
+ * \namespace
+ * \brief Greedy Algorithms
  */
 namespace greedy_algorithms {
 /**
- * @namespace
- * @brief Functions for the Gale-Shapley Algorithm
+ * \namespace
+ * \brief Functions for the Gale-Shapley Algorithm
  */
 namespace stable_matching {
 /**
- * @brief The main function that finds the stable matching between two sets of
+ * \brief The main function that finds the stable matching between two sets of
  * elements using the Gale-Shapley Algorithm.
- * @note This doesn't work on negative preferences. the preferences should be
+ * \note This doesn't work on negative preferences. the preferences should be
  * continuous integers starting from 0 to number of preferences - 1.
- * @param primary_preferences the preferences of the primary set should be a 2D
+ * \param primary_preferences the preferences of the primary set should be a 2D
  * vector
- * @param secondary_preferences the preferences of the secondary set should be a
+ * \param secondary_preferences the preferences of the secondary set should be a
  * 2D vector
- * @returns matches the stable matching between the two sets
+ * \returns matches the stable matching between the two sets
  */
 std::vector<std::uint32_t> gale_shapley(
     const std::vector<std::vector<std::uint32_t>>& secondary_preferences,
@@ -108,8 +108,8 @@ std::vector<std::uint32_t> gale_shapley(
 }  // namespace greedy_algorithms
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     // Test Case 1
@@ -146,8 +146,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // Run self-test implementations

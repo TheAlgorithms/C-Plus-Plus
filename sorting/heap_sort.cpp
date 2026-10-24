@@ -29,8 +29,8 @@
  * Utility function to print the array after
  * sorting.
  *
- * @param arr array to be printed
- * @param sz size of array
+ * \param arr array to be printed
+ * \param sz size of array
  *
  */
 template <typename T>
@@ -48,9 +48,9 @@ void printArray(T *arr, int sz) {
  * the bottom up by successively sifting downward to establish the
  * heap property.
  *
- * @param arr array to be sorted
- * @param n size of array
- * @param i node position in Binary Tress or element position in
+ * \param arr array to be sorted
+ * \param n size of array
+ * \param i node position in Binary Tress or element position in
  *          Array to be compared with it's childern
  *
  */
@@ -76,8 +76,8 @@ void heapify(T *arr, int n, int i) {
  * Utilizes heapify procedure to sort
  * the array
  *
- * @param arr array to be sorted
- * @param n size of array
+ * \param arr array to be sorted
+ * \param n size of array
  *
  */
 template <typename T>

@@ -1,31 +1,31 @@
 /**
- * @file
- * @brief [Eight Queens](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
+ * \file
+ * \brief [Eight Queens](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
  * puzzle, printing all solutions
  *
- * @author [Himani Negi](https://github.com/Himani2000)
- * @author [David Leal](https://github.com/Panquesito7)
+ * \author [Himani Negi](https://github.com/Himani2000)
+ * \author [David Leal](https://github.com/Panquesito7)
  *
  */
 #include <array>     /// for std::array
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace backtracking
- * @brief Backtracking algorithms
+ * \namespace backtracking
+ * \brief Backtracking algorithms
  */
 namespace backtracking {
 /**
- * @namespace n_queens_all_solutions
- * @brief Functions for the [Eight
+ * \namespace n_queens_all_solutions
+ * \brief Functions for the [Eight
  * Queens](https://en.wikipedia.org/wiki/Eight_queens_puzzle) puzzle with all
  * solutions.
  */
 namespace n_queens_all_solutions {
 /**
- * @brief Utility function to print matrix
- * @tparam n number of matrix size
- * @param board matrix where numbers are saved
+ * \brief Utility function to print matrix
+ * \tparam n number of matrix size
+ * \param board matrix where numbers are saved
  */
 template <size_t n>
 void PrintSol(const std::array<std::array<int, n>, n>& board) {
@@ -39,13 +39,13 @@ void PrintSol(const std::array<std::array<int, n>, n>& board) {
 }
 
 /**
- * @brief Check if a queen can be placed on the matrix
- * @tparam n number of matrix size
- * @param board matrix where numbers are saved
- * @param row current index in rows
- * @param col current index in columns
- * @returns `true` if queen can be placed on matrix
- * @returns `false` if queen can't be placed on matrix
+ * \brief Check if a queen can be placed on the matrix
+ * \tparam n number of matrix size
+ * \param board matrix where numbers are saved
+ * \param row current index in rows
+ * \param col current index in columns
+ * \returns `true` if queen can be placed on matrix
+ * \returns `false` if queen can't be placed on matrix
  */
 template <size_t n>
 bool CanIMove(const std::array<std::array<int, n>, n>& board, int row,
@@ -72,10 +72,10 @@ bool CanIMove(const std::array<std::array<int, n>, n>& board, int row,
 }
 
 /**
- * @brief Main function to solve the N Queens problem
- * @tparam n number of matrix size
- * @param board matrix where numbers are saved
- * @param col current index in columns
+ * \brief Main function to solve the N Queens problem
+ * \tparam n number of matrix size
+ * \param board matrix where numbers are saved
+ * \param col current index in columns
  */
 template <size_t n>
 void NQueenSol(std::array<std::array<int, n>, n> board, int col) {
@@ -95,8 +95,8 @@ void NQueenSol(std::array<std::array<int, n>, n> board, int col) {
 }  // namespace backtracking
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     const int n = 4;

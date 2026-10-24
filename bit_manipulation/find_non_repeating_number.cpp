@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief Implementation to find the non repeating integer
+ * \file
+ * \brief Implementation to find the non repeating integer
  * in an array of repeating integers. [Single
  * Number](https://leetcode.com/problems/single-number/)
  *
- * @details
+ * \details
  * Given an array of integers in which all of the numbers occur exactly
  * twice except one integer which occurs only once. Find the non-repeating
  * integer.
@@ -12,7 +12,7 @@
  * Worst Case Time Complexity: O(n)
  * Space complexity: O(1)
 
- * @author [Ravidev Pandey](https://github.com/literalEval)
+ * \author [Ravidev Pandey](https://github.com/literalEval)
  */
 
 #include <cassert>   /// for assert
@@ -20,21 +20,21 @@
 #include <vector>    /// storing the numbers
 
 /**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
+ * \namespace bit_manipulation
+ * \brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 /**
- * @namespace find_non_repeating_integer
- * @brief Functions to find the non repeating integer
+ * \namespace find_non_repeating_integer
+ * \brief Functions to find the non repeating integer
  * in an array of repeating integers. [Single
  * Number](https://leetcode.com/problems/single-number/)
  */
 namespace find_non_repeating_integer {
 /**
- * @brief The main function implements find single number
- * @param nums vector of integers
- * @returns returns the integer that occurs only once
+ * \brief The main function implements find single number
+ * \param nums vector of integers
+ * \returns returns the integer that occurs only once
  */
 int64_t find_non_repeating_integer(const std::vector<int>& nums) {
     // The idea is based on the property of XOR.
@@ -56,8 +56,8 @@ int64_t find_non_repeating_integer(const std::vector<int>& nums) {
 }  // namespace bit_manipulation
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // n = 10,2 return 14
@@ -79,8 +79,8 @@ static void test() {
     std::cout << "All test cases successfully passed!" << std::endl;
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

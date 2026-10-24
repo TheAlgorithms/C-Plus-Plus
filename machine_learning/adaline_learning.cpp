@@ -180,8 +180,8 @@ class adaline {
      *  1 & \forall x > 0
      * \end{cases}
      * \f]
-     * @param x input value to apply activation on
-     * @return activation output
+     * \param x input value to apply activation on
+     * \return activation output
      */
     int activation(double x) { return x > 0 ? 1 : -1; }
 

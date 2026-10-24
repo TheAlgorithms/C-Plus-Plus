@@ -1,16 +1,16 @@
 /**
- * @file
- * @brief Program to find the [Longest Palindormic
+ * \file
+ * \brief Program to find the [Longest Palindormic
  * Subsequence](https://www.geeksforgeeks.org/longest-palindromic-subsequence-dp-12/) of a string
  *
- * @details
+ * \details
  * [Palindrome](https://en.wikipedia.org/wiki/Palindrome) string sequence of
  * characters which reads the same backward as forward
  * [Subsequence](https://en.wikipedia.org/wiki/Subsequence)  is a sequence that
  * can be derived from another sequence by deleting some or no elements without
  * changing the order of the remaining elements.
 
- * @author [Anjali Jha](https://github.com/anjali1903)
+ * \author [Anjali Jha](https://github.com/anjali1903)
  */
 
 #include <cassert>  /// for assert
@@ -18,15 +18,15 @@
 #include <vector>   /// for std::vector
 
 /**
- * @namespace
- * @brief Dynamic Programming algorithms
+ * \namespace
+ * \brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 /**
- * @brief Function that returns the longest palindromic
+ * \brief Function that returns the longest palindromic
  * subsequence of a string
- * @param a string whose longest palindromic subsequence is to be found
- * @returns longest palindromic subsequence of the string
+ * \param a string whose longest palindromic subsequence is to be found
+ * \returns longest palindromic subsequence of the string
  */
 std::string lps(const std::string& a) {
     const auto b = std::string(a.rbegin(), a.rend());
@@ -80,8 +80,8 @@ std::string lps(const std::string& a) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     assert(dynamic_programming::lps("radar") == "radar");
@@ -91,8 +91,8 @@ static void test() {
 }
 
 /**
- * @brief Main Function
- * @returns 0 on exit
+ * \brief Main Function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the tests

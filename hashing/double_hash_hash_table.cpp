@@ -1,20 +1,20 @@
 /**
- * @file double_hash_hash_table.cpp
- * @author [achance6](https://github.com/achance6)
- * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief Storage mechanism using [double-hashed
+ * \file double_hash_hash_table.cpp
+ * \author [achance6](https://github.com/achance6)
+ * \author [Krishna Vedala](https://github.com/kvedala)
+ * \brief Storage mechanism using [double-hashed
  * keys](https://en.wikipedia.org/wiki/Double_hashing).
- * @note The implementation can be optimized by using OOP style.
+ * \note The implementation can be optimized by using OOP style.
  */
 #include <iostream>
 #include <memory>
 #include <vector>
 
 /**
- * @addtogroup open_addressing Open Addressing
+ * \addtogroup open_addressing Open Addressing
  * @{
- * @namespace double_hashing
- * @brief An implementation of hash table using [double
+ * \namespace double_hashing
+ * \brief An implementation of hash table using [double
  * hashing](https://en.wikipedia.org/wiki/Double_hashing) algorithm.
  */
 namespace double_hashing {
@@ -39,10 +39,10 @@ struct Entry {
 };
 
 /**
- * @brief Hash a key. Uses the STL library's `std::hash()` function.
+ * \brief Hash a key. Uses the STL library's `std::hash()` function.
  *
- * @param key value to hash
- * @return hash value of the key
+ * \param key value to hash
+ * \return hash value of the key
  */
 size_t hashFxn(int key) {
     std::hash<int> hash;
@@ -50,10 +50,10 @@ size_t hashFxn(int key) {
 }
 
 /**
- * @brief Used for second hash function
+ * \brief Used for second hash function
  *
- * @param key key value to hash
- * @return  hash value of the key
+ * \param key key value to hash
+ * \return  hash value of the key
  */
 size_t otherHashFxn(int key) {
     std::hash<int> hash;
@@ -61,12 +61,12 @@ size_t otherHashFxn(int key) {
 }
 
 /**
- * @brief Performs double hashing to resolve collisions
+ * \brief Performs double hashing to resolve collisions
  *
- * @param key key value to apply double-hash on
- * @param searching `true` to check for conflicts
- * @return Index of key when found
- * @return new hash if no conflicts present
+ * \param key key value to apply double-hash on
+ * \param searching `true` to check for conflicts
+ * \return Index of key when found
+ * \return new hash if no conflicts present
  */
 int doubleHash(int key, bool searching) {
     int hash = static_cast<int>(hashFxn(key));
@@ -112,10 +112,10 @@ int doubleHash(int key, bool searching) {
 }
 
 /** Finds empty spot in a vector
- * @param entry vector to search in
- * @param key key to search for
- * @returns `true` if key is not present or is a `toumb`
- * @returns `false` is already occupied
+ * \param entry vector to search in
+ * \param key key to search for
+ * \returns `true` if key is not present or is a `toumb`
+ * \returns `false` is already occupied
  */
 bool putProber(const Entry& entry, int key) {
     if (entry.key == notPresent || entry.key == tomb) {
@@ -125,10 +125,10 @@ bool putProber(const Entry& entry, int key) {
 }
 
 /** Looks for a matching key
- * @param entry vector to search in
- * @param key key value to search
- * @returns `true` if found
- * @returns `false` if not found
+ * \param entry vector to search in
+ * \param key key value to search
+ * \returns `true` if found
+ * \returns `false` if not found
  */
 bool searchingProber(const Entry& entry, int key) {
     if (entry.key == key) {
@@ -138,7 +138,7 @@ bool searchingProber(const Entry& entry, int key) {
 }
 
 /** Displays the table
- * @returns None
+ * \returns None
  */
 void display() {
     for (int i = 0; i < totalSize; i++) {
@@ -156,7 +156,7 @@ void display() {
 }
 
 /** Rehashes the table into a bigger table
- * @returns None
+ * \returns None
  */
 void rehash() {
     // Necessary so wall of add info isn't printed all at once
@@ -180,7 +180,7 @@ void rehash() {
 }
 
 /** Checks for load factor here
- * @param key key value to add to the table
+ * \param key key value to add to the table
  */
 void add(int key) {
     // auto* entry = new Entry();
@@ -194,7 +194,7 @@ void add(int key) {
 }
 
 /** Removes key. Leaves tombstone upon removal.
- * @param key key value to remove
+ * \param key key value to remove
  */
 void remove(int key) {
     int index = doubleHash(key, true);
@@ -207,7 +207,7 @@ void remove(int key) {
 }
 
 /** Information about the adding process
- * @param key key value to add to table
+ * \param key key value to add to table
  */
 void addInfo(int key) {
     std::cout << "Initial table: ";
@@ -222,7 +222,7 @@ void addInfo(int key) {
 }
 
 /** Information about removal process
- * @param key key value to remove from table
+ * \param key key value to remove from table
  */
 void removalInfo(int key) {
     std::cout << "Initial table: ";
@@ -245,7 +245,7 @@ using double_hashing::table;
 using double_hashing::totalSize;
 
 /** Main program
- * @returns 0 on success
+ * \returns 0 on success
  */
 int main() {
     int cmd = 0, key = 0;

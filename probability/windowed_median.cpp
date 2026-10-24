@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief An implementation of a median calculation of a sliding window along a
+ * \file
+ * \brief An implementation of a median calculation of a sliding window along a
  * data stream
  *
- * @details
+ * \details
  * Given a stream of integers, the algorithm calculates the median of a fixed
  * size window at the back of the stream. The leading time complexity of this
  * algorithm is O(log(N), and it is inspired by the known algorithm to [find
@@ -26,7 +26,7 @@
  * always O(1)
  *
  * Time complexity: O(logN). Space complexity: O(N). N - size of window
- * @author [Yaniv Hollander](https://github.com/YanivHollander)
+ * \author [Yaniv Hollander](https://github.com/YanivHollander)
  */
 #include <cassert>  /// for assert
 #include <cstdlib>  /// for std::rand - needed in testing
@@ -36,21 +36,21 @@
 #include <vector>  /// for std::vector - needed in testing
 
 /**
- * @namespace probability
- * @brief Probability algorithms
+ * \namespace probability
+ * \brief Probability algorithms
  */
 namespace probability {
 /**
- * @namespace windowed_median
- * @brief Functions for the Windowed Median algorithm implementation
+ * \namespace windowed_median
+ * \brief Functions for the Windowed Median algorithm implementation
  */
 namespace windowed_median {
 using Window = std::list<int>;
 using size_type = Window::size_type;
 
 /**
- * @class WindowedMedian
- * @brief A class to calculate the median of a leading sliding window at the
+ * \class WindowedMedian
+ * \brief A class to calculate the median of a leading sliding window at the
  * back of a stream of integer values.
  */
 class WindowedMedian {
@@ -63,8 +63,8 @@ class WindowedMedian {
                     /// BST
 
     /**
-     * @brief Inserts a value to a sorted multi-value BST
-     * @param value Value to insert
+     * \brief Inserts a value to a sorted multi-value BST
+     * \param value Value to insert
      */
     void insertToSorted(int value) {
         _sortedValues.insert(value);  /// Insert value to BST - O(logN)
@@ -89,8 +89,8 @@ class WindowedMedian {
     }
 
     /**
-     * @brief Erases a value from a sorted multi-value BST
-     * @param value Value to insert
+     * \brief Erases a value from a sorted multi-value BST
+     * \param value Value to insert
      */
     void eraseFromSorted(int value) {
         const auto sz = _sortedValues.size();
@@ -117,14 +117,14 @@ class WindowedMedian {
 
  public:
     /**
-     * @brief Constructs a WindowedMedian object
-     * @param windowSize Sliding window size
+     * \brief Constructs a WindowedMedian object
+     * \param windowSize Sliding window size
      */
     explicit WindowedMedian(size_type windowSize) : _windowSize(windowSize){};
 
     /**
-     * @brief Insert a new value to the stream
-     * @param value New value to insert
+     * \brief Insert a new value to the stream
+     * \param value New value to insert
      */
     void insert(int value) {
         /// Push new value to the back of the sliding window - O(1)
@@ -141,8 +141,8 @@ class WindowedMedian {
     }
 
     /**
-     * @brief Gets the median of the values in the sliding window
-     * @return Median of sliding window. For even window size return the average
+     * \brief Gets the median of the values in the sliding window
+     * \return Median of sliding window. For even window size return the average
      * between the two values in the middle
      */
     float getMedian() const {
@@ -153,9 +153,9 @@ class WindowedMedian {
     }
 
     /**
-     * @brief A naive and inefficient method to obtain the median of the sliding
+     * \brief A naive and inefficient method to obtain the median of the sliding
      * window. Used for testing!
-     * @return Median of sliding window. For even window size return the average
+     * \return Median of sliding window. For even window size return the average
      * between the two values in the middle
      */
     float getMedianNaive() const {
@@ -175,9 +175,9 @@ class WindowedMedian {
 }  // namespace probability
 
 /**
- * @brief Self-test implementations
- * @param vals Stream of values
- * @param windowSize Size of sliding window
+ * \brief Self-test implementations
+ * \param vals Stream of values
+ * \param windowSize Size of sliding window
  */
 static void test(const std::vector<int> &vals, int windowSize) {
     probability::windowed_median::WindowedMedian windowedMedian(windowSize);
@@ -190,8 +190,8 @@ static void test(const std::vector<int> &vals, int windowSize) {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     /// A few fixed test cases

@@ -55,7 +55,7 @@ int64_t recalculate_hash(const std::string& s, int old_index, int new_index,
  * \param[in] start2,end2 start and end indices for substring in str2
  * \returns `true` if pattern was found
  * \returns `false` if pattern was not found
- * @note can this be replaced by std::string::compare?
+ * \note can this be replaced by std::string::compare?
  */
 bool check_if_equal(const std::string& str1, const std::string& str2,
                     int start1, int end1, int start2, int end2) {
@@ -74,10 +74,10 @@ bool check_if_equal(const std::string& str1, const std::string& str2,
 
 /**
  *  Perform string pattern search using Rabin-Karp algorithm
- *  @param[in] str string to search in
- *  @param[in] pat pattern to search for
- *  @return index of first occurrence of pattern
- *  @return -1 if pattern not found
+ *  \param[in] str string to search in
+ *  \param[in] pat pattern to search for
+ *  \return index of first occurrence of pattern
+ *  \return -1 if pattern not found
  */
 
 int rabin_karp(const std::string& str, const std::string& pat) {

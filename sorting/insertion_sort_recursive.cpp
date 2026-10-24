@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Insertion Sort Algorithm
- * @author [Dhanush S](https://github.com/Fandroid745)
+ * \file
+ * \brief Insertion Sort Algorithm
+ * \author [Dhanush S](https://github.com/Fandroid745)
  * 
- * @details
+ * \details
  * Insertion sort is a simple sorting algorithm that builds the final
  * sorted array one element at a time. It is much less efficient compared
  * to other sorting algorithms like heap sort, merge sort, or quick sort.
@@ -35,17 +35,17 @@
 #include <vector>      /// for using std::vector
 
 /** 
- * @namespace sorting
- * @brief Contains sorting algorithms
+ * \namespace sorting
+ * \brief Contains sorting algorithms
  */
 namespace sorting {
 
 /**
- * @brief Insertion Sort Function
+ * \brief Insertion Sort Function
  * 
- * @tparam T Type of the array elements
- * @param[in,out] arr Array to be sorted
- * @param n Size of the array
+ * \tparam T Type of the array elements
+ * \param[in,out] arr Array to be sorted
+ * \param n Size of the array
  */
 template <typename T>
 void insertionSort(T *arr, int n) {
@@ -61,10 +61,10 @@ void insertionSort(T *arr, int n) {
 }
 
 /**
- * @brief Insertion Sort for a vector
+ * \brief Insertion Sort for a vector
  * 
- * @tparam T Type of the vector elements
- * @param [in,out] arr Pointer to the vector to be sorted
+ * \tparam T Type of the vector elements
+ * \param [in,out] arr Pointer to the vector to be sorted
  */
 template <typename T>
 void insertionSort(std::vector<T> *arr) {
@@ -84,11 +84,11 @@ void insertionSort(std::vector<T> *arr) {
 }  // namespace sorting
 
 /**
- * @brief Helper function to create a random array
+ * \brief Helper function to create a random array
  * 
- * @tparam T Type of the array elements
- * @param arr Array to fill (must be pre-allocated)
- * @param N Number of elements in the array
+ * \tparam T Type of the array elements
+ * \param arr Array to fill (must be pre-allocated)
+ * \param N Number of elements in the array
  */
 template <typename T>
 static void create_random_array(T *arr, int N) {
@@ -99,8 +99,8 @@ static void create_random_array(T *arr, int N) {
 }
 
 /** 
- * @brief self test implementation
- * @return void
+ * \brief self test implementation
+ * \return void
  */
 static void tests() {
     int arr1[10] = {78, 34, 35, 6, 34, 56, 3, 56, 2, 4};
@@ -143,8 +143,8 @@ static void tests() {
 }
 
 /** 
- * @brief Main function
- * @return 0 on successful exit.
+ * \brief Main function
+ * \return 0 on successful exit.
  */
 int main() {
     tests(); /// run self test implementations

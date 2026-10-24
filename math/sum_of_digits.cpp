@@ -1,7 +1,7 @@
 /**
  * Copyright 2020 @author iamnambiar
  *
- * @file
+ * \file
  * \brief A C++ Program to find the Sum of Digits of input integer.
  */
 #include <cassert>
@@ -9,8 +9,8 @@
 
 /**
  * Function to find the sum of the digits of an integer.
- * @param num The integer.
- * @return Sum of the digits of the integer.
+ * \param num The integer.
+ * \return Sum of the digits of the integer.
  *
  * \detail
  * First the algorithm check whether the num is negative or positive,

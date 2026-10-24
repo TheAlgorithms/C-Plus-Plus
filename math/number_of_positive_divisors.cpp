@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief C++ Program to calculate the number of positive divisors
+ * \file
+ * \brief C++ Program to calculate the number of positive divisors
  *
  * This algorithm uses the prime factorization approach.
  * Any positive integer can be written as a product of its prime factors.
@@ -26,8 +26,8 @@
 
 /**
  * Function to compute the number of positive divisors.
- * @param n number to compute divisors for
- * @returns number of positive divisors of n (or 1 if n = 0)
+ * \param n number to compute divisors for
+ * \returns number of positive divisors of n (or 1 if n = 0)
  */
 int number_of_positive_divisors(int n) {
     if (n < 0) {

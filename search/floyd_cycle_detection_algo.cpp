@@ -1,14 +1,14 @@
 /**
- * @file
- * @brief Implementation of [Floyd's Cycle
+ * \file
+ * \brief Implementation of [Floyd's Cycle
  * Detection](https://en.wikipedia.org/wiki/Cycle_detection) algorithm
- * @details
+ * \details
  * Given an array of integers containing 'n + 1' integers, where each
  * integer is in the range [1, n] inclusive. If there is only one duplicate
  * number in the input array, this algorithm returns the duplicate number in
  * O(1) space and the time complexity is less than O(n^2) without modifying the
  * original array, otherwise, it returns -1.
- * @author [Swastika Gupta](https://github.com/Swastyy)
+ * \author [Swastika Gupta](https://github.com/Swastyy)
  */
 
 #include <cassert>   /// for assert
@@ -16,22 +16,22 @@
 #include <iostream>  /// for IO operations
 #include <vector>    /// for std::vector
 /**
- * @namespace search
- * @brief Search algorithms
+ * \namespace search
+ * \brief Search algorithms
  */
 namespace search {
 /**
- * @namespace cycle_detection
- * @brief Functions for the [Floyd's Cycle
+ * \namespace cycle_detection
+ * \brief Functions for the [Floyd's Cycle
  * Detection](https://en.wikipedia.org/wiki/Cycle_detection) algorithm
  */
 namespace cycle_detection {
 /**
- * @brief The main function implements search algorithm
- * @tparam T type of array
- * @param in_arr the input array
- * @param n size of array
- * @returns the duplicate number
+ * \brief The main function implements search algorithm
+ * \tparam T type of array
+ * \param in_arr the input array
+ * \param n size of array
+ * \returns the duplicate number
  */
 template <typename T>
 int32_t duplicateNumber(const std::vector<T> &in_arr, const uint32_t &n) {
@@ -58,8 +58,8 @@ int32_t duplicateNumber(const std::vector<T> &in_arr, const uint32_t &n) {
 }  // namespace search
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st test
@@ -89,8 +89,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

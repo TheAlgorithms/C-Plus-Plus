@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation of [0-1 Knapsack Problem]
+ * \file
+ * \brief Implementation of [0-1 Knapsack Problem]
  * (https://en.wikipedia.org/wiki/Knapsack_problem)
  *
- * @details
+ * \details
  * Given weights and values of n items, put these items in a knapsack of
  * capacity `W` to get the maximum total value in the knapsack. In other words,
  * given two integer arrays `val[0..n-1]` and `wt[0..n-1]` which represent
@@ -18,8 +18,8 @@
  * and value of all subsets. Consider the only subsets whose total weight is
  * smaller than `W`. From all such subsets, pick the maximum value subset.
  *
- * @author [Anmol](https://github.com/Anmol3299)
- * @author [Pardeep](https://github.com/Pardeep009)
+ * \author [Anmol](https://github.com/Anmol3299)
+ * \author [Pardeep](https://github.com/Pardeep009)
  */
 
 #include <array>
@@ -28,24 +28,24 @@
 #include <vector>
 
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 /**
- * @namespace Knapsack
- * @brief Implementation of 0-1 Knapsack problem
+ * \namespace Knapsack
+ * \brief Implementation of 0-1 Knapsack problem
  */
 namespace knapsack {
 /**
- * @brief Picking up all those items whose combined weight is below
+ * \brief Picking up all those items whose combined weight is below
  * the given capacity and calculating the value of those picked items. Trying all
  * possible combinations will yield the maximum knapsack value.
- * @tparam n size of the weight and value array
- * @param capacity capacity of the carrying bag
- * @param weight array representing the weight of items
- * @param value array representing the value of items
- * @return maximum value obtainable with a given capacity.
+ * \tparam n size of the weight and value array
+ * \param capacity capacity of the carrying bag
+ * \param weight array representing the weight of items
+ * \param value array representing the value of items
+ * \return maximum value obtainable with a given capacity.
  */
 template <size_t n>
 int maxKnapsackValue(const int capacity, const std::array<int, n> &weight,
@@ -90,8 +90,8 @@ int maxKnapsackValue(const int capacity, const std::array<int, n> &weight,
 }  // namespace dynamic_programming
 
 /**
- * @brief Function to test the above algorithm
- * @returns void
+ * \brief Function to test the above algorithm
+ * \returns void
  */
 static void test() {
     // Test 1
@@ -120,8 +120,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     // Testing

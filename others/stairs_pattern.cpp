@@ -1,6 +1,6 @@
 /**
- * @file
-@brief This program is use to print the following pattern<pre>
+ * \file
+ * \brief This program is use to print the following pattern<pre>
    \*\*
    \*\*
   \*\*\*\*

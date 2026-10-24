@@ -1,11 +1,11 @@
 /**
- * @file
- * @brief
+ * \file
+ * \brief
  * [Prefix Sum
  * Array](https://en.wikipedia.org/wiki/Prefix_sum) data structure
  * implementation.
  *
- * @details
+ * \details
  * Prefix Sum Array is a data structure, that allows answering sum in some range
  * queries. It can answer most sum range queries in O(1), with a build time
  * complexity of O(N). But it hasn't an update querie.
@@ -13,7 +13,7 @@
  * * Running Time Complexity \n
  * * Build : O(N) \n
  * * Range Query : O(1) \n
- * @author [Paulo Vitor Lima Borges](https://github.com/PauloVLB)
+ * \author [Paulo Vitor Lima Borges](https://github.com/PauloVLB)
  */
 
 #include <cassert>   /// for assert
@@ -21,22 +21,22 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace range_queries
- * @brief Range Queries algorithms
+ * \namespace range_queries
+ * \brief Range Queries algorithms
  */
 namespace range_queries {
 /**
- * @namespace prefix_sum_array
- * @brief Range sum queries using prefix-sum-array
+ * \namespace prefix_sum_array
+ * \brief Range sum queries using prefix-sum-array
  */
 namespace prefix_sum_array {
 
 std::vector<int64_t> PSA{};
 
 /**
- * @brief function that builds the PSA
- * @param original_array original array of values
- * @returns void
+ * \brief function that builds the PSA
+ * \param original_array original array of values
+ * \returns void
  */
 void build(const std::vector<int64_t>& original_array) {
     PSA.clear();
@@ -46,10 +46,10 @@ void build(const std::vector<int64_t>& original_array) {
     }
 }
 /**
- * @brief query function
- * @param beg begin of the interval to sum
- * @param end end of the interval to sum
- * @returns sum of the range [beg, end]
+ * \brief query function
+ * \param beg begin of the interval to sum
+ * \param end end of the interval to sum
+ * \returns sum of the range [beg, end]
  */
 int64_t query(int64_t beg, int64_t end) { return PSA[end] - PSA[beg - 1]; }
 
@@ -57,8 +57,8 @@ int64_t query(int64_t beg, int64_t end) { return PSA[end] - PSA[beg - 1]; }
 }  // namespace range_queries
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     std::vector<int64_t> values{0,  123, 0,  2,  -2, 5,
@@ -76,8 +76,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation of [Sparse
+ * \file
+ * \brief Implementation of [Sparse
  * Table](https://brilliant.org/wiki/sparse-table/) for `min()` function.
- * @author [Mann Patel](https://github.com/manncodes)
- * @details
+ * \author [Mann Patel](https://github.com/manncodes)
+ * \details
  * Sparse Table is a data structure, that allows answering range queries.
  * It can answer most range queries in O(logn), but its true power is answering
  * range minimum queries (or equivalent range maximum queries). For those
@@ -14,9 +14,9 @@
  * If any element in the array changes, the complete data structure has to be
  * recomputed.
  *
- * @todo make stress tests.
+ * \todo make stress tests.
  *
- * @warning
+ * \warning
  * This sparse table is made for `min(a1,a2,...an)` duplicate invariant
  * function. This implementation can be changed to other functions like
  * `gcd()`, `lcm()`, and `max()` by changing a few lines of code.
@@ -28,20 +28,20 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace data_structures
- * @brief Data Structures algorithms
+ * \namespace data_structures
+ * \brief Data Structures algorithms
  */
 namespace data_structures {
 
 /**
- * @namespace sparse_table
- * @brief Functions for Implementation of [Sparse
+ * \namespace sparse_table
+ * \brief Functions for Implementation of [Sparse
  * Table](https://brilliant.org/wiki/sparse-table/)
  */
 namespace sparse_table {
 
 /**
- * @brief A struct to represent sparse table for `min()` as their invariant
+ * \brief A struct to represent sparse table for `min()` as their invariant
  * function, for the given array `A`. The answer to queries are stored in the
  * array ST.
  */
@@ -51,7 +51,7 @@ constexpr uint8_t M = 14;      ///< ceil(log2(N)).
 struct Sparse_table {
     size_t n = 0;  ///< size of input array.
 
-    /** @warning check if `N` is not less than `n`. if so, manually increase the
+    /** \warning check if `N` is not less than `n`. if so, manually increase the
      * value of N */
 
     std::array<int64_t, N> A = {};  ///< input array to perform RMQ.
@@ -60,11 +60,11 @@ struct Sparse_table {
     std::array<int64_t, N> LOG = {};  ///< where floor(log2(i)) are precomputed.
 
     /**
-     * @brief Builds the sparse table for computing min/max/gcd/lcm/...etc
+     * \brief Builds the sparse table for computing min/max/gcd/lcm/...etc
      * for any contiguous sub-segment of the array.This is an example of
      * computing the index of the minimum value.
-     * @return void
-     * @complexity: O(n.log(n))
+     * \return void
+     * \complexity: O(n.log(n))
      */
     void buildST() {
         LOG[0] = -1;
@@ -77,12 +77,12 @@ struct Sparse_table {
         for (size_t j = 1; static_cast<size_t>(1 << j) <= n; ++j) {
             for (size_t i = 0; static_cast<size_t>(i + (1 << j)) <= n; ++i) {
                 /**
-                 * @note notice how we deal with the range of length `pow(2,i)`,
+                 * \note notice how we deal with the range of length `pow(2,i)`,
                  * and we can reuse the computation that we did for the range of
                  * length `pow(2,i-1)`.
                  *
                  * So, ST[j][i] = min( ST[j-1][i], ST[j-1][i + pow(2,j-1)]).
-                 * @example ST[2][3] = min(ST[1][3], ST[1][5])
+                 * \example ST[2][3] = min(ST[1][3], ST[1][5])
                  */
 
                 int64_t x = ST[j - 1][i];  ///< represents minimum value over
@@ -100,12 +100,12 @@ struct Sparse_table {
     }
 
     /**
-     * @brief Queries the sparse table for the value of the interval [l, r]
+     * \brief Queries the sparse table for the value of the interval [l, r]
      * (i.e. from l to r inclusive).
-     * @param l the left index of the range (inclusive).
-     * @param r the right index of the range (inclusive).
-     * @return the computed value of the given interval.
-     * @complexity: O(1)
+     * \param l the left index of the range (inclusive).
+     * \param r the right index of the range (inclusive).
+     * \return the computed value of the given interval.
+     * \complexity: O(1)
      */
     int64_t query(int64_t l, int64_t r) {
         int64_t g = LOG[r - l + 1];  ///< smallest power of 2 covering [l,r]
@@ -123,8 +123,8 @@ struct Sparse_table {
 }  // namespace data_structures
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     /* We take an array as an input on which we need to perform the ranged
@@ -154,8 +154,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,14 +1,14 @@
 /**
- * @file
- * @brief Implementation of the [Wildcard
+ * \file
+ * \brief Implementation of the [Wildcard
  * Matching](https://www.geeksforgeeks.org/wildcard-pattern-matching/) problem.
- * @details
+ * \details
  * Given a matching string and a pattern, implement wildcard pattern
  * matching with support for `?` and `*`. `?` matches any single character.
  * `*` matches any sequence of characters (including the empty sequence).
  * The matching should cover the entire matching string (not partial). The task
  * is to determine if the pattern matches with the matching string
- * @author [Swastika Gupta](https://github.com/Swastyy)
+ * \author [Swastika Gupta](https://github.com/Swastyy)
  */
 
 #include <cassert>   /// for assert
@@ -17,24 +17,24 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace backtracking
- * @brief Backtracking algorithms
+ * \namespace backtracking
+ * \brief Backtracking algorithms
  */
 namespace backtracking {
 /**
- * @namespace wildcard_matching
- * @brief Functions for the [Wildcard
+ * \namespace wildcard_matching
+ * \brief Functions for the [Wildcard
  * Matching](https://www.geeksforgeeks.org/wildcard-pattern-matching/) problem.
  */
 namespace wildcard_matching {
 /**
- * @brief The main function implements if pattern can be matched with given
+ * \brief The main function implements if pattern can be matched with given
  * string
- * @param s is the given matching string
- * @param p is the given pattern
- * @param pos1 is the starting index
- * @param pos2 is the last index
- * @returns 1 if pattern matches with matching string otherwise 0
+ * \param s is the given matching string
+ * \param p is the given pattern
+ * \param pos1 is the starting index
+ * \param pos2 is the last index
+ * \returns 1 if pattern matches with matching string otherwise 0
  */
 std::vector<std::vector<int64_t>> dpTable(1000, std::vector<int64_t>(1000, -1));
 bool wildcard_matching(std::string s, std::string p, uint32_t pos1,
@@ -96,8 +96,8 @@ bool wildcard_matching(std::string s, std::string p, uint32_t pos1,
 }  // namespace backtracking
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st test
@@ -147,8 +147,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

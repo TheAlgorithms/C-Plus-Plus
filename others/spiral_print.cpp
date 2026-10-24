@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Print the elements of a matrix traversing it spirally
+ * \file
+ * \brief Print the elements of a matrix traversing it spirally
  */
 #include <iostream>
 

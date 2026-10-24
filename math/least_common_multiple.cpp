@@ -1,6 +1,6 @@
 /**
  * Copyright 2020 @author tjgurwara99
- * @file
+ * \file
  *
  * A basic implementation of LCM function
  */
@@ -10,8 +10,8 @@
 
 /**
  * Function for finding greatest common divisor of two numbers.
- * @params two integers x and y whose gcd we want to find.
- * @return greatest common divisor of x and y.
+ * \params two integers x and y whose gcd we want to find.
+ * \return greatest common divisor of x and y.
  */
 unsigned int gcd(unsigned int x, unsigned int y) {
     if (x == 0) {
@@ -37,8 +37,8 @@ unsigned int gcd(unsigned int x, unsigned int y) {
 
 /**
  * Function for finding the least common multiple of two numbers.
- * @params integer x and y whose lcm we want to find.
- * @return lcm of x and y using the relation x * y = gcd(x, y) * lcm(x, y)
+ * \params integer x and y whose lcm we want to find.
+ * \return lcm of x and y using the relation x * y = gcd(x, y) * lcm(x, y)
  */
 unsigned int lcm(unsigned int x, unsigned int y) {
   return x / gcd(x, y) * y;

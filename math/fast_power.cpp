@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Faster computation for \f$a^b\f$
+ * \file
+ * \brief Faster computation for \f$a^b\f$
  *
  * Program that computes \f$a^b\f$ in \f$O(logN)\f$ time.
  * It is based on formula that:

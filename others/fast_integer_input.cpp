@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Read integers from stdin continuously as they are entered without
+ * \file
+ * \brief Read integers from stdin continuously as they are entered without
  * waiting for the `\n` character
  */
 #include <iostream>

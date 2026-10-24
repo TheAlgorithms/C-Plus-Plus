@@ -1,15 +1,15 @@
 /**
- * @file
- * @brief Prime Numbers using [Sieve of
+ * \file
+ * \brief Prime Numbers using [Sieve of
  * Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
- * @details
+ * \details
  * Sieve of Eratosthenes is an algorithm that finds all the primes
  * between 2 and N.
  *
  * Time Complexity  : \f$O(N \cdot\log \log N)\f$
  * <br/>Space Complexity : \f$O(N)\f$
  *
- * @see primes_up_to_billion.cpp prime_numbers.cpp
+ * \see primes_up_to_billion.cpp prime_numbers.cpp
  */
 
 #include <cstdint>
@@ -18,18 +18,18 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @namespace sieve_of_eratosthenes
- * @brief Functions for finding Prime Numbers using Sieve of Eratosthenes
+ * \namespace sieve_of_eratosthenes
+ * \brief Functions for finding Prime Numbers using Sieve of Eratosthenes
  */
 namespace sieve_of_eratosthenes {
 /**
- * @brief Function to sieve out the primes
- * @details
+ * \brief Function to sieve out the primes
+ * \details
  * This function finds all the primes between 2 and N using the Sieve of
  * Eratosthenes algorithm. It starts by assuming all numbers (except zero and
  * one) are prime and then iteratively marks the multiples of each prime as
@@ -38,8 +38,8 @@ namespace sieve_of_eratosthenes {
  * Contains a common optimization to start eliminating multiples of
  * a prime p starting from p * p since all of the lower multiples
  * have been already eliminated.
- * @param N number till which primes are to be found
- * @return is_prime a vector of `N + 1` booleans identifying if `i`^th number is
+ * \param N number till which primes are to be found
+ * \return is_prime a vector of `N + 1` booleans identifying if `i`^th number is
  * a prime or not
  */
 std::vector<bool> sieve(uint32_t N) {
@@ -57,9 +57,9 @@ std::vector<bool> sieve(uint32_t N) {
 }
 
 /**
- * @brief Function to print the prime numbers
- * @param N number till which primes are to be found
- * @param is_prime a vector of `N + 1` booleans identifying if `i`^th number is
+ * \brief Function to print the prime numbers
+ * \param N number till which primes are to be found
+ * \param is_prime a vector of `N + 1` booleans identifying if `i`^th number is
  * a prime or not
  */
 void print(uint32_t N, const std::vector<bool> &is_prime) {
@@ -75,8 +75,8 @@ void print(uint32_t N, const std::vector<bool> &is_prime) {
 }  // namespace math
 
 /**
- * @brief Self-test implementations
- * @return void
+ * \brief Self-test implementations
+ * \return void
  */
 static void tests() {
     std::vector<bool> is_prime_1 =
@@ -113,8 +113,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();

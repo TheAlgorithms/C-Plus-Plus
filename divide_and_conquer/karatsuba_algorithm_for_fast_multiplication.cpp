@@ -1,15 +1,15 @@
 /**
- * @file
- * @brief Implementation of the [Karatsuba algorithm for fast
+ * \file
+ * \brief Implementation of the [Karatsuba algorithm for fast
  * multiplication](https://en.wikipedia.org/wiki/Karatsuba_algorithm)
- * @details
+ * \details
  * Given two strings in binary notation we want to multiply them and return the
  * value. Simple approach is to multiply bits one by one which will give the time
  * complexity of around O(n^2). To make it more efficient we will be using
  * Karatsuba algorithm to find the product which will solve the problem
  * O(nlogn) of time.
- * @author [Swastika Gupta](https://github.com/Swastyy)
- * @author [Ameer Carlo Lubang](https://github.com/poypoyan)
+ * \author [Swastika Gupta](https://github.com/Swastyy)
+ * \author [Ameer Carlo Lubang](https://github.com/poypoyan)
  */
 
 #include <cassert>   /// for assert
@@ -17,21 +17,21 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace divide_and_conquer
- * @brief Divide and Conquer algorithms
+ * \namespace divide_and_conquer
+ * \brief Divide and Conquer algorithms
  */
 namespace divide_and_conquer {
 /**
- * @namespace karatsuba_algorithm
- * @brief Functions for the [Karatsuba algorithm for fast
+ * \namespace karatsuba_algorithm
+ * \brief Functions for the [Karatsuba algorithm for fast
  * multiplication](https://en.wikipedia.org/wiki/Karatsuba_algorithm) implementation
  */
 namespace karatsuba_algorithm {
 /**
- * @brief Binary addition
- * @param first, the input string 1
- * @param second, the input string 2
- * @returns the sum binary string
+ * \brief Binary addition
+ * \param first, the input string 1
+ * \param second, the input string 2
+ * \returns the sum binary string
  */
 std::string add_strings(std::string first, std::string second) {
     std::string result;  // to store the resulting sum bits
@@ -74,13 +74,13 @@ std::string add_strings(std::string first, std::string second) {
 }
 
 /**
- * @brief Wrapper function for substr that considers leading zeros.
- * @param str, the binary input string.
- * @param x1, the substr parameter integer 1
- * @param x2, the substr parameter integer 2
- * @param n, is the length of the "whole" string: leading zeros + str
- * @returns the "safe" substring for the algorithm *without* leading zeros
- * @returns "0" if substring spans to leading zeros only
+ * \brief Wrapper function for substr that considers leading zeros.
+ * \param str, the binary input string.
+ * \param x1, the substr parameter integer 1
+ * \param x2, the substr parameter integer 2
+ * \param n, is the length of the "whole" string: leading zeros + str
+ * \returns the "safe" substring for the algorithm *without* leading zeros
+ * \returns "0" if substring spans to leading zeros only
  */
 std::string safe_substr(const std::string &str, int64_t x1, int64_t x2, int64_t n) {
     int64_t len = str.size();
@@ -102,11 +102,11 @@ std::string safe_substr(const std::string &str, int64_t x1, int64_t x2, int64_t 
 }
 
 /**
- * @brief The main function implements Karatsuba's algorithm for fast
+ * \brief The main function implements Karatsuba's algorithm for fast
  * multiplication
- * @param str1 the input string 1
- * @param str2 the input string 2
- * @returns the product number value
+ * \param str1 the input string 1
+ * \param str2 the input string 2
+ * \returns the product number value
  */
 int64_t karatsuba_algorithm(std::string str1, std::string str2) {
     int64_t len1 = str1.size();
@@ -144,8 +144,8 @@ int64_t karatsuba_algorithm(std::string str1, std::string str2) {
 }  // namespace divide_and_conquer
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st test
@@ -174,8 +174,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

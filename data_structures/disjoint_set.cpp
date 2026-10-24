@@ -31,7 +31,7 @@ vector<int> root, rank;
 /**
  *
  * Function to create a set
- * @param n number of element
+ * \param n number of element
  *
  */
 void CreateSet(int n) {
@@ -46,8 +46,8 @@ void CreateSet(int n) {
  *
  * Find operation takes a number x and returns the set to which this number
  * belongs to.
- * @param x element of some set
- * @return set to which x belongs to
+ * \param x element of some set
+ * \return set to which x belongs to
  *
  */
 int Find(int x) {
@@ -60,8 +60,8 @@ int Find(int x) {
 /**
  *
  * A utility function to check if x and y are from same set or not
- * @param x element of some set
- * @param y element of some set
+ * \param x element of some set
+ * \param y element of some set
  *
  */
 bool InSameUnion(int x, int y) { return Find(x) == Find(y); }
@@ -71,8 +71,8 @@ bool InSameUnion(int x, int y) { return Find(x) == Find(y); }
  * Union operation combines two disjoint sets to make a single set
  * in this union function we pass two elements and check if they are
  * from different sets then combine those sets
- * @param x element of some set
- * @param y element of some set
+ * \param x element of some set
+ * \param y element of some set
  *
  */
 void Union(int x, int y) {

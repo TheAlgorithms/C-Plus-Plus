@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Compute factorial of any arbitratily large number/
+ * \file
+ * \brief Compute factorial of any arbitratily large number/
  *
  * \author [Krishna Vedala](https://github.com/kvedala)
- * @see factorial.cpp
+ * \see factorial.cpp
  */
 #include <cstring>
 #include <ctime>
@@ -12,7 +12,7 @@
 #include "./large_number.h"
 
 /** Test implementation for 10! Result must be 3628800.
- * @returns True if test pass else False
+ * \returns True if test pass else False
  */
 bool test1() {
     std::cout << "---- Check 1\t";
@@ -49,7 +49,7 @@ bool test1() {
  * 9993229915608941463976156518286253697920827223758251185210916864000000
  * 000000000000000000
  * ```
- * @returns True if test pass else False
+ * \returns True if test pass else False
  */
 bool test2() {
     std::cout << "---- Check 2\t";

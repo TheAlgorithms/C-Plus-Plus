@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation of
+ * \file
+ * \brief Implementation of
  * [Abbrievation](https://www.hackerrank.com/challenges/abbr/problem)
  *
- * @details
+ * \details
  * Given two strings, `a` and `b`, determine if it's possible to make `a` equal
  * to `b` You can perform the following operations on the string `a`:
  * 1. Capitalize zero or more of `a`'s lowercase letters.
@@ -20,7 +20,7 @@
  * `false`
  *
  * Time Complexity: (O(|a|*|b|)) where `|a|` => length of string `a`
- * @author [Ashish Daulatabad](https://github.com/AshishYUO)
+ * \author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 
 #include <cassert>   /// for `assert`
@@ -29,32 +29,32 @@
 #include <string>    /// for `std::string` library
 #include <vector>    /// for `std::vector` STL library
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming Algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming Algorithms
  */
 namespace dynamic_programming {
 /**
- * @namespace abbreviation
- * @brief Functions for
+ * \namespace abbreviation
+ * \brief Functions for
  * [Abbreviation](https://www.hackerrank.com/challenges/abbr/problem)
  * implementation
  */
 namespace abbreviation {
 /**
- * @brief
+ * \brief
  * Recursive Dynamic Programming function
- * @details
+ * \details
  * Returns whether `s` can be converted to `t` with following rules:
  * a. Capitalize zero or more of a's lowercase letters from string `s`
  * b. remove all other lowercase letters from string `s`
- * @param memo To store the result
- * @param visited boolean to check if the result is already computed
- * @param str given string, which might not be abbreivated
- * @param result resultant abbreivated string
- * @param str_idx index for string `str`, helpful for transitions
- * @param result_idx index for string `result`, helpful for transitions
- * @returns `false` if string `str` cannot be converted to `result`
- * @returns `true` if string `str` can be converted to `result`
+ * \param memo To store the result
+ * \param visited boolean to check if the result is already computed
+ * \param str given string, which might not be abbreivated
+ * \param result resultant abbreivated string
+ * \param str_idx index for string `str`, helpful for transitions
+ * \param result_idx index for string `result`, helpful for transitions
+ * \returns `false` if string `str` cannot be converted to `result`
+ * \returns `true` if string `str` can be converted to `result`
  */
 bool abbreviation_recursion(std::vector<std::vector<bool>> *memo,
                             std::vector<std::vector<bool>> *visited,
@@ -104,17 +104,17 @@ bool abbreviation_recursion(std::vector<std::vector<bool>> *memo,
     return (*memo)[str_idx][result_idx];
 }
 /**
- * @brief
+ * \brief
  * Iterative Dynamic Programming function
- * @details
+ * \details
  * Returns whether `s` can be converted to `t` with following rules:
  * a. Capitalize zero or more of s's lowercase letters from string `s`
  * b. remove all other lowercase letters from string `s`
  * Note: The transition states for iterative is similar to recursive as well
- * @param str given string, which might not be abbreivated
- * @param result resultant abbreivated string
- * @returns `false` if string `str` cannot be converted to `result`
- * @returns `true` if string `str` can be converted to `result`
+ * \param str given string, which might not be abbreivated
+ * \param result resultant abbreivated string
+ * \returns `false` if string `str` cannot be converted to `result`
+ * \returns `true` if string `str` can be converted to `result`
  */
 bool abbreviation(const std::string &str, const std::string &result) {
     std::vector<std::vector<bool>> memo(
@@ -147,8 +147,8 @@ bool abbreviation(const std::string &str, const std::string &result) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Self test-implementations
- * @returns void
+ * \brief Self test-implementations
+ * \returns void
  */
 static void test() {
     std::string s = "daBcd", t = "ABC";
@@ -186,8 +186,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

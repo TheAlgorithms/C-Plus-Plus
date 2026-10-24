@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief The implementation of [Hamilton's
+ * \file
+ * \brief The implementation of [Hamilton's
  * cycle](https://en.wikipedia.org/wiki/Hamiltonian_path) dynamic solution for
  * vertices number less than 20.
- * @details
+ * \details
  * I use \f$2^n\times n\f$ matrix and for every \f$[i, j]\f$ (\f$i < 2^n\f$ and
  * \f$j < n\f$) in the matrix I store `true` if it is possible to get to all
  * vertices on which position in `i`'s binary representation is `1` so as
@@ -12,8 +12,8 @@
  * In the the end if any cell in \f$(2^n - 1)^{\mbox{th}}\f$ row is `true` there
  * exists hamiltonian cycle.
  *
- * @author [vakhokoto](https://github.com/vakhokoto)
- * @author [Krishna Vedala](https://github.com/kvedala)
+ * \author [vakhokoto](https://github.com/vakhokoto)
+ * \author [Krishna Vedala](https://github.com/kvedala)
  */
 #include <cassert>
 #include <iostream>
@@ -22,10 +22,10 @@
 /**
  * The function determines if there is a hamilton's cycle in the graph
  *
- * @param routes nxn boolean matrix of \f$[i, j]\f$ where \f$[i, j]\f$ is `true`
+ * \param routes nxn boolean matrix of \f$[i, j]\f$ where \f$[i, j]\f$ is `true`
  * if there is a road from \f$i\f$ to \f$j\f$
- * @return `true` if there is Hamiltonian cycle in the graph
- * @return `false` if there is no Hamiltonian cycle in the graph
+ * \return `true` if there is Hamiltonian cycle in the graph
+ * \return `false` if there is no Hamiltonian cycle in the graph
  */
 bool hamilton_cycle(const std::vector<std::vector<bool>> &routes) {
     const size_t n = routes.size();
@@ -76,7 +76,7 @@ bool hamilton_cycle(const std::vector<std::vector<bool>> &routes) {
 /**
  * this test is testing if ::hamilton_cycle returns `true` for
  * graph: `1 -> 2 -> 3 -> 4`
- * @return None
+ * \return None
  */
 static void test1() {
     std::vector<std::vector<bool>> arr{
@@ -98,7 +98,7 @@ static void test1() {
  *       |
  *       V
  *       4</pre>
- * @return None
+ * \return None
  */
 static void test2() {
     std::vector<std::vector<bool>> arr{
@@ -117,7 +117,7 @@ static void test2() {
 /**
  * this test is testing if ::hamilton_cycle returns `true` for
  * clique with 4 vertices
- * @return None
+ * \return None
  */
 static void test3() {
     std::vector<std::vector<bool>> arr{

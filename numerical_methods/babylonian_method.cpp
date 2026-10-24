@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief [A babylonian method
+ * \file
+ * \brief [A babylonian method
  * (BM)](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method)
  * is an algorithm that computes the square root.
- * @details
+ * \details
  * This algorithm has an application in use case scenario where a user wants
  * find accurate square roots of large numbers
- * @author [Ameya Chawla](https://github.com/ameyachawlaggsipu)
+ * \author [Ameya Chawla](https://github.com/ameyachawlaggsipu)
  */
 
 #include <cassert>  /// for assert
@@ -14,17 +14,17 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace numerical_methods
- * @brief Numerical algorithms/methods
+ * \namespace numerical_methods
+ * \brief Numerical algorithms/methods
  */
 
 namespace numerical_methods {
 
 /**
- * @brief Babylonian methods is an iterative function which returns
+ * \brief Babylonian methods is an iterative function which returns
  * square root of radicand
- * @param radicand is the radicand
- * @returns x1 the square root of radicand
+ * \param radicand is the radicand
+ * \returns x1 the square root of radicand
  */
 
 double babylonian_method(double radicand) {
@@ -53,11 +53,11 @@ double babylonian_method(double radicand) {
 }  // namespace numerical_methods
 
 /**
- * @brief Self-test implementations
- * @details
+ * \brief Self-test implementations
+ * \details
  * Declaring two test cases and checking for the error
  * in predicted and true value is less than 0.0001.
- * @returns void
+ * \returns void
  */
 static void test() {
     /* descriptions of the following test */
@@ -86,9 +86,9 @@ static void test() {
 }
 
 /**
- * @brief Main function
+ * \brief Main function
  * calls automated test function to test the working of fast fourier transform.
- * @returns 0 on exit
+ * \returns 0 on exit
  */
 
 int main() {

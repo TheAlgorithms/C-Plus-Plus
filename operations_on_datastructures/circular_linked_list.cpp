@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief Implementation for a [Circular Linked
+ * \file
+ * \brief Implementation for a [Circular Linked
  * List](https://www.geeksforgeeks.org/circular-linked-list/).
- * @details A Circular Linked List is a variation on the regular linked list, in
+ * \details A Circular Linked List is a variation on the regular linked list, in
  * which the last node has a pointer to the first node, which creates a full
  * circle. Consequently, this allows any node to be used as the starting point
  * for the list.
- * @author [Alvin](https://github.com/polarvoid)
+ * \author [Alvin](https://github.com/polarvoid)
  */
 
 #include <cassert>   /// for assert
@@ -14,36 +14,36 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace operations_on_datastructures
- * @brief Operations on Data Structures
+ * \namespace operations_on_datastructures
+ * \brief Operations on Data Structures
  */
 namespace operations_on_datastructures {
 
 /**
- * @namespace circular_linked_list
- * @brief Functions for the [Circular Linked
+ * \namespace circular_linked_list
+ * \brief Functions for the [Circular Linked
  * List](https://www.geeksforgeeks.org/circular-linked-list/) implementation
  */
 namespace circular_linked_list {
 
 /**
- * @brief A Node struct that represents a single Node in a Binary Tree
+ * \brief A Node struct that represents a single Node in a Binary Tree
  */
 struct Node {
     int64_t data;  ///< The value of the Node
     Node* next;    ///< The Node's successor
     /**
-     * @brief Creates a new Node with some initial data
-     * @param _data Value of Node
+     * \brief Creates a new Node with some initial data
+     * \param _data Value of Node
      */
     explicit Node(int64_t _data) {
         data = _data;    ///< Set value of Node data
         next = nullptr;  ///< Initialize successor
     }
     /**
-     * @brief Creates a new Node with initial data and a successor
-     * @param _data Value of Node
-     * @param _next Pointer to the next Node
+     * \brief Creates a new Node with initial data and a successor
+     * \param _data Value of Node
+     * \param _next Pointer to the next Node
      */
     explicit Node(int64_t _data, Node* _next) {
         data = _data;  ///< Set value of Node data
@@ -52,7 +52,7 @@ struct Node {
 };
 
 /**
- * @brief A class that implements a Circular Linked List.
+ * \brief A class that implements a Circular Linked List.
  */
 class CircularLinkedList {
  private:
@@ -61,14 +61,14 @@ class CircularLinkedList {
 
  public:
     /**
-     * @brief Creates an empty CircularLinkedList.
+     * \brief Creates an empty CircularLinkedList.
      */
     CircularLinkedList() {
         root = nullptr;
         end = nullptr;
     }
     /**
-     * @brief Copy constructor for CircularLinkedList.
+     * \brief Copy constructor for CircularLinkedList.
      */
     CircularLinkedList(const CircularLinkedList& copy) {
         erase();
@@ -80,8 +80,8 @@ class CircularLinkedList {
         }
     }
     /**
-     * @brief Move constructor for CircularLinkedList
-     * @param source rvalue reference to a Circular Linked List
+     * \brief Move constructor for CircularLinkedList
+     * \param source rvalue reference to a Circular Linked List
      */
     CircularLinkedList(CircularLinkedList&& source) noexcept {
         root = source.root;
@@ -90,9 +90,9 @@ class CircularLinkedList {
         source.end = nullptr;
     }
     /**
-     * @brief Copy assignment operator
-     * @param other Reference to a Circular Linked List
-     * @returns Reference to CircularLinkedList
+     * \brief Copy assignment operator
+     * \param other Reference to a Circular Linked List
+     * \returns Reference to CircularLinkedList
      */
     CircularLinkedList& operator=(const CircularLinkedList& other) {
         erase();
@@ -105,9 +105,9 @@ class CircularLinkedList {
         return *this;
     }
     /**
-     * @brief Move assignment operator
-     * @param other rvalue reference to a Circular Linked List
-     * @returns Reference to CircularLinkedList
+     * \brief Move assignment operator
+     * \param other rvalue reference to a Circular Linked List
+     * \returns Reference to CircularLinkedList
      */
     CircularLinkedList& operator=(CircularLinkedList&& other) noexcept {
         root = other.root;
@@ -117,7 +117,7 @@ class CircularLinkedList {
         return *this;
     }
     /**
-     * @brief Cleans up memory when destroyed
+     * \brief Cleans up memory when destroyed
      */
     ~CircularLinkedList() { erase(); }
     /**
@@ -137,11 +137,11 @@ class CircularLinkedList {
         end = nullptr;
     }
     /**
-     * @brief Inserts all the values from a vector into the Circular Linked List
-     * @details Goes through each element in the vector sequentially, inserting
+     * \brief Inserts all the values from a vector into the Circular Linked List
+     * \details Goes through each element in the vector sequentially, inserting
      * it into the list
-     * @param values The vector of integer values that is to be inserted
-     * @returns void
+     * \param values The vector of integer values that is to be inserted
+     * \returns void
      */
     void insert(const std::vector<int64_t>& values) {
         for (int64_t value : values) {
@@ -149,22 +149,22 @@ class CircularLinkedList {
         }
     }
     /**
-     * @brief Inserts a single value into the Circular Linked List
-     * @details Creates a Node with the given value, pointing to the root Node
+     * \brief Inserts a single value into the Circular Linked List
+     * \details Creates a Node with the given value, pointing to the root Node
      * and inserts it into the list
-     * @param data The integer valus to be inserted
-     * @returns void
+     * \param data The integer valus to be inserted
+     * \returns void
      */
     void insert(int64_t data) {
         Node* node = new Node(data, root);
         insert(node);
     }
     /**
-     * @brief Inserts a given Node into the Circular Linked List
-     * @details Checks wheter the list is empty, and inserts the Node, modifying
+     * \brief Inserts a given Node into the Circular Linked List
+     * \details Checks wheter the list is empty, and inserts the Node, modifying
      * the end pointer
-     * @param node The Node that is to be inserted
-     * @returns void
+     * \param node The Node that is to be inserted
+     * \returns void
      */
     void insert(Node* node) {
         if (root == nullptr) {
@@ -178,20 +178,20 @@ class CircularLinkedList {
         }
     }
     /**
-     * @brief Prints the values of the Circular Linked List, beginning from the
+     * \brief Prints the values of the Circular Linked List, beginning from the
      * root Node
-     * @details Goes through each Node from the root and prints them out in
+     * \details Goes through each Node from the root and prints them out in
      * order
-     * @returns void
+     * \returns void
      */
     void print() { print(root); }
     /**
-     * @brief Prints the values of the Circular Linked List, beginning from a
+     * \brief Prints the values of the Circular Linked List, beginning from a
      * given Node to be used as the root
-     * @details Goes through each Node from the given Node and prints them out
+     * \details Goes through each Node from the given Node and prints them out
      * in order. If the list is empty, it prints the message 'Empty List!'
-     * @param root The Node to start at
-     * @returns void
+     * \param root The Node to start at
+     * \returns void
      */
     void print(Node* root) {
         Node* temp = root;
@@ -206,19 +206,19 @@ class CircularLinkedList {
         std::cout << "\n";
     }
     /**
-     * @brief Returns a std::vector of the values of the Circular Linked List
-     * @details Starting from the root Node, appends each value of the list to a
+     * \brief Returns a std::vector of the values of the Circular Linked List
+     * \details Starting from the root Node, appends each value of the list to a
      * std::vector and returns it
-     * @returns A std::vector of the list's values
+     * \returns A std::vector of the list's values
      */
     std::vector<int64_t> values() { return values(root); }
     /**
-     * @brief Returns a std::vector of the values of the Circular Linked List,
+     * \brief Returns a std::vector of the values of the Circular Linked List,
      * beginning from a given Node
-     * @details Starting from a given Node, appends each value of the list to a
+     * \details Starting from a given Node, appends each value of the list to a
      * std::vector and returns it
-     * @param root The Node to start at
-     * @returns A std::vector of the list's values
+     * \param root The Node to start at
+     * \returns A std::vector of the list's values
      */
     std::vector<int64_t> values(Node* root) {
         std::vector<int64_t> res;
@@ -239,15 +239,15 @@ class CircularLinkedList {
 }  // namespace operations_on_datastructures
 
 /**
- * @namespace tests
- * @brief Testcases to check Circular Linked List.
+ * \namespace tests
+ * \brief Testcases to check Circular Linked List.
  */
 namespace tests {
 using operations_on_datastructures::circular_linked_list::CircularLinkedList;
 using operations_on_datastructures::circular_linked_list::Node;
 /**
- * @brief A Test to check a single value
- * @returns void
+ * \brief A Test to check a single value
+ * \returns void
  */
 void test1() {
     std::cout << "TEST CASE 1\n";
@@ -261,8 +261,8 @@ void test1() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check a few values
- * @returns void
+ * \brief A Test to check a few values
+ * \returns void
  */
 void test2() {
     std::cout << "TEST CASE 2\n";
@@ -278,8 +278,8 @@ void test2() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check an input array
- * @returns void
+ * \brief A Test to check an input array
+ * \returns void
  */
 void test3() {
     std::cout << "TEST CASE 3\n";
@@ -293,8 +293,8 @@ void test3() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check using a specific Node as the starting point
- * @returns void
+ * \brief A Test to check using a specific Node as the starting point
+ * \returns void
  */
 void test4() {
     std::cout << "TEST CASE 4\n";
@@ -311,8 +311,8 @@ void test4() {
 }
 
 /**
- * @brief A Test to check an empty list
- * @returns void
+ * \brief A Test to check an empty list
+ * \returns void
  */
 void test5() {
     std::cout << "TEST CASE 5\n";
@@ -327,8 +327,8 @@ void test5() {
 }  // namespace tests
 
 /**
- * @brief Function to test the correctness of the Circular Linked List
- * @returns void
+ * \brief Function to test the correctness of the Circular Linked List
+ * \returns void
  */
 static void test() {
     tests::test1();
@@ -339,8 +339,8 @@ static void test() {
 }
 
 /**
- * @brief main function
- * @returns 0 on exit
+ * \brief main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

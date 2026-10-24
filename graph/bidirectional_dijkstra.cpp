@@ -1,11 +1,11 @@
 /**
- * @file
- * @brief [Bidirectional Dijkstra Shortest Path Algorithm]
+ * \file
+ * \brief [Bidirectional Dijkstra Shortest Path Algorithm]
  * (https://www.coursera.org/learn/algorithms-on-graphs/lecture/7ml18/bidirectional-dijkstra)
  *
- * @author [Marinovksy](http://github.com/Marinovsky)
+ * \author [Marinovksy](http://github.com/Marinovsky)
  *
- * @details
+ * \details
  * This is basically the same Dijkstra Algorithm but faster because it goes from
  * the source to the target and from target to the source and stops when
  * finding a vertex visited already by the direct search or the reverse one.
@@ -24,24 +24,24 @@
 constexpr int64_t INF = std::numeric_limits<int64_t>::max();
 
 /**
- * @namespace graph
- * @brief Graph Algorithms
+ * \namespace graph
+ * \brief Graph Algorithms
  */
 namespace graph {
 /**
- * @namespace bidirectional_dijkstra
- * @brief Functions for [Bidirectional Dijkstra Shortest Path]
+ * \namespace bidirectional_dijkstra
+ * \brief Functions for [Bidirectional Dijkstra Shortest Path]
  * (https://www.coursera.org/learn/algorithms-on-graphs/lecture/7ml18/bidirectional-dijkstra)
  * algorithm
  */
 namespace bidirectional_dijkstra {
 /**
- * @brief Function that add edge between two nodes or vertices of graph
+ * \brief Function that add edge between two nodes or vertices of graph
  *
- * @param adj1 adjacency list for the direct search
- * @param adj2 adjacency list for the reverse search
- * @param u any node or vertex of graph
- * @param v any node or vertex of graph
+ * \param adj1 adjacency list for the direct search
+ * \param adj2 adjacency list for the reverse search
+ * \param u any node or vertex of graph
+ * \param v any node or vertex of graph
  */
 void addEdge(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
              std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj2,
@@ -51,11 +51,11 @@ void addEdge(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
     // (*adj)[v - 1].push_back(std::make_pair(u - 1, w));
 }
 /**
- * @brief This function returns the shortest distance from the source
+ * \brief This function returns the shortest distance from the source
  * to the target if there is path between vertices 's' and 't'.
  *
- * @param workset_ vertices visited in the search
- * @param distance_ vector of distances from the source to the target and
+ * \param workset_ vertices visited in the search
+ * \param distance_ vector of distances from the source to the target and
  * from the target to the source
  *
  */
@@ -72,16 +72,16 @@ uint64_t Shortest_Path_Distance(
 }
 
 /**
- * @brief Function runs the dijkstra algorithm for some source vertex and
+ * \brief Function runs the dijkstra algorithm for some source vertex and
  * target vertex in the graph and returns the shortest distance of target
  * from the source.
  *
- * @param adj1 input graph
- * @param adj2 input graph reversed
- * @param s source vertex
- * @param t target vertex
+ * \param adj1 input graph
+ * \param adj2 input graph reversed
+ * \param s source vertex
+ * \param t target vertex
  *
- * @return shortest distance if target is reachable from source else -1 in
+ * \return shortest distance if target is reachable from source else -1 in
  * case if target is not reachable from source.
  */
 int Bidijkstra(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
@@ -193,9 +193,9 @@ int Bidijkstra(std::vector<std::vector<std::pair<uint64_t, uint64_t>>> *adj1,
 }  // namespace graph
 
 /**
- * @brief Function to test the
+ * \brief Function to test the
  * provided algorithm above
- * @returns void
+ * \returns void
  */
 static void tests() {
     std::cout << "Initiatinig Predefined Tests..." << std::endl;
@@ -243,8 +243,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // running predefined tests

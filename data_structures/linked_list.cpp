@@ -1,7 +1,7 @@
 /**
- * @file
- * @brief Implementation of singly linked list algorithm.
- * @details
+ * \file
+ * \brief Implementation of singly linked list algorithm.
+ * \details
  * The linked list is a data structure used for holding a sequence of
  * values, which can be added, removed and displayed.
  * ### Algorithm
@@ -19,23 +19,23 @@
 #include <string>
 
 /**
- * @namespace data_structures
- * @brief Data Structures algorithms
+ * \namespace data_structures
+ * \brief Data Structures algorithms
  */
 namespace data_structures {
 
 /**
- * @namespace linked_list
- * @brief Functions for singly linked list algorithm
+ * \namespace linked_list
+ * \brief Functions for singly linked list algorithm
  */
 namespace linked_list {
 
 /**
  * This function checks if the string passed consists
  * of only digits.
- * @param s To be checked if s contains only integers
- * @returns true if there are only digits present in the string
- * @returns false if any other character is found
+ * \param s To be checked if s contains only integers
+ * \returns true if there are only digits present in the string
+ * \returns false if any other character is found
  */
 bool isDigit(const std::string& s) {
     // function statements here
@@ -58,19 +58,19 @@ class link {
  public:
     /**
      * function returns the integer value stored in the link.
-     * @returns the integer value stored in the link.
+     * \returns the integer value stored in the link.
      */
     int val() { return pvalue; }
 
     /**
      * function returns the pointer to next link
-     * @returns the pointer to the next link
+     * \returns the pointer to the next link
      * */
     std::shared_ptr<link>& succ() { return psucc; }
 
     /**
      * Creates link with provided value and pointer to next link
-     * @param value is the integer stored in the link
+     * \param value is the integer stored in the link
      */
     explicit link(int value = 0) : pvalue(value), psucc(nullptr) {}
 };
@@ -105,8 +105,8 @@ class list {
 
 /**
  * function checks if list is empty
- * @returns true if list is empty
- * @returns false if list is not empty
+ * \returns true if list is empty
+ * \returns false if list is not empty
  */
 bool list::isEmpty() {
     if (last == nullptr) {
@@ -118,7 +118,7 @@ bool list::isEmpty() {
 
 /**
  * function adds new element to the end of the list
- * @param new_elem to be added to the end of the list
+ * \param new_elem to be added to the end of the list
  */
 void list::push_back(int new_elem) {
     if (isEmpty()) {
@@ -132,7 +132,7 @@ void list::push_back(int new_elem) {
 
 /**
  * function adds new element to the beginning of the list
- * @param new_elem to be added to front of the list
+ * \param new_elem to be added to front of the list
  */
 void list::push_front(int new_elem) {
     if (isEmpty()) {
@@ -147,7 +147,7 @@ void list::push_front(int new_elem) {
 
 /**
  * function erases old element from the list
- * @param old_elem to be erased from the list
+ * \param old_elem to be erased from the list
  */
 void list::erase(int old_elem) {
     if (isEmpty()) {
@@ -176,7 +176,7 @@ void list::erase(int old_elem) {
 
 /**
  * function displays all the elements in the list
- * @returns 'void'
+ * \returns 'void'
  */
 void list::display() {
     if (isEmpty()) {
@@ -192,7 +192,7 @@ void list::display() {
 
 /**
  * function searchs for @param find_elem in the list
- * @param find_elem to be searched for in the list
+ * \param find_elem to be searched for in the list
  */
 std::shared_ptr<link> list::search(int find_elem) {
     if (isEmpty()) {
@@ -217,7 +217,7 @@ std::shared_ptr<link> list::search(int find_elem) {
  * Main function:
  * Allows the user add and delete values from the list.
  * Also allows user to search for and display values in the list.
- * @returns 0 on exit
+ * \returns 0 on exit
  */
 int main() {
     data_structures::linked_list::list l;

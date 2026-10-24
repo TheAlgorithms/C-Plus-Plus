@@ -1,5 +1,5 @@
 /**
- * @file
+ * \file
  * \brief Compute real eigen values and eigen vectors of a symmetric matrix
  * using [QR decomposition](https://en.wikipedia.org/wiki/QR_decomposition)
  * method.

@@ -1,7 +1,7 @@
 /**
- * @file lu_decomposition.h
- * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief Functions associated with [LU
+ * \file lu_decomposition.h
+ * \author [Krishna Vedala](https://github.com/kvedala)
+ * \brief Functions associated with [LU
  * Decomposition](https://en.wikipedia.org/wiki/LU_decomposition)
  * of a square matrix.
  */
@@ -82,9 +82,9 @@ int lu_decomposition(const matrix<T> &A, matrix<double> *L, matrix<double> *U) {
  * Using LU decomposition, the determinant is given by the product of diagonal
  * elements of matrices L and U.
  *
- * @tparam T datatype of input matrix - int, unsigned int, double, etc
- * @param A input square matrix
- * @return determinant of matrix A
+ * \tparam T datatype of input matrix - int, unsigned int, double, etc
+ * \param A input square matrix
+ * \return determinant of matrix A
  */
 template <typename T>
 double determinant_lu(const matrix<T> &A) {

@@ -2,7 +2,7 @@
 #include <queue>
 
 /**************************
-    @author shrutisheoran
+    \author shrutisheoran
 **************************/
 
 using namespace std;

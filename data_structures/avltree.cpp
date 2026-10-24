@@ -18,9 +18,9 @@ using node = struct node {
 };
 
 /**
- * @brief creates and returns a new node
- * @param[in] data value stored in the node
- * @return newly created node
+ * \brief creates and returns a new node
+ * \param[in] data value stored in the node
+ * \return newly created node
  */
 node *createNode(int data) {
     node *nn = new node();
@@ -32,8 +32,8 @@ node *createNode(int data) {
 }
 
 /**
- * @param[in] root the root of the tree
- * @return height of tree
+ * \param[in] root the root of the tree
+ * \return height of tree
  */
 int height(node *root) {
     if (root == nullptr) {
@@ -43,14 +43,14 @@ int height(node *root) {
 }
 
 /**
- * @param[in] root of the tree
- * @return difference between height of left and right subtree
+ * \param[in] root of the tree
+ * \return difference between height of left and right subtree
  */
 int getBalance(node *root) { return height(root->left) - height(root->right); }
 
 /**
- * @param root of the tree to be rotated
- * @return node after right rotation
+ * \param root of the tree to be rotated
+ * \return node after right rotation
  */
 node *rightRotate(node *root) {
     node *t = root->left;
@@ -61,8 +61,8 @@ node *rightRotate(node *root) {
 }
 
 /**
- * @param root of the tree to be rotated
- * @return node after left rotation
+ * \param root of the tree to be rotated
+ * \return node after left rotation
  */
 node *leftRotate(node *root) {
     node *t = root->right;
@@ -73,8 +73,8 @@ node *leftRotate(node *root) {
 }
 
 /**
- * @param root of the tree
- * @returns node with minimum value in the tree
+ * \param root of the tree
+ * \returns node with minimum value in the tree
  */
 node *minValue(node *root) {
     if (root->left == nullptr) {
@@ -84,10 +84,10 @@ node *minValue(node *root) {
 }
 
 /**
- * @brief inserts a new element into AVL tree
- * @param root of the tree
- * @param[in] item the element to be insterted into the tree
- * @return root of the updated tree
+ * \brief inserts a new element into AVL tree
+ * \param root of the tree
+ * \param[in] item the element to be insterted into the tree
+ * \return root of the updated tree
  */
 node *insert(node *root, int item) {
     if (root == nullptr) {
@@ -114,10 +114,10 @@ node *insert(node *root, int item) {
 }
 
 /**
- * @brief removes a given element from AVL tree
- * @param root of the tree
- * @param[in] element the element to be deleted from the tree
- * @return root of the updated tree
+ * \brief removes a given element from AVL tree
+ * \param root of the tree
+ * \param[in] element the element to be deleted from the tree
+ * \return root of the updated tree
  */
 node *deleteNode(node *root, int element) {
     if (root == nullptr) {
@@ -145,8 +145,8 @@ node *deleteNode(node *root, int element) {
 }
 
 /**
- * @brief calls delete on every node
- * @param root of the tree
+ * \brief calls delete on every node
+ * \param root of the tree
  */
 void deleteAllNodes(const node *const root) {
     if (root) {
@@ -157,8 +157,8 @@ void deleteAllNodes(const node *const root) {
 }
 
 /**
- * @brief prints given tree in the LevelOrder
- * @param[in] root of the tree
+ * \brief prints given tree in the LevelOrder
+ * \param[in] root of the tree
  */
 void levelOrder(node *root) {
     std::queue<node *> q;
@@ -177,8 +177,8 @@ void levelOrder(node *root) {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     // Testing AVL Tree

@@ -1,4 +1,4 @@
-/** @file
+/** \file
  * A sparse matrix is a matrix which has number of zeroes greater than
  * \f$\frac{m\times n}{2}\f$, where m and n are the dimensions of the matrix.
  */

@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief A simple [Memory Game](https://en.wikipedia.org/wiki/Matching_game)
+ * \file
+ * \brief A simple [Memory Game](https://en.wikipedia.org/wiki/Matching_game)
  * with **3 different sizes** and multiple letters.
- * @details
+ * \details
  * The game consists on finding **the pair** of all the given letters depending
  * on the table size. Once all of the instances are all found, the game will end
  * and will ask you if you'd like to play again or not.
@@ -11,7 +11,7 @@
  * 5x2, 7x2). 7x2 being the biggest table size and hardest mode. The bigger the
  * size, **the more letters are available**.
  *
- * @author [David Leal](https://github.com/Panquesito7)
+ * \author [David Leal](https://github.com/Panquesito7)
  */
 
 #include <algorithm>  /// for std::shuffle()
@@ -39,23 +39,23 @@ constexpr T SLEEP(T seconds) {
 #endif
 
 /**
- * @namespace
- * @brief (Mini)game implementations.
+ * \namespace
+ * \brief (Mini)game implementations.
  */
 namespace games {
 /**
- * @namespace
- * @brief Functions for the [Memory
+ * \namespace
+ * \brief Functions for the [Memory
  * Game](https://en.wikipedia.org/wiki/Matching_game) implementation
  */
 namespace memory_game {
 /**
- * @brief Utility function to verify if the given input is a number or not.
+ * \brief Utility function to verify if the given input is a number or not.
  * This is very useful to prevent the program being stuck in a loop.
- * @tparam T The type of the input
- * @param input The input to check.
- * @returns false if the input IS empty or if it contains a non-digit character
- * @returns true if the input is NOT empty and if it contains only digit
+ * \tparam T The type of the input
+ * \param input The input to check.
+ * \returns false if the input IS empty or if it contains a non-digit character
+ * \returns true if the input is NOT empty and if it contains only digit
  * characters
  */
 template <typename T>
@@ -71,10 +71,10 @@ bool is_number(const T &input) {
 }
 
 /**
- * @brief Initializes the table with the letters.
- * @tparam T The type of the table.
- * @param table The table to initialize.
- * @returns void
+ * \brief Initializes the table with the letters.
+ * \tparam T The type of the table.
+ * \param table The table to initialize.
+ * \returns void
  */
 template <typename T>
 void init(std::vector<T> *table) {
@@ -114,10 +114,10 @@ void init(std::vector<T> *table) {
 }
 
 /**
- * @brief Utility function to print the table.
- * @tparam T The type of the table.
- * @param table The table to print.
- * @returns void
+ * \brief Utility function to print the table.
+ * \tparam T The type of the table.
+ * \param table The table to print.
+ * \returns void
  */
 template <typename T>
 void print_table(const std::vector<T> &table) {
@@ -147,15 +147,15 @@ template <typename T>
 void reset_data(const std::vector<T> &, int *, int *, int *);
 
 /**
- * @brief Function that asks the user for their
+ * \brief Function that asks the user for their
  * input in the table they previously chose.
- * @tparam T The type of the table.
- * @param table The table that's used to get the user's input and data.
- * @param answer The user's answer.
- * @param old_answer The user's previous answer.
- * @param memory_count A counter to check if the user has already answered two
+ * \tparam T The type of the table.
+ * \param table The table that's used to get the user's input and data.
+ * \param answer The user's answer.
+ * \param old_answer The user's previous answer.
+ * \param memory_count A counter to check if the user has already answered two
  * values.
- * @returns void
+ * \returns void
  */
 template <typename T>
 void ask_data(const std::vector<T> &table, int *answer, int *old_answer,
@@ -197,15 +197,15 @@ void ask_data(const std::vector<T> &table, int *answer, int *old_answer,
 }
 
 /**
- * @brief Utility function that resets the data if the user enters an invalid
+ * \brief Utility function that resets the data if the user enters an invalid
  * value.
- * @tparam T The type of the table.
- * @param table The table that will be used to call `ask_data()`.
- * @param answer The user's answer.
- * @param old_answer The user's previous answer.
- * @param memory_count A counter to check if the user has already answered two
+ * \tparam T The type of the table.
+ * \param table The table that will be used to call `ask_data()`.
+ * \param answer The user's answer.
+ * \param old_answer The user's previous answer.
+ * \param memory_count A counter to check if the user has already answered two
  * values.
- * @returns void
+ * \returns void
  */
 template <typename T>
 void reset_data(const std::vector<T> &table, int *answer, int *old_answer,
@@ -217,19 +217,19 @@ void reset_data(const std::vector<T> &table, int *answer, int *old_answer,
 }
 
 /**
- * @brief Checks if the two values given by the user match.
- * @tparam T The type of the table.
- * @param table_empty The table with no values, slowly assigned from `table`
+ * \brief Checks if the two values given by the user match.
+ * \tparam T The type of the table.
+ * \param table_empty The table with no values, slowly assigned from `table`
  * depending on the user's input.
- * @param table The table with the original values.
- * @param answer The user's answer.
- * @param first_time A boolean to check if the user has already answered a
+ * \param table The table with the original values.
+ * \param answer The user's answer.
+ * \param first_time A boolean to check if the user has already answered a
  * value.
- * @param old_answer The user's previous answer.
- * @param memory_count A counter to check if the user has already answered two
+ * \param old_answer The user's previous answer.
+ * \param memory_count A counter to check if the user has already answered two
  * values.
- * @returns true IF the values given by the user match
- * @returns false if the values given by the user do NOT match
+ * \returns true IF the values given by the user match
+ * \returns false if the values given by the user do NOT match
  */
 template <typename T>
 bool match(const std::vector<T> &table, std::vector<T> *table_empty,
@@ -269,21 +269,21 @@ bool match(const std::vector<T> &table, std::vector<T> *table_empty,
 }
 
 /**
- * @brief Function to assign the results to the table.
+ * \brief Function to assign the results to the table.
  *
  * Also checkes if the user has answered all the values already, as well as
  * verify if the user made a match or not.
- * @tparam T The type of the tables.
- * @param table_empty The table with no values, slowly assigned from `table`
+ * \tparam T The type of the tables.
+ * \param table_empty The table with no values, slowly assigned from `table`
  * depending on the user's input.
- * @param table The table with the original values.
- * @param answer The user's answer.
- * @param first_time A boolean to check if the user has already answered a
+ * \param table The table with the original values.
+ * \param answer The user's answer.
+ * \param first_time A boolean to check if the user has already answered a
  * value.
- * @param old_answer The user's previous answer.
- * @param memory_count A counter to check if the user has already answered two
+ * \param old_answer The user's previous answer.
+ * \param memory_count A counter to check if the user has already answered two
  * values.
- * @returns void
+ * \returns void
  */
 template <typename T>
 void assign_results(std::vector<T> *table_empty, std::vector<T> *table,
@@ -354,8 +354,8 @@ void assign_results(std::vector<T> *table_empty, std::vector<T> *table,
 }  // namespace games
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     // Start randomizer. This changes the values every time.

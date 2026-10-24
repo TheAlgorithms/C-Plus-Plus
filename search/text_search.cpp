@@ -12,9 +12,9 @@
 #endif
 
 /**
- * @brief function to convert a C++ string to lower case
- * @param word takes an std::string as input
- * @returns std::string
+ * \brief function to convert a C++ string to lower case
+ * \param word takes an std::string as input
+ * \returns std::string
  */
 std::string lower(std::string word) {
     int length = word.length();
@@ -28,8 +28,8 @@ std::string lower(std::string word) {
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     assert(lower("abcd").compare("abcd") == 0);
@@ -38,8 +38,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

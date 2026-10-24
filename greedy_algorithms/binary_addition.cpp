@@ -1,8 +1,8 @@
 /**
- * @file binary_addition.cpp
- * @brief Adds two binary numbers and outputs resulting string
+ * \file binary_addition.cpp
+ * \brief Adds two binary numbers and outputs resulting string
  *
- * @details The algorithm for adding two binary strings works by processing them
+ * \details The algorithm for adding two binary strings works by processing them
  * from right to left, similar to manual addition. It starts by determining the
  * longer string's length to ensure both strings are fully traversed. For each
  * pair of corresponding bits and any carry from the previous addition, it
@@ -12,7 +12,7 @@
  * the function validates the input to ensure that only valid binary strings
  * (containing only '0' and '1') are processed. If invalid input is detected,
  * it returns an empty string.
- * @author [Muhammad Junaid Khalid](https://github.com/mjk22071998)
+ * \author [Muhammad Junaid Khalid](https://github.com/mjk22071998)
  */
 
 #include <algorithm>  /// for reverse function
@@ -21,20 +21,20 @@
 #include <string>     /// for string class
 
 /**
- * @namespace
- * @brief Greedy Algorithms
+ * \namespace
+ * \brief Greedy Algorithms
  */
 namespace greedy_algorithms {
 /**
- * @brief A class to perform binary addition of two binary strings.
+ * \brief A class to perform binary addition of two binary strings.
  */
 class BinaryAddition {
  public:
     /**
-     * @brief Adds two binary strings and returns the result as a binary string.
-     * @param a The first binary string.
-     * @param b The second binary string.
-     * @return The sum of the two binary strings as a binary string, or an empty
+     * \brief Adds two binary strings and returns the result as a binary string.
+     * \param a The first binary string.
+     * \param b The second binary string.
+     * \return The sum of the two binary strings as a binary string, or an empty
      * string if either input string contains non-binary characters.
      */
     std::string addBinary(const std::string& a, const std::string& b) {
@@ -68,9 +68,9 @@ class BinaryAddition {
 
  private:
     /**
-     * @brief Validates whether a string contains only binary characters (0 or 1).
-     * @param str The string to validate.
-     * @return true if the string is binary, false otherwise.
+     * \brief Validates whether a string contains only binary characters (0 or 1).
+     * \param str The string to validate.
+     * \return true if the string is binary, false otherwise.
      */
     bool isValidBinaryString(const std::string& str) const {
         return std::all_of(str.begin(), str.end(),
@@ -80,8 +80,8 @@ class BinaryAddition {
 }  // namespace greedy_algorithms
 
 /**
- * @brief run self test implementation.
- * @returns void
+ * \brief run self test implementation.
+ * \returns void
  */
 static void tests() {
     greedy_algorithms::BinaryAddition binaryAddition;
@@ -110,8 +110,8 @@ static void tests() {
 }
 
 /**
- * @brief main function
- * @returns 0 on successful exit
+ * \brief main function
+ * \returns 0 on successful exit
  */
 int main() {
     tests(); /// To execute tests

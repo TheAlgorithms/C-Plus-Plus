@@ -1,5 +1,5 @@
 /**
- * @brief [Strassen's
+ * \brief [Strassen's
  * algorithm](https://en.wikipedia.org/wiki/Strassen_algorithm) is one of the
  * methods for multiplying two matrices. It is one of the faster algorithms for
  * larger matrices than naive multiplication method.
@@ -8,7 +8,7 @@
  * divisible, and are combined with new defined matrices involving 7 matrix
  * multiplications instead of eight, yielding O(n^2.8073) complexity.
  *
- * @author [AshishYUO](https://github.com/AshishYUO)
+ * \author [AshishYUO](https://github.com/AshishYUO)
  */
 #include <cassert>   /// For assert operation
 #include <chrono>    /// For std::chrono; time measurement
@@ -17,21 +17,21 @@
 #include <vector>    /// For creating dynamic arrays
 
 /**
- * @namespace divide_and_conquer
- * @brief Divide and Conquer algorithms
+ * \namespace divide_and_conquer
+ * \brief Divide and Conquer algorithms
  */
 namespace divide_and_conquer {
 
 /**
- * @namespace strassens_multiplication
- * @brief Namespace for performing strassen's multiplication
+ * \namespace strassens_multiplication
+ * \brief Namespace for performing strassen's multiplication
  */
 namespace strassens_multiplication {
 
 /// Complement of 0 is a max integer.
 constexpr size_t MAX_SIZE = ~0ULL;
 /**
- * @brief Matrix class.
+ * \brief Matrix class.
  */
 template <typename T,
           typename = typename std::enable_if<
@@ -42,10 +42,10 @@ class Matrix {
 
  public:
     /**
-     * @brief Constructor
-     * @tparam Integer ensuring integers are being evaluated and not other
+     * \brief Constructor
+     * \tparam Integer ensuring integers are being evaluated and not other
      * data types.
-     * @param size denoting the size of Matrix as size x size
+     * \param size denoting the size of Matrix as size x size
      */
     template <typename Integer,
               typename = typename std::enable_if<
@@ -57,11 +57,11 @@ class Matrix {
     }
 
     /**
-     * @brief Constructor
-     * @tparam Integer ensuring integers are being evaluated and not other
+     * \brief Constructor
+     * \tparam Integer ensuring integers are being evaluated and not other
      * data types.
-     * @param rows denoting the total rows of Matrix
-     * @param cols denoting the total elements in each row of Matrix
+     * \param rows denoting the total rows of Matrix
+     * \param cols denoting the total elements in each row of Matrix
      */
     template <typename Integer,
               typename = typename std::enable_if<
@@ -73,19 +73,19 @@ class Matrix {
     }
 
     /**
-     * @brief Get the matrix shape
-     * @returns pair of integer denoting total rows and columns
+     * \brief Get the matrix shape
+     * \returns pair of integer denoting total rows and columns
      */
     inline std::pair<size_t, size_t> size() const {
         return {_mat.size(), _mat[0].size()};
     }
 
     /**
-     * @brief returns the address of the element at ith place
+     * \brief returns the address of the element at ith place
      * (here ith row of the matrix)
-     * @tparam Integer any valid integer
-     * @param index index which is requested
-     * @returns the address of the element (here ith row or array)
+     * \tparam Integer any valid integer
+     * \param index index which is requested
+     * \returns the address of the element (here ith row or array)
      */
     template <typename Integer,
               typename = typename std::enable_if<
@@ -95,12 +95,12 @@ class Matrix {
     }
 
     /**
-     * @brief Creates a new matrix and returns a part of it.
-     * @param row_start start of the row
-     * @param row_end end of the row
-     * @param col_start start of the col
-     * @param col_end end of the column
-     * @returns A slice of (row_end - row_start) x (col_end - col_start) size of
+     * \brief Creates a new matrix and returns a part of it.
+     * \param row_start start of the row
+     * \param row_end end of the row
+     * \param col_start start of the col
+     * \param col_end end of the column
+     * \returns A slice of (row_end - row_start) x (col_end - col_start) size of
      * array starting from row_start row and col_start column
      */
     Matrix slice(const size_t row_start, const size_t row_end = MAX_SIZE,
@@ -122,10 +122,10 @@ class Matrix {
     }
 
     /**
-     * @brief Horizontally stack the matrix (one after the other)
-     * @tparam Number any type of number
-     * @param other the other matrix: note that this array is not modified
-     * @returns void, but modifies the current array
+     * \brief Horizontally stack the matrix (one after the other)
+     * \tparam Number any type of number
+     * \param other the other matrix: note that this array is not modified
+     * \returns void, but modifies the current array
      */
     template <typename Number, typename = typename std::enable_if<
                                    std::is_integral<Number>::value ||
@@ -141,10 +141,10 @@ class Matrix {
     }
 
     /**
-     * @brief Horizontally stack the matrix (current matrix above the other)
-     * @tparam Number any type of number (Integer or floating point)
-     * @param other the other matrix: note that this array is not modified
-     * @returns void, but modifies the current array
+     * \brief Horizontally stack the matrix (current matrix above the other)
+     * \tparam Number any type of number (Integer or floating point)
+     * \param other the other matrix: note that this array is not modified
+     * \returns void, but modifies the current array
      */
     template <typename Number, typename = typename std::enable_if<
                                    std::is_integral<Number>::value ||
@@ -161,10 +161,10 @@ class Matrix {
     }
 
     /**
-     * @brief Add two matrices and returns a new matrix
-     * @tparam Number any real value to add
-     * @param other Other matrix to add to this
-     * @returns new matrix
+     * \brief Add two matrices and returns a new matrix
+     * \tparam Number any real value to add
+     * \param other Other matrix to add to this
+     * \returns new matrix
      */
     template <typename Number, typename = typename std::enable_if<
                                    std::is_integral<Number>::value ||
@@ -182,10 +182,10 @@ class Matrix {
     }
 
     /**
-     * @brief Add another matrices to current matrix
-     * @tparam Number any real value to add
-     * @param other Other matrix to add to this
-     * @returns reference of current matrix
+     * \brief Add another matrices to current matrix
+     * \tparam Number any real value to add
+     * \param other Other matrix to add to this
+     * \returns reference of current matrix
      */
     template <typename Number, typename = typename std::enable_if<
                                    std::is_integral<Number>::value ||
@@ -202,10 +202,10 @@ class Matrix {
     }
 
     /**
-     * @brief Subtract two matrices and returns a new matrix
-     * @tparam Number any real value to multiply
-     * @param other Other matrix to subtract to this
-     * @returns new matrix
+     * \brief Subtract two matrices and returns a new matrix
+     * \tparam Number any real value to multiply
+     * \param other Other matrix to subtract to this
+     * \returns new matrix
      */
     template <typename Number, typename = typename std::enable_if<
                                    std::is_integral<Number>::value ||
@@ -223,10 +223,10 @@ class Matrix {
     }
 
     /**
-     * @brief Subtract another matrices to current matrix
-     * @tparam Number any real value to Subtract
-     * @param other Other matrix to Subtract to this
-     * @returns reference of current matrix
+     * \brief Subtract another matrices to current matrix
+     * \tparam Number any real value to Subtract
+     * \param other Other matrix to Subtract to this
+     * \returns reference of current matrix
      */
     template <typename Number, typename = typename std::enable_if<
                                    std::is_integral<Number>::value ||
@@ -243,10 +243,10 @@ class Matrix {
     }
 
     /**
-     * @brief Multiply two matrices and returns a new matrix
-     * @tparam Number any real value to multiply
-     * @param other Other matrix to multiply to this
-     * @returns new matrix
+     * \brief Multiply two matrices and returns a new matrix
+     * \tparam Number any real value to multiply
+     * \param other Other matrix to multiply to this
+     * \returns new matrix
      */
     template <typename Number, typename = typename std::enable_if<
                                    std::is_integral<Number>::value ||
@@ -265,10 +265,10 @@ class Matrix {
     }
 
     /**
-     * @brief Multiply matrix with a number and returns a new matrix
-     * @tparam Number any real value to multiply
-     * @param other Other real number to multiply to current matrix
-     * @returns new matrix
+     * \brief Multiply matrix with a number and returns a new matrix
+     * \tparam Number any real value to multiply
+     * \param other Other real number to multiply to current matrix
+     * \returns new matrix
      */
     template <typename Number, typename = typename std::enable_if<
                                    std::is_integral<Number>::value ||
@@ -285,10 +285,10 @@ class Matrix {
     }
 
     /**
-     * @brief Multiply a number to current matrix
-     * @tparam Number any real value to multiply
-     * @param other Other matrix to multiply to this
-     * @returns reference of current matrix
+     * \brief Multiply a number to current matrix
+     * \tparam Number any real value to multiply
+     * \param other Other matrix to multiply to this
+     * \returns reference of current matrix
      */
     template <typename Number, typename = typename std::enable_if<
                                    std::is_integral<Number>::value ||
@@ -304,10 +304,10 @@ class Matrix {
     }
 
     /**
-     * @brief Naive multiplication performed on this
-     * @tparam Number any real value to multiply
-     * @param other Other matrix to multiply to this
-     * @returns new matrix
+     * \brief Naive multiplication performed on this
+     * \tparam Number any real value to multiply
+     * \param other Other matrix to multiply to this
+     * \returns new matrix
      */
     template <typename Number, typename = typename std::enable_if<
                                    std::is_integral<Number>::value ||
@@ -327,11 +327,11 @@ class Matrix {
     }
 
     /**
-     * @brief Strassens method of multiplying two matrices
+     * \brief Strassens method of multiplying two matrices
      * References: https://en.wikipedia.org/wiki/Strassen_algorithm
-     * @tparam Number any real value to multiply
-     * @param other Other matrix to multiply to this
-     * @returns new matrix
+     * \tparam Number any real value to multiply
+     * \param other Other matrix to multiply to this
+     * \returns new matrix
      */
     template <typename Number, typename = typename std::enable_if<
                                    std::is_integral<Number>::value ||
@@ -386,9 +386,9 @@ class Matrix {
     }
 
     /**
-     * @brief Compares two matrices if each of them are equal or not
-     * @param other other matrix to compare
-     * @returns whether they are equal or not
+     * \brief Compares two matrices if each of them are equal or not
+     * \param other other matrix to compare
+     * \returns whether they are equal or not
      */
     bool operator==(const Matrix<T> &other) const {
         if (_mat.size() != other._mat.size() ||
@@ -421,8 +421,8 @@ class Matrix {
 }  // namespace divide_and_conquer
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     const size_t s = 512;
@@ -462,8 +462,8 @@ static void test() {
 }
 
 /**
- * @brief main function
- * @returns 0 on exit
+ * \brief main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementation

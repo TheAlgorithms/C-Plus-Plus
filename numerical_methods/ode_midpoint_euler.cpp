@@ -42,13 +42,13 @@
 #include <valarray>
 
 /**
- * @brief Problem statement for a system with first-order differential
+ * \brief Problem statement for a system with first-order differential
  * equations. Updates the system differential variables.
  * \note This function can be updated to and ode of any order.
  *
- * @param[in] 		x 		independent variable(s)
- * @param[in,out]	y		dependent variable(s)
- * @param[in,out]	dy	    first-derivative of dependent variable(s)
+ * \param[in] 		x 		independent variable(s)
+ * \param[in,out]	y		dependent variable(s)
+ * \param[in,out]	dy	    first-derivative of dependent variable(s)
  */
 void problem(const double &x, std::valarray<double> *y,
              std::valarray<double> *dy) {
@@ -58,10 +58,10 @@ void problem(const double &x, std::valarray<double> *y,
 }
 
 /**
- * @brief Exact solution of the problem. Used for solution comparison.
+ * \brief Exact solution of the problem. Used for solution comparison.
  *
- * @param[in] 		x 		independent variable
- * @param[in,out]	y		dependent variable
+ * \param[in] 		x 		independent variable
+ * \param[in,out]	y		dependent variable
  */
 void exact_solution(const double &x, std::valarray<double> *y) {
     y[0][0] = std::cos(x);
@@ -72,15 +72,15 @@ void exact_solution(const double &x, std::valarray<double> *y) {
  * @{
  */
 /**
- * @brief Compute next step approximation using the midpoint-Euler
+ * \brief Compute next step approximation using the midpoint-Euler
  * method.
  * @f[y_{n+1} = y_n + dx\, f\left(x_n+\frac{1}{2}dx,
  * y_n + \frac{1}{2}dx\,f\left(x_n,y_n\right)\right)@f]
  *
- * @param[in] 		dx	step size
- * @param[in] 	    x	take \f$x_n\f$ and compute \f$x_{n+1}\f$
- * @param[in,out] 	y	take \f$y_n\f$ and compute \f$y_{n+1}\f$
- * @param[in,out]	dy	compute \f$f\left(x_n,y_n\right)\f$
+ * \param[in] 		dx	step size
+ * \param[in] 	    x	take \f$x_n\f$ and compute \f$x_{n+1}\f$
+ * \param[in,out] 	y	take \f$y_n\f$ and compute \f$y_{n+1}\f$
+ * \param[in,out]	dy	compute \f$f\left(x_n,y_n\right)\f$
  */
 void midpoint_euler_step(const double dx, const double &x,
                          std::valarray<double> *y, std::valarray<double> *dy) {
@@ -95,14 +95,14 @@ void midpoint_euler_step(const double dx, const double &x,
 }
 
 /**
- * @brief Compute approximation using the midpoint-Euler
+ * \brief Compute approximation using the midpoint-Euler
  * method in the given limits.
- * @param[in] 		dx  	step size
- * @param[in]   	x0  	initial value of independent variable
- * @param[in] 	    x_max	final value of independent variable
- * @param[in,out] 	y	    take \f$y_n\f$ and compute \f$y_{n+1}\f$
- * @param[in] save_to_file	flag to save results to a CSV file (1) or not (0)
- * @returns time taken for computation in seconds
+ * \param[in] 		dx  	step size
+ * \param[in]   	x0  	initial value of independent variable
+ * \param[in] 	    x_max	final value of independent variable
+ * \param[in,out] 	y	    take \f$y_n\f$ and compute \f$y_{n+1}\f$
+ * \param[in] save_to_file	flag to save results to a CSV file (1) or not (0)
+ * \returns time taken for computation in seconds
  */
 double midpoint_euler(double dx, double x0, double x_max,
                       std::valarray<double> *y, bool save_to_file = false) {

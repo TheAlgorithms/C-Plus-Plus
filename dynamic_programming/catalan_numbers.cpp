@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Provides utilities to compute Catalan numbers using dynamic
+ * \file
+ * \brief Provides utilities to compute Catalan numbers using dynamic
  programming.
  * A Catalan numbers satisfy these recurrence relations:
  * C(0) = C(1) = 1; C(n) = sum(C(i).C(n-i-1)), for i = 0 to n-1
@@ -17,7 +17,7 @@
 #include <vector>      /// for std::vector
 
 /**
- * @brief computes and caches Catalan numbers
+ * \brief computes and caches Catalan numbers
  */
 class catalan_numbers {
     using value_type = std::uint64_t;
@@ -33,8 +33,8 @@ class catalan_numbers {
 
  public:
     /**
-     * @brief computes the n-th Catalan number and updates the cache.
-     * @return the n-th Catalan number
+     * \brief computes the n-th Catalan number and updates the cache.
+     * \return the n-th Catalan number
      */
     value_type get(std::size_t n) {
         while (known.size() <= n) {

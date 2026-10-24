@@ -1,13 +1,13 @@
 /**
- * @file
- * @brief Implementation of [Manacher's
+ * \file
+ * \brief Implementation of [Manacher's
  * Algorithm](https://en.wikipedia.org/wiki/Longest_palindromic_substring)
- * @details
+ * \details
  * Manacher's Algorithm is used to find the longest palindromic substring within
  * a string in O(n) time. It exploits the property of a palindrome that its
  * first half is symmetric to the last half, and thus if the first half is a
  * palindrome, then last half is also a palindrome.
- * @author [Riti Kumari](https://github.com/riti2409)
+ * \author [Riti Kumari](https://github.com/riti2409)
  */
 
 #include <cassert>   /// for assert
@@ -21,22 +21,22 @@
 #endif
 
 /**
- * @namespace strings
- * @brief Algorithms with strings
+ * \namespace strings
+ * \brief Algorithms with strings
  */
 namespace strings {
 /**
- * @namespace manacher
- * @brief Functions for [Manacher's
+ * \namespace manacher
+ * \brief Functions for [Manacher's
  * Algorithm](https://en.wikipedia.org/wiki/Longest_palindromic_substring)
  * implementation
  */
 namespace manacher {
 /**
- * @brief A function that implements Manacher's algorithm
- * @param prototype is the string where algorithm finds a palindromic substring.
+ * \brief A function that implements Manacher's algorithm
+ * \param prototype is the string where algorithm finds a palindromic substring.
  * This string can contain any character except `@` `#` `&`
- * @returns the largest palindromic substring
+ * \returns the largest palindromic substring
  */
 std::string manacher(const std::string &prototype) {
     if (prototype.size() > 0) {
@@ -145,8 +145,8 @@ std::string manacher(const std::string &prototype) {
 }  // namespace strings
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     assert(strings::manacher::manacher("") == "");
@@ -166,8 +166,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

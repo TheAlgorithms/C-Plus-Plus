@@ -1,10 +1,10 @@
 /**
- * @file
+ * \file
  *
- * @brief Algorithm to check whether a graph is
+ * \brief Algorithm to check whether a graph is
  * [bipartite](https://en.wikipedia.org/wiki/Bipartite_graph)
  *
- * @details
+ * \details
  * A graph is a collection of nodes also called vertices and these vertices
  * are connected by edges. A graph is bipartite if its vertices can be
  * divided into two disjoint and independent sets U and V such that every edge
@@ -28,7 +28,7 @@
  *
  * </pre>
  *
- * @author [Akshat Vaya](https://github.com/AkVaya)
+ * \author [Akshat Vaya](https://github.com/AkVaya)
  *
  */
 #include <iostream>
@@ -36,17 +36,17 @@
 #include <vector>
 
 /**
- * @namespace graph
- * @brief Graph algorithms
+ * \namespace graph
+ * \brief Graph algorithms
  */
 namespace graph {
 /**
- * @namespace is_graph_bipartite
- * @brief Functions for checking whether a graph is bipartite or not
+ * \namespace is_graph_bipartite
+ * \brief Functions for checking whether a graph is bipartite or not
  */
 namespace is_graph_bipartite {
 /**
- * @brief Class for representing graph as an adjacency list.
+ * \brief Class for representing graph as an adjacency list.
  */
 class Graph {
  private:
@@ -59,8 +59,8 @@ class Graph {
 
  public:
     /**
-     * @brief Constructor that initializes the graph on creation
-     * @param size number of vertices of the graph
+     * \brief Constructor that initializes the graph on creation
+     * \param size number of vertices of the graph
      */
     explicit Graph(int size) {
         n = size;
@@ -75,10 +75,10 @@ class Graph {
 };
 
 /**
- * @brief Function that add an edge between two nodes or vertices of graph
+ * \brief Function that add an edge between two nodes or vertices of graph
  *
- * @param u is a node or vertex of graph
- * @param v is a node or vertex of graph
+ * \param u is a node or vertex of graph
+ * \param v is a node or vertex of graph
  */
 void Graph::addEdge(int u, int v) {
     adj[u - 1].push_back(v - 1);
@@ -86,11 +86,11 @@ void Graph::addEdge(int u, int v) {
 }
 
 /**
- * @brief function that checks whether the graph is bipartite or not
+ * \brief function that checks whether the graph is bipartite or not
  * the function returns true if the graph is a bipartite graph
  * the function returns false if the graph is not a bipartite graph
  *
- * @details
+ * \details
  * Here, side refers to the two disjoint subsets of the bipartite graph.
  * Initially, the values of side are set to -1 which is an unassigned state. A
  * for loop is run for every vertex of the graph. If the current edge has no
@@ -100,8 +100,8 @@ void Graph::addEdge(int u, int v) {
  * different sides, the value of check will be true and hence the graph
  * bipartite.
  *
- * @returns `true` if th graph is bipartite
- * @returns `false` otherwise
+ * \returns `true` if th graph is bipartite
+ * \returns `false` otherwise
  */
 bool Graph::is_bipartite() {
     bool check = true;
@@ -131,7 +131,7 @@ bool Graph::is_bipartite() {
 
 /**
  * Function to test the above algorithm
- * @returns none
+ * \returns none
  */
 static void test() {
     graph::is_graph_bipartite::Graph G1(

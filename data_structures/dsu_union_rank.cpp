@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [DSU (Disjoint
+ * \file
+ * \brief [DSU (Disjoint
  * sets)](https://en.wikipedia.org/wiki/Disjoint-set-data_structure)
- * @details
+ * \details
  * dsu : It is a very powerful data structure which keeps track of different
  * clusters(sets) of elements, these sets are disjoint(doesnot have a common
  * element). Disjoint sets uses cases : for finding connected components in a
@@ -15,8 +15,8 @@
  * Using union-rank in findSet(i),we are able to get to the representative of i
  * in slightly delayed O(logN) time but it allows us to keep tracks of the
  * parent of i.
- * @author [AayushVyasKIIT](https://github.com/AayushVyasKIIT)
- * @see dsu_path_compression.cpp
+ * \author [AayushVyasKIIT](https://github.com/AayushVyasKIIT)
+ * \see dsu_path_compression.cpp
  */
 
 #include <cassert>   /// for assert
@@ -29,8 +29,8 @@ using std::endl;
 using std::vector;
 
 /**
- * @brief Disjoint sets union data structure, class based representation.
- * @param n number of elements
+ * \brief Disjoint sets union data structure, class based representation.
+ * \param n number of elements
  */
 class dsu {
  private:
@@ -39,8 +39,8 @@ class dsu {
     vector<uint64_t> setSize;  ///< size of each chunk(set)
  public:
     /**
-     * @brief constructor for initialising all data members
-     * @param n number of elements
+     * \brief constructor for initialising all data members
+     * \param n number of elements
      */
     explicit dsu(uint64_t n) {
         p.assign(n, 0);
@@ -54,10 +54,10 @@ class dsu {
         }
     }
     /**
-     * @brief Method to find the representative of the set to which i belongs
+     * \brief Method to find the representative of the set to which i belongs
      * to, T(n) = O(logN)
-     * @param i element of some set
-     * @returns representative of the set to which i belongs to
+     * \param i element of some set
+     * \returns representative of the set to which i belongs to
      */
     uint64_t findSet(uint64_t i) {
         /// using union-rank
@@ -67,11 +67,11 @@ class dsu {
         return i;
     }
     /**
-     * @brief Method that combines two disjoint sets to which i and j belongs to
+     * \brief Method that combines two disjoint sets to which i and j belongs to
      * and make a single set having a common representative.
-     * @param i element of some set
-     * @param j element of some set
-     * @returns void
+     * \param i element of some set
+     * \param j element of some set
+     * \returns void
      */
     void unionSet(uint64_t i, uint64_t j) {
         /// checks if both belongs to same set or not
@@ -98,12 +98,12 @@ class dsu {
         setSize[y] += setSize[x];
     }
     /**
-     * @brief A utility function which check whether i and j belongs to same set
+     * \brief A utility function which check whether i and j belongs to same set
      * or not
-     * @param i element of some set
-     * @param j element of some set
-     * @returns `true` if element i and j are in same set
-     * @returns `false` if element i and j are not in same set
+     * \param i element of some set
+     * \param j element of some set
+     * \returns `true` if element i and j are in same set
+     * \returns `false` if element i and j are not in same set
      */
     bool isSame(uint64_t i, uint64_t j) {
         if (findSet(i) == findSet(j)) {
@@ -112,10 +112,10 @@ class dsu {
         return false;
     }
     /**
-     * @brief Method to print all the parents of i, or the path from i to
+     * \brief Method to print all the parents of i, or the path from i to
      * representative.
-     * @param i element of some set
-     * @returns void
+     * \param i element of some set
+     * \returns void
      */
     vector<uint64_t> getParents(uint64_t i) {
         vector<uint64_t> ans;
@@ -128,8 +128,8 @@ class dsu {
     }
 };
 /**
- * @brief Self-implementations, 1st test
- * @returns void
+ * \brief Self-implementations, 1st test
+ * \returns void
  */
 static void test1() {
     /* checks the parents in the resultant structures */
@@ -152,8 +152,8 @@ static void test1() {
     cout << "1st test passed!" << endl;
 }
 /**
- * @brief Self-implementations, 2nd test
- * @returns void
+ * \brief Self-implementations, 2nd test
+ * \returns void
  */
 static void test2() {
     // checks the parents in the resultant structures
@@ -177,8 +177,8 @@ static void test2() {
     cout << "2nd test passed!" << endl;
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test1();  // run 1st test case

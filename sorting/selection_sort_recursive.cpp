@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation of the [Selection
+ * \file
+ * \brief Implementation of the [Selection
  * sort](https://en.wikipedia.org/wiki/Selection_sort)
  * implementation using recursion
- * @details
+ * \details
  * The selection sort algorithm divides the input list into two parts: a sorted
  * sublist of items which is built up from left to right at the front (left) of
  * the list, and a sublist of the remaining unsorted items that occupy the rest
@@ -24,7 +24,7 @@
  * and unsorted) and finds the minimum of the unsorted array. By calling the
  * `FindMinIndex` function, it swaps the minimum element with the first element
  * of the list, and then solves recursively for the remaining unsorted list.
- * @author [Tushar Khanduri](https://github.com/Tushar-K24)
+ * \author [Tushar Khanduri](https://github.com/Tushar-K24)
  */
 
 #include <algorithm>  /// for std::is_sorted
@@ -34,23 +34,23 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 /**
- * @namespace selection_sort_recursive
- * @brief Functions for the [Selection
+ * \namespace selection_sort_recursive
+ * \brief Functions for the [Selection
  * sort](https://en.wikipedia.org/wiki/Selection_sort)
  * implementation using recursion
  */
 namespace selection_sort_recursive {
 /**
- * @brief The main function finds the index of the minimum element
- * @tparam T type of array
- * @param in_arr array whose minimum element is to be returned
- * @param current_position position/index from where the in_arr starts
- * @returns index of the minimum element
+ * \brief The main function finds the index of the minimum element
+ * \tparam T type of array
+ * \param in_arr array whose minimum element is to be returned
+ * \param current_position position/index from where the in_arr starts
+ * \returns index of the minimum element
  */
 template <typename T>
 uint64_t findMinIndex(const std::vector<T> &in_arr,
@@ -66,11 +66,11 @@ uint64_t findMinIndex(const std::vector<T> &in_arr,
 }
 
 /**
- * @brief The main function implements Selection sort
- * @tparam T type of array
- * @param in_arr array to be sorted,
- * @param current_position position/index from where the in_arr starts
- * @returns void
+ * \brief The main function implements Selection sort
+ * \tparam T type of array
+ * \param in_arr array to be sorted,
+ * \param current_position position/index from where the in_arr starts
+ * \returns void
  */
 template <typename T>
 void selectionSortRecursive(std::vector<T> &in_arr,
@@ -89,8 +89,8 @@ void selectionSortRecursive(std::vector<T> &in_arr,
 }  // namespace sorting
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st test
@@ -124,8 +124,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

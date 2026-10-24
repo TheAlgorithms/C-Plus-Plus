@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Prime factorization of positive integers
+ * \file
+ * \brief Prime factorization of positive integers
  */
 #include <algorithm>
 #include <cstring>

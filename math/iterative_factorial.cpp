@@ -1,17 +1,17 @@
 /**
- * @file
- * @brief Iterative implementation of
+ * \file
+ * \brief Iterative implementation of
  * [Factorial](https://en.wikipedia.org/wiki/Factorial)
  *
- * @author [Renjian-buchai](https://github.com/Renjian-buchai)
+ * \author [Renjian-buchai](https://github.com/Renjian-buchai)
  *
- * @details Calculates factorial iteratively.
+ * \details Calculates factorial iteratively.
  * \f[n! = n\times(n-1)\times(n-2)\times(n-3)\times\ldots\times3\times2\times1
  *       = n\times(n-1)!\f]
  * for example:
  * \f$4! = 4\times3! = 4\times3\times2\times1 = 24\f$
  *
- * @example
+ * \example
  *
  * 5! = 5 * 4 * 3 * 2 * 1
  *
@@ -31,17 +31,17 @@
 #include <iostream>   /// for std::cout
 
 /**
- * @namespace
- * @brief Mathematical algorithms
+ * \namespace
+ * \brief Mathematical algorithms
  */
 namespace math {
 
 /**
- * @brief Calculates the factorial iteratively.
- * @param n Nth factorial.
- * @return Factorial.
- * @note 0! = 1.
- * @warning Maximum=20 because there are no 128-bit integers in C++. 21!
+ * \brief Calculates the factorial iteratively.
+ * \param n Nth factorial.
+ * \return Factorial.
+ * \note 0! = 1.
+ * \warning Maximum=20 because there are no 128-bit integers in C++. 21!
  * returns 1.419e+19, which is not 21! but (21! % UINT64_MAX).
  */
 uint64_t iterativeFactorial(uint8_t n) {
@@ -63,8 +63,8 @@ uint64_t iterativeFactorial(uint8_t n) {
 }  // namespace math
 
 /**
- * @brief Self-test implementations to test iterativeFactorial function.
- * @note There is 1 special case: 0! = 1.
+ * \brief Self-test implementations to test iterativeFactorial function.
+ * \note There is 1 special case: 0! = 1.
  */
 static void test() {
     // Special case test
@@ -114,8 +114,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // Run self-test implementation

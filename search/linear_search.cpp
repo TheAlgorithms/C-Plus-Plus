@@ -3,8 +3,8 @@
  * \brief [Linear search
  * algorithm](https://en.wikipedia.org/wiki/Linear_search)
  *
- * @author Unknown author
- * @author [Ritika Mukherjee](https://github.com/ritikaa17)
+ * \author Unknown author
+ * \author [Ritika Mukherjee](https://github.com/ritikaa17)
  */
 
 #include <cassert>   /// for assert
@@ -31,8 +31,8 @@ int LinearSearch(int *array, int size, int key) {
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     int size = 4;
@@ -62,8 +62,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     int mode = 0;

@@ -18,14 +18,14 @@
 #define EPSILON 1e-7  ///< solution accuracy limit
 
 /**
- * @brief Get the minima of a function in the given interval. To get the maxima,
+ * \brief Get the minima of a function in the given interval. To get the maxima,
  * simply negate the function. The golden ratio used here is:\f[
  * k=\frac{3-\sqrt{5}}{2} \approx 0.381966\ldots\f]
  *
- * @param f function to get minima for
- * @param lim_a lower limit of search window
- * @param lim_b upper limit of search window
- * @return local minima found in the interval
+ * \param f function to get minima for
+ * \param lim_a lower limit of search window
+ * \param lim_b upper limit of search window
+ * \return local minima found in the interval
  */
 double get_minima(const std::function<double(double)> &f, double lim_a,
                   double lim_b) {
@@ -71,7 +71,7 @@ double get_minima(const std::function<double(double)> &f, double lim_a,
 }
 
 /**
- * @brief Test function to find minima for the function
+ * \brief Test function to find minima for the function
  * \f$f(x)= (x-2)^2\f$
  * in the interval \f$[1,5]\f$
  * \n Expected result = 2
@@ -93,7 +93,7 @@ void test1() {
 }
 
 /**
- * @brief Test function to find *maxima* for the function
+ * \brief Test function to find *maxima* for the function
  * \f$f(x)= x^{\frac{1}{x}}\f$
  * in the interval \f$[-2,10]\f$
  * \n Expected result: \f$e\approx 2.71828182845904509\f$
@@ -116,7 +116,7 @@ void test2() {
 }
 
 /**
- * @brief Test function to find *maxima* for the function
+ * \brief Test function to find *maxima* for the function
  * \f$f(x)= \cos x\f$
  * in the interval \f$[0,12]\f$
  * \n Expected result: \f$\pi\approx 3.14159265358979312\f$

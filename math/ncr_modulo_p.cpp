@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief This program aims at calculating [nCr modulo
+ * \file
+ * \brief This program aims at calculating [nCr modulo
  * p](https://cp-algorithms.com/combinatorics/binomial-coefficients.html).
- * @details nCr is defined as n! / (r! * (n-r)!) where n! represents factorial
+ * \details nCr is defined as n! / (r! * (n-r)!) where n! represents factorial
  * of n. In many cases, the value of nCr is too large to fit in a 64 bit
  * integer. Hence, in competitive programming, there are many problems or
  * subproblems to compute nCr modulo p where p is a given number.
- * @author [Kaustubh Damania](https://github.com/KaustubhDamania)
+ * \author [Kaustubh Damania](https://github.com/KaustubhDamania)
  */
 
 #include <cassert>   /// for assert
@@ -14,32 +14,32 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @namespace ncr_modulo_p
- * @brief Functions for [nCr modulo
+ * \namespace ncr_modulo_p
+ * \brief Functions for [nCr modulo
  * p](https://cp-algorithms.com/combinatorics/binomial-coefficients.html)
  * implementation.
  */
 namespace ncr_modulo_p {
 
 /**
- * @namespace utils
- * @brief this namespace contains the definitions of the functions called from
+ * \namespace utils
+ * \brief this namespace contains the definitions of the functions called from
  * the class math::ncr_modulo_p::NCRModuloP
  */
 namespace utils {
 /**
- * @brief finds the values x and y such that a*x + b*y = gcd(a,b)
+ * \brief finds the values x and y such that a*x + b*y = gcd(a,b)
  *
- * @param[in] a the first input of the gcd
- * @param[in] a the second input of the gcd
- * @param[out] x the Bézout coefficient of a
- * @param[out] y the Bézout coefficient of b
- * @return the gcd of a and b
+ * \param[in] a the first input of the gcd
+ * \param[in] a the second input of the gcd
+ * \param[out] x the Bézout coefficient of a
+ * \param[out] y the Bézout coefficient of b
+ * \return the gcd of a and b
  */
 int64_t gcdExtended(const int64_t& a, const int64_t& b, int64_t& x,
                     int64_t& y) {
@@ -59,9 +59,9 @@ int64_t gcdExtended(const int64_t& a, const int64_t& b, int64_t& x,
 
 /** Find modular inverse of a modulo m i.e. a number x such that (a*x)%m = 1
  *
- * @param[in] a the number for which the modular inverse is queried
- * @param[in] m the modulus
- * @return the inverce of a modulo m, if it exists, -1 otherwise
+ * \param[in] a the number for which the modular inverse is queried
+ * \param[in] m the modulus
+ * \return the inverce of a modulo m, if it exists, -1 otherwise
  */
 int64_t modInverse(const int64_t& a, const int64_t& m) {
     int64_t x = 0, y = 0;
@@ -74,7 +74,7 @@ int64_t modInverse(const int64_t& a, const int64_t& m) {
 }
 }  // namespace utils
 /**
- * @brief Class which contains all methods required for calculating nCr mod p
+ * \brief Class which contains all methods required for calculating nCr mod p
  */
 class NCRModuloP {
  private:
@@ -83,10 +83,10 @@ class NCRModuloP {
         fac;  /// stores precomputed factorial(i) % p value
 
     /**
-     * @brief computes the array of values of factorials reduced modulo mod
-     * @param max_arg_val argument of the last factorial stored in the result
-     * @param mod value of the divisor used to reduce factorials
-     * @return vector storing factorials of the numbers 0, ..., max_arg_val
+     * \brief computes the array of values of factorials reduced modulo mod
+     * \param max_arg_val argument of the last factorial stored in the result
+     * \param mod value of the divisor used to reduce factorials
+     * \return vector storing factorials of the numbers 0, ..., max_arg_val
      * reduced modulo mod
      */
     static std::vector<int64_t> computeFactorialsMod(const int64_t& max_arg_val,
@@ -101,17 +101,17 @@ class NCRModuloP {
 
  public:
     /**
-     * @brief constructs an NCRModuloP object allowing to compute (nCr)%p for
+     * \brief constructs an NCRModuloP object allowing to compute (nCr)%p for
      * inputs from 0 to size
      */
     NCRModuloP(const int64_t& size, const int64_t& p)
         : p(p), fac(computeFactorialsMod(size, p)) {}
 
     /**
-     * @brief computes nCr % p
-     * @param[in] n the number of objects to be chosen
-     * @param[in] r the number of objects to choose from
-     * @return the value nCr % p
+     * \brief computes nCr % p
+     * \param[in] n the number of objects to be chosen
+     * \param[in] r the number of objects to choose from
+     * \return the value nCr % p
      */
     int64_t ncr(const int64_t& n, const int64_t& r) const {
         // Base cases
@@ -137,7 +137,7 @@ class NCRModuloP {
 }  // namespace math
 
 /**
- * @brief tests math::ncr_modulo_p::NCRModuloP
+ * \brief tests math::ncr_modulo_p::NCRModuloP
  */
 static void tests() {
     struct TestCase {
@@ -170,7 +170,7 @@ static void tests() {
 }
 
 /**
- * @brief example showing the usage of the math::ncr_modulo_p::NCRModuloP class
+ * \brief example showing the usage of the math::ncr_modulo_p::NCRModuloP class
  */
 void example() {
     const int64_t size = 1e6 + 1;

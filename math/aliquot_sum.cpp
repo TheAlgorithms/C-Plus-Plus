@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Program to return the [Aliquot
+ * \file
+ * \brief Program to return the [Aliquot
  * Sum](https://en.wikipedia.org/wiki/Aliquot_sum) of a number
  *
- * @details
+ * \details
  * The Aliquot sum \f$s(n)\f$ of a non-negative integer n is the sum of all
  * proper divisors of n, that is, all the divisors of n, other than itself.
  *
@@ -16,7 +16,7 @@
  * For example;
  *  \f$s(18) = 1 + 2 + 3 + 6 + 9 = 21 \f$
  *
- * @author [SpiderMath](https://github.com/SpiderMath)
+ * \author [SpiderMath](https://github.com/SpiderMath)
  */
 
 #include <cassert>   /// for assert
@@ -24,14 +24,14 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @brief Mathematical algorithms
- * @namespace math
+ * \brief Mathematical algorithms
+ * \namespace math
  */
 namespace math {
 
 /**
- * @brief to return the aliquot sum of a number
- * @param num The input number
+ * \brief to return the aliquot sum of a number
+ * \param num The input number
  */
 uint64_t aliquot_sum(const uint64_t num) {
     if (num == 0 || num == 1) {
@@ -51,8 +51,8 @@ uint64_t aliquot_sum(const uint64_t num) {
 }  // namespace math
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // Aliquot sum of 10 is 1 + 2 + 5 = 8
@@ -68,8 +68,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run the self-test implementations

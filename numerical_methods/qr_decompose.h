@@ -1,5 +1,5 @@
 /**
- * @file
+ * \file
  * \brief Library functions to compute [QR
  * decomposition](https://en.wikipedia.org/wiki/QR_decomposition) of a given
  * matrix.

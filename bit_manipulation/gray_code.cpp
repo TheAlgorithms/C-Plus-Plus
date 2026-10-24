@@ -1,8 +1,8 @@
 /**
- * @brief Program to generate n-bit [Gray 
+ * \brief Program to generate n-bit [Gray 
  * code](https://en.wikipedia.org/wiki/Gray_code)
  * 
- * @details
+ * \details
  * Gray code is a binary numeral system
  * where consecutive values differ in exactly 1 bit.
  * The following code offers one of many possible Gray codes 
@@ -15,20 +15,20 @@
 #include <vector>  /// for vector data structure
 
 /**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
+ * \namespace bit_manipulation
+ * \brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 /**
- * @namespace gray_code
- * @brief Generate n-bit Gray code
+ * \namespace gray_code
+ * \brief Generate n-bit Gray code
  */
 namespace gray_code {
 /**
- * @brief The main function to generate n-bit Gray code
+ * \brief The main function to generate n-bit Gray code
  *
- * @param n Number of bits
- * @return A vector that stores the n-bit Gray code
+ * \param n Number of bits
+ * \return A vector that stores the n-bit Gray code
  */
 std::vector<std::bitset<32>> gray_code_generation(int n) {
     std::vector<std::bitset<32>> gray_code = {};  // Initialise empty vector
@@ -51,9 +51,9 @@ std::vector<std::bitset<32>> gray_code_generation(int n) {
 }  // namespace bit_manipulation
 
 /**
- * @brief Self-test implementation
+ * \brief Self-test implementation
  *
- * @returns void
+ * \returns void
  */
 static void test() { 
     std::vector<std::bitset<32>> gray_code_negative_1 = {};
@@ -104,8 +104,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  //Run self-test implementation

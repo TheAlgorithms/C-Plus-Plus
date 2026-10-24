@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief [Minimum coins](https://leetcode.com/problems/coin-change/) change
+ * \file
+ * \brief [Minimum coins](https://leetcode.com/problems/coin-change/) change
  * problem is a problem used to find the minimum number of coins required to
  * completely reach a target amount.
  *
- * @details
+ * \details
  * This problem can be solved using 2 methods:
  * 1. Top down approach
  * 2. Bottom up appraoch
@@ -15,7 +15,7 @@
  * Coins: {1,7,10}
  * Target:15
  * Therfore minimum number of coins required = 3 of denomination 1,7 and 7.
- * @author [Divyansh Kushwaha](https://github.com/webdesignbydivyansh)
+ * \author [Divyansh Kushwaha](https://github.com/webdesignbydivyansh)
  */
 
 #include <cassert>   // for assert
@@ -24,24 +24,24 @@
 #include <vector>    // for std::vector
 
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming algorithm
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming algorithm
  */
 namespace dynamic_programming {
 /**
- * @namespace mincoins_topdown
- * @brief Functions for [minimum coin
+ * \namespace mincoins_topdown
+ * \brief Functions for [minimum coin
  * exchange](https://leetcode.com/problems/coin-change/) problem
  */
 namespace mincoins_topdown {
 /**
- * @brief This implementation is for finding minimum number of coins .
- * @param T template-type to use any kind of value
- * @param n amount to be reached
- * @param coins vector of coins
- * @param t deontes the number of coins
- * @param dp initilised to 0
- * @returns minimum number of coins
+ * \brief This implementation is for finding minimum number of coins .
+ * \param T template-type to use any kind of value
+ * \param n amount to be reached
+ * \param coins vector of coins
+ * \param t deontes the number of coins
+ * \param dp initilised to 0
+ * \returns minimum number of coins
  */
 template <typename T>
 int64_t mincoins(const T &n, const std::vector<T> &coins, const int16_t &t,
@@ -68,8 +68,8 @@ int64_t mincoins(const T &n, const std::vector<T> &coins, const int16_t &t,
 }  // namespace dynamic_programming
 
 /**
- * @brief Test implementations
- * @returns void
+ * \brief Test implementations
+ * \returns void
  */
 static void test() {
     // example 1: number of coins=3 and minimum coins required=3(7,7,1)
@@ -85,8 +85,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the test

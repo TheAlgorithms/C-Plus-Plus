@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief Implements [Rat in a
+ * \file
+ * \brief Implements [Rat in a
  * Maze](https://www.codesdope.com/blog/article/backtracking-to-
  * solve-a-rat-in-a-maze-c-java-pytho/) algorithm
  *
- * @details
+ * \details
  * A Maze is given as N*N binary matrix of blocks where source block is the
  * upper left most block i.e., maze[0][0] and destination block is lower
  * rightmost block i.e., maze[N-1][N-1]. A rat starts from source and has to
@@ -12,8 +12,8 @@
  * In the maze matrix, 0 means the block is dead end and 1 means the block can
  * be used in the path from source to destination.
  *
- * @author [Vaibhav Thakkar](https://github.com/vaithak)
- * @author [David Leal](https://github.com/Panquesito7)
+ * \author [Vaibhav Thakkar](https://github.com/vaithak)
+ * \author [David Leal](https://github.com/Panquesito7)
  */
 
 #include <array>     /// for std::array
@@ -21,27 +21,27 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace backtracking
- * @brief Backtracking algorithms
+ * \namespace backtracking
+ * \brief Backtracking algorithms
  */
 namespace backtracking {
 /**
- * @namespace rat_maze
- * @brief Functions for [Rat in a
+ * \namespace rat_maze
+ * \brief Functions for [Rat in a
  * Maze](https://www.codesdope.com/blog/article/backtracking-to-
  * solve-a-rat-in-a-maze-c-java-pytho/) algorithm
  */
 namespace rat_maze {
 /**
- * @brief Solve rat maze problem
- * @tparam size number of matrix size
- * @param currposrow current position in rows
- * @param currposcol current position in columns
- * @param maze matrix where numbers are saved
- * @param soln matrix to problem solution
- * @returns `true` if there exists a solution to move one step ahead in a column
+ * \brief Solve rat maze problem
+ * \tparam size number of matrix size
+ * \param currposrow current position in rows
+ * \param currposcol current position in columns
+ * \param maze matrix where numbers are saved
+ * \param soln matrix to problem solution
+ * \returns `true` if there exists a solution to move one step ahead in a column
  * or in a row
- * @returns `false` for the backtracking part
+ * \returns `false` for the backtracking part
  */
 template <size_t size>
 bool solveMaze(int currposrow, int currposcol,
@@ -80,8 +80,8 @@ bool solveMaze(int currposrow, int currposcol,
 }  // namespace backtracking
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     const int size = 4;
@@ -106,8 +106,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

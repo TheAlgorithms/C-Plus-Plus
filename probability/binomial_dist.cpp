@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief [Binomial
+ * \file
+ * \brief [Binomial
  * distribution](https://en.wikipedia.org/wiki/Binomial_distribution) example
  *
  * The binomial distribution models the number of

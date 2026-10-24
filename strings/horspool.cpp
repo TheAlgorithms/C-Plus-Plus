@@ -1,7 +1,7 @@
 /**
- * @file
- * @brief Horspool's algorithm that finds if a string contains a substring (https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore%E2%80%93Horspool_algorithm)
- * @author [Harry Kontakis](https://github.com/ckontakis)
+ * \file
+ * \brief Horspool's algorithm that finds if a string contains a substring (https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore%E2%80%93Horspool_algorithm)
+ * \author [Harry Kontakis](https://github.com/ckontakis)
  */
 
 #include <iostream>
@@ -9,19 +9,19 @@
 #include <cassert>
 
 /**
- * @namespace strings
- * @brief Algorithms with strings
+ * \namespace strings
+ * \brief Algorithms with strings
  */
 namespace strings {
 /**
- * @namespace horspool
- * @brief Functions for [Horspool's](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore%E2%80%93Horspool_algorithm) algorithm
+ * \namespace horspool
+ * \brief Functions for [Horspool's](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore%E2%80%93Horspool_algorithm) algorithm
  */
 namespace horspool {
 /**
  * A function that finds the shift table of the given prototype string that we need in Horpool's algorithm.
- * @param prototype is the substring that we use to find shift table
- * @return Shift Table of Horspool's algorithm
+ * \param prototype is the substring that we use to find shift table
+ * \return Shift Table of Horspool's algorithm
  */
 std::unordered_map<char, int> findShiftTable(const std::string &prototype) {
     std::unordered_map<char, int>
@@ -51,10 +51,10 @@ std::unordered_map<char, int> findShiftTable(const std::string &prototype) {
 
 /**
  * A function that implements Horspool's algorithm.
- * @param text is the string that we are searching if there is a substring
- * @param prototype is the substring that we are searching in text
- * @returns true if text string contains prototype string
- * @returns false if text string does not contain prototype string
+ * \param text is the string that we are searching if there is a substring
+ * \param prototype is the substring that we are searching in text
+ * \returns true if text string contains prototype string
+ * \returns false if text string does not contain prototype string
  */
 bool horspool(const std::string &text, const std::string &prototype) {
     std::unordered_map<char, int> shiftTable = findShiftTable(
@@ -94,8 +94,8 @@ bool horspool(const std::string &text, const std::string &prototype) {
 } // namespace strings
 
 /**
- * @brief Function with test cases for Horspool's algorithm
- * @returns void
+ * \brief Function with test cases for Horspool's algorithm
+ * \returns void
  */
 static void test(){
     assert(strings::horspool::horspool("Hello World","World") == true);
@@ -113,8 +113,8 @@ static void test(){
 }
 
 /**
- * @brief Main Function that calls test function
- * @returns 0 on exit
+ * \brief Main Function that calls test function
+ * \returns 0 on exit
  */
 int main(){
     test();

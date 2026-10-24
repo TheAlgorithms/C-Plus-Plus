@@ -1,7 +1,7 @@
 /**
- * @author sprintyaf
- * @file fibonacci_search.cpp
- * @brief [Fibonacci search
+ * \author sprintyaf
+ * \file fibonacci_search.cpp
+ * \brief [Fibonacci search
  * algorithm](https://en.wikipedia.org/wiki/Fibonacci_search_technique)
  */
 
@@ -14,11 +14,11 @@
 
 
 /**
- * @brief using fibonacci search algorithm finds an index of a given element in a sorted array
+ * \brief using fibonacci search algorithm finds an index of a given element in a sorted array
  * 
- * @param arr sorted array
- * @param value value that we're looking for
- * @returns if the array contains the value, returns an index of the element. otherwise -1.
+ * \param arr sorted array
+ * \param value value that we're looking for
+ * \returns if the array contains the value, returns an index of the element. otherwise -1.
  */
 int fibonacci_search(const std::vector<int> &arr, int value){
     // initialize last and current members of Fibonacci sequence 
@@ -67,7 +67,7 @@ int fibonacci_search(const std::vector<int> &arr, int value){
 }
 
 /**
- * @brief random tests for checking performance when an array doesn't contain an element
+ * \brief random tests for checking performance when an array doesn't contain an element
 */
 bool no_occurence_tests(){
     bool passed = true;
@@ -91,7 +91,7 @@ bool no_occurence_tests(){
 }
 
 /**
- * @brief random tests which cover cases when we have one, multiple or zero occurences of the value we're looking for
+ * \brief random tests which cover cases when we have one, multiple or zero occurences of the value we're looking for
 */
 bool random_tests(){
     bool passed = true;

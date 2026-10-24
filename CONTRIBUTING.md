@@ -49,6 +49,7 @@ You can add new algorithms or data structures that are **not present in the repo
 - If you have modified/added documentation, please ensure that your language is concise and must not contain grammatical errors.
 - Do not update [`README.md`](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md) along with other changes. First, create an issue and then link to that issue in your pull request to suggest specific changes required to [`README.md`](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/README.md).
 - The repository follows [Doxygen](https://www.doxygen.nl/manual/docblocks.html) standards and auto-generates the [repository website](https://thealgorithms.github.io/C-Plus-Plus). Please ensure the code is documented in this structure. A sample implementation is given below.
+  - **Use the C++/Doxygen backslash style** for comment commands (`\file`, `\brief`, `\details`, `\author`, `\namespace`, `\param`, `\tparam`, `\return`/`\returns`, `\see`, `\note`, etc.), **not** the JavaDoc `@` style. The `@` style is not parsed correctly by the project's Doxygen setup and renders as unformatted/bold text on the [generated website](https://thealgorithms.github.io/C-Plus-Plus).
 
 #### Test
 
@@ -87,13 +88,13 @@ assert(backtracking::subset_sum::number_of_subsets(0, array1) ==
 #include <cassert>   /// for assert
 
 /**
- * @brief Verifies if the given array
+ * \brief Verifies if the given array
  * contains the given number on it.
- * @tparam T the type of array (e.g., `int`, `float`, etc.)
- * @param arr the array to be used for checking
- * @param number the number to check if it's inside the array
- * @return false if the number was NOT found in the array
- * @return true if the number WAS found in the array
+ * \tparam T the type of array (e.g., `int`, `float`, etc.)
+ * \param arr the array to be used for checking
+ * \param number the number to check if it's inside the array
+ * \return false if the number was NOT found in the array
+ * \return true if the number WAS found in the array
  */
 template <typename T>
 bool is_number_on_array(const std::vector<T> &arr, const int &number) {
@@ -110,8 +111,8 @@ bool is_number_on_array(const std::vector<T> &arr, const int &number) {
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     std::vector<int> arr = { 9, 14, 21, 98, 67 };
@@ -125,8 +126,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests(); // run self-test implementations
@@ -138,28 +139,28 @@ int main() {
 
 ```cpp
 /**
- * @file
- * @brief Add one-line description here. Should contain a Wikipedia
+ * \file
+ * \brief Add one-line description here. Should contain a Wikipedia
  * link or another source explaining the algorithm/implementation.
- * @details
+ * \details
  * This is a multi-line
  * description containing links, references,
  * math equations, etc.
- * @author [Name](https://github.com/handle)
- * @see related_file.cpp, another_file.cpp
+ * \author [Name](https://github.com/handle)
+ * \see related_file.cpp, another_file.cpp
  */
 
 #include <cassert>   /// for assert
 #include             /// for `some function here`
 
 /**
- * @namespace
- * @brief <namespace description>
+ * \namespace
+ * \brief <namespace description>
  */
 namespace name {
 
 /**
- * @brief Class documentation
+ * \brief Class documentation
  */
 class class_name {
  private:
@@ -171,12 +172,12 @@ class class_name {
 }
 
 /**
- * @brief Function documentation
- * @tparam T this is a one-line info about T
- * @param param1 on-line info about param1
- * @param param2 on-line info about param2
- * @returns `true` if ...
- * @returns `false` if ...
+ * \brief Function documentation
+ * \tparam T this is a one-line info about T
+ * \param param1 on-line info about param1
+ * \param param2 on-line info about param2
+ * \returns `true` if ...
+ * \returns `false` if ...
  */
 template<class T>
 bool func(int param1, T param2) {
@@ -190,8 +191,8 @@ bool func(int param1, T param2) {
 }  // namespace name
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     /* descriptions of the following test */
@@ -204,8 +205,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

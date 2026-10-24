@@ -1,11 +1,11 @@
 /**
- * @file
- * @author [Deep Raval](https://github.com/imdeep2905)
+ * \file
+ * \author [Deep Raval](https://github.com/imdeep2905)
  *
- * @brief Implementation of [Morse Code]
+ * \brief Implementation of [Morse Code]
  * (https://en.wikipedia.org/wiki/Morse_code).
  *
- * @details
+ * \details
  * Morse code is a method used in telecommunication to encode text characters
  * as standardized sequences of two different signal durations, called dots
  * and dashes or dits and dahs. Morse code is named after Samuel Morse, an
@@ -27,8 +27,8 @@ namespace ciphers {
 namespace morse {
 /**
  * Get the morse representation for given character.
- * @param c Character
- * @returns morse representation string of character
+ * \param c Character
+ * \returns morse representation string of character
  */
 std::string char_to_morse(const char &c) {
     // return corresponding morse code
@@ -112,8 +112,8 @@ std::string char_to_morse(const char &c) {
 }
 /**
  * Get character from the morse representation.
- * @param s Morse representation
- * @returns corresponding character
+ * \param s Morse representation
+ * \returns corresponding character
  */
 char morse_to_char(const std::string &s) {
     // return corresponding character
@@ -196,8 +196,8 @@ char morse_to_char(const std::string &s) {
 }
 /**
  * Encrypt given text using morse code.
- * @param text text to be encrypted
- * @returns new encrypted text
+ * \param text text to be encrypted
+ * \returns new encrypted text
  */
 std::string encrypt(const std::string &text) {
     std::string encrypted_text = "";  // Empty string to store encrypted text
@@ -210,8 +210,8 @@ std::string encrypt(const std::string &text) {
 }
 /**
  * Decrypt given morse coded text.
- * @param text text to be decrypted
- * @returns new decrypted text
+ * \param text text to be decrypted
+ * \returns new decrypted text
  */
 std::string decrypt(const std::string &text) {
     // Going through each character of text and converting it
@@ -239,8 +239,8 @@ std::string decrypt(const std::string &text) {
 }  // namespace ciphers
 
 /**
- * @brief Function to test above algorithm
- * @returns void
+ * \brief Function to test above algorithm
+ * \returns void
  */
 static void test() {
     // Test 1
@@ -262,8 +262,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     // Testing

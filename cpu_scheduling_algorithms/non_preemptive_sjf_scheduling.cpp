@@ -1,7 +1,7 @@
 /**
- * @file
- * @brief Implementation of SJF CPU scheduling algorithm
- * @details
+ * \file
+ * \brief Implementation of SJF CPU scheduling algorithm
+ * \details
  * shortest job first (SJF), also known as shortest job next (SJN), is a
  * scheduling policy that selects for execution the waiting process with the
  * smallest execution time. SJN is a non-preemptive algorithm. Shortest
@@ -32,14 +32,14 @@ using std::unordered_set;
 using std::vector;
 
 /**
- * @brief Comparator function for sorting a vector
- * @tparam S Data type of Process ID
- * @tparam T Data type of Arrival time
- * @tparam E Data type of Burst time
- * @param t1 First tuple<S,T,E>t1
- * @param t2 Second tuple<S,T,E>t2
- * @returns true if t1 and t2 are in the CORRECT order
- * @returns false if t1 and t2 are in the INCORRECT order
+ * \brief Comparator function for sorting a vector
+ * \tparam S Data type of Process ID
+ * \tparam T Data type of Arrival time
+ * \tparam E Data type of Burst time
+ * \param t1 First tuple<S,T,E>t1
+ * \param t2 Second tuple<S,T,E>t2
+ * \returns true if t1 and t2 are in the CORRECT order
+ * \returns false if t1 and t2 are in the INCORRECT order
  */
 template <typename S, typename T, typename E>
 bool sortcol(tuple<S, T, E>& t1, tuple<S, T, E>& t2) {
@@ -51,25 +51,25 @@ bool sortcol(tuple<S, T, E>& t1, tuple<S, T, E>& t2) {
 }
 
 /**
- * @class Compare
- * @brief Comparator class for priority queue
- * @tparam S Data type of Process ID
- * @tparam T Data type of Arrival time
- * @tparam E Data type of Burst time
+ * \class Compare
+ * \brief Comparator class for priority queue
+ * \tparam S Data type of Process ID
+ * \tparam T Data type of Arrival time
+ * \tparam E Data type of Burst time
  */
 template <typename S, typename T, typename E>
 class Compare {
  public:
     /**
-     * @param t1 First tuple
-     * @param t2 Second tuple
-     * @brief A comparator function that checks whether to swap the two tuples
+     * \param t1 First tuple
+     * \param t2 Second tuple
+     * \brief A comparator function that checks whether to swap the two tuples
      * or not.
      * <a
      * href="https://www.geeksforgeeks.org/comparator-class-in-c-with-examples/">
      * detailed description of comparator </a>
-     * @returns true if the tuples SHOULD be swapped
-     * @returns false if the tuples SHOULDN'T be swapped
+     * \returns true if the tuples SHOULD be swapped
+     * \returns false if the tuples SHOULDN'T be swapped
      */
     bool operator()(tuple<S, T, E, double, double, double>& t1,
                     tuple<S, T, E, double, double, double>& t2) {
@@ -86,23 +86,23 @@ class Compare {
 };
 
 /**
- * @class SJF
- * @brief Class which implements the SJF scheduling algorithm
- * @tparam S Data type of Process ID
- * @tparam T Data type of Arrival time
- * @tparam E Data type of Burst time
+ * \class SJF
+ * \brief Class which implements the SJF scheduling algorithm
+ * \tparam S Data type of Process ID
+ * \tparam T Data type of Arrival time
+ * \tparam E Data type of Burst time
  */
 template <typename S, typename T, typename E>
 class SJF {
     /**
      * Priority queue of schedules(stored as tuples) of processes.
      * In each tuple
-     * @tparam 1st element: Process ID
-     * @tparam 2nd element: Arrival Time
-     * @tparam 3rd element: Burst time
-     * @tparam 4th element: Completion time
-     * @tparam 5th element: Turnaround time
-     * @tparam 6th element: Waiting time
+     * \tparam 1st element: Process ID
+     * \tparam 2nd element: Arrival Time
+     * \tparam 3rd element: Burst time
+     * \tparam 4th element: Completion time
+     * \tparam 5th element: Turnaround time
+     * \tparam 6th element: Waiting time
      */
     priority_queue<tuple<S, T, E, double, double, double>,
                    vector<tuple<S, T, E, double, double, double>>,
@@ -117,11 +117,11 @@ class SJF {
 
  public:
     /**
-     * @brief Adds the process to the ready queue if it isn't already there
-     * @param id Process ID
-     * @param arrival Arrival time of the process
-     * @param burst Burst time of the process
-     * @returns void
+     * \brief Adds the process to the ready queue if it isn't already there
+     * \param id Process ID
+     * \param arrival Arrival time of the process
+     * \param burst Burst time of the process
+     * \returns void
      *
      */
     void addProcess(S id, T arrival, E burst) {
@@ -135,10 +135,10 @@ class SJF {
     }
 
     /**
-     * @brief Algorithm for scheduling CPU processes according to
+     * \brief Algorithm for scheduling CPU processes according to
      * the Shortest Job First (SJF) scheduling algorithm.
      *
-     * @details Non pre-emptive SJF is an algorithm that schedules processes
+     * \details Non pre-emptive SJF is an algorithm that schedules processes
      * based on the length of their burst times. The process with the smallest
      * burst time is executed first.In a non-preemptive scheduling algorithm,
      * once a process starts executing,it runs to completion without being
@@ -148,7 +148,7 @@ class SJF {
      * process with the smallest burst time in constant time, by maintaining a
      * priority order where the shortest burst process is always at the front.
      *
-     * @returns void
+     * \returns void
      */
 
     vector<tuple<S, T, E, double, double, double>> scheduleForSJF() {
@@ -189,9 +189,9 @@ class SJF {
         return result;
     }
     /**
-     * @brief Utility function for printing the status of
+     * \brief Utility function for printing the status of
      *  each process after execution
-     * @returns void
+     * \returns void
      */
 
     void printResult(
@@ -214,14 +214,14 @@ class SJF {
 };
 
 /**
- * @brief Computes the final status of processes after
+ * \brief Computes the final status of processes after
  * applying non-preemptive SJF scheduling
- * @tparam S Data type of Process ID
- * @tparam T Data type of Arrival time
- * @tparam E Data type of Burst time
- * @param input A vector of tuples containing Process ID, Arrival time, and
+ * \tparam S Data type of Process ID
+ * \tparam T Data type of Arrival time
+ * \tparam E Data type of Burst time
+ * \param input A vector of tuples containing Process ID, Arrival time, and
  * Burst time
- * @returns A vector of tuples containing Process ID, Arrival time, Burst time,
+ * \returns A vector of tuples containing Process ID, Arrival time, Burst time,
  *         Completion time, Turnaround time, and Waiting time
  */
 template <typename S, typename T, typename E>
@@ -261,8 +261,8 @@ vector<tuple<S, T, E, double, double, double>> get_final_status(
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // A vector to store the results of all processes across all test cases.
@@ -307,8 +307,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on successful exit
+ * \brief Main function
+ * \returns 0 on successful exit
  */
 int main() {
     test();

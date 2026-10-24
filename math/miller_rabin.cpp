@@ -1,6 +1,6 @@
 /**
  * Copyright 2020 @author tjgurwara99
- * @file
+ * \file
  *
  * A basic implementation of Miller-Rabin primality test.
  */
@@ -12,8 +12,8 @@
 
 /**
  * Function to give a binary representation of a number in reverse order
- * @param num integer number that we want to convert
- * @return result vector of the number input in reverse binary
+ * \param num integer number that we want to convert
+ * \return result vector of the number input in reverse binary
  */
 template <typename T>
 std::vector<T> reverse_binary(T num) {
@@ -31,11 +31,11 @@ std::vector<T> reverse_binary(T num) {
  * This function is an efficient modular exponentiation function.
  * It can be used with any big integer library such as Boost multiprecision
  * to give result any modular exponentiation problem relatively quickly.
- * @param base number being raised to a power as integer
- * @param rev_binary_exponent reverse binary of the power the base is being
+ * \param base number being raised to a power as integer
+ * \param rev_binary_exponent reverse binary of the power the base is being
  * raised to
- * @param mod modulo
- * @return r the modular exponentiation of \f$a^{n} \equiv r \mod{m}\f$ where
+ * \param mod modulo
+ * \return r the modular exponentiation of \f$a^{n} \equiv r \mod{m}\f$ where
  * \f$n\f$ is the base 10 representation of rev_binary_exponent and \f$m = mod
  * \f$ parameter.
  */
@@ -63,11 +63,11 @@ T modular_exponentiation(T base, const std::vector<T> &rev_binary_exponent,
 
 /** Function for testing the conditions that are satisfied when a number is
  * prime.
- * 	@param d number such that \f$d \cdot 2^r = n - 1\f$ where \f$n = num\f$
+ * 	\param d number such that \f$d \cdot 2^r = n - 1\f$ where \f$n = num\f$
  * parameter and \f$r \geq 1\f$
- * 	@param num number being tested for primality.
- * 	@return 'false' if n is composite
- * 	@return 'true' if n is (probably) prime.
+ * 	\param num number being tested for primality.
+ * 	\return 'false' if n is composite
+ * 	\return 'true' if n is (probably) prime.
  */
 template <typename T>
 bool miller_test(T d, T num) {
@@ -104,11 +104,11 @@ bool miller_test(T d, T num) {
 /**
  * Function that test (probabilistically) whether a given number is a prime
  * based on the Miller-Rabin Primality Test.
- * @param num number to be tested for primality.
- * @param repeats number of repetitions for the test to increase probability of
+ * \param num number to be tested for primality.
+ * \param repeats number of repetitions for the test to increase probability of
  * correct result.
- * @return 'false' if num is composite
- * @return 'true' if num is (probably) prime
+ * \return 'false' if num is composite
+ * \return 'true' if num is (probably) prime
  *
  * \detail
  * First we check whether the num input is less than 4, if so we can determine

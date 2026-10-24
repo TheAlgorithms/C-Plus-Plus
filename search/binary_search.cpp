@@ -1,8 +1,8 @@
 /******************************************************************************
- * @file
- * @brief [Binary search
+ * \file
+ * \brief [Binary search
  * algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
- * @details
+ * \details
  * Binary search is a search algorithm that finds the position of a target value
  * within a sorted array.Just like looking for a word in a dictionary, in binary search we compare the target value to the middle
  * element of the array. If they are not equal, then the half in which the target
@@ -31,8 +31,8 @@
  * space complexity  0(1)
  * Worst-case space complexity  0(1)
  *
- * @author [Lajat Manekar](https://github.com/Lazeeez)
- * @author Unknown author
+ * \author [Lajat Manekar](https://github.com/Lazeeez)
+ * \author Unknown author
  *******************************************************************************/
 
 #include <algorithm>  /// for std::sort function
@@ -41,22 +41,22 @@
 #include <iostream>   /// for IO operations
 #include <vector>     /// for std::vector
 /******************************************************************************
- * @namespace search
- * @brief Searching algorithms
+ * \namespace search
+ * \brief Searching algorithms
  *******************************************************************************/
 namespace search {
 
 /******************************************************************************
- * @namespace binary_search
- * @brief Binary search searching algorihm
+ * \namespace binary_search
+ * \brief Binary search searching algorihm
  *******************************************************************************/
 namespace binary_search {
 
 /******************************************************************************
- * @brief The main function which implements binary search
- * @param arr vector to be searched in
- * @param val value to be searched
- * @returns @param int index of val in vector arr
+ * \brief The main function which implements binary search
+ * \param arr vector to be searched in
+ * \param val value to be searched
+ * \returns @param int index of val in vector arr
  *******************************************************************************/
 uint64_t binarySearch(std::vector<uint64_t> arr, uint64_t val) {
     uint64_t low = 0;                // set the lowest point of the vector.
@@ -86,8 +86,8 @@ uint64_t binarySearch(std::vector<uint64_t> arr, uint64_t val) {
 }  // namespace search
 
 /*******************************************************************************
- * @brief Self-test implementation #1
- * @returns void
+ * \brief Self-test implementation #1
+ * \returns void
  *******************************************************************************/
 static void test1() {
     // testcase #1
@@ -104,8 +104,8 @@ static void test1() {
 }
 
 /*******************************************************************************
- * @brief Self-test implementation #2
- * @returns void
+ * \brief Self-test implementation #2
+ * \returns void
  *******************************************************************************/
 void test2() {
     // testcase #2
@@ -121,8 +121,8 @@ void test2() {
 }
 
 /*******************************************************************************
- * @brief Self-test implementation #3
- * @returns void
+ * \brief Self-test implementation #3
+ * \returns void
  *******************************************************************************/
 void test3() {
     // testcase #3
@@ -138,8 +138,8 @@ void test3() {
 }
 
 /*******************************************************************************
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  *******************************************************************************/
 int main() {
     test1();  // run self-test implementation #1

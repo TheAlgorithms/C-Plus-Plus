@@ -31,17 +31,17 @@
 #include <vector>
 
 /**
- * @namespace graph
- * @brief Graph Algorithms
+ * \namespace graph
+ * \brief Graph Algorithms
  */
 
 namespace graph {
 /**
- * @brief Function that add edge between two nodes or vertices of graph
+ * \brief Function that add edge between two nodes or vertices of graph
  *
- * @param adj adjacency list of graph.
- * @param u any node or vertex of graph.
- * @param v any node or vertex of graph.
+ * \param adj adjacency list of graph.
+ * \param u any node or vertex of graph.
+ * \param v any node or vertex of graph.
  */
 void addEdge(std::vector<std::vector<int>> *adj, int u, int v) {
     (*adj)[u - 1].push_back(v - 1);
@@ -49,12 +49,12 @@ void addEdge(std::vector<std::vector<int>> *adj, int u, int v) {
 }
 
 /**
- * @brief Utility function for depth first seach algorithm
+ * \brief Utility function for depth first seach algorithm
  * this function explores the vertex which is passed into.
  *
- * @param adj adjacency list of graph.
- * @param u vertex or node to be explored.
- * @param visited already visited vertices.
+ * \param adj adjacency list of graph.
+ * \param u vertex or node to be explored.
+ * \param visited already visited vertices.
  */
 void explore(const std::vector<std::vector<int>> *adj, int u,
              std::vector<bool> *visited) {
@@ -67,12 +67,12 @@ void explore(const std::vector<std::vector<int>> *adj, int u,
 }
 
 /**
- * @brief Function that perfoms depth first search algorithm on graph
+ * \brief Function that perfoms depth first search algorithm on graph
  * and calculated the number of connected components.
  *
- * @param adj adjacency list of graph.
+ * \param adj adjacency list of graph.
  *
- * @return connected_components number of connected components in graph.
+ * \return connected_components number of connected components in graph.
  */
 int getConnectedComponents(const std::vector<std::vector<int>> *adj) {
     int n = adj->size();

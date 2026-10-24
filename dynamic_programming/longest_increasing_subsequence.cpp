@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief Calculate the length of the [longest increasing
+ * \file
+ * \brief Calculate the length of the [longest increasing
  * subsequence](https://en.wikipedia.org/wiki/Longest_increasing_subsequence) in
  * an array
  *
- * @details
+ * \details
  * In computer science, the longest increasing subsequence problem is to find a
  * subsequence of a given sequence in which the subsequence's elements are in
  * sorted order, lowest to highest, and in which the subsequence is as long as
@@ -15,8 +15,8 @@
  * problem is solvable in time O(n log n), where n denotes the length of the
  * input sequence.
  *
- * @author [Krishna Vedala](https://github.com/kvedala)
- * @author [David Leal](https://github.com/Panquesito7)
+ * \author [Krishna Vedala](https://github.com/kvedala)
+ * \author [David Leal](https://github.com/Panquesito7)
  */
 
 #include <cassert>   /// for assert
@@ -26,15 +26,15 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 /**
- * @brief Calculate the longest increasing subsequence for the specified numbers
- * @param a the array used to calculate the longest increasing subsequence
- * @param n the size used for the arrays
- * @returns the length of the longest increasing
+ * \brief Calculate the longest increasing subsequence for the specified numbers
+ * \param a the array used to calculate the longest increasing subsequence
+ * \param n the size used for the arrays
+ * \returns the length of the longest increasing
  * subsequence in the `a` array of size `n`
  */
 uint64_t LIS(const std::vector<uint64_t> &a, const uint32_t &n) {
@@ -58,8 +58,8 @@ uint64_t LIS(const std::vector<uint64_t> &a, const uint32_t &n) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     std::vector<uint64_t> a = {15, 21, 2, 3, 4, 5, 8, 4, 1, 1};
@@ -73,8 +73,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     uint32_t n = 0;

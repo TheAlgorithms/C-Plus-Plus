@@ -22,8 +22,8 @@
 /**
  *
  * Find the next gap by shrinking the current gap by shrink factor of 1.3
- * @param gap current gap
- * @return new gap
+ * \param gap current gap
+ * \return new gap
  *
  */
 int FindNextGap(int gap) {
@@ -34,9 +34,9 @@ int FindNextGap(int gap) {
 
 /** Function to sort array
  *
- * @param arr array to be sorted
- * @param l start index of array
- * @param r end index of array
+ * \param arr array to be sorted
+ * \param l start index of array
+ * \param r end index of array
  *
  */
 void CombSort(int *arr, int l, int r) {

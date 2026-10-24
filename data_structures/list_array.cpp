@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Dynamic Array](https://en.wikipedia.org/wiki/Dynamic_array)
+ * \file
+ * \brief [Dynamic Array](https://en.wikipedia.org/wiki/Dynamic_array)
  *
- * @details
+ * \details
  * The list_array is the implementation of list represented using array.
  * We can perform basic CRUD operations as well as other operations like sorting
  * etc.
@@ -20,18 +20,18 @@
 #include <iostream>  /// for io operations
 
 /**
- * @namespace data_structures
- * @brief Algorithms with data structures
+ * \namespace data_structures
+ * \brief Algorithms with data structures
  */
 namespace data_structures {
 /**
- * @namespace list_array
- * @brief Functions for [Dynamic
+ * \namespace list_array
+ * \brief Functions for [Dynamic
  * Array](https://en.wikipedia.org/wiki/Dynamic_array) algorithm
  */
 namespace list_array {
 /**
- * @brief Structure of List with supporting methods.
+ * \brief Structure of List with supporting methods.
  */
 template <uint64_t N>
 struct list {
@@ -39,12 +39,12 @@ struct list {
     uint64_t top = 0;                // Pointer to the last element
     bool isSorted = false;           // indicator whether list is sorted or not
     /**
-     * @brief Search an element in the list using binarySearch.
-     * @param dataArr list
-     * @param first pointer to the first element in the remaining list
-     * @param last pointer to the last element in the remaining list
-     * @param val element that will be searched
-     * @return index of element in the list if present else -1
+     * \brief Search an element in the list using binarySearch.
+     * \param dataArr list
+     * \param first pointer to the first element in the remaining list
+     * \param last pointer to the last element in the remaining list
+     * \param val element that will be searched
+     * \return index of element in the list if present else -1
      */
     uint64_t BinarySearch(const std::array<uint64_t, N> &dataArr,
                           const uint64_t &first, const uint64_t &last,
@@ -72,10 +72,10 @@ struct list {
     }
 
     /**
-     * @brief Search an element using linear search
-     * @param dataArr list
-     * @param val element that will be searched
-     * @return index of element in the list if present else -1
+     * \brief Search an element using linear search
+     * \param dataArr list
+     * \param val element that will be searched
+     * \return index of element in the list if present else -1
      */
     uint64_t LinearSearch(const std::array<uint64_t, N> &dataArr,
                           const uint64_t &val) const {
@@ -90,9 +90,9 @@ struct list {
     }
 
     /*
-     * @brief Parent function of binarySearch and linearSearch methods
-     * @param val element that will be searched
-     * @return index of element in the list if present else -1
+     * \brief Parent function of binarySearch and linearSearch methods
+     * \param val element that will be searched
+     * \return index of element in the list if present else -1
      */
     uint64_t search(const uint64_t &val) {
         uint64_t pos;  // pos variable to store index value of element.
@@ -115,8 +115,8 @@ struct list {
     }
 
     /**
-     * @brief Sort the list
-     * @returns void
+     * \brief Sort the list
+     * \returns void
      */
     void sort() {
         // Going through each element in the list
@@ -136,9 +136,9 @@ struct list {
     }
 
     /**
-     * @brief Insert the new element in the list
-     * @param val element that will be inserted
-     * @returns void
+     * \brief Insert the new element in the list
+     * \param val element that will be inserted
+     * \returns void
      */
     void insert(const uint64_t &val) {
         // overflow check
@@ -176,9 +176,9 @@ struct list {
     }
 
     /**
-     * @brief To remove the element from the list
-     * @param val element that will be removed
-     * @returns void
+     * \brief To remove the element from the list
+     * \param val element that will be removed
+     * \returns void
      */
     void remove(const uint64_t &val) {
         uint64_t pos = search(val);  // search the index of the value
@@ -197,8 +197,8 @@ struct list {
     }
 
     /**
-     * @brief Utility function to print array
-     * @returns void
+     * \brief Utility function to print array
+     * \returns void
      */
     void show() {
         // Going through each element in the list
@@ -212,8 +212,8 @@ struct list {
 }  // namespace data_structures
 
 /**
- * @brief Test implementations
- * @returns void
+ * \brief Test implementations
+ * \returns void
  */
 static void test() {
     data_structures::list_array::list<50> L;
@@ -254,8 +254,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // Execute the tests

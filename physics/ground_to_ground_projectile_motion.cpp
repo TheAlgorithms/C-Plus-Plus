@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief Ground to ground [projectile
+ * \file
+ * \brief Ground to ground [projectile
  * motion](https://en.wikipedia.org/wiki/Projectile_motion) equation
  * implementations
- * @details Ground to ground projectile motion is when a projectile's trajectory
+ * \details Ground to ground projectile motion is when a projectile's trajectory
  * starts at the ground, reaches the apex, then falls back on the ground.
  *
- * @author [Focusucof](https://github.com/Focusucof)
+ * \author [Focusucof](https://github.com/Focusucof)
  */
 
 #include <cassert>   /// for assert()
@@ -15,8 +15,8 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace physics
- * @brief Physics algorithms
+ * \namespace physics
+ * \brief Physics algorithms
  */
 
 // Define gravity as a constant within guidelines
@@ -25,15 +25,15 @@ constexpr double GRAVITY = 9.80665; ///< Standard gravity (m/s^2)
 
 namespace physics {
 /**
- * @namespace ground_to_ground_projectile_motion
- * @brief Functions for the Ground to ground [projectile
+ * \namespace ground_to_ground_projectile_motion
+ * \brief Functions for the Ground to ground [projectile
  * motion](https://en.wikipedia.org/wiki/Projectile_motion) equation
  */
 namespace ground_to_ground_projectile_motion {
 /**
- * @brief Convert radians to degrees
- * @param radian Angle in radians
- * @returns Angle in degrees
+ * \brief Convert radians to degrees
+ * \param radian Angle in radians
+ * \returns Angle in degrees
  */
 
 double degrees_to_radians(double degrees){
@@ -42,11 +42,11 @@ double degrees_to_radians(double degrees){
 }
 
 /**
- * @brief Calculate the time of flight
- * @param initial_velocity The starting velocity of the projectile
- * @param angle The angle that the projectile is launched at in degrees
- * @param gravity The value used for the gravity constant
- * @returns The time that the projectile is in the air for
+ * \brief Calculate the time of flight
+ * \param initial_velocity The starting velocity of the projectile
+ * \param angle The angle that the projectile is launched at in degrees
+ * \param gravity The value used for the gravity constant
+ * \returns The time that the projectile is in the air for
  */
 template <typename T>
 T time_of_flight(T initial_velocity, T angle, double gravity = GRAVITY) {
@@ -55,10 +55,10 @@ T time_of_flight(T initial_velocity, T angle, double gravity = GRAVITY) {
 }
 
 /**
- * @brief Calculate the horizontal distance that the projectile travels
- * @param initial_velocity The starting velocity of the projectile
- * @param time The time that the projectile is in the air
- * @returns Horizontal distance that the projectile travels
+ * \brief Calculate the horizontal distance that the projectile travels
+ * \param initial_velocity The starting velocity of the projectile
+ * \param time The time that the projectile is in the air
+ * \returns Horizontal distance that the projectile travels
  */
 template <typename T>
 T horizontal_range(T initial_velocity, T angle, T time) {
@@ -67,11 +67,11 @@ T horizontal_range(T initial_velocity, T angle, T time) {
 }
 
 /**
- * @brief Calculate the max height of the projectile
- * @param initial_velocity The starting velocity of the projectile
- * @param angle The angle that the projectile is launched at in degrees
- * @param gravity The value used for the gravity constant
- * @returns The max height that the projectile reaches
+ * \brief Calculate the max height of the projectile
+ * \param initial_velocity The starting velocity of the projectile
+ * \param angle The angle that the projectile is launched at in degrees
+ * \param gravity The value used for the gravity constant
+ * \returns The max height that the projectile reaches
  */
 template <typename T>
 T max_height(T initial_velocity, T angle, double gravity = GRAVITY) {
@@ -82,8 +82,8 @@ T max_height(T initial_velocity, T angle, double gravity = GRAVITY) {
 }  // namespace physics
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // initial input variables
@@ -137,8 +137,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

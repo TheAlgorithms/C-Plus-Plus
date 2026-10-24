@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Subset-sum](https://en.wikipedia.org/wiki/Subset_sum_problem) (only
+ * \file
+ * \brief [Subset-sum](https://en.wikipedia.org/wiki/Subset_sum_problem) (only
  * continuous subsets) problem
- * @details We are given an array and a sum value. The algorithms find all
+ * \details We are given an array and a sum value. The algorithms find all
  * the subarrays of that array with sum equal to the given sum and return such
  * subarrays count. This approach will have \f$O(n)\f$ time complexity and
  * \f$O(n)\f$ space complexity. NOTE: In this problem, we are only referring to
@@ -10,7 +10,7 @@
  * using deletion operation at the end of the front of an array only. The parent
  * array is also counted in subarrays having 0 number of deletion operations.
  *
- * @author [Swastika Gupta](https://github.com/Swastyy)
+ * \author [Swastika Gupta](https://github.com/Swastyy)
  */
 
 #include <cassert>        /// for assert
@@ -20,21 +20,21 @@
 #include <vector>         /// for std::vector
 
 /**
- * @namespace backtracking
- * @brief Backtracking algorithms
+ * \namespace backtracking
+ * \brief Backtracking algorithms
  */
 namespace backtracking {
 /**
- * @namespace subarray_sum
- * @brief Functions for the [Subset
+ * \namespace subarray_sum
+ * \brief Functions for the [Subset
  * sum](https://en.wikipedia.org/wiki/Subset_sum_problem) implementation
  */
 namespace subarray_sum {
 /**
- * @brief The main function that implements the count of the subarrays
- * @param sum is the required sum of any subarrays
- * @param in_arr is the input array
- * @returns count of the number of subsets with required sum
+ * \brief The main function that implements the count of the subarrays
+ * \param sum is the required sum of any subarrays
+ * \param in_arr is the input array
+ * \returns count of the number of subsets with required sum
  */
 uint64_t subarray_sum(int64_t sum, const std::vector<int64_t> &in_arr) {
     int64_t nelement = in_arr.size();
@@ -62,8 +62,8 @@ uint64_t subarray_sum(int64_t sum, const std::vector<int64_t> &in_arr) {
 }  // namespace backtracking
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st test
@@ -109,8 +109,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

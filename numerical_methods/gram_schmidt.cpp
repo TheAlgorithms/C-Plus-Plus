@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief [Gram Schmidt Orthogonalisation
+ * \file
+ * \brief [Gram Schmidt Orthogonalisation
  * Process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
  *
- * @details
+ * \details
  * Takes the input of Linearly Independent Vectors,
  * returns vectors orthogonal to each other.
  *
@@ -25,7 +25,7 @@
  *  Please do not give linearly dependent vectors
  *
  *
- * @author [Akanksha Gupta](https://github.com/Akanksha-Gupta920)
+ * \author [Akanksha Gupta](https://github.com/Akanksha-Gupta920)
  */
 
 #include <array>     /// for std::array
@@ -36,13 +36,13 @@
 #include "math.h"
 
 /**
- * @namespace numerical_methods
- * @brief Numerical Methods algorithms
+ * \namespace numerical_methods
+ * \brief Numerical Methods algorithms
  */
 namespace numerical_methods {
 /**
- * @namespace gram_schmidt
- * @brief Functions for [Gram Schmidt Orthogonalisation
+ * \namespace gram_schmidt
+ * \brief Functions for [Gram Schmidt Orthogonalisation
  * Process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process)
  */
 namespace gram_schmidt {
@@ -50,11 +50,11 @@ namespace gram_schmidt {
  * Dot product function.
  * Takes 2 vectors along with their dimension as input and returns the dot
  * product.
- * @param x vector 1
- * @param y vector 2
- * @param c dimension of the vectors
+ * \param x vector 1
+ * \param y vector 2
+ * \param c dimension of the vectors
  *
- * @returns sum
+ * \returns sum
  */
 double dot_product(const std::array<double, 10>& x,
                    const std::array<double, 10>& y, const int& c) {
@@ -70,11 +70,11 @@ double dot_product(const std::array<double, 10>& x,
  * Takes input of 2 vectors along with their dimension and evaluates their
  * projection in temp
  *
- * @param x Vector 1
- * @param y Vector 2
- * @param c dimension of each vector
+ * \param x Vector 1
+ * \param y Vector 2
+ * \param c dimension of each vector
  *
- * @returns factor
+ * \returns factor
  */
 double projection(const std::array<double, 10>& x,
                   const std::array<double, 10>& y, const int& c) {
@@ -92,11 +92,11 @@ double projection(const std::array<double, 10>& x,
 /**
  * Function to print the orthogonalised vector
  *
- * @param r number of vectors
- * @param c dimenaion of vectors
- * @param B stores orthogonalised vectors
+ * \param r number of vectors
+ * \param c dimenaion of vectors
+ * \param B stores orthogonalised vectors
  *
- * @returns void
+ * \returns void
  */
 void display(const int& r, const int& c,
              const std::array<std::array<double, 10>, 20>& B) {
@@ -111,12 +111,12 @@ void display(const int& r, const int& c,
 
 /**
  * Function for the process of Gram Schimdt Process
- * @param r number of vectors
- * @param c dimension of vectors
- * @param A stores input of given LI vectors
- * @param B stores orthogonalised vectors
+ * \param r number of vectors
+ * \param c dimension of vectors
+ * \param A stores input of given LI vectors
+ * \param B stores orthogonalised vectors
  *
- * @returns void
+ * \returns void
  */
 void gram_schmidt(int r, const int& c,
                   const std::array<std::array<double, 10>, 20>& A,
@@ -176,7 +176,7 @@ void gram_schmidt(int r, const int& c,
 }  // namespace numerical_methods
 /**
  * Test Function. Process has been tested for 3 Sample Inputs
- * @returns void
+ * \returns void
  */
 static void test() {
     std::array<std::array<double, 10>, 20> a1 = {
@@ -242,8 +242,8 @@ static void test() {
 }
 
 /**
- * @brief Main Function
- * @return 0 on exit
+ * \brief Main Function
+ * \return 0 on exit
  */
 int main() {
     int r = 0, c = 0;

@@ -1,8 +1,8 @@
 /**
- * @file strand_sort.cpp
- * @brief Implementation of [Strand Sort](https://en.wikipedia.org/wiki/Strand_sort) algorithm.
+ * \file strand_sort.cpp
+ * \brief Implementation of [Strand Sort](https://en.wikipedia.org/wiki/Strand_sort) algorithm.
  *
- * @details
+ * \details
  * Strand Sort is a sorting algorithm that works in \f$O(n)\f$ time if list is already sorted and works in \f$O(n^2)\f$ in worst case.
  * 
  * It is passed over the array to be sorted once and the ascending (sequential) numbers are taken.
@@ -11,26 +11,26 @@
  * Now that the sorted array is not empty, the newly extracted substring is merged with the sorted array.
  * Repeat types 3 and 4 until the sub-sequence and main sequence are empty.
  * 
- * @author [Mertcan Davulcu](https://github.com/mertcandav)
+ * \author [Mertcan Davulcu](https://github.com/mertcandav)
  */
 #include <iostream>
 #include <list>
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
     /**
-    * @namespace strand
-    * @brief Functions for [Strand Sort](https://en.wikipedia.org/wiki/Strand_sort) algorithm
+    * \namespace strand
+    * \brief Functions for [Strand Sort](https://en.wikipedia.org/wiki/Strand_sort) algorithm
     */
     namespace strand {
         /**
-        * @brief Apply sorting
-        * @tparam element type of list
-        * @param lst List to be sorted
-        * @returns Sorted list<T> instance
+        * \brief Apply sorting
+        * \tparam element type of list
+        * \param lst List to be sorted
+        * \returns Sorted list<T> instance
         */
         template <typename T>
         std::list<T> strand_sort(std::list<T> lst) {
@@ -58,8 +58,8 @@ namespace sorting {
 }  // namespace sorting
 
 /**
- * @brief Function for testing
- * @return N/A
+ * \brief Function for testing
+ * \return N/A
  */
 static void test() {
     std::list<int> lst = { -333, 525, 1, 0, 94, 52, 33 };
@@ -78,8 +78,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();

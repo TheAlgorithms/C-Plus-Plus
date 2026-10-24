@@ -1,19 +1,19 @@
 /**
- * @file
- * @author [achance6](https://github.com/achance6)
- * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief Storage mechanism using [linear probing
+ * \file
+ * \author [achance6](https://github.com/achance6)
+ * \author [Krishna Vedala](https://github.com/kvedala)
+ * \brief Storage mechanism using [linear probing
  * hash](https://en.wikipedia.org/wiki/Linear_probing) keys.
- * @note The implementation can be optimized by using OOP style.
+ * \note The implementation can be optimized by using OOP style.
  */
 #include <iostream>
 #include <vector>
 
 /**
- * @addtogroup open_addressing Open Addressing
+ * \addtogroup open_addressing Open Addressing
  * @{
- * @namespace linear_probing
- * @brief An implementation of hash table using [linear
+ * \namespace linear_probing
+ * \brief An implementation of hash table using [linear
  * probing](https://en.wikipedia.org/wiki/Linear_probing) algorithm.
  */
 namespace linear_probing {
@@ -38,10 +38,10 @@ struct Entry {
 };
 
 /**
- * @brief Hash a key. Uses the STL library's `std::hash()` function.
+ * \brief Hash a key. Uses the STL library's `std::hash()` function.
  *
- * @param key value to hash
- * @return hash value of the key
+ * \param key value to hash
+ * \return hash value of the key
  */
 size_t hashFxn(int key) {
     std::hash<int> hash;
@@ -49,8 +49,8 @@ size_t hashFxn(int key) {
 }
 
 /** Performs linear probing to resolve collisions
- * @param key key value to hash
- * @return hash value of the key
+ * \param key key value to hash
+ * \return hash value of the key
  */
 int linearProbe(int key, bool searching) {
     int hash = static_cast<int>(hashFxn(key));
@@ -91,9 +91,9 @@ int linearProbe(int key, bool searching) {
 }
 
 /** Finds empty spot
- * @param entry instance to check in
- * @param key key value to hash
- * @return hash value of the key
+ * \param entry instance to check in
+ * \param key key value to hash
+ * \return hash value of the key
  */
 bool putProber(const Entry& entry, int key) {
     if (entry.key == notPresent || entry.key == tomb) {
@@ -103,9 +103,9 @@ bool putProber(const Entry& entry, int key) {
 }
 
 /** Looks for a matching key
- * @param entry instance to check in
- * @param key key value to hash
- * @return hash value of the key
+ * \param entry instance to check in
+ * \param key key value to hash
+ * \return hash value of the key
  */
 bool searchingProber(const Entry& entry, int key) {
     if (entry.key == key) {
@@ -115,7 +115,7 @@ bool searchingProber(const Entry& entry, int key) {
 }
 
 /** Function to displays the table
- * @returns none
+ * \returns none
  */
 void display() {
     for (int i = 0; i < totalSize; i++) {
@@ -133,7 +133,7 @@ void display() {
 }
 
 /** Rehashes the table into a bigger table
- * @returns None
+ * \returns None
  */
 void rehash() {
     // Necessary so wall of add info isn't printed all at once
@@ -156,7 +156,7 @@ void rehash() {
 }
 
 /** Adds entry using linear probing. Checks for load factor here
- * @param key key value to hash and add
+ * \param key key value to hash and add
  */
 void add(int key) {
     int index = linearProbe(key, false);
@@ -168,7 +168,7 @@ void add(int key) {
 }
 
 /** Removes key. Leaves tombstone upon removal.
- * @param key key value to hash and remove
+ * \param key key value to hash and remove
  */
 void remove(int key) {
     int index = linearProbe(key, true);
@@ -181,7 +181,7 @@ void remove(int key) {
 }
 
 /** Information about the adding process
- * @param key key value to hash and add
+ * \param key key value to hash and add
  */
 void addInfo(int key) {
     std::cout << "Initial table: ";
@@ -196,7 +196,7 @@ void addInfo(int key) {
 }
 
 /** Information about removal process
- * @param key key value to hash and remove
+ * \param key key value to hash and remove
  */
 void removalInfo(int key) {
     std::cout << "Initial table: ";
@@ -219,7 +219,7 @@ using linear_probing::table;
 using linear_probing::totalSize;
 
 /** Main function
- * @returns 0 on success
+ * \returns 0 on success
  */
 int main() {
     int cmd = 0, key = 0;

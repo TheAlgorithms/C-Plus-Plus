@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Given a linked list L[0,....,n] of n numbers, find the middle node.
+ * \file
+ * \brief Given a linked list L[0,....,n] of n numbers, find the middle node.
  *
- * @details The technique utilized in this implementation is the ["Floyd's
+ * \details The technique utilized in this implementation is the ["Floyd's
  * tortoise and
  * hare"](https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_tortoise_and_hare)
  * approach. This technique uses two pointers that iterate through the list at
@@ -18,8 +18,8 @@
  * print median(A) #should be 39
  * print median(B) #should be 4
  *
- * @author [Benjamin Weiss](https://github.com/weiss-ben)
- * @see median_search.cpp
+ * \author [Benjamin Weiss](https://github.com/weiss-ben)
+ * \see median_search.cpp
  */
 
 #include <cassert>   /// for assert
@@ -41,20 +41,20 @@ struct ListNode {
 };
 
 /**
- * @namespace search
- * @brief Search algorithms
+ * \namespace search
+ * \brief Search algorithms
  */
 namespace search {
 /**
- * @namespace median_search
- * @brief Functions for the Median Search algorithm implementation. Wkipedia
+ * \namespace median_search
+ * \brief Functions for the Median Search algorithm implementation. Wkipedia
  * link to algorithm: https://en.wikipedia.org/wiki/Median_search
  */
 namespace median_search2 {
 /**
  * This function searches for the median of a linked list.
- * @param head The head of the linked list.
- * @returns Median node of the linked list.
+ * \param head The head of the linked list.
+ * \returns Median node of the linked list.
  */
 ListNode* middleNode(ListNode* head) {
     if (!head) {
@@ -84,8 +84,8 @@ void deleteAll(const ListNode* const head) {
 }  // namespace search
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     auto* head1 = new ListNode;
@@ -133,8 +133,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

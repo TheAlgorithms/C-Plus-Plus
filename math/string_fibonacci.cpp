@@ -1,11 +1,11 @@
 /**
- * @file
- * @brief This Programme returns the Nth fibonacci as a string.
+ * \file
+ * \brief This Programme returns the Nth fibonacci as a string.
  *
  * The method used is manual addition with carry and placing it in a string
  * which is called string addition This makes it have no bounds or limits
  *
- * @see fibonacci_large.cpp, fibonacci_fast.cpp, fibonacci.cpp
+ * \see fibonacci_large.cpp, fibonacci_fast.cpp, fibonacci.cpp
  */
 
 #include <cstdint>

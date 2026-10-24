@@ -1,6 +1,6 @@
 /**
- * @author [shoniavika](https://github.com/shoniavika)
- * @file
+ * \author [shoniavika](https://github.com/shoniavika)
+ * \file
  *
  * Implementation of a Queue using two Stacks.
  */
@@ -11,9 +11,9 @@
 
 namespace {
 /**
- * @brief Queue data structure. Stores elements in FIFO
+ * \brief Queue data structure. Stores elements in FIFO
  * (first-in-first-out) manner.
- * @tparam T datatype to store in the queue
+ * \tparam T datatype to store in the queue
  */
 template <typename T>
 class MyQueue {

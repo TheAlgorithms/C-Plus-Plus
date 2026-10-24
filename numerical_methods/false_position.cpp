@@ -26,31 +26,31 @@
 #include <iostream>  /// for io operations
 
 /**
- * @namespace numerical_methods
- * @brief Numerical methods
+ * \namespace numerical_methods
+ * \brief Numerical methods
  */
 namespace numerical_methods {
 /**
- * @namespace false_position
- * @brief Functions for [False Position]
+ * \namespace false_position
+ * \brief Functions for [False Position]
  * (https://en.wikipedia.org/wiki/Regula_falsi) method.
  */
 namespace false_position {
 /**
- * @brief This function gives the value of f(x) for given x.
- * @param x value for which we have to find value of f(x).
- * @return value of f(x) for given x.
+ * \brief This function gives the value of f(x) for given x.
+ * \param x value for which we have to find value of f(x).
+ * \return value of f(x) for given x.
  */
 static float eq(float x) {
     return (x * x - x);  // original equation
 }
 
 /**
-* @brief This function finds root of the equation in given interval i.e.
+* \brief This function finds root of the equation in given interval i.e.
 (x1,x2).
-* @param x1,x2 values for an interval in which root is present.
-  @param y1,y2 values of function at x1, x2 espectively.
-* @return root of the equation in the given interval.
+* \param x1,x2 values for an interval in which root is present.
+  \param y1,y2 values of function at x1, x2 espectively.
+* \return root of the equation in the given interval.
 */
 static float regula_falsi(float x1, float x2, float y1, float y2) {
     float diff = x1 - x2;
@@ -77,9 +77,9 @@ static float regula_falsi(float x1, float x2, float y1, float y2) {
 }
 
 /**
- * @brief This function prints roots of the equation.
- * @param root which we have to print.
- * @param count which is count of the root in an interval [-range,range].
+ * \brief This function prints roots of the equation.
+ * \param root which we have to print.
+ * \param count which is count of the root in an interval [-range,range].
  */
 void printRoot(float root, const int16_t &count) {
     if (count == 1) {
@@ -96,8 +96,8 @@ void printRoot(float root, const int16_t &count) {
 }  // namespace numerical_methods
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     float a = 0, b = 0, i = 0, root = 0;

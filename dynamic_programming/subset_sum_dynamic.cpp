@@ -1,17 +1,17 @@
 /**
- * @file
- * @brief Implements [Sub-set sum problem]
+ * \file
+ * \brief Implements [Sub-set sum problem]
  * (https://en.wikipedia.org/wiki/Subset_sum_problem) algorithm, which tells
  * whether a subset with target sum exists or not.
  *
- * @details
+ * \details
  * In this problem, we use dynamic programming to find if we can pull out a
  * subset from an array whose sum is equal to a given target sum. The overall
  * time complexity of the problem is O(n * targetSum) where n is the size of
  * the array. For example, array = [1, -10, 2, 31, -6], targetSum = -14.
  * Output: true => We can pick subset [-10, 2, -6] with sum as
  * (-10) + 2 + (-6) = -14.
- * @author [KillerAV](https://github.com/KillerAV)
+ * \author [KillerAV](https://github.com/KillerAV)
  */
 
 #include <cassert>        /// for std::assert
@@ -20,14 +20,14 @@
 #include <vector>         /// for std::vector
 
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 
 /**
- * @namespace subset_sum
- * @brief Functions for [Sub-set sum problem]
+ * \namespace subset_sum
+ * \brief Functions for [Sub-set sum problem]
  * (https://en.wikipedia.org/wiki/Subset_sum_problem) algorithm
  */
 namespace subset_sum {
@@ -35,10 +35,10 @@ namespace subset_sum {
 /**
  * Recursive function using dynamic programming to find if the required sum
  * subset exists or not.
- * @param arr input array
- * @param targetSum the target sum of the subset
- * @param dp the map storing the results
- * @returns true/false based on if the target sum subset exists or not.
+ * \param arr input array
+ * \param targetSum the target sum of the subset
+ * \param dp the map storing the results
+ * \returns true/false based on if the target sum subset exists or not.
  */
 bool subset_sum_recursion(const std::vector<int> &arr, int targetSum,
                           std::vector<std::unordered_map<int, bool>> *dp,
@@ -63,9 +63,9 @@ bool subset_sum_recursion(const std::vector<int> &arr, int targetSum,
 
 /**
  * Function implementing subset sum algorithm using top-down approach
- * @param arr input array
- * @param targetSum the target sum of the subset
- * @returns true/false based on if the target sum subset exists or not.
+ * \param arr input array
+ * \param targetSum the target sum of the subset
+ * \returns true/false based on if the target sum subset exists or not.
  */
 bool subset_sum_problem(const std::vector<int> &arr, const int targetSum) {
     size_t n = arr.size();
@@ -76,8 +76,8 @@ bool subset_sum_problem(const std::vector<int> &arr, const int targetSum) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Test Function
- * @return void
+ * \brief Test Function
+ * \return void
  */
 static void test() {
     // custom input vector
@@ -114,8 +114,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the test

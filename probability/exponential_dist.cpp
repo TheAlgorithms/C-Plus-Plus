@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief [Exponential
+ * \file
+ * \brief [Exponential
  * Distribution](https://en.wikipedia.org/wiki/Exponential_distribution)
  *
  * The exponential distribution is used to model
@@ -19,20 +19,20 @@
 #include <string>     // For std::string
 
 /**
- * @namespace probability
- * @brief Probability algorithms
+ * \namespace probability
+ * \brief Probability algorithms
  */
 namespace probability {
 /**
- * @namespace exponential_dist
- * @brief Functions for the [Exponential
+ * \namespace exponential_dist
+ * \brief Functions for the [Exponential
  * Distribution](https://en.wikipedia.org/wiki/Exponential_distribution)
  * algorithm implementation
  */
 namespace geometric_dist {
 /**
- * @brief the expected value of the exponential distribution
- * @returns \f[\mu = \frac{1}{\lambda}\f]
+ * \brief the expected value of the exponential distribution
+ * \returns \f[\mu = \frac{1}{\lambda}\f]
  */
 double exponential_expected(double lambda) {
     if (lambda <= 0) {
@@ -42,8 +42,8 @@ double exponential_expected(double lambda) {
 }
 
 /**
- * @brief the variance of the exponential distribution
- * @returns \f[\sigma^2 = \frac{1}{\lambda^2}\f]
+ * \brief the variance of the exponential distribution
+ * \returns \f[\sigma^2 = \frac{1}{\lambda^2}\f]
  */
 double exponential_var(double lambda) {
     if (lambda <= 0) {
@@ -53,8 +53,8 @@ double exponential_var(double lambda) {
 }
 
 /**
- * @brief the standard deviation of the exponential distribution
- * @returns \f[\sigma = \frac{1}{\lambda}\f]
+ * \brief the standard deviation of the exponential distribution
+ * \returns \f[\sigma = \frac{1}{\lambda}\f]
  */
 double exponential_std(double lambda) {
     if (lambda <= 0) {
@@ -66,8 +66,8 @@ double exponential_std(double lambda) {
 }  // namespace probability
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     double lambda_1 = 1;
@@ -142,8 +142,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @return 0 on exit
+ * \brief Main function
+ * \return 0 on exit
  */
 int main() {
     test();  // Self test implementation

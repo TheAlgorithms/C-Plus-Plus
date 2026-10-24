@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Algorithm of [Radix sort](https://en.wikipedia.org/wiki/Radix_sort)
- * @author [Suyash Jaiswal](https://github.com/Suyashjaiswal)
- * @details
+ * \file
+ * \brief Algorithm of [Radix sort](https://en.wikipedia.org/wiki/Radix_sort)
+ * \author [Suyash Jaiswal](https://github.com/Suyashjaiswal)
+ * \details
  * Sort the vector of unsigned integers using radix sort i.e. sorting digit by
  * digit using [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort) as
  * subroutine. Running time of radix sort is O(d*(n+b)) where b is the base for
@@ -31,22 +31,22 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 /**
- * @namespace radix_sort
- * @brief Functions for [Radix sort](https://en.wikipedia.org/wiki/Radix_sort)
+ * \namespace radix_sort
+ * \brief Functions for [Radix sort](https://en.wikipedia.org/wiki/Radix_sort)
  * algorithm
  */
 namespace radix_sort {
 /**
- * @brief Function to sort vector according to current digit using stable
+ * \brief Function to sort vector according to current digit using stable
  * sorting.
- * @param cur_digit - sort according to the cur_digit
- * @param ar - vector to be sorted
- * @returns std::vector sorted till ith digit
+ * \param cur_digit - sort according to the cur_digit
+ * \param ar - vector to be sorted
+ * \returns std::vector sorted till ith digit
  */
 std::vector<uint64_t> step_ith(
     uint16_t cur_digit,
@@ -75,9 +75,9 @@ std::vector<uint64_t> step_ith(
     return temp;
 }
 /**
- * @brief Function to sort vector digit by digit.
- * @param ar - vector to be sorted
- * @returns sorted vector
+ * \brief Function to sort vector digit by digit.
+ * \param ar - vector to be sorted
+ * \returns sorted vector
  */
 std::vector<uint64_t> radix(const std::vector<uint64_t>& ar) {
     uint64_t max_ele =
@@ -98,8 +98,8 @@ std::vector<uint64_t> radix(const std::vector<uint64_t>& ar) {
 }  // namespace sorting
 
 /**
- * @brief Function to test the above algorithm
- * @returns none
+ * \brief Function to test the above algorithm
+ * \returns none
  */
 static void tests() {
     /// Test 1
@@ -113,8 +113,8 @@ static void tests() {
     assert(std::is_sorted(ar2.begin(), ar2.end()));
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // execute the tests

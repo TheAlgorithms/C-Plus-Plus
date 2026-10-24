@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Library to perform arithmatic operations on arbitrarily large
+ * \file
+ * \brief Library to perform arithmatic operations on arbitrarily large
  * numbers.
  * \author [Krishna Vedala](https://github.com/kvedala)
  */

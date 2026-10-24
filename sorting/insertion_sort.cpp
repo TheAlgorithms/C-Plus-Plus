@@ -51,9 +51,9 @@ namespace sorting {
 /** \brief
  * Insertion Sort Function
  *
- * @tparam T type of array
- * @param [in,out] arr Array to be sorted
- * @param n Size of Array
+ * \tparam T type of array
+ * \param [in,out] arr Array to be sorted
+ * \param n Size of Array
  */
 template <typename T>
 void insertionSort(T *arr, int n) {
@@ -70,8 +70,8 @@ void insertionSort(T *arr, int n) {
 
 /** Insertion Sort Function
  *
- * @tparam T type of array
- * @param [in,out] arr pointer to array to be sorted
+ * \tparam T type of array
+ * \param [in,out] arr pointer to array to be sorted
  */
 template <typename T>
 void insertionSort(std::vector<T> *arr) {
@@ -91,11 +91,11 @@ void insertionSort(std::vector<T> *arr) {
 }  // namespace sorting
 
 /**
- * @brief Create a random array objecthelper function to create a random array
+ * \brief Create a random array objecthelper function to create a random array
  *
- * @tparam T type of array
- * @param arr array to fill (must be pre-allocated)
- * @param N number of array elements
+ * \tparam T type of array
+ * \param arr array to fill (must be pre-allocated)
+ * \param N number of array elements
  */
 template <typename T>
 static void create_random_array(T *arr, int N) {

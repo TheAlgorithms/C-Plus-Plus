@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief Implementation of the [Subset
+ * \file
+ * \brief Implementation of the [Subset
  * Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem.
- * @details
+ * \details
  * We are given an array and a sum value. The algorithm finds all
  * the subsets of that array with sum equal to the given sum and return such
  * subsets count. This approach will have exponential time complexity.
- * @author [Swastika Gupta](https://github.com/Swastyy)
+ * \author [Swastika Gupta](https://github.com/Swastyy)
  */
 
 #include <cassert>   /// for assert
@@ -15,21 +15,21 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace backtracking
- * @brief Backtracking algorithms
+ * \namespace backtracking
+ * \brief Backtracking algorithms
  */
 namespace backtracking {
 /**
- * @namespace Subsets
- * @brief Functions for the [Subset
+ * \namespace Subsets
+ * \brief Functions for the [Subset
  * Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem.
  */
 namespace subset_sum {
 /**
- * @brief The main function implements count of subsets
- * @param sum is the required sum of any subset
- * @param in_arr is the input array
- * @returns count of the number of subsets with required sum
+ * \brief The main function implements count of subsets
+ * \param sum is the required sum of any subset
+ * \param in_arr is the input array
+ * \returns count of the number of subsets with required sum
  */
 uint64_t number_of_subsets(int32_t sum, const std::vector<int32_t> &in_arr) {
     int32_t nelement = in_arr.size();
@@ -52,8 +52,8 @@ uint64_t number_of_subsets(int32_t sum, const std::vector<int32_t> &in_arr) {
 }  // namespace backtracking
 
 /**
- * @brief Test implementations
- * @returns void
+ * \brief Test implementations
+ * \returns void
  */
 static void test() {
     // 1st test
@@ -98,8 +98,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

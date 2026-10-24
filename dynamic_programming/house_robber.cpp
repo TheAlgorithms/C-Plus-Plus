@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief Implementation of [House Robber
+ * \file
+ * \brief Implementation of [House Robber
  * Problem](https://labuladong.gitbook.io/algo-en/i.-dynamic-programming/houserobber)
  * algorithm
- * @details
+ * \details
  * Solution of House robber problem uses a dynamic programming concept that
  * works in \f$O(n)\f$ time and works in \f$O(1)\f$ space.
- * @author [Swastika Gupta](https://github.com/Swastyy)
+ * \author [Swastika Gupta](https://github.com/Swastyy)
  */
 
 #include <cassert>   /// for assert
@@ -15,23 +15,23 @@
 #include <iostream>  /// for io operations
 #include <vector>    /// for std::vector
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 /**
- * @namespace house_robber
- * @brief Functions for the [House
+ * \namespace house_robber
+ * \brief Functions for the [House
  * Robber](https://labuladong.gitbook.io/algo-en/i.-dynamic-programming/houserobber)
  * algorithm
  */
 namespace house_robber {
 /**
- * @brief The main function that implements the House Robber algorithm using
+ * \brief The main function that implements the House Robber algorithm using
  * dynamic programming
- * @param money array containing money in the ith house
- * @param n size of array
- * @returns maximum amount of money that can be robbed
+ * \param money array containing money in the ith house
+ * \param n size of array
+ * \returns maximum amount of money that can be robbed
  */
 std::uint32_t houseRobber(const std::vector<uint32_t> &money,
                           const uint32_t &n) {
@@ -60,8 +60,8 @@ std::uint32_t houseRobber(const std::vector<uint32_t> &money,
 }  // namespace dynamic_programming
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // Test 1
@@ -105,8 +105,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

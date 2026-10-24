@@ -17,10 +17,10 @@ int getSize(Node *root) {
 }
 
 /*
- * @brief This function dealocates memory related to the given list
+ * \brief This function dealocates memory related to the given list
  * It recursively deletes all of the nodes of the input list.
- * @param room the root/head of the input list
- * @warning Plese note that the memory for each node has to be alocated using new.
+ * \param room the root/head of the input list
+ * \warning Plese note that the memory for each node has to be alocated using new.
  */
 void deleteList(Node *const root) {
     if (root != NULL)

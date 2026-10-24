@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Perform paranthesis matching. \note Do not know the application of
+ * \file
+ * \brief Perform paranthesis matching. \note Do not know the application of
  * this, however.
- * @note Implementation is C-type and does not utilize the C++ constructs
- * @todo implement as a C++ class
+ * \note Implementation is C-type and does not utilize the C++ constructs
+ * \todo implement as a C++ class
  */
 #include <iostream>
 #ifdef _MSC_VER
@@ -31,7 +31,7 @@ char pop() { return stack[stack_idx--]; }
 //! @}-------------- end stack -----------
 
 /** return opening paranthesis corresponding to the close paranthesis
- * @param[in] ch closed paranthesis character
+ * \param[in] ch closed paranthesis character
  */
 char opening(char ch) {
     switch (ch) {

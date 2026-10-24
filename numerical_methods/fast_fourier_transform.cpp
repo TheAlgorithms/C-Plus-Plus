@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief [A fast Fourier transform
+ * \file
+ * \brief [A fast Fourier transform
  * (FFT)](https://medium.com/@aiswaryamathur/understanding-fast-fouriertransform-from-scratch-to-solve-polynomial-multiplication-8018d511162f)
  * is an algorithm that computes the
  * discrete Fourier transform (DFT) of a sequence, or its inverse (IDFT).
- * @details
+ * \details
  * This
  * algorithm has application in use case scenario where a user wants to find
  points of a
@@ -16,7 +16,7 @@
  * Time complexity
  * this algorithm computes the DFT in O(nlogn) time in comparison to traditional
  O(n^2).
- * @author [Ameya Chawla](https://github.com/ameyachawlaggsipu)
+ * \author [Ameya Chawla](https://github.com/ameyachawlaggsipu)
  */
 
 #include <cassert>   /// for assert
@@ -27,17 +27,17 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace numerical_methods
- * @brief Numerical algorithms/methods
+ * \namespace numerical_methods
+ * \brief Numerical algorithms/methods
  */
 namespace numerical_methods {
 /**
- * @brief FastFourierTransform is a recursive function which returns list of
+ * \brief FastFourierTransform is a recursive function which returns list of
  * complex numbers
- * @param p List of Coefficents in form of complex numbers
- * @param n Count of elements in list p
- * @returns p if n==1
- * @returns y if n!=1
+ * \param p List of Coefficents in form of complex numbers
+ * \param n Count of elements in list p
+ * \returns p if n==1
+ * \returns y if n!=1
  */
 std::complex<double> *FastFourierTransform(std::complex<double> *p, uint8_t n) {
     if (n == 1) {
@@ -96,11 +96,11 @@ std::complex<double> *FastFourierTransform(std::complex<double> *p, uint8_t n) {
 }  // namespace numerical_methods
 
 /**
- * @brief Self-test implementations
- * @details
+ * \brief Self-test implementations
+ * \details
  * Declaring two test cases and checking for the error
  * in predicted and true value is less than 0.000000000001.
- * @returns void
+ * \returns void
  */
 static void test() {
     /* descriptions of the following test */
@@ -153,9 +153,9 @@ static void test() {
 }
 
 /**
- * @brief Main function
+ * \brief Main function
  * calls automated test function to test the working of fast fourier transform.
- * @returns 0 on exit
+ * \returns 0 on exit
  */
 
 int main() {

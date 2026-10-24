@@ -1,7 +1,7 @@
 /**
- * @file
- * @brief Compute prime numbers upto 1 billion
- * @see prime_numbers.cpp sieve_of_eratosthenes.cpp
+ * \file
+ * \brief Compute prime numbers upto 1 billion
+ * \see prime_numbers.cpp sieve_of_eratosthenes.cpp
  */
 #include <cstring>
 #include <iostream>

@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Implementation of the [Sublist Search
+ * \file
+ * \brief Implementation of the [Sublist Search
  * Algorithm](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list)
- * @details
+ * \details
  *
  * ### Algorithm
  *
@@ -22,7 +22,7 @@
  *  * If the two values don't match, it goes to the next element of the
  *  second list. It does this until the two values match.
  *
- * @author [Nitin Sharma](https://github.com/foo290)
+ * \author [Nitin Sharma](https://github.com/foo290)
  */
 
 #include <cassert>   /// for assert
@@ -31,19 +31,19 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace search
- * @brief Searching algorithms
+ * \namespace search
+ * \brief Searching algorithms
  */
 namespace search {
 /**
- * @namespace sublist_search
- * @brief Functions for the [Sublist
+ * \namespace sublist_search
+ * \brief Functions for the [Sublist
  * Search](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list)
  * implementation
  */
 namespace sublist_search {
 /**
- * @brief A Node structure representing a single link Node in a linked list
+ * \brief A Node structure representing a single link Node in a linked list
  */
 struct Node {
     uint32_t data = 0;  ///< the key/value of the node
@@ -51,9 +51,9 @@ struct Node {
 };
 
 /**
- * @brief A simple function to print the linked list
- * @param start The head of the linked list
- * @returns void
+ * \brief A simple function to print the linked list
+ * \param start The head of the linked list
+ * \returns void
  */
 void printLinkedList(Node *start) {
     while (start != nullptr) {
@@ -64,12 +64,12 @@ void printLinkedList(Node *start) {
 }
 
 /**
- * @brief Give a vector of data,
+ * \brief Give a vector of data,
  * it adds each element of vector in the linked list and return the address of
  * head pointer.
- * @param data A vector of "int" containing the data that is supposed to be
+ * \param data A vector of "int" containing the data that is supposed to be
  * stored in nodes of linked list.
- * @returns Node* A head pointer to the linked list.
+ * \returns Node* A head pointer to the linked list.
  */
 Node *makeLinkedList(const std::vector<uint64_t> &data) {
     /// This is used in test cases for rapidly creating linked list with 100+
@@ -92,10 +92,10 @@ Node *makeLinkedList(const std::vector<uint64_t> &data) {
 }
 
 /*
- * @brief This function dealocates memory related to the given list
+ * \brief This function dealocates memory related to the given list
  * It recursively deletes all of the nodes of the input list.
- * @param room the root/head of the input list
- * @warning Plese note that the memory for each node has to be alocated using
+ * \param room the root/head of the input list
+ * \warning Plese note that the memory for each node has to be alocated using
  * new.
  */
 void deleteList(Node *const root) {
@@ -106,11 +106,11 @@ void deleteList(Node *const root) {
 }
 
 /**
- * @brief Main searching function
- * @param sublist A linked list which is supposed to be searched in mainList.
- * @param mainList A linked list in which sublist will be searched.
- * @returns true if the sublist is found
- * @returns false if the sublist is NOT found
+ * \brief Main searching function
+ * \param sublist A linked list which is supposed to be searched in mainList.
+ * \param mainList A linked list in which sublist will be searched.
+ * \returns true if the sublist is found
+ * \returns false if the sublist is NOT found
  */
 bool sublistSearch(Node *sublist, Node *mainList) {
     if (sublist == nullptr || mainList == nullptr) {
@@ -163,14 +163,14 @@ bool sublistSearch(Node *sublist, Node *mainList) {
 }  // namespace search
 
 /**
- * @brief class encapsulating the necessary test cases
+ * \brief class encapsulating the necessary test cases
  */
 class TestCases {
  private:
     /**
-     * @brief A function to print given message on console.
-     * @tparam T Type of the given message.
-     * @returns void
+     * \brief A function to print given message on console.
+     * \tparam T Type of the given message.
+     * \returns void
      * */
     template <typename T>
     void log(T msg) {
@@ -180,8 +180,8 @@ class TestCases {
 
  public:
     /**
-     * @brief Executes test cases
-     * @returns void
+     * \brief Executes test cases
+     * \returns void
      * */
     void runTests() {
         log("Running Tests...");
@@ -195,8 +195,8 @@ class TestCases {
     }
 
     /**
-     * @brief A test case contains edge case, Only contains one element.
-     * @returns void
+     * \brief A test case contains edge case, Only contains one element.
+     * \returns void
      * */
     void testCase_1() {
         const bool expectedOutput = true;  ///< Expected output of this test
@@ -237,9 +237,9 @@ class TestCases {
     }
 
     /**
-     * @brief A test case which contains main list of 100 elements and sublist
+     * \brief A test case which contains main list of 100 elements and sublist
      * of 20.
-     * @returns void
+     * \returns void
      * */
     void testCase_2() {
         const bool expectedOutput = true;  /// Expected output of this test
@@ -291,9 +291,9 @@ class TestCases {
     }
 
     /**
-     * @brief A test case which contains main list of 50 elements and sublist
+     * \brief A test case which contains main list of 50 elements and sublist
      * of 20.
-     * @returns void
+     * \returns void
      * */
     void testCase_3() {
         const bool expectedOutput = false;  ///< Expected output of this test
@@ -343,8 +343,8 @@ class TestCases {
 };
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     TestCases tc;
@@ -352,8 +352,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

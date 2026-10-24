@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Simple implementation of [modular multiplicative
+ * \file
+ * \brief Simple implementation of [modular multiplicative
  * inverse](https://en.wikipedia.org/wiki/Modular_multiplicative_inverse)
  *
- * @details
+ * \details
  * this algorithm calculates the modular inverse x^{-1} \mod y iteratively
  */
 
@@ -12,11 +12,11 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @brief Function imod
+ * \brief Function imod
  * Calculates the modular inverse of x with respect to y, x^{-1} \mod y
- * @param x number
- * @param y number
- * @returns the modular inverse
+ * \param x number
+ * \param y number
+ * \returns the modular inverse
  */
 uint64_t imod(uint64_t x, uint64_t y) {
     uint64_t aux = 0;  // auxiliary variable
@@ -31,8 +31,8 @@ uint64_t imod(uint64_t x, uint64_t y) {
 }
 
 /**
- * @brief  self-test implementations
- * @returns void
+ * \brief  self-test implementations
+ * \returns void
  */
 static void test() {
     std::cout << "First case testing... \n";
@@ -53,8 +53,8 @@ static void test() {
     std::cout << "\nAll test cases have successfully passed!\n";
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

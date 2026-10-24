@@ -1,13 +1,13 @@
 ﻿/**
- * @author [Jason Nardoni](https://github.com/JNardoni)
- * @file
+ * \author [Jason Nardoni](https://github.com/JNardoni)
+ * \file
  *
- * @brief
+ * \brief
  * [Borůvkas Algorithm](https://en.wikipedia.org/wiki/Borůvka's_algorithm) to
  *find the Minimum Spanning Tree
  *
  *
- * @details
+ * \details
  * Boruvka's algorithm is a greepy algorithm to find the MST by starting with
  *small trees, and combining them to build bigger ones.
  *	1. Creates a group for every vertex.
@@ -28,21 +28,21 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace greedy_algorithms
- * @brief Greedy Algorithms
+ * \namespace greedy_algorithms
+ * \brief Greedy Algorithms
  */
 namespace greedy_algorithms {
 /**
- * @namespace boruvkas_minimum_spanning_tree
- * @brief Functions for the [Borůvkas
+ * \namespace boruvkas_minimum_spanning_tree
+ * \brief Functions for the [Borůvkas
  * Algorithm](https://en.wikipedia.org/wiki/Borůvka's_algorithm) implementation
  */
 namespace boruvkas_minimum_spanning_tree {
 /**
- * @brief Recursively returns the vertex's parent at the root of the tree
- * @param parent the array that will be checked
- * @param v vertex to find parent of
- * @returns the parent of the vertex
+ * \brief Recursively returns the vertex's parent at the root of the tree
+ * \param parent the array that will be checked
+ * \param v vertex to find parent of
+ * \returns the parent of the vertex
  */
 int findParent(std::vector<std::pair<int, int>> parent, const int v) {
     if (parent[v].first != v) {
@@ -53,9 +53,9 @@ int findParent(std::vector<std::pair<int, int>> parent, const int v) {
 }
 
 /**
- * @brief the implementation of boruvka's algorithm
- * @param adj a graph adjancency matrix stored as 2d vectors.
- * @returns the MST as 2d vectors
+ * \brief the implementation of boruvka's algorithm
+ * \param adj a graph adjancency matrix stored as 2d vectors.
+ * \returns the MST as 2d vectors
  */
 std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
     size_t size = adj.size();
@@ -168,9 +168,9 @@ std::vector<std::vector<int>> boruvkas(std::vector<std::vector<int>> adj) {
 }
 
 /**
- * @brief counts the sum of edges in the given tree
- * @param adj 2D vector adjacency matrix
- * @returns the int size of the tree
+ * \brief counts the sum of edges in the given tree
+ * \param adj 2D vector adjacency matrix
+ * \returns the int size of the tree
  */
 int test_findGraphSum(std::vector<std::vector<int>> adj) {
     size_t size = adj.size();
@@ -190,8 +190,8 @@ int test_findGraphSum(std::vector<std::vector<int>> adj) {
 }  // namespace greedy_algorithms
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     std::cout << "Starting tests...\n\n";
@@ -218,8 +218,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // run self-test implementations

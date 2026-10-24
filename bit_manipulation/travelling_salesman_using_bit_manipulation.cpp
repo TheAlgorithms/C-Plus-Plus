@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief Implementation to
+ * \file
+ * \brief Implementation to
  * [Travelling Salesman problem using bit-masking]
  * (https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)
  *
- * @details
+ * \details
  * Given the distance/cost(as and adjacency matrix) between each city/node to
  * the other city/node , the problem is to find the shortest possible route that
  * visits every city exactly once and returns to the starting point or we can
@@ -18,7 +18,7 @@
  *
  * Worst Case Time Complexity: O(n^2 * 2^n)
  * Space complexity: O(n)
- * @author [Utkarsh Yadav](https://github.com/Rytnix)
+ * \author [Utkarsh Yadav](https://github.com/Rytnix)
  */
 #include <algorithm>  /// for std::min
 #include <cassert>    /// for assert
@@ -28,26 +28,26 @@
 #include <vector>     /// for std::vector
 
 /**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
+ * \namespace bit_manipulation
+ * \brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 /**
- * @namespace travellingSalesman_bitmanipulation
- * @brief Functions for the [Travelling Salesman
+ * \namespace travellingSalesman_bitmanipulation
+ * \brief Functions for the [Travelling Salesman
  * Bitmask](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)
  * implementation
  */
 namespace travelling_salesman_using_bit_manipulation {
 /**
- * @brief The function implements travellingSalesman using bitmanipulation
- * @param dist is the cost to reach between two cities/nodes
- * @param setOfCitites represents the city in bit form.\
- * @param city is taken to track the current city movement.
- * @param n is the no of citys .
- * @param dp vector is used to keep a record of state to avoid the
+ * \brief The function implements travellingSalesman using bitmanipulation
+ * \param dist is the cost to reach between two cities/nodes
+ * \param setOfCitites represents the city in bit form.\
+ * \param city is taken to track the current city movement.
+ * \param n is the no of citys .
+ * \param dp vector is used to keep a record of state to avoid the
  * recomputation.
- * @returns minimum cost of traversing whole nodes/cities from starting point
+ * \returns minimum cost of traversing whole nodes/cities from starting point
  * back to starting point
  */
 std::uint64_t travelling_salesman_using_bit_manipulation(
@@ -94,8 +94,8 @@ std::uint64_t travelling_salesman_using_bit_manipulation(
 }  // namespace bit_manipulation
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st test-case
@@ -133,8 +133,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

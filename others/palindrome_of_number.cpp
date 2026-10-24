@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Check if a number is
+ * \file
+ * \brief Check if a number is
  * [palindrome](https://en.wikipedia.org/wiki/Palindrome) or not.
  *
  * This program cheats by using the STL library's std::reverse function.

@@ -1,7 +1,7 @@
 /**
- * @file
- * @brief [Atbash Cipher](https://en.wikipedia.org/wiki/Atbash) implementation
- * @details The Atbash cipher is a subsitution cipher where the letters of the
+ * \file
+ * \brief [Atbash Cipher](https://en.wikipedia.org/wiki/Atbash) implementation
+ * \details The Atbash cipher is a subsitution cipher where the letters of the
  * alphabet are in reverse. For example, A is replaced with Z, B is replaced
  * with Y, etc.
  *
@@ -10,7 +10,7 @@
  * for each letter in the word and replaces it. Spaces are ignored and case is
  * preserved.
  *
- * @author [Focusucof](https://github.com/Focusucof)
+ * \author [Focusucof](https://github.com/Focusucof)
  */
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
@@ -40,9 +40,9 @@ std::map<char, char> atbash_cipher_map = {
 };
 
 /**
- * @brief atbash cipher encryption and decryption
- * @param text Plaintext to be encrypted
- * @returns encoded or decoded string
+ * \brief atbash cipher encryption and decryption
+ * \param text Plaintext to be encrypted
+ * \returns encoded or decoded string
  */
 std::string atbash_cipher(const std::string& text) {
     std::string result;
@@ -56,8 +56,8 @@ std::string atbash_cipher(const std::string& text) {
 }  // namespace ciphers
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st test
@@ -75,8 +75,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief
+ * \file
+ * \brief
  * The
  * [Boyer–Moore](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm)
  * algorithm searches for occurrences of pattern P in text T by performing
@@ -9,7 +9,7 @@
  * Boyer–Moore uses information gained by preprocessing P to skip as many
  * alignments as possible.
  *
- * @details
+ * \details
  * The key insight in this algorithm is that if the end of the pattern is
  * compared to the text, then jumps along the text can be made rather than
  * checking every character of the text. The reason that this works is that in
@@ -39,7 +39,7 @@
  *
  * The shift rules are implemented as constant-time table lookups, using tables
  * generated during the preprocessing of P.
- * @author [Stoycho Kyosev](https://github.com/stoychoX)
+ * \author [Stoycho Kyosev](https://github.com/stoychoX)
  */
 
 #include <cassert>   /// for assert
@@ -52,19 +52,19 @@
 #define APLHABET_SIZE CHAR_MAX  ///< number of symbols in the alphabet we use
 
 /**
- * @namespace
- * @brief String algorithms
+ * \namespace
+ * \brief String algorithms
  */
 namespace strings {
 /**
- * @namespace
- * @brief Functions for the [Boyer
+ * \namespace
+ * \brief Functions for the [Boyer
  * Moore](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm)
  * algorithm implementation
  */
 namespace boyer_moore {
 /**
- * @brief A structure representing all the data we need to search the
+ * \brief A structure representing all the data we need to search the
  * preprocessed pattern in text.
  */
 struct pattern {
@@ -80,11 +80,11 @@ struct pattern {
 };
 
 /**
- * @brief A function that preprocess the good suffix thable
+ * \brief A function that preprocess the good suffix thable
  *
- * @param str The string being preprocessed
- * @param arg The good suffix table
- * @returns void
+ * \param str The string being preprocessed
+ * \param arg The good suffix table
+ * \returns void
  */
 void init_good_suffix(const std::string& str, std::vector<size_t>& arg) {
     arg.resize(str.size() + 1, 0);
@@ -129,11 +129,11 @@ void init_good_suffix(const std::string& str, std::vector<size_t>& arg) {
 }
 
 /**
- * @brief A function that preprocess the bad char table
+ * \brief A function that preprocess the bad char table
  *
- * @param str The string being preprocessed
- * @param arg The bad char table
- * @returns void
+ * \param str The string being preprocessed
+ * \param arg The bad char table
+ * \returns void
  */
 void init_bad_char(const std::string& str, std::vector<size_t>& arg) {
     arg.resize(APLHABET_SIZE, str.length());
@@ -144,11 +144,11 @@ void init_bad_char(const std::string& str, std::vector<size_t>& arg) {
 }
 
 /**
- * @brief A function that initializes pattern
+ * \brief A function that initializes pattern
  *
- * @param str Text used for initialization
- * @param arg Initialized structure
- * @returns void
+ * \param str Text used for initialization
+ * \param arg Initialized structure
+ * \returns void
  */
 void init_pattern(const std::string& str, pattern& arg) {
     arg.pat = str;
@@ -156,11 +156,11 @@ void init_pattern(const std::string& str, pattern& arg) {
     init_good_suffix(str, arg.good_suffix);
 }
 /**
- * @brief A function that implements Boyer-Moore's algorithm.
+ * \brief A function that implements Boyer-Moore's algorithm.
  *
- * @param str Text we are seatching in.
- * @param arg pattern structure containing the preprocessed pattern
- * @return Vector of indexes of the occurrences of pattern in text
+ * \param str Text we are seatching in.
+ * \param arg pattern structure containing the preprocessed pattern
+ * \return Vector of indexes of the occurrences of pattern in text
  */
 std::vector<size_t> search(const std::string& str, const pattern& arg) {
     size_t index_position = arg.pat.size() - 1;
@@ -189,13 +189,13 @@ std::vector<size_t> search(const std::string& str, const pattern& arg) {
 }
 
 /**
- * @brief Check if pat is prefix of str.
+ * \brief Check if pat is prefix of str.
  *
- * @param str pointer to some part of the input text.
- * @param pat the searched pattern.
- * @param len length of the searched pattern
- * @returns `true` if pat IS prefix of str.
- * @returns `false` if pat is NOT a prefix of str.
+ * \param str pointer to some part of the input text.
+ * \param pat the searched pattern.
+ * \param len length of the searched pattern
+ * \returns `true` if pat IS prefix of str.
+ * \returns `false` if pat is NOT a prefix of str.
  */
 bool is_prefix(const char* str, const char* pat, size_t len) {
     if (strlen(str) < len) {
@@ -213,9 +213,9 @@ bool is_prefix(const char* str, const char* pat, size_t len) {
 }  // namespace boyer_moore
 }  // namespace strings
 /**
- * @brief A test case in which we search for every appearance of the word 'and'
- * @param text The text in which we search for appearance of the word 'and'
- * @returns void
+ * \brief A test case in which we search for every appearance of the word 'and'
+ * \param text The text in which we search for appearance of the word 'and'
+ * \returns void
  */
 void and_test(const char* text) {
     strings::boyer_moore::pattern ands;
@@ -228,9 +228,9 @@ void and_test(const char* text) {
 }
 
 /**
- * @brief  A test case in which we search for every appearance of the word 'pat'
- * @param text The text in which we search for appearance of the word 'pat'
- * @returns void
+ * \brief  A test case in which we search for every appearance of the word 'pat'
+ * \param text The text in which we search for appearance of the word 'pat'
+ * \returns void
  */
 void pat_test(const char* text) {
     strings::boyer_moore::pattern pat;
@@ -244,8 +244,8 @@ void pat_test(const char* text) {
     }
 }
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     const char* text =
@@ -263,8 +263,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // run self-test implementations

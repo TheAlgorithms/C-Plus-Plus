@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief A generic [binary search tree](https://en.wikipedia.org/wiki/Binary_search_tree) implementation.
+ * \file
+ * \brief A generic [binary search tree](https://en.wikipedia.org/wiki/Binary_search_tree) implementation.
  * Here you can find more information about the algorithm: [Scaler - Binary Search tree](https://www.scaler.com/topics/data-structures/binary-search-tree/).
- * @see binary_search_tree.cpp
+ * \see binary_search_tree.cpp
  */
 
 #include <cassert>
@@ -12,15 +12,15 @@
 #include <vector>
 
 /**
- * @brief The Binary Search Tree class.
+ * \brief The Binary Search Tree class.
  *
- * @tparam T The type of the binary search tree key.
+ * \tparam T The type of the binary search tree key.
  */
 template <class T>
 class binary_search_tree {
  private:
     /**
-    * @brief A struct to represent a node in the Binary Search Tree.
+    * \brief A struct to represent a node in the Binary Search Tree.
     */
     struct bst_node {
         T value; /**< The value/key of the node. */
@@ -30,7 +30,7 @@ class binary_search_tree {
         /**
         * Constructor for bst_node, used to simplify node construction and
         * smart pointer construction.
-        * @param _value The value of the constructed node.
+        * \param _value The value of the constructed node.
         */
         explicit bst_node(T _value) {
             value = _value;
@@ -43,12 +43,12 @@ class binary_search_tree {
     std::size_t size_ = 0; /**< Number of elements/nodes in the BST. */
 
     /**
-     * @brief Recursive function to find the maximum value in the BST.
+     * \brief Recursive function to find the maximum value in the BST.
      *
-     * @param node The node to search from.
-     * @param ret_value Variable to hold the maximum value.
-     * @return true If the maximum value was successfully found.
-     * @return false Otherwise.
+     * \param node The node to search from.
+     * \param ret_value Variable to hold the maximum value.
+     * \return true If the maximum value was successfully found.
+     * \return false Otherwise.
      */
     bool find_max(std::unique_ptr<bst_node>& node, T& ret_value) {
         if (!node) {
@@ -61,12 +61,12 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Recursive function to find the minimum value in the BST.
+     * \brief Recursive function to find the minimum value in the BST.
      *
-     * @param node The node to search from.
-     * @param ret_value Variable to hold the minimum value.
-     * @return true If the minimum value was successfully found.
-     * @return false Otherwise.
+     * \param node The node to search from.
+     * \param ret_value Variable to hold the minimum value.
+     * \return true If the minimum value was successfully found.
+     * \return false Otherwise.
      */
     bool find_min(std::unique_ptr<bst_node>& node, T& ret_value) {
         if (!node) {
@@ -80,12 +80,12 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Recursive function to insert a value into the BST.
+     * \brief Recursive function to insert a value into the BST.
      *
-     * @param node The node to search from.
-     * @param new_value The value to insert.
-     * @return true If the insert operation was successful.
-     * @return false Otherwise.
+     * \param node The node to search from.
+     * \param new_value The value to insert.
+     * \return true If the insert operation was successful.
+     * \return false Otherwise.
      */
     bool insert(std::unique_ptr<bst_node>& node, T new_value) {
         if (root_ == node && !root_) {
@@ -114,13 +114,13 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Recursive function to remove a value from the BST.
+     * \brief Recursive function to remove a value from the BST.
      *
-     * @param parent The parent node of node.
-     * @param node The node to search from.
-     * @param rm_value The value to remove.
-     * @return true If the removal operation was successful.
-     * @return false Otherwise.
+     * \param parent The parent node of node.
+     * \param node The node to search from.
+     * \param rm_value The value to remove.
+     * \return true If the removal operation was successful.
+     * \return false Otherwise.
      */
     bool remove(std::unique_ptr<bst_node>& parent,
                 std::unique_ptr<bst_node>& node, T rm_value) {
@@ -167,12 +167,12 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Recursive function to check if a value is in the BST.
+     * \brief Recursive function to check if a value is in the BST.
      *
-     * @param node The node to search from.
-     * @param value The value to find.
-     * @return true If the value was found in the BST.
-     * @return false Otherwise.
+     * \param node The node to search from.
+     * \param value The value to find.
+     * \return true If the value was found in the BST.
+     * \return false Otherwise.
      */
     bool contains(std::unique_ptr<bst_node>& node, T value) {
         if (!node) {
@@ -189,10 +189,10 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Recursive function to traverse the tree in in-order order.
+     * \brief Recursive function to traverse the tree in in-order order.
      *
-     * @param callback Function that is called when a value needs to processed.
-     * @param node The node to traverse from.
+     * \param callback Function that is called when a value needs to processed.
+     * \param node The node to traverse from.
      */
     void traverse_inorder(std::function<void(T)> callback,
                           std::unique_ptr<bst_node>& node) {
@@ -206,10 +206,10 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Recursive function to traverse the tree in pre-order order.
+     * \brief Recursive function to traverse the tree in pre-order order.
      *
-     * @param callback Function that is called when a value needs to processed.
-     * @param node The node to traverse from.
+     * \param callback Function that is called when a value needs to processed.
+     * \param node The node to traverse from.
      */
     void traverse_preorder(std::function<void(T)> callback,
                            std::unique_ptr<bst_node>& node) {
@@ -223,10 +223,10 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Recursive function to traverse the tree in post-order order.
+     * \brief Recursive function to traverse the tree in post-order order.
      *
-     * @param callback Function that is called when a value needs to processed.
-     * @param node The node to traverse from.
+     * \param callback Function that is called when a value needs to processed.
+     * \param node The node to traverse from.
      */
     void traverse_postorder(std::function<void(T)> callback,
                             std::unique_ptr<bst_node>& node) {
@@ -241,7 +241,7 @@ class binary_search_tree {
 
  public:
     /**
-     * @brief Construct a new Binary Search Tree object.
+     * \brief Construct a new Binary Search Tree object.
      *
      */
     binary_search_tree() {
@@ -250,11 +250,11 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Insert a new value into the BST.
+     * \brief Insert a new value into the BST.
      *
-     * @param new_value The value to insert into the BST.
-     * @return true If the insertion was successful.
-     * @return false Otherwise.
+     * \param new_value The value to insert into the BST.
+     * \return true If the insertion was successful.
+     * \return false Otherwise.
      */
     bool insert(T new_value) {
         bool result = insert(root_, new_value);
@@ -265,11 +265,11 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Remove a specified value from the BST.
+     * \brief Remove a specified value from the BST.
      *
-     * @param rm_value The value to remove.
-     * @return true If the removal was successful.
-     * @return false Otherwise.
+     * \param rm_value The value to remove.
+     * \return true If the removal was successful.
+     * \return false Otherwise.
      */
     bool remove(T rm_value) {
         bool result = remove(root_, root_, rm_value);
@@ -280,43 +280,43 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Check if a value is in the BST.
+     * \brief Check if a value is in the BST.
      *
-     * @param value The value to find.
-     * @return true If value is in the BST.
-     * @return false Otherwise.
+     * \param value The value to find.
+     * \return true If value is in the BST.
+     * \return false Otherwise.
      */
     bool contains(T value) { return contains(root_, value); }
 
     /**
-     * @brief Find the smallest value in the BST.
+     * \brief Find the smallest value in the BST.
      *
-     * @param ret_value Variable to hold the minimum value.
-     * @return true If minimum value was successfully found.
-     * @return false Otherwise.
+     * \param ret_value Variable to hold the minimum value.
+     * \return true If minimum value was successfully found.
+     * \return false Otherwise.
      */
     bool find_min(T& ret_value) { return find_min(root_, ret_value); }
 
     /**
-     * @brief Find the largest value in the BST.
+     * \brief Find the largest value in the BST.
      *
-     * @param ret_value Variable to hold the maximum value.
-     * @return true If maximum value was successfully found.
-     * @return false Otherwise.
+     * \param ret_value Variable to hold the maximum value.
+     * \return true If maximum value was successfully found.
+     * \return false Otherwise.
      */
     bool find_max(T& ret_value) { return find_max(root_, ret_value); }
 
     /**
-     * @brief Get the number of values in the BST.
+     * \brief Get the number of values in the BST.
      *
-     * @return std::size_t Number of values in the BST.
+     * \return std::size_t Number of values in the BST.
      */
     std::size_t size() { return size_; }
 
     /**
-     * @brief Get all values of the BST in in-order order.
+     * \brief Get all values of the BST in in-order order.
      *
-     * @return std::vector<T> List of values, sorted in in-order order.
+     * \return std::vector<T> List of values, sorted in in-order order.
      */
     std::vector<T> get_elements_inorder() {
         std::vector<T> result;
@@ -326,9 +326,9 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Get all values of the BST in pre-order order.
+     * \brief Get all values of the BST in pre-order order.
      *
-     * @return std::vector<T> List of values, sorted in pre-order order.
+     * \return std::vector<T> List of values, sorted in pre-order order.
      */
     std::vector<T> get_elements_preorder() {
         std::vector<T> result;
@@ -338,9 +338,9 @@ class binary_search_tree {
     }
 
     /**
-     * @brief Get all values of the BST in post-order order.
+     * \brief Get all values of the BST in post-order order.
      *
-     * @return std::vector<T> List of values, sorted in post-order order.
+     * \return std::vector<T> List of values, sorted in post-order order.
      */
     std::vector<T> get_elements_postorder() {
         std::vector<T> result;
@@ -351,9 +351,9 @@ class binary_search_tree {
 };
 
 /**
- * @brief Function for testing insert().
+ * \brief Function for testing insert().
  * 
- * @returns `void`
+ * \returns `void`
  */
 static void test_insert() {
     std::cout << "Testing BST insert...";
@@ -385,9 +385,9 @@ static void test_insert() {
 }
 
 /**
- * @brief Function for testing remove().
+ * \brief Function for testing remove().
  * 
- * @returns `void`
+ * \returns `void`
  */
 static void test_remove() {
     std::cout << "Testing BST remove...";
@@ -422,9 +422,9 @@ static void test_remove() {
 }
 
 /**
- * @brief Function for testing contains().
+ * \brief Function for testing contains().
  * 
- * @returns `void`
+ * \returns `void`
  */
 static void test_contains() {
     std::cout << "Testing BST contains...";
@@ -445,9 +445,9 @@ static void test_contains() {
 }
 
 /**
- * @brief Function for testing find_min().
+ * \brief Function for testing find_min().
  * 
- * @returns `void`
+ * \returns `void`
  */
 static void test_find_min() {
     std::cout << "Testing BST find_min...";
@@ -468,9 +468,9 @@ static void test_find_min() {
 }
 
 /**
- * @brief Function for testing find_max().
+ * \brief Function for testing find_max().
  * 
- * @returns `void`
+ * \returns `void`
  */
 static void test_find_max() {
     std::cout << "Testing BST find_max...";
@@ -491,9 +491,9 @@ static void test_find_max() {
 }
 
 /**
- * @brief Function for testing get_elements_inorder().
+ * \brief Function for testing get_elements_inorder().
  * 
- * @returns `void`
+ * \returns `void`
  */
 static void test_get_elements_inorder() {
     std::cout << "Testing BST get_elements_inorder...";
@@ -512,9 +512,9 @@ static void test_get_elements_inorder() {
 }
 
 /**
- * @brief Function for testing get_elements_preorder().
+ * \brief Function for testing get_elements_preorder().
  * 
- * @returns `void`
+ * \returns `void`
  */
 static void test_get_elements_preorder() {
     std::cout << "Testing BST get_elements_preorder...";
@@ -533,9 +533,9 @@ static void test_get_elements_preorder() {
 }
 
 /**
- * @brief Function for testing get_elements_postorder().
+ * \brief Function for testing get_elements_postorder().
  * 
- * @returns `void`
+ * \returns `void`
  */
 static void test_get_elements_postorder() {
     std::cout << "Testing BST get_elements_postorder...";

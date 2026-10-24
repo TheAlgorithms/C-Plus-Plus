@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Bubble sort algorithm
+ * \file
+ * \brief Bubble sort algorithm
  *
- * @details
+ * \details
  * Bubble sort algorithm is the bubble sorting algorithm. The most important reason
  * for calling the bubble is that the largest number is thrown at the end of this
  * algorithm. This is all about the logic. In each iteration, the largest number is
@@ -42,8 +42,8 @@
  * ### Average Case
  * Bubble Sort is not an optimal algorithm. In average, \f$O(n^{2})\f$ performance is taken. 
  * 
- * @author [Deepak](https://github.com/Deepak-j-p)
- * @author [Nguyen Phuc Chuong](https://github.com/hollowcrust)
+ * \author [Deepak](https://github.com/Deepak-j-p)
+ * \author [Nguyen Phuc Chuong](https://github.com/hollowcrust)
  */
 
 #include <algorithm> /// for std::is_sorted
@@ -54,19 +54,19 @@
 #include <vector>    /// for std::vector, std::vector::push_back, std::vector::size
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 /**
- * @namespace bubble_sort
- * @brief Bubble sort algorithm
+ * \namespace bubble_sort
+ * \brief Bubble sort algorithm
  */
 namespace bubble_sort {
 /**
- * @brief Bubble sort algorithm
- * @param array An array to be sorted
- * @return The array sorted in ascending order
+ * \brief Bubble sort algorithm
+ * \param array An array to be sorted
+ * \return The array sorted in ascending order
  */
 template <typename T> 
 std::vector<T> bubble_sort(std::vector<T>& array) {
@@ -90,8 +90,8 @@ std::vector<T> bubble_sort(std::vector<T>& array) {
 } // namespace sorting
 
 /**
- * @brief Self-test implementation
- * @return void
+ * \brief Self-test implementation
+ * \return void
  */
 static void test() {
   std::vector<int> vec_1 = {3, 1, -9, 0};
@@ -125,8 +125,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @return 0 on exit
+ * \brief Main function
+ * \return 0 on exit
  */
 int main() {
   test();

@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [DSU (Disjoint
+ * \file
+ * \brief [DSU (Disjoint
  * sets)](https://en.wikipedia.org/wiki/Disjoint-set-data_structure)
- * @details
+ * \details
  * It is a very powerful data structure that keeps track of different
  * clusters(sets) of elements, these sets are disjoint(doesnot have a common
  * element). Disjoint sets uses cases : for finding connected components in a
@@ -14,8 +14,8 @@
  * Below is the class-based approach which uses the heuristic of path
  * compression. Using path compression in findSet(i),we are able to get to the
  * representative of i in O(1) time.
- * @author [AayushVyasKIIT](https://github.com/AayushVyasKIIT)
- * @see dsu_union_rank.cpp
+ * \author [AayushVyasKIIT](https://github.com/AayushVyasKIIT)
+ * \see dsu_union_rank.cpp
  */
 
 #include <cassert>   /// for assert
@@ -28,8 +28,8 @@ using std::endl;
 using std::vector;
 
 /**
- * @brief Disjoint sets union data structure, class based representation.
- * @param n number of elements
+ * \brief Disjoint sets union data structure, class based representation.
+ * \param n number of elements
  */
 class dsu {
  private:
@@ -40,8 +40,8 @@ class dsu {
     vector<uint64_t> minElement;  ///< minimum of each set to which i belongs to
  public:
     /**
-     * @brief contructor for initialising all data members.
-     * @param n number of elements
+     * \brief contructor for initialising all data members.
+     * \param n number of elements
      */
     explicit dsu(uint64_t n) {
         p.assign(n, 0);
@@ -66,10 +66,10 @@ class dsu {
     }
 
     /**
-     * @brief Method to find the representative of the set to which i belongs
+     * \brief Method to find the representative of the set to which i belongs
      * to, T(n) = O(1)
-     * @param i element of some set
-     * @returns representative of the set to which i belongs to.
+     * \param i element of some set
+     * \returns representative of the set to which i belongs to.
      */
     uint64_t findSet(uint64_t i) {
         /// using path compression
@@ -79,11 +79,11 @@ class dsu {
         return (p[i] = findSet(p[i]));
     }
     /**
-     * @brief Method that combines two disjoint sets to which i and j belongs to
+     * \brief Method that combines two disjoint sets to which i and j belongs to
      * and make a single set having a common representative.
-     * @param i element of some set
-     * @param j element of some set
-     * @returns void
+     * \param i element of some set
+     * \param j element of some set
+     * \returns void
      */
     void UnionSet(uint64_t i, uint64_t j) {
         /// check if both belongs to the same set or not
@@ -114,12 +114,12 @@ class dsu {
         minElement[y] = std::min(minElement[x], minElement[y]);
     }
     /**
-     * @brief A utility function which check whether i and j belongs to
+     * \brief A utility function which check whether i and j belongs to
      * same set or not
-     * @param i element of some set
-     * @param j element of some set
-     * @returns `true` if element `i` and `j` ARE in the same set
-     * @returns `false` if element `i` and `j` are NOT in same set
+     * \param i element of some set
+     * \param j element of some set
+     * \returns `true` if element `i` and `j` ARE in the same set
+     * \returns `false` if element `i` and `j` are NOT in same set
      */
     bool isSame(uint64_t i, uint64_t j) {
         if (findSet(i) == findSet(j)) {
@@ -128,10 +128,10 @@ class dsu {
         return false;
     }
     /**
-     * @brief prints the minimum, maximum and size of the set to which i belongs
+     * \brief prints the minimum, maximum and size of the set to which i belongs
      * to
-     * @param i element of some set
-     * @returns void
+     * \param i element of some set
+     * \returns void
      */
     vector<uint64_t> get(uint64_t i) {
         vector<uint64_t> ans;
@@ -141,31 +141,31 @@ class dsu {
         return ans;
     }
     /**
-     * @brief A utility function that returns the size of the set to which i
+     * \brief A utility function that returns the size of the set to which i
      * belongs to
-     * @param i element of some set
-     * @returns size of the set to which i belongs to
+     * \param i element of some set
+     * \returns size of the set to which i belongs to
      */
     uint64_t size(uint64_t i) { return setSize[findSet(i)]; }
     /**
-     * @brief A utility function that returns the max element of the set to
+     * \brief A utility function that returns the max element of the set to
      * which i belongs to
-     * @param i element of some set
-     * @returns maximum of the set to which i belongs to
+     * \param i element of some set
+     * \returns maximum of the set to which i belongs to
      */
     uint64_t get_max(uint64_t i) { return maxElement[findSet(i)]; }
     /**
-     * @brief A utility function that returns the min element of the set to
+     * \brief A utility function that returns the min element of the set to
      * which i belongs to
-     * @param i element of some set
-     * @returns minimum of the set to which i belongs to
+     * \param i element of some set
+     * \returns minimum of the set to which i belongs to
      */
     uint64_t get_min(uint64_t i) { return minElement[findSet(i)]; }
 };
 
 /**
- * @brief Self-test implementations, 1st test
- * @returns void
+ * \brief Self-test implementations, 1st test
+ * \returns void
  */
 static void test1() {
     // the minimum, maximum, and size of the set
@@ -181,8 +181,8 @@ static void test1() {
     cout << "1st test passed!" << endl;
 }
 /**
- * @brief Self-implementations, 2nd test
- * @returns void
+ * \brief Self-implementations, 2nd test
+ * \returns void
  */
 static void test2() {
     // the minimum, maximum, and size of the set
@@ -200,8 +200,8 @@ static void test2() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  * */
 int main() {
     uint64_t n = 10;  ///< number of items

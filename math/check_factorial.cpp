@@ -1,29 +1,29 @@
 /**
- * @file
- * @brief A simple program to check if the given number is a
+ * \file
+ * \brief A simple program to check if the given number is a
  * [factorial](https://en.wikipedia.org/wiki/Factorial) of some number or not.
  *
- * @details A factorial number is the sum of k! where any value of k is a
+ * \details A factorial number is the sum of k! where any value of k is a
  * positive integer. https://www.mathsisfun.com/numbers/factorial.html
  *
- * @author [Divyajyoti Ukirde](https://github.com/divyajyotiuk)
- * @author [ewd00010](https://github.com/ewd00010)
+ * \author [Divyajyoti Ukirde](https://github.com/divyajyotiuk)
+ * \author [ewd00010](https://github.com/ewd00010)
  */
 #include <cassert>   /// for assert
 #include <cstdint>
 #include <iostream>  /// for cout
 
 /**
- * @namespace
- * @brief Mathematical algorithms
+ * \namespace
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @brief Function to check if the given number is factorial of some number or
+ * \brief Function to check if the given number is factorial of some number or
  * not.
- * @param n number to be checked.
- * @return true if number is a factorial returns true
- * @return false if number is not a factorial
+ * \param n number to be checked.
+ * \return true if number is a factorial returns true
+ * \return false if number is not a factorial
  */
 bool is_factorial(uint64_t n) {
     if (n <= 0) {  // factorial numbers are only ever positive Integers
@@ -50,8 +50,8 @@ bool is_factorial(uint64_t n) {
 }  // namespace math
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     assert(math::is_factorial(50) == false);
@@ -65,8 +65,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // run self-test implementations

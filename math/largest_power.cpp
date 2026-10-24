@@ -1,30 +1,30 @@
 /**
- * @file
- * @brief Algorithm to find largest x such that p^x divides n! (factorial) using
+ * \file
+ * \brief Algorithm to find largest x such that p^x divides n! (factorial) using
  * Legendre's Formula.
- * @details Given an integer n and a prime number p, the task is to find the
+ * \details Given an integer n and a prime number p, the task is to find the
  * largest x such that p^x (p raised to power x) divides n! (factorial). This
  * will be done using Legendre's formula: x = [n/(p^1)] + [n/(p^2)] + [n/(p^3)]
  * + \ldots + 1
- * @see more on
+ * \see more on
  * https://math.stackexchange.com/questions/141196/highest-power-of-a-prime-p-dividing-n
- * @author [uday6670](https://github.com/uday6670)
+ * \author [uday6670](https://github.com/uday6670)
  */
 
 #include <cassert>   /// for assert
 #include <cstdint>
 #include <iostream>  /// for std::cin and std::cout
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 
 /**
- * @brief Function to calculate largest power
- * @param n number
- * @param p prime number
- * @returns largest power
+ * \brief Function to calculate largest power
+ * \param n number
+ * \param p prime number
+ * \returns largest power
  */
 uint64_t largestPower(uint32_t n, const uint16_t& p) {
     // Initialize result
@@ -41,9 +41,9 @@ uint64_t largestPower(uint32_t n, const uint16_t& p) {
 }  // namespace math
 
 /**
- * @brief Function for testing largestPower function.
+ * \brief Function for testing largestPower function.
  * test cases and assert statement.
- * @returns `void`
+ * \returns `void`
  */
 static void test() {
     uint8_t test_case_1 = math::largestPower(5, 2);
@@ -68,8 +68,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the tests

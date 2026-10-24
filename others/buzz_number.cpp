@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief A buzz number is a number that is either divisible by 7 or has last
+ * \file
+ * \brief A buzz number is a number that is either divisible by 7 or has last
  * digit as 7.
  */
 #include <iostream>

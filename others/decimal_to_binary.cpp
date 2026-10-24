@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Function to convert decimal number to binary representation
+ * \file
+ * \brief Function to convert decimal number to binary representation
  */
 #include <iostream>
 

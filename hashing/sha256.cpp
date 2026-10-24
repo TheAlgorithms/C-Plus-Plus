@@ -1,10 +1,10 @@
 /**
- * @file
- * @author [Md. Anisul Haque](https://github.com/mdanisulh)
- * @brief Simple C++ implementation of the [SHA-256 Hashing Algorithm]
+ * \file
+ * \author [Md. Anisul Haque](https://github.com/mdanisulh)
+ * \brief Simple C++ implementation of the [SHA-256 Hashing Algorithm]
  * (https://en.wikipedia.org/wiki/SHA-2)
  *
- * @details
+ * \details
  * [SHA-2](https://en.wikipedia.org/wiki/SHA-2) is a set of cryptographic hash
  * functions that was designed by the
  * [NSA](https://en.wikipedia.org/wiki/National_Security_Agency) and first
@@ -22,19 +22,19 @@
 #include <vector>    /// For std::vector
 
 /**
- * @namespace hashing
- * @brief Hashing algorithms
+ * \namespace hashing
+ * \brief Hashing algorithms
  */
 namespace hashing {
 /**
- * @namespace SHA-256
- * @brief Functions for the [SHA-256](https://en.wikipedia.org/wiki/SHA-2)
+ * \namespace SHA-256
+ * \brief Functions for the [SHA-256](https://en.wikipedia.org/wiki/SHA-2)
  * algorithm implementation
  */
 namespace sha256 {
 /**
- * @class Hash
- * @brief Contains hash array and functions to update it and convert it to a
+ * \class Hash
+ * \brief Contains hash array and functions to update it and convert it to a
  * hexadecimal string
  */
 class Hash {
@@ -50,19 +50,19 @@ class Hash {
 };
 
 /**
- * @brief Rotates the bits of a 32-bit unsigned integer
- * @param n Integer to rotate
- * @param rotate Number of bits to rotate
- * @return uint32_t The rotated integer
+ * \brief Rotates the bits of a 32-bit unsigned integer
+ * \param n Integer to rotate
+ * \param rotate Number of bits to rotate
+ * \return uint32_t The rotated integer
  */
 uint32_t right_rotate(uint32_t n, size_t rotate) {
     return (n >> rotate) | (n << (32 - rotate));
 }
 
 /**
- * @brief Updates the hash array
- * @param blocks Message schedule array
- * @return void
+ * \brief Updates the hash array
+ * \param blocks Message schedule array
+ * \return void
  */
 void Hash::update(const std::array<uint32_t, 64> &blocks) {
     // Initialize array of round constants with first 32 bits of the fractional
@@ -124,8 +124,8 @@ void Hash::update(const std::array<uint32_t, 64> &blocks) {
 }
 
 /**
- * @brief Convert the hash to a hexadecimal string
- * @return std::string Final hash value
+ * \brief Convert the hash to a hexadecimal string
+ * \return std::string Final hash value
  */
 std::string Hash::to_string() const {
     std::stringstream ss;
@@ -136,9 +136,9 @@ std::string Hash::to_string() const {
 }
 
 /**
- * @brief Computes size of the padded input
- * @param input Input string
- * @return size_t Size of the padded input
+ * \brief Computes size of the padded input
+ * \param input Input string
+ * \return size_t Size of the padded input
  */
 std::size_t compute_padded_size(const std::size_t input_size) {
     if (input_size % 64 < 56) {
@@ -148,10 +148,10 @@ std::size_t compute_padded_size(const std::size_t input_size) {
 }
 
 /**
- * @brief Returns the byte at position byte_num in in_value
- * @param in_value Input value
- * @param byte_num Position of byte to be returned
- * @return uint8_t Byte at position byte_num
+ * \brief Returns the byte at position byte_num in in_value
+ * \param in_value Input value
+ * \param byte_num Position of byte to be returned
+ * \return uint8_t Byte at position byte_num
  */
 template <typename T>
 uint8_t extract_byte(const T in_value, const std::size_t byte_num) {
@@ -162,10 +162,10 @@ uint8_t extract_byte(const T in_value, const std::size_t byte_num) {
 }
 
 /**
- * @brief Returns the character at pos after the input is padded
- * @param input Input string
- * @param pos Position of character to be returned
- * @return char Character at the index pos in the padded string
+ * \brief Returns the character at pos after the input is padded
+ * \param input Input string
+ * \param pos Position of character to be returned
+ * \return char Character at the index pos in the padded string
  */
 char get_char(const std::string &input, std::size_t pos) {
     const auto input_size = input.length();
@@ -187,10 +187,10 @@ char get_char(const std::string &input, std::size_t pos) {
 }
 
 /**
- * @brief Creates the message schedule array
- * @param input Input string
- * @param byte_num Position of the first byte of the chunk
- * @return std::array<uint32_t, 64> Message schedule array
+ * \brief Creates the message schedule array
+ * \param input Input string
+ * \param byte_num Position of the first byte of the chunk
+ * \return std::array<uint32_t, 64> Message schedule array
  */
 std::array<uint32_t, 64> create_message_schedule_array(const std::string &input,
                                                        const size_t byte_num) {
@@ -225,9 +225,9 @@ std::array<uint32_t, 64> create_message_schedule_array(const std::string &input,
 }
 
 /**
- * @brief Computes the final hash value
- * @param input Input string
- * @return std::string The final hash value
+ * \brief Computes the final hash value
+ * \param input Input string
+ * \return std::string The final hash value
  */
 std::string sha256(const std::string &input) {
     Hash h;
@@ -242,8 +242,8 @@ std::string sha256(const std::string &input) {
 }  // namespace hashing
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test_compute_padded_size() {
     assert(hashing::sha256::compute_padded_size(55) == 64);
@@ -320,8 +320,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // Run self-test implementations

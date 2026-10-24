@@ -9,10 +9,10 @@
  * conflict, that is, we link a chain list after the data, and store all the
  * records whose keywords are synonyms in the same linear chain list.
  *
- * @warning This program is only for educational purposes. It has serious flaws
+ * \warning This program is only for educational purposes. It has serious flaws
  * in implementation with regards to memory management resulting in large
  * amounts of memory leaks.
- * @todo fix the program for memory leaks and better structure in C++ and not C
+ * \todo fix the program for memory leaks and better structure in C++ and not C
  * fashion
  */
 #include <cstdlib>

@@ -1,8 +1,8 @@
 /**
- * @file caesar_cipher.cpp
- * @brief Implementation of [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) algorithm.
+ * \file caesar_cipher.cpp
+ * \brief Implementation of [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) algorithm.
  *
- * @details
+ * \details
  * In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, 
  * Caesar's code or Caesar shift, is one of the simplest and most widely known encryption 
  * techniques. It is a type of substitution cipher in which each letter in the plaintext 
@@ -20,7 +20,7 @@
  * 
  * \note This program implements caesar cipher for only uppercase English alphabet characters (i.e. A-Z). 
  * 
- * @author [Deep Raval](https://github.com/imdeep2905)
+ * \author [Deep Raval](https://github.com/imdeep2905)
  */
 #include <iostream>
 #include <string>
@@ -37,8 +37,8 @@ namespace ciphers {
         namespace {
             /**
              * This function finds character for given value (i.e.A-Z)
-             * @param x value for which we want character 
-             * @returns  corresponding character for perticular value
+             * \param x value for which we want character 
+             * \returns  corresponding character for perticular value
              */        
             inline char get_char(const int x) {
                 // By adding 65 we are scaling 0-25 to 65-90. 
@@ -47,8 +47,8 @@ namespace ciphers {
             }
             /**
              * This function finds value for given character (i.e.0-25)
-             * @param c character for which we want value
-             * @returns returns corresponding value for perticular character
+             * \param c character for which we want value
+             * \returns returns corresponding value for perticular character
              */  
             inline int get_value(const char c) {
                 // A-Z have ASCII values in range 65-90.
@@ -58,9 +58,9 @@ namespace ciphers {
         } // Unnamed namespace
         /**
          * Encrypt given text using caesar cipher.
-         * @param text text to be encrypted
-         * @param shift number of shifts to be applied
-         * @returns new encrypted text
+         * \param text text to be encrypted
+         * \param shift number of shifts to be applied
+         * \returns new encrypted text
          */
         std::string encrypt (const std::string &text, const int &shift) {
             std::string encrypted_text = ""; // Empty string to store encrypted text
@@ -74,9 +74,9 @@ namespace ciphers {
         }
         /**
          * Decrypt given text using caesar cipher.
-         * @param text text to be decrypted
-         * @param shift number of shifts to be applied
-         * @returns new decrypted text
+         * \param text text to be decrypted
+         * \param shift number of shifts to be applied
+         * \returns new decrypted text
          */        
         std::string decrypt (const std::string &text, const int &shift) {
             std::string decrypted_text = ""; // Empty string to store decrypted text

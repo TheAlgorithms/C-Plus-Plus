@@ -1,6 +1,6 @@
 /**
  * Copyright 2020 @author Albirair
- * @file
+ * \file
  *
  * A generic implementation of non-recursive merge sort.
  */
@@ -17,9 +17,9 @@ void merge(Iterator, Iterator, const Iterator, char[]);
  * merging adjacent segments into larger sorted segments, then increasing
  * the sizes of segments by factors of 2 and repeating the same process.
  * best-case = worst-case = O(n log(n))
- * @param first points to the first element
- * @param last points to 1-step past the last element
- * @param n the number of elements
+ * \param first points to the first element
+ * \param last points to 1-step past the last element
+ * \param n the number of elements
  */
 template <class Iterator>
 void non_recursive_merge_sort(const Iterator first, const Iterator last,
@@ -48,10 +48,10 @@ void non_recursive_merge_sort(const Iterator first, const Iterator last,
 /// merges 2 sorted adjacent segments into a larger sorted segment
 /**
  * best-case = worst-case = O(n)
- * @param l points to the left part
- * @param r points to the right part, end of left part
- * @param e points to end of right part
- * @param b points at the buffer
+ * \param l points to the left part
+ * \param r points to the right part, end of left part
+ * \param e points to end of right part
+ * \param b points at the buffer
  */
 template <class Iterator>
 void merge(Iterator l, Iterator r, const Iterator e, char b[]) {
@@ -70,8 +70,8 @@ void merge(Iterator l, Iterator r, const Iterator e, char b[]) {
 }
 /// bottom-up merge sort which sorts elements in a non-decreasing order
 /**
- * @param first points to the first element
- * @param n the number of elements
+ * \param first points to the first element
+ * \param n the number of elements
  */
 template <class Iterator>
 void non_recursive_merge_sort(const Iterator first, const size_t n) {
@@ -79,8 +79,8 @@ void non_recursive_merge_sort(const Iterator first, const size_t n) {
 }
 /// bottom-up merge sort which sorts elements in a non-decreasing order
 /**
- * @param first points to the first element
- * @param last points to 1-step past the last element
+ * \param first points to the first element
+ * \param last points to 1-step past the last element
  */
 template <class Iterator>
 void non_recursive_merge_sort(const Iterator first, const Iterator last) {

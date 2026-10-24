@@ -1,8 +1,8 @@
 /**
- * @file digit_separation.cpp
- * @brief Separates digits from numbers in forward and reverse order
- * @see https://www.log2base2.com/c-examples/loop/split-a-number-into-digits-in-c.html
- * @details The DigitSeparation class provides two methods to separate the
+ * \file digit_separation.cpp
+ * \brief Separates digits from numbers in forward and reverse order
+ * \see https://www.log2base2.com/c-examples/loop/split-a-number-into-digits-in-c.html
+ * \details The DigitSeparation class provides two methods to separate the
  * digits of large integers: digitSeparationReverseOrder and
  * digitSeparationForwardOrder. The digitSeparationReverseOrder method extracts
  * digits by repeatedly applying the modulus operation (% 10) to isolate the
@@ -12,7 +12,7 @@
  * vector containing {0} to handle this edge case. Negative numbers are handled
  * by taking the absolute value, ensuring consistent behavior regardless of the
  * sign.
- * @author [Muhammad Junaid Khalid](https://github.com/mjk22071998)
+ * \author [Muhammad Junaid Khalid](https://github.com/mjk22071998)
  */
 
 #include <algorithm>  /// For reveresing the vector
@@ -23,27 +23,27 @@
 #include <vector>     /// For std::vector to store separated digits
 
 /**
- * @namespace
- * @brief Greedy Algorithms
+ * \namespace
+ * \brief Greedy Algorithms
  */
 namespace greedy_algorithms {
 
 /**
- * @brief A class that provides methods to separate the digits of a large
+ * \brief A class that provides methods to separate the digits of a large
  * positive number.
  */
 class DigitSeparation {
  public:
     /**
-     * @brief Default constructor for the DigitSeparation class.
+     * \brief Default constructor for the DigitSeparation class.
      */
     DigitSeparation() {}
 
     /**
-     * @brief Implementation of digitSeparationReverseOrder method.
+     * \brief Implementation of digitSeparationReverseOrder method.
      *
-     * @param largeNumber The large number to separate digits from.
-     * @return A vector of digits in reverse order.
+     * \param largeNumber The large number to separate digits from.
+     * \return A vector of digits in reverse order.
      */
     std::vector<std::int64_t> digitSeparationReverseOrder(
         std::int64_t largeNumber) const {
@@ -60,10 +60,10 @@ class DigitSeparation {
     }
 
     /**
-     * @brief Implementation of digitSeparationForwardOrder method.
+     * \brief Implementation of digitSeparationForwardOrder method.
      *
-     * @param largeNumber The large number to separate digits from.
-     * @return A vector of digits in forward order.
+     * \param largeNumber The large number to separate digits from.
+     * \return A vector of digits in forward order.
      */
     std::vector<std::int64_t> digitSeparationForwardOrder(
         std::int64_t largeNumber) const {
@@ -77,8 +77,8 @@ class DigitSeparation {
 }  // namespace greedy_algorithms
 
 /**
- * @brief self test implementation
- * @return void
+ * \brief self test implementation
+ * \return void
  */
 static void tests() {
     greedy_algorithms::DigitSeparation ds;
@@ -132,8 +132,8 @@ static void tests() {
 }
 
 /**
- * @brief main function
- * @return 0 on successful exit
+ * \brief main function
+ * \return 0 on successful exit
  */
 int main() {
     tests();  // run self test implementation

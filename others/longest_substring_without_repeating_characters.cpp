@@ -1,7 +1,7 @@
 /**
- * @file
- * @brief Solution for Longest Substring Without Repeating Characters problem.
- * @details
+ * \file
+ * \brief Solution for Longest Substring Without Repeating Characters problem.
+ * \details
  * Problem link: https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
  * 
  * Intuition:
@@ -21,7 +21,7 @@
  * 
  * I hope this helps to understand.
  * Thank you!
- * @author [Ashish Kumar Sahoo](github.com/ashish5kmax)
+ * \author [Ashish Kumar Sahoo](github.com/ashish5kmax)
  **/
 
 #include <iostream>        // for IO Operations
@@ -31,15 +31,15 @@
 #include <cassert>         // for assert
 
 /**
- * @class Longest_Substring
- * @brief Class that solves the Longest Substring Without Repeating Characters problem.
+ * \class Longest_Substring
+ * \brief Class that solves the Longest Substring Without Repeating Characters problem.
  */
 class Longest_Substring {
 public:
     /**
-     * @brief Function to find the length of the longest substring without repeating characters.
-     * @param s Input string.
-     * @return Length of the longest substring.
+     * \brief Function to find the length of the longest substring without repeating characters.
+     * \param s Input string.
+     * \return Length of the longest substring.
      */
     int lengthOfLongestSubstring(std::string s) {
         // If the size of string is 1, then it will be the answer.
@@ -86,8 +86,8 @@ public:
 };
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     Longest_Substring soln;
@@ -101,8 +101,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function.
- * @return 0 on successful execution.
+ * \brief Main function.
+ * \return 0 on successful execution.
  */
 int main() {
     tests(); // run self-test implementations

@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Faster computation of Fibonacci series.
+ * \file
+ * \brief Faster computation of Fibonacci series.
  *
- * @details
+ * \details
  * An efficient way to calculate nth fibonacci number faster and simpler than
  * \f$O(n\log n)\f$ method of matrix exponentiation. This works by using both
  * recursion and dynamic programming. As 93rd fibonacci exceeds 19 digits, which
@@ -12,8 +12,8 @@
  * found if we have already found \f$n/2\f$th or \f$(n+1)/2\f$th fibonacci. It is a property
  * of fibonacci similar to matrix exponentiation.
  *
- * @author [Krishna Vedala](https://github.com/kvedala)
- * @see fibonacci_large.cpp, fibonacci.cpp, string_fibonacci.cpp
+ * \author [Krishna Vedala](https://github.com/kvedala)
+ * \see fibonacci_large.cpp, fibonacci.cpp, string_fibonacci.cpp
  */
 #include <cinttypes>  /// for uint64_t
 #include <cstdio>     /// for standard IO
@@ -23,17 +23,17 @@
 #include <stdexcept>  /// for std::invalid_argument
 
 /**
- * @brief Maximum Fibonacci number that can be computed
+ * \brief Maximum Fibonacci number that can be computed
  *
- * @details
+ * \details
  * The result after 93 cannot be stored in a `uint64_t` data type.
  */
 constexpr uint64_t MAX = 93;
 
 /**
- * @brief Function to compute the nth Fibonacci number
- * @param n The index of the Fibonacci number to compute
- * @return uint64_t The nth Fibonacci number
+ * \brief Function to compute the nth Fibonacci number
+ * \param n The index of the Fibonacci number to compute
+ * \return uint64_t The nth Fibonacci number
  */
 uint64_t fib(uint64_t n) {
     // Using static keyword will retain the values of
@@ -57,8 +57,8 @@ uint64_t fib(uint64_t n) {
 }
 
 /**
- * @brief Function to test the Fibonacci computation
- * @returns void
+ * \brief Function to test the Fibonacci computation
+ * \returns void
  */
 static void test() {
     // Test for valid Fibonacci numbers
@@ -169,8 +169,8 @@ static void test() {
 }
 
 /**
- * @brief Main Function
- * @returns 0 on exit
+ * \brief Main Function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

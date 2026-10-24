@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief [Kruskals Minimum Spanning
+ * \file
+ * \brief [Kruskals Minimum Spanning
  * Tree](https://www.simplilearn.com/tutorials/data-structure-tutorial/kruskal-algorithm)
  * implementation
  *
- * @details
+ * \details
  * _Quoted from
  * [Simplilearn](https://www.simplilearn.com/tutorials/data-structure-tutorial/kruskal-algorithm)._
  *
@@ -15,7 +15,7 @@
  * only link to each other if the edge connecting them has a low value and
  * doesn’t generate a cycle in MST structure.
  *
- * @author [coleman2246](https://github.com/coleman2246)
+ * \author [coleman2246](https://github.com/coleman2246)
  */
 
 #include <array>     /// for array
@@ -24,15 +24,15 @@
 #include <cstdint>   /// for uint32_t
 
 /**
- * @namespace
- * @brief Greedy Algorithms
+ * \namespace
+ * \brief Greedy Algorithms
  */
 namespace greedy_algorithms {
 /**
- * @brief Finds the minimum edge of the given graph.
- * @param infinity Defines the infinity of the graph
- * @param graph The graph that will be used to find the edge
- * @returns void
+ * \brief Finds the minimum edge of the given graph.
+ * \param infinity Defines the infinity of the graph
+ * \param graph The graph that will be used to find the edge
+ * \returns void
  */
 template <typename T, std::size_t N, std::size_t M>
 void findMinimumEdge(const T &infinity,
@@ -58,8 +58,8 @@ void findMinimumEdge(const T &infinity,
 }  // namespace greedy_algorithms
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     /**
@@ -177,8 +177,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 
 int main() {

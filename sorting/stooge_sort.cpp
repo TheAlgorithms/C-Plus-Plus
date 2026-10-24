@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Stooge sort implementation](https://en.wikipedia.org/wiki/Stooge_sort)
+ * \file
+ * \brief [Stooge sort implementation](https://en.wikipedia.org/wiki/Stooge_sort)
  * in C++
- * @details
+ * \details
  * Stooge sort is a recursive sorting algorithm.
  * It divides the array into 3 parts and proceeds to:
  *	- sort first two thirds of the array
@@ -19,11 +19,11 @@
 #include <iostream>   /// for IO operations
 
  /**
-  * @brief The stoogeSort() function is used for sorting the array.
-  * @param L - vector of values (int) to be sorted in in place (ascending order)
-  * @param i - the first index of the array (0)
-  * @param j - the last index of the array (L.size() - 1)
-  * @returns void
+  * \brief The stoogeSort() function is used for sorting the array.
+  * \param L - vector of values (int) to be sorted in in place (ascending order)
+  * \param i - the first index of the array (0)
+  * \param j - the last index of the array (L.size() - 1)
+  * \returns void
   */
 void stoogeSort(std::vector<int>* L, size_t i, size_t j) {
     if (i >= j) {
@@ -41,8 +41,8 @@ void stoogeSort(std::vector<int>* L, size_t i, size_t j) {
 }
 
 /**
- * @brief Function to test sorting algorithm
- * @returns void
+ * \brief Function to test sorting algorithm
+ * \returns void
  */
 void test1() {
 	std::vector<int> L = { 8, 9, 10, 4, 3, 5, 1 };
@@ -51,8 +51,8 @@ void test1() {
 }
 
 /**
- * @brief Function to test sorting algorithm, one element
- * @returns void
+ * \brief Function to test sorting algorithm, one element
+ * \returns void
  */
 void test2() {
 	std::vector<int> L = { -1 };
@@ -61,8 +61,8 @@ void test2() {
 }
 
 /**
- * @brief Function to test sorting algorithm, repeating elements
- * @returns void
+ * \brief Function to test sorting algorithm, repeating elements
+ * \returns void
  */
 void test3() {
 	std::vector<int> L = { 1, 2, 5, 4, 1, 5 };
@@ -71,8 +71,8 @@ void test3() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
 	test1();

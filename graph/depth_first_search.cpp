@@ -48,9 +48,9 @@ namespace graph {
  * Adds and edge between two vertices of graph say u and v in this
  * case.
  *
- * @param adj Adjacency list representation of graph
- * @param u first vertex
- * @param v second vertex
+ * \param adj Adjacency list representation of graph
+ * \param u first vertex
+ * \param v second vertex
  *
  */
 void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
@@ -72,9 +72,9 @@ void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
  * over all the vertices which are connected to the vertex that is
  * currently being explored.
  *
- * @param adj garph
- * @param v vertex to be explored
- * @param visited already visited vertices
+ * \param adj garph
+ * \param v vertex to be explored
+ * \param visited already visited vertices
  *
  */
 void explore(const std::vector<std::vector<size_t>> &adj, size_t v,
@@ -92,8 +92,8 @@ void explore(const std::vector<std::vector<size_t>> &adj, size_t v,
  * \brief
  * initiates depth first search algorithm.
  *
- * @param adj adjacency list of graph
- * @param start vertex from where DFS starts traversing.
+ * \param adj adjacency list of graph
+ * \param start vertex from where DFS starts traversing.
  *
  */
 void depth_first_search(const std::vector<std::vector<size_t>> &adj,

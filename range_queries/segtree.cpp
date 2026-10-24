@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief   Implementation of [Segment Tree]
+ * \file
+ * \brief   Implementation of [Segment Tree]
  *          (https://en.wikipedia.org/wiki/Segment_tree) data structure
  *
- * @details
+ * \details
  * A segment tree, also known as a statistic tree, is a tree data structure used
  * for storing information about intervals, or segments. Its classical version
  * allows querying which of the stored segments contain a given point, but our
@@ -15,8 +15,8 @@
  * * Build Time Complexity : O(NlogN) \n
  * * Query Time Complexity : O(logN) \n
  *
- * @author  [Madhav Gaba](https://github.com/madhavgaba)
- * @author  [Soham Roy](https://github.com/sohamroy19)
+ * \author  [Madhav Gaba](https://github.com/madhavgaba)
+ * \author  [Soham Roy](https://github.com/sohamroy19)
  */
 
 #include <cassert>   /// for assert
@@ -26,14 +26,14 @@
 #include <vector>    /// for std::vector
 
 /**
- * @brief   Constructs the initial segment tree
+ * \brief   Constructs the initial segment tree
  *
- * @param   arr input to construct the tree out of
- * @param   segtree the segment tree
- * @param   low inclusive lowest index of arr to begin at
- * @param   high inclusive highest index of arr to end at
- * @param   pos index of segtree to fill (eg. root node)
- * @returns void
+ * \param   arr input to construct the tree out of
+ * \param   segtree the segment tree
+ * \param   low inclusive lowest index of arr to begin at
+ * \param   high inclusive highest index of arr to end at
+ * \param   pos index of segtree to fill (eg. root node)
+ * \returns void
  */
 void ConsTree(const std::vector<int64_t> &arr, std::vector<int64_t> *segtree,
               uint64_t low, uint64_t high, uint64_t pos) {
@@ -49,16 +49,16 @@ void ConsTree(const std::vector<int64_t> &arr, std::vector<int64_t> *segtree,
 }
 
 /**
- * @brief   Returns the sum of all elements in a range
+ * \brief   Returns the sum of all elements in a range
  *
- * @param   segtree the segment tree
- * @param   lazy for lazy propagation
- * @param   qlow lower index of the required query
- * @param   qhigh higher index of the required query
- * @param   low lower index of query for this function call
- * @param   high higher index of query for this function call
- * @param   pos index of segtree to consider (eg. root node)
- * @return  result of the range query for this function call
+ * \param   segtree the segment tree
+ * \param   lazy for lazy propagation
+ * \param   qlow lower index of the required query
+ * \param   qhigh higher index of the required query
+ * \param   low lower index of query for this function call
+ * \param   high higher index of query for this function call
+ * \param   pos index of segtree to consider (eg. root node)
+ * \return  result of the range query for this function call
  */
 int64_t query(std::vector<int64_t> *segtree, std::vector<int64_t> *lazy,
               uint64_t qlow, uint64_t qhigh, uint64_t low, uint64_t high,
@@ -88,17 +88,17 @@ int64_t query(std::vector<int64_t> *segtree, std::vector<int64_t> *lazy,
 }
 
 /**
- * @brief   Updates a range of the segment tree
+ * \brief   Updates a range of the segment tree
  *
- * @param   segtree the segment tree
- * @param   lazy for lazy propagation
- * @param   start lower index of the required query
- * @param   end higher index of the required query
- * @param   delta integer to add to each element of the range
- * @param   low lower index of query for this function call
- * @param   high higher index of query for this function call
- * @param   pos index of segtree to consider (eg. root node)
- * @returns void
+ * \param   segtree the segment tree
+ * \param   lazy for lazy propagation
+ * \param   start lower index of the required query
+ * \param   end higher index of the required query
+ * \param   delta integer to add to each element of the range
+ * \param   low lower index of query for this function call
+ * \param   high higher index of query for this function call
+ * \param   pos index of segtree to consider (eg. root node)
+ * \returns void
  */
 void update(std::vector<int64_t> *segtree, std::vector<int64_t> *lazy,
             int64_t start, int64_t end, int64_t delta, uint64_t low,
@@ -140,9 +140,9 @@ void update(std::vector<int64_t> *segtree, std::vector<int64_t> *lazy,
 }
 
 /**
- * @brief   Self-test implementation
+ * \brief   Self-test implementation
  *
- * @returns void
+ * \returns void
  */
 static void test() {
     auto max = static_cast<int64_t>(2 * pow(2, ceil(log2(7))) - 1);
@@ -161,9 +161,9 @@ static void test() {
 }
 
 /**
- * @brief   Main function
+ * \brief   Main function
  *
- * @return  0 on exit
+ * \return  0 on exit
  */
 int main() {
     test();  // run self-test implementations

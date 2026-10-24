@@ -1,14 +1,14 @@
 /**
- * @file
- * @brief Implementation of [Cycle
+ * \file
+ * \brief Implementation of [Cycle
  * sort](https://en.wikipedia.org/wiki/Cycle_sort) algorithm
- * @details
+ * \details
  * Cycle Sort is a sorting algorithm that works in \f$O(n^2)\f$ time in the best
  * case and works in \f$O(n^2)\f$ in worst case. If a element is already at its
  * correct  position, do nothing. If a element is not at its correct position,
  * we then need to move it to its correct position by computing the correct
  * positions.Therefore, we should make sure the duplicate elements.
- * @author [TsungHan Ho](https://github.com/dalaoqi)
+ * \author [TsungHan Ho](https://github.com/dalaoqi)
  */
 
 #include <algorithm>  /// for std::is_sorted, std::swap
@@ -18,21 +18,21 @@
 #include <vector>     /// for std::vector
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 /**
- * @namespace cycle_sort
- * @brief Functions for [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort)
+ * \namespace cycle_sort
+ * \brief Functions for [Cycle sort](https://en.wikipedia.org/wiki/Cycle_sort)
  * algorithm
  */
 namespace cycle_sort {
 /**
- * @brief The main function implements cycleSort
- * @tparam T type of array
- * @param in_arr array to be sorted
- * @returns void
+ * \brief The main function implements cycleSort
+ * \tparam T type of array
+ * \param in_arr array to be sorted
+ * \returns void
  */
 template <typename T>
 std::vector<T> cycleSort(const std::vector<T> &in_arr) {
@@ -86,8 +86,8 @@ std::vector<T> cycleSort(const std::vector<T> &in_arr) {
 }  // namespace sorting
 
 /**
- * @brief Test implementations
- * @returns void
+ * \brief Test implementations
+ * \returns void
  */
 static void test() {
     // Test 1
@@ -122,8 +122,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the test

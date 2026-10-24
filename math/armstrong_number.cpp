@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Program to check if a number is an [Armstrong/Narcissistic
+ * \file
+ * \brief Program to check if a number is an [Armstrong/Narcissistic
  * number](https://en.wikipedia.org/wiki/Narcissistic_number) in decimal system.
  *
- * @details
+ * \details
  * Armstrong number or [Narcissistic
  * number](https://en.wikipedia.org/wiki/Narcissistic_number) is a number that
  * is the sum of its own digits raised to the power of the number of digits.
@@ -14,16 +14,16 @@
  * \f$ k = \lfloor log_b n\rfloor is the number of digits in the number in base
  * \f$b\f$, and \f$ d_i = \frac{n mod b^{i+1} - n mod b^{i}}{b^{i}} \f$
  *
- * @author [Neeraj Cherkara](https://github.com/iamnambiar)
+ * \author [Neeraj Cherkara](https://github.com/iamnambiar)
  */
 #include <cassert>   /// for assert
 #include <cmath>     /// for std::pow
 #include <iostream>  /// for IO operations
 
 /**
- * @brief Function to calculate the total number of digits in the number.
- * @param num Number
- * @return Total number of digits.
+ * \brief Function to calculate the total number of digits in the number.
+ * \param num Number
+ * \return Total number of digits.
  */
 int number_of_digits(int num) {
     int total_digits = 0;
@@ -35,10 +35,10 @@ int number_of_digits(int num) {
 }
 
 /**
- * @brief Function to check whether the number is armstrong number or not.
- * @param number to be checked
- * @return `true` if the number is armstrong.
- * @return `false` if the number is not armstrong.
+ * \brief Function to check whether the number is armstrong number or not.
+ * \param number to be checked
+ * \return `true` if the number is armstrong.
+ * \return `false` if the number is not armstrong.
  */
 bool is_armstrong(int number) {
     // If the number is less than 0, then it is not an armstrong number.
@@ -61,8 +61,8 @@ bool is_armstrong(int number) {
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // is_armstrong(370) returns true.
@@ -82,8 +82,8 @@ static void test() {
 }
 
 /**
- * @brief Main Function
- * @returns 0 on exit
+ * \brief Main Function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

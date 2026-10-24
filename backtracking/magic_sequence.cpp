@@ -1,8 +1,8 @@
 /*
- * @brief [Magic sequence](https://www.csplib.org/Problems/prob019/)
+ * \brief [Magic sequence](https://www.csplib.org/Problems/prob019/)
  * implementation
  *
- * @details Solve the magic sequence problem with backtracking
+ * \details Solve the magic sequence problem with backtracking
  *
  * "A magic sequence of length $n$ is a sequence of integers $x_0
  * \ldots x_{n-1}$ between $0$ and $n-1$, such that for all $i$
@@ -12,7 +12,7 @@
  * Quote taken from the [CSPLib](https://www.csplib.org/Problems/prob019/)
  * website
  *
- * @author [Jxtopher](https://github.com/Jxtopher)
+ * \author [Jxtopher](https://github.com/Jxtopher)
  */
 
 #include <algorithm>  /// for std::count
@@ -23,21 +23,21 @@
 #include <vector>     /// for std::vector
 
 /**
- * @namespace backtracking
- * @brief Backtracking algorithms
+ * \namespace backtracking
+ * \brief Backtracking algorithms
  */
 namespace backtracking {
 /**
- * @namespace magic_sequence
- * @brief Functions for the [Magic
+ * \namespace magic_sequence
+ * \brief Functions for the [Magic
  * sequence](https://www.csplib.org/Problems/prob019/) implementation
  */
 namespace magic_sequence {
 using sequence_t =
     std::vector<unsigned int>;  ///< Definition of the sequence type
 /**
- * @brief Print the magic sequence
- * @param s working memory for the sequence
+ * \brief Print the magic sequence
+ * \param s working memory for the sequence
  */
 void print(const sequence_t& s) {
     for (const auto& item : s) std::cout << item << " ";
@@ -45,10 +45,10 @@ void print(const sequence_t& s) {
 }
 
 /**
- * @brief Check if the sequence is magic
- * @param s working memory for the sequence
- * @returns true if it's a magic sequence
- * @returns false if it's NOT a magic sequence
+ * \brief Check if the sequence is magic
+ * \param s working memory for the sequence
+ * \returns true if it's a magic sequence
+ * \returns false if it's NOT a magic sequence
  */
 bool is_magic(const sequence_t& s) {
     for (unsigned int i = 0; i < s.size(); i++) {
@@ -60,11 +60,11 @@ bool is_magic(const sequence_t& s) {
 }
 
 /**
- * @brief Sub-solutions filtering
- * @param s working memory for the sequence
- * @param depth current depth in tree
- * @returns true if the sub-solution is valid
- * @returns false if the sub-solution is NOT valid
+ * \brief Sub-solutions filtering
+ * \param s working memory for the sequence
+ * \param depth current depth in tree
+ * \returns true if the sub-solution is valid
+ * \returns false if the sub-solution is NOT valid
  */
 bool filtering(const sequence_t& s, unsigned int depth) {
     return std::accumulate(s.cbegin(), s.cbegin() + depth,
@@ -72,10 +72,10 @@ bool filtering(const sequence_t& s, unsigned int depth) {
 }
 
 /**
- * @brief Solve the Magic Sequence problem
- * @param s working memory for the sequence
- * @param ret list of the valid magic sequences
- * @param depth current depth in the tree
+ * \brief Solve the Magic Sequence problem
+ * \param s working memory for the sequence
+ * \param ret list of the valid magic sequences
+ * \param depth current depth in the tree
  */
 void solve(sequence_t* s, std::list<sequence_t>* ret, unsigned int depth = 0) {
     if (depth == s->size()) {
@@ -96,8 +96,8 @@ void solve(sequence_t* s, std::list<sequence_t>* ret, unsigned int depth = 0) {
 }  // namespace backtracking
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // test a valid magic sequence
@@ -112,8 +112,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

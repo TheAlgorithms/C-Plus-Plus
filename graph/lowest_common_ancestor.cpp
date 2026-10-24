@@ -56,8 +56,8 @@ class Graph {
      * \brief Populate the adjacency list for each vertex in the graph.
      * Assumes that evey edge is a pair of valid vertex indices.
      *
-     * @param N number of vertices in the graph
-     * @param undirected_edges list of graph's undirected edges
+     * \param N number of vertices in the graph
+     * \param undirected_edges list of graph's undirected edges
      */
     Graph(size_t N, const std::vector<std::pair<int, int> > &undirected_edges) {
         neighbors.resize(N);
@@ -69,7 +69,7 @@ class Graph {
 
     /**
      * Function to get the number of vertices in the graph
-     * @return the number of vertices in the graph.
+     * \return the number of vertices in the graph.
      */
     int number_of_vertices() const { return neighbors.size(); }
 
@@ -87,8 +87,8 @@ class RootedTree : public Graph {
      * \brief Constructs the tree by calculating parent for every vertex.
      * Assumes a valid description of a tree is provided.
      *
-     * @param undirected_edges list of graph's undirected edges
-     * @param root_ index of the root vertex
+     * \param undirected_edges list of graph's undirected edges
+     * \param root_ index of the root vertex
      */
     RootedTree(const std::vector<std::pair<int, int> > &undirected_edges,
                int root_)
@@ -112,7 +112,7 @@ class RootedTree : public Graph {
      * \brief Calculate the parents for all the vertices in the tree.
      * Implements the breadth first search algorithm starting from the root
      * vertex searching the entire tree and labeling parents for all vertices.
-     * @returns none
+     * \returns none
      */
     void populate_parents() {
         // Initialize the vector with -1 which indicates the vertex
@@ -146,7 +146,7 @@ class LowestCommonAncestor {
  public:
     /**
      * \brief Stores the tree and precomputs "up lifts".
-     * @param tree_ rooted tree.
+     * \param tree_ rooted tree.
      */
     explicit LowestCommonAncestor(const RootedTree &tree_) : tree(tree_) {
         populate_up();
@@ -157,9 +157,9 @@ class LowestCommonAncestor {
      * Assumes that the provided numbers are valid indices of vertices.
      * Iterativelly modifies ("lifts") u an v until it finnds their lowest
      * common ancestor.
-     * @param u index of one of the queried vertex
-     * @param v index of the other queried vertex
-     * @return index of the vertex which is the lowet common ancestor of u and v
+     * \param u index of one of the queried vertex
+     * \param v index of the other queried vertex
+     * \return index of the vertex which is the lowet common ancestor of u and v
      */
     int lowest_common_ancestor(int u, int v) const {
         // Ensure u is the deeper (higher level) of the two vertices
@@ -229,7 +229,7 @@ class LowestCommonAncestor {
 
 /**
  * Unit tests
- * @returns none
+ * \returns none
  */
 static void tests() {
     /**

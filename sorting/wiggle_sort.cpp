@@ -25,28 +25,28 @@
 #include <vector>
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 /**
- * @namespace wiggle_sort
- * @brief Functions for [Wiggle
+ * \namespace wiggle_sort
+ * \brief Functions for [Wiggle
  * Sort](https://leetcode.com/problems/wiggle-sort-ii/) algorithm
  */
 namespace wiggle_sort {
 
 /**
  *
- * @brief Function used for sorting the elements in wave form.
- * @details
+ * \brief Function used for sorting the elements in wave form.
+ * \details
  * Checking whether the even indexed elements are greater than
  * their adjacent odd elements.
  * Traversing all even indexed elements of the input arr.
  * If current element is smaller than the previous odd element, swap them.
  * If current element is smaller than the next odd element, swap them.
  *
- * @param arr input array (unsorted elements)
+ * \param arr input array (unsorted elements)
  *
  */
 template <typename T>  // this allows to have vectors of ints, double, float,
@@ -75,11 +75,11 @@ std::vector<T> wiggleSort(const std::vector<T> &arr) {
 
 /**
  *
- * @brief Utility function used for printing the elements.
+ * \brief Utility function used for printing the elements.
  * Prints elements of the array after they're sorted using wiggle sort
  * algorithm.
  *
- * @param arr array containing the sorted elements
+ * \param arr array containing the sorted elements
  *
  */
 template <typename T>
@@ -102,7 +102,7 @@ static void displayElements(const std::vector<T> &arr) {
 
 /**
  * Test function
- * @returns void
+ * \returns void
  */
 static void test() {
     std::srand(std::time(nullptr));  // initialize random number generator

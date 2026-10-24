@@ -26,13 +26,13 @@
  * arr[l..m] and arr[m+1..r] are sorted and merges the two
  * sorted sub-arrays into one.
  *
- * @param arr - array with two halves arr[l...m] and arr[m+1...r]
- * @param l - left index or start index of first half array
- * @param m - right index or end index of first half array
+ * \param arr - array with two halves arr[l...m] and arr[m+1...r]
+ * \param l - left index or start index of first half array
+ * \param m - right index or end index of first half array
  *
  * (The second array starts form m+1 and goes till r)
  *
- * @param r - end index or right index of second half array
+ * \param r - end index or right index of second half array
  */
 void merge(int *arr, int l, int m, int r) {
     int n1 = m - l + 1;
@@ -74,9 +74,9 @@ void merge(int *arr, int l, int m, int r) {
  * input array into two halves and calls itself for the two halves
  * and then calls merge() to merge the two halves
  *
- * @param arr - array to be sorted
- * @param l - left index or start index of array
- * @param r - right index or end index of array
+ * \param arr - array to be sorted
+ * \param l - left index or start index of array
+ * \param r - right index or end index of array
  *
  */
 void mergeSort(int *arr, int l, int r) {

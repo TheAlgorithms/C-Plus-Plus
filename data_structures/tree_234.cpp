@@ -1,7 +1,7 @@
 /**
- * @file
- * @brief A demo 2-3-4 tree implementation
- * @details
+ * \file
+ * \brief A demo 2-3-4 tree implementation
+ * \details
  * 2–3–4 tree is a self-balancing data structure that is an isometry of
  * red–black trees. Though we seldom use them in practice, we study them
  * to understand the theory behind Red-Black tree. Please read following
@@ -11,7 +11,7 @@
 Introduction](https://www.educative.io/page/5689413791121408/80001)
  * We Only implement some basic and complicated operations in this demo.
  * Other operations should be easy to be added.
- * @author [liuhuan](https://github.com/fedom)
+ * \author [liuhuan](https://github.com/fedom)
  */
 #include <array>     /// for std::array
 #include <cassert>   /// for assert
@@ -22,21 +22,21 @@ Introduction](https://www.educative.io/page/5689413791121408/80001)
 #include <string>    /// for std::to_string
 
 /**
- * @namespace data_structures
- * @brief Algorithms with data structures
+ * \namespace data_structures
+ * \brief Algorithms with data structures
  */
 namespace data_structures {
 /**
- * @namespace tree_234
- * @brief Functions for [2–3–4 tree](https://en.wikipedia.org/wiki/2%E2%80%933%E2%80%934_tree)
+ * \namespace tree_234
+ * \brief Functions for [2–3–4 tree](https://en.wikipedia.org/wiki/2%E2%80%933%E2%80%934_tree)
  */
 namespace tree_234 {
-/** @brief 2-3-4 tree node class */
+/** \brief 2-3-4 tree node class */
 class Node {
  public:
     /**
-     * @brief Node constructor
-     * @param item the first value we insert to the node
+     * \brief Node constructor
+     * \param item the first value we insert to the node
      */
     explicit Node(int64_t item)
         : items({{item, 0, 0}}),
@@ -44,50 +44,50 @@ class Node {
           count(1) {}
 
     /**
-     * @brief Get the item count that current saved in the node
-     * @return item count
+     * \brief Get the item count that current saved in the node
+     * \return item count
      */
     int8_t GetCount() { return count; }
 
     /**
-     * @brief Set the item count of the node
+     * \brief Set the item count of the node
      *
      * This is only used when we spliting and merging node where we need to do
      * some raw operation manually. In common inserting and removing operation
      * the count is maintained automatically.
      *
-     * @param c the count to set
+     * \param c the count to set
      */
     void SetCount(int8_t c) { count = c; }
 
     /**
-     * @brief Check if node is a leaf
-     * @return true if node is leaf, false otherwise
+     * \brief Check if node is a leaf
+     * \return true if node is leaf, false otherwise
      */
     bool IsLeaf() { return children[0] == nullptr; }
 
     /**
-     * @brief Check if node is a full (4-node)
-     * @return true if node is full (4-node), false otherwise
+     * \brief Check if node is a full (4-node)
+     * \return true if node is full (4-node), false otherwise
      */
     bool IsFull() { return count == 3; }
 
     /**
-     * @brief Check if node is a 2-node
-     * @return true if node is 2-node, otherwise false
+     * \brief Check if node is a 2-node
+     * \return true if node is 2-node, otherwise false
      */
     bool Is2Node() { return count == 1; }
 
-    /** @brief Check if node is a 3-node or 4-node, this is useful when we
+    /** \brief Check if node is a 3-node or 4-node, this is useful when we
      * delete item from 2-3-4 tree
-     * @return true if node is 3-node or 4-node, false otherwise
+     * \return true if node is 3-node or 4-node, false otherwise
      */
     bool Is34Node() { return count == 2 || count == 3; }
 
     /**
-     * @brief Check if item is in the node
-     * @param item item to check
-     * @return true if item in the node, otherwise false
+     * \brief Check if item is in the node
+     * \param item item to check
+     * \return true if item in the node, otherwise false
      */
     bool Contains(int64_t item) {
         for (int8_t i = 0; i < count; i++) {
@@ -99,9 +99,9 @@ class Node {
     }
 
     /**
-     * @brief Get the index of the item in the node, 0-based
-     * @param item item to check
-     * @return 0-based index of the item in the node, if not in the node, -1 is
+     * \brief Get the index of the item in the node, 0-based
+     * \param item item to check
+     * \return 0-based index of the item in the node, if not in the node, -1 is
      * returned
      */
     int8_t GetItemIndex(int64_t item) {
@@ -114,28 +114,28 @@ class Node {
     }
 
     /**
-     * @brief Get max item (rightmost) in the current node
-     * @return max item
+     * \brief Get max item (rightmost) in the current node
+     * \return max item
      */
     int64_t GetMaxItem() { return items[count - 1]; }
 
     /**
-     * @brief get min item (leftmost) in the current node
-     * @return min item
+     * \brief get min item (leftmost) in the current node
+     * \return min item
      */
     int64_t GetMinItem() { return items[0]; }
 
     /**
-     * @brief Get item of the \index index
-     * @param index the item index to get
-     * @return the item
+     * \brief Get item of the \index index
+     * \param index the item index to get
+     * \return the item
      */
     int64_t GetItem(int8_t index) { return items[index]; }
 
     /**
-     * @brief Set item value at position of index
-     * @param index the index of the item to set
-     * @param new_item item value
+     * \brief Set item value at position of index
+     * \param index the index of the item to set
+     * \param new_item item value
      */
     void SetItem(int8_t index, int64_t new_item) {
         assert(index >= 0 && index <= 2);
@@ -144,7 +144,7 @@ class Node {
     }
 
     /**
-     * @brief Insert item to the proper position of the node and return the
+     * \brief Insert item to the proper position of the node and return the
      * position index.
      *
      * This is a helper function we use during insertion. Please mind that when
@@ -156,8 +156,8 @@ class Node {
      * pointer to its right child. So after use the function, please update
      * these two children pointer manually.
      *
-     * @param item value to be inserted to the node
-     * @return index where item is inserted, caller can use this
+     * \param item value to be inserted to the node
+     * \return index where item is inserted, caller can use this
      * index to update its left and right child
      */
     int InsertItem(int item) {
@@ -179,11 +179,11 @@ class Node {
     }
 
     /**
-     * @brief Insert a value to the index position
-     * @param index index where to insert item
-     * @param item  value to insert
-     * @param with_child new added child pointer
-     * @param to_left true indicate adding with_child to new item's left child,
+     * \brief Insert a value to the index position
+     * \param index index where to insert item
+     * \param item  value to insert
+     * \param with_child new added child pointer
+     * \param to_left true indicate adding with_child to new item's left child,
      * otherwise to right child
      */
     void InsertItemByIndex(int8_t index, int64_t item, Node *with_child,
@@ -208,11 +208,11 @@ class Node {
     }
 
     /**
-     * @brief Insert a value to the index position
-     * @param index index of the item to remove
-     * @param keep_left which child of the item to keep, true keep the left
+     * \brief Insert a value to the index position
+     * \param index index of the item to remove
+     * \param keep_left which child of the item to keep, true keep the left
      * child, false keep the right child
-     * @return the removed child pointer
+     * \return the removed child pointer
      */
     Node *RemoveItemByIndex(int8_t index, bool keep_left) {
         assert(index >= 0 && index < count);
@@ -230,9 +230,9 @@ class Node {
     }
 
     /**
-     * @brief Get the child's index of the children array
-     * @param child child pointer of which to get the index
-     * @return the index of child
+     * \brief Get the child's index of the children array
+     * \param child child pointer of which to get the index
+     * \return the index of child
      */
     int8_t GetChildIndex(Node *child) {
         for (int8_t i = 0; i < count + 1; i++) {
@@ -245,35 +245,35 @@ class Node {
     }
 
     /**
-     * @brief Get the child pointer at position of index
-     * @param index index of child to get
-     * @return the child pointer
+     * \brief Get the child pointer at position of index
+     * \param index index of child to get
+     * \return the child pointer
      */
     Node *GetChild(int8_t index) { return children[index]; }
 
     /**
-     * @brief Set child pointer to the position of index
-     * @param index children index
-     * @param child pointer to set
+     * \brief Set child pointer to the position of index
+     * \param index children index
+     * \param child pointer to set
      */
     void SetChild(int8_t index, Node *child) { children[index] = child; }
 
     /**
-     * @brief Get rightmose child of the current node
-     * @return the rightmost child
+     * \brief Get rightmose child of the current node
+     * \return the rightmost child
      */
     Node *GetRightmostChild() { return children[count]; }
 
     /**
-     * @brief Get leftmose child of the current node
-     * @return the leftmost child
+     * \brief Get leftmose child of the current node
+     * \return the leftmost child
      */
     Node *GetLeftmostChild() { return children[0]; }
 
     /**
-     * @brief Get left child of item at item_index
-     * @param item_index  index of the item whose left child to be get
-     * @return left child of items[index]'s
+     * \brief Get left child of item at item_index
+     * \param item_index  index of the item whose left child to be get
+     * \return left child of items[index]'s
      */
     Node *GetItemLeftChild(int8_t item_index) {
         if (item_index < 0 || item_index > count - 1) {
@@ -284,9 +284,9 @@ class Node {
     }
 
     /**
-     * @brief Get right child of item at item_index
-     * @param item_index  index of the item whose right child to be get
-     * @return right child of items[index]'s
+     * \brief Get right child of item at item_index
+     * \param item_index  index of the item whose right child to be get
+     * \return right child of items[index]'s
      */
     Node *GetItemRightChild(int8_t item_index) {
         if (item_index < 0 || item_index > count - 1) {
@@ -297,9 +297,9 @@ class Node {
     }
 
     /**
-     * @brief Get next node which is possibly contains item
-     * @param item item to search
-     * @return the next node that possibly contains item
+     * \brief Get next node which is possibly contains item
+     * \param item item to search
+     * \return the next node that possibly contains item
      */
     Node *GetNextPossibleChild(int64_t item) {
         int i = 0;
@@ -319,7 +319,7 @@ class Node {
     int8_t count = 0;  ///< track the current item count
 };
 
-/** @brief 2-3-4 tree class */
+/** \brief 2-3-4 tree class */
 class Tree234 {
  public:
     Tree234() = default;
@@ -331,100 +331,100 @@ class Tree234 {
     ~Tree234();
 
     /**
-     * @brief Insert item to tree
-     * @param item item to insert
+     * \brief Insert item to tree
+     * \param item item to insert
      */
     void Insert(int64_t item);
 
     /**
-     * @brief Remove item from tree
-     * @param item item to remove
-     * @return true if item found and removed, false otherwise
+     * \brief Remove item from tree
+     * \param item item to remove
+     * \return true if item found and removed, false otherwise
      */
     bool Remove(int64_t item);
 
-    /** @brief In-order traverse */
+    /** \brief In-order traverse */
     void Traverse();
 
     /**
-     * @brief Print tree into a dot file
-     * @param file_name output file name, if nullptr then use "out.dot" as
+     * \brief Print tree into a dot file
+     * \param file_name output file name, if nullptr then use "out.dot" as
      * default
      */
     void Print(const char *file_name = nullptr);
 
  private:
     /**
-     * @brief A insert implementation of pre-split
-     * @param item item to insert
+     * \brief A insert implementation of pre-split
+     * \param item item to insert
      */
     void InsertPreSplit(int64_t item);
 
     /**
-     * @brief A insert implementation of post-merge
-     * @param item item to insert
+     * \brief A insert implementation of post-merge
+     * \param item item to insert
      */
     void InsertPostMerge(int64_t item);
 
     /**
-     * @brief A helper function used by post-merge insert
-     * @param tree tree where to insert item
-     * @param item item to insert
-     * @return the node that split as the parent when overflow happen
+     * \brief A helper function used by post-merge insert
+     * \param tree tree where to insert item
+     * \param item item to insert
+     * \return the node that split as the parent when overflow happen
      */
     Node *Insert(Node *tree, int64_t item);
 
     /**
-     * @brief A helper function used during post-merge insert
+     * \brief A helper function used during post-merge insert
      *
      * When the inserting leads to overflow, it will split the node to 1 parent
      * and 2 children. The parent will be merged to its origin parent after
      * that. This is the function to complete this task. So the param node is
      * always a 2-node.
      *
-     * @param dst_node the target node we will merge node to, can be type of
+     * \param dst_node the target node we will merge node to, can be type of
      * 2-node, 3-node or 4-node
-     * @param node the source node we will merge from, type must be 2-node
-     * @return overflow node of this level
+     * \param node the source node we will merge from, type must be 2-node
+     * \return overflow node of this level
      */
     Node *MergeNode(Node *dst_node, Node *node);
 
     /**
-     * @brief Merge node to a not-full target node
+     * \brief Merge node to a not-full target node
      *
      * Since the target node is not-full, no overflow will happen. So we have
      * nothing to return.
      *
-     * @param dst_node the target not-full node, that is the type is either
+     * \param dst_node the target not-full node, that is the type is either
      * 2-node or 3-node, but not 4-node
-     * @param node the source node we will merge from, type must be 2-node
+     * \param node the source node we will merge from, type must be 2-node
      */
     void MergeNodeNotFull(Node *dst_node, Node *node);
 
     /**
-     * @brief Split a 4-node to 1 parent and 2 children, and return the parent
+     * \brief Split a 4-node to 1 parent and 2 children, and return the parent
      * node
-     * @param node the node to split, it must be a 4-node
-     * @return split parent node
+     * \param node the node to split, it must be a 4-node
+     * \return split parent node
      */
     Node *SplitNode(Node *node);
 
     /**
-     * @brief Get the max item of the tree
-     * @param tree the tree we will get item from
-     * @return max item of the tree
+     * \brief Get the max item of the tree
+     * \param tree the tree we will get item from
+     * \return max item of the tree
      */
     int64_t GetTreeMaxItem(Node *tree);
 
     /**
-     * @brief Get the min item of the tree
-     * @param tree the tree we will get item from
-     * @return min item of the tree
+     * \brief Get the min item of the tree
+     * \param tree the tree we will get item from
+     * \return min item of the tree
      */
     int64_t GetTreeMinItem(Node *tree);
 
     /**
-     * @brief A handy function to try if we can do a left rotate to the target
+     * \brief A handy function to try if we can do a left rotate to the target
      * node
      *
      * Given two node, the parent and the target child, the left rotate
@@ -432,16 +432,16 @@ class Tree234 {
      * sibling of the target child. The operation can be successfully done if
      * the to_child has a right sibling and its right sibling is not 2-node.
      *
-     * @param parent the parent node in this left rotate operation
-     * @param to_child the target child of this left rotate operation. In our
+     * \param parent the parent node in this left rotate operation
+     * \param to_child the target child of this left rotate operation. In our
      * case, this node is always 2-node
-     * @return true if we successfully do the rotate. false if the
+     * \return true if we successfully do the rotate. false if the
      * requirements are not fulfilled.
      */
     bool TryLeftRotate(Node *parent, Node *to_child);
 
     /**
-     * @brief A handy function to try if we can do a right rotate to the target
+     * \brief A handy function to try if we can do a right rotate to the target
      * node
      *
      * Given two node, the parent and the target child, the right rotate
@@ -449,16 +449,16 @@ class Tree234 {
      * sibling of the target child. The operation can be successfully done if
      * the to_child has a left sibling and its left sibling is not 2-node.
      *
-     * @param parent the parent node in this right rotate operation
-     * @param to_child the target child of this right rotate operation. In our
+     * \param parent the parent node in this right rotate operation
+     * \param to_child the target child of this right rotate operation. In our
      * case, it is always 2-node
-     * @return true if we successfully do the rotate. false if the
+     * \return true if we successfully do the rotate. false if the
      * requirements are not fulfilled.
      */
     bool TryRightRotate(Node *parent, Node *to_child);
 
     /**
-     * @brief Do the actual right rotate operation
+     * \brief Do the actual right rotate operation
      *
      * Given parent node, and the pivot item index, the right rotate operation
      * is uniquely identified. The function assume the requirements are
@@ -466,69 +466,69 @@ class Tree234 {
      * TryRightRotate(), and the condition checking should be done before call
      * it.
      *
-     * @param parent the parent node in this right rotate operation
-     * @param index the pivot item index of this right rotate operation.
+     * \param parent the parent node in this right rotate operation
+     * \param index the pivot item index of this right rotate operation.
      */
     void RightRotate(Node *parent, int8_t index);
 
     /**
-     * @brief Do the actual left rotate operation
+     * \brief Do the actual left rotate operation
      *
      * Given parent node, and the pivot item index, the left rotate operation is
      * uniquely identified. The function assume the requirements are fulfilled
      * and won't do any extra check. This function is call by TryLeftRotate(),
      * and the condition checking should be done before call it.
      *
-     * @param parent the parent node in this right rotate operation
-     * @param index the pivot item index of this right rotate operation.
+     * \param parent the parent node in this right rotate operation
+     * \param index the pivot item index of this right rotate operation.
      */
     void LeftRotate(Node *parent, int8_t index);
 
     /**
-     * @brief Main function implement the pre-merge remove operation
-     * @param node the tree to remove item from
-     * @param item item to remove
-     * @return true if remove success, false otherwise
+     * \brief Main function implement the pre-merge remove operation
+     * \param node the tree to remove item from
+     * \param item item to remove
+     * \return true if remove success, false otherwise
      * */
     bool RemovePreMerge(Node *node, int64_t item);
 
     /**
-     * @brief Merge the item at index of the parent node, and its left and right
+     * \brief Merge the item at index of the parent node, and its left and right
      * child
      *
      * the left and right child node must be 2-node. The 3 items will be merged
      * into a 4-node. In our case the parent can be a 2-node iff it is the root.
      * Otherwise, it must be 3-node or 4-node.
      *
-     * @param parent the parent node in the merging operation
-     * @param index the item index of the parent node that involved in the
+     * \param parent the parent node in the merging operation
+     * \param index the item index of the parent node that involved in the
      * merging
-     * @return the merged 4-node
+     * \return the merged 4-node
      */
     Node *Merge(Node *parent, int8_t index);
 
     /**
-     * @brief Recursive release the tree
-     * @param tree root node of the tree to delete
+     * \brief Recursive release the tree
+     * \param tree root node of the tree to delete
      */
     void DeleteNode(Node *tree);
 
     /**
-     * @brief In-order traverse the tree, print items
-     * @param tree tree to traverse
+     * \brief In-order traverse the tree, print items
+     * \param tree tree to traverse
      */
     void Traverse(Node *tree);
 
     /**
-     * @brief Print the tree to a dot file. You can convert it to picture with
+     * \brief Print the tree to a dot file. You can convert it to picture with
      * graphviz
-     * @param ofs output file stream to print to
-     * @param node current node to print
-     * @param parent_index current node's parent node index, this is used to
+     * \param ofs output file stream to print to
+     * \param node current node to print
+     * \param parent_index current node's parent node index, this is used to
      * draw the link from parent to current node
-     * @param index current node's index of level order which is used to name
+     * \param index current node's index of level order which is used to name
      * the node in dot file
-     * @param parent_child_index the index that current node in parent's
+     * \param parent_child_index the index that current node in parent's
      * children array, range in [0,4), help to locate the start position of the
      * link between nodes
      */
@@ -541,8 +541,8 @@ class Tree234 {
 Tree234::~Tree234() { DeleteNode(root_); }
 
 /**
- * @brief Recursive release the tree
- * @param tree root node of the tree to delete
+ * \brief Recursive release the tree
+ * \param tree root node of the tree to delete
  */
 void Tree234::DeleteNode(Node *tree) {
     if (!tree) {
@@ -556,8 +556,8 @@ void Tree234::DeleteNode(Node *tree) {
 }
 
 /**
- * @brief In-order traverse the tree, print items
- * @param tree tree to traverse
+ * \brief In-order traverse the tree, print items
+ * \param tree tree to traverse
  */
 void Tree234::Traverse() {
     Traverse(root_);
@@ -579,8 +579,8 @@ void Tree234::Traverse(Node *node) {
 }
 
 /**
- * @brief A insert implementation of pre-split
- * @param item item to insert
+ * \brief A insert implementation of pre-split
+ * \param item item to insert
  */
 void Tree234::InsertPreSplit(int64_t item) {
     if (!root_) {
@@ -631,8 +631,8 @@ void Tree234::InsertPreSplit(int64_t item) {
 }
 
 /**
- * @brief A insert implementation of post-merge
- * @param item item to insert
+ * \brief A insert implementation of post-merge
+ * \param item item to insert
  */
 void Tree234::InsertPostMerge(int64_t item) {
     if (!root_) {
@@ -649,16 +649,16 @@ void Tree234::InsertPostMerge(int64_t item) {
 }
 
 /**
- * @brief Insert item to tree
- * @param item item to insert
+ * \brief Insert item to tree
+ * \param item item to insert
  */
 void Tree234::Insert(int64_t item) { InsertPreSplit(item); }
 
 /**
- * @brief A helper function used by post-merge insert
- * @param tree tree where to insert item
- * @param item item to insert
- * @return the node that split as the parent when overflow happen
+ * \brief A helper function used by post-merge insert
+ * \param tree tree where to insert item
+ * \param item item to insert
+ * \return the node that split as the parent when overflow happen
  */
 Node *Tree234::Insert(Node *tree, int64_t item) {
     assert(tree != nullptr);
@@ -685,17 +685,17 @@ Node *Tree234::Insert(Node *tree, int64_t item) {
 }
 
 /**
- * @brief A helper function used during post-merge insert
+ * \brief A helper function used during post-merge insert
  *
  * When the inserting leads to overflow, it will split the node to 1 parent
  * and 2 children. The parent will be merged to its origin parent after
  * that. This is the function to complete this task. So the param node is
  * always a 2-node.
  *
- * @param dst_node the target node we will merge node to, can be type of
+ * \param dst_node the target node we will merge node to, can be type of
  * 2-node, 3-node or 4-node
- * @param node the source node we will merge from, type must be 2-node
- * @return overflow node of this level
+ * \param node the source node we will merge from, type must be 2-node
+ * \return overflow node of this level
  */
 Node *Tree234::MergeNode(Node *dst_node, Node *node) {
     assert(dst_node != nullptr && node != nullptr);
@@ -718,14 +718,14 @@ Node *Tree234::MergeNode(Node *dst_node, Node *node) {
 }
 
 /**
- * @brief Merge node to a not-full target node
+ * \brief Merge node to a not-full target node
  *
  * Since the target node is not-full, no overflow will happen. So we have
  * nothing to return.
  *
- * @param dst_node the target not-full node, that is the type is either
+ * \param dst_node the target not-full node, that is the type is either
  * 2-node or 3-node, but not 4-node
- * @param node the source node we will merge from, type must be 2-node
+ * \param node the source node we will merge from, type must be 2-node
  */
 void Tree234::MergeNodeNotFull(Node *dst_node, Node *node) {
     assert(dst_node && node && !dst_node->IsFull() && node->Is2Node());
@@ -737,10 +737,10 @@ void Tree234::MergeNodeNotFull(Node *dst_node, Node *node) {
 }
 
 /**
- * @brief Split a 4-node to 1 parent and 2 children, and return the parent
+ * \brief Split a 4-node to 1 parent and 2 children, and return the parent
  * node
- * @param node the node to split, it must be a 4-node
- * @return split parent node
+ * \param node the node to split, it must be a 4-node
+ * \return split parent node
  */
 Node *Tree234::SplitNode(Node *node) {
     assert(node->GetCount() == 3);
@@ -761,7 +761,7 @@ Node *Tree234::SplitNode(Node *node) {
 }
 
 /**
- * @brief A handy function to try if we can do a left rotate to the target
+ * \brief A handy function to try if we can do a left rotate to the target
  * node
  *
  * Given two node, the parent and the target child, the left rotate
@@ -769,10 +769,10 @@ Node *Tree234::SplitNode(Node *node) {
  * sibling of the target child. The operation can be successfully done if
  * the to_child has a right sibling and its right sibling is not 2-node.
  *
- * @param parent the parent node in this left rotate operation
- * @param to_child the target child of this left rotate operation. In our
+ * \param parent the parent node in this left rotate operation
+ * \param to_child the target child of this left rotate operation. In our
  * case, this node is always 2-node
- * @return true if we successfully do the rotate. false if the
+ * \return true if we successfully do the rotate. false if the
  * requirements are not fulfilled.
  */
 bool Tree234::TryLeftRotate(Node *parent, Node *to_child) {
@@ -796,7 +796,7 @@ bool Tree234::TryLeftRotate(Node *parent, Node *to_child) {
 }
 
 /**
- * @brief A handy function to try if we can do a right rotate to the target
+ * \brief A handy function to try if we can do a right rotate to the target
  * node
  *
  * Given two node, the parent and the target child, the right rotate
@@ -804,10 +804,10 @@ bool Tree234::TryLeftRotate(Node *parent, Node *to_child) {
  * sibling of the target child. The operation can be successfully done if
  * the to_child has a left sibling and its left sibling is not 2-node.
  *
- * @param parent the parent node in this right rotate operation
- * @param to_child the target child of this right rotate operation. In our
+ * \param parent the parent node in this right rotate operation
+ * \param to_child the target child of this right rotate operation. In our
  * case, it is always 2-node
- * @return true if we successfully do the rotate. false if the
+ * \return true if we successfully do the rotate. false if the
  * requirements are not fulfilled.
  */
 bool Tree234::TryRightRotate(Node *parent, Node *to_child) {
@@ -831,7 +831,7 @@ bool Tree234::TryRightRotate(Node *parent, Node *to_child) {
 }
 
 /**
- * @brief Do the actual right rotate operation
+ * \brief Do the actual right rotate operation
  *
  * Given parent node, and the pivot item index, the right rotate operation
  * is uniquely identified. The function assume the requirements are
@@ -839,8 +839,8 @@ bool Tree234::TryRightRotate(Node *parent, Node *to_child) {
  * TryRightRotate(), and the condition checking should be done before call
  * it.
  *
- * @param parent the parent node in this right rotate operation
- * @param index the pivot item index of this right rotate operation.
+ * \param parent the parent node in this right rotate operation
+ * \param index the pivot item index of this right rotate operation.
  */
 void Tree234::RightRotate(Node *parent, int8_t index) {
     Node *left = parent->GetItemLeftChild(index);
@@ -856,15 +856,15 @@ void Tree234::RightRotate(Node *parent, int8_t index) {
 }
 
 /**
- * @brief Do the actual left rotate operation
+ * \brief Do the actual left rotate operation
  *
  * Given parent node, and the pivot item index, the left rotate operation is
  * uniquely identified. The function assume the requirements are fulfilled
  * and won't do any extra check. This function is call by TryLeftRotate(),
  * and the condition checking should be done before call it.
  *
- * @param parent the parent node in this right rotate operation
- * @param index the pivot item index of this right rotate operation.
+ * \param parent the parent node in this right rotate operation
+ * \param index the pivot item index of this right rotate operation.
  */
 void Tree234::LeftRotate(Node *parent, int8_t index) {
     Node *left = parent->GetItemLeftChild(index);
@@ -880,17 +880,17 @@ void Tree234::LeftRotate(Node *parent, int8_t index) {
 }
 
 /**
- * @brief Merge the item at index of the parent node, and its left and right
+ * \brief Merge the item at index of the parent node, and its left and right
  * child
  *
  * the left and right child node must be 2-node. The 3 items will be merged
  * into a 4-node. In our case the parent can be a 2-node iff it is the root.
  * Otherwise, it must be 3-node or 4-node.
  *
- * @param parent the parent node in the merging operation
- * @param index the item index of the parent node that involved in the
+ * \param parent the parent node in the merging operation
+ * \param index the item index of the parent node that involved in the
  * merging
- * @return the merged 4-node
+ * \return the merged 4-node
  */
 Node *Tree234::Merge(Node *parent, int8_t index) {
     assert(parent);
@@ -922,17 +922,17 @@ Node *Tree234::Merge(Node *parent, int8_t index) {
 }
 
 /**
- * @brief Remove item from tree
- * @param item item to remove
- * @return true if item found and removed, false otherwise
+ * \brief Remove item from tree
+ * \param item item to remove
+ * \return true if item found and removed, false otherwise
  */
 bool Tree234::Remove(int64_t item) { return RemovePreMerge(root_, item); }
 
 /**
- * @brief Main function implement the pre-merge remove operation
- * @param node the tree to remove item from
- * @param item item to remove
- * @return true if remove success, false otherwise
+ * \brief Main function implement the pre-merge remove operation
+ * \param node the tree to remove item from
+ * \param item item to remove
+ * \return true if remove success, false otherwise
  */
 bool Tree234::RemovePreMerge(Node *node, int64_t item) {
     while (node) {
@@ -1091,9 +1091,9 @@ bool Tree234::RemovePreMerge(Node *node, int64_t item) {
 }
 
 /**
- * @brief Get the max item of the tree
- * @param tree the tree we will get item from
- * @return max item of the tree
+ * \brief Get the max item of the tree
+ * \param tree the tree we will get item from
+ * \return max item of the tree
  */
 int64_t Tree234::GetTreeMaxItem(Node *tree) {
     assert(tree);
@@ -1108,9 +1108,9 @@ int64_t Tree234::GetTreeMaxItem(Node *tree) {
 }
 
 /**
- * @brief Get the min item of the tree
- * @param tree the tree we will get item from
- * @return min item of the tree
+ * \brief Get the min item of the tree
+ * \param tree the tree we will get item from
+ * \return min item of the tree
  */
 int64_t Tree234::GetTreeMinItem(Node *tree) {
     assert(tree);
@@ -1125,8 +1125,8 @@ int64_t Tree234::GetTreeMinItem(Node *tree) {
 }
 
 /**
- * @brief Print tree into a dot file
- * @param file_name output file name, if nullptr then use "out.dot" as default
+ * \brief Print tree into a dot file
+ * \param file_name output file name, if nullptr then use "out.dot" as default
  */
 void Tree234::Print(const char *file_name) {
     if (!file_name) {
@@ -1146,7 +1146,7 @@ void Tree234::Print(const char *file_name) {
 
     int64_t index = 0;
 
-    /** @brief This is a helper structure to do a level order traversal to print
+    /** \brief This is a helper structure to do a level order traversal to print
      * the tree. */
     struct NodeInfo {
         Node *node;     ///< tree node
@@ -1211,15 +1211,15 @@ void Tree234::Print(const char *file_name) {
 }
 
 /**
- * @brief Print the tree to a dot file. You can convert it to picture with
+ * \brief Print the tree to a dot file. You can convert it to picture with
  * graphviz
- * @param ofs output file stream to print to
- * @param node current node to print
- * @param parent_index current node's parent node index, this is used to draw
+ * \param ofs output file stream to print to
+ * \param node current node to print
+ * \param parent_index current node's parent node index, this is used to draw
  * the link from parent to current node
- * @param index current node's index of level order which is used to name the
+ * \param index current node's index of level order which is used to name the
  * node in dot file
- * @param parent_child_index the index that current node in parent's children
+ * \param parent_child_index the index that current node in parent's children
  * array, range in [0,4), help to locate the start position of the link between
  * nodes
  */
@@ -1258,7 +1258,7 @@ void Tree234::PrintNode(std::ofstream &ofs, Node *node, int64_t parent_index,
 }  // namespace data_structures
 
 
-/** @brief simple test to insert a given array and delete some item, and print
+/** \brief simple test to insert a given array and delete some item, and print
  * the tree*/
 static void test1() {
     std::array<int16_t, 13> arr = {3, 1, 5, 4, 2, 9, 10, 8, 7, 6, 16, 13, 14};
@@ -1274,9 +1274,9 @@ static void test1() {
 }
 
 /**
- * @brief simple test to insert continuous number of range [0, n), and print
+ * \brief simple test to insert continuous number of range [0, n), and print
  * the tree
- * @param n upper bound of the range number to insert
+ * \param n upper bound of the range number to insert
  */
 static void test2(int64_t n) {
     data_structures::tree_234::Tree234 tree;
@@ -1290,10 +1290,10 @@ static void test2(int64_t n) {
 }
 
 /**
- * @brief Main function
- * @param argc commandline argument count
- * @param argv commandline array of arguments
- * @returns 0 on exit
+ * \brief Main function
+ * \param argc commandline argument count
+ * \param argv commandline array of arguments
+ * \returns 0 on exit
  */
 int main(int argc, char *argv[]) {
     if (argc < 2) {

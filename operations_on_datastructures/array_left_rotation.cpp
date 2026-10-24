@@ -1,13 +1,13 @@
 /**
- * @file
- * @brief Implementation for the [Array Left
+ * \file
+ * \brief Implementation for the [Array Left
  * Rotation](https://www.javatpoint.com/program-to-left-rotate-the-elements-of-an-array)
  * algorithm.
- * @details Shifting an array to the left involves moving each element of the
+ * \details Shifting an array to the left involves moving each element of the
  * array so that it occupies a position of a certain shift value before its
  * current one. This implementation uses a result vector and does not mutate the
  * input.
- * @author [Alvin](https://github.com/polarvoid)
+ * \author [Alvin](https://github.com/polarvoid)
  */
 
 #include <cassert>   /// for assert
@@ -15,16 +15,16 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace operations_on_datastructures
- * @brief Operations on Data Structures
+ * \namespace operations_on_datastructures
+ * \brief Operations on Data Structures
  */
 namespace operations_on_datastructures {
 
 /**
- * @brief Prints the values of a vector sequentially, ending with a newline
+ * \brief Prints the values of a vector sequentially, ending with a newline
  * character.
- * @param array Reference to the array to be printed
- * @returns void
+ * \param array Reference to the array to be printed
+ * \returns void
  */
 void print(const std::vector<int32_t> &array) {
     for (int32_t i : array) {
@@ -34,14 +34,14 @@ void print(const std::vector<int32_t> &array) {
 }
 
 /**
- * @brief Shifts the given vector to the left by the shift amount and returns a
+ * \brief Shifts the given vector to the left by the shift amount and returns a
  * new vector with the result. The original vector is not mutated.
- * @details Shifts the values of the vector, by creating a new vector and adding
+ * \details Shifts the values of the vector, by creating a new vector and adding
  * values from the shift index to the end, then appending the rest of the
  * elements from the start of the vector.
- * @param array A reference to the input std::vector
- * @param shift The amount to be shifted to the left
- * @returns A std::vector with the shifted values
+ * \param array A reference to the input std::vector
+ * \param shift The amount to be shifted to the left
+ * \returns A std::vector with the shifted values
  */
 std::vector<int32_t> shift_left(const std::vector<int32_t> &array,
                                 size_t shift) {
@@ -62,15 +62,15 @@ std::vector<int32_t> shift_left(const std::vector<int32_t> &array,
 }  // namespace operations_on_datastructures
 
 /**
- * @namespace tests
- * @brief Testcases to check Union of Two Arrays.
+ * \namespace tests
+ * \brief Testcases to check Union of Two Arrays.
  */
 namespace tests {
 using operations_on_datastructures::print;
 using operations_on_datastructures::shift_left;
 /**
- * @brief A Test to check an simple case
- * @returns void
+ * \brief A Test to check an simple case
+ * \returns void
  */
 void test1() {
     std::cout << "TEST CASE 1\n";
@@ -84,8 +84,8 @@ void test1() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check an empty vector
- * @returns void
+ * \brief A Test to check an empty vector
+ * \returns void
  */
 void test2() {
     std::cout << "TEST CASE 2\n";
@@ -99,8 +99,8 @@ void test2() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check an invalid shift value
- * @returns void
+ * \brief A Test to check an invalid shift value
+ * \returns void
  */
 void test3() {
     std::cout << "TEST CASE 3\n";
@@ -114,8 +114,8 @@ void test3() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check a very large input
- * @returns void
+ * \brief A Test to check a very large input
+ * \returns void
  */
 void test4() {
     std::cout << "TEST CASE 4\n";
@@ -137,8 +137,8 @@ void test4() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check a shift of zero
- * @returns void
+ * \brief A Test to check a shift of zero
+ * \returns void
  */
 void test5() {
     std::cout << "TEST CASE 5\n";
@@ -153,8 +153,8 @@ void test5() {
 }  // namespace tests
 
 /**
- * @brief Function to test the correctness of shift_left() function
- * @returns void
+ * \brief Function to test the correctness of shift_left() function
+ * \returns void
  */
 static void test() {
     tests::test1();
@@ -165,8 +165,8 @@ static void test() {
 }
 
 /**
- * @brief main function
- * @returns 0 on exit
+ * \brief main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

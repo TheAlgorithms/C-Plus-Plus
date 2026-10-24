@@ -1,8 +1,8 @@
 /**
- * @file vigenere_cipher.cpp
- * @brief Implementation of [Vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) algorithm.
+ * \file vigenere_cipher.cpp
+ * \brief Implementation of [Vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) algorithm.
  *
- * @details
+ * \details
  * The Vigenère cipher is a method of encrypting alphabetic text by using a series of interwoven vigenere 
  * ciphers, based on the letters of a keyword. It employs a form of polyalphabetic substitution. 
  *
@@ -28,7 +28,7 @@
  * 
  * \note This program implements Vigenère cipher for only uppercase English alphabet characters (i.e. A-Z). 
  * 
- * @author [Deep Raval](https://github.com/imdeep2905)
+ * \author [Deep Raval](https://github.com/imdeep2905)
  */
 #include <iostream>
 #include <string>
@@ -45,8 +45,8 @@ namespace ciphers {
         namespace {
             /**
              * This function finds character for given value (i.e.A-Z)
-             * @param x value for which we want character 
-             * @return  corresponding character for perticular value
+             * \param x value for which we want character 
+             * \return  corresponding character for perticular value
              */        
             inline char get_char(const int x) {
                 // By adding 65 we are scaling 0-25 to 65-90. 
@@ -55,8 +55,8 @@ namespace ciphers {
             }
             /**
              * This function finds value for given character (i.e.0-25)
-             * @param c character for which we want value
-             * @return returns corresponding value for perticular character
+             * \param c character for which we want value
+             * \return returns corresponding value for perticular character
              */  
             inline int get_value(const char c) {
                 // A-Z have ASCII values in range 65-90.
@@ -66,9 +66,9 @@ namespace ciphers {
         } // Unnamed namespace
         /**
          * Encrypt given text using vigenere cipher.
-         * @param text text to be encrypted
-         * @param key to be used for encryption
-         * @return new encrypted text
+         * \param text text to be encrypted
+         * \param key to be used for encryption
+         * \return new encrypted text
          */
         std::string encrypt (const std::string &text, const std::string &key) {
             std::string encrypted_text = ""; // Empty string to store encrypted text
@@ -85,9 +85,9 @@ namespace ciphers {
         }
         /**
          * Decrypt given text using vigenere cipher.
-         * @param text text to be decrypted
-         * @param key key to be used for decryption
-         * @return new decrypted text
+         * \param text text to be decrypted
+         * \param key key to be used for decryption
+         * \return new decrypted text
          */        
         std::string decrypt (const std::string &text, const std::string &key) {
             // Going through each character of text and key

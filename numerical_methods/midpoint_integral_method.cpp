@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief A numerical method for easy [approximation of
+ * \file
+ * \brief A numerical method for easy [approximation of
  * integrals](https://en.wikipedia.org/wiki/Midpoint_method)
- * @details The idea is to split the interval into N of intervals and use as
+ * \details The idea is to split the interval into N of intervals and use as
  * interpolation points the xi for which it applies that xi = x0 + i*h, where h
  * is a step defined as h = (b-a)/N where a and b are the first and last points
  * of the interval of the integration [a, b].
@@ -16,7 +16,7 @@
  * are changed then the tests/assert are disabled.
  *
  *
- * @author [ggkogkou](https://github.com/ggkogkou)
+ * \author [ggkogkou](https://github.com/ggkogkou)
  */
 #include <cassert>     /// for assert
 #include <cmath>       /// for math functions
@@ -27,27 +27,27 @@
 #include <map>         /// for std::map container
 
 /**
- * @namespace numerical_methods
- * @brief Numerical algorithms/methods
+ * \namespace numerical_methods
+ * \brief Numerical algorithms/methods
  */
 namespace numerical_methods {
 /**
- * @namespace midpoint_rule
- * @brief Functions for the [Midpoint
+ * \namespace midpoint_rule
+ * \brief Functions for the [Midpoint
  * Integral](https://en.wikipedia.org/wiki/Midpoint_method) method
  * implementation
  */
 namespace midpoint_rule {
 /**
- * @fn double midpoint(const std::int32_t N, const double h, const double a,
+ * \fn double midpoint(const std::int32_t N, const double h, const double a,
  * const std::function<double (double)>& func)
- * @brief Main function for implementing the Midpoint Integral Method
+ * \brief Main function for implementing the Midpoint Integral Method
  * implementation
- * @param N is the number of intervals
- * @param h is the step
- * @param a is x0
- * @param func is the function that will be integrated
- * @returns the result of the integration
+ * \param N is the number of intervals
+ * \param h is the step
+ * \param a is x0
+ * \param func is the function that will be integrated
+ * \returns the result of the integration
  */
 double midpoint(const std::int32_t N, const double h, const double a,
                 const std::function<double(double)>& func) {
@@ -83,28 +83,28 @@ double midpoint(const std::int32_t N, const double h, const double a,
 }
 
 /**
- * @brief A function f(x) that will be used to test the method
- * @param x The independent variable xi
- * @returns the value of the dependent variable yi = f(xi) = sqrt(xi) + ln(xi)
+ * \brief A function f(x) that will be used to test the method
+ * \param x The independent variable xi
+ * \returns the value of the dependent variable yi = f(xi) = sqrt(xi) + ln(xi)
  */
 double f(double x) { return std::sqrt(x) + std::log(x); }
 /**
- * @brief A function g(x) that will be used to test the method
- * @param x The independent variable xi
- * @returns the value of the dependent variable yi = g(xi) = e^(-xi) * (4 -
+ * \brief A function g(x) that will be used to test the method
+ * \param x The independent variable xi
+ * \returns the value of the dependent variable yi = g(xi) = e^(-xi) * (4 -
  * xi^2)
  */
 double g(double x) { return std::exp(-x) * (4 - std::pow(x, 2)); }
 /**
- * @brief A function k(x) that will be used to test the method
- * @param x The independent variable xi
- * @returns the value of the dependent variable yi = k(xi) = sqrt(2*xi^3 + 3)
+ * \brief A function k(x) that will be used to test the method
+ * \param x The independent variable xi
+ * \returns the value of the dependent variable yi = k(xi) = sqrt(2*xi^3 + 3)
  */
 double k(double x) { return std::sqrt(2 * std::pow(x, 3) + 3); }
 /**
- * @brief A function l(x) that will be used to test the method
- * @param x The independent variable xi
- * @returns the value of the dependent variable yi = l(xi) = xi + ln(2*xi + 1)
+ * \brief A function l(x) that will be used to test the method
+ * \param x The independent variable xi
+ * \returns the value of the dependent variable yi = l(xi) = xi + ln(2*xi + 1)
  */
 double l(double x) { return x + std::log(2 * x + 1); }
 
@@ -112,12 +112,12 @@ double l(double x) { return x + std::log(2 * x + 1); }
 }  // namespace numerical_methods
 
 /**
- * @brief Self-test implementations
- * @param N is the number of intervals
- * @param h is the step
- * @param a is x0
- * @param b is the end of the interval
- * @param used_argv_parameters is 'true' if argv parameters are given and
+ * \brief Self-test implementations
+ * \param N is the number of intervals
+ * \param h is the step
+ * \param a is x0
+ * \param b is the end of the interval
+ * \param used_argv_parameters is 'true' if argv parameters are given and
  * 'false' if not
  */
 static void test(std::int32_t N, double h, double a, double b,
@@ -154,10 +154,10 @@ static void test(std::int32_t N, double h, double a, double b,
 }
 
 /**
- * @brief Main function
- * @param argc commandline argument count
- * @param argv commandline array of arguments
- * @returns 0 on exit
+ * \brief Main function
+ * \param argc commandline argument count
+ * \param argv commandline array of arguments
+ * \returns 0 on exit
  */
 int main(int argc, char** argv) {
     std::int32_t N =

@@ -1,14 +1,14 @@
 /**
- * @file
- * @brief Implementation for the [Intersection of two sorted
+ * \file
+ * \brief Implementation for the [Intersection of two sorted
  * Arrays](https://en.wikipedia.org/wiki/Intersection_(set_theory))
  * algorithm.
- * @details The intersection of two arrays is the collection of all the elements
+ * \details The intersection of two arrays is the collection of all the elements
  * that are common in both the first and second arrays. This implementation uses
  * ordered arrays, and an algorithm to correctly order them and return the
  * result as a new array (vector).
- * @see union_of_two_arrays.cpp
- * @author [Alvin](https://github.com/polarvoid)
+ * \see union_of_two_arrays.cpp
+ * \author [Alvin](https://github.com/polarvoid)
  */
 
 #include <algorithm>  /// for std::sort
@@ -17,16 +17,16 @@
 #include <vector>     /// for std::vector
 
 /**
- * @namespace operations_on_datastructures
- * @brief Operations on Data Structures
+ * \namespace operations_on_datastructures
+ * \brief Operations on Data Structures
  */
 namespace operations_on_datastructures {
 
 /**
- * @brief Prints the values of a vector sequentially, ending with a newline
+ * \brief Prints the values of a vector sequentially, ending with a newline
  * character.
- * @param array Reference to the array to be printed
- * @returns void
+ * \param array Reference to the array to be printed
+ * \returns void
  */
 void print(const std::vector<int32_t> &array) {
     for (int32_t i : array) {
@@ -36,14 +36,14 @@ void print(const std::vector<int32_t> &array) {
 }
 
 /**
- * @brief Gets the intersection of two sorted arrays, and returns them in a
+ * \brief Gets the intersection of two sorted arrays, and returns them in a
  * vector.
- * @details An algorithm is used that compares the elements of the two vectors,
+ * \details An algorithm is used that compares the elements of the two vectors,
  * incrementing the index of the smaller of the two. If the elements are the
  * same, the element is appended to the result array to be returned.
- * @param first A std::vector of sorted integer values
- * @param second A std::vector of sorted integer values
- * @returns A std::vector of the intersection of the two arrays, in ascending
+ * \param first A std::vector of sorted integer values
+ * \param second A std::vector of sorted integer values
+ * \returns A std::vector of the intersection of the two arrays, in ascending
  * order
  */
 std::vector<int32_t> get_intersection(const std::vector<int32_t> &first,
@@ -74,15 +74,15 @@ std::vector<int32_t> get_intersection(const std::vector<int32_t> &first,
 }  // namespace operations_on_datastructures
 
 /**
- * @namespace tests
- * @brief Testcases to check intersection of Two Arrays.
+ * \namespace tests
+ * \brief Testcases to check intersection of Two Arrays.
  */
 namespace tests {
 using operations_on_datastructures::get_intersection;
 using operations_on_datastructures::print;
 /**
- * @brief A Test to check an edge case (two empty arrays)
- * @returns void
+ * \brief A Test to check an edge case (two empty arrays)
+ * \returns void
  */
 void test1() {
     std::cout << "TEST CASE 1\n";
@@ -96,8 +96,8 @@ void test1() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check an edge case (one empty array)
- * @returns void
+ * \brief A Test to check an edge case (one empty array)
+ * \returns void
  */
 void test2() {
     std::cout << "TEST CASE 2\n";
@@ -111,8 +111,8 @@ void test2() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check correct functionality with a simple test case
- * @returns void
+ * \brief A Test to check correct functionality with a simple test case
+ * \returns void
  */
 void test3() {
     std::cout << "TEST CASE 3\n";
@@ -127,8 +127,8 @@ void test3() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check correct functionality with duplicate values
- * @returns void
+ * \brief A Test to check correct functionality with duplicate values
+ * \returns void
  */
 void test4() {
     std::cout << "TEST CASE 4\n";
@@ -143,8 +143,8 @@ void test4() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check correct functionality with a harder test case
- * @returns void
+ * \brief A Test to check correct functionality with a harder test case
+ * \returns void
  */
 void test5() {
     std::cout << "TEST CASE 5\n";
@@ -159,9 +159,9 @@ void test5() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check correct functionality with an array sorted using
+ * \brief A Test to check correct functionality with an array sorted using
  * std::sort
- * @returns void
+ * \returns void
  */
 void test6() {
     std::cout << "TEST CASE 6\n";
@@ -181,8 +181,8 @@ void test6() {
 }  // namespace tests
 
 /**
- * @brief Function to test the correctness of get_intersection() function
- * @returns void
+ * \brief Function to test the correctness of get_intersection() function
+ * \returns void
  */
 static void test() {
     tests::test1();
@@ -194,8 +194,8 @@ static void test() {
 }
 
 /**
- * @brief main function
- * @returns 0 on exit
+ * \brief main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

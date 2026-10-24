@@ -1,6 +1,6 @@
 /**
- * @brief Check whether a given graph is bipartite or not
- * @details
+ * \brief Check whether a given graph is bipartite or not
+ * \details
  * A bipartite graph is the one whose nodes can be divided into two
  * disjoint sets in such a way that the nodes in a set are not
  * connected to each other at all, i.e. no intra-set connections.
@@ -12,7 +12,7 @@
  *
  * References used:
  * [GeeksForGeeks](https://www.geeksforgeeks.org/bipartite-graph/)
- * @author [tushar2407](https://github.com/tushar2407)
+ * \author [tushar2407](https://github.com/tushar2407)
  */
 #include <cassert>   /// for assert
 #include <cstdint>
@@ -21,18 +21,18 @@
 #include <vector>    /// for vector data structure
 
 /**
- * @namespace graph
- * @brief Graphical algorithms
+ * \namespace graph
+ * \brief Graphical algorithms
  */
 namespace graph {
 /**
- * @brief function to check whether the passed graph is bipartite or not
- * @param graph is a 2D matrix whose rows or the first index signify the node
+ * \brief function to check whether the passed graph is bipartite or not
+ * \param graph is a 2D matrix whose rows or the first index signify the node
  * and values in that row signify the nodes it is connected to
- * @param index is the valus of the node currently under observation
- * @param visited is the vector which stores whether a given node has been
+ * \param index is the valus of the node currently under observation
+ * \param visited is the vector which stores whether a given node has been
  * traversed or not yet
- * @returns boolean
+ * \returns boolean
  */
 bool checkBipartite(const std::vector<std::vector<int64_t>> &graph,
                     int64_t index, std::vector<int64_t> *visited) {
@@ -68,10 +68,10 @@ bool checkBipartite(const std::vector<std::vector<int64_t>> &graph,
                   /// nodes are travelled and satisify all the above conditions
 }
 /**
- * @brief returns true if the given graph is bipartite else returns false
- * @param graph is a 2D matrix whose rows or the first index signify the node
+ * \brief returns true if the given graph is bipartite else returns false
+ * \param graph is a 2D matrix whose rows or the first index signify the node
  * and values in that row signify the nodes it is connected to
- * @returns booleans
+ * \returns booleans
  */
 bool isBipartite(const std::vector<std::vector<int64_t>> &graph) {
     std::vector<int64_t> visited(
@@ -94,8 +94,8 @@ bool isBipartite(const std::vector<std::vector<int64_t>> &graph) {
 }  // namespace graph
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     std::vector<std::vector<int64_t>> graph = {{1, 3}, {0, 2}, {1, 3}, {0, 2}};
@@ -113,12 +113,12 @@ static void test() {
     std::cout << "All tests have successfully passed!\n";
 }
 /**
- * @brief Main function
+ * \brief Main function
  * Instantitates a dummy graph of a small size with
  * a few edges between random nodes.
  * On applying the algorithm, it checks if the instantiated
  * graph is bipartite or not.
- * @returns 0 on exit
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

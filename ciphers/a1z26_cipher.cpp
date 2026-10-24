@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief Implementation of the [A1Z26
+ * \file
+ * \brief Implementation of the [A1Z26
  * cipher](https://www.dcode.fr/letter-number-cipher)
- * @details The A1Z26 cipher is a simple substiution cipher where each letter is
+ * \details The A1Z26 cipher is a simple substiution cipher where each letter is
  * replaced by the number of the order they're in. For example, A corresponds to
  * 1, B = 2, C = 3, etc.
  *
- * @author [Focusucof](https://github.com/Focusucof)
+ * \author [Focusucof](https://github.com/Focusucof)
  */
 
 #include <algorithm>  /// for std::transform and std::replace
@@ -19,13 +19,13 @@
 #include <vector>     /// for std::vector
 
 /**
- * @namespace ciphers
- * @brief Algorithms for encryption and decryption
+ * \namespace ciphers
+ * \brief Algorithms for encryption and decryption
  */
 namespace ciphers {
 /**
- * @namespace a1z26
- * @brief Functions for [A1Z26](https://www.dcode.fr/letter-number-cipher)
+ * \namespace a1z26
+ * \brief Functions for [A1Z26](https://www.dcode.fr/letter-number-cipher)
  * encryption and decryption implementation
  */
 namespace a1z26 {
@@ -44,9 +44,9 @@ std::map<char, uint8_t> a1z26_encrypt_map = {
     {'v', 22}, {'w', 23}, {'x', 24}, {'y', 25}, {'z', 26}};
 
 /**
- * @brief a1z26 encryption implementation
- * @param text is the plaintext input
- * @returns encoded string with dashes to seperate letters
+ * \brief a1z26 encryption implementation
+ * \param text is the plaintext input
+ * \returns encoded string with dashes to seperate letters
  */
 std::string encrypt(std::string text) {
     std::string result;
@@ -69,11 +69,11 @@ std::string encrypt(std::string text) {
 }
 
 /**
- * @brief a1z26 decryption implementation
- * @param text is the encrypted text input
- * @param bReturnUppercase is if the decoded string should be in uppercase or
+ * \brief a1z26 decryption implementation
+ * \param text is the encrypted text input
+ * \param bReturnUppercase is if the decoded string should be in uppercase or
  * not
- * @returns the decrypted string in all uppercase or all lowercase
+ * \returns the decrypted string in all uppercase or all lowercase
  */
 std::string decrypt(const std::string& text, bool bReturnUppercase = false) {
     std::string result;
@@ -114,8 +114,8 @@ std::string decrypt(const std::string& text, bool bReturnUppercase = false) {
 }  // namespace ciphers
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st test
@@ -153,8 +153,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,8 +1,8 @@
 /**
- * @file vector_ops.hpp
- * @author [Deep Raval](https://github.com/imdeep2905)
+ * \file vector_ops.hpp
+ * \author [Deep Raval](https://github.com/imdeep2905)
  *
- * @brief Various functions for vectors associated with [NeuralNetwork (aka
+ * \brief Various functions for vectors associated with [NeuralNetwork (aka
  * Multilayer Perceptron)]
  * (https://en.wikipedia.org/wiki/Multilayer_perceptron).
  *
@@ -18,15 +18,15 @@
 #include <vector>
 
 /**
- * @namespace machine_learning
- * @brief Machine Learning algorithms
+ * \namespace machine_learning
+ * \brief Machine Learning algorithms
  */
 namespace machine_learning {
 /**
  * Overloaded operator "<<" to print 2D vector
- * @tparam T typename of the vector
- * @param out std::ostream to output
- * @param A 2D vector to be printed
+ * \tparam T typename of the vector
+ * \param out std::ostream to output
+ * \param A 2D vector to be printed
  */
 template <typename T>
 std::ostream &operator<<(std::ostream &out,
@@ -44,9 +44,9 @@ std::ostream &operator<<(std::ostream &out,
 
 /**
  * Overloaded operator "<<" to print a pair
- * @tparam T typename of the pair
- * @param out std::ostream to output
- * @param A Pair to be printed
+ * \tparam T typename of the pair
+ * \param out std::ostream to output
+ * \param A Pair to be printed
  */
 template <typename T>
 std::ostream &operator<<(std::ostream &out, const std::pair<T, T> &A) {
@@ -59,9 +59,9 @@ std::ostream &operator<<(std::ostream &out, const std::pair<T, T> &A) {
 
 /**
  * Overloaded operator "<<" to print a 1D vector
- * @tparam T typename of the vector
- * @param out std::ostream to output
- * @param A 1D vector to be printed
+ * \tparam T typename of the vector
+ * \param out std::ostream to output
+ * \param A 1D vector to be printed
  */
 template <typename T>
 std::ostream &operator<<(std::ostream &out, const std::valarray<T> &A) {
@@ -76,10 +76,10 @@ std::ostream &operator<<(std::ostream &out, const std::valarray<T> &A) {
 
 /**
  * Function to insert element into 1D vector
- * @tparam T typename of the 1D vector and the element
- * @param A 1D vector in which element will to be inserted
- * @param ele element to be inserted
- * @return new resultant vector
+ * \tparam T typename of the 1D vector and the element
+ * \param A 1D vector in which element will to be inserted
+ * \param ele element to be inserted
+ * \return new resultant vector
  */
 template <typename T>
 std::valarray<T> insert_element(const std::valarray<T> &A, const T &ele) {
@@ -94,9 +94,9 @@ std::valarray<T> insert_element(const std::valarray<T> &A, const T &ele) {
 
 /**
  * Function to remove first element from 1D vector
- * @tparam T typename of the vector
- * @param A 1D vector from which first element will be removed
- * @return new resultant vector
+ * \tparam T typename of the vector
+ * \param A 1D vector from which first element will be removed
+ * \return new resultant vector
  */
 template <typename T>
 std::valarray<T> pop_front(const std::valarray<T> &A) {
@@ -111,9 +111,9 @@ std::valarray<T> pop_front(const std::valarray<T> &A) {
 
 /**
  * Function to remove last element from 1D vector
- * @tparam T typename of the vector
- * @param A 1D vector from which last element will be removed
- * @return new resultant vector
+ * \tparam T typename of the vector
+ * \param A 1D vector from which last element will be removed
+ * \return new resultant vector
  */
 template <typename T>
 std::valarray<T> pop_back(const std::valarray<T> &A) {
@@ -128,9 +128,9 @@ std::valarray<T> pop_back(const std::valarray<T> &A) {
 
 /**
  * Function to equally shuffle two 3D vectors (used for shuffling training data)
- * @tparam T typename of the vector
- * @param A First 3D vector
- * @param B Second 3D vector
+ * \tparam T typename of the vector
+ * \param A First 3D vector
+ * \param B Second 3D vector
  */
 template <typename T>
 void equal_shuffle(std::vector<std::vector<std::valarray<T>>> &A,
@@ -156,11 +156,11 @@ void equal_shuffle(std::vector<std::vector<std::valarray<T>>> &A,
 
 /**
  * Function to initialize given 2D vector using uniform random initialization
- * @tparam T typename of the vector
- * @param A 2D vector to be initialized
- * @param shape required shape
- * @param low lower limit on value
- * @param high upper limit on value
+ * \tparam T typename of the vector
+ * \param A 2D vector to be initialized
+ * \param shape required shape
+ * \param low lower limit on value
+ * \param high upper limit on value
  */
 template <typename T>
 void uniform_random_initialization(std::vector<std::valarray<T>> &A,
@@ -185,9 +185,9 @@ void uniform_random_initialization(std::vector<std::valarray<T>> &A,
 
 /**
  * Function to Intialize 2D vector as unit matrix
- * @tparam T typename of the vector
- * @param A 2D vector to be initialized
- * @param shape required shape
+ * \tparam T typename of the vector
+ * \param A 2D vector to be initialized
+ * \param shape required shape
  */
 template <typename T>
 void unit_matrix_initialization(std::vector<std::valarray<T>> &A,
@@ -205,9 +205,9 @@ void unit_matrix_initialization(std::vector<std::valarray<T>> &A,
 
 /**
  * Function to Intialize 2D vector as zeroes
- * @tparam T typename of the vector
- * @param A 2D vector to be initialized
- * @param shape required shape
+ * \tparam T typename of the vector
+ * \param A 2D vector to be initialized
+ * \param shape required shape
  */
 template <typename T>
 void zeroes_initialization(std::vector<std::valarray<T>> &A,
@@ -224,9 +224,9 @@ void zeroes_initialization(std::vector<std::valarray<T>> &A,
 
 /**
  * Function to get sum of all elements in 2D vector
- * @tparam T typename of the vector
- * @param A 2D vector for which sum is required
- * @return returns sum of all elements of 2D vector
+ * \tparam T typename of the vector
+ * \param A 2D vector for which sum is required
+ * \return returns sum of all elements of 2D vector
  */
 template <typename T>
 T sum(const std::vector<std::valarray<T>> &A) {
@@ -239,9 +239,9 @@ T sum(const std::vector<std::valarray<T>> &A) {
 
 /**
  * Function to get shape of given 2D vector
- * @tparam T typename of the vector
- * @param A 2D vector for which shape is required
- * @return shape as pair
+ * \tparam T typename of the vector
+ * \param A 2D vector for which shape is required
+ * \return shape as pair
  */
 template <typename T>
 std::pair<size_t, size_t> get_shape(const std::vector<std::valarray<T>> &A) {
@@ -259,11 +259,11 @@ std::pair<size_t, size_t> get_shape(const std::vector<std::valarray<T>> &A) {
 
 /**
  * Function to scale given 3D vector using min-max scaler
- * @tparam T typename of the vector
- * @param A 3D vector which will be scaled
- * @param low new minimum value
- * @param high new maximum value
- * @return new scaled 3D vector
+ * \tparam T typename of the vector
+ * \param A 3D vector which will be scaled
+ * \param low new minimum value
+ * \param high new maximum value
+ * \return new scaled 3D vector
  */
 template <typename T>
 std::vector<std::vector<std::valarray<T>>> minmax_scaler(
@@ -299,9 +299,9 @@ std::vector<std::vector<std::valarray<T>>> minmax_scaler(
 
 /**
  * Function to get index of maximum element in 2D vector
- * @tparam T typename of the vector
- * @param A 2D vector for which maximum index is required
- * @return index of maximum element
+ * \tparam T typename of the vector
+ * \param A 2D vector for which maximum index is required
+ * \return index of maximum element
  */
 template <typename T>
 size_t argmax(const std::vector<std::valarray<T>> &A) {
@@ -320,10 +320,10 @@ size_t argmax(const std::vector<std::valarray<T>> &A) {
 
 /**
  * Function which applys supplied function to every element of 2D vector
- * @tparam T typename of the vector
- * @param A 2D vector on which function will be applied
- * @param func Function to be applied
- * @return new resultant vector
+ * \tparam T typename of the vector
+ * \param A 2D vector on which function will be applied
+ * \param func Function to be applied
+ * \return new resultant vector
  */
 template <typename T>
 std::vector<std::valarray<T>> apply_function(
@@ -338,10 +338,10 @@ std::vector<std::valarray<T>> apply_function(
 
 /**
  * Overloaded operator "*" to multiply given 2D vector with scaler
- * @tparam T typename of both vector and the scaler
- * @param A 2D vector to which scaler will be multiplied
- * @param val Scaler value which will be multiplied
- * @return new resultant vector
+ * \tparam T typename of both vector and the scaler
+ * \param A 2D vector to which scaler will be multiplied
+ * \param val Scaler value which will be multiplied
+ * \return new resultant vector
  */
 template <typename T>
 std::vector<std::valarray<T>> operator*(const std::vector<std::valarray<T>> &A,
@@ -356,10 +356,10 @@ std::vector<std::valarray<T>> operator*(const std::vector<std::valarray<T>> &A,
 
 /**
  * Overloaded operator "/" to divide given 2D vector with scaler
- * @tparam T typename of the vector and the scaler
- * @param A 2D vector to which scaler will be divided
- * @param val Scaler value which will be divided
- * @return new resultant vector
+ * \tparam T typename of the vector and the scaler
+ * \param A 2D vector to which scaler will be divided
+ * \param val Scaler value which will be divided
+ * \return new resultant vector
  */
 template <typename T>
 std::vector<std::valarray<T>> operator/(const std::vector<std::valarray<T>> &A,
@@ -374,9 +374,9 @@ std::vector<std::valarray<T>> operator/(const std::vector<std::valarray<T>> &A,
 
 /**
  * Function to get transpose of 2D vector
- * @tparam T typename of the vector
- * @param A 2D vector which will be transposed
- * @return new resultant vector
+ * \tparam T typename of the vector
+ * \param A 2D vector which will be transposed
+ * \return new resultant vector
  */
 template <typename T>
 std::vector<std::valarray<T>> transpose(
@@ -397,10 +397,10 @@ std::vector<std::valarray<T>> transpose(
 
 /**
  * Overloaded operator "+" to add two 2D vectors
- * @tparam T typename of the vector
- * @param A First 2D vector
- * @param B Second 2D vector
- * @return new resultant vector
+ * \tparam T typename of the vector
+ * \param A First 2D vector
+ * \param B Second 2D vector
+ * \return new resultant vector
  */
 template <typename T>
 std::vector<std::valarray<T>> operator+(
@@ -424,10 +424,10 @@ std::vector<std::valarray<T>> operator+(
 
 /**
  * Overloaded operator "-" to add subtract 2D vectors
- * @tparam T typename of the vector
- * @param A First 2D vector
- * @param B Second 2D vector
- * @return new resultant vector
+ * \tparam T typename of the vector
+ * \param A First 2D vector
+ * \param B Second 2D vector
+ * \return new resultant vector
  */
 template <typename T>
 std::vector<std::valarray<T>> operator-(
@@ -451,10 +451,10 @@ std::vector<std::valarray<T>> operator-(
 
 /**
  * Function to multiply two 2D vectors
- * @tparam T typename of the vector
- * @param A First 2D vector
- * @param B Second 2D vector
- * @return new resultant vector
+ * \tparam T typename of the vector
+ * \param A First 2D vector
+ * \param B Second 2D vector
+ * \return new resultant vector
  */
 template <typename T>
 std::vector<std::valarray<T>> multiply(const std::vector<std::valarray<T>> &A,
@@ -485,10 +485,10 @@ std::vector<std::valarray<T>> multiply(const std::vector<std::valarray<T>> &A,
 
 /**
  * Function to get hadamard product of two 2D vectors
- * @tparam T typename of the vector
- * @param A First 2D vector
- * @param B Second 2D vector
- * @return new resultant vector
+ * \tparam T typename of the vector
+ * \param A First 2D vector
+ * \param B Second 2D vector
+ * \return new resultant vector
  */
 template <typename T>
 std::vector<std::valarray<T>> hadamard_product(

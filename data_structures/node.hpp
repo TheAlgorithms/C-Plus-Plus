@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief  Provides Node class and related utilities
+ * \file
+ * \brief  Provides Node class and related utilities
  **/
 #ifndef DATA_STRUCTURES_NODE_HPP_
 #define DATA_STRUCTURES_NODE_HPP_

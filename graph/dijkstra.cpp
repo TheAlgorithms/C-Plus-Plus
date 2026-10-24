@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief [Graph Dijkstras Shortest Path Algorithm
+ * \file
+ * \brief [Graph Dijkstras Shortest Path Algorithm
  * (Dijkstra's Shortest Path)]
  * (https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
  *
- * @author [Ayaan Khan](http://github.com/ayaankhan98)
+ * \author [Ayaan Khan](http://github.com/ayaankhan98)
  *
- * @details
+ * \details
  * Dijkstra's Algorithm is used to find the shortest path from a source
  * vertex to all other reachable vertex in the graph.
  * The algorithm initially assumes all the nodes are unreachable from the
@@ -34,16 +34,16 @@
 constexpr int64_t INF = std::numeric_limits<int64_t>::max();
 
 /**
- * @namespace graph
- * @brief Graph Algorithms
+ * \namespace graph
+ * \brief Graph Algorithms
  */
 
 namespace graph {
 /**
- * @brief Function that add edge between two nodes or vertices of graph
+ * \brief Function that add edge between two nodes or vertices of graph
  *
- * @param u any node or vertex of graph
- * @param v any node or vertex of graph
+ * \param u any node or vertex of graph
+ * \param v any node or vertex of graph
  */
 void addEdge(std::vector<std::vector<std::pair<int, int>>> *adj, int u, int v,
              int w) {
@@ -52,15 +52,15 @@ void addEdge(std::vector<std::vector<std::pair<int, int>>> *adj, int u, int v,
 }
 
 /**
- * @brief Function runs the dijkstra algorithm for some source vertex and
+ * \brief Function runs the dijkstra algorithm for some source vertex and
  * target vertex in the graph and returns the shortest distance of target
  * from the source.
  *
- * @param adj input graph
- * @param s source vertex
- * @param t target vertex
+ * \param adj input graph
+ * \param s source vertex
+ * \param t target vertex
  *
- * @return shortest distance if target is reachable from source else -1 in
+ * \return shortest distance if target is reachable from source else -1 in
  * case if target is not reachable from source.
  */
 int dijkstra(std::vector<std::vector<std::pair<int, int>>> *adj, int s, int t) {

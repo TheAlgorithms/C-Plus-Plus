@@ -1,13 +1,13 @@
 /**
- * @file
- * @brief Implementation Details
- * @details Quick sort 3 works on Dutch National Flag Algorithm
+ * \file
+ * \brief Implementation Details
+ * \details Quick sort 3 works on Dutch National Flag Algorithm
  * The major difference between simple quicksort and quick sort 3 comes in the
  * function partition3 In quick_sort_partition3 we divide the vector/array into
  * 3 parts. quick sort 3 works faster in some cases as compared to simple
  * quicksort.
- * @author immortal-j
- * @author [Krishna Vedala](https://github/kvedala)
+ * \author immortal-j
+ * \author [Krishna Vedala](https://github/kvedala)
  */
 #include <algorithm>
 #include <cassert>
@@ -18,8 +18,8 @@
 namespace {
 /**
  * Operator to print the array.
- * @param out std::ostream object to write to
- * @param arr array to write
+ * \param out std::ostream object to write to
+ * \param arr array to write
  */
 template <typename T>
 std::ostream &operator<<(std::ostream &out, const std::vector<T> &arr) {
@@ -35,8 +35,8 @@ std::ostream &operator<<(std::ostream &out, const std::vector<T> &arr) {
 }  // namespace
 
 /**
- * @namespace sorting
- * @brief Sorting Algorithms
+ * \namespace sorting
+ * \brief Sorting Algorithms
  */
 namespace sorting {
 namespace {  // using un-named namespace here to prevent partition function
@@ -45,12 +45,12 @@ namespace {  // using un-named namespace here to prevent partition function
  * 1. \f$arr[l\ldots i]\f$ contains all elements smaller than pivot
  * 2. \f$arr[(i+1)\ldots (j-1)]\f$ contains all occurrences of pivot
  * 3. \f$arr[j\ldots r]\f$ contains all elements greater than pivot
- * @tparam T type of data in the vector array
- * @param [in,out] arr vector array being partitioned
- * @param [in] low lower limit of window to partition
- * @param [in] high upper limit of window to partition
- * @param [out] i updated lower limit of partition
- * @param [out] j updated upper limit of partition
+ * \tparam T type of data in the vector array
+ * \param [in,out] arr vector array being partitioned
+ * \param [in] low lower limit of window to partition
+ * \param [in] high upper limit of window to partition
+ * \param [out] i updated lower limit of partition
+ * \param [out] j updated upper limit of partition
  */
 template <typename T>
 void partition3(std::vector<T> *arr, int32_t low, int32_t high, int32_t *i,
@@ -85,10 +85,10 @@ void partition3(std::vector<T> *arr, int32_t low, int32_t high, int32_t *i,
 
 /** 3-way partition based quick sort. This function accepts array pointer and
  * modified the input array.
- * @tparam T type of data in the vector array
- * @param [in,out] arr vector array to sort
- * @param [in] low lower limit of window to partition
- * @param [in] high upper limit of window to partition
+ * \tparam T type of data in the vector array
+ * \param [in,out] arr vector array to sort
+ * \param [in] low lower limit of window to partition
+ * \param [in] high upper limit of window to partition
  */
 template <typename T>
 void quicksort(std::vector<T> *arr, int32_t low, int32_t high) {
@@ -109,11 +109,11 @@ void quicksort(std::vector<T> *arr, int32_t low, int32_t high) {
 /** 3-way partition based quick sort. This function accepts array by value and
  * creates a copy of it. The array copy gets sorted and returned by the
  * function.
- * @tparam T type of data in the vector array
- * @param [in] arr vector array to sort
- * @param [in] low lower limit of window to partition
- * @param [in] high upper limit of window to partition
- * @returns sorted array vector
+ * \tparam T type of data in the vector array
+ * \param [in] arr vector array to sort
+ * \param [in] low lower limit of window to partition
+ * \param [in] high upper limit of window to partition
+ * \returns sorted array vector
  */
 template <typename T>
 std::vector<T> quicksort(std::vector<T> arr, int32_t low, int32_t high) {

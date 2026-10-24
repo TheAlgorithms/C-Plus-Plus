@@ -1,7 +1,7 @@
 /**
-* @file
-* @brief C++ program for maximum contiguous circular sum problem using [Kadane's Algorithm](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
-* @details
+* \file
+* \brief C++ program for maximum contiguous circular sum problem using [Kadane's Algorithm](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
+* \details
 * The idea is to modify Kadane’s algorithm to find a minimum contiguous subarray sum and the maximum contiguous subarray sum,
 * then check for the maximum value between the max_value and the value left after subtracting min_value from the total sum.
 * For more information, check [Geeks For Geeks](https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/) explanation page.
@@ -13,15 +13,15 @@
 
 
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 /**
- * @brief returns the maximum contiguous circular sum of an array
+ * \brief returns the maximum contiguous circular sum of an array
  * 
- * @param arr is the array/vector
- * @return int which is the maximum sum
+ * \param arr is the array/vector
+ * \return int which is the maximum sum
  */
 int maxCircularSum(std::vector<int>& arr)
 {
@@ -58,8 +58,8 @@ int maxCircularSum(std::vector<int>& arr)
 }  // namespace dynamic_programming
 
 /**
- * @brief Self-test implementation
- * @returns void
+ * \brief Self-test implementation
+ * \returns void
  */
 static void test() {
     // Description of the test
@@ -78,8 +78,8 @@ static void test() {
 
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
      test();  // run self-test implementations

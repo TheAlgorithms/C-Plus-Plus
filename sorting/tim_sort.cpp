@@ -92,8 +92,8 @@ void printArray(int arr[], int n) {
 }
 
 /**
- * @brief self-test implementation
- * @returns void
+ * \brief self-test implementation
+ * \returns void
  */
 void tests() {
     // Case: array of length 65

@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation of the
+ * \file
+ * \brief Implementation of the
  * [N-bonacci](http://oeis.org/wiki/N-bonacci_numbers) series
  *
- * @details
+ * \details
  * In general, in N-bonacci sequence,
  * we generate sum of preceding N numbers from the next term.
  *
@@ -12,7 +12,7 @@
  * In this code we take N and M as input where M is the number of terms
  * to be printed of the N-bonacci series
  *
- * @author [Swastika Gupta](https://github.com/Swastyy)
+ * \author [Swastika Gupta](https://github.com/Swastyy)
  */
 
 #include <cassert>   /// for assert
@@ -20,22 +20,22 @@
 #include <iostream>  /// for std::cout
 #include <vector>    /// for std::vector
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @namespace n_bonacci
- * @brief Functions for the [N-bonacci](http://oeis.org/wiki/N-bonacci_numbers)
+ * \namespace n_bonacci
+ * \brief Functions for the [N-bonacci](http://oeis.org/wiki/N-bonacci_numbers)
  * implementation
  */
 namespace n_bonacci {
 /**
- * @brief Finds the N-Bonacci series for the `n` parameter value and `m`
+ * \brief Finds the N-Bonacci series for the `n` parameter value and `m`
  * parameter terms
- * @param n is in the N-Bonacci series
- * @param m is the number of terms in the N-Bonacci sequence
- * @returns the n-bonacci sequence as vector array
+ * \param n is in the N-Bonacci series
+ * \param m is the number of terms in the N-Bonacci sequence
+ * \returns the n-bonacci sequence as vector array
  */
 std::vector<uint64_t> N_bonacci(const uint64_t &n, const uint64_t &m) {
     std::vector<uint64_t> a(
@@ -63,8 +63,8 @@ std::vector<uint64_t> N_bonacci(const uint64_t &n, const uint64_t &m) {
 }  // namespace math
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     struct TestCase {
@@ -98,8 +98,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations
