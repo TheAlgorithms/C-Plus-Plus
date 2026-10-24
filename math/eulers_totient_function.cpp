@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Implementation of [Euler's
+ * \file
+ * \brief Implementation of [Euler's
  * Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function)
- * @description
+ * \description
  * Euler Totient Function is also known as phi function.
  * \f[\phi(n) =
  * \phi\left({p_1}^{a_1}\right)\cdot\phi\left({p_2}^{a_2}\right)\ldots\f] where
@@ -22,7 +22,7 @@
  * * \f$\phi(1) = 1\f$
  * * \f$\phi(17501) = 15120\f$
  * * \f$\phi(1420) = 560\f$
- * @author [Mann Mehta](https://github.com/mann2108)
+ * \author [Mann Mehta](https://github.com/mann2108)
  */
 
 #include <cassert>   /// for assert
@@ -30,13 +30,13 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @brief Mathematical algorithms
- * @namespace
+ * \brief Mathematical algorithms
+ * \namespace
  */
 namespace math {
 /**
- * @brief Function to calculate Euler's Totient
- * @param n the number to find the Euler's Totient of
+ * \brief Function to calculate Euler's Totient
+ * \param n the number to find the Euler's Totient of
  */
 uint64_t phiFunction(uint64_t n) {
     uint64_t result = n;
@@ -55,8 +55,8 @@ uint64_t phiFunction(uint64_t n) {
 }  // namespace math
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     assert(math::phiFunction(1) == 1);
@@ -71,8 +71,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();

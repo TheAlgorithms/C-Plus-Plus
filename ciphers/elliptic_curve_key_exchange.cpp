@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation of [Elliptic Curve Diffie Hellman Key
+ * \file
+ * \brief Implementation of [Elliptic Curve Diffie Hellman Key
  * Exchange](https://cryptobook.nakov.com/asymmetric-key-ciphers/ecdh-key-exchange).
  *
- * @details
+ * \details
  * The ECDH (Elliptic Curve Diffie–Hellman Key Exchange) is anonymous key
  * agreement scheme, which allows two parties, each having an elliptic-curve
  * public–private key pair, to establish a shared secret over an insecure
@@ -19,7 +19,7 @@
  * secret = (a * G) * b = (b * G) * a.
  * Pretty simple. The above equation takes the following form:
  * alicePubKey * bobPrivKey = bobPubKey * alicePrivKey = secret
- * @author [Ashish Daulatabad](https://github.com/AshishYUO)
+ * \author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 #include <cassert>   /// for assert
 #include <iostream>  /// for IO operations
@@ -27,38 +27,38 @@
 #include "uint256_t.hpp"  /// for 256-bit integer
 
 /**
- * @namespace ciphers
- * @brief Cipher algorithms
+ * \namespace ciphers
+ * \brief Cipher algorithms
  */
 namespace ciphers {
 /**
- * @brief namespace elliptic_curve_key_exchange
- * @details Demonstration of [Elliptic Curve
+ * \brief namespace elliptic_curve_key_exchange
+ * \details Demonstration of [Elliptic Curve
  * Diffie-Hellman](https://cryptobook.nakov.com/asymmetric-key-ciphers/ecdh-key-exchange)
  * key exchange.
  */
 namespace elliptic_curve_key_exchange {
 
 /**
- * @brief Definition of struct Point
- * @details Definition of Point in the curve.
+ * \brief Definition of struct Point
+ * \details Definition of Point in the curve.
  */
 typedef struct Point {
     uint256_t x, y;  /// x and y co-ordinates
 
     /**
-     * @brief operator == for Point
-     * @details check whether co-ordinates are equal to the given point
-     * @param p given point to be checked with this
-     * @returns true if x and y are both equal with Point p, else false
+     * \brief operator == for Point
+     * \details check whether co-ordinates are equal to the given point
+     * \param p given point to be checked with this
+     * \returns true if x and y are both equal with Point p, else false
      */
     inline bool operator==(const Point &p) { return x == p.x && y == p.y; }
 
     /**
-     * @brief ostream operator for printing Point
-     * @param op ostream operator
-     * @param p Point to be printed on console
-     * @returns op, the ostream object
+     * \brief ostream operator for printing Point
+     * \param op ostream operator
+     * \param p Point to be printed on console
+     * \returns op, the ostream object
      */
     friend std::ostream &operator<<(std::ostream &op, const Point &p) {
         op << p.x << " " << p.y;
@@ -67,13 +67,13 @@ typedef struct Point {
 } Point;
 
 /**
- * @brief This function calculates number raised to exponent power under modulo
+ * \brief This function calculates number raised to exponent power under modulo
  * mod using [Modular
  * Exponentiation](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp).
- * @param number integer base
- * @param power unsigned integer exponent
- * @param mod integer modulo
- * @return number raised to power modulo mod
+ * \param number integer base
+ * \param power unsigned integer exponent
+ * \param mod integer modulo
+ * \return number raised to power modulo mod
  */
 uint256_t exp(uint256_t number, uint256_t power, const uint256_t &mod) {
     if (!power) {
@@ -94,18 +94,18 @@ uint256_t exp(uint256_t number, uint256_t power, const uint256_t &mod) {
 }
 
 /**
- * @brief Addition of points
- * @details Add given point to generate third point. More description can be
+ * \brief Addition of points
+ * \details Add given point to generate third point. More description can be
  * found
  * [here](https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication#Point_addition),
  * and
  * [here](https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication#Point_doubling)
- * @param a First point
- * @param b Second point
- * @param curve_a_coeff Coefficient `a` of the given curve (y^2 = x^3 + ax + b)
+ * \param a First point
+ * \param b Second point
+ * \param curve_a_coeff Coefficient `a` of the given curve (y^2 = x^3 + ax + b)
  * % mod
- * @param mod Given field
- * @return the resultant point
+ * \param mod Given field
+ * \return the resultant point
  */
 Point addition(Point a, Point b, const uint256_t &curve_a_coeff,
                uint256_t mod) {
@@ -152,15 +152,15 @@ Point addition(Point a, Point b, const uint256_t &curve_a_coeff,
 }
 
 /**
- * @brief multiply Point and integer
- * @details Multiply Point by a scalar factor (here it is a private key p). The
+ * \brief multiply Point and integer
+ * \details Multiply Point by a scalar factor (here it is a private key p). The
  * multiplication is called as [double and add
  * method](https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication#Double-and-add)
- * @param a Point to multiply
- * @param curve_a_coeff Coefficient of given curve (y^2 = x^3 + ax + b) % mod
- * @param p The scalar value
- * @param mod Given field
- * @returns the resultant point
+ * \param a Point to multiply
+ * \param curve_a_coeff Coefficient of given curve (y^2 = x^3 + ax + b) % mod
+ * \param p The scalar value
+ * \param mod Given field
+ * \returns the resultant point
  */
 Point multiply(const Point &a, const uint256_t &curve_a_coeff, uint256_t p,
                const uint256_t &mod) {
@@ -190,9 +190,9 @@ Point multiply(const Point &a, const uint256_t &curve_a_coeff, uint256_t p,
 }  // namespace ciphers
 
 /**
- * @brief Function to test the
+ * \brief Function to test the
  * uint128_t header
- * @returns void
+ * \returns void
  */
 static void uint128_t_tests() {
     // 1st test: Operations test
@@ -223,9 +223,9 @@ static void uint128_t_tests() {
 }
 
 /**
- * @brief Function to test the
+ * \brief Function to test the
  * uint256_t header
- * @returns void
+ * \returns void
  */
 static void uint256_t_tests() {
     // 1st test: Operations test
@@ -260,9 +260,9 @@ static void uint256_t_tests() {
 }
 
 /**
- * @brief Function to test the
+ * \brief Function to test the
  * provided algorithm above
- * @returns void
+ * \returns void
  */
 static void test() {
     // demonstration of key exchange using curve secp112r1
@@ -314,8 +314,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     uint128_t_tests();  // running predefined 128-bit unsigned integer tests

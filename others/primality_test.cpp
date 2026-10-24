@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief [Primality test](https://en.wikipedia.org/wiki/Primality_test)
+ * \file
+ * \brief [Primality test](https://en.wikipedia.org/wiki/Primality_test)
  * implementation.
  *
  * A simple and efficient implementation of a function to test if a number is

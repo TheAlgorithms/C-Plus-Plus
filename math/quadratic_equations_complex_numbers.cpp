@@ -1,15 +1,15 @@
 /**
- * @file
- * @brief Calculate quadratic equation with complex roots, i.e. b^2 - 4ac < 0.
+ * \file
+ * \brief Calculate quadratic equation with complex roots, i.e. b^2 - 4ac < 0.
  *
- * @author [Renjian-buchai](https://github.com/Renjian-buchai)
+ * \author [Renjian-buchai](https://github.com/Renjian-buchai)
  *
- * @description Calculates any quadratic equation in form ax^2 + bx + c.
+ * \description Calculates any quadratic equation in form ax^2 + bx + c.
  *
  * Quadratic equation:
  * x = (-b +/- sqrt(b^2 - 4ac)) / 2a
  *
- * @example
+ * \example
  * int main() {
  *   using std::array;
  *   using std::complex;
@@ -37,17 +37,17 @@
 #include <iostream>   /// std::cout
 
 /**
- * @namespace
- * @brief Mathematical algorithms
+ * \namespace
+ * \brief Mathematical algorithms
  */
 namespace math {
 
 /**
- * @brief Quadratic equation calculator.
- * @param a quadratic coefficient.
- * @param b linear coefficient.
- * @param c constant
- * @return Array containing the roots of quadratic equation, incl. complex
+ * \brief Quadratic equation calculator.
+ * \param a quadratic coefficient.
+ * \param b linear coefficient.
+ * \param c constant
+ * \return Array containing the roots of quadratic equation, incl. complex
  * root.
  */
 std::array<std::complex<long double>, 2> quadraticEquation(long double a,
@@ -92,10 +92,10 @@ std::array<std::complex<long double>, 2> quadraticEquation(long double a,
 }  // namespace math
 
 /**
- * @brief Asserts an array of complex numbers.
- * @param input Input array of complex numbers. .
- * @param expected Expected array of complex numbers.
- * @param precision Precision to be asserted. Default=10
+ * \brief Asserts an array of complex numbers.
+ * \param input Input array of complex numbers. .
+ * \param expected Expected array of complex numbers.
+ * \param precision Precision to be asserted. Default=10
  */
 void assertArray(std::array<std::complex<long double>, 2> input,
                  std::array<std::complex<long double>, 2> expected,
@@ -115,8 +115,8 @@ void assertArray(std::array<std::complex<long double>, 2> input,
 }
 
 /**
- * @brief Self-test implementations to test quadraticEquation function.
- * @note There are 4 different types of solutions: Real and equal, real,
+ * \brief Self-test implementations to test quadraticEquation function.
+ * \note There are 4 different types of solutions: Real and equal, real,
  * complex, complex and equal.
  */
 static void test() {
@@ -180,8 +180,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // Run self-test implementation.

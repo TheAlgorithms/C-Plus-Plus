@@ -1,9 +1,9 @@
 /*
- * @file
- * @brief Determines the [Date of
+ * \file
+ * \brief Determines the [Date of
  * Easter](https://en.wikipedia.org/wiki/Date_of_Easter) after 1582
  *
- * @details
+ * \details
  * The date of Easter is determined in each year through a calculation known as
  * "computus." Easter is celebrated on the first Sunday after the Paschal full
  * moon, which is the first full moon on or after 21 March. Determining this
@@ -14,7 +14,7 @@
  * Passover which, Christians believe, is when Jesus was crucified.
  *
  *
- * @author [AlternateWalls](https://github.com/AlternateWalls)
+ * \author [AlternateWalls](https://github.com/AlternateWalls)
  */
 
 #include <cassert>   /// for assert
@@ -22,7 +22,7 @@
 #include <iostream>  /// for IO operations
 
 /*
- * @brief Contains information for Easter date
+ * \brief Contains information for Easter date
  */
 class EasterYearMonthDay {
  public:
@@ -38,10 +38,10 @@ class EasterYearMonthDay {
 };
 
 /*
- * @brief Function that finds the month and day of Easter
- * @params param1 An int "y" of the year you want to find Easter on after
+ * \brief Function that finds the month and day of Easter
+ * \params param1 An int "y" of the year you want to find Easter on after
  * 1582
- * @returns An instance of the easterYearMonthDay calss that contains the
+ * \returns An instance of the easterYearMonthDay calss that contains the
  * information (Ex. 420 - 4/20 or April 20th)
  */
 EasterYearMonthDay findEaster(uint64_t y) {
@@ -79,8 +79,8 @@ EasterYearMonthDay findEaster(uint64_t y) {
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 2003 | April 20th
@@ -101,8 +101,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [The Sieve of
+ * \file
+ * \brief [The Sieve of
  * Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
- * @details
+ * \details
  * Store an array of booleans where a true value indicates that it's index is
  * prime. For all the values in the array starting from 2 which we know is
  * prime, we walk the array in multiples of the current outer value setting them
@@ -10,7 +10,7 @@
  * left with just primes.
  *
  * Pass "print" as a command line arg to see the generated list of primes
- * @author [Keval Kapdee](https://github.com/thechubbypanda)
+ * \author [Keval Kapdee](https://github.com/thechubbypanda)
  */
 
 #include <cassert>   /// For assert
@@ -20,15 +20,15 @@
 #include <vector>    /// For std::vector
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @brief Performs the sieve
- * @param vec Array of bools, all initialised to true, where the number of
+ * \brief Performs the sieve
+ * \param vec Array of bools, all initialised to true, where the number of
  * elements is the highest number we wish to check for primeness
- * @returns void
+ * \returns void
  */
 void sieve(std::vector<bool> *vec) {
     (*vec)[0] = false;
@@ -44,9 +44,9 @@ void sieve(std::vector<bool> *vec) {
 }
 
 /**
- * @brief Prints all the indexes of true values in the passed std::vector
- * @param primes The vector that has been passed through `sieve(...)`
- * @returns void
+ * \brief Prints all the indexes of true values in the passed std::vector
+ * \param primes The vector that has been passed through `sieve(...)`
+ * \returns void
  */
 void print_primes(std::vector<bool> const &primes) {
     for (uint64_t i = 0; i < primes.size(); i++) {
@@ -58,8 +58,8 @@ void print_primes(std::vector<bool> const &primes) {
 }  // namespace math
 
 /**
- * @brief Self-tests the sieve function for major inconsistencies
- * @returns void
+ * \brief Self-tests the sieve function for major inconsistencies
+ * \returns void
  */
 static void test() {
     auto primes = std::vector<bool>(10, true);
@@ -79,10 +79,10 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @param argc commandline argument count
- * @param argv commandline array of arguments
- * @returns 0 on exit
+ * \brief Main function
+ * \param argc commandline argument count
+ * \param argv commandline array of arguments
+ * \returns 0 on exit
  */
 int main(int argc, char *argv[]) {
     test();  // run self-test implementations

@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Implementation of Linear [Queue using array]
+ * \file
+ * \brief Implementation of Linear [Queue using array]
  * (https://www.geeksforgeeks.org/array-implementation-of-queue-simple/).
- * @details
+ * \details
  * The Linear Queue is a data structure used for holding a sequence of
  * values, which can be added to the end line (enqueue), removed from
  * head of line (dequeue) and displayed.
@@ -14,8 +14,8 @@
  * Values can be removed by increasing the `front` variable by 1 (which points
  * to the first of the array), so it cannot reached any more.
  *
- * @author [Pooja](https://github.com/pooja-git11)
- * @author [Farbod Ahmadian](https://github.com/farbodahm)
+ * \author [Pooja](https://github.com/pooja-git11)
+ * \author [Farbod Ahmadian](https://github.com/farbodahm)
  */
 #include <array>     /// for std::array
 #include <cstdint>
@@ -24,21 +24,21 @@
 constexpr uint16_t max_size{10};  ///< Maximum size of the queue
 
 /**
- * @namespace data_structures
- * @brief Algorithms with data structures
+ * \namespace data_structures
+ * \brief Algorithms with data structures
  */
 namespace data_structures {
 
 /**
- * @namespace queue_using_array
- * @brief Functions for [Queue using Array]
+ * \namespace queue_using_array
+ * \brief Functions for [Queue using Array]
  * (https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)
  * implementation.
  */
 namespace queue_using_array {
 
 /**
- * @brief Queue_Array class containing the main data and also index of head and
+ * \brief Queue_Array class containing the main data and also index of head and
  * tail of the array.
  */
 class Queue_Array {
@@ -53,8 +53,8 @@ class Queue_Array {
 };
 
 /**
- * @brief Adds new element to the end of the queue
- * @param ele to be added to the end of the queue
+ * \brief Adds new element to the end of the queue
+ * \param ele to be added to the end of the queue
  */
 void Queue_Array::enqueue(const int16_t& ele) {
     if (rear == arr.size() - 1) {
@@ -70,8 +70,8 @@ void Queue_Array::enqueue(const int16_t& ele) {
 }
 
 /**
- * @brief Remove element that is located at the first of the queue
- * @returns data that is deleted if queue is not empty
+ * \brief Remove element that is located at the first of the queue
+ * \returns data that is deleted if queue is not empty
  */
 int Queue_Array::dequeue() {
     int8_t d{0};
@@ -89,7 +89,7 @@ int Queue_Array::dequeue() {
 }
 
 /**
- * @brief Utility function to show all elements in the queue
+ * \brief Utility function to show all elements in the queue
  */
 void Queue_Array::display() const {
     if (front == -1) {
@@ -103,11 +103,11 @@ void Queue_Array::display() const {
 }  // namespace data_structures
 
 /**
- * @brief Main function
- * @details
+ * \brief Main function
+ * \details
  * Allows the user to add and delete values from the queue.
  * Also allows user to display values in the queue.
- * @returns 0 on exit
+ * \returns 0 on exit
  */
 int main() {
     int op{0}, data{0};

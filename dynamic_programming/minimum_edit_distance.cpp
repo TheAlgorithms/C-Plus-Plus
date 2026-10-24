@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief Implementation of [Minimum Edit
+ * \file
+ * \brief Implementation of [Minimum Edit
  * Distance](https://en.wikipedia.org/wiki/Edit_distance) using Dynamic
  * Programing
  *
- * @details
+ * \details
  *
  * Given two strings str1 & str2 and we have to calculate the minimum
  * number of operations (Insert, Remove, Replace) required to convert
@@ -31,7 +31,7 @@
  * For Remove: Recur for for m-1 and n
  * For Replace: Recur for for m-1 and n-1
  *
- * @author [Nirjas Jakilim](github.com/nirzak)
+ * \author [Nirjas Jakilim](github.com/nirzak)
  */
 
 #include <cassert>   /// for assert
@@ -40,30 +40,30 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming algorithms
  */
 
 namespace dynamic_programming {
 
 /**
- * @namespace Minimum Edit Distance
- * @brief Implementation of [Minimum Edit
+ * \namespace Minimum Edit Distance
+ * \brief Implementation of [Minimum Edit
  * Distance](https://en.wikipedia.org/wiki/Edit_distance) algorithm
  */
 
 namespace minimum_edit_distance {
 
 /**
- * @brief Takes input of the cost of
+ * \brief Takes input of the cost of
  * three operations: Insert, Replace and Delete
  * and return the minimum cost among them.
- * @param x used to pass minimum cost of Insert operations
- * @param y used to pass minimum cost of Replace operations
- * @param z used to pass minimum cost of Delete operations
- * @returns x if `x` is the minimum value
- * @returns y if `y` is the minimum value
- * @returns z if `z` is the minimum value
+ * \param x used to pass minimum cost of Insert operations
+ * \param y used to pass minimum cost of Replace operations
+ * \param z used to pass minimum cost of Delete operations
+ * \returns x if `x` is the minimum value
+ * \returns y if `y` is the minimum value
+ * \returns z if `z` is the minimum value
  */
 uint64_t min(uint64_t x, uint64_t y, uint64_t z) {
     if (x <= y && x <= z) {
@@ -77,16 +77,16 @@ uint64_t min(uint64_t x, uint64_t y, uint64_t z) {
 }
 
 /**
- * @brief Calculates and stores the result
+ * \brief Calculates and stores the result
  * of all the sub-problems, so that we don't have to recur to compute
  * the minimum cost of a particular operation if it is already
  * computed and stored in the `dp` vector.
- * @param dp vector to store the computed minimum costs
- * @param str1 to pass the 1st string
- * @param str2 to pass the 2nd string
- * @param m the length of str1
- * @param n the length of str2
- * @returns dp[m][n] the minimum cost of operations
+ * \param dp vector to store the computed minimum costs
+ * \param str1 to pass the 1st string
+ * \param str2 to pass the 2nd string
+ * \param m the length of str1
+ * \param n the length of str2
+ * \returns dp[m][n] the minimum cost of operations
  * needed to convert str1 to str2
  */
 uint64_t editDistDP(std::string str1, std::string str2, uint64_t m,
@@ -136,8 +136,8 @@ uint64_t editDistDP(std::string str1, std::string str2, uint64_t m,
 }  // namespace dynamic_programming
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st test
@@ -165,8 +165,8 @@ static void test() {
 }
 
 /**
- * @brief main function
- * @returns 0 on exit
+ * \brief main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation of the [Random Pivot Quick
+ * \file
+ * \brief Implementation of the [Random Pivot Quick
  * Sort](https://www.sanfoundry.com/cpp-program-implement-quick-sort-using-randomisation)
  * algorithm.
- * @details
+ * \details
  *          * A random pivot quick sort algorithm is pretty much same as quick
  * sort with a difference of having a logic of selecting next pivot element from
  * the input array.
@@ -41,7 +41,7 @@
  * index element.
  *           * Return the partition index from the function.
  *
- * @author [Nitin Sharma](https://github.com/foo290)
+ * \author [Nitin Sharma](https://github.com/foo290)
  */
 
 #include <algorithm>  /// for std::is_sorted(), std::swap()
@@ -52,22 +52,22 @@
 #include <tuple>      /// for returning multiple values form a function at once
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 /**
- * @brief Functions for the [Random Pivot Quick
+ * \brief Functions for the [Random Pivot Quick
  * Sort](https://www.sanfoundry.com/cpp-program-implement-quick-sort-using-randomisation)
  * implementation
- * @namespace random_pivot_quick_sort
+ * \namespace random_pivot_quick_sort
  */
 namespace random_pivot_quick_sort {
 /**
- * @brief Utility function to print the array
- * @tparam T size of the array
- * @param arr array used to print its content
- * @returns void
+ * \brief Utility function to print the array
+ * \tparam T size of the array
+ * \param arr array used to print its content
+ * \returns void
  * */
 template <size_t T>
 void showArray(std::array<int64_t, T> arr) {
@@ -78,12 +78,12 @@ void showArray(std::array<int64_t, T> arr) {
 }
 
 /**
- * @brief Takes the start and end indices of an array and returns a random
+ * \brief Takes the start and end indices of an array and returns a random
  * int64_teger between the range of those two for selecting pivot element.
  *
- * @param start The starting index.
- * @param end The ending index.
- * @returns int64_t A random number between start and end index.
+ * \param start The starting index.
+ * \param end The ending index.
+ * \returns int64_t A random number between start and end index.
  * */
 int64_t getRandomIndex(int64_t start, int64_t end) {
     srand(time(nullptr));  // Initialize random number generator.
@@ -92,11 +92,11 @@ int64_t getRandomIndex(int64_t start, int64_t end) {
 }
 
 /**
- * @brief A partition function which handles the partition logic of quick sort.
- * @tparam size size of the array to be passed as argument.
- * @param start The start index of the passed array
- * @param end The ending index of the passed array
- * @returns std::tuple<int64_t , std::array<int64_t , size>> A tuple of pivot
+ * \brief A partition function which handles the partition logic of quick sort.
+ * \tparam size size of the array to be passed as argument.
+ * \param start The start index of the passed array
+ * \param end The ending index of the passed array
+ * \returns std::tuple<int64_t , std::array<int64_t , size>> A tuple of pivot
  * index and pivot sorted array.
  */
 template <size_t size>
@@ -119,12 +119,12 @@ std::tuple<int64_t, std::array<int64_t, size>> partition(
 }
 
 /**
- * @brief Random pivot quick sort function. This function is the starting point
+ * \brief Random pivot quick sort function. This function is the starting point
  * of the algorithm.
- * @tparam size size of the array to be passed as argument.
- * @param start The start index of the passed array
- * @param end The ending index of the passed array
- * @returns std::array<int64_t , size> A fully sorted array in ascending order.
+ * \tparam size size of the array to be passed as argument.
+ * \param start The start index of the passed array
+ * \param end The ending index of the passed array
+ * \returns std::array<int64_t , size> A fully sorted array in ascending order.
  */
 template <size_t size>
 std::array<int64_t, size> quickSortRP(std::array<int64_t, size> arr,
@@ -150,11 +150,11 @@ std::array<int64_t, size> quickSortRP(std::array<int64_t, size> arr,
 }
 
 /**
- * @brief A function utility to generate unsorted array of given size and range.
- * @tparam size Size of the output array.
- * @param from Stating of the range.
- * @param to Ending of the range.
- * @returns std::array<int64_t , size> Unsorted array of specified size.
+ * \brief A function utility to generate unsorted array of given size and range.
+ * \tparam size Size of the output array.
+ * \param from Stating of the range.
+ * \param to Ending of the range.
+ * \returns std::array<int64_t , size> Unsorted array of specified size.
  * */
 template <size_t size>
 std::array<int64_t, size> generateUnsortedArray(int64_t from, int64_t to) {
@@ -176,14 +176,14 @@ std::array<int64_t, size> generateUnsortedArray(int64_t from, int64_t to) {
 }  // namespace sorting
 
 /**
- * @brief a class containing the necessary test cases
+ * \brief a class containing the necessary test cases
  */
 class TestCases {
  private:
     /**
-     * @brief A function to print64_t given message on console.
-     * @tparam T Type of the given message.
-     * @returns void
+     * \brief A function to print64_t given message on console.
+     * \tparam T Type of the given message.
+     * \returns void
      * */
     template <typename T>
     void log(T msg) {
@@ -193,8 +193,8 @@ class TestCases {
 
  public:
     /**
-     * @brief Executes test cases
-     * @returns void
+     * \brief Executes test cases
+     * \returns void
      * */
     void runTests() {
         log("Running Tests...");
@@ -208,8 +208,8 @@ class TestCases {
     }
 
     /**
-     * @brief A test case with single input
-     * @returns void
+     * \brief A test case with single input
+     * \returns void
      * */
     void testCase_1() {
         const int64_t inputSize = 1;
@@ -239,8 +239,8 @@ class TestCases {
     }
 
     /**
-     * @brief A test case with input array of length 500
-     * @returns void
+     * \brief A test case with input array of length 500
+     * \returns void
      * */
     void testCase_2() {
         const int64_t inputSize = 500;
@@ -272,8 +272,8 @@ class TestCases {
     }
 
     /**
-     * @brief A test case with array of length 1000.
-     * @returns void
+     * \brief A test case with array of length 1000.
+     * \returns void
      * */
     void testCase_3() {
         const int64_t inputSize = 1000;
@@ -306,8 +306,8 @@ class TestCases {
 };
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     TestCases tc = TestCases();
@@ -315,8 +315,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // Executes various test cases.

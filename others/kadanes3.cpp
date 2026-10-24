@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Efficient implementation for maximum contiguous subarray sum by
+ * \file
+ * \brief Efficient implementation for maximum contiguous subarray sum by
  * [Kadane's
  * algorithm](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/).
- * @details
+ * \details
  * Our task is to take length of array and then the whole array as input from
  * the user and then calculate the maximum contiguos subarray sum for the
  * input array, using the kadane's algorithm.
@@ -11,7 +11,7 @@
  * There can be a case that all the elements in the input array are negative.
  * In that case, the least value among all elements is the maximum sum with
  * subarray length = 1.
- * @author [Abhijeet Tiwari](https://github.com/thisabhijeet)
+ * \author [Abhijeet Tiwari](https://github.com/thisabhijeet)
  */
 
 #include <array>     /// for std::array
@@ -20,7 +20,7 @@
 #include <cstdint>
 #include <iostream>  /// for IO operations
 /**
- * @brief Utility function to check the current maximum number
+ * \brief Utility function to check the current maximum number
  * \param arr input array
  * \param length length of the input array
  * \returns maximum contiguous subarray sum
@@ -42,8 +42,8 @@ int max_subarray_sum(std::array<int64_t, SIZE> arr, uint64_t length) {
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     std::array<int64_t, 4> arr = {1, 2, 3, 4};
@@ -54,8 +54,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     // Below is the code for accepting array from the user and then

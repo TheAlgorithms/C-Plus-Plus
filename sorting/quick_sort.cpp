@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Quick sort implementation](https://en.wikipedia.org/wiki/Quicksort)
+ * \file
+ * \brief [Quick sort implementation](https://en.wikipedia.org/wiki/Quicksort)
  * in C++
- * @details
+ * \details
  *      Quick Sort is a [divide and conquer
  * algorithm](https://en.wikipedia.org/wiki/Category:Divide-and-conquer_algorithms).
  *      It picks an element as pivot and partition the given array around the
@@ -20,8 +20,8 @@
  *      than x) before x, and put all greater elements (greater than x) after
  *      x. All this should be done in linear time
  *
- * @author [David Leal](https://github.com/Panquesito7)
- * @author [popoapp](https://github.com/popoapp)
+ * \author [David Leal](https://github.com/Panquesito7)
+ * \author [popoapp](https://github.com/popoapp)
  */
 
 #include <algorithm>  /// for std::is_sorted
@@ -32,28 +32,28 @@
 #include <vector>     /// for std::vector
 
 /**
- * @brief Sorting algorithms
- * @namespace sorting
+ * \brief Sorting algorithms
+ * \namespace sorting
  */
 namespace sorting {
 /**
- * @namespace quick_sort
- * @brief Functions for the [Quick sort
+ * \namespace quick_sort
+ * \brief Functions for the [Quick sort
  * implementation](https://en.wikipedia.org/wiki/Quicksort) in C++
  */
 namespace quick_sort {
 /**
- * @brief Sorts the array taking the last element as pivot
- * @details
+ * \brief Sorts the array taking the last element as pivot
+ * \details
  * This function takes last element as pivot, places
  * the pivot element at its correct position in sorted
  * array, and places all smaller (smaller than pivot)
  * to left of pivot and all greater elements to right of pivot
- * @tparam T array type
- * @param arr the array with contents given by the user
- * @param low first point of the array (starting index)
- * @param high last point of the array (ending index)
- * @returns index of the smaller element
+ * \tparam T array type
+ * \param arr the array with contents given by the user
+ * \param low first point of the array (starting index)
+ * \param high last point of the array (ending index)
+ * \returns index of the smaller element
  *  
  *  ### Time Complexity
  *  best case, average Case: O(nlog(n))
@@ -85,14 +85,14 @@ int partition(std::vector<T> *arr, const int &low, const int &high) {
 }
 
 /**
- * @brief the main function that implements Quick Sort.
+ * \brief the main function that implements Quick Sort.
  *
  * Void function used in T (array type) function, which then
  * can be used as self-tests or other functionalities.
- * @tparam T array type
- * @param arr array to be sorted
- * @param low starting index
- * @param high ending index
+ * \tparam T array type
+ * \param arr array to be sorted
+ * \param low starting index
+ * \param high ending index
  */
 template <typename T>
 void quick_sort(std::vector<T> *arr, const int &low, const int &high) {
@@ -105,14 +105,14 @@ void quick_sort(std::vector<T> *arr, const int &low, const int &high) {
 }
 
 /**
- * @brief the main function that implements Quick Sort.
+ * \brief the main function that implements Quick Sort.
  *
  * T (array type) function which calls the void function. Can
  * be used for self-tests and other functionalities.
- * @tparam T array type
- * @param arr array to be sorted
- * @param low starting index
- * @param high ending index
+ * \tparam T array type
+ * \param arr array to be sorted
+ * \param low starting index
+ * \param high ending index
  */
 template <typename T>
 std::vector<T> quick_sort(std::vector<T> arr, const int &low, const int &high) {
@@ -126,10 +126,10 @@ std::vector<T> quick_sort(std::vector<T> arr, const int &low, const int &high) {
 }
 
 /**
- * @brief Utility function to print the array contents
- * @param arr the array to be printed
- * @param size size of the given array
- * @returns void
+ * \brief Utility function to print the array contents
+ * \param arr the array to be printed
+ * \param size size of the given array
+ * \returns void
  */
 template <typename T>
 void show(const std::vector<T> &arr, const int &size) {
@@ -141,8 +141,8 @@ void show(const std::vector<T> &arr, const int &size) {
 }  // namespace sorting
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     // 1st test (normal numbers)
@@ -207,8 +207,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     int choice = 0;

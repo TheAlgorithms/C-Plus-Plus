@@ -1,11 +1,11 @@
 /**
- * @file
- * @brief C++ Program to find Binary Exponent Iteratively and Recursively.
+ * \file
+ * \brief C++ Program to find Binary Exponent Iteratively and Recursively.
  *
  * Calculate \f$a^b\f$ in \f$O(\log(b))\f$ by converting \f$b\f$ to a
  * binary number. Binary exponentiation is also known as exponentiation by
  * squaring.
- * @note This is a far better approach compared to naive method which
+ * \note This is a far better approach compared to naive method which
  * provide \f$O(b)\f$ operations.
  *
  * Example:

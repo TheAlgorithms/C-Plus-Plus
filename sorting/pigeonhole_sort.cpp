@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation of [Pigeonhole Sort algorithm]
+ * \file
+ * \brief Implementation of [Pigeonhole Sort algorithm]
  * (https://en.wikipedia.org/wiki/Pigeonhole_sort)
- * @author [Lownish](https://github.com/Lownish)
- * @details
+ * \author [Lownish](https://github.com/Lownish)
+ * \details
  * Pigeonhole sorting is a sorting algorithm that is suitable for sorting lists
  * of elements where the number of elements and the number of possible key
  * values are approximately the same. It requires O(n + Range) time where n is
@@ -19,16 +19,16 @@
 #include <iostream>   //for io operations
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 
 /**
  * Pigeonhole sorting of array of size n
  * The function will sort the array through Pigeonhole algorithm and print
- * @param arr unsorted array of elements
- * @returns sorted array of elements
+ * \param arr unsorted array of elements
+ * \returns sorted array of elements
  */
 template <std::size_t N>
 std::array<int, N> pigeonSort(std::array<int, N> arr) {
@@ -63,7 +63,7 @@ std::array<int, N> pigeonSort(std::array<int, N> arr) {
 /**
  * Test function 1 with unsorted array
  * {8, 3, 2, 7, 4, 6, 8}
- * @returns none
+ * \returns none
  */
 static void test_1() {
     const int n = 7;
@@ -83,7 +83,7 @@ static void test_1() {
 /**
  * Test function 2 with unsorted array
  * {802, 630, 20, 745, 52, 300, 612, 932, 78, 187}
- * @returns none
+ * \returns none
  */
 static void test_2() {
     const int n = 10;
@@ -104,7 +104,7 @@ static void test_2() {
 /**
  * Test function 1 with unsorted array
  * {11,13,12,14}
- * @returns none
+ * \returns none
  */
 static void test_3() {
     const int n = 4;

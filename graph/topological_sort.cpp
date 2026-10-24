@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Topological Sort
+ * \file
+ * \brief [Topological Sort
  * Algorithm](https://en.wikipedia.org/wiki/Topological_sorting)
- * @details
+ * \details
  * Topological sorting of a directed graph is a linear ordering or its vertices
  * such that for every directed edge (u,v) from vertex u to vertex v, u comes
  * before v in the oredering.
@@ -20,19 +20,19 @@
 #include <vector>     // For std::vector
 
 /**
- * @namespace graph
- * @brief Graph algorithms
+ * \namespace graph
+ * \brief Graph algorithms
  */
 namespace graph {
 
 /**
- * @namespace topological_sort
- * @brief Topological Sort Algorithm
+ * \namespace topological_sort
+ * \brief Topological Sort Algorithm
  */
 namespace topological_sort {
 /**
- * @class Graph
- * @brief Class that represents a directed graph and provides methods for
+ * \class Graph
+ * \brief Class that represents a directed graph and provides methods for
  * manipulating the graph
  */
 class Graph {
@@ -42,39 +42,39 @@ class Graph {
 
  public:
     /**
-     * @brief Constructor for the Graph class
-     * @param nodes Number of nodes in the graph
+     * \brief Constructor for the Graph class
+     * \param nodes Number of nodes in the graph
      */
     Graph(int nodes) : n(nodes), adj(nodes) {}
 
     /**
-     * @brief Function that adds an edge between two nodes or vertices of graph
-     * @param u Start node of the edge
-     * @param v End node of the edge
+     * \brief Function that adds an edge between two nodes or vertices of graph
+     * \param u Start node of the edge
+     * \param v End node of the edge
      */
     void addEdge(int u, int v) { adj[u].push_back(v); }
 
     /**
-     * @brief Get the adjacency list of the graph
-     * @returns A reference to the adjacency list
+     * \brief Get the adjacency list of the graph
+     * \returns A reference to the adjacency list
      */
     const std::vector<std::vector<int>>& getAdjacencyList() const {
         return adj;
     }
 
     /**
-     * @brief Get the number of nodes in the graph
-     * @returns The number of nodes
+     * \brief Get the number of nodes in the graph
+     * \returns The number of nodes
      */
     int getNumNodes() const { return n; }
 };
 
 /**
- * @brief Function to perform Depth First Search on the graph
- * @param v Starting vertex for depth-first search
- * @param visited Array representing whether each node has been visited
- * @param graph Adjacency list of the graph
- * @param s Stack containing the vertices for topological sorting
+ * \brief Function to perform Depth First Search on the graph
+ * \param v Starting vertex for depth-first search
+ * \param visited Array representing whether each node has been visited
+ * \param graph Adjacency list of the graph
+ * \param s Stack containing the vertices for topological sorting
  */
 void dfs(int v, std::vector<int>& visited,
          const std::vector<std::vector<int>>& graph, std::stack<int>& s) {
@@ -88,9 +88,9 @@ void dfs(int v, std::vector<int>& visited,
 }
 
 /**
- * @brief Function to get the topological sort of the graph
- * @param g Graph object
- * @returns A vector containing the topological order of nodes
+ * \brief Function to get the topological sort of the graph
+ * \param g Graph object
+ * \returns A vector containing the topological order of nodes
  */
 std::vector<int> topologicalSort(const Graph& g) {
     int n = g.getNumNodes();
@@ -120,8 +120,8 @@ std::vector<int> topologicalSort(const Graph& g) {
 }  // namespace graph
 
 /**
- * @brief Self-test implementation
- * @returns void
+ * \brief Self-test implementation
+ * \returns void
  */
 static void test() {
     // Test 1
@@ -180,8 +180,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self test implementations

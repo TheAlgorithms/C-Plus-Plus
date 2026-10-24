@@ -1,6 +1,6 @@
 /**
-@file
-@brief Matrix Exponentiation.
+\file
+\brief Matrix Exponentiation.
 
 The problem can be solved with DP but constraints are high.
 <br/>\f$a_i = b_i\f$ (for \f$i <= k\f$)
@@ -40,12 +40,12 @@ using std::vector;
 #define MOD 1000000007
 
 /** global variable mat_size
- * @todo @stepfencurryxiao add documetnation
+ * \todo @stepfencurryxiao add documetnation
  */
 ll mat_size;
 
 /** global vector variables used in the ::ans function.
- * @todo @stepfencurryxiao add documetnation
+ * \todo @stepfencurryxiao add documetnation
  */
 vector<ll> fib_b, fib_c;
 
@@ -68,7 +68,7 @@ vector<vector<ll>> multiply(const vector<vector<ll>> &A,
 }
 
 /** computing integer power of a matrix using recursive multiplication.
- * @note A must be a square matrix for this algorithm.
+ * \note A must be a square matrix for this algorithm.
  * \param [in] A base matrix
  * \param [in] p exponent
  * \return matrix of same dimension as A

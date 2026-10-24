@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief This Programme Converts a given decimal number in the range [0,4000)
+ * \file
+ * \brief This Programme Converts a given decimal number in the range [0,4000)
  * to both Lower case and Upper case Roman Numeral
  */
 
@@ -10,7 +10,7 @@
 #include <iostream>
 
 /** This functions fills a string with character c, n times and returns it
- * @note This can probably be replace by `memcpy` function.
+ * \note This can probably be replace by `memcpy` function.
  */
 std::string fill(char c, int n) {
     std::string s = "";

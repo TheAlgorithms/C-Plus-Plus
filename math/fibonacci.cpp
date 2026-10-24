@@ -1,13 +1,13 @@
 /**
- * @file
- * @brief n-th [Fibonacci
+ * \file
+ * \brief n-th [Fibonacci
  * number](https://en.wikipedia.org/wiki/Fibonacci_sequence).
  *
- * @details
+ * \details
  * Naive recursive implementation to calculate the n-th Fibonacci number.
  * \f[\text{fib}(n) = \text{fib}(n-1) + \text{fib}(n-2)\f]
  *
- * @see fibonacci_large.cpp, fibonacci_fast.cpp, string_fibonacci.cpp
+ * \see fibonacci_large.cpp, fibonacci_fast.cpp, string_fibonacci.cpp
  */
 
 #include <cstdint>
@@ -15,19 +15,19 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace math
- * @brief Math algorithms
+ * \namespace math
+ * \brief Math algorithms
  */
 namespace math {
 /**
- * @namespace fibonacci
- * @brief Functions for Fibonacci sequence
+ * \namespace fibonacci
+ * \brief Functions for Fibonacci sequence
  */
 namespace fibonacci {
 /**
- * @brief Function to compute the n-th Fibonacci number
- * @param n the index of the Fibonacci number
- * @returns n-th element of the Fibonacci's sequence
+ * \brief Function to compute the n-th Fibonacci number
+ * \param n the index of the Fibonacci number
+ * \returns n-th element of the Fibonacci's sequence
  */
 uint64_t fibonacci(uint64_t n) {
     // If the input is 0 or 1 just return the same (Base Case)
@@ -43,8 +43,8 @@ uint64_t fibonacci(uint64_t n) {
 }  // namespace math
 
 /**
- * @brief Self-test implementation
- * @returns `void`
+ * \brief Self-test implementation
+ * \returns `void`
  */
 static void test() {
     assert(math::fibonacci::fibonacci(0) == 0);
@@ -58,8 +58,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

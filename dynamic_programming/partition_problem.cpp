@@ -1,8 +1,8 @@
 /******************************************************************************
- * @file
- * @brief Implementation of the [Partition
+ * \file
+ * \brief Implementation of the [Partition
  * Problem](https://en.wikipedia.org/wiki/Partition_problem )
- * @details
+ * \details
  * The partition problem, or number partitioning, is the task of deciding
  * whether a given multiset S of positive integers can be partitioned into two
  * subsets S1 and S2 such that the sum of the numbers in S1 equals the sum of
@@ -24,7 +24,7 @@
  * If sum of array elements is even, calculate sum/2 and find a subset of array
  * with sum equal to sum/2.
  *
- * @author [Lajat Manekar](https://github.com/Lazeeez)
+ * \author [Lajat Manekar](https://github.com/Lazeeez)
  *
  *******************************************************************************/
 #include <cassert>   /// for assert
@@ -33,23 +33,23 @@
 #include <numeric>   /// for std::accumulate
 #include <vector>    /// for std::vector
 /******************************************************************************
- * @namespace dp
- * @brief Dynamic programming algorithms
+ * \namespace dp
+ * \brief Dynamic programming algorithms
  *******************************************************************************/
 namespace dp {
 
 /******************************************************************************
- * @namespace partitionProblem
- * @brief Partition problem algorithm
+ * \namespace partitionProblem
+ * \brief Partition problem algorithm
  *******************************************************************************/
 namespace partitionProblem {
 
 /******************************************************************************
- * @brief Returns true if arr can be partitioned in two subsets of equal sum,
+ * \brief Returns true if arr can be partitioned in two subsets of equal sum,
  * otherwise false
- * @param arr vector containing elements
- * @param size Size of the vector.
- * @returns @param bool whether the vector can be partitioned or not.
+ * \param arr vector containing elements
+ * \param size Size of the vector.
+ * \returns @param bool whether the vector can be partitioned or not.
  *******************************************************************************/
 bool findPartiion(const std::vector<uint64_t> &arr, uint64_t size) {
     uint64_t sum = std::accumulate(arr.begin(), arr.end(),
@@ -83,8 +83,8 @@ bool findPartiion(const std::vector<uint64_t> &arr, uint64_t size) {
 }  // namespace dp
 
 /*******************************************************************************
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  *******************************************************************************/
 static void test() {
     std::vector<uint64_t> arr = {{1, 3, 3, 2, 3, 2}};
@@ -97,8 +97,8 @@ static void test() {
 }
 
 /*******************************************************************************
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  *******************************************************************************/
 int main() {
     test();  // run self-test implementations

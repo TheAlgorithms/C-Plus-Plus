@@ -1,9 +1,9 @@
 /******************************************************************************
- * @file
- * @brief Implementation of the [Convex
+ * \file
+ * \brief Implementation of the [Convex
  * Hull](https://en.wikipedia.org/wiki/Convex_hull) implementation using [Graham
  * Scan](https://en.wikipedia.org/wiki/Graham_scan)
- * @details
+ * \details
  * In geometry, the convex hull or convex envelope or convex closure of a shape
  * is the smallest convex set that contains it. The convex hull may be defined
  * either as the intersection of all convex sets containing a given subset of a
@@ -35,7 +35,7 @@
  * (considering them in same order) is not counterclockwise, we discard c,
  * otherwise we keep it.
  *
- * @author [Lajat Manekar](https://github.com/Lazeeez)
+ * \author [Lajat Manekar](https://github.com/Lazeeez)
  *
  *******************************************************************************/
 #include <algorithm>  /// for std::swap
@@ -46,20 +46,20 @@
 #include <vector>     /// for std::vector
 
 /******************************************************************************
- * @namespace geometry
- * @brief geometric algorithms
+ * \namespace geometry
+ * \brief geometric algorithms
  *******************************************************************************/
 namespace geometry {
 
 /******************************************************************************
- * @namespace graham scan
- * @brief convex hull algorithm
+ * \namespace graham scan
+ * \brief convex hull algorithm
  *******************************************************************************/
 namespace grahamscan {
 
 /******************************************************************************
- * @struct Point
- * @brief for X and Y co-ordinates of the co-ordinate.
+ * \struct Point
+ * \brief for X and Y co-ordinates of the co-ordinate.
  *******************************************************************************/
 struct Point {
     int x, y;
@@ -71,9 +71,9 @@ struct Point {
 Point p0;
 
 /******************************************************************************
- * @brief A utility function to find next to top in a stack.
- * @param S Stack to be used for the process.
- * @returns Co-ordinates of the Point <int, int> below the top of the stack
+ * \brief A utility function to find next to top in a stack.
+ * \param S Stack to be used for the process.
+ * \returns Co-ordinates of the Point <int, int> below the top of the stack
  *******************************************************************************/
 Point nextToTop(std::stack<Point> *S) {
     Point p = S->top();
@@ -84,21 +84,21 @@ Point nextToTop(std::stack<Point> *S) {
 }
 
 /******************************************************************************
- * @brief A utility function to return square of distance between p1 and p2.
- * @param p1 Co-ordinates of Point 1 <int, int>.
- * @param p2 Co-ordinates of Point 2 <int, int>.
- * @returns square of the distance between p1 and p2.
+ * \brief A utility function to return square of distance between p1 and p2.
+ * \param p1 Co-ordinates of Point 1 <int, int>.
+ * \param p2 Co-ordinates of Point 2 <int, int>.
+ * \returns square of the distance between p1 and p2.
  *******************************************************************************/
 int distSq(Point p1, Point p2) {
     return (p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y);
 }
 
 /******************************************************************************
- * @brief To find orientation of ordered triplet (p, q, r).
- * @param p Co-ordinates of Point p <int, int>.
- * @param q Co-ordinates of Point q <int, int>.
- * @param r Co-ordinates of Point r <int, int>.
- * @returns 0 --> p, q and r are collinear, 1 --> Clockwise,
+ * \brief To find orientation of ordered triplet (p, q, r).
+ * \param p Co-ordinates of Point p <int, int>.
+ * \param q Co-ordinates of Point q <int, int>.
+ * \param r Co-ordinates of Point r <int, int>.
+ * \returns 0 --> p, q and r are collinear, 1 --> Clockwise,
  * 2 --> Counterclockwise
  *******************************************************************************/
 int orientation(Point p, Point q, Point r) {
@@ -111,11 +111,11 @@ int orientation(Point p, Point q, Point r) {
 }
 
 /******************************************************************************
- * @brief A function used by library function qsort() to sort an array of
+ * \brief A function used by library function qsort() to sort an array of
  * points with respect to the first point
- * @param vp1 Co-ordinates of Point 1 <int, int>.
- * @param vp2 Co-ordinates of Point 2 <int, int>.
- * @returns -1 if Point 1 sorts before Point 2, 1 otherwise.
+ * \param vp1 Co-ordinates of Point 1 <int, int>.
+ * \param vp2 Co-ordinates of Point 2 <int, int>.
+ * \returns -1 if Point 1 sorts before Point 2, 1 otherwise.
  *******************************************************************************/
 int compare(const void *vp1, const void *vp2) {
     auto *p1 = static_cast<const Point *>(vp1);
@@ -131,10 +131,10 @@ int compare(const void *vp1, const void *vp2) {
 }
 
 /******************************************************************************
- * @brief Prints convex hull of a set of n points.
- * @param points vector of Point<int, int> with co-ordinates.
- * @param size Size of the vector.
- * @returns vector of the Points forming the convex hull.
+ * \brief Prints convex hull of a set of n points.
+ * \param points vector of Point<int, int> with co-ordinates.
+ * \param size Size of the vector.
+ * \returns vector of the Points forming the convex hull.
  *******************************************************************************/
 std::vector<Point> convexHull(std::vector<Point> points, uint64_t size) {
     // Find the bottom-most point

@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief Implementation to [count number of set bits of a number]
+ * \file
+ * \brief Implementation to [count number of set bits of a number]
  * (https://www.geeksforgeeks.org/count-set-bits-in-an-integer/) in an
  * integer.
  *
- * @details
+ * \details
  * We are given an integer number. We need to calculate the number of set bits
  * in it.
  *
@@ -12,28 +12,28 @@
  * set bit in computer terms.
  * Worst Case Time Complexity: O(log n)
  * Space complexity: O(1)
- * @author [Swastika Gupta](https://github.com/Swastyy)
- * @author [Prashant Thakur](https://github.com/prashant-th18)
+ * \author [Swastika Gupta](https://github.com/Swastyy)
+ * \author [Prashant Thakur](https://github.com/prashant-th18)
  */
 #include <cassert>   /// for assert
 #include <cstdint>
 #include <iostream>  /// for IO operations
 /**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
+ * \namespace bit_manipulation
+ * \brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 /**
- * @namespace count_of_set_bits
- * @brief Functions for the [count sets
+ * \namespace count_of_set_bits
+ * \brief Functions for the [count sets
  * bits](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/)
  * implementation
  */
 namespace count_of_set_bits {
 /**
- * @brief The main function implements set bit count
- * @param n is the number whose set bit will be counted
- * @returns total number of set-bits in the binary representation of number `n`
+ * \brief The main function implements set bit count
+ * \param n is the number whose set bit will be counted
+ * \returns total number of set-bits in the binary representation of number `n`
  */
 std::uint64_t countSetBits(
     std ::uint64_t n) {  // uint64_t is preferred over int so that
@@ -82,8 +82,8 @@ static void test() {
     std::cout << "All test cases successfully passed!" << std::endl;
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Checks whether a number is an [Armstrong
+ * \file
+ * \brief Checks whether a number is an [Armstrong
  * Number](https://en.wikipedia.org/wiki/Narcissistic_number) or not.
  *
- * @details
+ * \details
  * An Armstrong number is a number that is the sum of its own digits each raised
  * to the power of the number of digits. For example: 153 is an Armstrong number
  * since 153 = 1^3 + 5^3 + 3^3.
@@ -15,8 +15,8 @@
  * Armstrong numbers are also known as Narcissistic Numbers, as stated in
  * Wikipedia.
  *
- * @author [Shivam Singhal](https://github.com/shivhek25)
- * @author [David Leal](https://github.com/Panquesito7)
+ * \author [Shivam Singhal](https://github.com/shivhek25)
+ * \author [David Leal](https://github.com/Panquesito7)
  */
 
 #include <cassert>   /// for assert
@@ -24,16 +24,16 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace
- * @brief Dynamic Programming algorithms
+ * \namespace
+ * \brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 
 /**
- * @brief Checks if the given number is armstrong or not.
- * @param number the number to check
- * @returns false if the given number is NOT armstrong
- * @returns true if the given number IS armstrong
+ * \brief Checks if the given number is armstrong or not.
+ * \param number the number to check
+ * \returns false if the given number is NOT armstrong
+ * \returns true if the given number IS armstrong
  */
 template <typename T>
 bool is_armstrong(const T &number) {
@@ -65,8 +65,8 @@ bool is_armstrong(const T &number) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     assert(dynamic_programming::is_armstrong(153) == true);
@@ -84,8 +84,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // run self-test implementations

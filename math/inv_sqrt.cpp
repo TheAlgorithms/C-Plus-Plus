@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Implementation of [the inverse square root
+ * \file
+ * \brief Implementation of [the inverse square root
  * Root](https://medium.com/hard-mode/the-legendary-fast-inverse-square-root-e51fee3b49d9).
- * @details
+ * \details
  * Two implementation to calculate inverse inverse root,
  * from Quake III Arena (C++ version) and with a standard library (`cmath`).
  * This algorithm is used to calculate shadows in Quake III Arena.
@@ -14,15 +14,15 @@
 #include <iostream>  /// for IO operations
 #include <limits>    /// for numeric_limits
 /**
- * @brief This is the function that calculates the fast inverse square root.
+ * \brief This is the function that calculates the fast inverse square root.
  * The following code is the fast inverse square root implementation from
  * Quake III Arena (Adapted for C++). More information can be found at
  * [Wikipedia](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
- * @tparam T floating type
- * @tparam iterations inverse square root, the greater the number of
+ * \tparam T floating type
+ * \tparam iterations inverse square root, the greater the number of
  * iterations, the more exact the result will be (1 or 2).
- * @param x value to calculate
- * @return the inverse square root
+ * \param x value to calculate
+ * \return the inverse square root
  */
 template <typename T = double, char iterations = 2>
 inline T Fast_InvSqrt(T x) {
@@ -47,13 +47,13 @@ inline T Fast_InvSqrt(T x) {
 }
 
 /**
- * @brief This is the function that calculates the fast inverse square root.
+ * \brief This is the function that calculates the fast inverse square root.
  * The following code is the fast inverse square root with standard lib (cmath)
  * More information can be found at
  * [LinkedIn](https://www.linkedin.com/pulse/fast-inverse-square-root-still-armin-kassemi-langroodi)
- * @tparam T floating type
- * @param number value to calculate
- * @return the inverse square root
+ * \tparam T floating type
+ * \param number value to calculate
+ * \return the inverse square root
  */
 template <typename T = double>
 T Standard_InvSqrt(T number) {
@@ -62,8 +62,8 @@ T Standard_InvSqrt(T number) {
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     const float epsilon = 1e-3f;
@@ -81,8 +81,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

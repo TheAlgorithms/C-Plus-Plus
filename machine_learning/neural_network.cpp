@@ -1,11 +1,11 @@
 /**
- * @file
- * @author [Deep Raval](https://github.com/imdeep2905)
+ * \file
+ * \author [Deep Raval](https://github.com/imdeep2905)
  *
- * @brief Implementation of [Multilayer Perceptron]
+ * \brief Implementation of [Multilayer Perceptron]
  * (https://en.wikipedia.org/wiki/Multilayer_perceptron).
  *
- * @details
+ * \details
  * A multilayer perceptron (MLP) is a class of feedforward artificial neural
  * network (ANN). The term MLP is used ambiguously, sometimes loosely to any
  * feedforward ANN, sometimes strictly to refer to networks composed of multiple
@@ -54,43 +54,43 @@ namespace neural_network {
 namespace activations {
 /**
  * Sigmoid function
- * @param X Value
- * @return Returns sigmoid(x)
+ * \param X Value
+ * \return Returns sigmoid(x)
  */
 double sigmoid(const double &x) { return 1.0 / (1.0 + std::exp(-x)); }
 
 /**
  * Derivative of sigmoid function
- * @param X Value
- * @return Returns derivative of sigmoid(x)
+ * \param X Value
+ * \return Returns derivative of sigmoid(x)
  */
 double dsigmoid(const double &x) { return x * (1 - x); }
 
 /**
  * Relu function
- * @param X Value
- * @returns relu(x)
+ * \param X Value
+ * \returns relu(x)
  */
 double relu(const double &x) { return std::max(0.0, x); }
 
 /**
  * Derivative of relu function
- * @param X Value
- * @returns derivative of relu(x)
+ * \param X Value
+ * \returns derivative of relu(x)
  */
 double drelu(const double &x) { return x >= 0.0 ? 1.0 : 0.0; }
 
 /**
  * Tanh function
- * @param X Value
- * @return Returns tanh(x)
+ * \param X Value
+ * \return Returns tanh(x)
  */
 double tanh(const double &x) { return 2 / (1 + std::exp(-2 * x)) - 1; }
 
 /**
  * Derivative of Sigmoid function
- * @param X Value
- * @return Returns derivative of tanh(x)
+ * \param X Value
+ * \return Returns derivative of tanh(x)
  */
 double dtanh(const double &x) { return 1 - x * x; }
 }  // namespace activations
@@ -100,14 +100,14 @@ double dtanh(const double &x) { return 1 - x * x; }
 namespace util_functions {
 /**
  * Square function
- * @param X Value
- * @return Returns x * x
+ * \param X Value
+ * \return Returns x * x
  */
 double square(const double &x) { return x * x; }
 /**
  * Identity function
- * @param X Value
- * @return Returns x
+ * \param X Value
+ * \return Returns x
  */
 double identity_function(const double &x) { return x; }
 }  // namespace util_functions
@@ -133,10 +133,10 @@ class DenseLayer {
 
     /**
      * Constructor for neural_network::layers::DenseLayer class
-     * @param neurons number of neurons
-     * @param activation activation function for layer
-     * @param kernel_shape shape of kernel
-     * @param random_kernel flag for whether to initialize kernel randomly
+     * \param neurons number of neurons
+     * \param activation activation function for layer
+     * \param kernel_shape shape of kernel
+     * \param random_kernel flag for whether to initialize kernel randomly
      */
     DenseLayer(const int &neurons, const std::string &activation,
                const std::pair<size_t, size_t> &kernel_shape,
@@ -176,9 +176,9 @@ class DenseLayer {
     }
     /**
      * Constructor for neural_network::layers::DenseLayer class
-     * @param neurons number of neurons
-     * @param activation activation function for layer
-     * @param kernel values of kernel (useful in loading model)
+     * \param neurons number of neurons
+     * \param activation activation function for layer
+     * \param kernel values of kernel (useful in loading model)
      */
     DenseLayer(const int &neurons, const std::string &activation,
                const std::vector<std::valarray<double>> &kernel) {
@@ -214,7 +214,7 @@ class DenseLayer {
     /**
      * Copy Constructor for class DenseLayer.
      *
-     * @param model instance of class to be copied.
+     * \param model instance of class to be copied.
      */
     DenseLayer(const DenseLayer &layer) = default;
 
@@ -250,8 +250,8 @@ class NeuralNetwork {
     /**
      * Private Constructor for class NeuralNetwork. This constructor
      * is used internally to load model.
-     * @param config vector containing pair (neurons, activation)
-     * @param kernels vector containing all pretrained kernels
+     * \param config vector containing pair (neurons, activation)
+     * \param kernels vector containing all pretrained kernels
      */
     NeuralNetwork(
         const std::vector<std::pair<int, std::string>> &config,
@@ -283,7 +283,7 @@ class NeuralNetwork {
      * Private function to get detailed predictions (i.e.
      * activated neuron values). This function is used in
      * backpropagation, single predict and batch predict.
-     * @param X input vector
+     * \param X input vector
      */
     std::vector<std::vector<std::valarray<double>>>
     __detailed_single_prediction(const std::vector<std::valarray<double>> &X) {
@@ -308,7 +308,7 @@ class NeuralNetwork {
     /**
      * Constructor for class NeuralNetwork. This constructor
      * is used by user.
-     * @param config vector containing pair (neurons, activation)
+     * \param config vector containing pair (neurons, activation)
      */
     explicit NeuralNetwork(
         const std::vector<std::pair<int, std::string>> &config) {
@@ -345,7 +345,7 @@ class NeuralNetwork {
     /**
      * Copy Constructor for class NeuralNetwork.
      *
-     * @param model instance of class to be copied.
+     * \param model instance of class to be copied.
      */
     NeuralNetwork(const NeuralNetwork &model) = default;
 
@@ -371,11 +371,11 @@ class NeuralNetwork {
 
     /**
      * Function to get X and Y from csv file (where X = data, Y = label)
-     * @param file_name csv file name
-     * @param last_label flag for whether label is in first or last column
-     * @param normalize flag for whether to normalize data
-     * @param slip_lines number of lines to skip
-     * @return returns pair of X and Y
+     * \param file_name csv file name
+     * \param last_label flag for whether label is in first or last column
+     * \param normalize flag for whether to normalize data
+     * \param slip_lines number of lines to skip
+     * \return returns pair of X and Y
      */
     std::pair<std::vector<std::vector<std::valarray<double>>>,
               std::vector<std::vector<std::valarray<double>>>>
@@ -445,8 +445,8 @@ class NeuralNetwork {
 
     /**
      * Function to get prediction of model on single sample.
-     * @param X array of feature vectors
-     * @return returns predictions as vector
+     * \param X array of feature vectors
+     * \return returns predictions as vector
      */
     std::vector<std::valarray<double>> single_predict(
         const std::vector<std::valarray<double>> &X) {
@@ -458,8 +458,8 @@ class NeuralNetwork {
 
     /**
      * Function to get prediction of model on batch
-     * @param X array of feature vectors
-     * @return returns predicted values as vector
+     * \param X array of feature vectors
+     * \return returns predicted values as vector
      */
     std::vector<std::vector<std::valarray<double>>> batch_predict(
         const std::vector<std::vector<std::valarray<double>>> &X) {
@@ -475,12 +475,12 @@ class NeuralNetwork {
 
     /**
      * Function to fit model on supplied data
-     * @param X array of feature vectors
-     * @param Y array of target values
-     * @param epochs number of epochs (default = 100)
-     * @param learning_rate learning rate (default = 0.01)
-     * @param batch_size batch size for gradient descent (default = 32)
-     * @param shuffle flag for whether to shuffle data (default = true)
+     * \param X array of feature vectors
+     * \param Y array of target values
+     * \param epochs number of epochs (default = 100)
+     * \param learning_rate learning rate (default = 0.01)
+     * \param batch_size batch size for gradient descent (default = 32)
+     * \param shuffle flag for whether to shuffle data (default = true)
      */
     void fit(const std::vector<std::vector<std::valarray<double>>> &X_,
              const std::vector<std::vector<std::valarray<double>>> &Y_,
@@ -575,14 +575,14 @@ class NeuralNetwork {
 
     /**
      * Function to fit model on data stored in csv file
-     * @param file_name csv file name
-     * @param last_label flag for whether label is in first or last column
-     * @param epochs number of epochs
-     * @param learning_rate learning rate
-     * @param normalize flag for whether to normalize data
-     * @param slip_lines number of lines to skip
-     * @param batch_size batch size for gradient descent (default = 32)
-     * @param shuffle flag for whether to shuffle data (default = true)
+     * \param file_name csv file name
+     * \param last_label flag for whether label is in first or last column
+     * \param epochs number of epochs
+     * \param learning_rate learning rate
+     * \param normalize flag for whether to normalize data
+     * \param slip_lines number of lines to skip
+     * \param batch_size batch size for gradient descent (default = 32)
+     * \param shuffle flag for whether to shuffle data (default = true)
      */
     void fit_from_csv(const std::string &file_name, const bool &last_label,
                       const int &epochs, const double &learning_rate,
@@ -600,8 +600,8 @@ class NeuralNetwork {
 
     /**
      * Function to evaluate model on supplied data
-     * @param X array of feature vectors (input data)
-     * @param Y array of target values (label)
+     * \param X array of feature vectors (input data)
+     * \param Y array of target values (label)
      */
     void evaluate(const std::vector<std::vector<std::valarray<double>>> &X,
                   const std::vector<std::vector<std::valarray<double>>> &Y) {
@@ -630,10 +630,10 @@ class NeuralNetwork {
 
     /**
      * Function to evaluate model on data stored in csv file
-     * @param file_name csv file name
-     * @param last_label flag for whether label is in first or last column
-     * @param normalize flag for whether to normalize data
-     * @param slip_lines number of lines to skip
+     * \param file_name csv file name
+     * \param last_label flag for whether label is in first or last column
+     * \param normalize flag for whether to normalize data
+     * \param slip_lines number of lines to skip
      */
     void evaluate_from_csv(const std::string &file_name, const bool &last_label,
                            const bool &normalize, const int &slip_lines = 1) {
@@ -647,7 +647,7 @@ class NeuralNetwork {
 
     /**
      * Function to save current model.
-     * @param file_name file name to save model (*.model)
+     * \param file_name file name to save model (*.model)
      */
     void save_model(const std::string &_file_name) {
         std::string file_name = _file_name;
@@ -726,8 +726,8 @@ class NeuralNetwork {
 
     /**
      * Function to load earlier saved model.
-     * @param file_name file from which model will be loaded (*.model)
-     * @return instance of NeuralNetwork class with pretrained weights
+     * \param file_name file from which model will be loaded (*.model)
+     * \return instance of NeuralNetwork class with pretrained weights
      */
     NeuralNetwork load_model(const std::string &file_name) {
         std::ifstream in_file;            // Ifstream to read file
@@ -800,7 +800,7 @@ class NeuralNetwork {
 
 /**
  * Function to test neural network
- * @returns none
+ * \returns none
  */
 static void test() {
     // Creating network with 3 layers for "iris.csv"
@@ -827,8 +827,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     // Testing

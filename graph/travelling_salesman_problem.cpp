@@ -1,11 +1,11 @@
 /**
- * @file
- * @brief [Travelling Salesman Problem]
+ * \file
+ * \brief [Travelling Salesman Problem]
  * (https://en.wikipedia.org/wiki/Travelling_salesman_problem) implementation
  *
- * @author [Mayank Mamgain](http://github.com/Mayank17M)
+ * \author [Mayank Mamgain](http://github.com/Mayank17M)
  *
- * @details
+ * \details
  * Travelling salesman problem asks:
  * Given a list of cities and the distances between each pair of cities, what is
  * the shortest possible route that visits each city exactly once and returns to
@@ -25,17 +25,17 @@
 #include <vector>     /// for std::vector
 
 /**
- * @namespace graph
- * @brief Graph Algorithms
+ * \namespace graph
+ * \brief Graph Algorithms
  */
 namespace graph {
 /**
- * @brief Function calculates the minimum path distance that will cover all the
+ * \brief Function calculates the minimum path distance that will cover all the
  * cities starting from the source.
  *
- * @param cities matrix representation of cities
- * @param src Point from where salesman is starting
- * @param V number of vertices in the graph
+ * \param cities matrix representation of cities
+ * \param src Point from where salesman is starting
+ * \param V number of vertices in the graph
  *
  */
 int TravellingSalesmanProblem(std::vector<std::vector<uint32_t>> *cities,
@@ -72,8 +72,8 @@ int TravellingSalesmanProblem(std::vector<std::vector<uint32_t>> *cities,
 }  // namespace graph
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     std::cout << "Initiatinig Predefined Tests..." << std::endl;
@@ -99,8 +99,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // run self-test implementations

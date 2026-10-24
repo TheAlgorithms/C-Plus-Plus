@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Implementation of cutting a rod problem
+ * \file
+ * \brief Implementation of cutting a rod problem
  *
- * @details
+ * \details
  * Given a rod of length n inches and an array of prices that
  * contains prices of all pieces of size<=n. Determine
  * the maximum profit obtainable by cutting up the rod and selling
@@ -14,8 +14,8 @@
  * smaller pieces we will build the solution for larger pieces in bottom-up
  * manner.
  *
- * @author [Anmol](https://github.com/Anmol3299)
- * @author [Pardeep](https://github.com/Pardeep009)
+ * \author [Anmol](https://github.com/Anmol3299)
+ * \author [Pardeep](https://github.com/Pardeep009)
  */
 
 #include <array>
@@ -24,22 +24,22 @@
 #include <cstdint>
 #include <iostream>
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 /**
- * @namespace cut_rod
- * @brief Implementation of cutting a rod problem
+ * \namespace cut_rod
+ * \brief Implementation of cutting a rod problem
  */
 namespace cut_rod {
 /**
- * @brief Cuts the rod in different pieces and
+ * \brief Cuts the rod in different pieces and
  * stores the maximum profit for each piece of the rod.
- * @tparam T size of the price array
- * @param n size of the rod in inches
- * @param price an array of prices that contains prices of all pieces of size<=n
- * @return maximum profit obtainable for @param n inch rod.
+ * \tparam T size of the price array
+ * \param n size of the rod in inches
+ * \param price an array of prices that contains prices of all pieces of size<=n
+ * \return maximum profit obtainable for @param n inch rod.
  */
 template <size_t T>
 int maxProfitByCuttingRod(const std::array<int, T> &price, const uint64_t &n) {
@@ -66,8 +66,8 @@ int maxProfitByCuttingRod(const std::array<int, T> &price, const uint64_t &n) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Function to test above algorithm
- * @returns void
+ * \brief Function to test above algorithm
+ * \returns void
  */
 static void test() {
     // Test 1
@@ -105,8 +105,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     // Testing

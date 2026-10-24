@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief Implmentations for the [volume](https://en.wikipedia.org/wiki/Volume)
+ * \file
+ * \brief Implmentations for the [volume](https://en.wikipedia.org/wiki/Volume)
  * of various 3D shapes.
- * @details The volume of a 3D shape is the amount of 3D space that the shape
+ * \details The volume of a 3D shape is the amount of 3D space that the shape
  * takes up. All shapes have a formula to get the volume of any given shape.
  * These implementations support multiple return types.
  *
- * @author [Focusucof](https://github.com/Focusucof)
+ * \author [Focusucof](https://github.com/Focusucof)
  */
 
 #include <cassert>   /// for assert
@@ -15,14 +15,14 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @brief The volume of a [cube](https://en.wikipedia.org/wiki/Cube)
- * @param length The length of the cube
- * @returns The volume of the cube
+ * \brief The volume of a [cube](https://en.wikipedia.org/wiki/Cube)
+ * \param length The length of the cube
+ * \returns The volume of the cube
  */
 template <typename T>
 T cube_volume(T length) {
@@ -30,12 +30,12 @@ T cube_volume(T length) {
 }
 
 /**
- * @brief The volume of a
+ * \brief The volume of a
  * [rectangular](https://en.wikipedia.org/wiki/Cuboid) prism
- * @param length The length of the base rectangle
- * @param width The width of the base rectangle
- * @param height The height of the rectangular prism
- * @returns The volume of the rectangular prism
+ * \param length The length of the base rectangle
+ * \param width The width of the base rectangle
+ * \param height The height of the rectangular prism
+ * \returns The volume of the rectangular prism
  */
 template <typename T>
 T rect_prism_volume(T length, T width, T height) {
@@ -43,11 +43,11 @@ T rect_prism_volume(T length, T width, T height) {
 }
 
 /**
- * @brief The volume of a [cone](https://en.wikipedia.org/wiki/Cone)
- * @param radius The radius of the base circle
- * @param height The height of the cone
- * @param PI The definition of the constant PI
- * @returns The volume of the cone
+ * \brief The volume of a [cone](https://en.wikipedia.org/wiki/Cone)
+ * \param radius The radius of the base circle
+ * \param height The height of the cone
+ * \param PI The definition of the constant PI
+ * \returns The volume of the cone
  */
 template <typename T>
 T cone_volume(T radius, T height, double PI = 3.14) {
@@ -55,13 +55,13 @@ T cone_volume(T radius, T height, double PI = 3.14) {
 }
 
 /**
- * @brief The volume of a
+ * \brief The volume of a
  * [triangular](https://en.wikipedia.org/wiki/Triangular_prism) prism
- * @param base The length of the base triangle
- * @param height The height of the base triangles
- * @param depth The depth of the triangular prism (the height of the whole
+ * \param base The length of the base triangle
+ * \param height The height of the base triangles
+ * \param depth The depth of the triangular prism (the height of the whole
  * prism)
- * @returns The volume of the triangular prism
+ * \returns The volume of the triangular prism
  */
 template <typename T>
 T triangle_prism_volume(T base, T height, T depth) {
@@ -69,12 +69,12 @@ T triangle_prism_volume(T base, T height, T depth) {
 }
 
 /**
- * @brief The volume of a
+ * \brief The volume of a
  * [pyramid](https://en.wikipedia.org/wiki/Pyramid_(geometry))
- * @param length The length of the base shape (or base for triangles)
- * @param width The width of the base shape (or height for triangles)
- * @param height The height of the pyramid
- * @returns The volume of the pyramid
+ * \param length The length of the base shape (or base for triangles)
+ * \param width The width of the base shape (or height for triangles)
+ * \param height The height of the pyramid
+ * \returns The volume of the pyramid
  */
 template <typename T>
 T pyramid_volume(T length, T width, T height) {
@@ -82,10 +82,10 @@ T pyramid_volume(T length, T width, T height) {
 }
 
 /**
- * @brief The volume of a [sphere](https://en.wikipedia.org/wiki/Sphere)
- * @param radius The radius of the sphere
- * @param PI The definition of the constant PI
- * @returns The volume of the sphere
+ * \brief The volume of a [sphere](https://en.wikipedia.org/wiki/Sphere)
+ * \param radius The radius of the sphere
+ * \param PI The definition of the constant PI
+ * \returns The volume of the sphere
  */
 template <typename T>
 T sphere_volume(T radius, double PI = 3.14) {
@@ -93,11 +93,11 @@ T sphere_volume(T radius, double PI = 3.14) {
 }
 
 /**
- * @brief The volume of a [cylinder](https://en.wikipedia.org/wiki/Cylinder)
- * @param radius The radius of the base circle
- * @param height The height of the cylinder
- * @param PI The definition of the constant PI
- * @returns The volume of the cylinder
+ * \brief The volume of a [cylinder](https://en.wikipedia.org/wiki/Cylinder)
+ * \param radius The radius of the base circle
+ * \param height The height of the cylinder
+ * \param PI The definition of the constant PI
+ * \returns The volume of the cylinder
  */
 template <typename T>
 T cylinder_volume(T radius, T height, double PI = 3.14) {
@@ -106,8 +106,8 @@ T cylinder_volume(T radius, T height, double PI = 3.14) {
 }  // namespace math
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // Input variables
@@ -229,8 +229,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief An implementation of
+ * \file
+ * \brief An implementation of
  * [LRU
  * Cache](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_recently_used_(LRU)).
  * Lru is a part of cache algorithms (also frequently called cache replacement
@@ -42,7 +42,7 @@
  *  * If present, we shift that page from its current location to beginning of
  * the cache and update the address in hash map for that page.
  *
- * @author [Nitin Sharma](https://github.com/foo290)
+ * \author [Nitin Sharma](https://github.com/foo290)
  * */
 
 #include <cassert>        /// for assert
@@ -52,18 +52,18 @@
 #include <unordered_map>  /// for std::unordered_map
 
 /**
- * @namespace others
- * @brief Other algorithms
+ * \namespace others
+ * \brief Other algorithms
  */
 namespace others {
 /**
- * @namespace lru_cache
- * @brief Implementation of the [LRU caching
+ * \namespace lru_cache
+ * \brief Implementation of the [LRU caching
  * algorithm](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_recently_used_(LRU))
  */
 namespace lru_cache {
 /**
- * @brief LRU cache class
+ * \brief LRU cache class
  */
 class LRUCache {
     uint64_t pageFrame;         ///< Page frame, or total size of the cache.
@@ -79,15 +79,15 @@ class LRUCache {
 
  public:
     /**
-     * @brief Constructor, Initialize thee LRU class with page frame.
-     * @param pf Page frame or total size of cache.
+     * \brief Constructor, Initialize thee LRU class with page frame.
+     * \param pf Page frame or total size of cache.
      * */
     explicit LRUCache(uint64_t pf) { pageFrame = pf; }
 
     /**
-     * @brief Refer to a page, or request a page from memory.
-     * @param page The page that you are referring to.
-     * @returns void
+     * \brief Refer to a page, or request a page from memory.
+     * \param page The page that you are referring to.
+     * \returns void
      * */
     void refer(uint64_t page) {
         // If the page requested not in cache.
@@ -115,8 +115,8 @@ class LRUCache {
     }
 
     /**
-     * @brief A function to display the current cache
-     * @returns Void
+     * \brief A function to display the current cache
+     * \returns Void
      * */
     void display() {
         for (uint64_t &it : cache) {
@@ -125,13 +125,13 @@ class LRUCache {
         std::cout << std::endl;
     }
     /**
-     * @brief A function to get page hits
-     * @returns int
+     * \brief A function to get page hits
+     * \returns int
      * */
     uint64_t getHits() const { return hits; }
     /**
-     * @brief A function to get page fault
-     * @returns int
+     * \brief A function to get page fault
+     * \returns int
      * */
     uint64_t getPageFault() const { return pageFault; }
 };
@@ -141,9 +141,9 @@ class LRUCache {
 
 namespace lru_tests {
 /**
- * @brief A function to print given message on console.
- * @tparam T Type of the given message.
- * @returns void
+ * \brief A function to print given message on console.
+ * \tparam T Type of the given message.
+ * \returns void
  * */
 template <typename T>
 void log(T msg) {
@@ -152,10 +152,10 @@ void log(T msg) {
 }
 
 /**
- * @brief A simple test case
+ * \brief A simple test case
  * The assert statement will check expected hist and miss to resultant hits and
  * miss
- * @returns void
+ * \returns void
  * */
 static void test_1() {
     uint64_t expected_hits = 2;
@@ -179,10 +179,10 @@ static void test_1() {
 }
 
 /**
- * @brief A test case contains hits more than cache size
+ * \brief A test case contains hits more than cache size
  * The assert statement will check expected hist and miss to resultant hits and
  * miss
- * @returns void
+ * \returns void
  * */
 static void test_2() {
     uint64_t expected_hits = 4;
@@ -206,10 +206,10 @@ static void test_2() {
 }
 
 /**
- * @brief A simple test case
+ * \brief A simple test case
  * The assert statement will check expected hist and miss to resultant hits and
  * miss
- * @returns void
+ * \returns void
  * */
 static void test_3() {
     uint64_t expected_hits = 1;
@@ -233,8 +233,8 @@ static void test_3() {
 }
 
 /**
- * @brief A function to invoke all test cases
- * @returns void
+ * \brief A function to invoke all test cases
+ * \returns void
  * */
 static void run_tests() {
     test_1();
@@ -246,8 +246,8 @@ static void run_tests() {
 }  // namespace lru_tests
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     lru_tests::run_tests();

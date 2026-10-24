@@ -1,15 +1,15 @@
 /**
- * @file
- * @brief This program aims at calculating the GCD of n numbers
+ * \file
+ * \brief This program aims at calculating the GCD of n numbers
  *
- * @details
+ * \details
  * The GCD of n numbers can be calculated by
  * repeatedly calculating the GCDs of pairs of numbers
  * i.e. \f$\gcd(a, b, c)\f$ = \f$\gcd(\gcd(a, b), c)\f$
  * Euclidean algorithm helps calculate the GCD of each pair of numbers
  * efficiently
  *
- * @see gcd_iterative_euclidean.cpp, gcd_recursive_euclidean.cpp
+ * \see gcd_iterative_euclidean.cpp, gcd_recursive_euclidean.cpp
  */
 #include <algorithm> /// for std::abs
 #include <array>     /// for std::array
@@ -17,20 +17,20 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace math
- * @brief Maths algorithms
+ * \namespace math
+ * \brief Maths algorithms
  */
 namespace math {
 /**
- * @namespace gcd_of_n_numbers
- * @brief Compute GCD of numbers in an array
+ * \namespace gcd_of_n_numbers
+ * \brief Compute GCD of numbers in an array
  */
 namespace gcd_of_n_numbers {
 /**
- * @brief Function to compute GCD of 2 numbers x and y
- * @param x First number
- * @param y Second number
- * @return GCD of x and y via recursion
+ * \brief Function to compute GCD of 2 numbers x and y
+ * \param x First number
+ * \param y Second number
+ * \return GCD of x and y via recursion
  */
 int gcd_two(int x, int y) {
   // base cases
@@ -44,10 +44,10 @@ int gcd_two(int x, int y) {
 }
 
 /**
- * @brief Function to check if all elements in the array are 0
- * @param a Array of numbers
- * @return 'True' if all elements are 0
- * @return 'False' if not all elements are 0
+ * \brief Function to check if all elements in the array are 0
+ * \param a Array of numbers
+ * \return 'True' if all elements are 0
+ * \return 'False' if not all elements are 0
  */
 template <std::size_t n>
 bool check_all_zeros(const std::array<int, n> &a) {
@@ -56,9 +56,9 @@ bool check_all_zeros(const std::array<int, n> &a) {
 }
 
 /**
- * @brief Main program to compute GCD using the Euclidean algorithm
- * @param a Array of integers to compute GCD for
- * @return GCD of the numbers in the array or std::nullopt if undefined
+ * \brief Main program to compute GCD using the Euclidean algorithm
+ * \param a Array of integers to compute GCD for
+ * \return GCD of the numbers in the array or std::nullopt if undefined
  */
 template <std::size_t n>
 int gcd(const std::array<int, n> &a) {
@@ -81,8 +81,8 @@ int gcd(const std::array<int, n> &a) {
 } // namespace math
 
 /**
- * @brief Self-test implementation
- * @return void
+ * \brief Self-test implementation
+ * \return void
  */
 static void test() {
   std::array<int, 1> array_1 = {0};
@@ -105,8 +105,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @return 0 on exit
+ * \brief Main function
+ * \return 0 on exit
  */
 int main() {
   test(); // run self-test implementation

@@ -1,9 +1,9 @@
 /**
- * @file median_search.cpp
- * @brief Implementation of [Median search](https://en.wikipedia.org/wiki/Median_of_medians) algorithm.
+ * \file median_search.cpp
+ * \brief Implementation of [Median search](https://en.wikipedia.org/wiki/Median_of_medians) algorithm.
  * @cases from [here](https://brilliant.org/wiki/median-finding-algorithm/)
  *
- * @details
+ * \details
  * Given an array A[1,...,n] of n numbers and an index i, where 1 ≤ i ≤ n, find the i-th smallest element of A.
  * median_of_medians(A, i):
  *  #divide A into sublists of len 5
@@ -34,8 +34,8 @@
  * print median_of_medians(A,7) #should be 99
  * print median_of_medians(B,4) #should be 5
  *
- * @author Unknown author
- * @author [Sushil Kumar](https://github.com/Rp-sushil)
+ * \author Unknown author
+ * \author [Sushil Kumar](https://github.com/Rp-sushil)
  */
 
 #include <iostream>
@@ -44,20 +44,20 @@
 #include <cassert>
 
 /**
- * @namespace search
- * @brief Search algorithms
+ * \namespace search
+ * \brief Search algorithms
  */
 namespace search {
 /**
- * @namespace median_search
- * @brief Functions for [Median search](https://en.wikipedia.org/wiki/Median_search) algorithm
+ * \namespace median_search
+ * \brief Functions for [Median search](https://en.wikipedia.org/wiki/Median_search) algorithm
  */
 namespace median_search {
 /**
 * This function search the element in an array for the given index.
-* @param A array where numbers are saved
-* @param idx current index in array
-* @returns corresponding element which we want to search.
+* \param A array where numbers are saved
+* \param idx current index in array
+* \returns corresponding element which we want to search.
 */  
 int median_of_medians(const std::vector<int>& A,  const int& idx) {
 	int pivot = 0;					// initialized with zero

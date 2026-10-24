@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Computes N^th Fibonacci number given as
+ * \file
+ * \brief Computes N^th Fibonacci number given as
  * input argument. Uses custom build arbitrary integers library
  * to perform additions and other operations.
  *
@@ -8,7 +8,7 @@
  * number that contains 10450 digits!
  *
  * \author [Krishna Vedala](https://github.com/kvedala)
- * @see fibonacci.cpp, fibonacci_fast.cpp, string_fibonacci.cpp
+ * \see fibonacci.cpp, fibonacci_fast.cpp, string_fibonacci.cpp
  */
 
 #include <cinttypes>

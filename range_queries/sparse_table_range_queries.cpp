@@ -1,9 +1,9 @@
 /**
- * @file sparse_table.cpp
- * @brief Implementation of [Sparse
+ * \file sparse_table.cpp
+ * \brief Implementation of [Sparse
  * Table](https://en.wikipedia.org/wiki/Range_minimum_query) data structure
  *
- * @details
+ * \details
  * Sparse Table is a data structure, that allows answering range queries.
  * It can answer most range queries in O(logn), but its true power is answering
  * range minimum queries or equivalent range maximum queries). For those queries
@@ -20,19 +20,19 @@
 #include <vector>
 
 /**
- * @namespace range_queries
- * @brief Range Queries algorithms
+ * \namespace range_queries
+ * \brief Range Queries algorithms
  */
 namespace range_queries {
 /**
- * @namespace sparse_table
- * @brief Range queries using sparse-tables
+ * \namespace sparse_table
+ * \brief Range queries using sparse-tables
  */
 namespace sparse_table {
 /**
  * This function precomputes intial log table for further use.
- * @param n value of the size of the input array
- * @return corresponding vector of the log table
+ * \param n value of the size of the input array
+ * \return corresponding vector of the log table
  */
 template <typename T>
 std::vector<T> computeLogs(const std::vector<T>& A) {
@@ -47,10 +47,10 @@ std::vector<T> computeLogs(const std::vector<T>& A) {
 
 /**
  * This functions builds the primary data structure sparse table
- * @param n value of the size of the input array
- * @param A array of the input integers
- * @param logs array of the log table
- * @return created sparse table data structure
+ * \param n value of the size of the input array
+ * \param A array of the input integers
+ * \param logs array of the log table
+ * \return created sparse table data structure
  */
 template <typename T>
 std::vector<std::vector<T> > buildTable(const std::vector<T>& A,
@@ -74,11 +74,11 @@ std::vector<std::vector<T> > buildTable(const std::vector<T>& A,
 
 /**
  * This function is the query function to get the range minimum value
- * @param beg beginning index of the query range
- * @param end ending index of the query range
- * @param logs array of the log table
- * @param table sparse table data structure for the input array
- * @return minimum value for the [beg, end] range for the input array
+ * \param beg beginning index of the query range
+ * \param end ending index of the query range
+ * \param logs array of the log table
+ * \param table sparse table data structure for the input array
+ * \return minimum value for the [beg, end] range for the input array
  */
 template <typename T>
 int getMinimum(int beg, int end, const std::vector<T>& logs,

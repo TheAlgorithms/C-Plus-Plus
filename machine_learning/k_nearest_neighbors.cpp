@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation of [K-Nearest Neighbors algorithm]
+ * \file
+ * \brief Implementation of [K-Nearest Neighbors algorithm]
  * (https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm).
- * @author [Luiz Carlos Cosmi Filho](https://github.com/luizcarloscf)
- * @details K-nearest neighbors algorithm, also known as KNN or k-NN, is a
+ * \author [Luiz Carlos Cosmi Filho](https://github.com/luizcarloscf)
+ * \details K-nearest neighbors algorithm, also known as KNN or k-NN, is a
  * supervised learning classifier, which uses proximity to make classifications.
  * This implementantion uses the Euclidean Distance as distance metric to find
  * the K-nearest neighbors.
@@ -18,25 +18,25 @@
 #include <vector>         /// for std::vector
 
 /**
- * @namespace machine_learning
- * @brief Machine learning algorithms
+ * \namespace machine_learning
+ * \brief Machine learning algorithms
  */
 namespace machine_learning {
 
 /**
- * @namespace k_nearest_neighbors
- * @brief Functions for the [K-Nearest Neighbors algorithm]
+ * \namespace k_nearest_neighbors
+ * \brief Functions for the [K-Nearest Neighbors algorithm]
  * (https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) implementation
  */
 namespace k_nearest_neighbors {
 
 /**
- * @brief Compute the Euclidean distance between two vectors.
+ * \brief Compute the Euclidean distance between two vectors.
  *
- * @tparam T typename of the vector
- * @param a first unidimentional vector
- * @param b second unidimentional vector
- * @return double scalar representing the Euclidean distance between provided
+ * \tparam T typename of the vector
+ * \param a first unidimentional vector
+ * \param b second unidimentional vector
+ * \return double scalar representing the Euclidean distance between provided
  * vectors
  */
 template <typename T>
@@ -49,7 +49,7 @@ double euclidean_distance(const std::vector<T>& a, const std::vector<T>& b) {
 }
 
 /**
- * @brief K-Nearest Neighbors (Knn) class using Euclidean distance as
+ * \brief K-Nearest Neighbors (Knn) class using Euclidean distance as
  * distance metric.
  */
 class Knn {
@@ -59,10 +59,10 @@ class Knn {
 
  public:
     /**
-     * @brief Construct a new Knn object.
-     * @details Using lazy-learning approch, just holds in memory the dataset.
-     * @param X attributes vector
-     * @param Y labels vector
+     * \brief Construct a new Knn object.
+     * \details Using lazy-learning approch, just holds in memory the dataset.
+     * \param X attributes vector
+     * \param Y labels vector
      */
     explicit Knn(std::vector<std::vector<double>>& X, std::vector<int>& Y)
         : X_(X), Y_(Y){};
@@ -70,7 +70,7 @@ class Knn {
     /**
      * Copy Constructor for class Knn.
      *
-     * @param model instance of class to be copied
+     * \param model instance of class to be copied
      */
     Knn(const Knn& model) = default;
 
@@ -90,15 +90,15 @@ class Knn {
     Knn& operator=(Knn&&) = default;
 
     /**
-     * @brief Destroy the Knn object
+     * \brief Destroy the Knn object
      */
     ~Knn() = default;
 
     /**
-     * @brief Classify sample.
-     * @param sample sample
-     * @param k number of neighbors
-     * @return int label of most frequent neighbors
+     * \brief Classify sample.
+     * \param sample sample
+     * \param k number of neighbors
+     * \return int label of most frequent neighbors
      */
     int predict(std::vector<double>& sample, int k) {
         std::vector<int> neighbors;
@@ -134,8 +134,8 @@ class Knn {
 }  // namespace machine_learning
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     std::cout << "------- Test 1 -------" << std::endl;
@@ -185,8 +185,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @return int 0 on exit
+ * \brief Main function
+ * \return int 0 on exit
  */
 int main() {
     test();  // run self-test implementations

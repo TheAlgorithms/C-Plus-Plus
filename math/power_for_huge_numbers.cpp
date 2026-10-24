@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Compute powers of large numbers
+ * \file
+ * \brief Compute powers of large numbers
  */
 #include <iostream>
 
@@ -18,9 +18,9 @@
  * for multiplication.
  * This function may value of res_size
  * and returns the new value of res_size
- * @param x multiplicand
- * @param res large number representation using array
- * @param res_size number of digits in `res`
+ * \param x multiplicand
+ * \param res large number representation using array
+ * \param res_size number of digits in `res`
  */
 int multiply(int x, int res[], int res_size) {
     // Initialize carry
@@ -50,8 +50,8 @@ int multiply(int x, int res[], int res_size) {
 }
 
 /** This function finds power of a number x and print \f$x^n\f$
- * @param x base
- * @param n exponent
+ * \param x base
+ * \param n exponent
  */
 void power(int x, int n) {
     // printing value "1" for power = 0

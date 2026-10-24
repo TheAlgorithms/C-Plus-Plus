@@ -46,7 +46,7 @@
 
 /**
  * \namespace sorting
- * @brief Sorting algorithms
+ * \brief Sorting algorithms
  */
 namespace sorting {
 
@@ -98,8 +98,8 @@ void insertionSort_binsrch(std::vector<T> &arr) {
 }  // namespace sorting
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     /* descriptions of the following test */
@@ -137,8 +137,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @return 0 on exit.
+ * \brief Main function
+ * \return 0 on exit.
  */
 int main() {
     test();  // run self-test implementations

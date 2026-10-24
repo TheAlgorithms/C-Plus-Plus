@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief GCD using [extended Euclid's algorithm]
+ * \file
+ * \brief GCD using [extended Euclid's algorithm]
  * (https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)
  *
  * Finding coefficients of a and b ie x and y in  Bézout's identity
@@ -17,9 +17,9 @@
  * function to update the coefficients per iteration
  * \f[r_0,\,r = r,\, r_0 - \text{quotient}\times r\f]
  *
- * @param[in,out] r signed or unsigned
- * @param[in,out] r0 signed or unsigned
- * @param[in] quotient  unsigned
+ * \param[in,out] r signed or unsigned
+ * \param[in,out] r0 signed or unsigned
+ * \param[in] quotient  unsigned
  */
 template <typename T, typename T2>
 inline void update_step(T *r, T *r0, const T2 quotient) {
@@ -32,11 +32,11 @@ inline void update_step(T *r, T *r0, const T2 quotient) {
  * Implementation using iterative algorithm from
  * [Wikipedia](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm#Pseudocode)
  *
- * @param[in] A unsigned
- * @param[in] B unsigned
- * @param[out] GCD unsigned
- * @param[out] x signed
- * @param[out] y signed
+ * \param[in] A unsigned
+ * \param[in] B unsigned
+ * \param[out] GCD unsigned
+ * \param[out] x signed
+ * \param[out] y signed
  */
 template <typename T1, typename T2>
 void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y) {
@@ -61,11 +61,11 @@ void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y) {
 /**
  * Implementation using recursive algorithm
  *
- * @param[in] A unsigned
- * @param[in] B unsigned
- * @param[out] GCD unsigned
- * @param[in,out] x signed
- * @param[in,out] y signed
+ * \param[in] A unsigned
+ * \param[in] B unsigned
+ * \param[out] GCD unsigned
+ * \param[in,out] x signed
+ * \param[in,out] y signed
  */
 template <typename T, typename T2>
 void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y) {

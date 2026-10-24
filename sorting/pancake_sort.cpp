@@ -1,18 +1,18 @@
 /**
- * @file
- * @brief pancake sort sorts a disordered stack of pancakes by flipping any
+ * \file
+ * \brief pancake sort sorts a disordered stack of pancakes by flipping any
  * number of pancakes using a spatula using minimum number of flips.
  *
- * @details
+ * \details
  * Unlike a traditional sorting algorithm, which attempts to sort with the
  * fewest comparisons possible, the goal is to sort the sequence in as few
  * reversals as possible. Overall time complexity of pancake sort is O(n^2) For
  * example: example 1:- Disordered pancake sizes: {2,5,3,7,8} Sorted:
  * {2,3,5,7,8} For example: example 2:- Disordered pancake sizes:
  * {22,51,37,73,81} Sorted: {22,37,51,73,81}
- * @author [Divyansh Gupta](https://github.com/divyansh12323)
- * @see more on [Pancake sort](https://en.wikipedia.org/wiki/Pancake_sorting)
- * @see related problem at
+ * \author [Divyansh Gupta](https://github.com/divyansh12323)
+ * \see more on [Pancake sort](https://en.wikipedia.org/wiki/Pancake_sorting)
+ * \see related problem at
  * [Leetcode](https://leetcode.com/problems/pancake-sorting/)
  */
 
@@ -22,22 +22,22 @@
 #include <vector>     // for std::vector
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 /**
- * @namespace pancake_sort
- * @brief Functions for [Pancake
+ * \namespace pancake_sort
+ * \brief Functions for [Pancake
  * sort](https://en.wikipedia.org/wiki/Pancake_sorting) algorithm
  */
 namespace pancake_sort {
 /**
- * @brief This implementation is for reversing elements in a a C-style array .
- * @param [start,end] arr our vector of elements.
- * @param start starting index of array
- * @param end ending index of array
- * @returns void
+ * \brief This implementation is for reversing elements in a a C-style array .
+ * \param [start,end] arr our vector of elements.
+ * \param start starting index of array
+ * \param end ending index of array
+ * \returns void
  */
 template <typename T>
 void reverse(std::vector<T> &arr, int start, int end) {
@@ -51,11 +51,11 @@ void reverse(std::vector<T> &arr, int start, int end) {
     }
 }
 /**
- * @brief This implementation is for a C-style array input that gets modified in
+ * \brief This implementation is for a C-style array input that gets modified in
  * place.
- * @param [start,end] arr our vector of elements.
- * @param size size of given array
- * @returns 0 on exit
+ * \param [start,end] arr our vector of elements.
+ * \param size size of given array
+ * \returns 0 on exit
  */
 template <typename T>
 int pancakeSort(std::vector<T> &arr, int size) {
@@ -80,8 +80,8 @@ int pancakeSort(std::vector<T> &arr, int size) {
 }  // namespace sorting
 
 /**
- * @brief Test implementations
- * @returns void
+ * \brief Test implementations
+ * \returns void
  */
 static void test() {
     // example 1: vector of int
@@ -122,8 +122,8 @@ static void test() {
     std::cout << std::endl;
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();

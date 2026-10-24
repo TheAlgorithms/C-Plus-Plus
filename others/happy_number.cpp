@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief A happy number is a number whose sum of digits is calculated until the
+ * \file
+ * \brief A happy number is a number whose sum of digits is calculated until the
  * sum is a single digit, and this sum turns out to be 1
  */
 

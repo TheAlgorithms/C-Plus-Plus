@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation for [LFU Cache]
+ * \file
+ * \brief Implementation for [LFU Cache]
  * (https://en.wikipedia.org/wiki/Least_frequently_used)
  *
- * @details
+ * \details
  * LFU discards the least frequently used value. if there are multiple items
  * with the same minimum frequency then, the least recently used among them is
  * discarded. Data structures used - doubly linked list and unordered_map(hash
@@ -17,7 +17,7 @@
  * When the cache is full, the last element in the minimum frequency linked list
  * is popped.
  *
- * @author [Karan Sharma](https://github.com/deDSeC00720)
+ * \author [Karan Sharma](https://github.com/deDSeC00720)
  */
 
 #include <cassert>        // for assert
@@ -25,21 +25,21 @@
 #include <unordered_map>  // for std::unordered_map
 
 /**
- * @namespace
- * @brief Other algorithms
+ * \namespace
+ * \brief Other algorithms
  */
 namespace others {
 
 /**
- * @namespace
- * @brief Cache algorithm
+ * \namespace
+ * \brief Cache algorithm
  */
 namespace Cache {
 
 /**
- * @class
- * @brief Node for a doubly linked list with data, prev and next pointers
- * @tparam T type of the data of the node
+ * \class
+ * \brief Node for a doubly linked list with data, prev and next pointers
+ * \tparam T type of the data of the node
  */
 template <typename T>
 class D_Node {
@@ -55,10 +55,10 @@ template <typename K, typename V>
 using CacheNode = D_Node<std::pair<K, V>>;
 
 /**
- * @class
- * @brief LFUCache
- * @tparam K type of key in the LFU
- * @tparam V type of value in the LFU
+ * \class
+ * \brief LFUCache
+ * \tparam K type of key in the LFU
+ * \tparam V type of value in the LFU
  */
 template <typename K, typename V>
 class LFUCache {
@@ -72,18 +72,18 @@ class LFUCache {
 
  public:
     /**
-     * @brief Constructor, Initialize with minFreq and _capacity.
-     * @param _capacity Total capacity of the cache.
+     * \brief Constructor, Initialize with minFreq and _capacity.
+     * \param _capacity Total capacity of the cache.
      */
     explicit LFUCache(int _capacity) : minFreq(0), _capacity(_capacity) {}
 
  private:
     /**
-     * @brief push the node at first position in the linked list of given
+     * \brief push the node at first position in the linked list of given
      * frequency
-     * @param freq the frequency mapping to the linked list where node should be
+     * \param freq the frequency mapping to the linked list where node should be
      * pushed.
-     * @param node node to be pushed to the linked list.
+     * \param node node to be pushed to the linked list.
      */
     void push(int freq, CacheNode<K, V> *node) {
         // if freq is not present, then make a new list with node as the head as
@@ -103,8 +103,8 @@ class LFUCache {
     }
 
     /**
-     * @brief increase the frequency of node and push it in the respective list.
-     * @param p_node the node to be updated
+     * \brief increase the frequency of node and push it in the respective list.
+     * \param p_node the node to be updated
      */
     void increase_frequency(std::pair<CacheNode<K, V> *, int> &p_node) {
         CacheNode<K, V> *node = p_node.first;
@@ -144,7 +144,7 @@ class LFUCache {
     }
 
     /**
-     * @brief pop the last node in the least frequently used linked list
+     * \brief pop the last node in the least frequently used linked list
      */
     void pop() {
         std::pair<CacheNode<K, V> *, CacheNode<K, V> *> &p = freq_map[minFreq];
@@ -167,9 +167,9 @@ class LFUCache {
 
  public:
     /**
-     * @brief upsert a key-value pair
-     * @param key key of the key-value pair
-     * @param value value of the key-value pair
+     * \brief upsert a key-value pair
+     * \param key key of the key-value pair
+     * \param value value of the key-value pair
      */
     void put(K key, V value) {
         // update the value if key already exists
@@ -194,10 +194,10 @@ class LFUCache {
     }
 
     /**
-     * @brief get the value of the key-value pair if exists
-     * @param key key of the key-value pair
-     * @return the value mapped to the given key
-     * @exception exception is thrown if the key is not present in the cache
+     * \brief get the value of the key-value pair if exists
+     * \param key key of the key-value pair
+     * \return the value mapped to the given key
+     * \exception exception is thrown if the key is not present in the cache
      */
     V get(K key) {
         if (!node_map.count(key)) {
@@ -211,25 +211,25 @@ class LFUCache {
     }
 
     /**
-     * @brief Returns the number of items present in the cache.
-     * @return number of items in the cache
+     * \brief Returns the number of items present in the cache.
+     * \return number of items in the cache
      */
     int size() const { return node_map.size(); }
 
     /**
-     * @brief Returns the total capacity of the cache
-     * @return Total capacity of the cache
+     * \brief Returns the total capacity of the cache
+     * \return Total capacity of the cache
      */
     int capacity() const { return _capacity; }
 
     /**
-     * @brief returns true if the cache is empty, false otherwise.
-     * @return true if the cache is empty, false otherwise.
+     * \brief returns true if the cache is empty, false otherwise.
+     * \return true if the cache is empty, false otherwise.
      */
     bool empty() const { return node_map.empty(); }
 
     /**
-     * @brief destructs the cache, iterates on the map and deletes every node
+     * \brief destructs the cache, iterates on the map and deletes every node
      * present in the cache.
      */
     ~LFUCache() {
@@ -244,8 +244,8 @@ class LFUCache {
 }  // namespace others
 
 /**
- * @brief self test implementation
- * @return void
+ * \brief self test implementation
+ * \return void
  */
 static void test() {
     others::Cache::LFUCache<int, int> cache(5);
@@ -295,8 +295,8 @@ static void test() {
 }
 
 /**
- * @brief main function
- * @return 0 on exit
+ * \brief main function
+ * \return 0 on exit
  */
 int main() {
     test();  // run the self test implementation

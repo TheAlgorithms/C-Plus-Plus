@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief find the length of the Longest Increasing Subsequence (LIS)
+ * \file
+ * \brief find the length of the Longest Increasing Subsequence (LIS)
  * using [Binary Search](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
- * @details
+ * \details
  * Given an integer array nums, return the length of the longest strictly
  * increasing subsequence.
  * The longest increasing subsequence is described as a subsequence of an array
@@ -45,7 +45,7 @@
 
  * This approach consider Most optimal Approach for solving this problem
 
- * @author [Naman Jain](https://github.com/namanmodi65)
+ * \author [Naman Jain](https://github.com/namanmodi65)
  */
 
 #include <cassert>   /// for std::assert
@@ -55,11 +55,11 @@
 #include <cstdint>   /// for std::uint32_t
 
 /**
- * @brief Function to find the length of the Longest Increasing Subsequence (LIS)
+ * \brief Function to find the length of the Longest Increasing Subsequence (LIS)
  * using Binary Search
- * @tparam T The type of the elements in the input vector
- * @param nums The input vector of elements of type T
- * @return The length of the longest increasing subsequence
+ * \tparam T The type of the elements in the input vector
+ * \param nums The input vector of elements of type T
+ * \return The length of the longest increasing subsequence
  */
 template <typename T>
 std::uint32_t longest_increasing_subsequence_using_binary_search(std::vector<T>& nums) {
@@ -79,8 +79,8 @@ std::uint32_t longest_increasing_subsequence_using_binary_search(std::vector<T>&
 }
 
 /**
- * @brief Test cases for Longest Increasing Subsequence function
- * @returns void
+ * \brief Test cases for Longest Increasing Subsequence function
+ * \returns void
  */
 static void tests() {
     std::vector<int> arr = {10, 9, 2, 5, 3, 7, 101, 18};
@@ -108,8 +108,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function to run tests
- * @returns 0 on exit
+ * \brief Main function to run tests
+ * \returns 0 on exit
  */
 int main() {
     tests();  // run self test implementation

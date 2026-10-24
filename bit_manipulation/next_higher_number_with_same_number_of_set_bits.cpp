@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief [Next higher number with same number of set bits]
+ * \file
+ * \brief [Next higher number with same number of set bits]
  * (https://www.geeksforgeeks.org/next-higher-number-with-same-number-of-set-bits/)
  * implementation
  *
- * @details
+ * \details
  * Given a number x, find next number with same number of 1 bits in it’s binary
  * representation. For example, consider x = 12, whose binary representation is
  * 1100 (excluding leading zeros on 32 bit machine). It contains two logic 1
@@ -12,7 +12,7 @@
  *
  * A binary number consists of two digits. They are 0 & 1. Digit 1 is known as
  * set bit in computer terms.
- * @author [Kunal Nayak](https://github.com/Kunal766)
+ * \author [Kunal Nayak](https://github.com/Kunal766)
  */
 
 #include <cassert>   /// for assert
@@ -20,15 +20,15 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
+ * \namespace bit_manipulation
+ * \brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 
 /**
- * @brief The main function implements checking the next number
- * @param x the number that will be calculated
- * @returns a number
+ * \brief The main function implements checking the next number
+ * \param x the number that will be calculated
+ * \returns a number
  */
 uint64_t next_higher_number(uint64_t x) {
     uint64_t rightOne = 0;
@@ -68,8 +68,8 @@ uint64_t next_higher_number(uint64_t x) {
 }  // namespace bit_manipulation
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // x = 4 return 8
@@ -92,8 +92,8 @@ static void test() {
     std::cout << "All test cases have successfully passed!" << std::endl;
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

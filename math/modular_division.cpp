@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief An algorithm to divide two numbers under modulo p [Modular
+ * \file
+ * \brief An algorithm to divide two numbers under modulo p [Modular
  * Division](https://www.geeksforgeeks.org/modular-division)
- * @details To calculate division of two numbers under modulo p
+ * \details To calculate division of two numbers under modulo p
  * Modulo operator is not distributive under division, therefore
  * we first have to calculate the inverse of divisor using
  * [Fermat's little
@@ -20,8 +20,8 @@
             Now the inverse of 3 is 2
             (24 * 2) % 5 = (24 % 5) * (2 % 5) = (4 * 2) % 5 = 3 --- (ii)
             (i) and (ii) are equal hence the answer is correct.
- * @see modular_inverse_fermat_little_theorem.cpp, modular_exponentiation.cpp
- * @author [Shubham Yadav](https://github.com/shubhamamsa)
+ * \see modular_inverse_fermat_little_theorem.cpp, modular_exponentiation.cpp
+ * \author [Shubham Yadav](https://github.com/shubhamamsa)
  */
 
 #include <cassert>   /// for assert
@@ -29,23 +29,23 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @namespace modular_division
- * @brief Functions for [Modular
+ * \namespace modular_division
+ * \brief Functions for [Modular
  * Division](https://www.geeksforgeeks.org/modular-division) implementation
  */
 namespace modular_division {
 /**
- * @brief This function calculates a raised to exponent b under modulo c using
+ * \brief This function calculates a raised to exponent b under modulo c using
  * modular exponentiation.
- * @param a integer base
- * @param b unsigned integer exponent
- * @param c integer modulo
- * @return a raised to power b modulo c
+ * \param a integer base
+ * \param b unsigned integer exponent
+ * \param c integer modulo
+ * \return a raised to power b modulo c
  */
 uint64_t power(uint64_t a, uint64_t b, uint64_t c) {
     uint64_t ans = 1;  /// Initialize the answer to be returned
@@ -66,11 +66,11 @@ uint64_t power(uint64_t a, uint64_t b, uint64_t c) {
 }
 
 /**
- * @brief This function calculates modular division
- * @param a integer dividend
- * @param b integer divisor
- * @param p integer modulo
- * @return a/b modulo c
+ * \brief This function calculates modular division
+ * \param a integer dividend
+ * \param b integer divisor
+ * \param p integer modulo
+ * \return a/b modulo c
  */
 uint64_t mod_division(uint64_t a, uint64_t b, uint64_t p) {
     uint64_t inverse = power(b, p - 2, p) % p;  /// Calculate the inverse of b
@@ -84,7 +84,7 @@ uint64_t mod_division(uint64_t a, uint64_t b, uint64_t p) {
 /**
  * Function for testing power function.
  * test cases and assert statement.
- * @returns `void`
+ * \returns `void`
  */
 static void test() {
     uint64_t test_case_1 = math::modular_division::mod_division(8, 2, 2);
@@ -105,8 +105,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the tests

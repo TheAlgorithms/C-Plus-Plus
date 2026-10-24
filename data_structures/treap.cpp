@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief A balanced binary search tree (BST) on the basis of binary search tree
+ * \file
+ * \brief A balanced binary search tree (BST) on the basis of binary search tree
  * and heap: the [Treap](https://en.wikipedia.org/wiki/Treap) algorithm
  * implementation
  *
- * @details
+ * \details
  * Implementation of the treap data structre
  *
  * Support operations including insert, erase, and query (the rank of specified
@@ -14,7 +14,7 @@
  * using rotate operation, and the desired depth of the tree is O(log N).
  * There's very little chance that it will degenerate into a chain like BST
  *
- * @author [Kairao ZHENG](https://github.com/fgmn)
+ * \author [Kairao ZHENG](https://github.com/fgmn)
  */
 
 #include <array>     /// For array
@@ -23,19 +23,19 @@
 #include <iostream>  /// For IO operations
 
 /**
- * @namespace
- * @brief Data Structures
+ * \namespace
+ * \brief Data Structures
  */
 namespace data_structures {
 /**
- * @namespace
- * @brief Functions for the [Treap](https://en.wikipedia.org/wiki/Treap)
+ * \namespace
+ * \brief Functions for the [Treap](https://en.wikipedia.org/wiki/Treap)
  * algorithm implementation
  */
 namespace treap {
 const int maxNode = 1e5 + 5;  ///< maximum number of nodes
 /**
- * @brief Struct representation of the treap
+ * \brief Struct representation of the treap
  */
 struct Treap {
     int root = 0;      ///< root of the treap
@@ -50,23 +50,23 @@ struct Treap {
         {};  ///< Maintains the subtree size for ranking query
     std::array<int, maxNode> size = {};  ///< The number of copies per node
     /**
-     * @brief Initialization
+     * \brief Initialization
      */
     Treap() : treapCnt(1) {
         priority[0] = INT32_MAX;
         size[0] = 0;
     }
     /**
-     * @brief Update the subtree size of the node
-     * @param x The node to update
+     * \brief Update the subtree size of the node
+     * \param x The node to update
      */
     void update(int x) {
         size[x] = size[childs[x][0]] + cnt[x] + size[childs[x][1]];
     }
     /**
-     * @brief Rotate without breaking the property of BST
-     * @param x The node to rotate
-     * @param t 0 represent left hand, while 1 right hand
+     * \brief Rotate without breaking the property of BST
+     * \param x The node to rotate
+     * \param t 0 represent left hand, while 1 right hand
      */
     void rotate(int &x, int t) {
         int y = childs[x][t];
@@ -78,9 +78,9 @@ struct Treap {
         x = y;
     }
     /**
-     * @brief Insert a value into the specified subtree (internal method)
-     * @param x Insert into the subtree of node x (Usually x=root)
-     * @param k Key to insert
+     * \brief Insert a value into the specified subtree (internal method)
+     * \param x Insert into the subtree of node x (Usually x=root)
+     * \param k Key to insert
      */
     void _insert(int &x, int k) {
         if (x) {
@@ -105,9 +105,9 @@ struct Treap {
         update(x);
     }
     /**
-     * @brief Erase a value from the specified subtree (internal method)
-     * @param x Erase from the subtree of node x (Usually x=root)
-     * @param k Key to erase
+     * \brief Erase a value from the specified subtree (internal method)
+     * \param x Erase from the subtree of node x (Usually x=root)
+     * \param k Key to erase
      */
     void _erase(int &x, int k) {
         if (key[x] == k) {
@@ -131,10 +131,10 @@ struct Treap {
         update(x);
     }
     /**
-     * @brief Find the KTH largest value (internal method)
-     * @param x Query the subtree of node x (Usually x=root)
-     * @param k The queried rank
-     * @return The element ranked number k
+     * \brief Find the KTH largest value (internal method)
+     * \param x Query the subtree of node x (Usually x=root)
+     * \param k The queried rank
+     * \return The element ranked number k
      */
     int _get_k_th(int &x, int k) {
         if (k <= size[childs[x][0]]) {
@@ -147,10 +147,10 @@ struct Treap {
         return _get_k_th(childs[x][1], k);
     }
     /**
-     * @brief Query the rank of specified element (internal method)
-     * @param x Query the subtree of node x (Usually x=root)
-     * @param k The queried element
-     * @return The rank of element k
+     * \brief Query the rank of specified element (internal method)
+     * \param x Query the subtree of node x (Usually x=root)
+     * \param k The queried element
+     * \return The rank of element k
      */
     int _get_rank(int x, int k) {
         if (!x) {
@@ -165,9 +165,9 @@ struct Treap {
         }
     }
     /**
-     * @brief Get the predecessor node of element k
-     * @param k The queried element
-     * @return The predecessor
+     * \brief Get the predecessor node of element k
+     * \param k The queried element
+     * \return The predecessor
      */
     int get_predecessor(int k) {
         int x = root, pre = -1;
@@ -181,9 +181,9 @@ struct Treap {
         return pre;
     }
     /**
-     * @brief Get the successor node of element k
-     * @param k The queried element
-     * @return The successor
+     * \brief Get the successor node of element k
+     * \param k The queried element
+     * \return The successor
      */
     int get_next(int k) {
         int x = root, next = -1;
@@ -197,25 +197,25 @@ struct Treap {
         return next;
     }
     /**
-     * @brief Insert element (External method)
-     * @param k Key to insert
+     * \brief Insert element (External method)
+     * \param k Key to insert
      */
     void insert(int k) { _insert(root, k); }
     /**
-     * @brief Erase element (External method)
-     * @param k Key to erase
+     * \brief Erase element (External method)
+     * \param k Key to erase
      */
     void erase(int k) { _erase(root, k); }
     /**
-     * @brief Get the KTH largest value (External method)
-     * @param k The queried rank
-     * @return The element ranked number x
+     * \brief Get the KTH largest value (External method)
+     * \param k The queried rank
+     * \return The element ranked number x
      */
     int get_k_th(int k) { return _get_k_th(root, k); }
     /**
-     * @brief Get the rank of specified element (External method)
-     * @param k The queried element
-     * @return The rank of element k
+     * \brief Get the rank of specified element (External method)
+     * \param k The queried element
+     * \return The rank of element k
      */
     int get_rank(int k) { return _get_rank(root, k); }
 };
@@ -223,8 +223,8 @@ struct Treap {
 }  // namespace data_structures
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     data_structures::treap::Treap mTreap;  ///< Treap object instance
@@ -249,8 +249,8 @@ static void test() {
     std::cout << "All tests have successfully passed!\n";
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

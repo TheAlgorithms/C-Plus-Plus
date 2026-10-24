@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief [Persistent segment tree with range updates (lazy
+ * \file
+ * \brief [Persistent segment tree with range updates (lazy
  * propagation)](https://en.wikipedia.org/wiki/Persistent_data_structure)
  *
- * @details
+ * \details
  * A normal segment tree facilitates making point updates and range queries in
  * logarithmic time. Lazy propagation preserves the logarithmic time with range
  * updates. So, a segment tree with lazy propagation enables doing range updates
@@ -20,7 +20,7 @@
  * the logarithmic time because the number of nodes copied after any update is
  * logarithmic.
  *
- * @author [Magdy Sedra](https://github.com/MSedra)
+ * \author [Magdy Sedra](https://github.com/MSedra)
  */
 #include <cstdint>   /// for std::uint32_t
 #include <iostream>  /// for IO operations
@@ -28,13 +28,13 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace range_queries
- * @brief Range queries algorithms
+ * \namespace range_queries
+ * \brief Range queries algorithms
  */
 namespace range_queries {
 
 /**
- * @brief Range query here is range sum, but the code can be modified to make
+ * \brief Range query here is range sum, but the code can be modified to make
  * different queries like range max or min.
  */
 class perSegTree {
@@ -59,9 +59,9 @@ class perSegTree {
                                  /// tree will be constructed with
 
     /**
-     * @brief Creating a new node with the same values of curr node
-     * @param curr node that would be copied
-     * @returns the new node
+     * \brief Creating a new node with the same values of curr node
+     * \param curr node that would be copied
+     * \returns the new node
      */
     std::shared_ptr<Node> newKid(std::shared_ptr<Node> const &curr) {
         auto newNode = std::make_shared<Node>(Node());
@@ -73,13 +73,13 @@ class perSegTree {
     }
 
     /**
-     * @brief If there is some value to be propagated to the passed node, value
+     * \brief If there is some value to be propagated to the passed node, value
      * is added to the node and the children of the node, if exist, are copied
      * and the propagated value is also added to them
-     * @param i the left index of the range that the passed node holds its sum
-     * @param j the right index of the range that the passed node holds its sum
-     * @param curr pointer to the node to be propagated
-     * @returns void
+     * \param i the left index of the range that the passed node holds its sum
+     * \param j the right index of the range that the passed node holds its sum
+     * \param curr pointer to the node to be propagated
+     * \returns void
      */
     void lazy(const uint32_t &i, const uint32_t &j,
               std::shared_ptr<Node> const &curr) {
@@ -97,12 +97,12 @@ class perSegTree {
     }
 
     /**
-     * @brief Constructing the segment tree with the early passed vector. Every
+     * \brief Constructing the segment tree with the early passed vector. Every
      * call creates a node to hold the sum of the given range, set its pointers
      * to the children, and set its value to the sum of the children's values
-     * @param i the left index of the range that the created node holds its sum
-     * @param j the right index of the range that the created node holds its sum
-     * @returns pointer to the newly created node
+     * \param i the left index of the range that the created node holds its sum
+     * \param j the right index of the range that the created node holds its sum
+     * \returns pointer to the newly created node
      */
     std::shared_ptr<Node> construct(const uint32_t &i, const uint32_t &j) {
         auto newNode = std::make_shared<Node>(Node());
@@ -120,18 +120,18 @@ class perSegTree {
     }
 
     /**
-     * @brief Doing range update, checking at every node if it has some value to
+     * \brief Doing range update, checking at every node if it has some value to
      * be propagated. All nodes affected by the update are copied and
      * propagation value is added to the leaf of them
-     * @param i the left index of the range that the passed node holds its sum
-     * @param j the right index of the range that the passed node holds its sum
-     * @param l the left index of the range to be updated
-     * @param r the right index of the range to be updated
-     * @param value the value to be added to every element whose index x
+     * \param i the left index of the range that the passed node holds its sum
+     * \param j the right index of the range that the passed node holds its sum
+     * \param l the left index of the range to be updated
+     * \param r the right index of the range to be updated
+     * \param value the value to be added to every element whose index x
      * satisfies l<=x<=r
-     * @param curr pointer to the current node, which has value = the sum of
+     * \param curr pointer to the current node, which has value = the sum of
      * elements whose index x satisfies i<=x<=j
-     * @returns pointer to the current newly created node
+     * \returns pointer to the current newly created node
      */
     std::shared_ptr<Node> update(const uint32_t &i, const uint32_t &j,
                                  const uint32_t &l, const uint32_t &r,
@@ -156,18 +156,18 @@ class perSegTree {
     }
 
     /**
-     * @brief Querying the range from index l to index r, checking at every node
+     * \brief Querying the range from index l to index r, checking at every node
      * if it has some value to be propagated. Current node's value is returned
      * if its range is completely inside the wanted range, else 0 is returned
-     * @param i the left index of the range that the passed node holds its sum
-     * @param j the right index of the range that the passed node holds its sum
-     * @param l the left index of the range whose sum should be returned as a
+     * \param i the left index of the range that the passed node holds its sum
+     * \param j the right index of the range that the passed node holds its sum
+     * \param l the left index of the range whose sum should be returned as a
      * result
-     * @param r the right index of the range whose sum should be returned as a
+     * \param r the right index of the range whose sum should be returned as a
      * result
-     * @param curr pointer to the current node, which has value = the sum of
+     * \param curr pointer to the current node, which has value = the sum of
      * elements whose index x satisfies i<=x<=j
-     * @returns sum of elements whose index x satisfies l<=x<=r
+     * \returns sum of elements whose index x satisfies l<=x<=r
      */
     int64_t query(const uint32_t &i, const uint32_t &j, const uint32_t &l,
                   const uint32_t &r, std::shared_ptr<Node> const &curr) {
@@ -189,11 +189,11 @@ class perSegTree {
      */
  public:
     /**
-     * @brief Constructing the segment tree with the values in the passed
+     * \brief Constructing the segment tree with the values in the passed
      * vector. Returned root pointer is pushed in the pointers vector to have
      * access to the original version if the segment tree is updated
-     * @param vec vector whose values will be used to build the segment tree
-     * @returns void
+     * \param vec vector whose values will be used to build the segment tree
+     * \returns void
      */
     void construct(const std::vector<int64_t>
                        &vec)  // the segment tree will be built from the values
@@ -209,13 +209,13 @@ class perSegTree {
     }
 
     /**
-     * @brief Doing range update by passing the left and right indexes of the
+     * \brief Doing range update by passing the left and right indexes of the
      * range as well as the value to be added.
-     * @param l the left index of the range to be updated
-     * @param r the right index of the range to be updated
-     * @param value the value to be added to every element whose index x
+     * \param l the left index of the range to be updated
+     * \param r the right index of the range to be updated
+     * \param value the value to be added to every element whose index x
      * satisfies l<=x<=r
-     * @returns void
+     * \returns void
      */
     void update(const uint32_t &l, const uint32_t &r,
                 const int64_t
@@ -229,15 +229,15 @@ class perSegTree {
     }
 
     /**
-     * @brief Querying the range from index l to index r, getting the sum of the
+     * \brief Querying the range from index l to index r, getting the sum of the
      * elements whose index x satisfies l<=x<=r
-     * @param l the left index of the range whose sum should be returned as a
+     * \param l the left index of the range whose sum should be returned as a
      * result
-     * @param r the right index of the range whose sum should be returned as a
+     * \param r the right index of the range whose sum should be returned as a
      * result
-     * @param version the version to query on. If equals to 0, the original
+     * \param version the version to query on. If equals to 0, the original
      * segment tree will be queried
-     * @returns sum of elements whose index x satisfies l<=x<=r
+     * \returns sum of elements whose index x satisfies l<=x<=r
      */
     int64_t query(
         const uint32_t &l, const uint32_t &r,
@@ -249,9 +249,9 @@ class perSegTree {
     }
 
     /**
-     * @brief Getting the number of versions after updates so far which is equal
+     * \brief Getting the number of versions after updates so far which is equal
      * to the size of the pointers vector
-     * @returns the number of versions
+     * \returns the number of versions
      */
     uint32_t size()  // returns the number of segment trees (versions) , the
                      // number of updates done so far = returned value - 1
@@ -263,8 +263,8 @@ class perSegTree {
 }  // namespace range_queries
 
 /**
- * @brief Test implementations
- * @returns void
+ * \brief Test implementations
+ * \returns void
  */
 static void test() {
     std::vector<int64_t> arr = {-5, 2, 3, 11, -2, 7, 0, 1};
@@ -313,8 +313,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

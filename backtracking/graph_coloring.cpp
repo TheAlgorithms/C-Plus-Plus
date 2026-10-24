@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief prints the assigned colors
+ * \file
+ * \brief prints the assigned colors
  * using [Graph Coloring](https://en.wikipedia.org/wiki/Graph_coloring)
  * algorithm
  *
- * @details
+ * \details
  * In graph theory, graph coloring is a special case of graph labeling;
  * it is an assignment of labels traditionally called "colors" to elements of a
  * graph subject to certain constraints. In its simplest form, it is a way of
@@ -14,28 +14,28 @@
  * color, and a face coloring of a planar graph assigns a color to each face or
  * region so that no two faces that share a boundary have the same color.
  *
- * @author [Anup Kumar Panwar](https://github.com/AnupKumarPanwar)
- * @author [David Leal](https://github.com/Panquesito7)
+ * \author [Anup Kumar Panwar](https://github.com/AnupKumarPanwar)
+ * \author [David Leal](https://github.com/Panquesito7)
  */
 
 #include <array>     /// for std::array
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace backtracking
- * @brief Backtracking algorithms
+ * \namespace backtracking
+ * \brief Backtracking algorithms
  */
 namespace backtracking {
 /**
- * @namespace graph_coloring
- * @brief Functions for the [Graph
+ * \namespace graph_coloring
+ * \brief Functions for the [Graph
  * Coloring](https://en.wikipedia.org/wiki/Graph_coloring) algorithm,
  */
 namespace graph_coloring {
 /**
- * @brief A utility function to print the solution
- * @tparam V number of vertices in the graph
- * @param color array of colors assigned to the nodes
+ * \brief A utility function to print the solution
+ * \tparam V number of vertices in the graph
+ * \param color array of colors assigned to the nodes
  */
 template <size_t V>
 void printSolution(const std::array<int, V>& color) {
@@ -47,15 +47,15 @@ void printSolution(const std::array<int, V>& color) {
 }
 
 /**
- * @brief Utility function to check if the current color assignment is safe for
+ * \brief Utility function to check if the current color assignment is safe for
  * vertex v
- * @tparam V number of vertices in the graph
- * @param v index of graph vertex to check
- * @param graph matrix of graph nonnectivity
- * @param color vector of colors assigned to the graph nodes/vertices
- * @param c color value to check for the node `v`
- * @returns `true` if the color is safe to be assigned to the node
- * @returns `false` if the color is not safe to be assigned to the node
+ * \tparam V number of vertices in the graph
+ * \param v index of graph vertex to check
+ * \param graph matrix of graph nonnectivity
+ * \param color vector of colors assigned to the graph nodes/vertices
+ * \param c color value to check for the node `v`
+ * \returns `true` if the color is safe to be assigned to the node
+ * \returns `false` if the color is not safe to be assigned to the node
  */
 template <size_t V>
 bool isSafe(int v, const std::array<std::array<int, V>, V>& graph,
@@ -69,13 +69,13 @@ bool isSafe(int v, const std::array<std::array<int, V>, V>& graph,
 }
 
 /**
- * @brief Recursive utility function to solve m coloring problem
- * @tparam V number of vertices in the graph
- * @param graph matrix of graph nonnectivity
- * @param m number of colors
- * @param [in,out] color description // used in,out to notify in documentation
+ * \brief Recursive utility function to solve m coloring problem
+ * \tparam V number of vertices in the graph
+ * \param graph matrix of graph nonnectivity
+ * \param m number of colors
+ * \param [in,out] color description // used in,out to notify in documentation
  * that this parameter gets modified by the function
- * @param v index of graph vertex to check
+ * \param v index of graph vertex to check
  */
 template <size_t V>
 void graphColoring(const std::array<std::array<int, V>, V>& graph, int m,
@@ -105,8 +105,8 @@ void graphColoring(const std::array<std::array<int, V>, V>& graph, int m,
 }  // namespace backtracking
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     // Create following graph and test whether it is 3 colorable

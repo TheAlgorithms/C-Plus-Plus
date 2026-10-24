@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Conditional
+ * \file
+ * \brief [Conditional
  * Probability](https://en.wikipedia.org/wiki/Conditional_probability)
- * @details
+ * \details
  * In probability theory, conditional probability is a measure of the
  * probability of an event occurring, given that another event (by assumption,
  * presumption, assertion, or evidence) is already known to have occurred.
@@ -19,7 +19,7 @@
  * where: \f$P(B) > 0\f$.
  *
  *
- * @author [SomrajBanik](https://github.com/SomrajBanik)
+ * \author [SomrajBanik](https://github.com/SomrajBanik)
  */
 
 #include <cassert>    /// for assert
@@ -29,23 +29,23 @@
 #include <string>     /// for std::string
 
 /**
- * @namespace probability
- * @brief Probability algorithms
+ * \namespace probability
+ * \brief Probability algorithms
  */
 namespace probability {
 /**
- * @namespace conditional_probability
- * @brief Functions for the [Conditional
+ * \namespace conditional_probability
+ * \brief Functions for the [Conditional
  * Probability](https://en.wikipedia.org/wiki/Conditional_probability) algorithm
  * implementation
  */
 namespace conditional_probability {
 /**
- * @brief Computes the conditional probability P(X|Y)
- * @param p_intersect probability that both X and Y occur, in [0, P(Y)]
- * @param p_given probability of the event that is given (Y), in (0, 1]
- * @returns P(X|Y)
- * @throws std::invalid_argument if p_given is not in (0, 1], or if
+ * \brief Computes the conditional probability P(X|Y)
+ * \param p_intersect probability that both X and Y occur, in [0, P(Y)]
+ * \param p_given probability of the event that is given (Y), in (0, 1]
+ * \returns P(X|Y)
+ * \throws std::invalid_argument if p_given is not in (0, 1], or if
  * p_intersect is not in [0, p_given]
  */
 double conditional_compute(double p_intersect, double p_given) {
@@ -64,8 +64,8 @@ double conditional_compute(double p_intersect, double p_given) {
 }  // namespace probability
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     using probability::conditional_probability::conditional_compute;
@@ -153,8 +153,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test(); // run self test implementations

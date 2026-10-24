@@ -1,8 +1,8 @@
 /**
- * @file duval.cpp
- * @brief Implementation of [Duval's algorithm](https://en.wikipedia.org/wiki/Lyndon_word).
+ * \file duval.cpp
+ * \brief Implementation of [Duval's algorithm](https://en.wikipedia.org/wiki/Lyndon_word).
  *
- * @details
+ * \details
  * Duval's algorithm is an algorithm to find the lexicographically smallest
  * rotation of a string. It is based on the concept of Lyndon words.
  * Lyndon words are defined as the lexicographically smallest string in a
@@ -19,11 +19,11 @@
  * The algorithm has a time complexity of O(n) where n is the length of the
  * string.
  *
- * @note While Lyndon words are described in the context of strings,
+ * \note While Lyndon words are described in the context of strings,
  * Duval's algorithm can be used to find the lexicographically smallest cyclic
  * shift of any sequence of comparable elements.
  *
- * @author [Amine Ghoussaini](https://github.com/aminegh20)
+ * \author [Amine Ghoussaini](https://github.com/aminegh20)
 */
 
 #include <array>    /// for std::array
@@ -35,15 +35,15 @@
 #include <vector>   /// for std::vector
 
 /**
- * @brief string manipulation algorithms
- * @namespace
+ * \brief string manipulation algorithms
+ * \namespace
  */
 namespace string {
 /**
- * @brief Find the lexicographically smallest cyclic shift of a sequence.
- * @tparam T type of the sequence
- * @param s the sequence
- * @returns the 0-indexed position of the least cyclic shift of the sequence
+ * \brief Find the lexicographically smallest cyclic shift of a sequence.
+ * \tparam T type of the sequence
+ * \param s the sequence
+ * \returns the 0-indexed position of the least cyclic shift of the sequence
  */
 template <typename T>
 size_t duval(const T& s) {
@@ -71,7 +71,7 @@ size_t duval(const T& s) {
 }  // namespace string
 
 /**
- * @brief self test implementation
+ * \brief self test implementation
  * returns void
  */
 static void test() {
@@ -109,8 +109,8 @@ static void test() {
 }
 
 /**
- * @brief main function
- * @returns 0 on exit
+ * \brief main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self test implementations

@@ -1,9 +1,9 @@
 /******************************************************************************
- * @file
- * @brief Implementation of the [Selection
+ * \file
+ * \brief Implementation of the [Selection
  * sort](https://en.wikipedia.org/wiki/Selection_sort) implementation using
  * swapping
- * @details
+ * \details
  * The selection sort algorithm divides the input vector into two parts: a
  * sorted subvector of items which is built up from left to right at the front
  * (left) of the vector, and a subvector of the remaining unsorted items that
@@ -24,8 +24,8 @@
  * exchanging (swapping) it with the leftmost unsorted element (putting it in
  * sorted order), and moving the subvector boundaries one element to the right.
  *
- * @author [Lajat Manekar](https://github.com/Lazeeez)
- * @author Unknown author
+ * \author [Lajat Manekar](https://github.com/Lazeeez)
+ * \author Unknown author
  *******************************************************************************/
 #include <algorithm>  /// for std::is_sorted
 #include <cassert>    /// for std::assert
@@ -34,15 +34,15 @@
 #include <vector>     /// for std::vector
 
 /******************************************************************************
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  *******************************************************************************/
 namespace sorting {
 /******************************************************************************
- * @brief The main function which implements Selection sort
- * @param arr vector to be sorted
- * @param len length of vector to be sorted
- * @returns @param array resultant sorted vector
+ * \brief The main function which implements Selection sort
+ * \param arr vector to be sorted
+ * \param len length of vector to be sorted
+ * \returns @param array resultant sorted vector
  *******************************************************************************/
 
 std::vector<uint64_t> selectionSort(const std::vector<uint64_t> &arr,
@@ -70,8 +70,8 @@ std::vector<uint64_t> selectionSort(const std::vector<uint64_t> &arr,
 }  // namespace sorting
 
 /*******************************************************************************
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  *******************************************************************************/
 static void test() {
     // testcase #1
@@ -118,8 +118,8 @@ static void test() {
 }
 
 /*******************************************************************************
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  *******************************************************************************/
 int main() {
     test();  // run self-test implementations

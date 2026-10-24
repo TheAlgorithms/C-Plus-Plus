@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Addition rule of probabilities
+ * \file
+ * \brief Addition rule of probabilities
  */
 #include <iostream>
 

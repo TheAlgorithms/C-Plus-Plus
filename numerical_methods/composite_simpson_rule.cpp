@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Implementation of the Composite Simpson Rule for the approximation
+ * \file
+ * \brief Implementation of the Composite Simpson Rule for the approximation
  *
- * @details The following is an implementation of the Composite Simpson Rule for
+ * \details The following is an implementation of the Composite Simpson Rule for
  * the approximation of definite integrals. More info -> wiki:
  * https://en.wikipedia.org/wiki/Simpson%27s_rule#Composite_Simpson's_rule
  *
@@ -31,7 +31,7 @@
  *
  * Add sample function by replacing one of the f, g, k, l and the assert
  *
- * @author [ggkogkou](https://github.com/ggkogkou)
+ * \author [ggkogkou](https://github.com/ggkogkou)
  *
  */
 
@@ -45,24 +45,24 @@
 #include <map>         /// for std::map container
 
 /**
- * @namespace numerical_methods
- * @brief Numerical algorithms/methods
+ * \namespace numerical_methods
+ * \brief Numerical algorithms/methods
  */
 namespace numerical_methods {
 /**
- * @namespace simpson_method
- * @brief Contains the Simpson's method implementation
+ * \namespace simpson_method
+ * \brief Contains the Simpson's method implementation
  */
 namespace simpson_method {
 /**
- * @fn double evaluate_by_simpson(int N, double h, double a,
+ * \fn double evaluate_by_simpson(int N, double h, double a,
  * std::function<double (double)> func)
- * @brief Calculate integral or assert if integral is not a number (Nan)
- * @param N number of intervals
- * @param h step
- * @param a x0
- * @param func: choose the function that will be evaluated
- * @returns the result of the integration
+ * \brief Calculate integral or assert if integral is not a number (Nan)
+ * \param N number of intervals
+ * \param h step
+ * \param a x0
+ * \param func: choose the function that will be evaluated
+ * \returns the result of the integration
  */
 double evaluate_by_simpson(std::int32_t N, double h, double a,
                            const std::function<double(double)>& func) {
@@ -105,28 +105,28 @@ double evaluate_by_simpson(std::int32_t N, double h, double a,
 }
 
 /**
- * @fn double f(double x)
- * @brief A function f(x) that will be used to test the method
- * @param x The independent variable xi
- * @returns the value of the dependent variable yi = f(xi)
+ * \fn double f(double x)
+ * \brief A function f(x) that will be used to test the method
+ * \param x The independent variable xi
+ * \returns the value of the dependent variable yi = f(xi)
  */
 double f(double x) { return std::sqrt(x) + std::log(x); }
-/** @brief Another test function */
+/** \brief Another test function */
 double g(double x) { return std::exp(-x) * (4 - std::pow(x, 2)); }
-/** @brief Another test function */
+/** \brief Another test function */
 double k(double x) { return std::sqrt(2 * std::pow(x, 3) + 3); }
-/** @brief Another test function*/
+/** \brief Another test function*/
 double l(double x) { return x + std::log(2 * x + 1); }
 }  // namespace simpson_method
 }  // namespace numerical_methods
 
 /**
  * \brief Self-test implementations
- * @param N is the number of intervals
- * @param h is the step
- * @param a is x0
- * @param b is the end of the interval
- * @param used_argv_parameters is 'true' if argv parameters are given and
+ * \param N is the number of intervals
+ * \param h is the step
+ * \param a is x0
+ * \param b is the end of the interval
+ * \param used_argv_parameters is 'true' if argv parameters are given and
  * 'false' if not
  */
 static void test(std::int32_t N, double h, double a, double b,
@@ -162,10 +162,10 @@ static void test(std::int32_t N, double h, double a, double b,
 }
 
 /**
- * @brief Main function
- * @param argc commandline argument count
- * @param argv commandline array of arguments
- * @returns 0 on exit
+ * \brief Main function
+ * \param argc commandline argument count
+ * \param argv commandline array of arguments
+ * \returns 0 on exit
  */
 int main(int argc, char** argv) {
     std::int32_t N = 16;  /// Number of intervals to divide the integration

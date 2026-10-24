@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Convert decimal number to hexadecimal representation
+ * \file
+ * \brief Convert decimal number to hexadecimal representation
  */
 
 #include <iostream>

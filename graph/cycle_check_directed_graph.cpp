@@ -1,9 +1,9 @@
 /**
- * @file cycle_check_directed graph.cpp
+ * \file cycle_check_directed graph.cpp
  *
- * @brief BFS and DFS algorithms to check for cycle in a directed graph.
+ * \brief BFS and DFS algorithms to check for cycle in a directed graph.
  *
- * @author [Anmol3299](mailto:mittalanmol22@gmail.com)
+ * \author [Anmol3299](mailto:mittalanmol22@gmail.com)
  *
  */
 
@@ -35,8 +35,8 @@ struct Edge {
 
     /** Set the source and destination of the vertex.
      *
-     * @param source is the source vertex of the edge.
-     * @param destination is the destination vertex of the edge.
+     * \param source is the source vertex of the edge.
+     * \param destination is the destination vertex of the edge.
      */
     Edge(unsigned int source, unsigned int destination)
         : src(source), dest(destination) {}
@@ -63,16 +63,16 @@ class Graph {
 
     /** Create a graph from vertices and adjacency list.
      *
-     * @param vertices specify the number of vertices the graph would contain.
-     * @param adjList is the adjacency list representation of graph.
+     * \param vertices specify the number of vertices the graph would contain.
+     * \param adjList is the adjacency list representation of graph.
      */
     Graph(unsigned int vertices, AdjList adjList)
         : m_vertices(vertices), m_adjList(std::move(adjList)) {}
 
     /** Create a graph from vertices and adjacency list.
      *
-     * @param vertices specify the number of vertices the graph would contain.
-     * @param adjList is the adjacency list representation of graph.
+     * \param vertices specify the number of vertices the graph would contain.
+     * \param adjList is the adjacency list representation of graph.
      */
     Graph(unsigned int vertices, AdjList&& adjList)
         : m_vertices(vertices), m_adjList(std::move(adjList)) {}
@@ -83,8 +83,8 @@ class Graph {
      * the source or destination of any edge has a value greater or equal to
      * number of vertices, then it would throw a range_error.
      *
-     * @param vertices specify the number of vertices the graph would contain.
-     * @param edges is a vector of edges.
+     * \param vertices specify the number of vertices the graph would contain.
+     * \param edges is a vector of edges.
      */
     Graph(unsigned int vertices, std::vector<Edge> const& edges)
         : m_vertices(vertices) {
@@ -99,20 +99,20 @@ class Graph {
 
     /** Return a const reference of the adjacency list.
      *
-     * @return const reference to the adjacency list
+     * \return const reference to the adjacency list
      */
     std::remove_reference<AdjList>::type const& getAdjList() const {
         return m_adjList;
     }
 
     /**
-     * @return number of vertices in the graph.
+     * \return number of vertices in the graph.
      */
     unsigned int getVertices() const { return m_vertices; }
 
     /** Add vertices in the graph.
      *
-     * @param num is the number of vertices to be added. It adds 1 vertex by
+     * \param num is the number of vertices to be added. It adds 1 vertex by
      * default.
      *
      */
@@ -120,7 +120,7 @@ class Graph {
 
     /** Add an edge in the graph.
      *
-     * @param edge that needs to be added.
+     * \param edge that needs to be added.
      */
     void addEdge(Edge const& edge) {
         if (edge.src >= m_vertices || edge.dest >= m_vertices) {
@@ -131,8 +131,8 @@ class Graph {
 
     /** Add an Edge in the graph
      *
-     * @param source is source vertex of the edge.
-     * @param destination is the destination vertex of the edge.
+     * \param source is source vertex of the edge.
+     * \param destination is the destination vertex of the edge.
      */
     void addEdge(unsigned int source, unsigned int destination) {
         if (source >= m_vertices || destination >= m_vertices) {
@@ -162,11 +162,11 @@ class CycleCheck {
 
     /** Helper function of "isCyclicDFS".
      *
-     * @param adjList is the adjacency list representation of some graph.
-     * @param state is the state of the nodes of the graph.
-     * @param node is the node being evaluated.
+     * \param adjList is the adjacency list representation of some graph.
+     * \param state is the state of the nodes of the graph.
+     * \param node is the node being evaluated.
      *
-     * @return true if graph has a cycle, else false.
+     * \return true if graph has a cycle, else false.
      */
     static bool isCyclicDFSHelper(AdjList const& adjList,
                                   std::vector<nodeStates>* state,
@@ -207,8 +207,8 @@ class CycleCheck {
      *
      * This function uses DFS to check for cycle in the graph.
      *
-     * @param graph which needs to be evaluated for the presence of cycle.
-     * @return true if a cycle is detected, else false.
+     * \param graph which needs to be evaluated for the presence of cycle.
+     * \return true if a cycle is detected, else false.
      */
     static bool isCyclicDFS(Graph const& graph) {
         auto vertices = graph.getVertices();
@@ -244,8 +244,8 @@ class CycleCheck {
      *
      * This function uses BFS to check if a graph is cyclic or not.
      *
-     * @param graph which needs to be evaluated for the presence of cycle.
-     * @return true if a cycle is detected, else false.
+     * \param graph which needs to be evaluated for the presence of cycle.
+     * \return true if a cycle is detected, else false.
      */
     static bool isCyclicBFS(Graph const& graph) {
         auto graphAjdList = graph.getAdjList();

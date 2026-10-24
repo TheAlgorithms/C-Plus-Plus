@@ -1,11 +1,11 @@
 /**
- * @author [aminos 🇮🇳](https://github.com/amino19)
- * @file
+ * \author [aminos 🇮🇳](https://github.com/amino19)
+ * \file
  *
- * @brief [Program to count digits
+ * \brief [Program to count digits
  * in an
  * integer](https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods)
- * @details It is a very basic math of finding number of digits in a given
+ * \details It is a very basic math of finding number of digits in a given
  * number i.e, we can use it by inputting values whether it can be a
  * positive/negative value, let's say: an integer. There is also a second
  * method: by using "K = floor(log10(N) + 1)", but it's only applicable for
@@ -22,11 +22,11 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @brief The main function that checks
+ * \brief The main function that checks
  * the number of digits in a number.
  * TC : O(number of digits)
- * @param n the number to check its digits
- * @returns the digits count
+ * \param n the number to check its digits
+ * \returns the digits count
  */
 uint64_t finding_number_of_digits_in_a_number(uint64_t n) {
     uint64_t count = 0;  ///< the variable used for the digits count
@@ -45,11 +45,11 @@ uint64_t finding_number_of_digits_in_a_number(uint64_t n) {
 }
 
 /**
- * @brief This function finds the number of digits
+ * \brief This function finds the number of digits
  * in constant time using logarithmic function
  * TC: O(1)
- * @param n the number to check its digits
- * @returns the digits count
+ * \param n the number to check its digits
+ * \returns the digits count
  */
 double finding_number_of_digits_in_a_number_using_log(double n) {
     // log(0) is undefined
@@ -68,8 +68,8 @@ double finding_number_of_digits_in_a_number_using_log(double n) {
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void first_test() {
     assert(finding_number_of_digits_in_a_number(5492) == 4);
@@ -91,8 +91,8 @@ static void second_test() {
     assert(finding_number_of_digits_in_a_number_using_log(564) == 3);
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     // run self-test implementations

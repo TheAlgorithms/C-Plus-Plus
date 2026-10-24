@@ -1,4 +1,5 @@
 #### Description of Change
+
 <!--
 Thank you for your Pull Request. Please provide a description above and review
 the requirements below.
@@ -7,6 +8,7 @@ Contributors guide: https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CON
 -->
 
 #### Checklist
+
 <!-- Remove items that do not apply. For completed items, change [ ] to [x]. -->
 
 - [ ] Added description of change

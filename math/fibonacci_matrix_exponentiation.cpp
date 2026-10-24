@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief This program computes the N^th Fibonacci number in modulo mod
+ * \file
+ * \brief This program computes the N^th Fibonacci number in modulo mod
  * input argument .
  *
  * Takes O(logn) time to compute nth Fibonacci number
@@ -8,7 +8,7 @@
  *
  * \author [villayatali123](https://github.com/villayatali123)
  * \author [unknown author]()
- * @see fibonacci.cpp, fibonacci_fast.cpp, string_fibonacci.cpp,
+ * \see fibonacci.cpp, fibonacci_fast.cpp, string_fibonacci.cpp,
  * fibonacci_large.cpp
  */
 
@@ -19,8 +19,8 @@
 
 /**
  * This function finds nth fibonacci number in a given modulus
- * @param n nth fibonacci number
- * @param mod  modulo number
+ * \param n nth fibonacci number
+ * \param mod  modulo number
  */
 uint64_t fibo(uint64_t n, uint64_t mod) {
     std::vector<uint64_t> result(2, 0);

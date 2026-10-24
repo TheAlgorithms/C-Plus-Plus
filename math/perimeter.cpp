@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief Implementations for the
+ * \file
+ * \brief Implementations for the
  * [perimeter](https://en.wikipedia.org/wiki/Perimeter) of various shapes
- * @details The  of a shape is the amount of 2D space it takes up.
+ * \details The  of a shape is the amount of 2D space it takes up.
  * All shapes have a formula for their perimeter.
  * These implementations support multiple return types.
  *
- * @author [OGscorpion](https://github.com/OGscorpion)
+ * \author [OGscorpion](https://github.com/OGscorpion)
  */
 #define _USE_MATH_DEFINES
 #include <cassert>   /// for assert
@@ -15,14 +15,14 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @brief perimeter of a [square](https://en.wikipedia.org/wiki/Square) (4 * l)
- * @param length is the length of the square
- * @returns perimeter of square
+ * \brief perimeter of a [square](https://en.wikipedia.org/wiki/Square) (4 * l)
+ * \param length is the length of the square
+ * \returns perimeter of square
  */
 template <typename T>
 T square_perimeter(T length) {
@@ -30,11 +30,11 @@ T square_perimeter(T length) {
 }
 
 /**
- * @brief perimeter of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) (
+ * \brief perimeter of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) (
  * 2(l + w) )
- * @param length is the length of the rectangle
- * @param width is the width of the rectangle
- * @returns perimeter of the rectangle
+ * \param length is the length of the rectangle
+ * \param width is the width of the rectangle
+ * \returns perimeter of the rectangle
  */
 template <typename T>
 T rect_perimeter(T length, T width) {
@@ -42,11 +42,11 @@ T rect_perimeter(T length, T width) {
 }
 
 /**
- * @brief perimeter of a [triangle](https://en.wikipedia.org/wiki/Triangle) (a +
+ * \brief perimeter of a [triangle](https://en.wikipedia.org/wiki/Triangle) (a +
  * b + c)
- * @param base is the length of the bottom side of the triangle
- * @param height is the length of the tallest point in the triangle
- * @returns perimeter of the triangle
+ * \param base is the length of the bottom side of the triangle
+ * \param height is the length of the tallest point in the triangle
+ * \returns perimeter of the triangle
  */
 template <typename T>
 T triangle_perimeter(T base, T height, T hypotenuse) {
@@ -54,10 +54,10 @@ T triangle_perimeter(T base, T height, T hypotenuse) {
 }
 
 /**
- * @brief perimeter of a
+ * \brief perimeter of a
  * [circle](https://en.wikipedia.org/wiki/perimeter_of_a_circle) (2 * pi * r)
- * @param radius is the radius of the circle
- * @returns perimeter of the circle
+ * \param radius is the radius of the circle
+ * \returns perimeter of the circle
  */
 template <typename T>
 T circle_perimeter(T radius) {
@@ -65,11 +65,11 @@ T circle_perimeter(T radius) {
 }
 
 /**
- * @brief perimeter of a
+ * \brief perimeter of a
  * [parallelogram](https://en.wikipedia.org/wiki/Parallelogram) 2(b + h)
- * @param base is the length of the bottom side of the parallelogram
- * @param height is the length of the tallest point in the parallelogram
- * @returns perimeter of the parallelogram
+ * \param base is the length of the bottom side of the parallelogram
+ * \param height is the length of the tallest point in the parallelogram
+ * \returns perimeter of the parallelogram
  */
 template <typename T>
 T parallelogram_perimeter(T base, T height) {
@@ -77,10 +77,10 @@ T parallelogram_perimeter(T base, T height) {
 }
 
 /**
- * @brief surface perimeter of a [cube](https://en.wikipedia.org/wiki/Cube) ( 12
+ * \brief surface perimeter of a [cube](https://en.wikipedia.org/wiki/Cube) ( 12
  * * l)
- * @param length is the length of the cube
- * @returns surface perimeter of the cube
+ * \param length is the length of the cube
+ * \returns surface perimeter of the cube
  */
 template <typename T>
 T cube_surface_perimeter(T length) {
@@ -88,12 +88,12 @@ T cube_surface_perimeter(T length) {
 }
 
 /**
- * @brief surface perimeter of a
+ * \brief surface perimeter of a
  * [n-polygon](https://www.cuemath.com/measurement/perimeter-of-polygon/) ( n *
  * l)
- * @param length is the length of the polygon
- * @param sides is the number of sides of the polygon
- * @returns surface perimeter of the polygon
+ * \param length is the length of the polygon
+ * \param sides is the number of sides of the polygon
+ * \returns surface perimeter of the polygon
  */
 template <typename T>
 T n_polygon_surface_perimeter(T sides, T length) {
@@ -101,11 +101,11 @@ T n_polygon_surface_perimeter(T sides, T length) {
 }
 
 /**
- * @brief surface perimeter of a
+ * \brief surface perimeter of a
  * [cylinder](https://en.wikipedia.org/wiki/Cylinder) (2 * radius + 2 * height)
- * @param radius is the radius of the cylinder
- * @param height is the height of the cylinder
- * @returns surface perimeter of the cylinder
+ * \param radius is the radius of the cylinder
+ * \param height is the height of the cylinder
+ * \returns surface perimeter of the cylinder
  */
 template <typename T>
 T cylinder_surface_perimeter(T radius, T height) {
@@ -114,8 +114,8 @@ T cylinder_surface_perimeter(T radius, T height) {
 }  // namespace math
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // I/O variables for testing
@@ -278,8 +278,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief [Geometric
+ * \file
+ * \brief [Geometric
  * Distribution](https://en.wikipedia.org/wiki/Geometric_distribution)
  *
- * @details
+ * \details
  * The geometric distribution models the experiment of doing Bernoulli trials
  * until a sucess was observed. There are two formulations of the geometric
  * distribution: 1) The probability distribution of the number X of Bernoulli
@@ -16,7 +16,7 @@
  * p - The success probability
  * k - The number of tries
  *
- * @author [Domenic Zingsheim](https://github.com/DerAndereDomenic)
+ * \author [Domenic Zingsheim](https://github.com/DerAndereDomenic)
  */
 
 #include <cassert>   /// for assert
@@ -29,20 +29,20 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace probability
- * @brief Probability algorithms
+ * \namespace probability
+ * \brief Probability algorithms
  */
 namespace probability {
 /**
- * @namespace geometric_dist
- * @brief Functions for the [Geometric
+ * \namespace geometric_dist
+ * \brief Functions for the [Geometric
  * Distribution](https://en.wikipedia.org/wiki/Geometric_distribution) algorithm
  * implementation
  */
 namespace geometric_dist {
 /**
- * @brief Returns a random number between [0,1]
- * @returns A uniformly distributed random number between 0 (included) and 1
+ * \brief Returns a random number between [0,1]
+ * \returns A uniformly distributed random number between 0 (included) and 1
  * (included)
  */
 float generate_uniform() {
@@ -50,7 +50,7 @@ float generate_uniform() {
 }
 
 /**
- * @brief A class to model the geometric distribution
+ * \brief A class to model the geometric distribution
  */
 class geometric_distribution {
  private:
@@ -58,69 +58,69 @@ class geometric_distribution {
 
  public:
     /**
-     * @brief Constructor for the geometric distribution
-     * @param p The success probability
+     * \brief Constructor for the geometric distribution
+     * \param p The success probability
      */
     explicit geometric_distribution(const float& p) : p(p) {}
 
     /**
-     * @brief The expected value of a geometrically distributed random variable
+     * \brief The expected value of a geometrically distributed random variable
      * X
-     * @returns E[X] = 1/p
+     * \returns E[X] = 1/p
      */
     float expected_value() const { return 1.0f / p; }
 
     /**
-     * @brief The variance of a geometrically distributed random variable X
-     * @returns V[X] = (1 - p) / p^2
+     * \brief The variance of a geometrically distributed random variable X
+     * \returns V[X] = (1 - p) / p^2
      */
     float variance() const { return (1.0f - p) / (p * p); }
 
     /**
-     * @brief The standard deviation of a geometrically distributed random
+     * \brief The standard deviation of a geometrically distributed random
      * variable X
-     * @returns \sigma = \sqrt{V[X]}
+     * \returns \sigma = \sqrt{V[X]}
      */
     float standard_deviation() const { return std::sqrt(variance()); }
 
     /**
-     * @brief The probability density function
-     * @details As we use the first definition of the geometric series (1),
+     * \brief The probability density function
+     * \details As we use the first definition of the geometric series (1),
      * we are doing k - 1 failed trials and the k-th trial is a success.
-     * @param k The number of trials to observe the first success in [1,\infty)
-     * @returns A number between [0,1] according to p * (1-p)^{k-1}
+     * \param k The number of trials to observe the first success in [1,\infty)
+     * \returns A number between [0,1] according to p * (1-p)^{k-1}
      */
     float probability_density(const uint32_t& k) const {
         return std::pow((1.0f - p), static_cast<float>(k - 1)) * p;
     }
 
     /**
-     * @brief The cumulative distribution function
-     * @details The sum of all probabilities up to (and including) k trials.
+     * \brief The cumulative distribution function
+     * \details The sum of all probabilities up to (and including) k trials.
      * Basically CDF(k) = P(x <= k)
-     * @param k The number of trials in [1,\infty)
-     * @returns The probability to have success within k trials
+     * \param k The number of trials in [1,\infty)
+     * \returns The probability to have success within k trials
      */
     float cumulative_distribution(const uint32_t& k) const {
         return 1.0f - std::pow((1.0f - p), static_cast<float>(k));
     }
 
     /**
-     * @brief The inverse cumulative distribution function
-     * @details This functions answers the question: Up to how many trials are
+     * \brief The inverse cumulative distribution function
+     * \details This functions answers the question: Up to how many trials are
      * needed to have success with a probability of cdf? The exact floating
      * point value is reported.
-     * @param cdf The probability in [0,1]
-     * @returns The number of (exact) trials.
+     * \param cdf The probability in [0,1]
+     * \returns The number of (exact) trials.
      */
     float inverse_cumulative_distribution(const float& cdf) const {
         return std::log(1.0f - cdf) / std::log(1.0f - p);
     }
 
     /**
-     * @brief Generates a (discrete) sample according to the geometrical
+     * \brief Generates a (discrete) sample according to the geometrical
      * distribution
-     * @returns A geometrically distributed number in [1,\infty)
+     * \returns A geometrically distributed number in [1,\infty)
      */
     uint32_t draw_sample() const {
         float uniform_sample = generate_uniform();
@@ -130,16 +130,16 @@ class geometric_distribution {
     }
 
     /**
-     * @brief This function computes the probability to have success in a given
+     * \brief This function computes the probability to have success in a given
      * range of tries
-     * @details Computes P(min_tries <= x <= max_tries).
+     * \details Computes P(min_tries <= x <= max_tries).
      * Can be used to calculate P(x >= min_tries) by not passing a second
      * argument. Can be used to calculate P(x <= max_tries) by passing 1 as the
      * first argument
-     * @param min_tries The minimum number of tries in [1,\infty) (inclusive)
-     * @param max_tries The maximum number of tries in [min_tries, \infty)
+     * \param min_tries The minimum number of tries in [1,\infty) (inclusive)
+     * \param max_tries The maximum number of tries in [min_tries, \infty)
      * (inclusive)
-     * @returns The probability of having success within a range of tries
+     * \returns The probability of having success within a range of tries
      * [min_tries, max_tries]
      */
     float range_tries(const uint32_t& min_tries = 1,
@@ -156,11 +156,11 @@ class geometric_distribution {
 }  // namespace probability
 
 /**
- * @brief Tests the sampling method of the geometric distribution
- * @details Draws 1000000 random samples and estimates mean and variance
+ * \brief Tests the sampling method of the geometric distribution
+ * \details Draws 1000000 random samples and estimates mean and variance
  * These should be close to the expected value and variance of the given
  * distribution to pass.
- * @param dist The distribution to test
+ * \param dist The distribution to test
  */
 void sample_test(
     const probability::geometric_dist::geometric_distribution& dist) {
@@ -191,8 +191,8 @@ void sample_test(
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     probability::geometric_dist::geometric_distribution dist(0.3);
@@ -250,8 +250,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @return 0 on exit
+ * \brief Main function
+ * \return 0 on exit
  */
 int main() {
     srand(time(nullptr));

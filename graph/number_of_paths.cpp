@@ -1,14 +1,14 @@
 /**
- * @file
- * @brief Algorithm to count paths between two nodes in a directed graph using DFS
- * @details
+ * \file
+ * \brief Algorithm to count paths between two nodes in a directed graph using DFS
+ * \details
  * This algorithm implements Depth First Search (DFS) to count the number of 
  * possible paths between two nodes in a directed graph. It is represented using 
  * an adjacency matrix. The algorithm recursively traverses the graph to find 
  * all paths from the source node `u` to the destination node `v`.
  * 
- * @author [Aditya Borate](https://github.com/adi776borate)
- * @see https://en.wikipedia.org/wiki/Path_(graph_theory)
+ * \author [Aditya Borate](https://github.com/adi776borate)
+ * \see https://en.wikipedia.org/wiki/Path_(graph_theory)
  */
 
 #include <vector>   /// for std::vector
@@ -17,19 +17,19 @@
 #include <cstdint>  /// for fixed-size integer types (e.g., std::uint32_t)
 
 /**
- * @namespace graph
- * @brief Graph algorithms
+ * \namespace graph
+ * \brief Graph algorithms
  */
 namespace graph {
 
     /**
-     * @brief Helper function to perform DFS and count the number of paths from node `u` to node `v`
-     * @param A adjacency matrix representing the graph (1: edge exists, 0: no edge)
-     * @param u the starting node
-     * @param v the destination node
-     * @param n the number of nodes in the graph
-     * @param visited a vector to keep track of visited nodes in the current DFS path
-     * @returns the number of paths from node `u` to node `v`
+     * \brief Helper function to perform DFS and count the number of paths from node `u` to node `v`
+     * \param A adjacency matrix representing the graph (1: edge exists, 0: no edge)
+     * \param u the starting node
+     * \param v the destination node
+     * \param n the number of nodes in the graph
+     * \param visited a vector to keep track of visited nodes in the current DFS path
+     * \returns the number of paths from node `u` to node `v`
      */
     std::uint32_t count_paths_dfs(const std::vector<std::vector<std::uint32_t>>& A, 
                               std::uint32_t u, 
@@ -55,14 +55,14 @@ namespace graph {
 
 
     /**
-     * @brief Counts the number of paths from node `u` to node `v` in a directed graph
+     * \brief Counts the number of paths from node `u` to node `v` in a directed graph
      * using Depth First Search (DFS)
      * 
-     * @param A adjacency matrix representing the graph (1: edge exists, 0: no edge)
-     * @param u the starting node
-     * @param v the destination node
-     * @param n the number of nodes in the graph
-     * @returns the number of paths from node `u` to node `v`
+     * \param A adjacency matrix representing the graph (1: edge exists, 0: no edge)
+     * \param u the starting node
+     * \param v the destination node
+     * \param n the number of nodes in the graph
+     * \returns the number of paths from node `u` to node `v`
      */
     std::uint32_t count_paths(const std::vector<std::vector<std::uint32_t>>& A, 
                           std::uint32_t u, 
@@ -80,8 +80,8 @@ namespace graph {
 } // namespace graph
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // Test case 1: Simple directed graph with multiple paths
@@ -142,8 +142,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test(); // Run self-test implementations

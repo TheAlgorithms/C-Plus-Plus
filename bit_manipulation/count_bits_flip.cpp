@@ -1,11 +1,11 @@
 /**
- * @file
- * @brief Implementation to
+ * \file
+ * \brief Implementation to
  * [Count number of bits to be flipped to convert A to B]
  * (https://www.geeksforgeeks.org/count-number-of-bits-to-be-flipped-to-convert-a-to-b/)
  * in an integer.
  *
- * @details
+ * \details
  * We are given two numbers A and B. Our task is to count the number of bits
  * needed to be flipped to convert A to B.
  *
@@ -17,28 +17,28 @@
  *
  * Worst Case Time Complexity: O(log n)
  * Space complexity: O(1)
- * @author [Yash Raj Singh](https://github.com/yashrajyash)
+ * \author [Yash Raj Singh](https://github.com/yashrajyash)
  */
 #include <cassert>   /// for assert
 #include <cstdint>
 #include <iostream>  /// for IO operations
 /**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
+ * \namespace bit_manipulation
+ * \brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 /**
- * @namespace count_bits_flip
- * @brief Functions for the [count bits
+ * \namespace count_bits_flip
+ * \brief Functions for the [count bits
  * flip](https://www.geeksforgeeks.org/count-set-bits-in-an-integer/)
  * implementation
  */
 namespace count_bits_flip {
 /**
- * @brief The main function implements count of bits flip required
- * @param A is the given number whose bits will be flipped to get number B
- * @param B is the given target number
- * @returns total number of bits needed to be flipped to convert A to B
+ * \brief The main function implements count of bits flip required
+ * \param A is the given number whose bits will be flipped to get number B
+ * \param B is the given target number
+ * \returns total number of bits needed to be flipped to convert A to B
  */
 std::uint64_t countBitsFlip(
     std::int64_t A,
@@ -59,8 +59,8 @@ std::uint64_t countBitsFlip(
 }  // namespace bit_manipulation
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // A = 10, B = 20 return 4
@@ -80,8 +80,8 @@ static void test() {
     std::cout << "All test cases successfully passed!" << std::endl;
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

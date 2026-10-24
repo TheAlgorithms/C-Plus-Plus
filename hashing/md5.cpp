@@ -1,9 +1,9 @@
 /**
- * @file
- * @author [tGautot](https://github.com/tGautot)
- * @brief Simple C++ implementation of the [MD5 Hashing
+ * \file
+ * \author [tGautot](https://github.com/tGautot)
+ * \brief Simple C++ implementation of the [MD5 Hashing
  * Algorithm](https://en.wikipedia.org/wiki/MD5)
- * @details
+ * \details
  * The [MD5 Algorithm](https://en.wikipedia.org/wiki/MD5) is a
  * hashing algorithm which was designed in 1991 by [Ronal
  * Rivest](https://en.wikipedia.org/wiki/Ron_Rivest).
@@ -34,7 +34,7 @@
  * For more precisions on these operations please see the [Wikipedia
  * aritcle](https://en.wikipedia.org/wiki/MD5#Algorithm).
  * The signature given by MD5 is its 128 bit state once all rounds are done.
- * @note This is a simple implementation for a byte string but
+ * \note This is a simple implementation for a byte string but
  * some implmenetations can work on bytestream, messages of unknown length.
  */
 
@@ -48,31 +48,31 @@
 #include <vector>     /// Used for std::vector
 
 /**
- * @namespace hashing
- * @brief Hashing algorithms
+ * \namespace hashing
+ * \brief Hashing algorithms
  */
 namespace hashing {
 /**
- * @namespace MD5
- * @brief Functions for the [MD5](https://en.wikipedia.org/wiki/MD5) algorithm
+ * \namespace MD5
+ * \brief Functions for the [MD5](https://en.wikipedia.org/wiki/MD5) algorithm
  * implementation
  */
 namespace md5 {
 /**
- * @brief Rotates the bits of a 32-bit unsigned integer
- * @param n Integer to rotate
- * @param rotate How many bits for the rotation
- * @return uint32_t The rotated integer
+ * \brief Rotates the bits of a 32-bit unsigned integer
+ * \param n Integer to rotate
+ * \param rotate How many bits for the rotation
+ * \return uint32_t The rotated integer
  */
 uint32_t leftRotate32bits(uint32_t n, std::size_t rotate) {
     return (n << rotate) | (n >> (32 - rotate));
 }
 /**
- * @brief Checks whether integers are stored as big endian or not
- * @note Taken from [this](https://stackoverflow.com/a/1001373) StackOverflow
+ * \brief Checks whether integers are stored as big endian or not
+ * \note Taken from [this](https://stackoverflow.com/a/1001373) StackOverflow
  * post
- * @return true IF integers are detected to work as big-endian
- * @return false IF integers are detected to work as little-endian
+ * \return true IF integers are detected to work as big-endian
+ * \return false IF integers are detected to work as little-endian
  */
 bool isBigEndian() {
     union {
@@ -83,9 +83,9 @@ bool isBigEndian() {
     return bint.c[0] == 1;
 }
 /**
- * @brief Sets 32-bit integer to little-endian if needed
- * @param n Number to set to little-endian (uint32_t)
- * @return uint32_t param n with binary representation as little-endian
+ * \brief Sets 32-bit integer to little-endian if needed
+ * \param n Number to set to little-endian (uint32_t)
+ * \return uint32_t param n with binary representation as little-endian
  */
 uint32_t toLittleEndian32(uint32_t n) {
     if (!isBigEndian()) {
@@ -96,9 +96,9 @@ uint32_t toLittleEndian32(uint32_t n) {
     return n;
 }
 /**
- * @brief Sets 64-bit integer to little-endian if needed
- * @param n Number to set to little-endian (uint64_t)
- * @return uint64_t param n with binary representation as little-endian
+ * \brief Sets 64-bit integer to little-endian if needed
+ * \param n Number to set to little-endian (uint64_t)
+ * \return uint64_t param n with binary representation as little-endian
  */
 uint64_t toLittleEndian64(uint64_t n) {
     if (!isBigEndian()) {
@@ -116,9 +116,9 @@ uint64_t toLittleEndian64(uint64_t n) {
     return n;
 }
 /**
- * @brief Transforms the 128-bit MD5 signature into a 32 char hex string
- * @param sig The MD5 signature (Expected 16 bytes)
- * @return std::string The hex signature
+ * \brief Transforms the 128-bit MD5 signature into a 32 char hex string
+ * \param sig The MD5 signature (Expected 16 bytes)
+ * \return std::string The hex signature
  */
 std::string sig2hex(void* sig) {
     const char* hexChars = "0123456789abcdef";
@@ -131,10 +131,10 @@ std::string sig2hex(void* sig) {
     return hex;
 }
 /**
- * @brief The MD5 algorithm itself, taking in a bytestring
- * @param input_bs The bytestring to hash
- * @param input_size The size (in BYTES) of the input
- * @return void* Pointer to the 128-bit signature
+ * \brief The MD5 algorithm itself, taking in a bytestring
+ * \param input_bs The bytestring to hash
+ * \param input_size The size (in BYTES) of the input
+ * \return void* Pointer to the 128-bit signature
  */
 void* hash_bs(const void* input_bs, uint64_t input_size) {
     auto* input = static_cast<const uint8_t*>(input_bs);
@@ -150,14 +150,14 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
     // The values can be obtained by the following python code:
 
     /**
-     * @brief Values of K are pseudo-random and used to "salt" each round
+     * \brief Values of K are pseudo-random and used to "salt" each round
      * The values can be obtained by the following python code
-     * @code{.py}
+     * \code{.py}
      * from math import floor, sin
      *
      * for i in range(64):
      *     print(floor(2**32 * abs(sin(i+1))))
-     * @endcode
+     * \endcode
      */
     std::array<uint32_t, 64> K = {
         3614090360, 3905402710, 606105819,  3250441966, 4118548399, 1200080426,
@@ -281,9 +281,9 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
     return sig;
 }
 /**
- * @brief Converts the string to bytestring and calls the main algorithm
- * @param message Plain character message to hash
- * @return void* Pointer to the MD5 signature
+ * \brief Converts the string to bytestring and calls the main algorithm
+ * \param message Plain character message to hash
+ * \return void* Pointer to the MD5 signature
  */
 void* hash(const std::string& message) {
     return hash_bs(&message[0], message.size());
@@ -292,8 +292,8 @@ void* hash(const std::string& message) {
 }  // namespace hashing
 
 /**
- * @brief Self-test implementations of well-known MD5 hashes
- * @returns void
+ * \brief Self-test implementations of well-known MD5 hashes
+ * \returns void
  */
 static void test() {
     // Hashes empty string and stores signature
@@ -345,9 +345,9 @@ static void test() {
 }
 
 /**
- * @brief Puts user in a loop where inputs can be given and MD5 hash will be
+ * \brief Puts user in a loop where inputs can be given and MD5 hash will be
  * computed and printed
- * @returns void
+ * \returns void
  */
 static void interactive() {
     while (true) {
@@ -371,8 +371,8 @@ static void interactive() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,14 +1,14 @@
 /**
- * @file
- * @author [Venkata Bharath](https://github.com/bharath000)
- * @brief Implementation of [Trie](https://en.wikipedia.org/wiki/Trie) data
+ * \file
+ * \author [Venkata Bharath](https://github.com/bharath000)
+ * \brief Implementation of [Trie](https://en.wikipedia.org/wiki/Trie) data
  * structure using HashMap for different characters and method for predicting
  * words based on prefix.
- * @details The Trie data structure is implemented using unordered map to use
+ * \details The Trie data structure is implemented using unordered map to use
  * memory optimally, predict_words method is developed to recommend words based
  * on a given prefix along with other methods insert, delete, search, startwith
  * in trie.
- * @see trie_modern.cpp for difference
+ * \see trie_modern.cpp for difference
  */
 #include <cassert>        /// for assert
 #include <iostream>       /// for IO operations
@@ -18,20 +18,20 @@
 #include <vector>         /// for std::vector
 
 /**
- * @namespace data_structures
- * @brief Data structures algorithms
+ * \namespace data_structures
+ * \brief Data structures algorithms
  */
 namespace data_structures {
 
 /**
- * @namespace trie_using_hashmap
- * @brief Functions for [Trie](https://en.wikipedia.org/wiki/Trie) data
+ * \namespace trie_using_hashmap
+ * \brief Functions for [Trie](https://en.wikipedia.org/wiki/Trie) data
  * structure using hashmap implementation
  */
 namespace trie_using_hashmap {
 
 /**
- * @brief Trie class, implementation of trie using hashmap in each trie node
+ * \brief Trie class, implementation of trie using hashmap in each trie node
  * for all the characters of char16_t(UTF-16)type with methods to insert,
  * delete, search, start with and to recommend words based on a given
  * prefix.
@@ -39,7 +39,7 @@ namespace trie_using_hashmap {
 class Trie {
  private:
     /**
-     * @brief struct representing a trie node.
+     * \brief struct representing a trie node.
      */
     struct Node {
         std::unordered_map<char16_t, std::shared_ptr<Node>>
@@ -56,8 +56,8 @@ class Trie {
     Trie() = default;
 
     /**
-     * @brief insert the string into the trie
-     * @param word string to insert in the trie
+     * \brief insert the string into the trie
+     * \param word string to insert in the trie
      */
     void insert(const std::string& word) {
         std::shared_ptr<Node> curr = root_node;
@@ -74,10 +74,10 @@ class Trie {
     }
 
     /**
-     * @brief search a word/string inside the trie
-     * @param word string to search for
-     * @returns `true` if found
-     * @returns `false` if not found
+     * \brief search a word/string inside the trie
+     * \param word string to search for
+     * \returns `true` if found
+     * \returns `false` if not found
      */
     bool search(const std::string& word) {
         std::shared_ptr<Node> curr = root_node;
@@ -99,10 +99,10 @@ class Trie {
     }
 
     /**
-     * @brief search a word/string that starts with a given prefix
-     * @param prefix string to search for
-     * @returns `true` if found
-     * @returns `false` if not found
+     * \brief search a word/string that starts with a given prefix
+     * \param prefix string to search for
+     * \returns `true` if found
+     * \returns `false` if not found
      */
     bool startwith(const std::string& prefix) {
         std::shared_ptr<Node> curr = root_node;
@@ -116,8 +116,8 @@ class Trie {
     }
 
     /**
-     * @brief delete a word/string from a trie
-     * @param word string to delete from trie
+     * \brief delete a word/string from a trie
+     * \param word string to delete from trie
      */
     void delete_word(std::string word) {
         std::shared_ptr<Node> curr = root_node;
@@ -149,13 +149,13 @@ class Trie {
     }
 
     /**
-     * @brief helper function to predict/recommend words that starts with a
+     * \brief helper function to predict/recommend words that starts with a
      * given prefix from the end of prefix's node iterate through all the child
      * nodes by recursively appending all the possible words below the trie
-     * @param prefix string to recommend the words
-     * @param element node at the end of the given prefix
-     * @param results list to store the all possible words
-     * @returns list of recommended words
+     * \param prefix string to recommend the words
+     * \param element node at the end of the given prefix
+     * \param results list to store the all possible words
+     * \returns list of recommended words
      */
     std::vector<std::string> get_all_words(std::vector<std::string> results,
                                            const std::shared_ptr<Node>& element,
@@ -181,9 +181,9 @@ class Trie {
     }
 
     /**
-     * @brief predict/recommend a word that starts with a given prefix
-     * @param prefix string to search for
-     * @returns list of recommended words
+     * \brief predict/recommend a word that starts with a given prefix
+     * \param prefix string to search for
+     * \returns list of recommended words
      */
     std::vector<std::string> predict_words(const std::string& prefix) {
         std::vector<std::string> result;
@@ -215,8 +215,8 @@ class Trie {
 }  // namespace data_structures
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     data_structures::trie_using_hashmap::Trie obj;
@@ -336,8 +336,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementaions

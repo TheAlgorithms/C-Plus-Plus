@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Compute [double
+ * \file
+ * \brief Compute [double
  * factorial](https://en.wikipedia.org/wiki/Double_factorial): \f$n!!\f$
  *
  * Double factorial of a non-negative integer `n`, is defined as the product of

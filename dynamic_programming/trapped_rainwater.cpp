@@ -1,11 +1,11 @@
 /**
- * @file
- * @brief Implementation of the [Trapped Rainwater
+ * \file
+ * \brief Implementation of the [Trapped Rainwater
  * Problem](https://www.geeksforgeeks.org/trapping-rain-water/)
- * @details
+ * \details
  * This implementation calculates the amount of rainwater that can be trapped
  * between walls represented by an array of heights.
- * @author [SOZEL](https://github.com/TruongNhanNguyen)
+ * \author [SOZEL](https://github.com/TruongNhanNguyen)
  */
 
 #include <algorithm>  /// For std::min and std::max
@@ -15,14 +15,14 @@
 #include <vector>  /// For std::vector
 
 /*
- * @namespace
- * @brief Dynamic Programming Algorithms
+ * \namespace
+ * \brief Dynamic Programming Algorithms
  */
 namespace dynamic_programming {
 /**
- * @brief Function to calculate the trapped rainwater
- * @param heights Array representing the heights of walls
- * @return The amount of trapped rainwater
+ * \brief Function to calculate the trapped rainwater
+ * \param heights Array representing the heights of walls
+ * \return The amount of trapped rainwater
  */
 uint32_t trappedRainwater(const std::vector<uint32_t>& heights) {
     std::size_t n = heights.size();
@@ -56,8 +56,8 @@ uint32_t trappedRainwater(const std::vector<uint32_t>& heights) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     std::vector<uint32_t> test_basic = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
@@ -95,8 +95,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

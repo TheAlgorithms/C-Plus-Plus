@@ -1,7 +1,7 @@
 /**
- * @brief
+ * \brief
  * [A* search algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
- * @details
+ * \details
  * A* is an informed search algorithm, or a best-first search, meaning that it
  * is formulated in terms of weighted graphs: starting from a specific starting
  * node of a graph (initial state), it aims to find a path to the given goal
@@ -17,7 +17,7 @@
  *
  * To solve the given search with shortest cost or path possible  is to inspect
  * values having minimum F(state).
- * @author [Ashish Daulatabad](https://github.com/AshishYUO)
+ * \author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 #include <algorithm>   /// for `std::reverse` function
 #include <array>       /// for `std::array`, representing `EightPuzzle` board
@@ -31,21 +31,21 @@
 #include <vector>      /// for `std::vector` STL
 
 /**
- * @namespace machine_learning
- * @brief Machine learning algorithms
+ * \namespace machine_learning
+ * \brief Machine learning algorithms
  */
 namespace machine_learning {
 /**
- * @namespace aystar_search
- * @brief Functions for [A*
+ * \namespace aystar_search
+ * \brief Functions for [A*
  * Search](https://en.wikipedia.org/wiki/A*_search_algorithm) implementation.
  */
 namespace aystar_search {
 /**
- * @class EightPuzzle
- * @brief A class defining [EightPuzzle/15-Puzzle
+ * \class EightPuzzle
+ * \brief A class defining [EightPuzzle/15-Puzzle
  * game](https://en.wikipedia.org/wiki/15_puzzle).
- * @details
+ * \details
  * A well known 3 x 3 puzzle of the form
  * `
  * 1   2   3
@@ -55,7 +55,7 @@ namespace aystar_search {
  * where `0` represents an empty space in the puzzle
  * Given any random state, the goal is to achieve the above configuration
  * (or any other configuration if possible)
- * @tparam N size of the square Puzzle, default is set to 3 (since it is
+ * \tparam N size of the square Puzzle, default is set to 3 (since it is
  * EightPuzzle)
  */
 template <size_t N = 3>
@@ -70,8 +70,8 @@ class EightPuzzle {
         {-1,
          0}};  /// A helper array to evaluate the next state from current state;
     /**
-     * @brief Finds an empty space in puzzle (in this case; a zero)
-     * @returns a pair indicating integer distances from top and right
+     * \brief Finds an empty space in puzzle (in this case; a zero)
+     * \returns a pair indicating integer distances from top and right
      * respectively, else returns -1, -1
      */
     std::pair<uint32_t, uint32_t> find_zero() {
@@ -85,21 +85,21 @@ class EightPuzzle {
         return {-1, -1};
     }
     /**
-     * @brief check whether the index value is bounded within the puzzle area
-     * @param value index for the current board
-     * @returns `true` if index is within the board, else `false`
+     * \brief check whether the index value is bounded within the puzzle area
+     * \param value index for the current board
+     * \returns `true` if index is within the board, else `false`
      */
     inline bool in_range(const uint32_t value) const { return value < N; }
 
  public:
     /**
-     * @brief get the value from i units from right and j units from left side
+     * \brief get the value from i units from right and j units from left side
      * of the board
-     * @param i integer denoting ith row
-     * @param j integer denoting column
-     * @returns non-negative integer denoting the value at ith row and jth
+     * \param i integer denoting ith row
+     * \param j integer denoting column
+     * \returns non-negative integer denoting the value at ith row and jth
      * column
-     * @returns -1 if invalid i or j position
+     * \returns -1 if invalid i or j position
      */
     uint32_t get(size_t i, size_t j) const {
         if (in_range(i) && in_range(j)) {
@@ -108,17 +108,17 @@ class EightPuzzle {
         return -1;
     }
     /**
-     * @brief Returns the current state of the board
+     * \brief Returns the current state of the board
      */
     std::array<std::array<uint32_t, N>, N> get_state() { return board; }
 
     /**
-     * @brief returns the size of the EightPuzzle (number of row / column)
-     * @return N, the size of the puzzle.
+     * \brief returns the size of the EightPuzzle (number of row / column)
+     * \return N, the size of the puzzle.
      */
     inline size_t get_size() const { return N; }
     /**
-     * @brief Default constructor for EightPuzzle
+     * \brief Default constructor for EightPuzzle
      */
     EightPuzzle() {
         for (size_t i = 0; i < N; ++i) {
@@ -128,32 +128,32 @@ class EightPuzzle {
         }
     }
     /**
-     * @brief Parameterized Constructor for EightPuzzle
-     * @param init a 2-dimensional array denoting a puzzle configuration
+     * \brief Parameterized Constructor for EightPuzzle
+     * \param init a 2-dimensional array denoting a puzzle configuration
      */
     explicit EightPuzzle(const std::array<std::array<uint32_t, N>, N> &init)
         : board(init) {}
 
     /**
-     * @brief Copy constructor
-     * @param A a reference of an EightPuzzle
+     * \brief Copy constructor
+     * \param A a reference of an EightPuzzle
      */
     EightPuzzle(const EightPuzzle<N> &A) : board(A.board) {}
 
     /**
-     * @brief Move constructor
-     * @param A a reference of an EightPuzzle
+     * \brief Move constructor
+     * \param A a reference of an EightPuzzle
      */
     EightPuzzle(const EightPuzzle<N> &&A) noexcept
         : board(std::move(A.board)) {}
     /**
-     * @brief Destructor of EightPuzzle
+     * \brief Destructor of EightPuzzle
      */
     ~EightPuzzle() = default;
 
     /**
-     * @brief Copy assignment operator
-     * @param A a reference of an EightPuzzle
+     * \brief Copy assignment operator
+     * \param A a reference of an EightPuzzle
      */
     EightPuzzle &operator=(const EightPuzzle &A) {
         board = A.board;
@@ -161,8 +161,8 @@ class EightPuzzle {
     }
 
     /**
-     * @brief Move assignment operator
-     * @param A a reference of an EightPuzzle
+     * \brief Move assignment operator
+     * \param A a reference of an EightPuzzle
      */
     EightPuzzle &operator=(EightPuzzle &&A) noexcept {
         board = std::move(A.board);
@@ -170,10 +170,10 @@ class EightPuzzle {
     }
 
     /**
-     * @brief Find all possible states after processing all possible
+     * \brief Find all possible states after processing all possible
      * moves, given the current state of the puzzle
-     * @returns list of vector containing all possible next moves
-     * @note the implementation is compulsory to create A* search
+     * \returns list of vector containing all possible next moves
+     * \note the implementation is compulsory to create A* search
      */
     std::vector<EightPuzzle<N>> generate_possible_moves() {
         auto zero_pos = find_zero();
@@ -195,8 +195,8 @@ class EightPuzzle {
         return NewStates;
     }
     /**
-     * @brief check whether two boards are equal
-     * @returns `true` if check.state is equal to `this->state`, else
+     * \brief check whether two boards are equal
+     * \returns `true` if check.state is equal to `this->state`, else
      * `false`
      */
     bool operator==(const EightPuzzle<N> &check) const {
@@ -213,8 +213,8 @@ class EightPuzzle {
         return true;
     }
     /**
-     * @brief check whether one board is lexicographically smaller
-     * @returns `true` if this->state is lexicographically smaller than
+     * \brief check whether one board is lexicographically smaller
+     * \returns `true` if this->state is lexicographically smaller than
      * `check.state`, else `false`
      */
     bool operator<(const EightPuzzle<N> &check) const {
@@ -228,8 +228,8 @@ class EightPuzzle {
         return false;
     }
     /**
-     * @brief check whether one board is lexicographically smaller or equal
-     * @returns `true` if this->state is lexicographically smaller than
+     * \brief check whether one board is lexicographically smaller or equal
+     * \returns `true` if this->state is lexicographically smaller than
      * `check.state` or same, else `false`
      */
     bool operator<=(const EightPuzzle<N> &check) const {
@@ -244,10 +244,10 @@ class EightPuzzle {
     }
 
     /**
-     * @brief friend operator to display EightPuzzle<>
-     * @param op ostream object
-     * @param SomeState a certain state.
-     * @returns ostream operator op
+     * \brief friend operator to display EightPuzzle<>
+     * \param op ostream object
+     * \param SomeState a certain state.
+     * \returns ostream operator op
      */
     friend std::ostream &operator<<(std::ostream &op,
                                     const EightPuzzle<N> &SomeState) {
@@ -261,11 +261,11 @@ class EightPuzzle {
     }
 };
 /**
- * @class AyStarSearch
- * @brief A class defining [A* search
+ * \class AyStarSearch
+ * \brief A class defining [A* search
  * algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm). for some
  * initial state and final state
- * @details AyStarSearch class is defined as the informed search algorithm
+ * \details AyStarSearch class is defined as the informed search algorithm
  * that is formulated in terms of weighted graphs: starting from a specific
  * starting node of a graph (initial state), it aims to find a path to the given
  * goal node having the smallest cost (least distance travelled, shortest time,
@@ -276,9 +276,9 @@ class EightPuzzle {
  * is evaluated as:
  * `F(state) = G(state) + H(state)`.
  * The best search would be the final state having minimum `F(state)` value
- * @tparam Puzzle denotes the puzzle or problem involving initial state and
+ * \tparam Puzzle denotes the puzzle or problem involving initial state and
  * final state to be solved by A* search.
- * @note 1. The algorithm is referred from pesudocode from
+ * \note 1. The algorithm is referred from pesudocode from
  * [Wikipedia page](https://en.wikipedia.org/wiki/A*_search_algorithm)
  * as is.
  * 2. For `AyStarSearch` to work, the definitions for template Puzzle is
@@ -289,7 +289,7 @@ class EightPuzzle {
 template <typename Puzzle>
 class AyStarSearch {
     /**
-     * @brief Struct that handles all the information related to the current
+     * \brief Struct that handles all the information related to the current
      * state.
      */
     typedef struct Info {
@@ -298,21 +298,21 @@ class AyStarSearch {
         size_t depth = 0;               /// stores g score
 
         /**
-         * @brief Default constructor
+         * \brief Default constructor
          */
         Info() = default;
 
         /**
-         * @brief constructor having Puzzle as parameter
-         * @param A a puzzle object
+         * \brief constructor having Puzzle as parameter
+         * \param A a puzzle object
          */
         explicit Info(const Puzzle &A) : state(std::make_shared<Puzzle>(A)) {}
 
         /**
-         * @brief constructor having three parameters
-         * @param A a puzzle object
-         * @param h_value heuristic value of this puzzle object
-         * @param depth the depth at which this node was found during traversal
+         * \brief constructor having three parameters
+         * \param A a puzzle object
+         * \param h_value heuristic value of this puzzle object
+         * \param depth the depth at which this node was found during traversal
          */
         Info(const Puzzle &A, size_t h_value, size_t d)
             : state(std::make_shared<Puzzle>(A)),
@@ -320,8 +320,8 @@ class AyStarSearch {
               depth(d) {}
 
         /**
-         * @brief Copy constructor
-         * @param A Info object reference
+         * \brief Copy constructor
+         * \param A Info object reference
          */
         Info(const Info &A)
             : state(std::make_shared<Puzzle>(A.state)),
@@ -329,8 +329,8 @@ class AyStarSearch {
               depth(A.depth) {}
 
         /**
-         * @brief Move constructor
-         * @param A Info object reference
+         * \brief Move constructor
+         * \param A Info object reference
          */
         Info(const Info &&A) noexcept
             : state(std::make_shared<Puzzle>(std::move(A.state))),
@@ -338,8 +338,8 @@ class AyStarSearch {
               depth(std::move(A.depth)) {}
 
         /**
-         * @brief copy assignment operator
-         * @param A Info object reference
+         * \brief copy assignment operator
+         * \param A Info object reference
          */
         Info &operator=(const Info &A) {
             state = A.state;
@@ -349,8 +349,8 @@ class AyStarSearch {
         }
 
         /**
-         * @brief move assignment operator
-         * @param A Info object reference
+         * \brief move assignment operator
+         * \param A Info object reference
          */
         Info &operator=(Info &&A) noexcept {
             state = std::move(A.state);
@@ -359,7 +359,7 @@ class AyStarSearch {
             return *this;
         }
         /**
-         * @brief Destructor for Info
+         * \brief Destructor for Info
          */
         ~Info() = default;
     } Info;
@@ -367,7 +367,7 @@ class AyStarSearch {
     std::shared_ptr<Info> Initial;  // Initial state of the AyStarSearch
     std::shared_ptr<Info> Final;    // Final state of the AyStarSearch
     /**
-     * @brief Custom comparator for open_list
+     * \brief Custom comparator for open_list
      */
     struct comparison_operator {
         bool operator()(const std::shared_ptr<Info> &a,
@@ -387,21 +387,21 @@ class AyStarSearch {
     using SetOfPuzzleInfo =
         std::set<std::shared_ptr<Info>, comparison_operator>;
     /**
-     * @brief Parameterized constructor for AyStarSearch
-     * @param initial denoting initial state of the puzzle
-     * @param final denoting final state of the puzzle
+     * \brief Parameterized constructor for AyStarSearch
+     * \param initial denoting initial state of the puzzle
+     * \param final denoting final state of the puzzle
      */
     AyStarSearch(const Puzzle &initial, const Puzzle &final) {
         Initial = std::make_shared<Info>(initial);
         Final = std::make_shared<Info>(final);
     }
     /**
-     * @brief A helper solution: launches when a solution for AyStarSearch
+     * \brief A helper solution: launches when a solution for AyStarSearch
      * is found
-     * @param FinalState the pointer to the obtained final state
-     * @param parent_of the list of all parents of nodes stored during A*
+     * \param FinalState the pointer to the obtained final state
+     * \param parent_of the list of all parents of nodes stored during A*
      * search
-     * @returns the list of moves denoting moves from final state to initial
+     * \returns the list of moves denoting moves from final state to initial
      * state (in reverse)
      */
     std::vector<Puzzle> Solution(
@@ -422,10 +422,10 @@ class AyStarSearch {
     }
     /**
      * Main algorithm for finding `FinalState`, given the `InitialState`
-     * @param dist the heuristic finction, defined by the user
-     * @param permissible_depth the depth at which the A* search discards
+     * \param dist the heuristic finction, defined by the user
+     * \param permissible_depth the depth at which the A* search discards
      * searching for solution
-     * @returns List of moves from Final state to initial state, if
+     * \returns List of moves from Final state to initial state, if
      * evaluated, else returns an empty array
      */
     std::vector<Puzzle> a_star_search(
@@ -530,8 +530,8 @@ class AyStarSearch {
 }  // namespace machine_learning
 
 /**
- * @brief Self test-implementations
- * @returns void
+ * \brief Self test-implementations
+ * \returns void
  */
 static void test() {
     // Renaming for simplicity
@@ -703,8 +703,8 @@ static void test() {
     }
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

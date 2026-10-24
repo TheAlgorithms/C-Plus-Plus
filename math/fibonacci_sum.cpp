@@ -1,15 +1,15 @@
 /**
- * @file
- * @brief An algorithm to calculate the sum of [Fibonacci
+ * \file
+ * \brief An algorithm to calculate the sum of [Fibonacci
  * Sequence](https://en.wikipedia.org/wiki/Fibonacci_number): \f$\mathrm{F}(n) +
  * \mathrm{F}(n+1) + .. + \mathrm{F}(m)\f$
- * @details An algorithm to calculate the sum of Fibonacci Sequence:
+ * \details An algorithm to calculate the sum of Fibonacci Sequence:
  * \f$\mathrm{F}(n) + \mathrm{F}(n+1) + .. + \mathrm{F}(m)\f$ where
  * \f$\mathrm{F}(i)\f$ denotes the i-th Fibonacci Number . Note that F(0) = 0
  * and F(1) = 1. The value of the sum is calculated using matrix exponentiation.
  * Reference source:
  * https://stackoverflow.com/questions/4357223/finding-the-sum-of-fibonacci-numbers
- * @author [Sarthak Sahu](https://github.com/SarthakSahu1009)
+ * \author [Sarthak Sahu](https://github.com/SarthakSahu1009)
  */
 
 #include <cassert>   /// for assert
@@ -18,13 +18,13 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @namespace fibonacci_sum
- * @brief Functions for the sum of the Fibonacci Sequence: \f$\mathrm{F}(n) +
+ * \namespace fibonacci_sum
+ * \brief Functions for the sum of the Fibonacci Sequence: \f$\mathrm{F}(n) +
  * \mathrm{F}(n+1) + .. + \mathrm{F}(m)\f$
  */
 namespace fibonacci_sum {
@@ -32,9 +32,9 @@ using matrix = std::vector<std::vector<uint64_t> >;
 
 /**
  * Function to multiply two matrices
- * @param T matrix 1
- * @param A martix 2
- * @returns resultant matrix
+ * \param T matrix 1
+ * \param A martix 2
+ * \returns resultant matrix
  */
 math::fibonacci_sum::matrix multiply(const math::fibonacci_sum::matrix &T,
                                      const math::fibonacci_sum::matrix &A) {
@@ -51,9 +51,9 @@ math::fibonacci_sum::matrix multiply(const math::fibonacci_sum::matrix &T,
 
 /**
  * Function to compute A^n where A is a matrix.
- * @param T matrix
- * @param ex power
- * @returns resultant matrix
+ * \param T matrix
+ * \param ex power
+ * \returns resultant matrix
  */
 math::fibonacci_sum::matrix power(math::fibonacci_sum::matrix T, uint64_t ex) {
     math::fibonacci_sum::matrix A{{1, 1}, {1, 0}};
@@ -71,8 +71,8 @@ math::fibonacci_sum::matrix power(math::fibonacci_sum::matrix T, uint64_t ex) {
 
 /**
  * Function to compute sum of fibonacci sequence from 0 to n.
- * @param n number
- * @returns uint64_t ans, the sum of sequence
+ * \param n number
+ * \returns uint64_t ans, the sum of sequence
  */
 uint64_t result(uint64_t n) {
     math::fibonacci_sum::matrix T{{1, 1}, {1, 0}};
@@ -84,9 +84,9 @@ uint64_t result(uint64_t n) {
 
 /**
  * Function to compute sum of fibonacci sequence from n to m.
- * @param n start of sequence
- * @param m end of sequence
- * @returns uint64_t the sum of sequence
+ * \param n start of sequence
+ * \param m end of sequence
+ * \returns uint64_t the sum of sequence
  */
 uint64_t fiboSum(uint64_t n, uint64_t m) {
     return (result(m + 2) - result(n + 1));
@@ -97,7 +97,7 @@ uint64_t fiboSum(uint64_t n, uint64_t m) {
 /**
  * Function for testing fiboSum function.
  * test cases and assert statement.
- * @returns `void`
+ * \returns `void`
  */
 static void test() {
     uint64_t n = 0, m = 3;
@@ -131,8 +131,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the tests

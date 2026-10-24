@@ -1,11 +1,11 @@
 /**
- * @file
- * @brief Implementation of the [Wave
+ * \file
+ * \brief Implementation of the [Wave
  * sort](https://www.geeksforgeeks.org/sort-array-wave-form-2/) algorithm
- * @details
+ * \details
  * Wave Sort is a sorting algorithm that works in \f$O(nlogn)\f$ time assuming
  * the sort function used works in \f$O(nlogn)\f$ time.
- * @author [Swastika Gupta](https://github.com/Swastyy)
+ * \author [Swastika Gupta](https://github.com/Swastyy)
  */
 
 #include <algorithm>  /// for std::is_sorted, std::swap
@@ -14,21 +14,21 @@
 #include <vector>     /// for std::vector
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 /**
- * @namespace wave_sort
- * @brief Functions for the [Wave
+ * \namespace wave_sort
+ * \brief Functions for the [Wave
  * sort](https://www.geeksforgeeks.org/sort-array-wave-form-2/) implementation
  */
 namespace wave_sort {
 /**
- * @brief The main function implements that implements the Wave Sort algorithm
- * @tparam T type of array
- * @param in_arr array to be sorted
- * @returns arr the wave sorted array
+ * \brief The main function implements that implements the Wave Sort algorithm
+ * \tparam T type of array
+ * \param in_arr array to be sorted
+ * \returns arr the wave sorted array
  */
 template <typename T>
 std::vector<T> waveSort(const std::vector<T> &in_arr, int64_t n) {
@@ -47,8 +47,8 @@ std::vector<T> waveSort(const std::vector<T> &in_arr, int64_t n) {
 }  // namespace sorting
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // [10, 90, 49, 2, 1, 5, 23] return [2, 1, 10, 5, 49, 23, 90]
@@ -85,8 +85,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

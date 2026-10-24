@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Iterative version of Preorder, Postorder, and preorder [Traversal of
+ * \file
+ * \brief Iterative version of Preorder, Postorder, and preorder [Traversal of
  * the Tree] (https://en.wikipedia.org/wiki/Tree_traversal)
- * @author [Motasim](https://github.com/motasimmakki)
- * @details
+ * \author [Motasim](https://github.com/motasimmakki)
+ * \details
  *
  * ### Iterative Preorder Traversal of a tree
  * Create a Stack that will store the Node of Tree.
@@ -42,18 +42,18 @@
 #include <vector>     /// for `vector`
 
 /**
- * @namespace others
- * @brief Other algorithms
+ * \namespace others
+ * \brief Other algorithms
  */
 namespace others {
 /**
- * @namespace iterative_tree_traversals
- * @brief Functions for the [Traversal of the
+ * \namespace iterative_tree_traversals
+ * \brief Functions for the [Traversal of the
  * Tree](https://en.wikipedia.org/wiki/Tree_traversal) algorithm
  */
 namespace iterative_tree_traversals {
 /**
- * @brief defines the structure of a node of the tree
+ * \brief defines the structure of a node of the tree
  */
 struct Node {
     int64_t data = 0;      ///< The value/key of the node.
@@ -62,7 +62,7 @@ struct Node {
 };
 
 /**
- * @brief defines the functions associated with the binary tree
+ * \brief defines the functions associated with the binary tree
  */
 class BinaryTree {
  public:
@@ -80,10 +80,10 @@ class BinaryTree {
 };
 
 /**
- * @brief will allocate the memory for a node and, along the data and return the
+ * \brief will allocate the memory for a node and, along the data and return the
  * node.
- * @param data value that a particular node will contain.
- * @return pointer to the newly created node with assigned data.
+ * \param data value that a particular node will contain.
+ * \return pointer to the newly created node with assigned data.
  */
 Node *BinaryTree::createNewNode(int64_t data) {
     Node *node = new Node();
@@ -93,11 +93,11 @@ Node *BinaryTree::createNewNode(int64_t data) {
 }
 
 /**
- * @brief preOrderIterative() function that will perform the preorder traversal
+ * \brief preOrderIterative() function that will perform the preorder traversal
  * iteratively, and return the result array that contain the preorder traversal
  * of a tree.
- * @param root head/root node of a tree
- * @return result that is containing the preorder traversal of a tree
+ * \param root head/root node of a tree
+ * \return result that is containing the preorder traversal of a tree
  */
 std::vector<int64_t> BinaryTree::preOrderIterative(Node *root) {
     std::stack<Node *>
@@ -123,11 +123,11 @@ std::vector<int64_t> BinaryTree::preOrderIterative(Node *root) {
 }
 
 /**
- * @brief postOrderIterative() function that will perform the postorder
+ * \brief postOrderIterative() function that will perform the postorder
  * traversal iteratively, and return the result array that contain the postorder
  * traversal of a tree.
- * @param root head/root node of a tree
- * @return result that is containing the postorder traversal of a tree
+ * \param root head/root node of a tree
+ * \return result that is containing the postorder traversal of a tree
  */
 std::vector<int64_t> BinaryTree::postOrderIterative(Node *root) {
     std::stack<Node *>
@@ -155,11 +155,11 @@ std::vector<int64_t> BinaryTree::postOrderIterative(Node *root) {
 }
 
 /**
- * @brief inOrderIterative() function that will perform the inorder traversal
+ * \brief inOrderIterative() function that will perform the inorder traversal
  * iteratively, and return the result array that contain the inorder traversal
  * of a tree.
- * @param root head/root node of a tree
- * @return result that is containing the inorder traversal of a tree
+ * \param root head/root node of a tree
+ * \return result that is containing the inorder traversal of a tree
  */
 std::vector<int64_t> BinaryTree::inOrderIterative(Node *root) {
     std::stack<Node *>
@@ -203,9 +203,9 @@ void deleteAll(Node *root) {
 }  // namespace others
 
 /**
- * @brief Test the computed preorder with the actual preorder.
- * @param binaryTree instance of the BinaryTree class
- * @param root head/root node of a tree
+ * \brief Test the computed preorder with the actual preorder.
+ * \param binaryTree instance of the BinaryTree class
+ * \param root head/root node of a tree
  */
 static void test1(others::iterative_tree_traversals::BinaryTree binaryTree,
                   others::iterative_tree_traversals::Node *root) {
@@ -230,9 +230,9 @@ static void test1(others::iterative_tree_traversals::BinaryTree binaryTree,
 }
 
 /**
- * @brief Test the computed postorder with the actual postorder.
- * @param binaryTree instance of BinaryTree class
- * @param root head/root node of a tree
+ * \brief Test the computed postorder with the actual postorder.
+ * \param binaryTree instance of BinaryTree class
+ * \param root head/root node of a tree
  */
 static void test2(others::iterative_tree_traversals::BinaryTree binaryTree,
                   others::iterative_tree_traversals::Node *root) {
@@ -257,9 +257,9 @@ static void test2(others::iterative_tree_traversals::BinaryTree binaryTree,
 }
 
 /**
- * @brief Test the computed inorder with the actual inorder.
- * @param binaryTree instance of BinaryTree class
- * @param root head/root node of a tree
+ * \brief Test the computed inorder with the actual inorder.
+ * \param binaryTree instance of BinaryTree class
+ * \param root head/root node of a tree
  */
 static void test3(others::iterative_tree_traversals::BinaryTree binaryTree,
                   others::iterative_tree_traversals::Node *root) {
@@ -284,9 +284,9 @@ static void test3(others::iterative_tree_traversals::BinaryTree binaryTree,
 }
 
 /**
- * @brief Test the computed preorder with the actual preorder on negative value.
- * @param binaryTree instance of BinaryTree class
- * @param root head/root node of a tree
+ * \brief Test the computed preorder with the actual preorder on negative value.
+ * \param binaryTree instance of BinaryTree class
+ * \param root head/root node of a tree
  */
 static void test4(others::iterative_tree_traversals::BinaryTree binaryTree,
                   others::iterative_tree_traversals::Node *root) {
@@ -311,10 +311,10 @@ static void test4(others::iterative_tree_traversals::BinaryTree binaryTree,
 }
 
 /**
- * @brief Test the computed postorder with the actual postorder on negative
+ * \brief Test the computed postorder with the actual postorder on negative
  * value.
- * @param binaryTree instance of BinaryTree class
- * @param root head/root node of a tree
+ * \param binaryTree instance of BinaryTree class
+ * \param root head/root node of a tree
  */
 static void test5(others::iterative_tree_traversals::BinaryTree binaryTree,
                   others::iterative_tree_traversals::Node *root) {
@@ -339,9 +339,9 @@ static void test5(others::iterative_tree_traversals::BinaryTree binaryTree,
 }
 
 /**
- * @brief Test the computed inorder with the actual inorder on negative value.
- * @param binaryTree instance of BinaryTree class
- * @param root head/root node of a tree
+ * \brief Test the computed inorder with the actual inorder on negative value.
+ * \param binaryTree instance of BinaryTree class
+ * \param root head/root node of a tree
  */
 static void test6(others::iterative_tree_traversals::BinaryTree binaryTree,
                   others::iterative_tree_traversals::Node *root) {
@@ -366,8 +366,8 @@ static void test6(others::iterative_tree_traversals::BinaryTree binaryTree,
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     // Creating a tree with the following structure,

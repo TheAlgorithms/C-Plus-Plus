@@ -1,15 +1,15 @@
 /**
- * @file
- * @brief An algorithm to calculate the sum of LCM: \f$\mathrm{LCM}(1,n) +
+ * \file
+ * \brief An algorithm to calculate the sum of LCM: \f$\mathrm{LCM}(1,n) +
  * \mathrm{LCM}(2,n) + \ldots + \mathrm{LCM}(n,n)\f$
- * @details An algorithm to calculate the sum of LCM: \f$\mathrm{LCM}(1,n) +
+ * \details An algorithm to calculate the sum of LCM: \f$\mathrm{LCM}(1,n) +
  * \mathrm{LCM}(2,n) + \ldots + \mathrm{LCM}(n,n)\f$ where
  * \f$\mathrm{LCM}(i,n)\f$ denotes the Least Common Multiple of the integers i
  * and n. For n greater than or equal to 1. The value of the sum is calculated
  * by formula: \f[ \sum\mathrm{LCM}(i, n) = \frac{1}{2} \left[\left(\sum (d *
  * \mathrm{ETF}(d)) + 1\right) * n\right] \f] where \mathrm{ETF}(i) represents
  * Euler totient function of i.
- * @author [Chesta Mittal](https://github.com/chestamittal)
+ * \author [Chesta Mittal](https://github.com/chestamittal)
  */
 
 #include <cassert>   /// for assert
@@ -18,14 +18,14 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
  * Function to compute sum of euler totients in sumOfEulerTotient vector
- * @param num input number
- * @returns int Sum of LCMs, i.e. ∑LCM(i, num) from i = 1 to num
+ * \param num input number
+ * \returns int Sum of LCMs, i.e. ∑LCM(i, num) from i = 1 to num
  */
 uint64_t lcmSum(const uint16_t& num) {
     uint64_t i = 0, j = 0;
@@ -61,7 +61,7 @@ uint64_t lcmSum(const uint16_t& num) {
 /**
  * Function for testing lcmSum function.
  * test cases and assert statement.
- * @returns `void`
+ * \returns `void`
  */
 static void test() {
     uint64_t n = 2;
@@ -91,8 +91,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the tests

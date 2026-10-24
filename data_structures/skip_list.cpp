@@ -1,16 +1,16 @@
 /**
- * @file skip_list.cpp
- * @brief Data structure for fast searching and insertion in \f$O(\log n)\f$
+ * \file skip_list.cpp
+ * \brief Data structure for fast searching and insertion in \f$O(\log n)\f$
  * time
- * @details
+ * \details
  * A skip list is a data structure that is used for storing a sorted list of
  * items with a help of hierarchy of linked lists that connect increasingly
  * sparse subsequences of the items
  *
  * References used: [GeeksForGeek](https://www.geeksforgeeks.org/skip-list/),
  * [OpenGenus](https://iq.opengenus.org/skip-list) for PseudoCode and Code
- * @author [enqidu](https://github.com/enqidu)
- * @author [Krishna Vedala](https://github.com/kvedala)
+ * \author [enqidu](https://github.com/enqidu)
+ * \author [Krishna Vedala](https://github.com/kvedala)
  */
 
 #include <array>
@@ -38,8 +38,8 @@ struct Node {
 
     /**
      * Creates node with provided key, level and value
-     * @param key is number that is used for comparision
-     * @param level is the maximum level node's going to added
+     * \param key is number that is used for comparision
+     * \param level is the maximum level node's going to added
      */
     Node(int key, int level, void* value = nullptr) : key(key), value(value) {
         // Initialization of forward vector
@@ -70,7 +70,7 @@ class SkipList {
     /**
      * Returns random level of the skip list.
      * Every higher level is 2 times less likely.
-     * @return random level for skip list
+     * \return random level for skip list
      */
     int randomLevel() {
         int lvl = 0;
@@ -84,8 +84,8 @@ class SkipList {
     /**
      * Inserts elements with given key and value;
      * It's level is computed by randomLevel() function.
-     * @param key is number that is used for comparision
-     * @param value pointer to a value, that can be any type
+     * \param key is number that is used for comparision
+     * \param value pointer to a value, that can be any type
      */
     void insertElement(int key, void* value) {
         std::cout << "Inserting" << key << "...";
@@ -128,7 +128,7 @@ class SkipList {
 
     /**
      * Deletes an element by key and prints if has been removed successfully
-     * @param key is number that is used for comparision.
+     * \param key is number that is used for comparision.
      */
     void deleteElement(int key) {
         std::shared_ptr<Node> x = header;
@@ -164,8 +164,8 @@ class SkipList {
 
     /**
      * Searching element in skip list structure
-     * @param key is number that is used for comparision
-     * @return pointer to the value of the node
+     * \param key is number that is used for comparision
+     * \return pointer to the value of the node
      */
     void* searchElement(int key) {
         std::shared_ptr<Node> x = header;

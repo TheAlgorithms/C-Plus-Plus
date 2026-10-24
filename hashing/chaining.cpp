@@ -1,8 +1,8 @@
 /**
- * @file chaining.cpp
- * @author [vasutomar](https://github.com/vasutomar)
- * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief Implementation of [hash
+ * \file chaining.cpp
+ * \author [vasutomar](https://github.com/vasutomar)
+ * \author [Krishna Vedala](https://github.com/kvedala)
+ * \brief Implementation of [hash
  * chains](https://en.wikipedia.org/wiki/Hash_chain).
  */
 #include <cmath>
@@ -11,12 +11,12 @@
 #include <vector>
 
 /**
- * @brief Chain class with a given modulus
+ * \brief Chain class with a given modulus
  */
 class hash_chain {
  private:
     /**
-     * @brief Define a linked node
+     * \brief Define a linked node
      */
     using Node = struct Node {
         int data{};                         ///< data stored in the node
@@ -28,19 +28,19 @@ class hash_chain {
 
  public:
     /**
-     * @brief Construct a new chain object
+     * \brief Construct a new chain object
      *
-     * @param mod modulus of the chain
+     * \param mod modulus of the chain
      */
     explicit hash_chain(int mod) : _mod(mod) {
         while (mod--) head.push_back(nullptr);
     }
 
     /**
-     * @brief create and add a new node with a give value and at a given height
+     * \brief create and add a new node with a give value and at a given height
      *
-     * @param x value at the new node
-     * @param h height of the node
+     * \param x value at the new node
+     * \param h height of the node
      */
     void add(int x, int h) {
         std::shared_ptr<Node> curr;
@@ -58,7 +58,7 @@ class hash_chain {
     }
 
     /**
-     * @brief Display the chain
+     * \brief Display the chain
      */
     void display() {
         std::shared_ptr<Node> temp = nullptr;
@@ -80,23 +80,23 @@ class hash_chain {
     }
 
     /**
-     * @brief Compute the hash of a value for current chain
+     * \brief Compute the hash of a value for current chain
      *
-     * @param x value to compute modulus of
-     * @return modulus of `x`
-     * @note declared as a
+     * \param x value to compute modulus of
+     * \return modulus of `x`
+     * \note declared as a
      * [`virtual`](https://en.cppreference.com/w/cpp/language/virtual) so that
      * custom implementations of the class can modify the hash function.
      */
     virtual int hash(int x) const { return x % _mod; }
 
     /**
-     * @brief Find if a value and corresponding hash exist
+     * \brief Find if a value and corresponding hash exist
      *
-     * @param x value to search for
-     * @param h corresponding hash key
-     * @returns `true` if element found
-     * @returns `false` if element not found
+     * \param x value to search for
+     * \param h corresponding hash key
+     * \returns `true` if element found
+     * \returns `false` if element not found
      */
     bool find(int x, int h) const {
         std::shared_ptr<Node> temp = head[h];
@@ -128,7 +128,7 @@ class hash_chain {
 };
 
 /** Main function
- * @returns `0` always
+ * \returns `0` always
  */
 int main() {
     int c = 0, x = 0, mod = 0, h = 0;

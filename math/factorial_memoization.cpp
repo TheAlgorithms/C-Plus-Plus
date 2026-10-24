@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Factorial](https://en.wikipedia.org/wiki/Factorial) calculation using
+ * \file
+ * \brief [Factorial](https://en.wikipedia.org/wiki/Factorial) calculation using
  * recursion and [memoization](https://en.wikipedia.org/wiki/Memoization)
- * @details
+ * \details
  * This program computes the factorial of a non-negative integer using recursion
  * with memoization (top-down dynamic programming). It stores intermediate
  * results to avoid redundant calculations for improved efficiency.
@@ -29,9 +29,9 @@ class MemorisedFactorial {
 
  public:
     /**
-     * @note This function was intentionally written as recursive
+     * \note This function was intentionally written as recursive
      * and it does not handle overflows.
-     * @returns factorial of n
+     * \returns factorial of n
      */
     std::uint64_t operator()(std::uint64_t n) {
         if (n >= this->known_values.size()) {
@@ -55,8 +55,8 @@ void test_MemorisedFactorial_no_order() {
 }
 
 /**
- * @brief Main function to run tests
- * @returns 0 on program success
+ * \brief Main function to run tests
+ * \returns 0 on program success
  */
 int main() {
     test_MemorisedFactorial_in_order();

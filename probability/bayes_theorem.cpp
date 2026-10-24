@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem)
+ * \file
+ * \brief [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem)
  *
  * Bayes' theorem allows one to find \f$P(A|B)\f$ given \f$P(B|A)\f$ or
  * \f$P(B|A)\f$ given \f$P(A|B)\f$ and \f$P(A)\f$ and \f$P(B)\f$.\n

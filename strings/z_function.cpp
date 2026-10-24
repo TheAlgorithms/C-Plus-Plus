@@ -1,14 +1,14 @@
 /**
- * @file
- * @brief The [Z function](https://cp-algorithms.com/string/z-function.html) for
+ * \file
+ * \brief The [Z function](https://cp-algorithms.com/string/z-function.html) for
  * finding occurences of a pattern within a piece of text with time and space
  * complexity O(n + m)
- * @details
+ * \details
  * 1. The Z-function for a string is an array of length n where the
  * i-th element is equal to the greatest number of characters starting
  * from the position i that coincide with the first characters of s.
  * 2. E.g.: string: ababb then z[2]=2 as s[2]=s[0] and s[3]=s[1] and s[4]!=s[2]
- * @author [Ritika Gupta](https://github.com/RitikaGupta8734)
+ * \author [Ritika Gupta](https://github.com/RitikaGupta8734)
  */
 
 #include <cstdint>
@@ -22,7 +22,7 @@
 #include <vector>   /// for std::vector
 
 /**
- * @brief Generate the Z-function for the inputted string.
+ * \brief Generate the Z-function for the inputted string.
  * \param[in] pattern text on which to apply the Z-function
  * \returns the Z-function output as a vector array
  */
@@ -46,7 +46,7 @@ std::vector<uint64_t> Z_function(const std::string &pattern) {
 }
 
 /**
- * @brief Using Z_function to find a pattern in a text
+ * \brief Using Z_function to find a pattern in a text
  * \param[in] pattern string pattern to search
  * \param[in] text text in which to search
  * \returns a vector of starting indexes where pattern is found in the text
@@ -66,8 +66,8 @@ std::vector<uint64_t> find_pat_in_text(const std::string &pattern,
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // usual case
@@ -104,8 +104,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

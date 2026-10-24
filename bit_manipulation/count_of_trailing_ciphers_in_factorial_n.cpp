@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Count the number of
+ * \file
+ * \brief [Count the number of
  * ciphers](https://www.tutorialspoint.com/count-trailing-zeros-in-factorial-of-a-number-in-cplusplus) in `n!` implementation
- * @details
+ * \details
  * Given an integer number as input. The goal is to find the number of trailing
  zeroes in the factorial calculated for
  * that number. A factorial of a number N is a product of all numbers in the
@@ -14,7 +14,7 @@
  factorization of that number. Dividing a
  * number by powers of 5 will give us the count of 5s in its factors. So, the
  number of 5s will tell us the number of trailing zeroes.
- * @author [Swastika Gupta](https://github.com/Swastyy)
+ * \author [Swastika Gupta](https://github.com/Swastyy)
  */
 
 #include <cassert>   /// for assert
@@ -22,21 +22,21 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
+ * \namespace bit_manipulation
+ * \brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 /**
- * @namespace count_of_trailing_ciphers_in_factorial_n
- * @brief Functions for the [Count the number of
+ * \namespace count_of_trailing_ciphers_in_factorial_n
+ * \brief Functions for the [Count the number of
  * ciphers](https://www.tutorialspoint.com/count-trailing-zeros-in-factorial-of-a-number-in-cplusplus)
  * in `n!` implementation
  */
 namespace count_of_trailing_ciphers_in_factorial_n {
 /**
- * @brief Function to count the number of the trailing ciphers
- * @param n number for which `n!` ciphers are returned
- * @return count, Number of ciphers in `n!`.
+ * \brief Function to count the number of the trailing ciphers
+ * \param n number for which `n!` ciphers are returned
+ * \return count, Number of ciphers in `n!`.
  */
 uint64_t numberOfCiphersInFactorialN(uint64_t n) {
     // count is to store the number of 5's in factorial(n)
@@ -54,8 +54,8 @@ uint64_t numberOfCiphersInFactorialN(uint64_t n) {
 }  // namespace bit_manipulation
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st test
@@ -90,8 +90,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

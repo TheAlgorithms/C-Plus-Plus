@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Counting Inversions using [Merge
+ * \file
+ * \brief Counting Inversions using [Merge
  Sort](https://en.wikipedia.org/wiki/Merge_sort)
  *
- * @details
+ * \details
  * Program to count the number of inversions in an array
  * using merge-sort.
  *
@@ -38,7 +38,7 @@
  given half.
  *   5. Print the answer
  *
- * @author [Rakshit Raj](https://github.com/rakshitraj)
+ * \author [Rakshit Raj](https://github.com/rakshitraj)
  */
 #include <cassert>   /// for assert
 #include <cstdint>   /// for typedef datatype uint64_t
@@ -46,13 +46,13 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 /**
- * @namespace inversion
- * @brief Functions for counting inversions using Merge Sort algorithm
+ * \namespace inversion
+ * \brief Functions for counting inversions using Merge Sort algorithm
  */
 namespace inversion {
 
@@ -63,9 +63,9 @@ namespace inversion {
 // void show(int* arr, const int size);
 
 /**
- * @brief Function to merge two sub-arrays.
+ * \brief Function to merge two sub-arrays.
  *
- * @details
+ * \details
  * merge() function is called from mergeSort()
  * to merge the array after it split for sorting
  * by the mergeSort() funtion.
@@ -73,13 +73,13 @@ namespace inversion {
  * In this case the merge fuction will also count and return
  * inversions detected when merging the sub arrays.
  *
- * @param arr    input array, data-menber of vector
- * @param temp   stores the resultant merged array
- * @param left   lower bound of `arr[]` and left-sub-array
- * @param mid    midpoint, upper bound of left sub-array,
+ * \param arr    input array, data-menber of vector
+ * \param temp   stores the resultant merged array
+ * \param left   lower bound of `arr[]` and left-sub-array
+ * \param mid    midpoint, upper bound of left sub-array,
  *               `(mid+1)` gives the lower bound of right-sub-array
- * @param right  upper bound of `arr[]` and right-sub-array
- * @returns number of inversions found in merge step
+ * \param right  upper bound of `arr[]` and right-sub-array
+ * \returns number of inversions found in merge step
  */
 template <typename T>
 uint32_t merge(T* arr, T* temp, uint32_t left, uint32_t mid, uint32_t right) {
@@ -113,20 +113,20 @@ uint32_t merge(T* arr, T* temp, uint32_t left, uint32_t mid, uint32_t right) {
 }
 
 /**
- * @brief Implement merge Sort and count inverions while merging
+ * \brief Implement merge Sort and count inverions while merging
  *
- * @details
+ * \details
  * The mergeSort() function implements Merge Sort, a
  * Divide and conquer algorithm, it divides the input
  * array into two halves and calls itself for each
  * sub-array and then calls the merge() function to
  * merge the two halves.
  *
- * @param arr   - array to be sorted
- * @param temp  - merged resultant array
- * @param left  - lower bound of array
- * @param right - upper bound of array
- * @returns number of inversions in array
+ * \param arr   - array to be sorted
+ * \param temp  - merged resultant array
+ * \param left  - lower bound of array
+ * \param right - upper bound of array
+ * \returns number of inversions in array
  */
 template <typename T>
 uint32_t mergeSort(T* arr, T* temp, uint32_t left, uint32_t right) {
@@ -145,20 +145,20 @@ uint32_t mergeSort(T* arr, T* temp, uint32_t left, uint32_t right) {
 }
 
 /**
- * @brief Function countInversion() returns the number of inversion
+ * \brief Function countInversion() returns the number of inversion
  * present in the input array. Inversions are an estimate of
  * how close or far off the array is to being sorted.
  *
- * @details
+ * \details
  * Number of inversions in a sorted array is 0.
  * Number of inversion in an array[1...n] sorted in
  * non-ascending order is n(n-1)/2, since each pair of elements
  * contitute an inversion.
  *
- * @param arr   - array, data member of std::vector<int>, input for counting
+ * \param arr   - array, data member of std::vector<int>, input for counting
  * inversions
- * @param array_size    - number of elementa in the array
- * @returns number of inversions in input array, sorts the array
+ * \param array_size    - number of elementa in the array
+ * \returns number of inversions in input array, sorts the array
  */
 template <class T>
 uint32_t countInversion(T* arr, const uint32_t size) {
@@ -169,10 +169,10 @@ uint32_t countInversion(T* arr, const uint32_t size) {
 }
 
 /**
- * @brief UTILITY function to print array.
- * @param arr[]   array to print
- * @param array_size    size of input array arr[]
- * @returns void
+ * \brief UTILITY function to print array.
+ * \param arr[]   array to print
+ * \param array_size    size of input array arr[]
+ * \returns void
  *
  */
 template <typename T>
@@ -188,8 +188,8 @@ void show(T* arr, const uint32_t array_size) {
 }  // namespace sorting
 
 /**
- * @brief Test implementations
- * @returns void
+ * \brief Test implementations
+ * \returns void
  */
 static void test() {
     // Test 1
@@ -265,8 +265,8 @@ static void test() {
 // }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // Run test implementations

@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Implementation of [Reversing
+ * \file
+ * \brief Implementation of [Reversing
  * a single linked list](https://simple.wikipedia.org/wiki/Linked_list)
- * @details
+ * \details
  * The linked list is a data structure used for holding a sequence of
  * values, which can be added, displayed, reversed, or removed.
  * ### Algorithm
@@ -27,13 +27,13 @@
 #include <new>       /// for managing  dynamic storage
 
 /**
- * @namespace data_structures
- * @brief Data Structures algorithms
+ * \namespace data_structures
+ * \brief Data Structures algorithms
  */
 namespace data_structures {
 /**
- * @namespace linked_list
- * @brief Functions for singly linked list algorithm
+ * \namespace linked_list
+ * \brief Functions for singly linked list algorithm
  */
 namespace linked_list {
 /**
@@ -46,9 +46,9 @@ class Node {
 };
 
 /**
- *  @brief creates a deep copy of a list starting at the input node
- *  @param[in] node pointer to the first node/head of the list to be copied
- *  @return pointer to the first node/head of the copied list or nullptr
+ *  \brief creates a deep copy of a list starting at the input node
+ *  \param[in] node pointer to the first node/head of the list to be copied
+ *  \return pointer to the first node/head of the copied list or nullptr
  */
 Node* copy_all_nodes(const Node* const node) {
     if (node) {
@@ -86,15 +86,15 @@ class list {
 };
 
 /**
- * @brief Utility function that checks if the list is empty
- * @returns true if the list is empty
- * @returns false if the list is not empty
+ * \brief Utility function that checks if the list is empty
+ * \returns true if the list is empty
+ * \returns false if the list is not empty
  */
 bool list::isEmpty() const { return head == nullptr; }
 
 /**
- * @brief Utility function that adds a new element at the end of the list
- * @param new_elem element be added at the end of the list
+ * \brief Utility function that adds a new element at the end of the list
+ * \param new_elem element be added at the end of the list
  */
 void list::insert(int32_t n) {
     try {
@@ -118,9 +118,9 @@ void list::insert(int32_t n) {
 }
 
 /**
- * @brief Utility function for reversing a list
- * @brief Using the current, previous, and next pointer.
- * @returns void
+ * \brief Utility function for reversing a list
+ * \brief Using the current, previous, and next pointer.
+ * \returns void
  */
 void list::reverseList() {
     Node* curr = head;
@@ -136,8 +136,8 @@ void list::reverseList() {
 }
 
 /**
- * @brief Utility function to find the top element of the list
- * @returns the top element of the list
+ * \brief Utility function to find the top element of the list
+ * \returns the top element of the list
  */
 int32_t list::top() const {
     if (!isEmpty()) {
@@ -147,8 +147,8 @@ int32_t list::top() const {
     }
 }
 /**
- *  @brief Utility function to find the last element of the list
- *  @returns the last element of the list
+ *  \brief Utility function to find the last element of the list
+ *  \returns the last element of the list
  */
 int32_t list::last() const {
     if (!isEmpty()) {
@@ -162,8 +162,8 @@ int32_t list::last() const {
     }
 }
 /**
- *  @brief Utility function to find the i th element of the list
- *  @returns the i th element of the list
+ *  \brief Utility function to find the i th element of the list
+ *  \returns the i th element of the list
  */
 int32_t list::traverse(int32_t index) const {
     Node* current = head;
@@ -183,7 +183,7 @@ int32_t list::traverse(int32_t index) const {
 }
 
 /**
- *  @brief calls delete operator on every node in the represented list
+ *  \brief calls delete operator on every node in the represented list
  */
 void list::delete_all_nodes() {
     while (head != nullptr) {
@@ -201,12 +201,12 @@ void list::copy_all_nodes_from_list(const list& other) {
 }
 
 /**
- *  @brief copy constructor creating a deep copy of every node of the input
+ *  \brief copy constructor creating a deep copy of every node of the input
  */
 list::list(const list& other) { copy_all_nodes_from_list(other); }
 
 /**
- *  @brief assignment operator creating a deep copy of every node of the input
+ *  \brief assignment operator creating a deep copy of every node of the input
  */
 list& list::operator=(const list& other) {
     if (this == &other) {
@@ -222,8 +222,8 @@ list& list::operator=(const list& other) {
 }  // namespace data_structures
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     data_structures::linked_list::list L;
@@ -295,8 +295,8 @@ void test_assignment_operator() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

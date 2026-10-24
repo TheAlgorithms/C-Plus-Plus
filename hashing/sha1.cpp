@@ -1,10 +1,10 @@
 /**
- * @file
- * @author [tGautot](https://github.com/tGautot)
- * @brief Simple C++ implementation of the [SHA-1 Hashing
+ * \file
+ * \author [tGautot](https://github.com/tGautot)
+ * \brief Simple C++ implementation of the [SHA-1 Hashing
  * Algorithm](https://en.wikipedia.org/wiki/SHA-1)
  *
- * @details
+ * \details
  * [SHA-1](https://en.wikipedia.org/wiki/SHA-1) is a cryptographic hash function
  * that was developped by the
  * [NSA](https://en.wikipedia.org/wiki/National_Security_Agency) 1995.
@@ -25,7 +25,7 @@
  * on the blocks previously built. Please take a look at the [wikipedia
  * article](https://en.wikipedia.org/wiki/SHA-1#SHA-1_pseudocode) for more
  * precision on these operations
- * @note This is a simple implementation for a byte string but
+ * \note This is a simple implementation for a byte string but
  * some implmenetations can work on bytestream, messages of unknown length.
  */
 
@@ -39,30 +39,30 @@
 #include <vector>     /// For std::vector
 
 /**
- * @namespace hashing
- * @brief Hashing algorithms
+ * \namespace hashing
+ * \brief Hashing algorithms
  */
 namespace hashing {
 /**
- * @namespace SHA-1
- * @brief Functions for the [SHA-1](https://en.wikipedia.org/wiki/SHA-1)
+ * \namespace SHA-1
+ * \brief Functions for the [SHA-1](https://en.wikipedia.org/wiki/SHA-1)
  * algorithm implementation
  */
 namespace sha1 {
 /**
- * @brief Rotates the bits of a 32-bit unsigned integer
- * @param n Integer to rotate
- * @param rotate How many bits for the rotation
- * @return uint32_t The rotated integer
+ * \brief Rotates the bits of a 32-bit unsigned integer
+ * \param n Integer to rotate
+ * \param rotate How many bits for the rotation
+ * \return uint32_t The rotated integer
  */
 uint32_t leftRotate32bits(uint32_t n, std::size_t rotate) {
     return (n << rotate) | (n >> (32 - rotate));
 }
 
 /**
- * @brief Transforms the 160-bit SHA-1 signature into a 40 char hex string
- * @param sig The SHA-1 signature (Expected 20 bytes)
- * @return std::string The hex signature
+ * \brief Transforms the 160-bit SHA-1 signature into a 40 char hex string
+ * \param sig The SHA-1 signature (Expected 20 bytes)
+ * \return std::string The hex signature
  */
 std::string sig2hex(void* sig) {
     const char* hexChars = "0123456789abcdef";
@@ -76,10 +76,10 @@ std::string sig2hex(void* sig) {
 }
 
 /**
- * @brief The SHA-1 algorithm itself, taking in a bytestring
- * @param input_bs The bytestring to hash
- * @param input_size The size (in BYTES) of the input
- * @return void* Pointer to the 160-bit signature
+ * \brief The SHA-1 algorithm itself, taking in a bytestring
+ * \param input_bs The bytestring to hash
+ * \param input_size The size (in BYTES) of the input
+ * \return void* Pointer to the 160-bit signature
  */
 void* hash_bs(const void* input_bs, uint64_t input_size) {
     auto* input = static_cast<const uint8_t*>(input_bs);
@@ -204,9 +204,9 @@ void* hash_bs(const void* input_bs, uint64_t input_size) {
 }
 
 /**
- * @brief Converts the string to bytestring and calls the main algorithm
- * @param message Plain character message to hash
- * @return void* Pointer to the SHA-1 signature
+ * \brief Converts the string to bytestring and calls the main algorithm
+ * \param message Plain character message to hash
+ * \return void* Pointer to the SHA-1 signature
  */
 void* hash(const std::string& message) {
     return hash_bs(&message[0], message.size());
@@ -215,8 +215,8 @@ void* hash(const std::string& message) {
 }  // namespace hashing
 
 /**
- * @brief Self-test implementations of well-known SHA-1 hashes
- * @returns void
+ * \brief Self-test implementations of well-known SHA-1 hashes
+ * \returns void
  */
 static void test() {
     // Hashes empty string and stores signature
@@ -268,9 +268,9 @@ static void test() {
 }
 
 /**
- * @brief Puts user in a loop where inputs can be given and SHA-1 hash will be
+ * \brief Puts user in a loop where inputs can be given and SHA-1 hash will be
  * computed and printed
- * @returns void
+ * \returns void
  */
 static void interactive() {
     while (true) {
@@ -294,8 +294,8 @@ static void interactive() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,6 +1,6 @@
 /**
- * @file hill_cipher.cpp
- * @brief Implementation of [Hill
+ * \file hill_cipher.cpp
+ * \brief Implementation of [Hill
  * cipher](https://en.wikipedia.org/wiki/Hill_cipher) algorithm.
  *
  * Program to generate the encryption-decryption key and perform encryption and
@@ -30,7 +30,7 @@
  * guarantee an invertible modulus matrix. \todo Better matrix generation
  * algorithm.
  *
- * @author [Krishna Vedala](https://github.com/kvedala)
+ * \author [Krishna Vedala](https://github.com/kvedala)
  */
 
 #include <cassert>
@@ -76,18 +76,18 @@ static const char *STRKEY =
     "*()_+`-=[]{}|;':\",./<>?\\\r\n \0";
 
 /**
- * @brief Implementation of [Hill
+ * \brief Implementation of [Hill
  * Cipher](https://en.wikipedia.org/wiki/Hill_cipher) algorithm
  */
 class HillCipher {
  private:
     /**
-     * @brief Function to generate a random integer in a given interval
+     * \brief Function to generate a random integer in a given interval
      *
-     * @param a lower limit of interval
-     * @param b upper limit of interval
-     * @tparam T type of output
-     * @return random integer in the interval \f$[a,b)\f$
+     * \param a lower limit of interval
+     * \param b upper limit of interval
+     * \tparam T type of output
+     * \return random integer in the interval \f$[a,b)\f$
      */
     template <typename T1, typename T2>
     static const T2 rand_range(T1 a, T1 b) {
@@ -99,17 +99,17 @@ class HillCipher {
     }
 
     /**
-     * @brief Function overload to fill a matrix with random integers in a given
+     * \brief Function overload to fill a matrix with random integers in a given
      * interval
      *
-     * @param M pointer to matrix to be filled with random numbers
-     * @param a lower limit of interval
-     * @param b upper limit of interval
-     * @tparam T1 type of input range
-     * @tparam T2 type of matrix
-     * @return determinant of generated random matrix
+     * \param M pointer to matrix to be filled with random numbers
+     * \param a lower limit of interval
+     * \param b upper limit of interval
+     * \tparam T1 type of input range
+     * \tparam T2 type of matrix
+     * \return determinant of generated random matrix
      *
-     * @warning There will need to be a balance between the matrix size and the
+     * \warning There will need to be a balance between the matrix size and the
      * range of random numbers. If the matrix is large, the range of random
      * numbers must be small to have a well defined keys. Or if the matrix is
      * smaller, the random numbers range can be larger. For an 8x8 matrix, range
@@ -127,13 +127,13 @@ class HillCipher {
     }
 
     /**
-     * @brief Compute
+     * \brief Compute
      * [GCD](https://en.wikipedia.org/wiki/Greatest_common_divisor) of two
      * integers using Euler's algorithm
      *
-     * @param a first number
-     * @param b second number
-     * @return GCD of \f$a\f$ and \f$b\f$
+     * \param a first number
+     * \param b second number
+     * \return GCD of \f$a\f$ and \f$b\f$
      */
     template <typename T>
     static const T gcd(T a, T b) {
@@ -150,12 +150,12 @@ class HillCipher {
     }
 
     /**
-     * @brief helper function to perform vector multiplication with encryption
+     * \brief helper function to perform vector multiplication with encryption
      * or decryption matrix
      *
-     * @param vector vector to multiply
-     * @param key encryption or decryption key matrix
-     * @return corresponding encrypted or decrypted text
+     * \param vector vector to multiply
+     * \param key encryption or decryption key matrix
+     * \return corresponding encrypted or decrypted text
      */
     static const std::valarray<uint8_t> mat_mul(
         const std::valarray<uint8_t> &vector, const matrix<int> &key) {
@@ -175,18 +175,18 @@ class HillCipher {
     }
 
     /**
-     * @brief Get the character at a given index in the ::STRKEY
+     * \brief Get the character at a given index in the ::STRKEY
      *
-     * @param idx index value
-     * @return character at the index
+     * \param idx index value
+     * \return character at the index
      */
     static inline char get_idx_char(const uint8_t idx) { return STRKEY[idx]; }
 
     /**
-     * @brief Get the index of a character in the ::STRKEY
+     * \brief Get the index of a character in the ::STRKEY
      *
-     * @param ch character to search
-     * @return index of character
+     * \param ch character to search
+     * \return index of character
      */
     static inline uint8_t get_char_idx(const char ch) {
         size_t L = std::strlen(STRKEY);
@@ -201,12 +201,12 @@ class HillCipher {
     }
 
     /**
-     * @brief Convenience function to perform block cipher operations. The
+     * \brief Convenience function to perform block cipher operations. The
      * operations are identical for both encryption and decryption.
      *
-     * @param text input text to encrypt or decrypt
-     * @param key key for encryption or decryption
-     * @return encrypted/decrypted output
+     * \param text input text to encrypt or decrypt
+     * \param key key for encryption or decryption
+     * \return encrypted/decrypted output
      */
     static const std::string codec(const std::string &text,
                                    const matrix<int> &key) {
@@ -321,7 +321,7 @@ class HillCipher {
 
  public:
     /**
-     * @brief Generate encryption matrix of a given size. Larger size matrices
+     * \brief Generate encryption matrix of a given size. Larger size matrices
      * are difficult to generate but provide more security. Important conditions
      * are:
      * 1. matrix should be invertible
@@ -332,10 +332,10 @@ class HillCipher {
      * the goals. Bigger the matrix, greater is the probability of the matrix
      * being ill-defined.
      *
-     * @param size size of matrix (typically \f$\text{size}\le10\f$)
-     * @param limit1 lower limit of range of random elements (default=0)
-     * @param limit2 upper limit of range of random elements (default=10)
-     * @return Encryption martix
+     * \param size size of matrix (typically \f$\text{size}\le10\f$)
+     * \param limit1 lower limit of range of random elements (default=0)
+     * \param limit2 upper limit of range of random elements (default=10)
+     * \return Encryption martix
      */
     static matrix<int> generate_encryption_key(size_t size, int limit1 = 0,
                                                int limit2 = 10) {
@@ -364,10 +364,10 @@ class HillCipher {
     }
 
     /**
-     * @brief Generate decryption matrix from an encryption matrix key.
+     * \brief Generate decryption matrix from an encryption matrix key.
      *
-     * @param encrypt_key encryption key for which to create a decrypt key
-     * @return Decryption martix
+     * \param encrypt_key encryption key for which to create a decrypt key
+     * \return Decryption martix
      */
     static matrix<int> generate_decryption_key(matrix<int> const &encrypt_key) {
         size_t size = encrypt_key.size();
@@ -411,15 +411,15 @@ class HillCipher {
     }
 
     /**
-     * @brief Generate encryption and decryption key pair
+     * \brief Generate encryption and decryption key pair
      *
-     * @param size size of matrix key (typically \f$\text{size}\le10\f$)
-     * @param limit1 lower limit of range of random elements (default=0)
-     * @param limit2 upper limit of range of random elements (default=10)
-     * @return std::pair<matrix<int>, matrix<int>> encryption and decryption
+     * \param size size of matrix key (typically \f$\text{size}\le10\f$)
+     * \param limit1 lower limit of range of random elements (default=0)
+     * \param limit2 upper limit of range of random elements (default=10)
+     * \return std::pair<matrix<int>, matrix<int>> encryption and decryption
      * keys as a pair
      *
-     * @see ::generate_encryption_key
+     * \see ::generate_encryption_key
      */
     static std::pair<matrix<int>, matrix<int>> generate_keys(size_t size,
                                                              int limit1 = 0,
@@ -436,11 +436,11 @@ class HillCipher {
     }
 
     /**
-     * @brief Encrypt a given text using a given key
+     * \brief Encrypt a given text using a given key
      *
-     * @param text string to encrypt
-     * @param encrypt_key  key for encryption
-     * @return encrypted text
+     * \param text string to encrypt
+     * \param encrypt_key  key for encryption
+     * \return encrypted text
      */
     static const std::string encrypt_text(const std::string &text,
                                           const matrix<int> &encrypt_key) {
@@ -448,11 +448,11 @@ class HillCipher {
     }
 
     /**
-     * @brief Decrypt a given text using a given key
+     * \brief Decrypt a given text using a given key
      *
-     * @param text string to decrypt
-     * @param decrypt_key  key for decryption
-     * @return decrypted text
+     * \param text string to decrypt
+     * \param decrypt_key  key for decryption
+     * \return decrypted text
      */
     static const std::string decrypt_text(const std::string &text,
                                           const matrix<int> &decrypt_key) {
@@ -463,9 +463,9 @@ class HillCipher {
 }  // namespace ciphers
 
 /**
- * @brief Self test 1 - using 3x3 randomly generated key
+ * \brief Self test 1 - using 3x3 randomly generated key
  *
- * @param text string to encrypt and decrypt
+ * \param text string to encrypt and decrypt
  */
 void test1(const std::string &text) {
     // std::string text = "Hello world!";
@@ -498,9 +498,9 @@ void test1(const std::string &text) {
 }
 
 /**
- * @brief Self test 2 - using 8x8 randomly generated key
+ * \brief Self test 2 - using 8x8 randomly generated key
  *
- * @param text string to encrypt and decrypt
+ * \param text string to encrypt and decrypt
  */
 void test2(const std::string &text) {
     // std::string text = "Hello world!";

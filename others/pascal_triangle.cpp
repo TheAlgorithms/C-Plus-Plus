@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief Pascal's triangle implementation
+ * \file
+ * \brief Pascal's triangle implementation
  */
 #ifdef _MSC_VER
 #include <string>  // required for Visual C

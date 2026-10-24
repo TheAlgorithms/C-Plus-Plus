@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief C++ Program for Modular Exponentiation Iteratively.
- * @details The task is to calculate the value of an integer a raised to an
+ * \file
+ * \brief C++ Program for Modular Exponentiation Iteratively.
+ * \details The task is to calculate the value of an integer a raised to an
  * integer exponent b under modulo c.
- * @note The time complexity of this approach is O(log b).
+ * \note The time complexity of this approach is O(log b).
  *
  * Example:
  * (4^3) % 5 (where ^ stands for exponentiation and % for modulo)
@@ -14,23 +14,23 @@
  * 4
  * We can also verify the result as 4^3 is 64 and 64 modulo 5 is 4
  *
- * @author [Shri2206](https://github.com/Shri2206)
+ * \author [Shri2206](https://github.com/Shri2206)
  */
 #include <cassert>   /// for assert
 #include <cstdint>
 #include <iostream>  /// for io operations
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @brief This function calculates a raised to exponent b under modulo c using
+ * \brief This function calculates a raised to exponent b under modulo c using
  * modular exponentiation.
- * @param a integer base
- * @param b unsigned integer exponent
- * @param c integer modulo
- * @return a raised to power b modulo c
+ * \param a integer base
+ * \param b unsigned integer exponent
+ * \param c integer modulo
+ * \return a raised to power b modulo c
  */
 uint64_t power(uint64_t a, uint64_t b, uint64_t c) {
     uint64_t ans = 1;  /// Initialize the answer to be returned
@@ -55,7 +55,7 @@ uint64_t power(uint64_t a, uint64_t b, uint64_t c) {
 /**
  * Function for testing power function.
  * test cases and assert statement.
- * @returns `void`
+ * \returns `void`
  */
 static void test() {
     uint32_t test_case_1 = math::power(2, 5, 13);
@@ -80,8 +80,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the tests

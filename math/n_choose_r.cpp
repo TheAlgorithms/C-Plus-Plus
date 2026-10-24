@@ -1,35 +1,35 @@
 /**
- * @file
- * @brief [Combinations](https://en.wikipedia.org/wiki/Combination) n choose r
+ * \file
+ * \brief [Combinations](https://en.wikipedia.org/wiki/Combination) n choose r
  * function implementation
- * @details
+ * \details
  * A very basic and efficient method of calculating
  * choosing r from n different choices.
  * \f$ \binom{n}{r} = \frac{n!}{r! (n-r)!} \f$
  *
- * @author [Tajmeet Singh](https://github.com/tjgurwara99)
+ * \author [Tajmeet Singh](https://github.com/tjgurwara99)
  */
 
 #include <cassert>   /// for assert
 #include <cstdint>
 #include <iostream>  /// for io operations
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @brief This is the function implementation of \f$ \binom{n}{r} \f$
- * @details
+ * \brief This is the function implementation of \f$ \binom{n}{r} \f$
+ * \details
  * We are calculating the ans with iterations
  * instead of calculating three different factorials.
  * Also, we are using the fact that
  * \f$ \frac{n!}{r! (n-r)!} = \frac{(n - r + 1) \times \cdots \times n}{1 \times
  * \cdots \times r} \f$
- * @tparam T Only for integer types such as long, int_64 etc
- * @param n \f$ n \f$ in \f$ \binom{n}{r} \f$
- * @param r \f$ r \f$ in \f$ \binom{n}{r} \f$
- * @returns ans \f$ \binom{n}{r} \f$
+ * \tparam T Only for integer types such as long, int_64 etc
+ * \param n \f$ n \f$ in \f$ \binom{n}{r} \f$
+ * \param r \f$ r \f$ in \f$ \binom{n}{r} \f$
+ * \returns ans \f$ \binom{n}{r} \f$
  */
 template <class T>
 T n_choose_r(T n, T r) {
@@ -46,8 +46,8 @@ T n_choose_r(T n, T r) {
 }  // namespace math
 
 /**
- * @brief Test implementations
- * @returns void
+ * \brief Test implementations
+ * \returns void
  */
 static void test() {
     // First test on 5 choose 2
@@ -72,8 +72,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // executing tests

@@ -1,17 +1,17 @@
 /**
- * @file
- * @brief SCS is a string Z which is the shortest supersequence of strings X and Y (may not be continuous in Z, but order is maintained).
+ * \file
+ * \brief SCS is a string Z which is the shortest supersequence of strings X and Y (may not be continuous in Z, but order is maintained).
  *
- * @details
+ * \details
  * The idea is to use lookup table method as used in LCS.
  * For example: example 1:-
  * X: 'ABCXYZ', Y: 'ABZ' then Z will be 'ABCXYZ' (y is not continuous but in order)
  * 
  * For example: example 2:-
  * X: 'AGGTAB', Y: 'GXTXAYB' then Z will be 'AGGXTXAYB'
- * @author [Ridhish Jain](https://github.com/ridhishjain)
- * @see more on [SCS](https://en.wikipedia.org/wiki/Shortest_common_supersequence_problem)
- * @see related problem [Leetcode](https://leetcode.com/problems/shortest-common-supersequence/)
+ * \author [Ridhish Jain](https://github.com/ridhishjain)
+ * \see more on [SCS](https://en.wikipedia.org/wiki/Shortest_common_supersequence_problem)
+ * \see related problem [Leetcode](https://leetcode.com/problems/shortest-common-supersequence/)
 */
 
 // header files
@@ -22,22 +22,22 @@
 #include <cassert>
 
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming algorithms
 */
 namespace dynamic_programming {
 
     /**
-    * @namespace shortest_common_supersequence
-    * @brief Shortest Common Super Sequence algorithm
+    * \namespace shortest_common_supersequence
+    * \brief Shortest Common Super Sequence algorithm
     */
     namespace shortest_common_supersequence {
         
         /**
          * Function implementing Shortest Common Super-Sequence algorithm using look-up table method.
-         * @param str1 first string 'X'
-         * @param str2 second string 'Y'
-         * @returns string 'Z', superSequence of X and Y 
+         * \param str1 first string 'X'
+         * \param str2 second string 'Y'
+         * \returns string 'Z', superSequence of X and Y 
         */
         std::string scs(const std::string &str1, const std::string &str2) {
 
@@ -119,7 +119,7 @@ namespace dynamic_programming {
 
 /** 
  * Test Function
- * @return void 
+ * \return void 
 */
 static void test() {
     // custom input vector

@@ -1,13 +1,13 @@
 /**
- * @file
- * @brief Implementation of the [DNF
+ * \file
+ * \brief Implementation of the [DNF
  * sort](https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/)
  * implementation
- * @details
+ * \details
  * C++ program to sort an array with 0, 1 and 2 in a single pass(DNF sort).
  * Since one traversal of the array is there hence it works in O(n) time
  * complexity.
- * @author [Sujal Gupta](https://github.com/heysujal)
+ * \author [Sujal Gupta](https://github.com/heysujal)
  */
 
 #include <algorithm>  /// for std::is_sorted
@@ -17,23 +17,23 @@
 #include <vector>     /// for std::vector
 
 /**
- * @namespace sorting
- * @breif Sorting algorithms
+ * \namespace sorting
+ * \breif Sorting algorithms
  */
 namespace sorting {
 /**
- * @namespace dnf_sort
- * @brief Functions for the [DNF
+ * \namespace dnf_sort
+ * \brief Functions for the [DNF
  * sort](https://en.wikipedia.org/wiki/Dutch_national_flag_problem)
  * implementation
  */
 namespace dnf_sort {
 /**
- * @brief The main function implements DNF sort
- * @tparam T type of array
- * @param a array to be sorted,
- * @param arr_size size of array
- * @returns void
+ * \brief The main function implements DNF sort
+ * \tparam T type of array
+ * \param a array to be sorted,
+ * \param arr_size size of array
+ * \returns void
  */
 template <typename T>
 std::vector<T> dnfSort(const std::vector<T> &in_arr) {
@@ -68,8 +68,8 @@ std::vector<T> dnfSort(const std::vector<T> &in_arr) {
 }  // namespace sorting
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st test
@@ -103,8 +103,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the test

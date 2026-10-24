@@ -1,7 +1,7 @@
 /**
- * @file
- * @brief [Word Break Problem](https://leetcode.com/problems/word-break/)
- * @details
+ * \file
+ * \brief [Word Break Problem](https://leetcode.com/problems/word-break/)
+ * \details
  * Given a non-empty string s and a dictionary wordDict containing a list of
  * non-empty words, determine if s can be segmented into a space-separated
  * sequence of one or more dictionary words.
@@ -25,7 +25,7 @@
  * Input: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"]
  * Output: false
  *
- * @author [Akshay Anand] (https://github.com/axayjha)
+ * \author [Akshay Anand] (https://github.com/axayjha)
  */
 
 #include <cassert>
@@ -36,26 +36,26 @@
 #include <vector>
 
 /**
- * @namespace dynamic_programming
- * @brief Dynamic programming algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic programming algorithms
  */
 namespace dynamic_programming {
 
 /**
- * @namespace word_break
- * @brief Functions for [Word Break](https://leetcode.com/problems/word-break/)
+ * \namespace word_break
+ * \brief Functions for [Word Break](https://leetcode.com/problems/word-break/)
  * problem
  */
 namespace word_break {
 
 /**
- * @brief Function that checks if the string passed in param is present in
+ * \brief Function that checks if the string passed in param is present in
  * the the unordered_set passed
  *
- * @param str the string to be searched
- * @param strSet unordered set of string, that is to be looked into
- * @returns `true` if str is present in strSet
- * @returns `false` if str is not present in strSet
+ * \param str the string to be searched
+ * \param strSet unordered set of string, that is to be looked into
+ * \returns `true` if str is present in strSet
+ * \returns `false` if str is not present in strSet
  */
 bool exists(const std::string &str,
             const std::unordered_set<std::string> &strSet) {
@@ -63,19 +63,19 @@ bool exists(const std::string &str,
 }
 
 /**
- * @brief Function that checks if the string passed in param can be
+ * \brief Function that checks if the string passed in param can be
  * segmented from position 'pos', and then correctly go on to segment the
  * rest of the string correctly as well to reach a solution
  *
- * @param s the complete string to be segmented
- * @param strSet unordered set of string, that is to be used as the
+ * \param s the complete string to be segmented
+ * \param strSet unordered set of string, that is to be used as the
  * reference dictionary
- * @param pos the index value at which we will segment string and test
+ * \param pos the index value at which we will segment string and test
  * further if it is correctly segmented at pos
- * @param dp the vector to memoize solution for each position
- * @returns `true` if a valid solution/segmentation is possible by segmenting at
+ * \param dp the vector to memoize solution for each position
+ * \returns `true` if a valid solution/segmentation is possible by segmenting at
  * index pos
- * @returns `false` otherwise
+ * \returns `false` otherwise
  */
 bool check(const std::string &s, const std::unordered_set<std::string> &strSet,
            int pos, std::vector<int> *dp) {
@@ -117,16 +117,16 @@ bool check(const std::string &s, const std::unordered_set<std::string> &strSet,
 }
 
 /**
- * @brief Function that checks if the string passed in param can be
+ * \brief Function that checks if the string passed in param can be
  * segmented into the strings present in the vector.
  * In others words, it checks if any permutation of strings in
  * the vector can be concatenated to form the final string.
  *
- * @param s the complete string to be segmented
- * @param wordDict a vector of words to be used as dictionary to look into
- * @returns `true` if s can be formed by a combination of strings present in
+ * \param s the complete string to be segmented
+ * \param wordDict a vector of words to be used as dictionary to look into
+ * \returns `true` if s can be formed by a combination of strings present in
  * wordDict
- * @return `false` otherwise
+ * \return `false` otherwise
  */
 bool wordBreak(const std::string &s, const std::vector<std::string> &wordDict) {
     // unordered set to store words in the dictionary for constant time
@@ -150,8 +150,8 @@ bool wordBreak(const std::string &s, const std::vector<std::string> &wordDict) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Test implementations
- * @returns void
+ * \brief Test implementations
+ * \returns void
  */
 static void test() {
     // the complete string
@@ -168,8 +168,8 @@ static void test() {
     std::cout << "Test implementation passed!\n";
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // call the test function :)

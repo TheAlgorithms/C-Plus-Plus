@@ -1,13 +1,13 @@
 /**
- * @file
- * @brief Implementation for the [Reversing a Binary
+ * \file
+ * \brief Implementation for the [Reversing a Binary
  * Tree](https://www.geeksforgeeks.org/reverse-tree-path/) recursively
  * algorithm.
- * @details A binary tree can be reversed by swapping the left and
+ * \details A binary tree can be reversed by swapping the left and
  * right child of a node at each node, starting from the root, and
  * cascading below. This solution aims to provide an implementation of
  * a recursive reversal of a binary tree.
- * @author [Alvin](https://github.com/polarvoid)
+ * \author [Alvin](https://github.com/polarvoid)
  */
 
 #include <cassert>   /// For assert
@@ -16,27 +16,27 @@
 #include <vector>    /// For std::vector
 
 /**
- * @namespace operations_on_datastructures
- * @brief Operations on Data Structures
+ * \namespace operations_on_datastructures
+ * \brief Operations on Data Structures
  */
 namespace operations_on_datastructures {
 
 /**
- * @namespace reverse_binary_tree
- * @brief Functions for the [Reverse a Binary
+ * \namespace reverse_binary_tree
+ * \brief Functions for the [Reverse a Binary
  * Tree](https://www.geeksforgeeks.org/reverse-tree-path/) implementation
  */
 namespace reverse_binary_tree {
 
 /**
- * @brief A Node struct that represents a single node in a Binary Tree
+ * \brief A Node struct that represents a single node in a Binary Tree
  */
 struct Node {
     int64_t data;  ///< The value of the Node
     Node* left;    ///< The Node's left child
     Node* right;   ///< The Node's right child
     /**
-     * @brief Creates a new Node with some initial data
+     * \brief Creates a new Node with some initial data
      */
     explicit Node(int64_t _data) {
         data = _data;     ///< Set value of Node data
@@ -46,21 +46,21 @@ struct Node {
 };
 
 /**
- * @brief A Binary Tree class that implements a Binary Search Tree
+ * \brief A Binary Tree class that implements a Binary Search Tree
  *(BST) by default.
  */
 class BinaryTree {
  private:
     Node* root;  ///< Pointer to root node of Binary Tree
     /**
-     * @brief inserts a node in the Binary Tree, with the behaviouur of
+     * \brief inserts a node in the Binary Tree, with the behaviouur of
      * a Binary Search Tree.
-     * @details Nodes with smaller values are inserted in the left
+     * \details Nodes with smaller values are inserted in the left
      * subtree, and Nodes with larger values are inserted into the
      * right subtree recursively. Time Complexity: O(log(n))
-     * @param data The data/value of the Node to be inserted
-     * @param pivot A pointer to the root node of the (sub)tree
-     * @returns Node pointer to the root
+     * \param data The data/value of the Node to be inserted
+     * \param pivot A pointer to the root node of the (sub)tree
+     * \returns Node pointer to the root
      */
     Node* insert(int64_t data, Node* pivot) {
         if (pivot == nullptr) {
@@ -76,10 +76,10 @@ class BinaryTree {
         return pivot;
     }
     /**
-     * @brief Reverses a Binary Tree recursively by swapping the left and
+     * \brief Reverses a Binary Tree recursively by swapping the left and
      * right subtrees and their children.
-     * @param pivot A reference to the root of the (sub)tree
-     * @returns Node pointer to root node
+     * \param pivot A reference to the root of the (sub)tree
+     * \returns Node pointer to root node
      */
     Node* reverseBinaryTree(Node* pivot) {
         if (pivot == nullptr) {
@@ -96,11 +96,11 @@ class BinaryTree {
 
  public:
     /**
-     * @brief Creates a BinaryTree with a root pointing to NULL.
+     * \brief Creates a BinaryTree with a root pointing to NULL.
      */
     BinaryTree() { root = nullptr; }
     /**
-     * @brief Creates a BinaryTree with a root with an initial value.
+     * \brief Creates a BinaryTree with a root with an initial value.
      */
     explicit BinaryTree(int64_t data) { root = new Node(data); }
 
@@ -119,7 +119,7 @@ class BinaryTree {
     }
 
     /**
-     * @brief Adds a new Node to the Binary Tree
+     * \brief Adds a new Node to the Binary Tree
      */
     void add(int64_t data) { root = insert(data, root); }
     /**
@@ -127,14 +127,14 @@ class BinaryTree {
      */
     void reverse() { root = reverseBinaryTree(root); }
     /**
-     * @brief Level order traversal of a tree consists of visiting its
+     * \brief Level order traversal of a tree consists of visiting its
      * elements, top to bottom, left to right. This function performs
      * level order traversal and returns the node datas as a vector.
-     * @details The function uses a queue to append and remove elements
+     * \details The function uses a queue to append and remove elements
      * as they are visited, and then adds their children, if any. This
      * ensures that the elements are visited layer-by-layer, starting
      * from the root of the Tree.
-     * @returns vector<int64_t> of nodes of the tree.
+     * \returns vector<int64_t> of nodes of the tree.
      */
     std::vector<int64_t> get_level_order() {
         std::vector<int64_t> data;  ///< Result vector of int
@@ -157,9 +157,9 @@ class BinaryTree {
         return data;
     }
     /**
-     * @brief Prints all of the elements in the tree to stdout
+     * \brief Prints all of the elements in the tree to stdout
      * level-by-level, using the get_level_order() function.
-     * @returns void
+     * \returns void
      */
     void print() {
         for (int i : get_level_order()) {
@@ -173,14 +173,14 @@ class BinaryTree {
 }  // namespace operations_on_datastructures
 
 /**
- * @namespace tests
- * @brief Testcases to check Reversal of Binary Tree.
+ * \namespace tests
+ * \brief Testcases to check Reversal of Binary Tree.
  */
 namespace tests {
 using operations_on_datastructures::reverse_binary_tree::
     BinaryTree;  ///< Use the BinaryTree
 /**
- * @brief A Test to check an edge case (single element reversal)
+ * \brief A Test to check an edge case (single element reversal)
  */
 void test1() {
     BinaryTree bst;
@@ -204,7 +204,7 @@ void test1() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check an edge case (NULL root element)
+ * \brief A Test to check an edge case (NULL root element)
  */
 void test2() {
     BinaryTree bst;
@@ -225,7 +225,7 @@ void test2() {
     std::cout << "TEST PASSED!\n\n";
 }
 /**
- * @brief A Test to check correct reversal of a Binary Tree
+ * \brief A Test to check correct reversal of a Binary Tree
  */
 void test3() {
     BinaryTree bst;
@@ -255,7 +255,7 @@ void test3() {
 }  // namespace tests
 
 /**
- * @brief Function to test the correctness of the Tree Reversal
+ * \brief Function to test the correctness of the Tree Reversal
  */
 static void test() {
     tests::test1();  ///< Single element test
@@ -264,8 +264,8 @@ static void test() {
 }
 
 /**
- * @brief main function
- * @returns 0 on exit
+ * \brief main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

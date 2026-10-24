@@ -1,13 +1,13 @@
 /**
- * @file
- * @brief Well-formed [Generated
+ * \file
+ * \brief Well-formed [Generated
  * Parentheses](https://leetcode.com/explore/interview/card/top-interview-questions-medium/109/backtracking/794/) with all combinations.
  *
- * @details a sequence of parentheses is well-formed if each opening parentheses
+ * \details a sequence of parentheses is well-formed if each opening parentheses
  * has a corresponding closing parenthesis
  * and the closing parentheses are correctly ordered
  *
- * @author [Giuseppe Coco](https://github.com/WoWS17)
+ * \author [Giuseppe Coco](https://github.com/WoWS17)
 
  */
 
@@ -16,12 +16,12 @@
 #include <vector>    /// for vector container
 
 /**
- * @brief Backtracking algorithms
- * @namespace backtracking
+ * \brief Backtracking algorithms
+ * \namespace backtracking
  */
 namespace backtracking {
 /**
- * @brief generate_parentheses class
+ * \brief generate_parentheses class
  */
 class generate_parentheses {
  private:
@@ -34,12 +34,12 @@ class generate_parentheses {
 };
 
 /**
- * @brief function that adds parenthesis to the string.
+ * \brief function that adds parenthesis to the string.
  *
- * @param str string build during backtracking
- * @param n number of pairs of parentheses
- * @param closed number of closed parentheses
- * @param open number of open parentheses
+ * \param str string build during backtracking
+ * \param n number of pairs of parentheses
+ * \param closed number of closed parentheses
+ * \param open number of open parentheses
  */
 
 void generate_parentheses::makeStrings(std::string str, int n,
@@ -62,10 +62,10 @@ void generate_parentheses::makeStrings(std::string str, int n,
 }
 
 /**
- * @brief wrapper interface
+ * \brief wrapper interface
  *
- * @param n number of pairs of parentheses
- * @return all well-formed pattern of parentheses
+ * \param n number of pairs of parentheses
+ * \return all well-formed pattern of parentheses
  */
 std::vector<std::string> generate_parentheses::generate(int n) {
     backtracking::generate_parentheses::res.clear();
@@ -76,8 +76,8 @@ std::vector<std::string> generate_parentheses::generate(int n) {
 }  // namespace backtracking
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     int n = 0;
@@ -104,8 +104,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

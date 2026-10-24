@@ -1,8 +1,8 @@
 /**
- * @file xor_cipher.cpp
- * @brief Implementation of [XOR cipher](https://en.wikipedia.org/wiki/XOR_cipher) algorithm.
+ * \file xor_cipher.cpp
+ * \brief Implementation of [XOR cipher](https://en.wikipedia.org/wiki/XOR_cipher) algorithm.
  *
- * @details
+ * \details
  * In cryptography, the simple XOR cipher is a type of additive cipher, an encryption 
  * algorithm that operates according to the principles: 
  *
@@ -24,7 +24,7 @@
  * 
  * \note This program implements XOR Cipher for string with ASCII characters. 
  * 
- * @author [Deep Raval](https://github.com/imdeep2905)
+ * \author [Deep Raval](https://github.com/imdeep2905)
  */
 #include <iostream>
 #include <string>
@@ -40,9 +40,9 @@ namespace ciphers {
     namespace XOR {   
         /**
          * Encrypt given text using XOR cipher.
-         * @param text text to be encrypted
-         * @param key to be used for encyption
-         * @return new encrypted text
+         * \param text text to be encrypted
+         * \param key to be used for encyption
+         * \return new encrypted text
          */
         std::string encrypt (const std::string &text, const int &key) {
             std::string encrypted_text = ""; // Empty string to store encrypted text
@@ -54,9 +54,9 @@ namespace ciphers {
         }
         /**
          * Decrypt given text using XOR cipher.
-         * @param text text to be encrypted
-         * @param key to be used for decryption
-         * @return new decrypted text
+         * \param text text to be encrypted
+         * \param key to be used for decryption
+         * \return new decrypted text
          */        
         std::string decrypt (const std::string &text, const int &key) {
             std::string decrypted_text = ""; // Empty string to store decrypted text

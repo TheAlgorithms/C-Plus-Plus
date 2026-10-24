@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief Implementation of FCFS CPU scheduling algorithm
- * @details
+ * \file
+ * \brief Implementation of FCFS CPU scheduling algorithm
+ * \details
  * FCFS is a non-preemptive CPU scheduling algorithm in which whichever process
  * arrives first, gets executed first. If two or more processes arrive
  * simultaneously, the process with smaller process ID gets executed first.
- * @link https://bit.ly/3ABNXOC
- * @author [Pratyush Vatsa](https://github.com/Pratyush219)
+ * \link https://bit.ly/3ABNXOC
+ * \author [Pratyush Vatsa](https://github.com/Pratyush219)
  */
 
 #include <algorithm>      /// for sorting
@@ -33,14 +33,14 @@ using std::tuple;
 using std::unordered_set;
 using std::vector;
 /**
- * @brief Comparator function for sorting a vector
- * @tparam S Data type of Process ID
- * @tparam T Data type of Arrival time
- * @tparam E Data type of Burst time
- * @param t1 First tuple
- * @param t2 Second tuple
- * @returns true if t1 and t2 are in the CORRECT order
- * @returns false if t1 and t2 are in the INCORRECT order
+ * \brief Comparator function for sorting a vector
+ * \tparam S Data type of Process ID
+ * \tparam T Data type of Arrival time
+ * \tparam E Data type of Burst time
+ * \param t1 First tuple
+ * \param t2 Second tuple
+ * \returns true if t1 and t2 are in the CORRECT order
+ * \returns false if t1 and t2 are in the INCORRECT order
  */
 template <typename S, typename T, typename E>
 bool sortcol(tuple<S, T, E>& t1, tuple<S, T, E>& t2) {
@@ -53,25 +53,25 @@ bool sortcol(tuple<S, T, E>& t1, tuple<S, T, E>& t2) {
 }
 
 /**
- * @class Compare
- * @brief Comparator class for priority queue
- * @tparam S Data type of Process ID
- * @tparam T Data type of Arrival time
- * @tparam E Data type of Burst time
+ * \class Compare
+ * \brief Comparator class for priority queue
+ * \tparam S Data type of Process ID
+ * \tparam T Data type of Arrival time
+ * \tparam E Data type of Burst time
  */
 template <typename S, typename T, typename E>
 class Compare {
  public:
     /**
-     * @param t1 First tuple
-     * @param t2 Second tuple
-     * @brief A comparator function that checks whether to swap the two tuples
+     * \param t1 First tuple
+     * \param t2 Second tuple
+     * \brief A comparator function that checks whether to swap the two tuples
      * or not.
-     * @link Refer to
+     * \link Refer to
      * https://www.geeksforgeeks.org/comparator-class-in-c-with-examples/ for
      * detailed description of comparator
-     * @returns true if the tuples SHOULD be swapped
-     * @returns false if the tuples SHOULDN'T be swapped
+     * \returns true if the tuples SHOULD be swapped
+     * \returns false if the tuples SHOULDN'T be swapped
      */
     bool operator()(tuple<S, T, E, double, double, double>& t1,
                     tuple<S, T, E, double, double, double>& t2) {
@@ -88,11 +88,11 @@ class Compare {
 };
 
 /**
- * @class FCFS
- * @brief Class which implements the FCFS scheduling algorithm
- * @tparam S Data type of Process ID
- * @tparam T Data type of Arrival time
- * @tparam E Data type of Burst time
+ * \class FCFS
+ * \brief Class which implements the FCFS scheduling algorithm
+ * \tparam S Data type of Process ID
+ * \tparam T Data type of Arrival time
+ * \tparam E Data type of Burst time
  */
 template <typename S, typename T, typename E>
 class FCFS {
@@ -120,11 +120,11 @@ class FCFS {
 
  public:
     /**
-     * @brief Adds the process to the ready queue if it isn't already there
-     * @param id Process ID
-     * @param arrival Arrival time of the process
-     * @param burst Burst time of the process
-     * @returns void
+     * \brief Adds the process to the ready queue if it isn't already there
+     * \param id Process ID
+     * \param arrival Arrival time of the process
+     * \param burst Burst time of the process
+     * \returns void
      *
      */
     void addProcess(S id, T arrival, E burst) {
@@ -138,10 +138,10 @@ class FCFS {
     }
 
     /**
-     * @brief Algorithm for scheduling CPU processes according to the First Come
+     * \brief Algorithm for scheduling CPU processes according to the First Come
      * First Serve(FCFS) scheduling algorithm.
      *
-     * @details FCFS is a non-preemptive algorithm in which the process which
+     * \details FCFS is a non-preemptive algorithm in which the process which
      * arrives first gets executed first. If two or more processes arrive
      * together then the process with smaller process ID runs first (each
      * process has a unique proces ID).
@@ -150,7 +150,7 @@ class FCFS {
      * processes are ordered by their arrival times. If arrival times of some
      * processes are equal, then they are ordered by their process ID.
      *
-     * @returns void
+     * \returns void
      */
     vector<tuple<S, T, E, double, double, double>> scheduleForFcfs() {
         // Variable to keep track of time elapsed so far
@@ -185,9 +185,9 @@ class FCFS {
     }
 
     /**
-     * @brief Utility function for printing the status of each process after
+     * \brief Utility function for printing the status of each process after
      * execution
-     * @returns void
+     * \returns void
      */
     void printResult() {
         cout << "Status of all the proceses post completion is as follows:"
@@ -212,14 +212,14 @@ class FCFS {
 };
 
 /**
- * @brief Function to be used for testing purposes. This function guarantees the
+ * \brief Function to be used for testing purposes. This function guarantees the
  * correct solution for FCFS scheduling algorithm.
- * @param input the input data
- * @details Sorts the input vector according to arrival time. Processes whose
+ * \param input the input data
+ * \details Sorts the input vector according to arrival time. Processes whose
  * arrival times are same get sorted according to process ID For each process,
  * completion time, turnaround time and completion time are calculated, inserted
  * in a tuple, which is added to the vector result.
- * @returns A vector of tuples consisting of process ID, arrival time, burst
+ * \returns A vector of tuples consisting of process ID, arrival time, burst
  * time, completion time, turnaround time and waiting time for each process.
  */
 template <typename S, typename T, typename E>
@@ -251,8 +251,8 @@ vector<tuple<S, T, E, double, double, double>> get_final_status(
 }
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     for (int i{}; i < 1000; i++) {
@@ -282,8 +282,8 @@ static void test() {
 }
 
 /**
- * @brief Entry point of the program
- * @returns 0 on exit
+ * \brief Entry point of the program
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

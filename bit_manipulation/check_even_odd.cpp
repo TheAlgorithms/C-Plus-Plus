@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation to [Check if a number is Even or Odd using Bitwise Operator]
+ * \file
+ * \brief Implementation to [Check if a number is Even or Odd using Bitwise Operator]
  * (https://www.log2base2.com/c-examples/bitwise/odd-or-even-program-in-c-using-bitwise-operator.html)
  *
- * @details
+ * \details
  * Given an integer N, determine whether it is even or odd using bitwise manipulation.
  * The least significant bit (LSB) of a binary number determines its parity:
  * - If the LSB is 0, the number is even.
@@ -28,7 +28,7 @@
  * Worst Case Time Complexity: O(1)
  * Space Complexity: O(1)
  *
- * @author [Vedant Mukhedkar](https://github.com/git5v)
+ * \author [Vedant Mukhedkar](https://github.com/git5v)
  */
 
 #include <cassert>   /// for assert
@@ -37,20 +37,20 @@
 #include <string>    /// for std::string
 
 /**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
+ * \namespace bit_manipulation
+ * \brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 /**
- * @namespace even_odd
- * @brief Functions for checking if a number is even or odd using bitwise operations
+ * \namespace even_odd
+ * \brief Functions for checking if a number is even or odd using bitwise operations
  */
 namespace even_odd {
 
 /**
- * @brief Checks if a number is even or odd using bitwise AND.
- * @param N The number to check.
- * @returns "Even" if N is even, "Odd" if N is odd.
+ * \brief Checks if a number is even or odd using bitwise AND.
+ * \param N The number to check.
+ * \returns "Even" if N is even, "Odd" if N is odd.
      */
         bool is_even(std::int64_t N) {
             return (N & 1) == 0 ? true : false;
@@ -60,8 +60,8 @@ namespace even_odd {
 }  // namespace bit_manipulation
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     using bit_manipulation::even_odd::is_even;
@@ -84,8 +84,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,7 +1,7 @@
 /**
- * @brief [Base64 Encoding and
+ * \brief [Base64 Encoding and
  * Decoding](https://en.wikipedia.org/wiki/Base64)
- * @details In programming, [Base64](https://en.wikipedia.org/wiki/Base64) is a
+ * \details In programming, [Base64](https://en.wikipedia.org/wiki/Base64) is a
  * group of binary-to-text encoding schemes that represent binary data (more
  * specifically, a sequence of 8-bit bytes) in an ASCII string format by
  * translating the data into a radix-64 representation. The term Base64
@@ -9,20 +9,20 @@
  * Base64 digit represents exactly 6 bits of data. Three 8-bit bytes (i.e., a
  * total of 24 bits) can therefore be represented by four 6-bit Base64
  * digits.
- * @author [Ashish Daulatabad](https://github.com/AshishYUO)
+ * \author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 #include <cassert>   /// for `assert` operations
 #include <cstdint>
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace ciphers
- * @brief Cipher algorithms
+ * \namespace ciphers
+ * \brief Cipher algorithms
  */
 namespace ciphers {
 /**
- * @namespace base64_encoding
- * @brief Functions for [Base64 Encoding and
+ * \namespace base64_encoding
+ * \brief Functions for [Base64 Encoding and
  * Decoding](https://en.wikipedia.org/wiki/Base64) implementation.
  */
 namespace base64_encoding {
@@ -32,10 +32,10 @@ namespace base64_encoding {
 const std::string chars =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 /**
- * @brief Base64 Encoder
- * @details Converts the given string to Base64 equivalent.
- * @param input Input as a string
- * @returns Base64 encoded string
+ * \brief Base64 Encoder
+ * \details Converts the given string to Base64 equivalent.
+ * \param input Input as a string
+ * \returns Base64 encoded string
  */
 std::string base64_encode(const std::string &input) {
     std::string base64_string;  /// Output of this function: base64 string
@@ -81,11 +81,11 @@ std::string base64_encode(const std::string &input) {
     return base64_string;
 }
 /**
- * @brief Utility function for finding index
- * @details Utility function for finding the position of a character in array
+ * \brief Utility function for finding index
+ * \details Utility function for finding the position of a character in array
  * `chars`
- * @param c character to search in array `chars`
- * @returns integer denoting position of character in array `chars`
+ * \param c character to search in array `chars`
+ * \returns integer denoting position of character in array `chars`
  */
 uint8_t find_idx(const char c) {
     if (c >= 'A' && c <= 'Z') {
@@ -102,10 +102,10 @@ uint8_t find_idx(const char c) {
     return -1;
 }
 /**
- * @brief Base64 Decoder
- * @details Decodes the Base64 string
- * @param base64_str Input as a Base64 string
- * @returns Base64 decoded string
+ * \brief Base64 Decoder
+ * \details Decodes the Base64 string
+ * \param base64_str Input as a Base64 string
+ * \returns Base64 decoded string
  */
 std::string base64_decode(const std::string &base64_str) {
     std::string
@@ -150,8 +150,8 @@ std::string base64_decode(const std::string &base64_str) {
 }  // namespace ciphers
 
 /**
- * @brief Self test-implementations
- * @returns void
+ * \brief Self test-implementations
+ * \returns void
  */
 static void test() {
     // 1st Test
@@ -191,8 +191,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

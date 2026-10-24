@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief Implementation of [gnome
+ * \file
+ * \brief Implementation of [gnome
  * sort](https://en.wikipedia.org/wiki/Gnome_sort) algorithm.
- * @author [beqakd](https://github.com/beqakd)
- * @author [Krishna Vedala](https://github.com/kvedala)
- * @details
+ * \author [beqakd](https://github.com/beqakd)
+ * \author [Krishna Vedala](https://github.com/kvedala)
+ * \details
  * Gnome sort algorithm is not the best one but it is widely used.
  * The algorithm iteratively checks the order of pairs in the array. If they are
  * on right order it moves to the next successive pair, otherwise it swaps
@@ -21,14 +21,14 @@
 #include <iostream>   // for io operations
 
 /**
- * @namespace sorting
+ * \namespace sorting
  * Sorting algorithms
  */
 namespace sorting {
 /**
  * This implementation is for a C-style array input that gets modified in place.
- * @param [in,out] arr our array of elements.
- * @param size size of given array
+ * \param [in,out] arr our array of elements.
+ * \param size size of given array
  */
 template <typename T>
 void gnomeSort(T *arr, int size) {
@@ -53,10 +53,10 @@ void gnomeSort(T *arr, int size) {
  * This implementation is for a C++-style array input. The function argument is
  * a pass-by-value and hence a copy of the array gets created which is then
  * modified by the function and returned.
- * @tparam T type of data variables in the array
- * @tparam size size of the array
- * @param [in] arr our array of elements.
- * @return array with elements sorted
+ * \tparam T type of data variables in the array
+ * \tparam size size of the array
+ * \param [in] arr our array of elements.
+ * \return array with elements sorted
  */
 template <typename T, size_t size>
 std::array<T, size> gnomeSort(std::array<T, size> arr) {

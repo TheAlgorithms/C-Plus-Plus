@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief Implements [Palindrome
+ * \file
+ * \brief Implements [Palindrome
  * Partitioning](https://leetcode.com/problems/palindrome-partitioning-ii/)
  * algorithm, giving you the minimum number of partitions you need to make
  *
- * @details
+ * \details
  * palindrome partitioning uses dynamic programming and goes to all the possible
  * partitions to find the minimum you are given a string and you need to give
  * minimum number of partitions needed to divide it into a number of palindromes
@@ -13,7 +13,7 @@
  * complexity O(n^2) For example: example 1:- String : "nitik" Output : 2 => "n
  * | iti | k" For example: example 2:- String : "ababbbabbababa" Output : 3 =>
  * "aba | b | bbabb | ababa"
- * @author [Sujay Kaushik] (https://github.com/sujaykaushik008)
+ * \author [Sujay Kaushik] (https://github.com/sujaykaushik008)
  */
 
 #include <algorithm>  // for std::min
@@ -23,14 +23,14 @@
 #include <vector>     // for std::vector
 
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 
 /**
- * @namespace palindrome_partitioning
- * @brief Functions for [Palindrome
+ * \namespace palindrome_partitioning
+ * \brief Functions for [Palindrome
  * Partitioning](https://leetcode.com/problems/palindrome-partitioning-ii/)
  * algorithm
  */
@@ -39,8 +39,8 @@ namespace palindrome_partitioning {
 /**
  * Function implementing palindrome partitioning algorithm using lookup table
  * method.
- * @param str input string
- * @returns minimum number of partitions
+ * \param str input string
+ * \returns minimum number of partitions
  */
 int pal_part(const std::string &str) {
     int n = str.size();
@@ -92,8 +92,8 @@ int pal_part(const std::string &str) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Test Function
- * @return void
+ * \brief Test Function
+ * \return void
  */
 static void test() {
     // custom input vector
@@ -122,8 +122,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // execute the test

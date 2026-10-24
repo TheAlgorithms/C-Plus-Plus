@@ -1,6 +1,6 @@
 /**
- * @author tjgurwara99
- * @file
+ * \author tjgurwara99
+ * \file
  *
  * \brief An implementation of Complex Number as Objects
  * \details A basic implementation of Complex Number field as a class with
@@ -29,13 +29,13 @@ class Complex {
      * \details
      * Complex Constructor which initialises the complex number which takes
      * three arguments.
-     * @param x If the third parameter is 'true' then this x is the absolute
+     * \param x If the third parameter is 'true' then this x is the absolute
      * value of the complex number, if the third parameter is 'false' then this
      * x is the real value of the complex number (optional).
-     * @param y If the third parameter is 'true' then this y is the argument of
+     * \param y If the third parameter is 'true' then this y is the argument of
      * the complex number, if the third parameter is 'false' then this y is the
      * imaginary value of the complex number (optional).
-     * @param is_polar 'false' by default. If we want to initialise our complex
+     * \param is_polar 'false' by default. If we want to initialise our complex
      * number using polar form then set this to true, otherwise set it to false
      * to use initialiser which initialises real and imaginary values using the
      * first two parameters (optional).
@@ -53,7 +53,7 @@ class Complex {
 
     /**
      * \brief Copy Constructor
-     * @param other The other number to equate our number to.
+     * \param other The other number to equate our number to.
      */
     Complex(const Complex &other) : re(other.real()), im(other.imag()) {}
 
@@ -73,7 +73,7 @@ class Complex {
      * \brief Member function to give the modulus of our complex number.
      * Member function to which gives the absolute value (modulus) of our
      * complex number
-     * @return \f$ \sqrt{z \bar{z}} \f$ where \f$ z \f$ is our complex
+     * \return \f$ \sqrt{z \bar{z}} \f$ where \f$ z \f$ is our complex
      * number.
      */
     double abs() const {
@@ -82,15 +82,15 @@ class Complex {
 
     /**
      * \brief Member function to give the argument of our complex number.
-     * @return Argument of our Complex number in radians.
+     * \return Argument of our Complex number in radians.
      */
     double arg() const { return std::atan2(this->im, this->re); }
 
     /**
      * \brief Operator overload of '+' on Complex class.
      * Operator overload to be able to add two complex numbers.
-     * @param other The other number that is added to the current number.
-     * @return result current number plus other number
+     * \param other The other number that is added to the current number.
+     * \return result current number plus other number
      */
     Complex operator+(const Complex &other) {
         Complex result(this->re + other.re, this->im + other.im);
@@ -100,8 +100,8 @@ class Complex {
     /**
      * \brief Operator overload of '-' on Complex class.
      * Operator overload to be able to subtract two complex numbers.
-     * @param other The other number being subtracted from the current number.
-     * @return result current number subtract other number
+     * \param other The other number being subtracted from the current number.
+     * \return result current number subtract other number
      */
     Complex operator-(const Complex &other) {
         Complex result(this->re - other.re, this->im - other.im);
@@ -111,8 +111,8 @@ class Complex {
     /**
      * \brief Operator overload of '*' on Complex class.
      * Operator overload to be able to multiple two complex numbers.
-     * @param other The other number to multiply the current number to.
-     * @return result current number times other number.
+     * \param other The other number to multiply the current number to.
+     * \return result current number times other number.
      */
     Complex operator*(const Complex &other) {
         Complex result(this->re * other.re - this->im * other.im,
@@ -125,7 +125,7 @@ class Complex {
      * Operator overload of the BITWISE NOT which gives us the conjugate of our
      * complex number. NOTE: This is overloading the BITWISE operator but its
      * not a BITWISE operation in this definition.
-     * @return result The conjugate of our complex number.
+     * \return result The conjugate of our complex number.
      */
     Complex operator~() const {
         Complex result(this->re, -(this->im));
@@ -136,8 +136,8 @@ class Complex {
      * \brief Operator overload of '/' on Complex class.
      * Operator overload to be able to divide two complex numbers. This function
      * would throw an exception if the other number is zero.
-     * @param other The other number we divide our number by.
-     * @return result Current number divided by other number.
+     * \param other The other number we divide our number by.
+     * \return result Current number divided by other number.
      */
     Complex operator/(const Complex &other) {
         Complex result = *this * ~other;
@@ -167,10 +167,10 @@ class Complex {
 /**
  * \brief Operator overload of '==' on Complex class.
  * Logical Equal overload for our Complex class.
- * @param a Left hand side of our expression
- * @param b Right hand side of our expression
- * @return 'True' If real and imaginary parts of a and b are same
- * @return 'False' Otherwise.
+ * \param a Left hand side of our expression
+ * \param b Right hand side of our expression
+ * \return 'True' If real and imaginary parts of a and b are same
+ * \return 'False' Otherwise.
  */
 bool operator==(const Complex &a, const Complex &b) {
     return a.real() == b.real() && a.imag() == b.imag();
@@ -180,8 +180,8 @@ bool operator==(const Complex &a, const Complex &b) {
  * \brief Operator overload of '<<' of ostream for Complex class.
  * Overloaded insersion operator to accommodate the printing of our complex
  * number in their standard form.
- * @param os The console stream
- * @param num The complex number.
+ * \param os The console stream
+ * \param num The complex number.
  */
 std::ostream &operator<<(std::ostream &os, const Complex &num) {
     os << "(" << num.real();

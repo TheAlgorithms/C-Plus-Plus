@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief returns which is the longest/shortest number
+ * \file
+ * \brief returns which is the longest/shortest number
  * using [minimax](https://en.wikipedia.org/wiki/Minimax) algorithm
  *
- * @details
+ * \details
  * Minimax (sometimes MinMax, MM or saddle point) is a decision rule used in
  * artificial intelligence, decision theory, game theory, statistics,
  * and philosophy for minimizing the possible loss for a worst case (maximum
@@ -13,8 +13,8 @@
  * where they make simultaneous moves, it has also been extended to more complex
  * games and to general decision-making in the presence of uncertainty.
  *
- * @author [Gleison Batista](https://github.com/gleisonbs)
- * @author [David Leal](https://github.com/Panquesito7)
+ * \author [Gleison Batista](https://github.com/gleisonbs)
+ * \author [David Leal](https://github.com/Panquesito7)
  */
 #include <algorithm>  /// for std::max, std::min
 #include <array>      /// for std::array
@@ -22,18 +22,18 @@
 #include <iostream>   /// for IO operations
 
 /**
- * @namespace backtracking
- * @brief Backtracking algorithms
+ * \namespace backtracking
+ * \brief Backtracking algorithms
  */
 namespace backtracking {
 /**
- * @brief Check which is the maximum/minimum number in the array
- * @param depth current depth in game tree
- * @param node_index current index in array
- * @param is_max if current index is the longest number
- * @param scores saved numbers in array
- * @param height maximum height for game tree
- * @returns the maximum or minimum number
+ * \brief Check which is the maximum/minimum number in the array
+ * \param depth current depth in game tree
+ * \param node_index current index in array
+ * \param is_max if current index is the longest number
+ * \param scores saved numbers in array
+ * \param height maximum height for game tree
+ * \returns the maximum or minimum number
  */
 template <size_t T>
 int minimax(int depth, int node_index, bool is_max,
@@ -50,8 +50,8 @@ int minimax(int depth, int node_index, bool is_max,
 }  // namespace backtracking
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     std::array<int, 8> scores = {90, 23, 6, 33, 21, 65, 123, 34423};

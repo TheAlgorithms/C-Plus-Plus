@@ -1,12 +1,12 @@
 /**
- * @file
- * @brief Implementations for the [area](https://en.wikipedia.org/wiki/Area) of
+ * \file
+ * \brief Implementations for the [area](https://en.wikipedia.org/wiki/Area) of
  * various shapes
- * @details The area of a shape is the amount of 2D space it takes up.
+ * \details The area of a shape is the amount of 2D space it takes up.
  * All shapes have a formula to get the area of any given shape.
  * These implementations support multiple return types.
  *
- * @author [Focusucof](https://github.com/Focusucof)
+ * \author [Focusucof](https://github.com/Focusucof)
  */
 #define _USE_MATH_DEFINES
 #include <cassert>  /// for assert
@@ -16,14 +16,14 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @brief area of a [square](https://en.wikipedia.org/wiki/Square) (l * l)
- * @param length is the length of the square
- * @returns area of square
+ * \brief area of a [square](https://en.wikipedia.org/wiki/Square) (l * l)
+ * \param length is the length of the square
+ * \returns area of square
  */
 template <typename T>
 T square_area(T length) {
@@ -31,10 +31,10 @@ T square_area(T length) {
 }
 
 /**
- * @brief area of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) (l * w)
- * @param length is the length of the rectangle
- * @param width is the width of the rectangle
- * @returns area of the rectangle
+ * \brief area of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) (l * w)
+ * \param length is the length of the rectangle
+ * \param width is the width of the rectangle
+ * \returns area of the rectangle
  */
 template <typename T>
 T rect_area(T length, T width) {
@@ -42,11 +42,11 @@ T rect_area(T length, T width) {
 }
 
 /**
- * @brief area of a [triangle](https://en.wikipedia.org/wiki/Triangle) (b * h /
+ * \brief area of a [triangle](https://en.wikipedia.org/wiki/Triangle) (b * h /
  * 2)
- * @param base is the length of the bottom side of the triangle
- * @param height is the length of the tallest point in the triangle
- * @returns area of the triangle
+ * \param base is the length of the bottom side of the triangle
+ * \param height is the length of the tallest point in the triangle
+ * \returns area of the triangle
  */
 template <typename T>
 T triangle_area(T base, T height) {
@@ -54,10 +54,10 @@ T triangle_area(T base, T height) {
 }
 
 /**
- * @brief area of a [circle](https://en.wikipedia.org/wiki/Area_of_a_circle) (pi
+ * \brief area of a [circle](https://en.wikipedia.org/wiki/Area_of_a_circle) (pi
  * * r^2)
- * @param radius is the radius of the circle
- * @returns area of the circle
+ * \param radius is the radius of the circle
+ * \returns area of the circle
  */
 template <typename T>
 T circle_area(T radius) {
@@ -65,11 +65,11 @@ T circle_area(T radius) {
 }
 
 /**
- * @brief area of a [parallelogram](https://en.wikipedia.org/wiki/Parallelogram)
+ * \brief area of a [parallelogram](https://en.wikipedia.org/wiki/Parallelogram)
  * (b * h)
- * @param base is the length of the bottom side of the parallelogram
- * @param height is the length of the tallest point in the parallelogram
- * @returns area of the parallelogram
+ * \param base is the length of the bottom side of the parallelogram
+ * \param height is the length of the tallest point in the parallelogram
+ * \returns area of the parallelogram
  */
 template <typename T>
 T parallelogram_area(T base, T height) {
@@ -77,10 +77,10 @@ T parallelogram_area(T base, T height) {
 }
 
 /**
- * @brief surface area of a [cube](https://en.wikipedia.org/wiki/Cube) ( 6 * (l
+ * \brief surface area of a [cube](https://en.wikipedia.org/wiki/Cube) ( 6 * (l
  * * l))
- * @param length is the length of the cube
- * @returns surface area of the cube
+ * \param length is the length of the cube
+ * \returns surface area of the cube
  */
 template <typename T>
 T cube_surface_area(T length) {
@@ -88,10 +88,10 @@ T cube_surface_area(T length) {
 }
 
 /**
- * @brief surface area of a [sphere](https://en.wikipedia.org/wiki/Sphere) ( 4 *
+ * \brief surface area of a [sphere](https://en.wikipedia.org/wiki/Sphere) ( 4 *
  * pi * r^2)
- * @param radius is the radius of the sphere
- * @returns surface area of the sphere
+ * \param radius is the radius of the sphere
+ * \returns surface area of the sphere
  */
 template <typename T>
 T sphere_surface_area(T radius) {
@@ -99,11 +99,11 @@ T sphere_surface_area(T radius) {
 }
 
 /**
- * @brief surface area of a [cylinder](https://en.wikipedia.org/wiki/Cylinder)
+ * \brief surface area of a [cylinder](https://en.wikipedia.org/wiki/Cylinder)
  * (2 * pi * r * h + 2 * pi * r^2)
- * @param radius is the radius of the cylinder
- * @param height is the height of the cylinder
- * @returns surface area of the cylinder
+ * \param radius is the radius of the cylinder
+ * \param height is the height of the cylinder
+ * \returns surface area of the cylinder
  */
 template <typename T>
 T cylinder_surface_area(T radius, T height) {
@@ -111,11 +111,11 @@ T cylinder_surface_area(T radius, T height) {
 }
 
 /**
- * @brief surface area of a [hemi-sphere](https://en.wikipedia.org/wiki/Surface_area) ( 3 *
+ * \brief surface area of a [hemi-sphere](https://en.wikipedia.org/wiki/Surface_area) ( 3 *
  * pi * r^2)
- * @param radius is the radius of the hemi-sphere
- * @tparam T datatype of radius
- * @returns surface area of the hemi-sphere
+ * \param radius is the radius of the hemi-sphere
+ * \tparam T datatype of radius
+ * \returns surface area of the hemi-sphere
  */
 template <typename T>
 T hemi_sphere_surface_area(T radius) {
@@ -124,8 +124,8 @@ T hemi_sphere_surface_area(T radius) {
 }  // namespace math
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // I/O variables for testing
@@ -294,8 +294,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

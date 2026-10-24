@@ -1,7 +1,7 @@
 /**
- * @file 
- * @brief  Implementation of [Hopcroft–Karp](https://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algorithm) algorithm.
- * @details 
+ * \file 
+ * \brief  Implementation of [Hopcroft–Karp](https://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algorithm) algorithm.
+ * \details 
  * The Hopcroft–Karp algorithm is an algorithm that takes as input a bipartite graph 
  * and produces as output a maximum cardinality matching, it runs in O(E√V) time in worst case.
  * 
@@ -40,7 +40,7 @@
  * 
  * 
  *
- * @author [Krishna Pal Deora](https://github.com/Krishnapal4050)
+ * \author [Krishna Pal Deora](https://github.com/Krishnapal4050)
  * 
  */
 
@@ -54,13 +54,13 @@
 #include <cassert>
 
 /**
- * @namespace graph 
- * @brief Graph algorithms
+ * \namespace graph 
+ * \brief Graph algorithms
  */
  namespace graph { 
 
 /**
- * @brief Represents Bipartite graph for
+ * \brief Represents Bipartite graph for
  * Hopcroft Karp implementation
  */
 class HKGraph
@@ -89,8 +89,8 @@ public:
 
 
 /**
- * @brief This function counts the number of augmenting paths between left and right sides of the Bipartite graph
- * @returns size of maximum matching
+ * \brief This function counts the number of augmenting paths between left and right sides of the Bipartite graph
+ * \returns size of maximum matching
  */
 int HKGraph::hopcroftKarpAlgorithm()
 {
@@ -126,9 +126,9 @@ int HKGraph::hopcroftKarpAlgorithm()
 
 
 /**
- * @brief This function checks for the possibility of augmented path availability 
- * @returns `true` if there is an augmenting path available
- * @returns `false` if there is no augmenting path available
+ * \brief This function checks for the possibility of augmented path availability 
+ * \returns `true` if there is an augmenting path available
+ * \returns `false` if there is no augmenting path available
  */
 bool HKGraph::bfs()
 {
@@ -183,10 +183,10 @@ bool HKGraph::bfs()
 }
 
 /**
- * @brief This functions checks whether an augmenting path is available exists beginning with free vertex u
- * @param u represents position of vertex
- * @returns `true` if there is an augmenting path beginning with free vertex u
- * @returns `false` if there is no augmenting path beginning with free vertex u
+ * \brief This functions checks whether an augmenting path is available exists beginning with free vertex u
+ * \param u represents position of vertex
+ * \returns `true` if there is an augmenting path beginning with free vertex u
+ * \returns `false` if there is no augmenting path beginning with free vertex u
  */
 bool HKGraph::dfs(int u)
 {
@@ -219,14 +219,14 @@ bool HKGraph::dfs(int u)
 }
 
 /**
- * @brief Default Constructor for initialization
+ * \brief Default Constructor for initialization
  */
 HKGraph::HKGraph() = default;
 
 /**
- * @brief Constructor for initialization
- * @param m is the number of vertices on left side of Bipartite Graph
- * @param n is the number of vertices on right side of Bipartite Graph
+ * \brief Constructor for initialization
+ * \param m is the number of vertices on left side of Bipartite Graph
+ * \param n is the number of vertices on right side of Bipartite Graph
  */
 HKGraph::HKGraph(int m, int n) {
     this->m = m;
@@ -235,9 +235,9 @@ HKGraph::HKGraph(int m, int n) {
 }
 
 /**
- * @brief function to add edge from u to v
- * @param u is the position of first vertex
- * @param v is the position of second vertex
+ * \brief function to add edge from u to v
+ * \param u is the position of first vertex
+ * \param v is the position of second vertex
  */
 void HKGraph::addEdge(int u, int v)
 {
@@ -250,7 +250,7 @@ using graph::HKGraph;
 
 /**
  * Self-test implementation
- * @returns none
+ * \returns none
  */
 void tests(){
      // Sample test case 1
@@ -300,8 +300,8 @@ void tests(){
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main()
 {

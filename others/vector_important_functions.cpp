@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief A C++ program to demonstrate working of std::sort(), std::reverse()
+ * \file
+ * \brief A C++ program to demonstrate working of std::sort(), std::reverse()
  */
 #include <algorithm>
 #include <iostream>

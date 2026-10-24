@@ -1,8 +1,8 @@
 /**
- * @file
- * @author danghai
- * @author [Piotr Idzik](https://github.com/vil02)
- * @brief  This class specifies the basic operation on a stack as a linked list
+ * \file
+ * \author danghai
+ * \author [Piotr Idzik](https://github.com/vil02)
+ * \brief  This class specifies the basic operation on a stack as a linked list
  **/
 #ifndef DATA_STRUCTURES_STACK_HPP_
 #define DATA_STRUCTURES_STACK_HPP_

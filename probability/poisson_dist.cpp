@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief [Poisson
+ * \file
+ * \brief [Poisson
  * statistics](https://en.wikipedia.org/wiki/Poisson_distribution)
  *
  * The Poisson distribution counts how many

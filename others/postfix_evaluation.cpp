@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Evaluation of [Postfix
+ * \file
+ * \brief Evaluation of [Postfix
  * Expression](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
- * @author [Darshana Sarma](https://github.com/Darshana-Sarma)
- * @details
+ * \author [Darshana Sarma](https://github.com/Darshana-Sarma)
+ * \details
  * Create a stack to store operands (or values).
  * Scan the given expression and do following for every scanned element.
  * If the element is a number, push it into the stack
@@ -19,32 +19,32 @@
 #include <vector>     // for std::vector
 
 /**
- * @namespace others
- * @brief Other algorithms
+ * \namespace others
+ * \brief Other algorithms
  */
 namespace others {
 /**
- * @namespace postfix_expression
- * @brief Functions for Postfix Expression algorithm
+ * \namespace postfix_expression
+ * \brief Functions for Postfix Expression algorithm
  */
 namespace postfix_expression {
 
 /**
- * @brief Checks if scanned string is a number
- * @param s scanned string
- * @returns bool boolean value if string is number
+ * \brief Checks if scanned string is a number
+ * \param s scanned string
+ * \returns bool boolean value if string is number
  */
 bool is_number(const std::string &s) {
     return !s.empty() && std::all_of(s.begin(), s.end(), ::isdigit);
 }
 
 /**
- * @brief Evaluate answer using given last two operands from and operation
- * @param a second last added operand which will be used for evaluation
- * @param b last added operand which will be used for evaluation
- * @param operation to be performed with respective floats
- * @param stack containing numbers
- * @returns none
+ * \brief Evaluate answer using given last two operands from and operation
+ * \param a second last added operand which will be used for evaluation
+ * \param b last added operand which will be used for evaluation
+ * \param operation to be performed with respective floats
+ * \param stack containing numbers
+ * \returns none
  */
 void evaluate(float a, float b, const std::string &operation,
               std::stack<float> &stack) {
@@ -89,10 +89,10 @@ float remove_from_stack(std::stack<float> &stack) {
 }  // namespace
 
 /**
- * @brief Postfix Evaluation algorithm to compute the value from given input
+ * \brief Postfix Evaluation algorithm to compute the value from given input
  * array
- * @param input vector of strings consisting of numbers and operations
- * @returns stack[stackTop] returns the top value from the stack
+ * \param input vector of strings consisting of numbers and operations
+ * \returns stack[stackTop] returns the top value from the stack
  */
 float postfix_evaluation(const std::vector<std::string> &input) {
     std::stack<float> stack;
@@ -119,9 +119,9 @@ float postfix_evaluation(const std::vector<std::string> &input) {
 }  // namespace others
 
 /**
- * @brief Test function 1 with input array
+ * \brief Test function 1 with input array
  * {'2', '3', '1', '*', '+', '9', '-'}
- * @returns none
+ * \returns none
  */
 static void test_function_1() {
     std::vector<std::string> input = {"2", "3", "1", "*", "+", "9", "-"};
@@ -132,9 +132,9 @@ static void test_function_1() {
 }
 
 /**
- * @brief Test function 2 with input array
+ * \brief Test function 2 with input array
  * {'100', '200', '+', '2', '/', '5', '*', '7', '+'}
- * @returns none
+ * \returns none
  */
 static void test_function_2() {
     std::vector<std::string> input = {"100", "200", "+", "2", "/",
@@ -196,8 +196,8 @@ static void test_too_many_operands() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test_function_1();

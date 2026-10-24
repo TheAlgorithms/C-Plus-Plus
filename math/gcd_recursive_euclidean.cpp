@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief Compute the greatest common denominator of two integers using
+ * \file
+ * \brief Compute the greatest common denominator of two integers using
  * *recursive form* of
  * [Euclidean algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm)
  *
- * @see gcd_iterative_euclidean.cpp, gcd_of_n_numbers.cpp
+ * \see gcd_iterative_euclidean.cpp, gcd_of_n_numbers.cpp
  */
 #include <iostream>
 

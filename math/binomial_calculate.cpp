@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Program to calculate [Binomial
+ * \file
+ * \brief Program to calculate [Binomial
  * coefficients](https://en.wikipedia.org/wiki/Binomial_coefficient)
  *
- * @author [astronmax](https://github.com/astronmax)
+ * \author [astronmax](https://github.com/astronmax)
  */
 
 #include <cassert>   /// for assert
@@ -12,22 +12,22 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @namespace binomial
- * @brief Functions for [Binomial
+ * \namespace binomial
+ * \brief Functions for [Binomial
  * coefficients](https://en.wikipedia.org/wiki/Binomial_coefficient)
  * implementation
  */
 namespace binomial {
 /**
- * @brief Function to calculate binomial coefficients
- * @param n first value
- * @param k second value
- * @return binomial coefficient for n and k
+ * \brief Function to calculate binomial coefficients
+ * \param n first value
+ * \param k second value
+ * \return binomial coefficient for n and k
  */
 size_t calculate(int32_t n, int32_t k) {
     // basic cases
@@ -50,8 +50,8 @@ size_t calculate(int32_t n, int32_t k) {
 }  // namespace math
 
 /**
- * @brief Test implementations
- * @returns void
+ * \brief Test implementations
+ * \returns void
  */
 static void tests() {
     // tests for calculate function
@@ -71,10 +71,10 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @param argc commandline argument count
- * @param argv commandline array of arguments
- * @returns 0 on exit
+ * \brief Main function
+ * \param argc commandline argument count
+ * \param argv commandline array of arguments
+ * \returns 0 on exit
  */
 int main(int argc, const char* argv[]) {
     tests();  // run self-test implementations

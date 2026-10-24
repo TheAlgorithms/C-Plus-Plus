@@ -1,20 +1,20 @@
 /**
- * @file
- * @author [achance6](https://github.com/achance6)
- * @author [Krishna Vedala](https://github.com/kvedala)
- * @brief Storage mechanism using [quadratic probing
+ * \file
+ * \author [achance6](https://github.com/achance6)
+ * \author [Krishna Vedala](https://github.com/kvedala)
+ * \brief Storage mechanism using [quadratic probing
  * hash](https://en.wikipedia.org/wiki/Quadratic_probing) keys.
- * @note The implementation can be optimized by using OOP style.
+ * \note The implementation can be optimized by using OOP style.
  */
 #include <cmath>
 #include <iostream>
 #include <vector>
 
 /**
- * @addtogroup open_addressing Open Addressing
+ * \addtogroup open_addressing Open Addressing
  * @{
- * @namespace quadratic_probing
- * @brief An implementation of hash table using [quadratic
+ * \namespace quadratic_probing
+ * \brief An implementation of hash table using [quadratic
  * probing](https://en.wikipedia.org/wiki/Quadratic_probing) algorithm.
  */
 namespace quadratic_probing {
@@ -40,8 +40,8 @@ struct Entry {
 };
 
 /** Hash a key
- * @param key key value to hash
- * @returns hash of the key
+ * \param key key value to hash
+ * \returns hash of the key
  */
 size_t hashFxn(int key) {
     std::hash<int> hash;
@@ -49,9 +49,9 @@ size_t hashFxn(int key) {
 }
 
 /** Performs quadratic probing to resolve collisions
- * @param key key value to search/probe
- * @param searching `true` if only searching, `false1 if assigning
- * @returns value of `notPresent`.
+ * \param key key value to search/probe
+ * \param searching `true` if only searching, `false1 if assigning
+ * \returns value of `notPresent`.
  */
 int quadraticProbe(int key, bool searching) {
     int hash = static_cast<int>(hashFxn(key));
@@ -98,10 +98,10 @@ int quadraticProbe(int key, bool searching) {
 }
 
 /** Finds empty spot
- * @param entry Instance of table entry
- * @param key key value to search/probe
- * @returns `true` if key is present
- * @returns `false` if key is absent
+ * \param entry Instance of table entry
+ * \param key key value to search/probe
+ * \returns `true` if key is present
+ * \returns `false` if key is absent
  */
 bool putProber(const Entry& entry, int key) {
     if (entry.key == notPresent || entry.key == tomb) {
@@ -111,10 +111,10 @@ bool putProber(const Entry& entry, int key) {
 }
 
 /** Looks for a matching key
- * @param entry Instance of table entry
- * @param key key value to search/probe
- * @returns `true` if key matches the entry
- * @returns `false` if key does not match the entry
+ * \param entry Instance of table entry
+ * \param key key value to search/probe
+ * \returns `true` if key matches the entry
+ * \returns `false` if key does not match the entry
  */
 bool searchingProber(const Entry& entry, int key) {
     if (entry.key == key) {
@@ -124,9 +124,9 @@ bool searchingProber(const Entry& entry, int key) {
 }
 
 /** Get the entry instance corresponding to a key
- * @param key key value to search/probe
- * @returns if present, the entry instance
- * @returns if not present, a new instance
+ * \param key key value to search/probe
+ * \returns if present, the entry instance
+ * \returns if not present, a new instance
  */
 Entry find(int key) {
     int index = quadraticProbe(key, true);
@@ -137,7 +137,7 @@ Entry find(int key) {
 }
 
 /** Displays the table
- * @returns None
+ * \returns None
  */
 void display() {
     for (int i = 0; i < totalSize; i++) {
@@ -155,7 +155,7 @@ void display() {
 }
 
 /** Rehashes the table into a bigger table
- * @returns none
+ * \returns none
  */
 void rehash() {
     // Necessary so wall of add info isn't printed all at once
@@ -177,7 +177,7 @@ void rehash() {
 }
 
 /** Checks for load factor here
- * @param key  key value to hash and add to table
+ * \param key  key value to hash and add to table
  */
 void add(int key) {
     int index = quadraticProbe(key, false);
@@ -189,7 +189,7 @@ void add(int key) {
 }
 
 /** Removes key. Leaves tombstone upon removal.
- * @param key  key value to hash and remove from table
+ * \param key  key value to hash and remove from table
  */
 void remove(int key) {
     int index = quadraticProbe(key, true);
@@ -202,7 +202,7 @@ void remove(int key) {
 }
 
 /** Information about the adding process
- * @param key  key value to hash and add to table
+ * \param key  key value to hash and add to table
  */
 void addInfo(int key) {
     std::cout << "Initial table: ";
@@ -217,7 +217,7 @@ void addInfo(int key) {
 }
 
 /** Information about removal process
- * @param key  key value to hash and remove from table
+ * \param key  key value to hash and remove from table
  */
 void removalInfo(int key) {
     std::cout << "Initial table: ";
@@ -241,7 +241,7 @@ using quadratic_probing::table;
 using quadratic_probing::totalSize;
 
 /** Main function
- * @returns None
+ * \returns None
  */
 int main() {
     int cmd = 0, key = 0;

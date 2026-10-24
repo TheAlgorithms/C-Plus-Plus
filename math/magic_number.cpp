@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief A simple program to check if the given number is a magic number or
+ * \file
+ * \brief A simple program to check if the given number is a magic number or
  * not. A number is said to be a magic number, if the sum of its digits are
  * calculated till a single digit recursively by adding the sum of the digits
  * after every addition. If the single digit comes out to be 1,then the number
@@ -14,21 +14,21 @@
  * by 9. The final digit sum is always 9. An increase of 1 in the original
  * number will increase the ultimate value by 1, making it 10 and the ultimate
  * sum will be 1, thus verifying that it is a magic number.
- * @author [Neha Hasija](https://github.com/neha-hasija17)
+ * \author [Neha Hasija](https://github.com/neha-hasija17)
  */
 #include <cassert>   /// for assert
 #include <cstdint>
 #include <iostream>  /// for io operations
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
  * Function to check if the given number is magic number or not.
- * @param n number to be checked.
- * @return if number is a magic number, returns true, else false.
+ * \param n number to be checked.
+ * \return if number is a magic number, returns true, else false.
  */
 bool magic_number(const uint64_t &n) {
     if (n <= 0) {
@@ -46,8 +46,8 @@ bool magic_number(const uint64_t &n) {
 }  // namespace math
 
 /**
- * @brief Test function
- * @returns void
+ * \brief Test function
+ * \returns void
  */
 static void tests() {
     std::cout << "Test 1:\t n=60\n";
@@ -72,8 +72,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // execute the tests

@@ -1,10 +1,10 @@
 /**
- * @file
- * @author [Aditya Prakash](https://adityaprakash.tech)
- * @brief This is an implementation of a recursive version of the [Bubble sort
+ * \file
+ * \author [Aditya Prakash](https://adityaprakash.tech)
+ * \brief This is an implementation of a recursive version of the [Bubble sort
  algorithm](https://www.geeksforgeeks.org/recursive-bubble-sort/)
  *
- * @details
+ * \details
  * The working principle of the Bubble sort algorithm.
 
  * Bubble sort is a simple sorting algorithm used to rearrange a set of
@@ -64,20 +64,20 @@
 #include <vector>     /// for std::vector
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 
 /**
- * @brief This is an implementation of the recursive_bubble_sort. A vector is
+ * \brief This is an implementation of the recursive_bubble_sort. A vector is
  * passed to the function which is then dereferenced, so that the changes are
  * reflected in the original vector. It also accepts a second parameter of
  * type `int` and name `n`, which is the size of the array.
  *
- * @tparam T type of data variables in the array
- * @param nums our array of elements.
- * @param n size of the array
+ * \tparam T type of data variables in the array
+ * \param nums our array of elements.
+ * \param n size of the array
  */
 template <typename T>
 void recursive_bubble_sort(std::vector<T> *nums, uint64_t n) {
@@ -98,8 +98,8 @@ void recursive_bubble_sort(std::vector<T> *nums, uint64_t n) {
 }  // namespace sorting
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // 1st example. Creating an array of type `int`.
@@ -148,8 +148,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

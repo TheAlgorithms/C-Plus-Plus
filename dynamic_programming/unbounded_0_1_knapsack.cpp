@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Implementation of the Unbounded 0/1 Knapsack Problem
+ * \file
+ * \brief Implementation of the Unbounded 0/1 Knapsack Problem
  *
- * @details
+ * \details
  * The Unbounded 0/1 Knapsack problem allows taking unlimited quantities of each
  * item. The goal is to maximize the total value without exceeding the given
  * knapsack capacity. Unlike the 0/1 knapsack, where each item can be taken only
@@ -13,15 +13,15 @@
  * arrays `wt` and `val` respectively, and a knapsack with a weight limit W, the
  * task is to fill the knapsack to maximize the total value.
  *
- * @note weight and value of items is greater than zero
+ * \note weight and value of items is greater than zero
  *
  * ### Algorithm
  * The approach uses dynamic programming to build a solution iteratively.
  * A 2D array is used for memoization to store intermediate results, allowing
  * the function to avoid redundant calculations.
  *
- * @author [Sanskruti Yeole](https://github.com/yeolesanskruti)
- * @see dynamic_programming/0_1_knapsack.cpp
+ * \author [Sanskruti Yeole](https://github.com/yeolesanskruti)
+ * \see dynamic_programming/0_1_knapsack.cpp
  */
 
 #include <cassert>   // For using assert function to validate test cases
@@ -30,29 +30,29 @@
 #include <vector>    // Standard library for using dynamic arrays (vectors)
 
 /**
- * @namespace dynamic_programming
- * @brief Namespace for dynamic programming algorithms
+ * \namespace dynamic_programming
+ * \brief Namespace for dynamic programming algorithms
  */
 namespace dynamic_programming {
 
 /**
- * @namespace Knapsack
- * @brief Implementation of unbounded 0-1 knapsack problem
+ * \namespace Knapsack
+ * \brief Implementation of unbounded 0-1 knapsack problem
  */
 namespace unbounded_knapsack {
 
 /**
- * @brief Recursive function to calculate the maximum value obtainable using
+ * \brief Recursive function to calculate the maximum value obtainable using
  *        an unbounded knapsack approach.
  *
- * @param i Current index in the value and weight vectors.
- * @param W Remaining capacity of the knapsack.
- * @param val Vector of values corresponding to the items.
- * @note "val" data type can be changed according to the size of the input.
- * @param wt Vector of weights corresponding to the items.
- * @note "wt" data type can be changed according to the size of the input.
- * @param dp 2D vector for memoization to avoid redundant calculations.
- * @return The maximum value that can be obtained for the given index and
+ * \param i Current index in the value and weight vectors.
+ * \param W Remaining capacity of the knapsack.
+ * \param val Vector of values corresponding to the items.
+ * \note "val" data type can be changed according to the size of the input.
+ * \param wt Vector of weights corresponding to the items.
+ * \note "wt" data type can be changed according to the size of the input.
+ * \param dp 2D vector for memoization to avoid redundant calculations.
+ * \return The maximum value that can be obtained for the given index and
  * capacity.
  */
 std::uint16_t KnapSackFilling(std::uint16_t i, std::uint16_t W,
@@ -82,13 +82,13 @@ std::uint16_t KnapSackFilling(std::uint16_t i, std::uint16_t W,
 }
 
 /**
- * @brief Wrapper function to initiate the unbounded knapsack calculation.
+ * \brief Wrapper function to initiate the unbounded knapsack calculation.
  *
- * @param N Number of items.
- * @param W Maximum weight capacity of the knapsack.
- * @param val Vector of values corresponding to the items.
- * @param wt Vector of weights corresponding to the items.
- * @return The maximum value that can be obtained for the given capacity.
+ * \param N Number of items.
+ * \param W Maximum weight capacity of the knapsack.
+ * \param val Vector of values corresponding to the items.
+ * \param wt Vector of weights corresponding to the items.
+ * \return The maximum value that can be obtained for the given capacity.
  */
 std::uint16_t unboundedKnapsack(std::uint16_t N, std::uint16_t W,
                                 const std::vector<std::uint16_t>& val,
@@ -105,8 +105,8 @@ std::uint16_t unboundedKnapsack(std::uint16_t N, std::uint16_t W,
 }  // namespace dynamic_programming
 
 /**
- * @brief self test implementation
- * @return void
+ * \brief self test implementation
+ * \return void
  */
 static void tests() {
     // Test Case 1
@@ -164,8 +164,8 @@ static void tests() {
 }
 
 /**
- * @brief main function
- * @return 0 on successful exit
+ * \brief main function
+ * \return 0 on successful exit
  */
 int main() {
     tests();  // Run self test implementation

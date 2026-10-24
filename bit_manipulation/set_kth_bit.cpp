@@ -1,11 +1,11 @@
 /**
- * @file
- * @brief Implementation to [From the right, set the Kth bit in the binary
+ * \file
+ * \brief Implementation to [From the right, set the Kth bit in the binary
  * representation of N]
  * (https://practice.geeksforgeeks.org/problems/set-kth-bit3724/1/) in an
  * integer.
  *
- * @details
+ * \details
  * Given a number N and a value K. From the right, set the Kth bit in the binary
  * representation of N. The position of Least Significant Bit(or last bit) is 0,
  * the second last bit is 1 and so on. in it.
@@ -15,7 +15,7 @@
  * Worst Case Time Complexity: O(1)
  * Space complexity: O(1)
 
- * @author [Aman Raj](https://github.com/aman2000raj)
+ * \author [Aman Raj](https://github.com/aman2000raj)
  */
 
 #include <cassert>   /// for assert
@@ -23,22 +23,22 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
+ * \namespace bit_manipulation
+ * \brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 /**
- * @namespace setKthBit
- * @brief Functions for the [From the right, set the Kth bit in the binary
+ * \namespace setKthBit
+ * \brief Functions for the [From the right, set the Kth bit in the binary
  * representation of N]
  * (https://practice.geeksforgeeks.org/problems/set-kth-bit3724/1/)
  * implementation
  */
 namespace set_kth_bit {
 /**
- * @brief The main function implements set kth bit
- * @param N is the number whose kth bit will be set
- * @returns returns an integer after setting the K'th bit in N
+ * \brief The main function implements set kth bit
+ * \param N is the number whose kth bit will be set
+ * \returns returns an integer after setting the K'th bit in N
  */
 std::uint64_t setKthBit(std ::int64_t N,
                         std ::int64_t k) {  // int64_t is preferred over int so
@@ -55,8 +55,8 @@ std::uint64_t setKthBit(std ::int64_t N,
 }  // namespace bit_manipulation
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // n = 10,2 return 14
@@ -71,8 +71,8 @@ static void test() {
     std::cout << "All test cases successfully passed!" << std::endl;
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

@@ -1,7 +1,7 @@
 /**
- * @file
+ * \file
  *
- * @author Anmol3299
+ * \author Anmol3299
  * \brief A basic implementation of trie class to store only lower-case strings.
  */
 #include <iostream>  // for io operations
@@ -33,10 +33,10 @@ class Trie {
 
     /**
      * Function to check if a node has some children which can form words.
-     * @param node whose character array of pointers need to be checked for
+     * \param node whose character array of pointers need to be checked for
      * children.
-     * @return `true` if a child is found
-     * @return `false` if a child is not found
+     * \return `true` if a child is found
+     * \return `false` if a child is not found
      */
     inline static bool hasChildren(std::shared_ptr<TrieNode> node) {
         for (size_t i = 0; i < ALPHABETS; i++) {
@@ -54,12 +54,12 @@ class Trie {
      * error. Upon successfully reaching the last character of word in trie, if
      * sets the isEndOfWord to false and deletes the node if and only if it has
      * no children, else it returns the current node.
-     * @param word is the string which needs to be removed from trie.
-     * @param curr is the current node we are at.
-     * @param index is the index of the @word we are at.
-     * @return if current node has childern, it returns @ curr, else it returns
+     * \param word is the string which needs to be removed from trie.
+     * \param curr is the current node we are at.
+     * \param index is the index of the @word we are at.
+     * \return if current node has childern, it returns @ curr, else it returns
      * nullptr.
-     * @throw a runtime error in case @ word is not found in the trie.
+     * \throw a runtime error in case @ word is not found in the trie.
      */
     std::shared_ptr<TrieNode> removeWordHelper(const std::string& word,
                                                std::shared_ptr<TrieNode> curr,
@@ -104,7 +104,7 @@ class Trie {
 
     /**
      * Insert a word into the trie.
-     * @param word which needs to be inserted into the string.
+     * \param word which needs to be inserted into the string.
      */
     void insert(const std::string& word) {
         auto curr = m_root;
@@ -124,9 +124,9 @@ class Trie {
 
     /**
      * Search if a word is present in trie or not.
-     * @param word which is needed to be searched in the trie.
-     * @return True if the word is found in trie and isEndOfWord is set to true.
-     * @return False if word is not found in trie or isEndOfWord is set to
+     * \param word which is needed to be searched in the trie.
+     * \return True if the word is found in trie and isEndOfWord is set to true.
+     * \return False if word is not found in trie or isEndOfWord is set to
      * false.
      */
     bool search(const std::string& word) {

@@ -1,9 +1,9 @@
 /******************************************************************************
- * @file
- * @brief Implementation of the [Convex
+ * \file
+ * \brief Implementation of the [Convex
  * Hull](https://en.wikipedia.org/wiki/Convex_hull) implementation using [Graham
  * Scan](https://en.wikipedia.org/wiki/Graham_scan)
- * @details
+ * \details
  * In geometry, the convex hull or convex envelope or convex closure of a shape
  * is the smallest convex set that contains it. The convex hull may be defined
  * either as the intersection of all convex sets containing a given subset of a
@@ -35,7 +35,7 @@
  * points (considering them in the same order) is not counterclockwise, we
  * discard c, otherwise we keep it.
  *
- * @author [Lajat Manekar](https://github.com/Lazeeez)
+ * \author [Lajat Manekar](https://github.com/Lazeeez)
  *
  *******************************************************************************/
 #include <cassert>   /// for std::assert
@@ -45,8 +45,8 @@
 #include "./graham_scan_functions.hpp"  /// for all the functions used
 
 /*******************************************************************************
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  *******************************************************************************/
 static void test() {
     std::vector<geometry::grahamscan::Point> points = {
@@ -67,8 +67,8 @@ static void test() {
 }
 
 /*******************************************************************************
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  *******************************************************************************/
 int main() {
     test();  // run self-test implementations

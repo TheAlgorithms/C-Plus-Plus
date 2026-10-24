@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief Get centre and radius of the
+ * \file
+ * \brief Get centre and radius of the
  * [smallest circle](https://en.wikipedia.org/wiki/Smallest-circle_problem)
  * that circumscribes given set of points.
  *
- * @see [other
+ * \see [other
  * implementation](https://www.nayuki.io/page/smallest-enclosing-circle)
  */
 #include <cmath>
@@ -183,7 +183,7 @@ void test2() {
  * \n Circle with
  * \n radius 1.821078397711709
  * \n centre at (2.142857142857143, 1.7857142857142856)
- * @todo This test fails
+ * \todo This test fails
  */
 void test3() {
     std::vector<Point> Pv;

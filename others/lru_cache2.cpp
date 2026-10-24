@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation for [LRU Cache]
+ * \file
+ * \brief Implementation for [LRU Cache]
  * (https://en.wikipedia.org/wiki/Cache_replacement_policies#:~:text=Least%20Recently%20Used%20(LRU))
  *
- * @details
+ * \details
  * LRU discards the least recently used value.
  * Data structures used - doubly linked list and unordered_map
  *
@@ -13,7 +13,7 @@
  *
  * When the cache is full, the last element in the linked list is popped.
  *
- * @author [Karan Sharma](https://github.com/deDSeC00720)
+ * \author [Karan Sharma](https://github.com/deDSeC00720)
  */
 
 #include <cassert>        // for assert
@@ -22,21 +22,21 @@
 #include <unordered_map>  // for std::unordered_map
 
 /**
- * @namespace
- * @brief Other algorithms
+ * \namespace
+ * \brief Other algorithms
  */
 namespace others {
 
 /**
- * @namespace
- * @brief Cache algorithm
+ * \namespace
+ * \brief Cache algorithm
  */
 namespace Cache {
 
 /**
- * @class
- * @brief Node for a doubly linked list with data, prev and next pointers
- * @tparam T type of the data of the node
+ * \class
+ * \brief Node for a doubly linked list with data, prev and next pointers
+ * \tparam T type of the data of the node
  */
 template <typename T>
 class D_Node {
@@ -52,10 +52,10 @@ template <typename K, typename V>
 using CacheNode = D_Node<std::pair<K, V>>;
 
 /**
- * @class
- * @brief LRUCache
- * @tparam K type of key in the LRU
- * @tparam V type of value in the LRU
+ * \class
+ * \brief LRUCache
+ * \tparam K type of key in the LRU
+ * \tparam V type of value in the LRU
  */
 template <typename K, typename V>
 class LRUCache {
@@ -68,17 +68,17 @@ class LRUCache {
 
  public:
     /**
-     * @brief Constructor, Initialize the head and tail pointers to nullptr and
+     * \brief Constructor, Initialize the head and tail pointers to nullptr and
      * initialize the _capacity of the cache
-     * @param _capacity Total capacity of the cache
+     * \param _capacity Total capacity of the cache
      */
     explicit LRUCache(int _capacity)
         : head(nullptr), tail(nullptr), _capacity(_capacity) {}
 
  private:
     /**
-     * @brief push the node to the front of the linked list.
-     * @param node_ptr the node to be pushed
+     * \brief push the node to the front of the linked list.
+     * \param node_ptr the node to be pushed
      */
     void push_front(CacheNode<K, V> *node_ptr) {
         if (!head) {
@@ -93,8 +93,8 @@ class LRUCache {
     }
 
     /**
-     * @brief move the existing node in the list to the beginning of the list.
-     * @param node_ptr node to be moved to the beginning.
+     * \brief move the existing node in the list to the beginning of the list.
+     * \param node_ptr node to be moved to the beginning.
      */
     void make_recent(CacheNode<K, V> *node_ptr) {
         if (head == node_ptr) {
@@ -117,7 +117,7 @@ class LRUCache {
     }
 
     /**
-     * @brief pop the last node in the linked list.
+     * \brief pop the last node in the linked list.
      */
     void pop_back() {
         if (!head) {
@@ -138,9 +138,9 @@ class LRUCache {
 
  public:
     /**
-     * @brief upsert a key-value pair
-     * @param key key of the key-value pair
-     * @param value value of the key-value pair
+     * \brief upsert a key-value pair
+     * \param key key of the key-value pair
+     * \param value value of the key-value pair
      */
     void put(K key, V value) {
         // update the value if key already exists
@@ -164,10 +164,10 @@ class LRUCache {
     }
 
     /**
-     * @brief get the value of the key-value pair if exists
-     * @param key key of the key-value pair
-     * @return the value mapped to the given key
-     * @exception exception is thrown if the key is not present in the cache
+     * \brief get the value of the key-value pair if exists
+     * \param key key of the key-value pair
+     * \return the value mapped to the given key
+     * \exception exception is thrown if the key is not present in the cache
      */
     V get(K key) {
         if (!node_map.count(key)) {
@@ -181,25 +181,25 @@ class LRUCache {
     }
 
     /**
-     * @brief Returns the number of items present in the cache.
-     * @return number of items in the cache
+     * \brief Returns the number of items present in the cache.
+     * \return number of items in the cache
      */
     int size() const { return node_map.size(); }
 
     /**
-     * @brief Returns the total capacity of the cache
-     * @return Total capacity of the cache
+     * \brief Returns the total capacity of the cache
+     * \return Total capacity of the cache
      */
     int capacity() const { return _capacity; }
 
     /**
-     * @brief returns whether the cache is empty or not
-     * @return true if the cache is empty, false otherwise.
+     * \brief returns whether the cache is empty or not
+     * \return true if the cache is empty, false otherwise.
      */
     bool empty() const { return node_map.empty(); }
 
     /**
-     * @brief destructs the cache, iterates on the map and deletes every node
+     * \brief destructs the cache, iterates on the map and deletes every node
      * present in the cache.
      */
     ~LRUCache() {
@@ -214,8 +214,8 @@ class LRUCache {
 }  // namespace others
 
 /**
- * @brief self test implementations
- * @return void
+ * \brief self test implementations
+ * \return void
  */
 static void test() {
     others::Cache::LRUCache<int, int> cache(5);
@@ -268,8 +268,8 @@ static void test() {
 }
 
 /**
- * @brief main function
- * @return 0 on exit
+ * \brief main function
+ * \return 0 on exit
  */
 int main() {
     test();  // run the self test implementation

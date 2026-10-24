@@ -1,13 +1,13 @@
 /**
- * @file
- * @brief Quick Sort without recursion. This method uses the stack instead.
+ * \file
+ * \brief Quick Sort without recursion. This method uses the stack instead.
  * Both recursive and iterative implementations have O(n log n) best case
  * and O(n^2) worst case.
- * @details
+ * \details
  * https://stackoverflow.com/questions/12553238/quicksort-iterative-or-recursive
  * https://en.wikipedia.org/wiki/Quicksort
  * https://www.geeksforgeeks.org/iterative-quick-sort/
- * @author [Sebe324](https://github.com/sebe324)
+ * \author [Sebe324](https://github.com/sebe324)
  */
 
 #include <iostream> /// for std::cout
@@ -18,17 +18,17 @@
 
 
 /**
- * @namespace sorting
- * @brief Sorting algorithms
+ * \namespace sorting
+ * \brief Sorting algorithms
  */
 namespace sorting {
 /**
- * @brief The partition function sorts the array from
+ * \brief The partition function sorts the array from
  * start to end and uses the last element as the pivot.
- * @param arr the array to be sorted
- * @param start starting index
- * @param end ending index
- * @return int next index of the pivot
+ * \param arr the array to be sorted
+ * \param start starting index
+ * \param end ending index
+ * \return int next index of the pivot
  */
 int partition(std::vector<int> &arr, int start, int end)
 {
@@ -46,14 +46,14 @@ int partition(std::vector<int> &arr, int start, int end)
 }
 
 /**
- * @brief The main sorting function
- * @details The iterative quick sort uses
+ * \brief The main sorting function
+ * \details The iterative quick sort uses
  * the stack instead of recursion for saving
  * and restoring the environment between calls.
  * It does not need the end and start params, because
  * it is not recursive.
- * @param arr array to be sorted
- * @return void
+ * \param arr array to be sorted
+ * \return void
  */
 void iterativeQuickSort(std::vector<int> &arr)
 {
@@ -88,8 +88,8 @@ void iterativeQuickSort(std::vector<int> &arr)
 
 } // namespace sorting
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 void tests()
 {
@@ -122,8 +122,8 @@ void tests()
 
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main()
 {

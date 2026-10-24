@@ -1,20 +1,20 @@
 /**
- * @file
- * @brief
+ * \file
+ * \brief
  * Implementation to calculate an estimate of the [number π
  * (Pi)](https://en.wikipedia.org/wiki/File:Pi_30K.gif).
  *
- * @details
+ * \details
  * We take a random point P with coordinates (x, y) such that 0 ≤ x ≤ 1 and 0 ≤
  * y ≤ 1. If x² + y² ≤ 1, then the point is inside the quarter disk of radius 1,
  * else the point is outside. We know that the probability of the point being
  * inside the quarter disk is equal to π/4 double approx(vector<Point> &pts)
  * which will use the points pts (drawn at random) to return an estimate of the
  * number π
- * @note This implementation is better than naive recursive or iterative
+ * \note This implementation is better than naive recursive or iterative
  * approach.
  *
- * @author [Qannaf AL-SAHMI](https://github.com/Qannaf)
+ * \author [Qannaf AL-SAHMI](https://github.com/Qannaf)
  */
 
 #include <cassert>   /// for assert
@@ -23,13 +23,13 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 
 /**
- * @brief structure of points containing two numbers, x and y, such that 0 ≤ x ≤
+ * \brief structure of points containing two numbers, x and y, such that 0 ≤ x ≤
  * 1 and 0 ≤ y ≤ 1.
  */
 using Point = struct {
@@ -38,11 +38,11 @@ using Point = struct {
 };
 
 /**
- * @brief This function uses the points in a given vector 'pts' (drawn at
+ * \brief This function uses the points in a given vector 'pts' (drawn at
  * random) to return an approximation of the number π.
- * @param pts Each item of pts contains a point. A point is represented by the
+ * \param pts Each item of pts contains a point. A point is represented by the
  * point structure (coded above).
- * @return  an estimate of the number π.
+ * \return  an estimate of the number π.
  */
 double approximate_pi(const std::vector<Point> &pts) {
     double count = 0;  // Points in circle
@@ -56,8 +56,8 @@ double approximate_pi(const std::vector<Point> &pts) {
 }  // namespace math
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     std::vector<math::Point> rands;
@@ -74,8 +74,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // run self-test implementations

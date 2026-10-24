@@ -1,10 +1,10 @@
 /**
- * @file
+ * \file
  *
- * @details Implementation of 128-bit unsigned integers.
- * @note The implementation can be flagged as not completed. This header is used
+ * \details Implementation of 128-bit unsigned integers.
+ * \note The implementation can be flagged as not completed. This header is used
  * with enough operations as a part of bigger integer types 256-bit integer.
- * @author [Ashish Daulatabad](https://github.com/AshishYUO)
+ * \author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 
 #include <algorithm>  /// for `std::reverse` and other operations
@@ -22,11 +22,11 @@
 class uint128_t;
 
 /**
- * @brief Adding two string
- * @details Adds two long integer, only used for printing numbers
- * @param first First integer string
- * @param second Second integer string
- * @returns string denoting the addition of both the strings
+ * \brief Adding two string
+ * \details Adds two long integer, only used for printing numbers
+ * \param first First integer string
+ * \param second Second integer string
+ * \returns string denoting the addition of both the strings
  */
 std::string add(const std::string &first, const std::string &second) {
     std::string third;
@@ -47,18 +47,18 @@ std::string add(const std::string &first, const std::string &second) {
     return third;
 }
 /**
- * @class uint128_t
- * @brief class for 128-bit unsigned integer
+ * \class uint128_t
+ * \brief class for 128-bit unsigned integer
  */
 class uint128_t {
     uint64_t f{}, s{};  /// First and second half of 128 bit number
 
     /**
-     * @brief Get integer from given string.
-     * @details Create an integer from a given string
-     * @param str integer string, can be hexadecimal (starting on 0x... or
+     * \brief Get integer from given string.
+     * \details Create an integer from a given string
+     * \param str integer string, can be hexadecimal (starting on 0x... or
      * number)
-     * @returns void
+     * \returns void
      */
     void __get_integer_from_string(const std::string &str) {
         this->f = this->s = 0;
@@ -85,50 +85,50 @@ class uint128_t {
     uint128_t() = default;
 
     /**
-     * @brief Parameterized constructor
-     * @tparam T integral type
-     * @param low lower part 8-bit unisgned integer
+     * \brief Parameterized constructor
+     * \tparam T integral type
+     * \param low lower part 8-bit unisgned integer
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
     explicit uint128_t(T low) : s(low) {}
 
     /**
-     * @brief Parameterized constructor
-     * @param str Integer string (hexadecimal starting with 0x.. or decimal)
+     * \brief Parameterized constructor
+     * \param str Integer string (hexadecimal starting with 0x.. or decimal)
      */
     explicit uint128_t(const std::string &str) {
         __get_integer_from_string(str);
     }
 
     /**
-     * @brief Parameterized constructor
-     * @param high higher part 64-bit unsigned integer
-     * @param low lower part 64-bit unsigned integer
+     * \brief Parameterized constructor
+     * \param high higher part 64-bit unsigned integer
+     * \param low lower part 64-bit unsigned integer
      */
     uint128_t(const uint64_t high, const uint64_t low) : f(high), s(low) {}
 
     /**
-     * @brief Copy constructor
-     * @param num 128-bit unsigned integer
+     * \brief Copy constructor
+     * \param num 128-bit unsigned integer
      */
     uint128_t(const uint128_t &num) = default;
 
     /**
-     * @brief Move constructor
-     * @param num 128-bit unsigned integer
+     * \brief Move constructor
+     * \param num 128-bit unsigned integer
      */
     uint128_t(uint128_t &&num) noexcept : f(num.f), s(num.s) {}
 
     /**
-     * @brief Destructor for uint128_t
+     * \brief Destructor for uint128_t
      */
     ~uint128_t() = default;
 
     /**
-     * @brief Leading zeroes in binary
-     * @details Calculates leading zeros in 128-bit integer
-     * @returns Integer denoting leading zeroes
+     * \brief Leading zeroes in binary
+     * \details Calculates leading zeros in 128-bit integer
+     * \returns Integer denoting leading zeroes
      */
     inline uint32_t _lez() {
 #ifndef _MSC_VER
@@ -149,9 +149,9 @@ class uint128_t {
     }
 
     /**
-     * @brief Trailing zeroes in binary
-     * @details Calculates leading zeros in 128-bit integer
-     * @returns Integer denoting Trailing zeroes
+     * \brief Trailing zeroes in binary
+     * \details Calculates leading zeros in 128-bit integer
+     * \returns Integer denoting Trailing zeroes
      */
     inline uint32_t _trz() {
 #ifndef _MSC_VER
@@ -172,15 +172,15 @@ class uint128_t {
     }
 
     /**
-     * @brief casting operator to boolean value
-     * @returns true if value of this is non-zero, else false
+     * \brief casting operator to boolean value
+     * \returns true if value of this is non-zero, else false
      */
     inline explicit operator bool() const { return (f || s); }
 
     /**
-     * @brief casting operator to any integer valu
-     * @tparam T any integer type
-     * @returns integer value casted to mentioned type
+     * \brief casting operator to any integer valu
+     * \tparam T any integer type
+     * \returns integer value casted to mentioned type
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -189,22 +189,22 @@ class uint128_t {
     }
 
     /**
-     * @brief returns lower 64-bit integer part
-     * @returns returns lower 64-bit integer part
+     * \brief returns lower 64-bit integer part
+     * \returns returns lower 64-bit integer part
      */
     inline uint64_t lower() const { return s; }
 
     /**
-     * @brief returns upper 64-bit integer part
-     * @returns returns upper 64-bit integer part
+     * \brief returns upper 64-bit integer part
+     * \returns returns upper 64-bit integer part
      */
     inline uint64_t upper() const { return f; }
 
     /**
-     * @brief operator = for other types
-     * @tparam T denoting any integer type
-     * @param p an integer to assign it's value
-     * @returns this pointer with it's value equal to `p`
+     * \brief operator = for other types
+     * \tparam T denoting any integer type
+     * \param p an integer to assign it's value
+     * \returns this pointer with it's value equal to `p`
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -214,9 +214,9 @@ class uint128_t {
     }
 
     /**
-     * @brief operator = for type string
-     * @param p a string to assign it's value to equivalent integer
-     * @returns this pointer with it's value equal to `p`
+     * \brief operator = for type string
+     * \param p a string to assign it's value to equivalent integer
+     * \returns this pointer with it's value equal to `p`
      */
     inline uint128_t &operator=(const std::string &p) {
         this->__get_integer_from_string(p);
@@ -224,22 +224,22 @@ class uint128_t {
     }
 
     /**
-     * @brief operator = for uint128_t
-     * @param p an 128-bit integer to assign it's value
-     * @returns this pointer with it's value equal to `p`
+     * \brief operator = for uint128_t
+     * \param p an 128-bit integer to assign it's value
+     * \returns this pointer with it's value equal to `p`
      */
     inline uint128_t &operator=(const uint128_t &p) = default;
 
     /**
-     * @brief Move assignment operator
+     * \brief Move assignment operator
      */
     inline uint128_t &operator=(uint128_t &&p) = default;
 
     /**
-     * @brief operator + for uint128_t and other integer types.
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns addition of this and p, returning uint128_t integer
+     * \brief operator + for uint128_t and other integer types.
+     * \tparam T denoting integral type
+     * \param p a type of integer variable
+     * \returns addition of this and p, returning uint128_t integer
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -248,19 +248,19 @@ class uint128_t {
     }
 
     /**
-     * @brief operator + for uint128_t and other integer types.
-     * @param p 128-bit unsigned integer
-     * @returns addition of this and p, returning uint128_t integer
+     * \brief operator + for uint128_t and other integer types.
+     * \param p 128-bit unsigned integer
+     * \returns addition of this and p, returning uint128_t integer
      */
     inline uint128_t operator+(const uint128_t &p) {
         return uint128_t(f + (p.s + s < s) + p.f, p.s + s);
     }
 
     /**
-     * @brief operator += for uint128_t and other integer types.
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns addition of this and p, returning this
+     * \brief operator += for uint128_t and other integer types.
+     * \tparam T denoting integral type
+     * \param p a type of integer variable
+     * \returns addition of this and p, returning this
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -272,9 +272,9 @@ class uint128_t {
     }
 
     /**
-     * @brief operator += for uint128_t
-     * @param p 128-bit unsigned integer
-     * @returns addition of this and p, returning this
+     * \brief operator += for uint128_t
+     * \param p 128-bit unsigned integer
+     * \returns addition of this and p, returning this
      */
     uint128_t &operator+=(const uint128_t &p) {
         bool app = p.s + s < s;
@@ -284,8 +284,8 @@ class uint128_t {
     }
 
     /**
-     * @brief pre-increment operator
-     * @returns incremented value of this.
+     * \brief pre-increment operator
+     * \returns incremented value of this.
      */
     inline uint128_t &operator++() {
         *this += 1;
@@ -293,8 +293,8 @@ class uint128_t {
     }
 
     /**
-     * @brief post-increment operator
-     * @returns incremented value of this.
+     * \brief post-increment operator
+     * \returns incremented value of this.
      */
     inline uint128_t operator++(int) {
         ++*this;
@@ -302,10 +302,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator - for uint128_t and other integer types.
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns subtraction of this and p, returning uint128_t integer
+     * \brief operator - for uint128_t and other integer types.
+     * \tparam T denoting integral type
+     * \param p a type of integer variable
+     * \returns subtraction of this and p, returning uint128_t integer
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -315,9 +315,9 @@ class uint128_t {
     }
 
     /**
-     * @brief operator - for uint128_t
-     * @param p a type of integer variable
-     * @returns subtraction of this and p, returning uint128_t integer
+     * \brief operator - for uint128_t
+     * \param p a type of integer variable
+     * \returns subtraction of this and p, returning uint128_t integer
      */
     inline uint128_t operator-(const uint128_t &p) {
         bool app = p.s > s;
@@ -325,14 +325,14 @@ class uint128_t {
     }
 
     /**
-     * @brief operator - using twos complement
-     * @returns 2's complement of this.
+     * \brief operator - using twos complement
+     * \returns 2's complement of this.
      */
     inline uint128_t operator-() { return ~*this + uint128_t(1); }
 
     /**
-     * @brief operator -- (pre-decrement)
-     * @returns decremented value of this
+     * \brief operator -- (pre-decrement)
+     * \returns decremented value of this
      */
     inline uint128_t &operator--() {
         *this -= 1;
@@ -340,8 +340,8 @@ class uint128_t {
     }
 
     /**
-     * @brief operator -- (post-decrement)
-     * @returns decremented value of this
+     * \brief operator -- (post-decrement)
+     * \returns decremented value of this
      */
     inline uint128_t operator--(int) {
         --*this;
@@ -349,10 +349,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator -= for uint128_t and other integer types.
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns subtraction of this and p, returning this
+     * \brief operator -= for uint128_t and other integer types.
+     * \tparam T denoting integral type
+     * \param p a type of integer variable
+     * \returns subtraction of this and p, returning this
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -364,9 +364,9 @@ class uint128_t {
     }
 
     /**
-     * @brief operator -= for uint128_t
-     * @param p 128-bit unsigned integer
-     * @returns subtraction of this and p, returning this
+     * \brief operator -= for uint128_t
+     * \param p 128-bit unsigned integer
+     * \returns subtraction of this and p, returning this
      */
     uint128_t &operator-=(const uint128_t &p) {
         bool app = p.s > s;
@@ -376,10 +376,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator * for uint128_t and other integer types.
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns multiplication of this and p, returning uint128_t integer
+     * \brief operator * for uint128_t and other integer types.
+     * \tparam T denoting integral type
+     * \param p a type of integer variable
+     * \returns multiplication of this and p, returning uint128_t integer
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -388,9 +388,9 @@ class uint128_t {
     }
 
     /**
-     * @brief operator * for uint128_t and other integer types.
-     * @param p 128-bit unsigned integer
-     * @returns multiplication of this and p, returning uint128_t integer
+     * \brief operator * for uint128_t and other integer types.
+     * \param p 128-bit unsigned integer
+     * \returns multiplication of this and p, returning uint128_t integer
      */
     uint128_t operator*(const uint128_t &p) {
         uint64_t f_first = s >> 32, f_second = s & 0xFFFFFFFF,
@@ -407,10 +407,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator *= for uint128_t and other integer types.
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns multiplication of this and p, returning this
+     * \brief operator *= for uint128_t and other integer types.
+     * \tparam T denoting integral type
+     * \param p a type of integer variable
+     * \returns multiplication of this and p, returning this
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -420,9 +420,9 @@ class uint128_t {
     }
 
     /**
-     * @brief operator *= for uint128_t and other integer types.
-     * @param p 128-bit unsigned integer
-     * @returns multiplication of this and p, returning this
+     * \brief operator *= for uint128_t and other integer types.
+     * \param p 128-bit unsigned integer
+     * \returns multiplication of this and p, returning this
      */
     uint128_t &operator*=(const uint128_t &p) {
         uint64_t f_first = s >> 32, f_second = s & 0xFFFFFFFF,
@@ -440,10 +440,10 @@ class uint128_t {
     }
 
     /**
-     * @brief divide function for uint128_t and other integer types.
-     * @details divide this value and
-     * @param p 128-bit unsigned integer
-     * @returns pair denoting quotient and remainder.
+     * \brief divide function for uint128_t and other integer types.
+     * \details divide this value and
+     * \param p 128-bit unsigned integer
+     * \returns pair denoting quotient and remainder.
      */
     std::pair<uint128_t, uint128_t> divide(const uint128_t &p) {
         if (*this < p) {  // if this is less than divisor
@@ -475,17 +475,17 @@ class uint128_t {
     }
 
     /**
-     * @brief operator / for uint128_t and other integer types.
-     * @param p 128-bit unsigned integer
-     * @returns unsigned 128-bit quotient.
+     * \brief operator / for uint128_t and other integer types.
+     * \param p 128-bit unsigned integer
+     * \returns unsigned 128-bit quotient.
      */
     inline uint128_t operator/(const uint128_t &p) { return divide(p).first; }
 
     /**
-     * @brief operator / for uint128_t and other integer types.
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns unsigned 128-bit quotient.
+     * \brief operator / for uint128_t and other integer types.
+     * \tparam T denoting integral type
+     * \param p a type of integer variable
+     * \returns unsigned 128-bit quotient.
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -496,9 +496,9 @@ class uint128_t {
     }
 
     /**
-     * @brief operator /= for uint128_t
-     * @param p 128-bit unsigned integer
-     * @returns this set as unsigned 128-bit quotient.
+     * \brief operator /= for uint128_t
+     * \param p 128-bit unsigned integer
+     * \returns this set as unsigned 128-bit quotient.
      */
     inline uint128_t &operator/=(const uint128_t &p) {
         *this = divide(p).first;
@@ -506,10 +506,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator /= for uint128_t and other integer types.
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns this set as unsigned 128-bit quotient.
+     * \brief operator /= for uint128_t and other integer types.
+     * \tparam T denoting integral type
+     * \param p a type of integer variable
+     * \returns this set as unsigned 128-bit quotient.
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -519,17 +519,17 @@ class uint128_t {
     }
 
     /**
-     * @brief operator % for uint128_t
-     * @param p 128-bit unsigned integer
-     * @returns unsigned 128-bit remainder.
+     * \brief operator % for uint128_t
+     * \param p 128-bit unsigned integer
+     * \returns unsigned 128-bit remainder.
      */
     inline uint128_t operator%(const uint128_t &p) { return divide(p).second; }
 
     /**
-     * @brief operator % for uint128_t and other integer types.
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns unsigned 128-bit remainder.
+     * \brief operator % for uint128_t and other integer types.
+     * \tparam T denoting integral type
+     * \param p a type of integer variable
+     * \returns unsigned 128-bit remainder.
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -538,9 +538,9 @@ class uint128_t {
     }
 
     /**
-     * @brief operator %= for uint128_t
-     * @param p 128-bit unsigned integer
-     * @returns this set as unsigned 128-bit remainder.
+     * \brief operator %= for uint128_t
+     * \param p 128-bit unsigned integer
+     * \returns this set as unsigned 128-bit remainder.
      */
     inline uint128_t &operator%=(const uint128_t &p) {
         *this = divide(p).second;
@@ -548,10 +548,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator %= for uint128_t
-     * @tparam T denoting integral type
-     * @param p a type of integer variable
-     * @returns this set as unsigned 128-bit remainder.
+     * \brief operator %= for uint128_t
+     * \tparam T denoting integral type
+     * \param p a type of integer variable
+     * \returns this set as unsigned 128-bit remainder.
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -561,94 +561,94 @@ class uint128_t {
     }
 
     /**
-     * @brief operator < for uint128_t
-     * @param other number to be compared with this
-     * @returns true if this is less than other, else false
+     * \brief operator < for uint128_t
+     * \param other number to be compared with this
+     * \returns true if this is less than other, else false
      */
     inline bool operator<(const uint128_t &other) {
         return f < other.f || (f == other.f && s < other.s);
     }
 
     /**
-     * @brief operator <= for uint128_t
-     * @param other number to be compared with this
-     * @returns true if this is less than or equal to other, else false
+     * \brief operator <= for uint128_t
+     * \param other number to be compared with this
+     * \returns true if this is less than or equal to other, else false
      */
     inline bool operator<=(const uint128_t &other) {
         return f < other.f || (f == other.f && s <= other.s);
     }
 
     /**
-     * @brief operator > for uint128_t
-     * @param other number to be compared with this
-     * @returns true if this is greater than other, else false
+     * \brief operator > for uint128_t
+     * \param other number to be compared with this
+     * \returns true if this is greater than other, else false
      */
     inline bool operator>(const uint128_t &other) {
         return f > other.f || (f == other.f && s > other.s);
     }
 
     /**
-     * @brief operator >= for uint128_t
-     * @param other number to be compared with this
-     * @returns true if this is greater than or equal than other, else false
+     * \brief operator >= for uint128_t
+     * \param other number to be compared with this
+     * \returns true if this is greater than or equal than other, else false
      */
     inline bool operator>=(const uint128_t &other) {
         return (f > other.f) || (f == other.f && s >= other.s);
     }
 
     /**
-     * @brief operator == for uint128_t
-     * @param other number to be compared with this
-     * @returns true if this is equal than other, else false
+     * \brief operator == for uint128_t
+     * \param other number to be compared with this
+     * \returns true if this is equal than other, else false
      */
     inline bool operator==(const uint128_t &other) {
         return f == other.f && s == other.s;
     }
 
     /**
-     * @brief operator != for uint128_t
-     * @param other number to be compared with this
-     * @returns true if this is not equal than other, else false
+     * \brief operator != for uint128_t
+     * \param other number to be compared with this
+     * \returns true if this is not equal than other, else false
      */
     inline bool operator!=(const uint128_t &other) {
         return f != other.f || s != other.s;
     }
 
     /**
-     * @brief operator ! for uint128_t
-     * @returns true if this has zero value, else false
+     * \brief operator ! for uint128_t
+     * \returns true if this has zero value, else false
      */
     inline bool operator!() { return !f && !s; }
 
     /**
-     * @brief operator && for uint128_t
-     * @param b number to be compared with this
-     * @returns true if both of the values are not zero, else false
+     * \brief operator && for uint128_t
+     * \param b number to be compared with this
+     * \returns true if both of the values are not zero, else false
      */
     inline bool operator&&(const uint128_t &b) {
         return (s || f) && (b.s || b.f);
     }
 
     /**
-     * @brief operator || for uint128_t
-     * @param b number to be compared with this
-     * @returns true if one of the values are not zero, else false
+     * \brief operator || for uint128_t
+     * \param b number to be compared with this
+     * \returns true if one of the values are not zero, else false
      */
     inline bool operator||(const uint128_t &b) {
         return (s || f) || (b.s || b.f);
     }
 
     /**
-     * @brief operator () for uint128_t
-     * @returns true if this value is non-zero, else false
+     * \brief operator () for uint128_t
+     * \returns true if this value is non-zero, else false
      */
     inline bool operator()() { return s || f; }
 
     /**
-     * @brief operator < for other types
-     * @tparam T integral type
-     * @param other number to be compared with this
-     * @returns true if this is less than other, else false
+     * \brief operator < for other types
+     * \tparam T integral type
+     * \param other number to be compared with this
+     * \returns true if this is less than other, else false
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -657,10 +657,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator <= for other types
-     * @tparam T integral type
-     * @param other number to be compared with this
-     * @returns true if this is less than or equal to other, else false
+     * \brief operator <= for other types
+     * \tparam T integral type
+     * \param other number to be compared with this
+     * \returns true if this is less than or equal to other, else false
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -669,10 +669,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator > for other types
-     * @tparam T integral type
-     * @param other number to be compared with this
-     * @returns true if this is greater than other, else false
+     * \brief operator > for other types
+     * \tparam T integral type
+     * \param other number to be compared with this
+     * \returns true if this is greater than other, else false
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -681,10 +681,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator >= for other types
-     * @tparam T integral type
-     * @param other number to be compared with this
-     * @returns true if this is greater than or equal other, else false
+     * \brief operator >= for other types
+     * \tparam T integral type
+     * \param other number to be compared with this
+     * \returns true if this is greater than or equal other, else false
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -693,10 +693,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator == for other types
-     * @tparam T integral type
-     * @param other number to be compared with this
-     * @returns true if this is equal to other, else false
+     * \brief operator == for other types
+     * \tparam T integral type
+     * \param other number to be compared with this
+     * \returns true if this is equal to other, else false
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -705,10 +705,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator != for other types
-     * @tparam T integral type
-     * @param other number to be compared with this
-     * @returns true if this is not equal to other, else false
+     * \brief operator != for other types
+     * \tparam T integral type
+     * \param other number to be compared with this
+     * \returns true if this is not equal to other, else false
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -717,10 +717,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator && for other types
-     * @tparam T integral type
-     * @param other number to be compared with this
-     * @returns true if this is both values are non-zero, else false
+     * \brief operator && for other types
+     * \tparam T integral type
+     * \param other number to be compared with this
+     * \returns true if this is both values are non-zero, else false
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -729,10 +729,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator || for other types
-     * @tparam T integral type
-     * @param other number to be compared with this
-     * @returns true if this is either one of the values are non-zero, else
+     * \brief operator || for other types
+     * \tparam T integral type
+     * \param other number to be compared with this
+     * \returns true if this is either one of the values are non-zero, else
      * false
      */
     template <typename T, typename = typename std::enable_if<
@@ -742,16 +742,16 @@ class uint128_t {
     }
 
     /**
-     * @brief operator ~ for uint128_t
-     * @returns 1's complement of this number
+     * \brief operator ~ for uint128_t
+     * \returns 1's complement of this number
      */
     uint128_t operator~() { return uint128_t(~this->f, ~this->s); }
 
     /**
-     * @brief operator << for uint128_t
-     * @tparam T integral type
-     * @param p number denoting number of shifts
-     * @returns value of this shifted by p to left
+     * \brief operator << for uint128_t
+     * \tparam T integral type
+     * \param p number denoting number of shifts
+     * \returns value of this shifted by p to left
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -768,10 +768,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator <<= for uint128_t
-     * @tparam T integral type
-     * @param p number denoting number of shifts
-     * @returns this shifted by p to left
+     * \brief operator <<= for uint128_t
+     * \tparam T integral type
+     * \param p number denoting number of shifts
+     * \returns this shifted by p to left
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -789,10 +789,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator >> for uint128_t
-     * @tparam T integral type
-     * @param p number denoting number of shifts
-     * @returns value of this shifted by p to right
+     * \brief operator >> for uint128_t
+     * \tparam T integral type
+     * \param p number denoting number of shifts
+     * \returns value of this shifted by p to right
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -809,10 +809,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator >>= for uint128_t
-     * @tparam T integral type
-     * @param p number denoting number of shifts
-     * @returns this shifted by p to right
+     * \brief operator >>= for uint128_t
+     * \tparam T integral type
+     * \param p number denoting number of shifts
+     * \returns this shifted by p to right
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -830,19 +830,19 @@ class uint128_t {
     }
 
     /**
-     * @brief operator & for uint128_t (bitwise operator)
-     * @param p number to be operated
-     * @returns value of this & p (& is bit-wise operator)
+     * \brief operator & for uint128_t (bitwise operator)
+     * \param p number to be operated
+     * \returns value of this & p (& is bit-wise operator)
      */
     inline uint128_t operator&(const uint128_t &p) {
         return uint128_t(this->f & p.f, this->s & p.s);
     }
 
     /**
-     * @brief operator & for other types (bitwise operator)
-     * @tparam T integral type
-     * @param p number to be operated
-     * @returns value of this & p (& is bit-wise operator)
+     * \brief operator & for other types (bitwise operator)
+     * \tparam T integral type
+     * \param p number to be operated
+     * \returns value of this & p (& is bit-wise operator)
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -852,9 +852,9 @@ class uint128_t {
     }
 
     /**
-     * @brief operator &= for uint128_t (bitwise operator)
-     * @param p number to be operated
-     * @returns this = this & p (& is bit-wise operator)
+     * \brief operator &= for uint128_t (bitwise operator)
+     * \param p number to be operated
+     * \returns this = this & p (& is bit-wise operator)
      */
     uint128_t &operator&=(const uint128_t &p) {
         this->f &= p.f;
@@ -863,10 +863,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator &= for other types (bitwise operator)
-     * @tparam T integral type
-     * @param p number to be operated
-     * @returns this = this & p (& is bit-wise operator)
+     * \brief operator &= for other types (bitwise operator)
+     * \tparam T integral type
+     * \param p number to be operated
+     * \returns this = this & p (& is bit-wise operator)
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -876,10 +876,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator | for other types (bitwise operator)
-     * @tparam T integral type
-     * @param p number to be operated
-     * @returns value of this | p (| is bit-wise operator)
+     * \brief operator | for other types (bitwise operator)
+     * \tparam T integral type
+     * \param p number to be operated
+     * \returns value of this | p (| is bit-wise operator)
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -888,18 +888,18 @@ class uint128_t {
     }
 
     /**
-     * @brief operator | for uint128_t (bitwise operator)
-     * @param p number to be operated
-     * @returns value of this | p (| is bit-wise OR operator)
+     * \brief operator | for uint128_t (bitwise operator)
+     * \param p number to be operated
+     * \returns value of this | p (| is bit-wise OR operator)
      */
     inline uint128_t operator|(const uint128_t &p) {
         return uint128_t(this->f | p.f, this->s | p.s);
     }
 
     /**
-     * @brief operator |= for uint128_t (bitwise operator)
-     * @param p number to be operated
-     * @returns this = this | p (| is bit-wise OR operator)
+     * \brief operator |= for uint128_t (bitwise operator)
+     * \param p number to be operated
+     * \returns this = this | p (| is bit-wise OR operator)
      */
     uint128_t &operator|=(const uint128_t &p) {
         f |= p.f;
@@ -908,10 +908,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator |= for other types (bitwise operator)
-     * @tparam T integral type
-     * @param p number to be operated
-     * @returns this = this | p (| is bit-wise OR operator)
+     * \brief operator |= for other types (bitwise operator)
+     * \tparam T integral type
+     * \param p number to be operated
+     * \returns this = this | p (| is bit-wise OR operator)
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -921,10 +921,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator ^ for other types (bitwise operator)
-     * @tparam T integral type
-     * @param p number to be operated
-     * @returns value of this ^ p (^ is bit-wise XOR operator)
+     * \brief operator ^ for other types (bitwise operator)
+     * \tparam T integral type
+     * \param p number to be operated
+     * \returns value of this ^ p (^ is bit-wise XOR operator)
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -933,18 +933,18 @@ class uint128_t {
     }
 
     /**
-     * @brief operator ^ for uint128_t (bitwise operator)
-     * @param p number to be operated
-     * @returns value of this ^ p (^ is bit-wise XOR operator)
+     * \brief operator ^ for uint128_t (bitwise operator)
+     * \param p number to be operated
+     * \returns value of this ^ p (^ is bit-wise XOR operator)
      */
     inline uint128_t operator^(const uint128_t &p) {
         return uint128_t(this->f ^ p.f, this->s ^ p.s);
     }
 
     /**
-     * @brief operator ^= for uint128_t (bitwise operator)
-     * @param p number to be operated
-     * @returns this = this ^ p (^ is bit-wise XOR operator)
+     * \brief operator ^= for uint128_t (bitwise operator)
+     * \param p number to be operated
+     * \returns this = this ^ p (^ is bit-wise XOR operator)
      */
     uint128_t &operator^=(const uint128_t &p) {
         f ^= p.f;
@@ -953,10 +953,10 @@ class uint128_t {
     }
 
     /**
-     * @brief operator ^= for other types (bitwise operator)
-     * @tparam T integral type
-     * @param p number to be operated
-     * @returns this = this ^ p (^ is bit-wise XOR operator)
+     * \brief operator ^= for other types (bitwise operator)
+     * \tparam T integral type
+     * \param p number to be operated
+     * \returns this = this ^ p (^ is bit-wise XOR operator)
      */
     template <typename T, typename = typename std::enable_if<
                               std::is_integral<T>::value, T>::type>
@@ -966,13 +966,13 @@ class uint128_t {
     }
 
     /**
-     * @brief operator << for printing uint128_t integer
-     * @details Prints the uint128_t integer in decimal form
-     * @note Note that this operator is costly since it uses strings to print
+     * \brief operator << for printing uint128_t integer
+     * \details Prints the uint128_t integer in decimal form
+     * \note Note that this operator is costly since it uses strings to print
      * the value
-     * @param op ostream object
-     * @param p 128-bit integer
-     * @returns op, ostream object.
+     * \param op ostream object
+     * \param p 128-bit integer
+     * \returns op, ostream object.
      */
     friend std::ostream &operator<<(std::ostream &op, const uint128_t &p) {
         if (!p.f) {

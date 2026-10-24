@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Jumping Game](https://leetcode.com/problems/jump-game/)
+ * \file
+ * \brief [Jumping Game](https://leetcode.com/problems/jump-game/)
  * algorithm implementation
- * @details
+ * \details
  *
  * Given an array of non-negative integers, you are initially positioned at the
  * first index of the array. Each element in the array represents your maximum
@@ -18,8 +18,8 @@
  * we reach the lastPos as 0, then the destination can be reached from the start
  * position.
  *
- * @author [Rakshaa Viswanathan](https://github.com/rakshaa2000)
- * @author [David Leal](https://github.com/Panquesito7)
+ * \author [Rakshaa Viswanathan](https://github.com/rakshaa2000)
+ * \author [David Leal](https://github.com/Panquesito7)
  */
 
 #include <cassert>   /// for assert
@@ -27,17 +27,17 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace
- * @brief Greedy Algorithms
+ * \namespace
+ * \brief Greedy Algorithms
  */
 namespace greedy_algorithms {
 /**
- * @brief Checks whether the given element (default is `1`) can jump to the last
+ * \brief Checks whether the given element (default is `1`) can jump to the last
  * index.
- * @param nums array of numbers containing the maximum jump (in steps) from that
+ * \param nums array of numbers containing the maximum jump (in steps) from that
  * index
- * @returns true  if the index can be reached
- * @returns false if the index can NOT be reached
+ * \returns true  if the index can be reached
+ * \returns false if the index can NOT be reached
  */
 bool can_jump(const std::vector<int> &nums) {
     size_t lastPos = nums.size() - 1;
@@ -51,8 +51,8 @@ bool can_jump(const std::vector<int> &nums) {
 }  // namespace greedy_algorithms
 
 /**
- * @brief Function to test the above algorithm
- * @returns void
+ * \brief Function to test the above algorithm
+ * \returns void
  */
 static void test() {
     assert(greedy_algorithms::can_jump(std::vector<int>({4, 3, 1, 0, 5})));
@@ -65,8 +65,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

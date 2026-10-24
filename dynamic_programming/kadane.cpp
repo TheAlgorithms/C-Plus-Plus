@@ -1,9 +1,9 @@
 /**
- * @file
- * @brief Implementation of [Kadane
+ * \file
+ * \brief Implementation of [Kadane
  * Algorithm](https://en.wikipedia.org/wiki/Kadane%27s_algorithm)
  *
- * @details
+ * \details
  * Kadane algorithm is used to find the maximum sum subarray in an array and
  * maximum sum subarray problem is the task of finding a contiguous subarray
  * with the largest sum
@@ -15,28 +15,28 @@
  * Each time we get a positive sum we compare it with max_sum and update max_sum
  * if it is greater than curr_sum
  *
- * @author [Ayush Singh](https://github.com/ayush523)
+ * \author [Ayush Singh](https://github.com/ayush523)
  */
 #include <array>
 #include <climits>
 #include <iostream>
 /**
- * @namespace dynamic_programming
- * @brief Dynamic Programming algorithms
+ * \namespace dynamic_programming
+ * \brief Dynamic Programming algorithms
  */
 namespace dynamic_programming {
 /**
- * @namespace kadane
- * @brief Functions for
+ * \namespace kadane
+ * \brief Functions for
  * [Kadane](https://en.wikipedia.org/wiki/Kadane%27s_algorithm) algorithm.
  */
 namespace kadane {
 /**
- * @brief maxSubArray function is used to calculate the maximum sum subarray
+ * \brief maxSubArray function is used to calculate the maximum sum subarray
  * and returns the value of maximum sum which is stored in the variable max_sum
- * @tparam N number of array size
- * @param n array where numbers are saved
- * @returns the value of maximum subarray sum
+ * \tparam N number of array size
+ * \param n array where numbers are saved
+ * \returns the value of maximum subarray sum
  */
 template <size_t N>
 int maxSubArray(const std::array<int, N> &n) {
@@ -54,8 +54,8 @@ int maxSubArray(const std::array<int, N> &n) {
 }  // namespace dynamic_programming
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     const int N = 5;

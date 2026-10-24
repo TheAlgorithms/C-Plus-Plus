@@ -4,13 +4,13 @@
 #include <stdexcept>  /// For std::out_of_range
 
 /**
- * @namespace
- * @brief data_structures
+ * \namespace
+ * \brief data_structures
  */
 namespace data_structures {
 /**
- * @brief Class representation of a stack
- * @tparam T The type of the elements in the stack
+ * \brief Class representation of a stack
+ * \tparam T The type of the elements in the stack
  */
 template <typename T>
 class Stack {
@@ -21,29 +21,29 @@ class Stack {
 
  public:
     /**
-     * @brief Constructs a new Stack object
+     * \brief Constructs a new Stack object
      *
-     * @param size Maximum size of the stack
+     * \param size Maximum size of the stack
      */
     Stack(int size) : stack(new T[size]), stackSize(size), stackIndex(-1) {}
 
     /**
-     * @brief Checks if the stack is full
+     * \brief Checks if the stack is full
      *
-     * @return true if the stack is full, false otherwise
+     * \return true if the stack is full, false otherwise
      */
     bool full() const { return stackIndex == stackSize - 1; }
 
     /**
-     * @brief Checks if the stack is empty
-     * @return true if the stack is empty, false otherwise
+     * \brief Checks if the stack is empty
+     * \return true if the stack is empty, false otherwise
      */
     bool empty() const { return stackIndex == -1; }
 
     /**
-     * @brief Pushes an element onto the stack
+     * \brief Pushes an element onto the stack
      *
-     * @param element Element to push onto the stack
+     * \param element Element to push onto the stack
      */
     void push(T element) {
         if (full()) {
@@ -54,10 +54,10 @@ class Stack {
     }
 
     /**
-     * @brief Pops an element from the stack
+     * \brief Pops an element from the stack
      *
-     * @return The popped element
-     * @throws std::out_of_range if the stack is empty
+     * \return The popped element
+     * \throws std::out_of_range if the stack is empty
      */
     T pop() {
         if (empty()) {
@@ -67,7 +67,7 @@ class Stack {
     }
 
     /**
-     * @brief Displays all elements in the stack
+     * \brief Displays all elements in the stack
      */
     void show() const {
         for (int i = 0; i <= stackIndex; i++) {
@@ -76,10 +76,10 @@ class Stack {
     }
 
     /**
-     * @brief Displays the topmost element of the stack
+     * \brief Displays the topmost element of the stack
      *
-     * @return The topmost element of the stack
-     * @throws std::out_of_range if the stack is empty
+     * \return The topmost element of the stack
+     * \throws std::out_of_range if the stack is empty
      */
     T topmost() const {
         if (empty()) {
@@ -89,10 +89,10 @@ class Stack {
     }
 
     /**
-     * @brief Displays the bottom element of the stack
+     * \brief Displays the bottom element of the stack
      *
-     * @return The bottom element of the stack
-     * @throws std::out_of_range if the stack is empty
+     * \return The bottom element of the stack
+     * \throws std::out_of_range if the stack is empty
      */
     T bottom() const {
         if (empty()) {
@@ -104,8 +104,8 @@ class Stack {
 }  // namespace data_structures
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     data_structures::Stack<int> stack(5);
@@ -169,8 +169,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

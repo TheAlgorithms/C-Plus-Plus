@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) algorithm
+ * \file
+ * \brief [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) algorithm
  * implementation
- * @details
+ * \details
  * _Quote from Wikipedia._
  * 
  * **Dijkstra's algorithm** is an algorithm for finding the
@@ -10,8 +10,8 @@
  * example, road networks. It was conceived by computer scientist Edsger W.
  * Dijkstra in 1956 and published three years later.
  *
- * @author [David Leal](https://github.com/Panquesito7)
- * @author [Arpan Jain](https://github.com/arpanjain97)
+ * \author [David Leal](https://github.com/Panquesito7)
+ * \author [Arpan Jain](https://github.com/arpanjain97)
  */
 
 #include <cassert>   /// for assert
@@ -20,17 +20,17 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace
- * @brief Greedy Algorithms
+ * \namespace
+ * \brief Greedy Algorithms
  */
 namespace greedy_algorithms {
 /**
- * @namespace
- * @brief Functions for the [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) algorithm implementation
+ * \namespace
+ * \brief Functions for the [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) algorithm implementation
  */
 namespace dijkstra {
 /**
- * @brief Wrapper class for storing a graph
+ * \brief Wrapper class for storing a graph
  */
 class Graph {
  public:
@@ -38,8 +38,8 @@ class Graph {
     std::vector<std::vector<int>> edges{};
 
     /**
-     * @brief Constructs a graph
-     * @param V number of vertices of the graph
+     * \brief Constructs a graph
+     * \param V number of vertices of the graph
      */
     explicit Graph(const int V) {
         // Initialize the array edges
@@ -59,11 +59,11 @@ class Graph {
     }
 
     /**
-     * @brief Adds an edge to the graph
-     * @param src the graph the edge should be added to
-     * @param dst the position where the edge should be added to
-     * @param weight the weight of the edge that should be added
-     * @returns void
+     * \brief Adds an edge to the graph
+     * \param src the graph the edge should be added to
+     * \param dst the position where the edge should be added to
+     * \param weight the weight of the edge that should be added
+     * \returns void
      */
     void add_edge(int src, int dst, int weight) {
         this->edges[src][dst] = weight;
@@ -71,13 +71,13 @@ class Graph {
 };
 
 /**
- * @brief Utility function that finds
+ * \brief Utility function that finds
  * the vertex with the minimum distance in `mdist`.
  *
- * @param mdist array of distances to each vertex
- * @param vset array indicating inclusion in the shortest path tree
- * @param V the number of vertices in the graph
- * @returns index of the vertex with the minimum distance
+ * \param mdist array of distances to each vertex
+ * \param vset array indicating inclusion in the shortest path tree
+ * \param V the number of vertices in the graph
+ * \returns index of the vertex with the minimum distance
  */
 int minimum_distance(std::vector<int> mdist, std::vector<bool> vset, int V) {
     int minVal = INT_MAX, minInd = 0;
@@ -92,14 +92,14 @@ int minimum_distance(std::vector<int> mdist, std::vector<bool> vset, int V) {
 }
 
 /**
- * @brief Utility function to print the distances to vertices.
+ * \brief Utility function to print the distances to vertices.
  *
  * This function prints the distances to each vertex in a tabular format. If the
  * distance is equal to INT_MAX, it is displayed as "INF".
  *
- * @param dist An array representing the distances to each vertex.
- * @param V The number of vertices in the graph.
- * @return void
+ * \param dist An array representing the distances to each vertex.
+ * \param V The number of vertices in the graph.
+ * \return void
  */
 void print(std::vector<int> dist, int V) {
     std::cout << "\nVertex  Distance\n";
@@ -114,12 +114,12 @@ void print(std::vector<int> dist, int V) {
 }
 
 /**
- * @brief The main function that finds the shortest path from a given source
+ * \brief The main function that finds the shortest path from a given source
  * to all other vertices using Dijkstra's Algorithm.
- * @note This doesn't work on negative weights.
- * @param graph the graph to be processed
- * @param src the source of the given vertex
- * @returns void
+ * \note This doesn't work on negative weights.
+ * \param graph the graph to be processed
+ * \param src the source of the given vertex
+ * \returns void
  */
 void dijkstra(Graph graph, int src) {
     int V = graph.vertexNum;
@@ -154,8 +154,8 @@ void dijkstra(Graph graph, int src) {
 }  // namespace greedy_algorithms
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void tests() {
     greedy_algorithms::dijkstra::Graph graph(8);
@@ -193,8 +193,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // run self-test implementations

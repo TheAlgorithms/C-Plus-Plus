@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Sudoku Solver](https://en.wikipedia.org/wiki/Sudoku) algorithm.
+ * \file
+ * \brief [Sudoku Solver](https://en.wikipedia.org/wiki/Sudoku) algorithm.
  *
- * @details
+ * \details
  * Sudoku (数独, sūdoku, digit-single) (/suːˈdoʊkuː/, /-ˈdɒk-/, /sə-/,
  * originally called Number Place) is a logic-based, combinatorial
  * number-placement puzzle. In classic sudoku, the objective is to fill a 9×9
@@ -12,33 +12,33 @@
  * partially completed grid, which for a well-posed puzzle has a single
  * solution.
  *
- * @author [DarthCoder3200](https://github.com/DarthCoder3200)
- * @author [David Leal](https://github.com/Panquesito7)
+ * \author [DarthCoder3200](https://github.com/DarthCoder3200)
+ * \author [David Leal](https://github.com/Panquesito7)
  */
 #include <array>     /// for assert
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace backtracking
- * @brief Backtracking algorithms
+ * \namespace backtracking
+ * \brief Backtracking algorithms
  */
 namespace backtracking {
 /**
- * @namespace sudoku_solver
- * @brief Functions for the [Sudoku
+ * \namespace sudoku_solver
+ * \brief Functions for the [Sudoku
  * Solver](https://en.wikipedia.org/wiki/Sudoku) implementation
  */
 namespace sudoku_solver {
 /**
- * @brief Check if it's possible to place a number (`no` parameter)
- * @tparam V number of vertices in the array
- * @param mat matrix where numbers are saved
- * @param i current index in rows
- * @param j current index in columns
- * @param no number to be added in matrix
- * @param n number of times loop will run
- * @returns `true` if 'mat' is different from 'no'
- * @returns `false` if 'mat' equals to 'no'
+ * \brief Check if it's possible to place a number (`no` parameter)
+ * \tparam V number of vertices in the array
+ * \param mat matrix where numbers are saved
+ * \param i current index in rows
+ * \param j current index in columns
+ * \param no number to be added in matrix
+ * \param n number of times loop will run
+ * \returns `true` if 'mat' is different from 'no'
+ * \returns `false` if 'mat' equals to 'no'
  */
 template <size_t V>
 bool isPossible(const std::array<std::array<int, V>, V> &mat, int i, int j,
@@ -65,13 +65,13 @@ bool isPossible(const std::array<std::array<int, V>, V> &mat, int i, int j,
     return true;
 }
 /**
- * @brief Utility function to print the matrix
- * @tparam V number of vertices in array
- * @param mat matrix where numbers are saved
- * @param starting_mat copy of mat, required by printMat for highlighting the
+ * \brief Utility function to print the matrix
+ * \tparam V number of vertices in array
+ * \param mat matrix where numbers are saved
+ * \param starting_mat copy of mat, required by printMat for highlighting the
  * differences
- * @param n number of times loop will run
- * @return void
+ * \param n number of times loop will run
+ * \return void
  */
 template <size_t V>
 void printMat(const std::array<std::array<int, V>, V> &mat,
@@ -96,15 +96,15 @@ void printMat(const std::array<std::array<int, V>, V> &mat,
 }
 
 /**
- * @brief Main function to implement the Sudoku algorithm
- * @tparam V number of vertices in array
- * @param mat matrix where numbers are saved
- * @param starting_mat copy of mat, required by printMat for highlighting the
+ * \brief Main function to implement the Sudoku algorithm
+ * \tparam V number of vertices in array
+ * \param mat matrix where numbers are saved
+ * \param starting_mat copy of mat, required by printMat for highlighting the
  * differences
- * @param i current index in rows
- * @param j current index in columns
- * @returns `true` if 'no' was placed
- * @returns `false` if 'no' was not placed
+ * \param i current index in rows
+ * \param j current index in columns
+ * \returns `true` if 'no' was placed
+ * \returns `false` if 'no' was not placed
  */
 template <size_t V>
 bool solveSudoku(std::array<std::array<int, V>, V> &mat,
@@ -148,8 +148,8 @@ bool solveSudoku(std::array<std::array<int, V>, V> &mat,
 }  // namespace backtracking
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     const int V = 9;

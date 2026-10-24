@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief [Disjoint union](https://en.wikipedia.org/wiki/Disjoint_union)
+ * \file
+ * \brief [Disjoint union](https://en.wikipedia.org/wiki/Disjoint_union)
  *
- * @details
+ * \details
  * The Disjoint union is the technique to find connected component in graph
  * efficiently.
  *
@@ -14,8 +14,8 @@
  * 1st option is inefficient, Disjoint union is the most optimal way to find
  * this.
  *
- * @author Unknown author
- * @author [Sagar Pandya](https://github.com/sagarpandyansit)
+ * \author Unknown author
+ * \author [Sagar Pandya](https://github.com/sagarpandyansit)
  */
 #include <cstdint>
 #include <iostream>  /// for IO operations
@@ -23,13 +23,13 @@
 #include <vector>    /// for std::vector
 
 /**
- * @namespace graph
- * @brief Graph Algorithms
+ * \namespace graph
+ * \brief Graph Algorithms
  */
 namespace graph {
 /**
- * @namespace disjoint_union
- * @brief Functions for [Disjoint
+ * \namespace disjoint_union
+ * \brief Functions for [Disjoint
  * union](https://en.wikipedia.org/wiki/Disjoint_union) implementation
  */
 namespace disjoint_union {
@@ -37,8 +37,8 @@ uint32_t number_of_nodes = 0;                // denotes number of nodes
 std::vector<int64_t> parent{};               // parent of each node
 std::vector<uint32_t> connected_set_size{};  // size of each set
 /**
- * @brief function the initialize every node as it's own parent
- * @returns void
+ * \brief function the initialize every node as it's own parent
+ * \returns void
  */
 void make_set() {
     for (uint32_t i = 1; i <= number_of_nodes; i++) {
@@ -47,9 +47,9 @@ void make_set() {
     }
 }
 /**
- * @brief Find the component where following node belongs to
- * @param val parent of val should be found
- * @return parent of val
+ * \brief Find the component where following node belongs to
+ * \param val parent of val should be found
+ * \return parent of val
  */
 int64_t find_set(int64_t val) {
     while (parent[val] != val) {
@@ -59,10 +59,10 @@ int64_t find_set(int64_t val) {
     return val;
 }
 /**
- * @brief Merge 2 components to become one
- * @param node1 1st component
- * @param node2 2nd component
- * @returns void
+ * \brief Merge 2 components to become one
+ * \param node1 1st component
+ * \param node2 2nd component
+ * \returns void
  */
 void union_sets(int64_t node1, int64_t node2) {
     node1 = find_set(node1);  // find the parent of node1
@@ -79,8 +79,8 @@ void union_sets(int64_t node1, int64_t node2) {
     }
 }
 /**
- * @brief Find total no. of connected components
- * @return Number of connected components
+ * \brief Find total no. of connected components
+ * \return Number of connected components
  */
 uint32_t no_of_connected_components() {
     std::set<int64_t> temp;  // temp set to count number of connected components
@@ -91,8 +91,8 @@ uint32_t no_of_connected_components() {
 }  // namespace graph
 
 /**
- * @brief Test Implementations
- * @returns void
+ * \brief Test Implementations
+ * \returns void
  */
 static void test() {
     namespace dsu = graph::disjoint_union;
@@ -111,8 +111,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // Execute the tests

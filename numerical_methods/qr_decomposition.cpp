@@ -1,5 +1,5 @@
 /**
- * @file
+ * \file
  * \brief Program to compute the [QR
  * decomposition](https://en.wikipedia.org/wiki/QR_decomposition) of a given
  * matrix.

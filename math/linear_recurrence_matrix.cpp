@@ -1,7 +1,7 @@
 /**
- * @brief Evaluate recurrence relation using [matrix
+ * \brief Evaluate recurrence relation using [matrix
  * exponentiation](https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/).
- * @details
+ * \details
  * Given a recurrence relation; evaluate the value of nth term.
  * For e.g., For fibonacci series, recurrence series is `f(n) = f(n-1) + f(n-2)`
  * where `f(0) = 0` and `f(1) = 1`.
@@ -11,11 +11,11 @@
  *
  * ### Algorithm
  * This problem can be solved using matrix exponentiation method.
- * @see here for simple [number exponentiation
+ * \see here for simple [number exponentiation
  * algorithm](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/math/modular_exponentiation.cpp)
  * or [explaination
  * here](https://en.wikipedia.org/wiki/Exponentiation_by_squaring).
- * @author [Ashish Daulatabad](https://github.com/AshishYUO)
+ * \author [Ashish Daulatabad](https://github.com/AshishYUO)
  */
 #include <cassert>   /// for assert
 #include <cstdint>
@@ -23,28 +23,28 @@
 #include <vector>    /// for std::vector STL
 
 /**
- * @namespace math
- * @brief Mathematical algorithms
+ * \namespace math
+ * \brief Mathematical algorithms
  */
 namespace math {
 /**
- * @namespace linear_recurrence_matrix
- * @brief Functions for [Linear Recurrence
+ * \namespace linear_recurrence_matrix
+ * \brief Functions for [Linear Recurrence
  * Matrix](https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/)
  * implementation.
  */
 namespace linear_recurrence_matrix {
 /**
- * @brief Implementation of matrix multiplication
- * @details Multiplies matrix A and B, given total columns in A are equal to
+ * \brief Implementation of matrix multiplication
+ * \details Multiplies matrix A and B, given total columns in A are equal to
  * total given rows in column B
- * @tparam T template type for integer as well as floating values, default is
+ * \tparam T template type for integer as well as floating values, default is
  * long long int
- * @param _mat_a first matrix of size n * m
- * @param _mat_b second matrix of size m * k
- * @returns `_mat_c` resultant matrix of size n * k
+ * \param _mat_a first matrix of size n * m
+ * \param _mat_b second matrix of size m * k
+ * \returns `_mat_c` resultant matrix of size n * k
  * Complexity: `O(n*m*k)`
- * @note The complexity in this case will be O(n^3) due to the nature of the
+ * \note The complexity in this case will be O(n^3) due to the nature of the
  * problem. We'll be multiplying the matrix with itself most of the time.
  */
 template <typename T = int64_t>
@@ -71,12 +71,12 @@ std::vector<std::vector<T>> matrix_multiplication(
     return _mat_c;
 }
 /**
- * @brief Returns whether matrix `mat` is a [zero
+ * \brief Returns whether matrix `mat` is a [zero
  * matrix.](https://en.wikipedia.org/wiki/Zero_matrix)
- * @tparam T template type for integer as well as floating values, default is
+ * \tparam T template type for integer as well as floating values, default is
  * long long int
- * @param _mat A matrix
- * @returns true if it is a zero matrix else false
+ * \param _mat A matrix
+ * \returns true if it is a zero matrix else false
  */
 template <typename T = int64_t>
 bool is_zero_matrix(const std::vector<std::vector<T>>& _mat) {
@@ -91,14 +91,14 @@ bool is_zero_matrix(const std::vector<std::vector<T>>& _mat) {
 }
 
 /**
- * @brief Implementation of Matrix exponentiation
- * @details returns the matrix exponentiation `(B^n)` in `k^3 * O(log2(power))`
+ * \brief Implementation of Matrix exponentiation
+ * \details returns the matrix exponentiation `(B^n)` in `k^3 * O(log2(power))`
  * time, where `k` is the size of matrix (k by k).
- * @tparam T template type for integer as well as floating values, default is
+ * \tparam T template type for integer as well as floating values, default is
  * long long int
- * @param _mat matrix for exponentiation
- * @param power the exponent value
- * @returns the matrix _mat to the power `power (_mat^power)`
+ * \param _mat matrix for exponentiation
+ * \param power the exponent value
+ * \returns the matrix _mat to the power `power (_mat^power)`
  */
 template <typename T = int64_t>
 std::vector<std::vector<T>> matrix_exponentiation(
@@ -132,21 +132,21 @@ std::vector<std::vector<T>> matrix_exponentiation(
 }
 
 /**
- * @brief Implementation of nth recurrence series.
- * @details Returns the nth term in the recurrence series.
+ * \brief Implementation of nth recurrence series.
+ * \details Returns the nth term in the recurrence series.
  * Note that the function assumes definition of base cases from `n = 0`
  * (e.g., for fibonacci, `f(0)` has a defined value `0`)
- * @tparam T template type for integer as well as floating values, default is
+ * \tparam T template type for integer as well as floating values, default is
  * long long int
- * @param _mat [square matrix](https://en.m.wikipedia.org/wiki/Square_matrix)
+ * \param _mat [square matrix](https://en.m.wikipedia.org/wiki/Square_matrix)
  * that evaluates the nth term using exponentiation
- * @param _base_cases 2D array of dimension `1*n` containing values which are
+ * \param _base_cases 2D array of dimension `1*n` containing values which are
  * defined for some n (e.g., for fibonacci, `f(0)` and `f(1)` are defined, and
  * `f(n)` where `n > 1` is evaluated on previous two values)
- * @param nth_term the nth term of recurrence relation
- * @param constant_or_sum_included whether the recurrence relation has a
+ * \param nth_term the nth term of recurrence relation
+ * \param constant_or_sum_included whether the recurrence relation has a
  * constant value or is evaluating sum of first n terms of the recurrence.
- * @returns the nth term of the recurrence relation in `O(k^3. log(n))`, where k
+ * \returns the nth term of the recurrence relation in `O(k^3. log(n))`, where k
  * is number of rows and columns in `_mat` and `n` is the value of `nth_term`
  * If constant_or_sum_included is true, returns the sum of first n terms in
  * recurrence series
@@ -187,8 +187,8 @@ T get_nth_term_of_recurrence_series(
 }  // namespace math
 
 /**
- * @brief Self test-implementations
- * @returns void
+ * \brief Self test-implementations
+ * \returns void
  */
 static void test() {
     /*
@@ -364,8 +364,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

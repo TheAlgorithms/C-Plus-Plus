@@ -30,7 +30,7 @@
 
 /**
  * get_input function is to receive input from standard IO
- * @todo @christianbender Get input from STDIO or write input to memory as done
+ * \todo @christianbender Get input from STDIO or write input to memory as done
  * above.
  */
 void get_input() {}

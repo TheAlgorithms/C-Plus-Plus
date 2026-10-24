@@ -1,10 +1,10 @@
 /**
- * @file
- * @brief [Find whether a given number is power of 2]
+ * \file
+ * \brief [Find whether a given number is power of 2]
  * (https://www.geeksforgeeks.org/program-to-find-whether-a-given-number-is-power-of-2/)
  * implementation
  *
- * @details
+ * \details
  * We are given a positive integer number. We need to check whether the number
  * is power of 2 or not.
  *
@@ -12,7 +12,7 @@
  * set bit in computer terms.
  * Worst Case Time Complexity: O(1)
  * Space complexity: O(1)
- * @author [Prafful Gupta](https://github.com/EcstaticPG-25811)
+ * \author [Prafful Gupta](https://github.com/EcstaticPG-25811)
  */
 
 #include <cassert>   /// for assert
@@ -20,14 +20,14 @@
 #include <iostream>  /// for IO operations
 
 /**
- * @namespace bit_manipulation
- * @brief Bit manipulation algorithms
+ * \namespace bit_manipulation
+ * \brief Bit manipulation algorithms
  */
 namespace bit_manipulation {
 /**
- * @brief The main function implements check for power of 2
- * @param n is the number who will be checked
- * @returns either true or false
+ * \brief The main function implements check for power of 2
+ * \param n is the number who will be checked
+ * \returns either true or false
  */
 bool isPowerOfTwo(std ::int64_t n) {  // int64_t is preferred over int so that
                                       // no Overflow can be there.
@@ -43,8 +43,8 @@ bool isPowerOfTwo(std ::int64_t n) {  // int64_t is preferred over int so that
 }  // namespace bit_manipulation
 
 /**
- * @brief Self-test implementations
- * @returns void
+ * \brief Self-test implementations
+ * \returns void
  */
 static void test() {
     // n = 4 return true
@@ -66,8 +66,8 @@ static void test() {
     std::cout << "All test cases successfully passed!" << std::endl;
 }
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations

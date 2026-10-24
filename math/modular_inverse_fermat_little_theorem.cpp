@@ -1,6 +1,6 @@
 /**
- * @file
- * @brief C++ Program to find the modular inverse using [Fermat's Little
+ * \file
+ * \brief C++ Program to find the modular inverse using [Fermat's Little
  * Theorem](https://en.wikipedia.org/wiki/Fermat%27s_little_theorem)
  *
  * Fermat's Little Theorem state that \f[ϕ(m) = m-1\f]
@@ -48,21 +48,21 @@
 #include <iostream> /// for IO implementations
 
 /**
- * @namespace math
- * @brief Maths algorithms.
+ * \namespace math
+ * \brief Maths algorithms.
  */
 namespace math {
 /**
- * @namespace modular_inverse_fermat
- * @brief Calculate modular inverse using Fermat's Little Theorem.
+ * \namespace modular_inverse_fermat
+ * \brief Calculate modular inverse using Fermat's Little Theorem.
  */
 namespace modular_inverse_fermat {
 /**
- * @brief Calculate exponent with modulo using binary exponentiation in \f$O(\log b)\f$ time.
- * @param a The base
- * @param b The exponent
- * @param m The modulo
- * @return The result of \f$a^{b} % m\f$
+ * \brief Calculate exponent with modulo using binary exponentiation in \f$O(\log b)\f$ time.
+ * \param a The base
+ * \param b The exponent
+ * \param m The modulo
+ * \return The result of \f$a^{b} % m\f$
  */
 std::int64_t binExpo(std::int64_t a, std::int64_t b, std::int64_t m) {
   a %= m;
@@ -78,10 +78,10 @@ std::int64_t binExpo(std::int64_t a, std::int64_t b, std::int64_t m) {
   return res;
 }
 /**
- * @brief Check if an integer is a prime number in \f$O(\sqrt{m})\f$ time.
- * @param m An intger to check for primality
- * @return true if the number is prime
- * @return false if the number is not prime
+ * \brief Check if an integer is a prime number in \f$O(\sqrt{m})\f$ time.
+ * \param m An intger to check for primality
+ * \return true if the number is prime
+ * \return false if the number is not prime
  */
 bool isPrime(std::int64_t m) {
   if (m <= 1) {
@@ -95,10 +95,10 @@ bool isPrime(std::int64_t m) {
   return true;
 }
 /**
- * @brief calculates the modular inverse.
- * @param a Integer value for the base
- * @param m Integer value for modulo
- * @return The result that is the modular inverse of a modulo m
+ * \brief calculates the modular inverse.
+ * \param a Integer value for the base
+ * \param m Integer value for modulo
+ * \return The result that is the modular inverse of a modulo m
  */
 std::int64_t modular_inverse(std::int64_t a, std::int64_t m) {
   while (a < 0) {
@@ -116,8 +116,8 @@ std::int64_t modular_inverse(std::int64_t a, std::int64_t m) {
 } // namespace math
 
 /**
- * @brief Self-test implementation
- * @return void
+ * \brief Self-test implementation
+ * \return void
  */
 static void test() {
   assert(math::modular_inverse_fermat::modular_inverse(0, 97) == -1);
@@ -131,8 +131,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @return 0 on exit
+ * \brief Main function
+ * \return 0 on exit
  */
 int main() {
   test();  // run self-test implementation

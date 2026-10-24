@@ -1,13 +1,13 @@
 /**
  *
- * @file
- * @brief [Depth First Search Algorithm using Stack
+ * \file
+ * \brief [Depth First Search Algorithm using Stack
  * (Depth First Search Algorithm)](https://en.wikipedia.org/wiki/Depth-first_search)
  *
- * @author [Ayaan Khan](http://github.com/ayaankhan98)
- * @author [Saurav Uppoor](https://github.com/sauravUppoor)
+ * \author [Ayaan Khan](http://github.com/ayaankhan98)
+ * \author [Saurav Uppoor](https://github.com/sauravUppoor)
  *
- * @details
+ * \details
  * Depth First Search also quoted as DFS is a Graph Traversal Algorithm.
  * Time Complexity O(|V| + |E|) where V is number of vertices and E
  * is number of edges in graph.
@@ -42,23 +42,23 @@ constexpr int64_t INF = std::numeric_limits<int16_t>::max();
 
 
 /**
- * @namespace graph
- * @brief Graph algorithms
+ * \namespace graph
+ * \brief Graph algorithms
  */
 namespace graph {
 /**
- * @namespace depth_first_search
- * @brief Functions for [Depth First Search](https://en.wikipedia.org/wiki/Depth-first_search) algorithm
+ * \namespace depth_first_search
+ * \brief Functions for [Depth First Search](https://en.wikipedia.org/wiki/Depth-first_search) algorithm
  */
 namespace depth_first_search {
 /**
- * @brief
+ * \brief
  * Adds and edge between two vertices of graph say u and v in this
  * case.
  *
- * @param adj Adjacency list representation of graph
- * @param u first vertex
- * @param v second vertex
+ * \param adj Adjacency list representation of graph
+ * \param u first vertex
+ * \param v second vertex
  *
  */
 void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
@@ -74,14 +74,14 @@ void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
 
 /**
  *
- * @brief
+ * \brief
  * Explores the given vertex, exploring a vertex means traversing
  * over all the vertices which are connected to the vertex that is
  * currently being explored and push it onto the stack.
  *
- * @param adj graph
- * @param start starting vertex for DFS
- * @return vector with nodes stored in the order of DFS traversal
+ * \param adj graph
+ * \param start starting vertex for DFS
+ * \return vector with nodes stored in the order of DFS traversal
  *
  */
 std::vector<size_t> dfs(const std::vector<std::vector<size_t> > &graph, size_t start) {
@@ -118,7 +118,7 @@ std::vector<size_t> dfs(const std::vector<std::vector<size_t> > &graph, size_t s
 
 /**
  * Self-test implementations
- * @returns none
+ * \returns none
  */
 static void tests() {
 	size_t start_pos;
@@ -167,8 +167,8 @@ static void tests() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     tests();  // execute the tests

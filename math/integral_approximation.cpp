@@ -1,8 +1,8 @@
 /**
- * @file
- * @brief Compute integral approximation of the function using [Riemann
+ * \file
+ * \brief Compute integral approximation of the function using [Riemann
  * sum](https://en.wikipedia.org/wiki/Riemann_sum)
- * @details In mathematics, a Riemann sum is a certain kind of approximation of
+ * \details In mathematics, a Riemann sum is a certain kind of approximation of
  * an integral by a finite sum. It is named after nineteenth-century German
  * mathematician Bernhard Riemann. One very common application is approximating
  * the area of functions or lines on a graph and the length of curves and other
@@ -27,17 +27,17 @@
 #include <iostream>    /// for IO operations
 
 /**
- * @namespace math
- * @brief Mathematical functions
+ * \namespace math
+ * \brief Mathematical functions
  */
 namespace math {
 /**
- * @brief Computes integral approximation
- * @param lb lower bound
- * @param ub upper bound
- * @param func function passed in
- * @param delta
- * @returns integral approximation of function from [lb, ub]
+ * \brief Computes integral approximation
+ * \param lb lower bound
+ * \param ub upper bound
+ * \param func function passed in
+ * \param delta
+ * \returns integral approximation of function from [lb, ub]
  */
 double integral_approx(double lb, double ub,
                        const std::function<double(double)>& func,
@@ -53,11 +53,11 @@ double integral_approx(double lb, double ub,
 }
 
 /**
- * @brief Wrapper to evaluate if the approximated
+ * \brief Wrapper to evaluate if the approximated
  * value is within `.XX%` threshold of the exact value.
- * @param approx aprroximate value
- * @param exact expected value
- * @param threshold values from [0, 1)
+ * \param approx aprroximate value
+ * \param exact expected value
+ * \param threshold values from [0, 1)
  */
 void test_eval(double approx, double expected, double threshold) {
     assert(approx >= expected * (1 - threshold));
@@ -65,10 +65,10 @@ void test_eval(double approx, double expected, double threshold) {
 }
 
 /**
- * @brief Self-test implementations to
+ * \brief Self-test implementations to
  * test the `integral_approx` function.
  *
- * @returns `void`
+ * \returns `void`
  */
 }  // namespace math
 
@@ -127,8 +127,8 @@ static void test() {
 }
 
 /**
- * @brief Main function
- * @returns 0 on exit
+ * \brief Main function
+ * \returns 0 on exit
  */
 int main() {
     test();  // run self-test implementations
