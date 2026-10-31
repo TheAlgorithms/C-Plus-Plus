@@ -20,9 +20,9 @@ class cll {
     ~cll();
     void display(); /* Show the list */
 
-    /******************************************************
+    /**
      * Useful method for list
-     *******************************************************/
+     */
     void insert_front(int new_data);  /* Insert a new value at head  */
     void insert_tail(int new_data);   /* Insert a new value at tail */
     int get_size();                   /* Get total element in list */
