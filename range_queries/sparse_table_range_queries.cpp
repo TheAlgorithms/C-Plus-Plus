@@ -37,9 +37,10 @@ namespace sparse_table {
 template <typename T>
 std::vector<T> computeLogs(const std::vector<T>& A) {
     int n = A.size();
-    std::vector<T> logs(n);
-    logs[1] = 0;
-    for (int i = 2; i < n; i++) {
+    std::vector<T> logs(n+1); // Changing the size of the vector to avoid heap buffer overflow
+    if(n>=1) logs[1] = 0;
+    // Also including the index n
+    for (int i = 2; i <= n; i++) {
         logs[i] = logs[i / 2] + 1;
     }
     return logs;
@@ -101,5 +102,9 @@ int main() {
     assert(range_queries::sparse_table::getMinimum(0, 0, logs, table) == 1);
     assert(range_queries::sparse_table::getMinimum(0, 4, logs, table) == 0);
     assert(range_queries::sparse_table::getMinimum(2, 4, logs, table) == 0);
+    // ranges that touch the last element (regression tests for the fixes)
+    assert(range_queries::sparse_table::getMinimum(4, 4, logs, table) == 9);
+    assert(range_queries::sparse_table::getMinimum(3, 4, logs, table) == 3);
+    assert(range_queries::sparse_table::getMinimum(0, 1, logs, table) == 1);
     return 0;
 }
