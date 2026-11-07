@@ -61,7 +61,8 @@ std::vector<std::vector<T> > buildTable(const std::vector<T>& A,
     int curLen = 0;
     for (int i = 0; i <= logs[n]; i++) {
         curLen = 1 << i;
-        for (int j = 0; j + curLen < n; j++) {
+        // a window of length curLen starting at j is valid when j + curLen <= n
+        for (int j = 0; j + curLen <= n; j++) {
             if (curLen == 1) {
                 table[i][j] = A[j];
             } else {
