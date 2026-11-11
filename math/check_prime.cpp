@@ -28,30 +28,25 @@ namespace math {
  * @return true if number is a prime
  * @return false if number is not a prime.
  */
-bool is_prime(int64_t num) {
-    /*!
-     * Reduce all possibilities of a number which cannot be prime with the first
-     * 3 if, else if conditionals. Example: Since no even number, except 2 can
-     * be a prime number and the next prime we find after our checks is 5,
-     * we will start the for loop with i = 5. then for each loop we increment
-     * i by +6 and check if i or i+2 is a factor of the number; if it's a factor
-     * then we will return false. otherwise, true will be returned after the
-     * loop terminates at the terminating condition which is i*i <= num
-     */
-    if (num <= 1) {
-        return false;
-    } else if (num == 2 || num == 3) {
-        return true;
-    } else if (num % 2 == 0 || num % 3 == 0) {
-        return false;
-    } else {
-        for (int64_t i = 5; i * i <= num; i = i + 6) {
-            if (num % i == 0 || num % (i + 2) == 0) {
-                return false;
-            }
-        }
+bool is_prime(long long num) {
+    //i fix  a  x <=1 false
+    if(num <= 1) return false;
+    //set famous primary primes numbers if it false
+    const size_t number_of_famous_primes_number = 7;
+    const short famous_primes_number[number_of_famous_primes_number] = {2,3,5,7,11,13,17};
+    //filter is devisible number
+    for (size_t i = 0; i < number_of_famous_primes_number; i++) 
+    {
+        //filter is number famous prime number
+        if(num == famous_primes_number[i]) return true;
+        //filter number is divisible by famous prime number example :{17777777775 % 5 =0 that 0} is devisible
+        if((num % famous_primes_number[i]) ==0) return false; 
     }
+    /*i set for loop by fix number is prime*/
+    for (size_t i = 19; i*i <= num; i+=6) if(num%i == 0|| num%(i+4)==0) return false;
+    //that  return true for all exeption
     return true;
+    
 }
 }  // namespace math
 
@@ -70,7 +65,12 @@ static void tests() {
     assert(math::is_prime(19) == true);
     assert(math::is_prime(50) == false);
     assert(math::is_prime(115249) == true);
-
+    assert(math::is_prime(1565)==false);
+    assert(math::is_prime(123)== false);
+    assert(math::is_prime(123456789123456789)==false );
+    assert(math::is_prime(1555555555555555555)==false);
+    assert(math::is_prime(199999999999999995L)==false);
+    assert(math::is_prime(529)==false);
     std::cout << "All tests have successfully passed!" << std::endl;
 }
 
