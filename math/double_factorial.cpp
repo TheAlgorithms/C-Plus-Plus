@@ -32,7 +32,7 @@ uint64_t double_factorial_iterative(uint64_t n) {
  * @param n The number whose double factorial is calculated.
  * @return The calculated double factorial.
  *
- * Recursion can be costly for large numbers.
+ * @note Recursion can be costly for large numbers.
  */
 uint64_t double_factorial_recursive(uint64_t n) {
     if (n <= 1)
