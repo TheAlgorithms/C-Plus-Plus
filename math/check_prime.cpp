@@ -6,7 +6,6 @@
  * @details
  * A prime number is any number that can be divided only by itself and 1. It
  * must be positive and a whole number, therefore any prime number is part of
- * the set of natural numbers. The majority of prime numbers are even numbers,
  * with the exception of 2. This algorithm finds prime numbers using this
  * information. additional ways to solve the prime check problem:
  * https://cp-algorithms.com/algebra/primality_tests.html#practice-problems
@@ -15,6 +14,7 @@
  */
 
 #include <cassert>   /// for assert
+#include <cstdint>   /// for int64_t
 #include <iostream>  /// for IO operations
 
 /**
@@ -28,8 +28,8 @@ namespace math {
  * @return true if number is a prime
  * @return false if number is not a prime.
  */
-bool is_prime(long long num) {
-    //i fix  a  x <=1 false
+bool is_prime(int64_t num) {
+    //fixing a function for a imprimes numbers
     if(num <= 1) return false;
     //set famous primary primes numbers if it false
     const size_t number_of_famous_primes_number = 7;
@@ -39,12 +39,12 @@ bool is_prime(long long num) {
     {
         //filter is number famous prime number
         if(num == famous_primes_number[i]) return true;
-        //filter number is divisible by famous prime number example :{17777777775 % 5 =0 that 0} is devisible
+        //filter number is divisible by famous prime number
         if((num % famous_primes_number[i]) ==0) return false; 
     }
-    /*i set for loop by fix number is prime*/
+    /*loop for check if it prime if(is not prime) by definition*/
     for (size_t i = 19; i*i <= num; i+=6) if(num%i == 0|| num%(i+4)==0) return false;
-    //that  return true for all exeption
+    //returning is prime if fall in check
     return true;
     
 }
@@ -79,6 +79,6 @@ static void tests() {
  * @returns 0 on exit
  */
 int main() {
-    tests();  // perform self-tests implementations
+    tests();  
     return 0;
 }
