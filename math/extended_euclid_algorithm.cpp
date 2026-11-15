@@ -9,9 +9,10 @@
  * multiplicative inverse of a number. (A * B)%M == 1 Here B is the MMI of A for
  * given M, so extendedEuclid (A, M) gives B.
  */
-#include <algorithm>  // for swap function
-#include <iostream>
+#include <array>    // for std::array
+#include <cassert>  // for assert
 #include <cstdint>
+#include <iostream>
 
 /**
  * function to update the coefficients per iteration
@@ -40,9 +41,6 @@ inline void update_step(T *r, T *r0, const T2 quotient) {
  */
 template <typename T1, typename T2>
 void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y) {
-    if (B > A)
-        std::swap(A, B);  // Ensure that A >= B
-
     T2 s = 0, s0 = 1;
     T2 t = 1, t0 = 0;
     T1 r = B, r0 = A;
@@ -69,9 +67,6 @@ void extendedEuclid_1(T1 A, T1 B, T1 *GCD, T2 *x, T2 *y) {
  */
 template <typename T, typename T2>
 void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y) {
-    if (B > A)
-        std::swap(A, B);  // Ensure that A >= B
-
     if (B == 0) {
         *GCD = A;
         *x = 1;
@@ -84,8 +79,35 @@ void extendedEuclid(T A, T B, T *GCD, T2 *x, T2 *y) {
     }
 }
 
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    const std::array<std::array<uint32_t, 3>, 8> test_cases = {
+        {{240, 46, 2}, {46, 240, 2}, {35, 64, 1}, {64, 35, 1},
+         {42, 0, 42}, {0, 42, 42},  {0, 0, 0},   {42, 42, 42}}};
+
+    for (const auto& test_case : test_cases) {
+        const uint32_t a = test_case[0];
+        const uint32_t b = test_case[1];
+        const uint32_t expected_gcd = test_case[2];
+        uint32_t gcd = 0;
+        int32_t x = 0, y = 0;
+
+        extendedEuclid(a, b, &gcd, &x, &y);
+        assert(gcd == expected_gcd);
+        assert(static_cast<int64_t>(a) * x + static_cast<int64_t>(b) * y == gcd);
+
+        extendedEuclid_1(a, b, &gcd, &x, &y);
+        assert(gcd == expected_gcd);
+        assert(static_cast<int64_t>(a) * x + static_cast<int64_t>(b) * y == gcd);
+    }
+}
+
 /// Main function
 int main() {
+    test();
     uint32_t a, b, gcd;
     int32_t x, y;
     std::cin >> a >> b;
