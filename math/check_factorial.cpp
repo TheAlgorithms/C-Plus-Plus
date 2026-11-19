@@ -3,8 +3,8 @@
  * @brief A simple program to check if the given number is a
  * [factorial](https://en.wikipedia.org/wiki/Factorial) of some number or not.
  *
- * @details A factorial number is the sum of k! where any value of k is a
- * positive integer. https://www.mathsisfun.com/numbers/factorial.html
+ * @details A factorial number equals k! for some nonnegative integer k. For
+ * k >= 1, k! is the product of the integers from 1 through k. By convention, 0! = 1.
  *
  * @author [Divyajyoti Ukirde](https://github.com/divyajyotiuk)
  * @author [ewd00010](https://github.com/ewd00010)
@@ -42,8 +42,8 @@ bool is_factorial(uint64_t n) {
     }
 
     /*!
-     * if n was the sum of a factorial then it should be divided until it
-     * becomes 1
+     * If the input was a factorial, dividing out consecutive factors leaves
+     * 1. Any other remainder means a required factor was missing.
      */
     return (n == 1);
 }
@@ -59,7 +59,8 @@ static void tests() {
     assert(math::is_factorial(0) == false);
     assert(math::is_factorial(1) == true);
     assert(math::is_factorial(479001600) == true);
-    assert(math::is_factorial(-24) == false);
+    assert(math::is_factorial(24));  // 24 / 2 / 3 / 4 = 1
+    assert(!math::is_factorial(18));  // 18 / 2 / 3 = 3, which 4 cannot divide
 
     std::cout << "All tests have successfully passed!" << std::endl;
 }
