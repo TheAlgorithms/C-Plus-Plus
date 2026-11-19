@@ -31,6 +31,8 @@ namespace math {
 
 /**
  * @brief to return the aliquot sum of a number
+ * @details Divisors occur in pairs. Checking candidates through the square
+ * root takes O(sqrt(num)) time and O(1) extra space.
  * @param num The input number
  */
 uint64_t aliquot_sum(const uint64_t num) {
@@ -38,11 +40,14 @@ uint64_t aliquot_sum(const uint64_t num) {
         return 0;  // The aliquot sum for 0 and 1 is 0
     }
 
-    uint64_t sum = 0;
-
-    for (uint64_t i = 1; i <= num / 2; i++) {
+    uint64_t sum = 1;  // 1 is a proper divisor of every number above 1.
+    for (uint64_t i = 2; i <= num / i; ++i) {
         if (num % i == 0) {
+            const uint64_t partner = num / i;
             sum += i;
+            if (partner != i) {
+                sum += partner;
+            }
         }
     }
 
@@ -55,6 +60,9 @@ uint64_t aliquot_sum(const uint64_t num) {
  * @returns void
  */
 static void test() {
+    assert(math::aliquot_sum(0) == 0);
+    assert(math::aliquot_sum(2) == 1);
+    assert(math::aliquot_sum(36) == 55);  // Count the square root only once.
     // Aliquot sum of 10 is 1 + 2 + 5 = 8
     assert(math::aliquot_sum(10) == 8);
     // Aliquot sum of 15 is 1 + 3 + 5 = 9
