@@ -1,0 +1,3 @@
+Compiler: Apple clang version 21.0.0 (clang-2100.1.1.101)
+CMake:    CMake (System binary restricted in sandbox; Repo CMakeLists.txt requires minimum VERSION 3.22)
+Python:   Python 3.9.6
