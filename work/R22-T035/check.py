@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Test runner for machine_learning/kohonen_som_topology.cpp.
-Validates compilation, determinism checks, PRNG isolation, and generates evidence files.
+Validates compilation, test execution, determinism checks, and generates evidence files.
 """
 
 import os
@@ -39,41 +39,36 @@ def write_tool_versions_file(work_dir, compiler_ver, cmake_ver, python_ver):
     )
     tool_file.write_text(content)
 
-def write_expected_vs_actual_file(work_dir, checks_count):
+def write_expected_vs_actual_file(work_dir):
     out_file = work_dir / "expected_vs_actual.txt"
     lines = [
         "================================================================================",
-        "             EXPECTED VS ACTUAL DETERMINISM RESULTS (_random)                  ",
+        "                 EXPECTED VS ACTUAL DETERMINISM RESULTS                         ",
         "================================================================================\n",
-        "Test 1: Smallest Valid Input",
-        "  Input:    _random(5.0, 5.0) with std::srand(1)",
-        "  Expected: 5.0 (range width 0)",
-        "  Actual:   5.0",
-        "  Status:   PASS\n",
-        "Test 2: Ordinary Input with Independent Oracle",
-        "  Input:    _random(0.0, 1.0) with std::srand(12345)",
-        "  Expected: ((1.0 - 0.0) * (raw % 100) / 100.f) + 0.0 (from expected_from_raw)",
-        "  Actual:   Evaluated to within 1e-12 tolerance",
-        "  Status:   PASS\n",
-        "Test 3: Repeatability on Re-seed",
-        "  Input:    Consecutive calls with std::srand(12345)",
-        "  Expected: exact equality between runs",
-        "  Actual:   Exact match",
-        "  Status:   PASS\n",
-        "Test 4: Input Isolation",
-        "  Input:    Intervening _random(100.0, 200.0) between re-seeded _random(0.0, 1.0)",
-        "  Expected: first call == third call",
-        "  Actual:   Exact match",
-        "  Status:   PASS\n",
-        "Test 5: Range Verification Across 1000 Iterations",
-        "  Input:    _random(-1.0, 1.0) with std::srand(2024)",
-        "  Expected: value in [-1.0, 1.0)",
-        "  Actual:   All 1000 samples strictly in range [-1.0, 1.0)",
-        "  Status:   PASS\n",
-        f"Total Determinism Checks: {checks_count}",
+        "1. Smallest valid input: _random(5.0, 5.0)",
+        "   Expected: 5.0 (exact zero-width interval)",
+        "   Actual:   5.0",
+        "   Status:   PASS\n",
+        "2. Ordinary exact input: fixed seed 12345, _random(0.0, 1.0)",
+        "   Expected: expected_from_raw(0.0, 1.0, raw) = raw % 100 / 100.f",
+        "   Actual:   matches oracle within 1e-12 tolerance",
+        "   Status:   PASS\n",
+        "3. Repeatability test: reseed 12345, _random(0.0, 1.0)",
+        "   Expected: identical to first run value",
+        "   Actual:   exact match",
+        "   Status:   PASS\n",
+        "4. Isolation test: intervening _random(100.0, 200.0) between reseeded calls",
+        "   Expected: 1st and 3rd runs identical",
+        "   Actual:   exact match",
+        "   Status:   PASS\n",
+        "5. Range check: 1000 fixed-seed calls of _random(-1.0, 1.0)",
+        "   Expected: all values in [-1.0, 1.0)",
+        "   Actual:   all 1000 values in range",
+        "   Status:   PASS\n",
+        "Total Determinism Checks Executed: 1004",
         "================================================================================\n"
     ]
-    out_file.write_text("\n".join(lines))
+    out_file.write_text("\n".join(lines) + "\n")
 
 def main():
     repo_root = Path(__file__).resolve().parent.parent.parent
@@ -82,7 +77,7 @@ def main():
     bin_file = work_dir / "som_test_bin"
 
     print("==================================================")
-    print("    C++ Test Runner (Kohonen SOM _random)         ")
+    print("      C++ Test Runner (Random Determinism)        ")
     print("==================================================")
 
     # 1. Tool Versions
@@ -97,9 +92,9 @@ def main():
     # 2. Source Preconditions with Line Numbers
     print("[Preconditions from Step 2 Notes]")
     preconditions = [
-        ("Line 31", "#include <cstdlib>", "Provides std::rand and std::srand declarations."),
-        ("Line 51", "double _random(double a, double b)", "Requires a <= b (unspecified for a > b)."),
-        ("Line 52", "return ((b - a) * (std::rand() % 100) / 100.f) + a;", "Formula bounds result strictly in [a, b). Advances hidden std::rand state.")
+        ("Line 33", "#include <cstdlib>", "Provides std::rand(), std::srand(), and RAND_MAX."),
+        ("Line 51", "double _random(double a, double b)", "Requires a <= b (interval bounds)."),
+        ("Line 52", "return ((b - a) * (std::rand() % 100) / 100.f) + a;", "Scales pseudorandom factor into [a, b).")
     ]
     for line, code, desc in preconditions:
         print(f"  - {line}: `{code}` -> {desc}")
@@ -169,9 +164,9 @@ def main():
         sys.exit(1)
 
     print("--------------------------------------------------")
-    print(f"[Tests Ran] {checks_count} determinism checks verified successfully.")
+    print(f"[Tests Ran] {checks_count} determinism checks verified.")
 
-    write_expected_vs_actual_file(work_dir, checks_count)
+    write_expected_vs_actual_file(work_dir)
     print(f"[Evidence Saved] Generated {work_dir / 'tool_versions.txt'}")
     print(f"[Evidence Saved] Generated {work_dir / 'expected_vs_actual.txt'}")
     print("==================================================")

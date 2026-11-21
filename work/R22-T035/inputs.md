@@ -1,6 +1,6 @@
 # Analysis and Notes: `_random` in `machine_learning/kohonen_som_topology.cpp`
 
-Based on [machine_learning/kohonen_som_topology.cpp](file:///Users/prishi/C-Plus-Plus/machine_learning/kohonen_som_topology.cpp#L42-L56):
+Based on lines 42–56 of [machine_learning/kohonen_som_topology.cpp](file:///Users/prishi/C-Plus-Plus/machine_learning/kohonen_som_topology.cpp#L42-L56):
 
 ```cpp
 42: /**
@@ -23,49 +23,36 @@ Based on [machine_learning/kohonen_som_topology.cpp](file:///Users/prishi/C-Plus
 
 ### 1. Step 2: File Notes
 
-- **Inputs (Line 53):** Takes two `double` parameters: `double a` (lower limit) and `double b` (upper limit).
+- **Inputs (Line 53):** Takes two `double` parameters: `double a` (lower bound) and `double b` (upper bound).
 - **Result (Lines 53–55):** Returns a `double`.
-  - Exact formula from Line 54:
+  - Exact formula from line 54:
     ```cpp
     return ((b - a) * (std::rand() % 100) / 100.f) + a;
     ```
-- **Mutation (Lines 53–55):** It modifies no member or global variables of its own, but it calls `std::rand()`, which modifies and advances the hidden internal pseudo-random state of the C standard library PRNG.
-- **Observable Dependencies (Lines 31, 54):**
-  - Line 31: `#include <cstdlib>` for `std::rand()` and `std::srand()`.
-  - Explicitly: Does **not** depend on `<random>`, `time` (inside `_random`), global objects, or file streams.
+- **Mutation (Lines 53–55):** It mutates no variables of its own, but invoking `std::rand()` mutates the global, hidden pseudo-random number generator state in `<cstdlib>`.
+- **Observable Dependencies:**
+  - **Line 31:** `#include <cstdlib>` (for `std::rand`, `std::srand`, and `RAND_MAX`).
+  - **Line 30:** `#include <cmath>` (used across the file).
+  - **Line 33:** `#include <ctime>` (used in `main()` for time-based seeding).
+  - Explicit note: The function does **not** use `<random>`, `time()`, or any other external RNG library directly.
 - **Where the Seed is Set:**
-  - Line 589: `std::srand(std::time(nullptr));` inside `main()`.
-  - Tests explicitly control the seed using `std::srand(fixed_seed)` to guarantee deterministic reproducibility.
-- **Namespace (Line 53):** Sits in the **global namespace** (not enclosed in any `namespace` block).
+  - **Line 589:** `std::srand(std::time(nullptr));` inside `int main()`.
+- **Namespace:**
+  - `_random` resides in the **global namespace** (line 53).
 - **Preconditions:**
-  - `#include <cstdlib>` must be present for `std::rand`.
-  - Requires $a \le b$. If $a > b$, behavior is unspecified by the code contract.
-- **Platform Portability Considerations:**
-  - `std::rand()` implementation details and sequences vary across platforms. Tests must use deterministic seed isolation and oracle comparisons rather than hardcoding platform-specific random constants.
+  - `<cstdlib>` is included (line 31), providing `std::rand` and `RAND_MAX`.
+  - $a \le b$. The behavior when $a > b$ is unspecified by the source, so it is not tested.
+- **Platform Variability (Something to Watch):**
+  - The sequence produced by `std::rand()` for a given seed varies across platforms and C standard library implementations. Literal random outputs must not be hardcoded; instead, the test oracle dynamically reads the raw `std::rand()` stream to verify the formula.
 
 ---
 
-### 2. Step 3: Expected Values by Hand
+### 2. Step 3: Chosen Inputs and Expected Values
 
-| Case | Input | Expected Result | Why |
+| Case | Input | Expected Result | Reason / Hand Calculation |
 | :--- | :--- | :--- | :--- |
-| **Smallest valid** | `_random(5.0, 5.0)` | Exactly `5.0` | Range width is $(5.0 - 5.0) = 0.0$, so $((0.0) \times (\text{rand}() \% 100) / 100.f) + 5.0 = 5.0$. |
-| **Ordinary** | `_random(-1.0, 1.0)` | A value $\ge -1.0$ and $< 1.0$ | Width is $2.0$. $(\text{rand}() \% 100)$ is in $[0, 99]$, so $(\dots)/100.f \in [0.0, 0.99]$. Result lies in $[-1.0, 0.98] \subset [-1.0, 1.0)$. |
-| **Ordinary, exact** | Seed 12345, `_random(0.0, 1.0)` | Matching oracle: `((1.0 - 0.0) * (raw % 100) / 100.f) + 0.0` | Calculated independently from the raw `rand()` value. |
-| **Repeatability** | Seed 12345, call, re-seed 12345, call again | Identical values (`again == actual`) | Identical PRNG state produces identical output. |
-| **Isolation** | Seed 12345 $\to$ `_random(0, 1)` $\to$ seed 12345 $\to$ `_random(100, 200)` $\to$ seed 12345 $\to$ `_random(0, 1)` | 1st and 3rd results are equal (`third == actual`) | Re-seeding completely isolates the PRNG state from intervening calls. |
-
----
-
-### 3. Step 6: Doxygen Contract Specification
-
-```cpp
-/**
- * @brief Returns a pseudo-random double between a and b.
- * @param a lower bound
- * @param b upper bound (a <= b; behaviour for a > b is not specified)
- * @return ((b - a) * (std::rand() % 100) / 100.f) + a
- * @note Depends on std::rand() state; call std::srand(seed) first for
- *       repeatable results. Returns exactly a when a == b.
- */
-```
+| **Smallest valid** | `_random(5.0, 5.0)` | Exactly `5.0` | $b - a = 5.0 - 5.0 = 0.0$. Formula evaluates to $(0.0 \times \dots) + 5.0 = 5.0$. |
+| **Ordinary** | `_random(-1.0, 1.0)` | Value in $[-1.0, 1.0)$ | Range width is $1.0 - (-1.0) = 2.0$. Since `rand() % 100` $\in [0, 99]$, the factor is at most $0.99$, so result is in $[-1.0, -1.0 + 1.98] = [-1.0, 0.98] < 1.0$. |
+| **Ordinary, exact** | Fixed seed 12345, `_random(0.0, 1.0)` | Exactly `expected_from_raw(0.0, 1.0, raw)` | Where `raw` is the first `std::rand()` produced after `std::srand(12345)`. |
+| **Repeatability** | Seed 12345, call, reseed 12345, call again | Both results identical | The pseudo-random generator is deterministic: identical seed yields identical state and output. |
+| **Isolation** | Seed 12345, call `_random(0.0, 1.0)`, reseed 12345, call `_random(100.0, 200.0)`, reseed 12345, call `_random(0.0, 1.0)` | 1st and 3rd results identical | Intervening calls with different parameters do not affect subsequent reseeded runs. |
