@@ -1,0 +1,25 @@
+==================================================
+           C++ Test Runner (Mo's add)             
+==================================================
+[Tools] Compiler: Apple clang version 21.0.0 (clang-2100.1.1.101)
+[Tools] CMake:    CMake (System binary restricted in sandbox; Repo CMakeLists.txt requires minimum VERSION 3.22)
+[Tools] Python:   Python 3.9.6
+--------------------------------------------------
+[Preconditions from Step 2 Notes]
+  - Line 6: `const int N = 1e6 + 5;` -> Defines upper bound size N for global array allocations.
+  - Line 7: `int a[N], bucket[N], cnt[N];` -> Declares global arrays; requires 0 <= index < N, 0 <= a[index] < N, and cnt zero-initialized.
+  - Line 12: `int ans = 0;` -> Declares and initializes global distinct-element counter ans to 0.
+--------------------------------------------------
+[Compile Command] clang++ -std=c++17 -Wall -Wextra -Wno-register -Werror=vla /Users/prishi/C-Plus-Plus/range_queries/mo.cpp -o /Users/prishi/C-Plus-Plus/work/R22-T031/mo_test_bin
+[Compile Status] Compilation succeeded.
+--------------------------------------------------
+[Execution] Running compiled test binary...
+All tests have successfully passed!
+--------------------------------------------------
+[Tests Ran] 4 tests executed successfully:
+  - test_return_value
+  - test_mutation_smallest_input
+  - test_mutation_ordinary_input
+  - test_mutation_repeated_value
+==================================================
+Status: ALL CHECKS PASSED

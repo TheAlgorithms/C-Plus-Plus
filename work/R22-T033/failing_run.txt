@@ -1,0 +1,30 @@
+==================================================
+     C++ Test Runner (Modular Inverse imod)       
+==================================================
+[Tools] Compiler: Apple clang version 21.0.0 (clang-2100.1.1.101)
+[Tools] CMake:    CMake (System binary restricted in sandbox; Repo CMakeLists.txt requires minimum VERSION 3.22)
+[Tools] Python:   Python 3.9.6
+--------------------------------------------------
+[Preconditions from Step 2 Notes]
+  - Line 26: `uint64_t imod(uint64_t x, uint64_t y)` -> Takes positive integer x and modulus y.
+  - Line 33: `while (aux % x);` -> Search termination requires gcd(x, y) == 1 (coprime input contract).
+  - Line 35: `return aux / x;` -> Pure function returning the multiplicative inverse; no global state mutation.
+--------------------------------------------------
+[Compile Command] clang++ -std=c++17 -Wall -Wextra -Wno-register -Werror=vla /Users/prishi/C-Plus-Plus/math/modular_inverse_simple.cpp -o /Users/prishi/C-Plus-Plus/work/R22-T033/imod_test_bin
+[Compile Status] Compilation succeeded.
+--------------------------------------------------
+[Execution] Running compiled test binary...
+First case testing... 
+
+Passed!
+Second case testing... 
+
+Passed!
+Third case testing... 
+
+Passed!
+
+All test cases have successfully passed!
+FAIL imod(3, 11): expected 5, actual 4/4
+[Execution Error] Test binary exited with failure code: 1
+EXIT_CODE: 1
