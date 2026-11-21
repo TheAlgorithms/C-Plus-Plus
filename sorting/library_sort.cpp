@@ -11,7 +11,7 @@ void librarySort(int *index, int n) {
     for (int i = 0; i < 2; i++) library[i] = new int[n];
 
     gaps = new int[n + 1];
-    numbered = new bool[n + 1];
+    numbered = new bool[n + 1]();
 
     lib_size = 1;
     index_pos = 1;
