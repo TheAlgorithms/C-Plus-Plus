@@ -8,10 +8,13 @@
  * for example:
  * \f$5! = 5\times4! = 5\times4\times3\times2\times1 = 120\f$
  *
+ * Time Complexity: \f$O(n)\f$
+ * Space Complexity: \f$O(n)\f$ due to recursion call stack
+ *
  * @author [Akshay Gupta](https://github.com/Akshay1910)
  */
 
-#include <cassert>   /// for assert
+#include <cassert>  /// for assert
 #include <cstdint>
 #include <iostream>  /// for I/O operations
 /**
@@ -23,6 +26,7 @@ namespace math {
 /**
  * @brief function to find factorial of given number
  * @param n is the number which is to be factorialized
+ * @returns factorial of `n` as a 64-bit unsigned integer
  * @warning Maximum value for the parameter is 20 as 21!
  * cannot be represented in 64 bit unsigned int
  */
