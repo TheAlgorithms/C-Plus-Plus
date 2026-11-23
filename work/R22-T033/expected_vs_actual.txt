@@ -1,0 +1,55 @@
+================================================================================
+                EXPECTED VS ACTUAL MODULAR INVERSE RESULTS                      
+================================================================================
+
+Modulus m = 7:
+  imod( 1,  7) -> Expected:  1 | Actual:  1 | Status: PASS
+  imod( 2,  7) -> Expected:  4 | Actual:  4 | Status: PASS
+  imod( 3,  7) -> Expected:  5 | Actual:  5 | Status: PASS
+  imod( 4,  7) -> Expected:  2 | Actual:  2 | Status: PASS
+  imod( 5,  7) -> Expected:  3 | Actual:  3 | Status: PASS
+  imod( 6,  7) -> Expected:  6 | Actual:  6 | Status: PASS
+--------------------------------------------------------------------------------
+Modulus m = 11:
+  imod( 1, 11) -> Expected:  1 | Actual:  1 | Status: PASS
+  imod( 2, 11) -> Expected:  6 | Actual:  6 | Status: PASS
+  imod( 3, 11) -> Expected:  4 | Actual:  4 | Status: PASS
+  imod( 4, 11) -> Expected:  3 | Actual:  3 | Status: PASS
+  imod( 5, 11) -> Expected:  9 | Actual:  9 | Status: PASS
+  imod( 6, 11) -> Expected:  2 | Actual:  2 | Status: PASS
+  imod( 7, 11) -> Expected:  8 | Actual:  8 | Status: PASS
+  imod( 8, 11) -> Expected:  7 | Actual:  7 | Status: PASS
+  imod( 9, 11) -> Expected:  5 | Actual:  5 | Status: PASS
+  imod(10, 11) -> Expected: 10 | Actual: 10 | Status: PASS
+--------------------------------------------------------------------------------
+Modulus m = 26:
+  imod( 1, 26) -> Expected:  1 | Actual:  1 | Status: PASS
+  imod( 2, 26) -> UNSUPPORTED (gcd(2, 26) > 1, no inverse)
+  imod( 3, 26) -> Expected:  9 | Actual:  9 | Status: PASS
+  imod( 4, 26) -> UNSUPPORTED (gcd(4, 26) > 1, no inverse)
+  imod( 5, 26) -> Expected: 21 | Actual: 21 | Status: PASS
+  imod( 6, 26) -> UNSUPPORTED (gcd(6, 26) > 1, no inverse)
+  imod( 7, 26) -> Expected: 15 | Actual: 15 | Status: PASS
+  imod( 8, 26) -> UNSUPPORTED (gcd(8, 26) > 1, no inverse)
+  imod( 9, 26) -> Expected:  3 | Actual:  3 | Status: PASS
+  imod(10, 26) -> UNSUPPORTED (gcd(10, 26) > 1, no inverse)
+  imod(11, 26) -> Expected: 19 | Actual: 19 | Status: PASS
+  imod(12, 26) -> UNSUPPORTED (gcd(12, 26) > 1, no inverse)
+  imod(13, 26) -> UNSUPPORTED (gcd(13, 26) > 1, no inverse)
+  imod(14, 26) -> UNSUPPORTED (gcd(14, 26) > 1, no inverse)
+  imod(15, 26) -> Expected:  7 | Actual:  7 | Status: PASS
+  imod(16, 26) -> UNSUPPORTED (gcd(16, 26) > 1, no inverse)
+  imod(17, 26) -> Expected: 23 | Actual: 23 | Status: PASS
+  imod(18, 26) -> UNSUPPORTED (gcd(18, 26) > 1, no inverse)
+  imod(19, 26) -> Expected: 11 | Actual: 11 | Status: PASS
+  imod(20, 26) -> UNSUPPORTED (gcd(20, 26) > 1, no inverse)
+  imod(21, 26) -> Expected:  5 | Actual:  5 | Status: PASS
+  imod(22, 26) -> UNSUPPORTED (gcd(22, 26) > 1, no inverse)
+  imod(23, 26) -> Expected: 17 | Actual: 17 | Status: PASS
+  imod(24, 26) -> UNSUPPORTED (gcd(24, 26) > 1, no inverse)
+  imod(25, 26) -> Expected: 25 | Actual: 25 | Status: PASS
+--------------------------------------------------------------------------------
+Neighboring Check: imod(4, 11) -> Expected: 3 | Actual: 3 | Status: PASS
+Total Supported Inputs Verified Against Reference Oracle: 28
+================================================================================
+

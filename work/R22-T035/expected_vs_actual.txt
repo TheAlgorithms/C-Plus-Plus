@@ -1,0 +1,32 @@
+================================================================================
+                 EXPECTED VS ACTUAL DETERMINISM RESULTS                         
+================================================================================
+
+1. Smallest valid input: _random(5.0, 5.0)
+   Expected: 5.0 (exact zero-width interval)
+   Actual:   5.0
+   Status:   PASS
+
+2. Ordinary exact input: fixed seed 12345, _random(0.0, 1.0)
+   Expected: expected_from_raw(0.0, 1.0, raw) = raw % 100 / 100.f
+   Actual:   matches oracle within 1e-12 tolerance
+   Status:   PASS
+
+3. Repeatability test: reseed 12345, _random(0.0, 1.0)
+   Expected: identical to first run value
+   Actual:   exact match
+   Status:   PASS
+
+4. Isolation test: intervening _random(100.0, 200.0) between reseeded calls
+   Expected: 1st and 3rd runs identical
+   Actual:   exact match
+   Status:   PASS
+
+5. Range check: 1000 fixed-seed calls of _random(-1.0, 1.0)
+   Expected: all values in [-1.0, 1.0)
+   Actual:   all 1000 values in range
+   Status:   PASS
+
+Total Determinism Checks Executed: 1004
+================================================================================
+

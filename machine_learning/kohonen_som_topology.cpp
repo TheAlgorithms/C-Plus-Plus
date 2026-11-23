@@ -26,8 +26,10 @@
 #define _USE_MATH_DEFINES  //< required for MS Visual C++
 #include <algorithm>
 #include <array>
+#include <cassert>
 #include <cerrno>
 #include <cmath>
+#include <cstdio>
 #include <cstdlib>
 #include <cstring>
 #include <ctime>
@@ -40,15 +42,12 @@
 #endif
 
 /**
- * Helper function to generate a random number in a given interval.
- * \n Steps:
- * 1. `r1 = rand() % 100` gets a random number between 0 and 99
- * 2. `r2 = r1 / 100` converts random number to be between 0 and 0.99
- * 3. scale and offset the random number to given range of \f$[a,b]\f$
- *
- * \param[in] a lower limit
- * \param[in] b upper limit
- * \returns random number in the range \f$[a,b]\f$
+ * @brief Returns a pseudo-random double between a and b.
+ * @param a lower bound
+ * @param b upper bound (a <= b; behaviour for a > b is not specified)
+ * @return a + (b - a) * (rand() % 100) / 100.f
+ * @note Depends on std::rand() state; call std::srand(seed) first for
+ *       repeatable results. Returns exactly a when a == b.
  */
 double _random(double a, double b) {
     return ((b - a) * (std::rand() % 100) / 100.f) + a;
@@ -578,36 +577,96 @@ double get_clock_diff(clock_t start_t, clock_t end_t) {
     return static_cast<double>(end_t - start_t) / CLOCKS_PER_SEC;
 }
 
+/** Independent oracle: same formula, but takes the raw rand() value as input
+ *  and never calls _random(). */
+static double expected_from_raw(double a, double b, int raw) {
+    return ((b - a) * (raw % 100) / 100.f) + a;
+}
+
+static int checks = 0;
+#define CHECK(label, cond, exp_text, act)                                  \
+    do {                                                                   \
+        ++checks;                                                          \
+        if (!(cond)) {                                                     \
+            std::fprintf(stderr, "FAIL %s: expected %s, actual %.17g\n",   \
+                         label, exp_text, (double)(act));                  \
+            std::exit(1);                                                  \
+        }                                                                  \
+    } while (0)
+
+/** Deterministic checks for _random(); the dependency is std::rand state,
+ *  controlled with std::srand(fixed seed). */
+static void test_random_deterministic() {
+    // Smallest valid input: zero-width range [5, 5] must give exactly 5.
+    std::srand(1);
+    double r0 = _random(5.0, 5.0);               // kohonen_som_topology.cpp:51 _random formula
+    CHECK("smallest _random(5,5)", r0 == 5.0, "5", r0);
+
+    // Ordinary input, independent expected value from the raw rand() stream.
+    std::srand(12345);
+    int raw = std::rand();
+    double expected = expected_from_raw(0.0, 1.0, raw);
+    std::srand(12345);
+    double actual = _random(0.0, 1.0);           // kohonen_som_topology.cpp:51 _random formula
+    CHECK("ordinary seed 12345 _random(0,1)", std::fabs(actual - expected) < 1e-12,
+          "r / 100.f", actual);
+
+    // Repeatability: the same seed gives the same result.
+    std::srand(12345);
+    double again = _random(0.0, 1.0);            // kohonen_som_topology.cpp:51 _random formula
+    CHECK("repeat after reseed", again == actual, "same as first run", again);
+
+    // Isolation: an intervening call with other inputs can't change a reseeded run.
+    std::srand(12345);
+    double other = _random(100.0, 200.0);        // kohonen_som_topology.cpp:51 _random formula
+    (void)other;
+    std::srand(12345);
+    double third = _random(0.0, 1.0);            // kohonen_som_topology.cpp:51 _random formula
+    CHECK("isolation after other input", third == actual, "same as first run", third);
+
+    // Range: 1000 fixed-seed calls stay within [-1, 1).
+    std::srand(2024);
+    for (int i = 0; i < 1000; i++) {
+        double v = _random(-1.0, 1.0);           // kohonen_som_topology.cpp:51 _random formula
+        CHECK("range [-1,1)", v >= -1.0 && v < 1.0, ">= -1 and < 1", v);
+    }
+    std::printf("DETERMINISM_CHECKS=%d\n", checks);
+}
+
 /** Main function */
-int main() {
+int main(int argc, char **argv) {
+    test_random_deterministic();
+
+    if (argc > 1 && std::string(argv[1]) == "--run-sim") {
 #ifdef _OPENMP
-    std::cout << "Using OpenMP based parallelization\n";
+        std::cout << "Using OpenMP based parallelization\n";
 #else
-    std::cout << "NOT using OpenMP based parallelization\n";
+        std::cout << "NOT using OpenMP based parallelization\n";
 #endif
 
-    std::srand(std::time(nullptr));
+        std::srand(std::time(nullptr));
 
-    std::clock_t start_clk = std::clock();
-    test1();
-    auto end_clk = std::clock();
-    std::cout << "Test 1 completed in " << get_clock_diff(start_clk, end_clk)
-              << " sec\n";
+        std::clock_t start_clk = std::clock();
+        test1();
+        auto end_clk = std::clock();
+        std::cout << "Test 1 completed in " << get_clock_diff(start_clk, end_clk)
+                  << " sec\n";
 
-    start_clk = std::clock();
-    test2();
-    end_clk = std::clock();
-    std::cout << "Test 2 completed in " << get_clock_diff(start_clk, end_clk)
-              << " sec\n";
+        start_clk = std::clock();
+        test2();
+        end_clk = std::clock();
+        std::cout << "Test 2 completed in " << get_clock_diff(start_clk, end_clk)
+                  << " sec\n";
 
-    start_clk = std::clock();
-    test3();
-    end_clk = std::clock();
-    std::cout << "Test 3 completed in " << get_clock_diff(start_clk, end_clk)
-              << " sec\n";
+        start_clk = std::clock();
+        test3();
+        end_clk = std::clock();
+        std::cout << "Test 3 completed in " << get_clock_diff(start_clk, end_clk)
+                  << " sec\n";
 
-    std::cout
-        << "(Note: Calculated times include: creating test sets, training "
-           "model and writing files to disk.)\n\n";
+        std::cout
+            << "(Note: Calculated times include: creating test sets, training "
+               "model and writing files to disk.)\n\n";
+    }
     return 0;
 }

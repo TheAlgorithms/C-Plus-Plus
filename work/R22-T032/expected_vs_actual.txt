@@ -1,0 +1,46 @@
+================================================================================
+                     EXPECTED VS ACTUAL TEST RESULTS                            
+================================================================================
+
+Test Name: test_show_smallest_boundary
+Boundary:  Valid boundary (smallest)
+Input:     F.top = 0, U.top = 0, T.top = 0 (all towers empty)
+Expected:  \n\n\tF : \n\tU : \n\tT : 
+Actual:    \n\n\tF : \n\tU : \n\tT : 
+Status:    PASS
+--------------------------------------------------------------------------------
+Test Name: test_show_just_above_smallest
+Boundary:  Valid interior (just above smallest)
+Input:     F.top = 1, F.values[0] = 1, U.top = 0, T.top = 0
+Expected:  \n\n\tF : 1\t\n\tU : \n\tT : 
+Actual:    \n\n\tF : 1\t\n\tU : \n\tT : 
+Status:    PASS
+--------------------------------------------------------------------------------
+Test Name: test_show_ordinary
+Boundary:  Valid interior (ordinary arrangement)
+Input:     F.top = 2, F.values = {2, 1}, U.top = 0, T.top = 0
+Expected:  \n\n\tF : 2\t1\t\n\tU : \n\tT : 
+Actual:    \n\n\tF : 2\t1\t\n\tU : \n\tT : 
+Status:    PASS
+--------------------------------------------------------------------------------
+Test Name: test_show_just_below_largest
+Boundary:  Valid interior (just below largest capacity)
+Input:     F.top = 9, F.values = {9, 8, 7, 6, 5, 4, 3, 2, 1}, U.top = 0, T.top = 0
+Expected:  \n\n\tF : 9\t8\t7\t6\t5\t4\t3\t2\t1\t\n\tU : \n\tT : 
+Actual:    \n\n\tF : 9\t8\t7\t6\t5\t4\t3\t2\t1\t\n\tU : \n\tT : 
+Status:    PASS
+--------------------------------------------------------------------------------
+Test Name: test_show_largest_boundary
+Boundary:  Valid boundary (largest full capacity)
+Input:     F.top = 10, F.values = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1}, U.top = 0, T.top = 0
+Expected:  \n\n\tF : 10\t9\t8\t7\t6\t5\t4\t3\t2\t1\t\n\tU : \n\tT : 
+Actual:    \n\n\tF : 10\t9\t8\t7\t6\t5\t4\t3\t2\t1\t\n\tU : \n\tT : 
+Status:    PASS
+--------------------------------------------------------------------------------
+Test Name: test_show_repeated_call_mutation_invariance
+Boundary:  Mutation Invariance
+Input:     Call show twice on F.top = 2, F.values = {2, 1}
+Expected:  output1 == output2 and state (F.top, F.values, U, T) unchanged
+Actual:    output1 == output2 and state unchanged
+Status:    PASS
+--------------------------------------------------------------------------------

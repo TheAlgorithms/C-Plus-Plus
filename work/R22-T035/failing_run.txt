@@ -1,0 +1,19 @@
+==================================================
+      C++ Test Runner (Random Determinism)        
+==================================================
+[Tools] Compiler: Apple clang version 21.0.0 (clang-2100.1.1.101)
+[Tools] CMake:    CMake (System binary restricted in sandbox; Repo CMakeLists.txt requires minimum VERSION 3.22)
+[Tools] Python:   Python 3.9.6
+--------------------------------------------------
+[Preconditions from Step 2 Notes]
+  - Line 33: `#include <cstdlib>` -> Provides std::rand(), std::srand(), and RAND_MAX.
+  - Line 51: `double _random(double a, double b)` -> Requires a <= b (interval bounds).
+  - Line 52: `return ((b - a) * (std::rand() % 100) / 100.f) + a;` -> Scales pseudorandom factor into [a, b).
+--------------------------------------------------
+[Compile Command] clang++ -std=c++17 -Wall -Wextra -Wno-register -Werror=vla /Users/prishi/C-Plus-Plus/machine_learning/kohonen_som_topology.cpp -o /Users/prishi/C-Plus-Plus/work/R22-T035/som_test_bin
+[Compile Status] Compilation succeeded.
+--------------------------------------------------
+[Execution] Running compiled test binary...
+FAIL smallest _random(5,5): expected 6, actual 5
+[Execution Error] Test binary exited with failure code: 1
+EXIT_CODE: 1
