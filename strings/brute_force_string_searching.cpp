@@ -1,58 +1,65 @@
 /**
  * @file
  * @brief          String pattern search - brute force
+ * @details
+ * Finds the first matching substring in the text, otherwise returns -1.
+ * Time complexity: O(n * m), Space complexity: O(1).
  */
-#include <iostream>
-#ifdef _MSC_VER
-#include <string>  // use this for MS Visual C++
-#else
-#include <cstring>
-#endif
-#include <vector>
+
+#include <cassert> /// For assert
+#include <iostream> /// For IO operations
+#include <string> /// For std::string
+
+/**
+ * @namespace string_search
+ * @brief String search algorithms
+ */
 
 namespace string_search {
-/**
- * Find a pattern in a string by comparing the pattern to every substring.
- * @param text     Any string that might contain the pattern.
- * @param pattern  String that we are searching for.
- * @return         Index where the pattern starts in the text
- * @return         -1 if the pattern was not found.
- */
-int brute_force(const std::string &text, const std::string &pattern) {
-    size_t pat_l = pattern.length();
-    size_t txt_l = text.length();
-    int index = -1;
-    if (pat_l <= txt_l) {
-        for (size_t i = 0; i < txt_l - pat_l + 1; i++) {
-            std::string s = text.substr(i, pat_l);
-            if (s == pattern) {
-                index = i;
-                break;
-            }
-        }
-    }
-    return index;
-}
+	/**
+	 * @brief Find a pattern in a string by comparing the pattern to every substring.
+	 * @param text     Any string that might contain the pattern.
+	 * @param pattern  String that we are searching for.
+	 * @returns        Index where the pattern starts in the text
+	 * @returns        -1 if the pattern was not found.
+	 */
+	int brute_force(const std::string& text, const std::string& pattern) {
+		size_t pattern_length = pattern.length();
+		size_t text_length = text.length();
+		int index = -1;
+		if (pattern_length <= text_length) {
+			for (size_t i = 0; i < text_length - pattern_length + 1; i++) {
+				std::string current_substring = text.substr(i, pattern_length);
+				if (current_substring == pattern) {
+					index = i;
+					break;
+				}
+			}
+		}
+		return index;
+	}
 }  // namespace string_search
 
-using string_search::brute_force;
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
 
-/** set of test cases */
-const std::vector<std::vector<std::string>> test_set = {
-    // {text, pattern, expected output}
-    {"a", "aa", "-1"},  {"a", "a", "0"},    {"ba", "b", "0"},
-    {"bba", "bb", "0"}, {"bbca", "c", "2"}, {"ab", "b", "1"}};
+static void test() {
+	assert(string_search::brute_force("a", "aa") == -1);
+	assert(string_search::brute_force("aa", "a") == 0);
+	assert(string_search::brute_force("bbb", "a") == -1);
+	assert(string_search::brute_force("bbbbab", "ab") == 4);
 
-/** Main function */
+	std::cout << "All tests have successfully passed!\n";
+}
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
+
 int main() {
-    for (const auto &i : test_set) {
-        int output = brute_force(i[0], i[1]);
-
-        if (std::to_string(output) == i[2]) {
-            std::cout << "success\n";
-        } else {
-            std::cout << "failure\n";
-        }
-    }
-    return 0;
+	test();
+	return 0;
 }
