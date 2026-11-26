@@ -4,6 +4,7 @@
  * @details
  * Finds the first matching substring in the text, otherwise returns -1.
  * Time complexity: O(n * m), Space complexity: O(m), where n is the length of the text and m is the length of the pattern.
+ * @author [1pierres1u](https://github.com/1pierres1u)
  */
 
 #include <cassert> /// For assert
