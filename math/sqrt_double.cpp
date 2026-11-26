@@ -7,52 +7,51 @@
  * @see Can be implemented using faster and better algorithms like
  * newton_raphson_method.cpp and false_position.cpp
  */
-#include <cassert> /// For assert
-#include <iostream> /// For IO operations
-#include <cmath> /// For std::abs, std::sqrt
+#include <cassert>   /// For assert
+#include <cmath>     /// For std::abs, std::sqrt
+#include <iostream>  /// For IO operations
 
 /**
  * @namespace math
  * @brief Mathematical algorithms
  */
 namespace math {
-    /**
-     * @brief Bisection method implemented for the function \f$x^2-a=0\f$
-     * whose roots are \f$\pm\sqrt{a}\f$ and only the positive root is returned.
-     * @param a number to find the square root of
-     * @returns positive square root of `a`, or `-1` if `a < 0`
-     */
-    double Sqrt(double a) {
-        if (a > 0 && a < 1) {
-            return 1 / Sqrt(1 / a);
-        }
-        double l = 0, r = a;
-        /* Epsilon is the precision.
-        A great precision is
-        between 1e-7 and 1e-12.
-        double epsilon = 1e-12;
-        */
-        double epsilon = 1e-12;
-        while (l <= r) {
-            double mid = (l + r) / 2;
-            if (mid * mid > a) {
-                r = mid;
-            }
-            else {
-                if (a - mid * mid < epsilon) {
-                    return mid;
-                }
-                l = mid;
-            }
-        }
-        return -1;
+/**
+ * @brief Bisection method implemented for the function \f$x^2-a=0\f$
+ * whose roots are \f$\pm\sqrt{a}\f$ and only the positive root is returned.
+ * @param a number to find the square root of
+ * @returns positive square root of `a`, or `-1` if `a < 0`
+ */
+double Sqrt(double a) {
+    if (a > 0 && a < 1) {
+        return 1 / Sqrt(1 / a);
     }
+    double l = 0, r = a;
+    /* Epsilon is the precision.
+    A great precision is
+    between 1e-7 and 1e-12.
+    double epsilon = 1e-12;
+    */
+    double epsilon = 1e-12;
+    while (l <= r) {
+        double mid = (l + r) / 2;
+        if (mid * mid > a) {
+            r = mid;
+        } else {
+            if (a - mid * mid < epsilon) {
+                return mid;
+            }
+            l = mid;
+        }
+    }
+    return -1;
 }
+}  // namespace math
 
 /**
  * @brief Self-test implementations
  * @returns void
-*/
+ */
 static void test() {
     const double eps = 1e-9;
 
