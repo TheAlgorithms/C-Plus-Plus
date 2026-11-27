@@ -10,6 +10,7 @@
 #include <cassert> /// For assert
 #include <iostream> /// For IO operations
 #include <string> /// For std::string
+#include <cstdint> /// For uint64_t
 
 /**
  * @namespace string_search
@@ -24,15 +25,15 @@ namespace string_search {
 	 * @returns        Index where the pattern starts in the text
 	 * @returns        -1 if the pattern was not found.
 	 */
-	int brute_force(const std::string& text, const std::string& pattern) {
+	int64_t brute_force(const std::string& text, const std::string& pattern) {
 		size_t pattern_length = pattern.length();
 		size_t text_length = text.length();
-		int index = -1;
+		int64_t index = -1;
 		if (pattern_length <= text_length) {
 			for (size_t i = 0; i < text_length - pattern_length + 1; i++) {
 				std::string current_substring = text.substr(i, pattern_length);
 				if (current_substring == pattern) {
-					index = i;
+					index = static_cast<int64_t>(i);
 					break;
 				}
 			}
