@@ -141,8 +141,9 @@ static void tests() {
     std::vector<std::uint16_t> val3 = {5, 11, 13};  // Values of the items
     std::uint16_t W3 = 27;  // Maximum capacity of the knapsack
     // Test the function and assert the expected output
+    // 6 items of weight 4 (66) and one of weight 2 (5), weight 26 <= 27
     assert(dynamic_programming::unbounded_knapsack::unboundedKnapsack(
-               N3, W3, val3, wt3) == 27);
+               N3, W3, val3, wt3) == 71);
     std::cout << "Maximum Knapsack value "
               << dynamic_programming::unbounded_knapsack::unboundedKnapsack(
                      N3, W3, val3, wt3)
