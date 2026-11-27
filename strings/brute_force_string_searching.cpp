@@ -60,6 +60,6 @@ static void test() {
  */
 
 int main() {
-	test();
+	test(); // run self test implementation.
 	return 0;
 }
