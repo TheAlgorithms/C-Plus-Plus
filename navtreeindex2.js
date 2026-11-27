@@ -58,9 +58,8 @@ var NAVTREEINDEX2 =
 "d3/d6d/classunordered__set.html#a9401ae48c5b80204409ee475f277cdb0":[9,0,70,4],
 "d3/d6d/namespacesimpson__method.html":[8,0,114],
 "d3/d7d/brute__force__string__searching_8cpp.html":[10,0,24,1],
-"d3/d7d/brute__force__string__searching_8cpp.html#ae2abaa9caa13fff35e45edca00bee123":[10,0,24,1,3],
-"d3/d7d/brute__force__string__searching_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,24,1,2],
-"d3/d7d/brute__force__string__searching_8cpp.html#aeb2cd81064717aedd62bfb096b1a73d8":[10,0,24,1,0],
+"d3/d7d/brute__force__string__searching_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,24,1,2],
+"d3/d7d/brute__force__string__searching_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,24,1,1],
 "d3/d7d/brute__force__string__searching_8cpp_source.html":[10,0,24,1],
 "d3/d80/z__function_8cpp.html":[10,0,24,7],
 "d3/d80/z__function_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,24,7,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html":[10,0,1,10],
 "d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,1,10,1],
 "d4/d8f/travelling__salesman__using__bit__manipulation_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,1,10,0],
-"d4/d8f/travelling__salesman__using__bit__manipulation_8cpp_source.html":[10,0,1,10]
+"d4/d8f/travelling__salesman__using__bit__manipulation_8cpp_source.html":[10,0,1,10],
+"d4/d90/classdata__structures_1_1_skip_list.html":[8,0,22,5]
 };

@@ -25,7 +25,7 @@ var searchData=
   ['boruvkas_22',['boruvkas',['../d4/d6c/boruvkas__minimum__spanning__tree_8cpp.html#a94c615fc66b72e0adbcbcb99aabb1a59',1,'greedy_algorithms::boruvkas_minimum_spanning_tree']]],
   ['bottom_23',['bottom',['../d2/dc8/classdata__structures_1_1_stack.html#a2ac469fcc2229d273450e429139d90e6',1,'data_structures::Stack']]],
   ['breadth_5ffirst_5fsearch_24',['breadth_first_search',['../dc/d61/classgraph_1_1_graph.html#a3755ec9e6a842238c7f4aac10b661981',1,'graph::Graph']]],
-  ['brute_5fforce_25',['brute_force',['../d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8',1,'string_search::brute_force()'],['../d3/d7d/brute__force__string__searching_8cpp.html#aeb2cd81064717aedd62bfb096b1a73d8',1,'brute_force():&#160;brute_force_string_searching.cpp']]],
+  ['brute_5fforce_25',['brute_force',['../d9/d03/namespacestring__search.html#a80e35a2c5ba75a7f9eaeb833a71e9a0f',1,'string_search']]],
   ['bst_5fnode_26',['bst_node',['../dd/db6/structbinary__search__tree_1_1bst__node.html#a51dd9bd6dd32bce3b74dd64557306778',1,'binary_search_tree::bst_node']]],
   ['bubble_5fsort_27',['bubble_sort',['../d8/d13/bubble__sort_8cpp.html#af3b12930a83915712461d53fe9659686',1,'sorting::bubble_sort']]],
   ['build_28',['build',['../d1/d9e/prefix__sum__array_8cpp.html#a98e118ed64ba95a8198e1a915459c177',1,'range_queries::prefix_sum_array']]]

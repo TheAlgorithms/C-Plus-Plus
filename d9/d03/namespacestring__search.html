@@ -138,12 +138,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('d9/d03/namespa
 </div><!--header-->
 <div class="contents">
 
-<p>String search algorithms.  
+<p>For std::string.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aeb2cd81064717aedd62bfb096b1a73d8" id="r_aeb2cd81064717aedd62bfb096b1a73d8"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aeb2cd81064717aedd62bfb096b1a73d8">brute_force</a> (const std::string &amp;text, const std::string &amp;pattern)</td></tr>
+<tr class="memitem:a80e35a2c5ba75a7f9eaeb833a71e9a0f" id="r_a80e35a2c5ba75a7f9eaeb833a71e9a0f"><td class="memItemLeft">int64_t&#160;</td><td class="memItemRight"><a class="el" href="#a80e35a2c5ba75a7f9eaeb833a71e9a0f">brute_force</a> (const std::string &amp;text, const std::string &amp;pattern)</td></tr>
+<tr class="memdesc:a80e35a2c5ba75a7f9eaeb833a71e9a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a pattern in a string by comparing the pattern to every substring.  <br /></td></tr>
 <tr class="memitem:a83c72ff237cdf623e42d4295e0029bf9" id="r_a83c72ff237cdf623e42d4295e0029bf9"><td class="memItemLeft">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a83c72ff237cdf623e42d4295e0029bf9">getFailureArray</a> (const std::string &amp;pattern)</td></tr>
 <tr class="memdesc:a83c72ff237cdf623e42d4295e0029bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the partial match table aka failure function for a pattern to search.  <br /></td></tr>
 <tr class="memitem:a1e37af2f023495129cb57338c801209e" id="r_a1e37af2f023495129cb57338c801209e"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a1e37af2f023495129cb57338c801209e">kmp</a> (const std::string &amp;pattern, const std::string &amp;text)</td></tr>
@@ -154,17 +155,20 @@ Functions</h2></td></tr>
 <tr class="memitem:a21c673d56cbf67b1d2ee4d869185b7d9" id="r_a21c673d56cbf67b1d2ee4d869185b7d9"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a21c673d56cbf67b1d2ee4d869185b7d9">rabin_karp</a> (const std::string &amp;str, const std::string &amp;pat)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>String search algorithms. </p>
+<div class="textblock"><p>For std::string. </p>
+<p>String search algorithms.</p>
+<p>For assert For uint64_t For IO operations</p>
+<p>String search algorithms</p>
 <p>for assert for IO operations for std::string for std::vector </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="aeb2cd81064717aedd62bfb096b1a73d8" name="aeb2cd81064717aedd62bfb096b1a73d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb2cd81064717aedd62bfb096b1a73d8">&#9670;&#160;</a></span>brute_force()</h2>
+<a id="a80e35a2c5ba75a7f9eaeb833a71e9a0f" name="a80e35a2c5ba75a7f9eaeb833a71e9a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e35a2c5ba75a7f9eaeb833a71e9a0f">&#9670;&#160;</a></span>brute_force()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int string_search::brute_force </td>
+          <td class="memname">int64_t string_search::brute_force </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
         </tr>
@@ -175,7 +179,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Find a pattern in a string by comparing the pattern to every substring. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Find a pattern in a string by comparing the pattern to every substring. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">text</td><td>Any string that might contain the pattern. </td></tr>
     <tr><td class="paramname">pattern</td><td>String that we are searching for. </td></tr>
@@ -186,22 +192,22 @@ Functions</h2></td></tr>
 <dd>
 -1 if the pattern was not found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html">brute_force_string_searching.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                                                                 {</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keywordtype">size_t</span> pat_l = pattern.length();</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordtype">size_t</span> txt_l = text.length();</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">int</span> index = -1;</div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (pat_l &lt;= txt_l) {</div>
-<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; txt_l - pat_l + 1; i++) {</div>
-<div class="line"><span class="lineno">   27</span>            std::string s = text.substr(i, pat_l);</div>
-<div class="line"><span class="lineno">   28</span>            <span class="keywordflow">if</span> (s == pattern) {</div>
-<div class="line"><span class="lineno">   29</span>                index = i;</div>
-<div class="line"><span class="lineno">   30</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   31</span>            }</div>
-<div class="line"><span class="lineno">   32</span>        }</div>
-<div class="line"><span class="lineno">   33</span>    }</div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> index;</div>
-<div class="line"><span class="lineno">   35</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html">brute_force_string_searching.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>                                                                     {</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordtype">size_t</span> pattern_length = pattern.length();</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordtype">size_t</span> text_length = text.length();</div>
+<div class="line"><span class="lineno">   33</span>    int64_t index = -1;</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span> (pattern_length &lt;= text_length) {</div>
+<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; text_length - pattern_length + 1; i++) {</div>
+<div class="line"><span class="lineno">   36</span>            std::string current_substring = text.substr(i, pattern_length);</div>
+<div class="line"><span class="lineno">   37</span>            <span class="keywordflow">if</span> (current_substring == pattern) {</div>
+<div class="line"><span class="lineno">   38</span>                index = <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(i);</div>
+<div class="line"><span class="lineno">   39</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   40</span>            }</div>
+<div class="line"><span class="lineno">   41</span>        }</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> index;</div>
+<div class="line"><span class="lineno">   44</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

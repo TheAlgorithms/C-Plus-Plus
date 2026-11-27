@@ -172,7 +172,7 @@ var namespaces_dup =
       [ "duval", "d6/dd6/namespacestring.html#ac2a35302e6bed93c4b2c6f55a21a5632", null ]
     ] ],
     [ "string_search", "d9/d03/namespacestring__search.html", [
-      [ "brute_force", "d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8", null ],
+      [ "brute_force", "d9/d03/namespacestring__search.html#a80e35a2c5ba75a7f9eaeb833a71e9a0f", null ],
       [ "check_if_equal", "d9/d03/namespacestring__search.html#aebe07cea289a13142503d98be7df11fd", null ],
       [ "create_hash", "d9/d03/namespacestring__search.html#a8fb0bc932ba8b582c9f4c71338d050f8", null ],
       [ "getFailureArray", "d9/d03/namespacestring__search.html#a83c72ff237cdf623e42d4295e0029bf9", null ],

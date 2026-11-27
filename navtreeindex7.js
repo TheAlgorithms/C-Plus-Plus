@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html#a15dd7a0a7d9b1e8b2012c5161aecd6e3":[9,0,12,2,0,0],
 "d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html#ab13a4dd92d54c11eca86edde3ef32256":[9,0,12,2,0,3],
 "d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html#ae54953a75091532303bb08d55087077f":[9,0,12,2,0,1],
 "d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html#aeb01a65e51df1e3bc5296cde8477c352":[9,0,12,2,0,2],
@@ -16,9 +15,9 @@ var NAVTREEINDEX7 =
 "d9/d03/namespacestring__search.html":[8,0,123],
 "d9/d03/namespacestring__search.html#a1e37af2f023495129cb57338c801209e":[8,0,123,4],
 "d9/d03/namespacestring__search.html#a21c673d56cbf67b1d2ee4d869185b7d9":[8,0,123,5],
+"d9/d03/namespacestring__search.html#a80e35a2c5ba75a7f9eaeb833a71e9a0f":[8,0,123,0],
 "d9/d03/namespacestring__search.html#a83c72ff237cdf623e42d4295e0029bf9":[8,0,123,3],
 "d9/d03/namespacestring__search.html#a8fb0bc932ba8b582c9f4c71338d050f8":[8,0,123,2],
-"d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8":[8,0,123,0],
 "d9/d03/namespacestring__search.html#aebe07cea289a13142503d98be7df11fd":[8,0,123,1],
 "d9/d03/namespacestring__search.html#aed769d565b705a9b3e0eb1ec74088893":[8,0,123,6],
 "d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html":[9,0,13,1,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "da/d0d/longest__common__string_8cpp.html#aa38b6b17bc5d46ed88acdd8414e18fa5":[10,0,6,14,2],
 "da/d0d/longest__common__string_8cpp.html#acb03dbbcee6d607db471021168be8541":[10,0,6,14,4],
 "da/d0d/longest__common__string_8cpp.html#ad1e613c1b85cc04ed931b6c745fec155":[10,0,6,14,7],
-"da/d0d/longest__common__string_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,6,14,3]
+"da/d0d/longest__common__string_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,6,14,3],
+"da/d0d/longest__common__string_8cpp_source.html":[10,0,6,14]
 };

@@ -61,7 +61,7 @@ var searchData=
   ['breadth_5ffirst_5fsearch_58',['breadth_first_search',['../dc/d61/classgraph_1_1_graph.html#a3755ec9e6a842238c7f4aac10b661981',1,'graph::Graph']]],
   ['breadth_5ffirst_5fsearch_2ecpp_59',['breadth_first_search.cpp',['../df/d82/breadth__first__search_8cpp.html',1,'']]],
   ['brent_5fmethod_5fextrema_2ecpp_60',['brent_method_extrema.cpp',['../db/d01/brent__method__extrema_8cpp.html',1,'']]],
-  ['brute_5fforce_61',['brute_force',['../d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8',1,'string_search::brute_force()'],['../d3/d7d/brute__force__string__searching_8cpp.html#aeb2cd81064717aedd62bfb096b1a73d8',1,'brute_force(const std::string &amp;text, const std::string &amp;pattern):&#160;brute_force_string_searching.cpp']]],
+  ['brute_5fforce_61',['brute_force',['../d9/d03/namespacestring__search.html#a80e35a2c5ba75a7f9eaeb833a71e9a0f',1,'string_search']]],
   ['brute_5fforce_5fstring_5fsearching_2ecpp_62',['brute_force_string_searching.cpp',['../d3/d7d/brute__force__string__searching_8cpp.html',1,'']]],
   ['bst_5fnode_63',['bst_node',['../dd/db6/structbinary__search__tree_1_1bst__node.html',1,'binary_search_tree&lt; T &gt;::bst_node'],['../dd/db6/structbinary__search__tree_1_1bst__node.html#a51dd9bd6dd32bce3b74dd64557306778',1,'binary_search_tree::bst_node::bst_node()']]],
   ['bt_64',['BT',['../dd/de1/classothers_1_1recursive__tree__traversals_1_1_b_t.html',1,'others::recursive_tree_traversals']]],

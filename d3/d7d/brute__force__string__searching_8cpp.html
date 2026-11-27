@@ -140,13 +140,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('d3/d7d/brute__
 
 <p>String pattern search - brute force.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;cstring&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for brute_force_string_searching.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="../../d9/dbf/brute__force__string__searching_8cpp__incl.svg" width="247" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="../../d9/dbf/brute__force__string__searching_8cpp__incl.svg" width="332" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../d3/d7d/brute__force__string__searching_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -154,71 +155,23 @@ Include dependency graph for brute_force_string_searching.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:string_5Fsearch" id="r_string_5Fsearch"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="../../d9/d03/namespacestring__search.html">string_search</a></td></tr>
-<tr class="memdesc:d9/d03/namespacestring__search"><td class="mdescLeft">&#160;</td><td class="mdescRight">String search algorithms. <br /></td></tr>
+<tr class="memdesc:d9/d03/namespacestring__search"><td class="mdescLeft">&#160;</td><td class="mdescRight">For std::string. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aeb2cd81064717aedd62bfb096b1a73d8" id="r_aeb2cd81064717aedd62bfb096b1a73d8"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="../../d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8">string_search::brute_force</a> (const std::string &amp;text, const std::string &amp;pattern)</td></tr>
+<tr class="memitem:a80e35a2c5ba75a7f9eaeb833a71e9a0f" id="r_a80e35a2c5ba75a7f9eaeb833a71e9a0f"><td class="memItemLeft">int64_t&#160;</td><td class="memItemRight"><a class="el" href="../../d9/d03/namespacestring__search.html#a80e35a2c5ba75a7f9eaeb833a71e9a0f">string_search::brute_force</a> (const std::string &amp;text, const std::string &amp;pattern)</td></tr>
+<tr class="memdesc:a80e35a2c5ba75a7f9eaeb833a71e9a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a pattern in a string by comparing the pattern to every substring.  <br /></td></tr>
+<tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
+<tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="memitem:aeb2cd81064717aedd62bfb096b1a73d8" id="r_aeb2cd81064717aedd62bfb096b1a73d8"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aeb2cd81064717aedd62bfb096b1a73d8">brute_force</a> (const std::string &amp;text, const std::string &amp;pattern)</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ae2abaa9caa13fff35e45edca00bee123" id="r_ae2abaa9caa13fff35e45edca00bee123"><td class="memItemLeft">const std::vector&lt; std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae2abaa9caa13fff35e45edca00bee123">test_set</a></td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>String pattern search - brute force. </p>
+<p>Finds the first matching substring in the text, otherwise returns -1. Time complexity: O(n * m), Space complexity: O(m), where n is the length of the text and m is the length of the pattern. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/1pierres1u" target="_blank">1pierres1u</a> </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html">brute_force_string_searching.cpp</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="aeb2cd81064717aedd62bfb096b1a73d8" name="aeb2cd81064717aedd62bfb096b1a73d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb2cd81064717aedd62bfb096b1a73d8">&#9670;&#160;</a></span>brute_force()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="../../d9/d03/namespacestring__search.html#aeb2cd81064717aedd62bfb096b1a73d8">string_search::brute_force</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>pattern</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Find a pattern in a string by comparing the pattern to every substring. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">text</td><td>Any string that might contain the pattern. </td></tr>
-    <tr><td class="paramname">pattern</td><td>String that we are searching for. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Index where the pattern starts in the text </dd>
-<dd>
--1 if the pattern was not found. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html">brute_force_string_searching.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                                                                 {</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keywordtype">size_t</span> pat_l = pattern.length();</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordtype">size_t</span> txt_l = text.length();</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">int</span> index = -1;</div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (pat_l &lt;= txt_l) {</div>
-<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; txt_l - pat_l + 1; i++) {</div>
-<div class="line"><span class="lineno">   27</span>            std::string s = text.substr(i, pat_l);</div>
-<div class="line"><span class="lineno">   28</span>            <span class="keywordflow">if</span> (s == pattern) {</div>
-<div class="line"><span class="lineno">   29</span>                index = i;</div>
-<div class="line"><span class="lineno">   30</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   31</span>            }</div>
-<div class="line"><span class="lineno">   32</span>        }</div>
-<div class="line"><span class="lineno">   33</span>    }</div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> index;</div>
-<div class="line"><span class="lineno">   35</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
 
@@ -233,46 +186,56 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main function </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html">brute_force_string_searching.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>           {</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;i : <a class="code hl_variable" href="#ae2abaa9caa13fff35e45edca00bee123">test_set</a>) {</div>
-<div class="line"><span class="lineno">   49</span>        <span class="keywordtype">int</span> output = <a class="code hl_function" href="#aeb2cd81064717aedd62bfb096b1a73d8">brute_force</a>(i[0], i[1]);</div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">if</span> (std::to_string(output) == i[2]) {</div>
-<div class="line"><span class="lineno">   52</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;success\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   53</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   54</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;failure\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   55</span>        }</div>
-<div class="line"><span class="lineno">   56</span>    }</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   58</span>}</div>
-<div class="ttc" id="abrute__force__string__searching_8cpp_html_ae2abaa9caa13fff35e45edca00bee123"><div class="ttname"><a href="#ae2abaa9caa13fff35e45edca00bee123">test_set</a></div><div class="ttdeci">const std::vector&lt; std::vector&lt; std::string &gt; &gt; test_set</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d7d/brute__force__string__searching_8cpp_source.html#l00041">brute_force_string_searching.cpp:41</a></div></div>
-<div class="ttc" id="abrute__force__string__searching_8cpp_html_aeb2cd81064717aedd62bfb096b1a73d8"><div class="ttname"><a href="#aeb2cd81064717aedd62bfb096b1a73d8">brute_force</a></div><div class="ttdeci">int brute_force(const std::string &amp;text, const std::string &amp;pattern)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d7d/brute__force__string__searching_8cpp_source.html#l00021">brute_force_string_searching.cpp:21</a></div></div>
+<p>Main function. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html">brute_force_string_searching.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>           {</div>
+<div class="line"><span class="lineno">   67</span>    <a class="code hl_function" href="../../d6/d2c/caesar__cipher_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a>();  <span class="comment">// run self test implementation.</span></div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   69</span>}</div>
+<div class="ttc" id="acaesar__cipher_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="../../d6/d2c/caesar__cipher_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d2c/caesar__cipher_8cpp_source.html#l00100">caesar_cipher.cpp:100</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="ae2abaa9caa13fff35e45edca00bee123" name="ae2abaa9caa13fff35e45edca00bee123"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2abaa9caa13fff35e45edca00bee123">&#9670;&#160;</a></span>test_set</h2>
+<a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dca7b867074164d5f45b0f3851269d">&#9670;&#160;</a></span>test()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;std::vector&lt;std::string&gt; &gt; test_set</td>
+          <td class="memname">void test </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                       = {</div>
-<div class="line"> </div>
-<div class="line">{<span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;aa&quot;</span>, <span class="stringliteral">&quot;-1&quot;</span>},  {<span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;0&quot;</span>},    {<span class="stringliteral">&quot;ba&quot;</span>, <span class="stringliteral">&quot;b&quot;</span>, <span class="stringliteral">&quot;0&quot;</span>},</div>
-<div class="line">{<span class="stringliteral">&quot;bba&quot;</span>, <span class="stringliteral">&quot;bb&quot;</span>, <span class="stringliteral">&quot;0&quot;</span>}, {<span class="stringliteral">&quot;bbca&quot;</span>, <span class="stringliteral">&quot;c&quot;</span>, <span class="stringliteral">&quot;2&quot;</span>}, {<span class="stringliteral">&quot;ab&quot;</span>, <span class="stringliteral">&quot;b&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>}}</div>
-</div><!-- fragment --><p>set of test cases </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html">brute_force_string_searching.cpp</a>.</p>
+<p>Self-test implementations. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d3/d7d/brute__force__string__searching_8cpp_source.html">brute_force_string_searching.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>                   {</div>
+<div class="line"><span class="lineno">   53</span>    assert(<a class="code hl_function" href="../../d9/d03/namespacestring__search.html#a80e35a2c5ba75a7f9eaeb833a71e9a0f">string_search::brute_force</a>(<span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;aa&quot;</span>) == -1);</div>
+<div class="line"><span class="lineno">   54</span>    assert(<a class="code hl_function" href="../../d9/d03/namespacestring__search.html#a80e35a2c5ba75a7f9eaeb833a71e9a0f">string_search::brute_force</a>(<span class="stringliteral">&quot;aa&quot;</span>, <span class="stringliteral">&quot;a&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   55</span>    assert(<a class="code hl_function" href="../../d9/d03/namespacestring__search.html#a80e35a2c5ba75a7f9eaeb833a71e9a0f">string_search::brute_force</a>(<span class="stringliteral">&quot;bbb&quot;</span>, <span class="stringliteral">&quot;a&quot;</span>) == -1);</div>
+<div class="line"><span class="lineno">   56</span>    assert(<a class="code hl_function" href="../../d9/d03/namespacestring__search.html#a80e35a2c5ba75a7f9eaeb833a71e9a0f">string_search::brute_force</a>(<span class="stringliteral">&quot;bbbbab&quot;</span>, <span class="stringliteral">&quot;ab&quot;</span>) == 4);</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   59</span>}</div>
+<div class="ttc" id="anamespacestring__search_html_a80e35a2c5ba75a7f9eaeb833a71e9a0f"><div class="ttname"><a href="../../d9/d03/namespacestring__search.html#a80e35a2c5ba75a7f9eaeb833a71e9a0f">string_search::brute_force</a></div><div class="ttdeci">int64_t brute_force(const std::string &amp;text, const std::string &amp;pattern)</div><div class="ttdoc">Find a pattern in a string by comparing the pattern to every substring.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d7d/brute__force__string__searching_8cpp_source.html#l00030">brute_force_string_searching.cpp:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
