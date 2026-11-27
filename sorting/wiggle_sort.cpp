@@ -116,9 +116,14 @@ static void test() {
 
     displayElements(sorted);
 
-    for (uint32_t j = 0; j < data1.size(); j += 2) {
-        assert(data1[j] <= data1[j + 1] &&
-               data1[j + 1] >= data1[j + 2]);  // check the validation condition
+    // check the wave form of the result: arr[0] >= arr[1] <= arr[2] >= ...
+    assert(sorted.size() == data1.size());
+    for (uint32_t j = 0; j + 1 < sorted.size(); j++) {
+        if (j % 2 == 0) {
+            assert(sorted[j] >= sorted[j + 1]);
+        } else {
+            assert(sorted[j] <= sorted[j + 1]);
+        }
     }
 
     std::cout << "Test 1 passed\n";
