@@ -16,6 +16,7 @@
  * @brief String search algorithms
  */
 namespace string_search {
+
 	/**
 	 * @brief Find a pattern in a string by comparing the pattern to every substring.
 	 * @param text     Any string that might contain the pattern.
