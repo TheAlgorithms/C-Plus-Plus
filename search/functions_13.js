@@ -62,7 +62,7 @@ var searchData=
   ['spiralprint_59',['spiralPrint',['../db/d07/spiral__print_8cpp.html#a850d3f55e1a8d227176cdcc67352c197',1,'spiral_print.cpp']]],
   ['spirograph_60',['spirograph',['../da/dd3/namespacespirograph.html#aeca22dbe4563358960e907a40cd3e1ac',1,'spirograph']]],
   ['splitnode_61',['SplitNode',['../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a370b625ca9f16bbef2b65e024ef78ea9',1,'data_structures::tree_234::Tree234']]],
-  ['sqrt_62',['Sqrt',['../da/d24/sqrt__double_8cpp.html#ae662282ad0740d2063ac404ca3bd74fc',1,'sqrt_double.cpp']]],
+  ['sqrt_62',['Sqrt',['../dd/d47/namespacemath.html#a35d4cc5ee702f942f648c160ba00e831',1,'math']]],
   ['square_63',['square',['../d2/d58/neural__network_8cpp.html#a45d3e30406712ada3d9713ece3c1b153',1,'machine_learning::neural_network::util_functions']]],
   ['square_5farea_64',['square_area',['../dd/d47/namespacemath.html#a971ce57e368f2f631cf1f4ff3f864049',1,'math']]],
   ['square_5fperimeter_65',['square_perimeter',['../dd/d47/namespacemath.html#a9236348755183644f1225e162d01ab14',1,'math']]],

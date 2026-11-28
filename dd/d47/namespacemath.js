@@ -39,6 +39,7 @@ var namespacemath =
     [ "sieve", "dd/d47/namespacemath.html#a91366864111e1fac29722ca45e02ea8f", null ],
     [ "sphere_surface_area", "dd/d47/namespacemath.html#ab7f29862d30df351c317eedd60a0c656", null ],
     [ "sphere_volume", "dd/d47/namespacemath.html#a34d66a77c19ce9b8b3a3d14352b34551", null ],
+    [ "Sqrt", "dd/d47/namespacemath.html#a35d4cc5ee702f942f648c160ba00e831", null ],
     [ "square_area", "dd/d47/namespacemath.html#a971ce57e368f2f631cf1f4ff3f864049", null ],
     [ "square_perimeter", "dd/d47/namespacemath.html#a9236348755183644f1225e162d01ab14", null ],
     [ "sum_of_divisor", "dd/d47/namespacemath.html#af05567415a9ea36c254b54e3d5a2152a", null ],

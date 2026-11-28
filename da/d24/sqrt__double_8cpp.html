@@ -142,23 +142,34 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('da/d24/sqrt__d
 N)\) time, with precision fixed using <a href="https://en.wikipedia.org/wiki/Bisection_method" target="_blank">bisection method</a> of root-finding.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sqrt_double.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="../../d0/dfc/sqrt__double_8cpp__incl.svg" width="171" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="../../d0/dfc/sqrt__double_8cpp__incl.svg" width="252" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../da/d24/sqrt__double_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:math" id="r_math"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="../../dd/d47/namespacemath.html">math</a></td></tr>
+<tr class="memdesc:dd/d47/namespacemath"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae662282ad0740d2063ac404ca3bd74fc" id="r_ae662282ad0740d2063ac404ca3bd74fc"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ae662282ad0740d2063ac404ca3bd74fc">Sqrt</a> (double a)</td></tr>
+<tr class="memitem:a35d4cc5ee702f942f648c160ba00e831" id="r_a35d4cc5ee702f942f648c160ba00e831"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="../../dd/d47/namespacemath.html#a35d4cc5ee702f942f648c160ba00e831">math::Sqrt</a> (double a)</td></tr>
+<tr class="memdesc:a35d4cc5ee702f942f648c160ba00e831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bisection method implemented for the function \(x^2-a=0\) whose roots are \(\pm\sqrt{a}\) and only the positive root is returned.  <br /></td></tr>
+<tr class="memitem:aa8dca7b867074164d5f45b0f3851269d" id="r_aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
+<tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <br /></td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Calculate the square root of any positive real number in  \(O(\log
 N)\) time, with precision fixed using <a href="https://en.wikipedia.org/wiki/Bisection_method" target="_blank">bisection method</a> of root-finding. </p>
+<dl class="section author"><dt>Author</dt><dd>DarkWarrior703 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Can be implemented using faster and better algorithms like <a class="el" href="../../de/dd3/newton__raphson__method_8cpp.html" title="Solve the equation  using Newton-Raphson method for both real and complex solutions.">newton_raphson_method.cpp</a> and <a class="el" href="../../dd/d29/false__position_8cpp.html" title="Solve the equation  using false position method, also known as the Secant method.">false_position.cpp</a> </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="../../da/d24/sqrt__double_8cpp_source.html">sqrt_double.cpp</a>.</p>
@@ -177,63 +188,56 @@ N)\) time, with precision fixed using <a href="https://en.wikipedia.org/wiki/Bis
         </tr>
       </table>
 </div><div class="memdoc">
-<p>main function </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d24/sqrt__double_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../da/d24/sqrt__double_8cpp_source.html">sqrt_double.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>           {</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordtype">double</span> n{};</div>
-<div class="line"><span class="lineno">   44</span>    std::cin &gt;&gt; n;</div>
-<div class="line"><span class="lineno">   45</span>    assert(n &gt;= 0);</div>
-<div class="line"><span class="lineno">   46</span>    <span class="comment">// Change this line for a better precision</span></div>
-<div class="line"><span class="lineno">   47</span>    std::cout.precision(12);</div>
-<div class="line"><span class="lineno">   48</span>    std::cout &lt;&lt; std::fixed &lt;&lt; <a class="code hl_function" href="#ae662282ad0740d2063ac404ca3bd74fc">Sqrt</a>(n);</div>
-<div class="line"><span class="lineno">   49</span>}</div>
-<div class="ttc" id="asqrt__double_8cpp_html_ae662282ad0740d2063ac404ca3bd74fc"><div class="ttname"><a href="#ae662282ad0740d2063ac404ca3bd74fc">Sqrt</a></div><div class="ttdeci">double Sqrt(double a)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d24/sqrt__double_8cpp_source.html#l00016">sqrt_double.cpp:16</a></div></div>
+<p>Main function. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d24/sqrt__double_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../da/d24/sqrt__double_8cpp_source.html">sqrt_double.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>           {</div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_function" href="../../d6/d2c/caesar__cipher_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a>();</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   72</span>}</div>
+<div class="ttc" id="acaesar__cipher_8cpp_html_ae1a3968e7947464bee7714f6d43b7002"><div class="ttname"><a href="../../d6/d2c/caesar__cipher_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a></div><div class="ttdeci">void test()</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d2c/caesar__cipher_8cpp_source.html#l00100">caesar_cipher.cpp:100</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ae662282ad0740d2063ac404ca3bd74fc" name="ae662282ad0740d2063ac404ca3bd74fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae662282ad0740d2063ac404ca3bd74fc">&#9670;&#160;</a></span>Sqrt()</h2>
+<a id="aa8dca7b867074164d5f45b0f3851269d" name="aa8dca7b867074164d5f45b0f3851269d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dca7b867074164d5f45b0f3851269d">&#9670;&#160;</a></span>test()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Sqrt </td>
+          <td class="memname">void test </td>
           <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Bisection method implemented for the function \(x^2-a=0\) whose roots are \(\pm\sqrt{a}\) and only the positive root is returned. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d24/sqrt__double_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../da/d24/sqrt__double_8cpp_source.html">sqrt_double.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>                      {</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">if</span> (a &gt; 0 &amp;&amp; a &lt; 1) {</div>
-<div class="line"><span class="lineno">   18</span>        <span class="keywordflow">return</span> 1 / <a class="code hl_function" href="#ae662282ad0740d2063ac404ca3bd74fc">Sqrt</a>(1 / a);</div>
-<div class="line"><span class="lineno">   19</span>    }</div>
-<div class="line"><span class="lineno">   20</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = 0, r = a;</div>
-<div class="line"><span class="lineno">   21</span>    <span class="comment">/* Epsilon is the precision.</span></div>
-<div class="line"><span class="lineno">   22</span><span class="comment">    A great precision is</span></div>
-<div class="line"><span class="lineno">   23</span><span class="comment">    between 1e-7 and 1e-12.</span></div>
-<div class="line"><span class="lineno">   24</span><span class="comment">    double epsilon = 1e-12;</span></div>
-<div class="line"><span class="lineno">   25</span><span class="comment">    */</span></div>
-<div class="line"><span class="lineno">   26</span>    <span class="keywordtype">double</span> epsilon = 1e-12;</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">while</span> (l &lt;= r) {</div>
-<div class="line"><span class="lineno">   28</span>        <span class="keywordtype">double</span> mid = (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> + r) / 2;</div>
-<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">if</span> (mid * mid &gt; a) {</div>
-<div class="line"><span class="lineno">   30</span>            r = mid;</div>
-<div class="line"><span class="lineno">   31</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   32</span>            <span class="keywordflow">if</span> (a - mid * mid &lt; epsilon) {</div>
-<div class="line"><span class="lineno">   33</span>                <span class="keywordflow">return</span> mid;</div>
-<div class="line"><span class="lineno">   34</span>            }</div>
-<div class="line"><span class="lineno">   35</span>            <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = mid;</div>
-<div class="line"><span class="lineno">   36</span>        }</div>
-<div class="line"><span class="lineno">   37</span>    }</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">   39</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d8df83a6f26ce24a75d3b358b7f5b8a"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">numerical_methods::simpson_method::l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d18/composite__simpson__rule_8cpp_source.html#l00119">composite_simpson_rule.cpp:119</a></div></div>
+<p>Self-test implementations. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d24/sqrt__double_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../da/d24/sqrt__double_8cpp_source.html">sqrt_double.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>                   {</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> eps = 1e-9;</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    assert(std::abs(std::sqrt(123) - <a class="code hl_function" href="../../dd/d47/namespacemath.html#a35d4cc5ee702f942f648c160ba00e831">math::Sqrt</a>(123)) &lt; eps);</div>
+<div class="line"><span class="lineno">   59</span>    assert(std::abs(std::sqrt(25) - <a class="code hl_function" href="../../dd/d47/namespacemath.html#a35d4cc5ee702f942f648c160ba00e831">math::Sqrt</a>(25)) &lt; eps);</div>
+<div class="line"><span class="lineno">   60</span>    assert(std::abs(std::sqrt(0.25) - <a class="code hl_function" href="../../dd/d47/namespacemath.html#a35d4cc5ee702f942f648c160ba00e831">math::Sqrt</a>(0.25)) &lt; eps);</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All tests have successfully passed!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   63</span>}</div>
+<div class="ttc" id="anamespacemath_html_a35d4cc5ee702f942f648c160ba00e831"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a35d4cc5ee702f942f648c160ba00e831">math::Sqrt</a></div><div class="ttdeci">double Sqrt(double a)</div><div class="ttdoc">Bisection method implemented for the function  whose roots are  and only the positive root is returne...</div><div class="ttdef"><b>Definition</b> <a href="../../da/d24/sqrt__double_8cpp_source.html#l00025">sqrt_double.cpp:25</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

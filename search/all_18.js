@@ -105,7 +105,7 @@ var searchData=
   ['spirograph_102',['spirograph',['../da/dd3/namespacespirograph.html',1,'spirograph'],['../da/dd3/namespacespirograph.html#aeca22dbe4563358960e907a40cd3e1ac',1,'spirograph::spirograph()']]],
   ['spirograph_2ecpp_103',['spirograph.cpp',['../da/d77/spirograph_8cpp.html',1,'']]],
   ['splitnode_104',['SplitNode',['../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a370b625ca9f16bbef2b65e024ef78ea9',1,'data_structures::tree_234::Tree234']]],
-  ['sqrt_105',['Sqrt',['../da/d24/sqrt__double_8cpp.html#ae662282ad0740d2063ac404ca3bd74fc',1,'sqrt_double.cpp']]],
+  ['sqrt_105',['Sqrt',['../dd/d47/namespacemath.html#a35d4cc5ee702f942f648c160ba00e831',1,'math']]],
   ['sqrt_5fdouble_2ecpp_106',['sqrt_double.cpp',['../da/d24/sqrt__double_8cpp.html',1,'']]],
   ['square_107',['square',['../d2/d58/neural__network_8cpp.html#a45d3e30406712ada3d9713ece3c1b153',1,'machine_learning::neural_network::util_functions']]],
   ['square_5farea_108',['square_area',['../dd/d47/namespacemath.html#a971ce57e368f2f631cf1f4ff3f864049',1,'math']]],

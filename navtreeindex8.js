@@ -30,7 +30,7 @@ var NAVTREEINDEX8 =
 "da/d23/eulers__totient__function_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,14,12,0],
 "da/d23/eulers__totient__function_8cpp_source.html":[10,0,14,12],
 "da/d24/sqrt__double_8cpp.html":[10,0,14,55],
-"da/d24/sqrt__double_8cpp.html#ae662282ad0740d2063ac404ca3bd74fc":[10,0,14,55,1],
+"da/d24/sqrt__double_8cpp.html#aa8dca7b867074164d5f45b0f3851269d":[10,0,14,55,2],
 "da/d24/sqrt__double_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[10,0,14,55,0],
 "da/d24/sqrt__double_8cpp_source.html":[10,0,14,55],
 "da/d27/prim_8cpp_source.html":[10,0,9,18],
