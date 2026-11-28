@@ -21,10 +21,21 @@
  * skipping \f$2^1\f$ and \f$2^4\f$.
  */
 
-#include <iostream>
+#include <cassert>   /// For assert
+#include <iostream>  /// For IO operations
 
-/// Recursive function to calculate exponent in \f$O(\log(n))\f$ using binary
-/// exponent.
+/**
+ * @namespace math
+ * @brief Mathematical algorithms
+ */
+namespace math {
+/**
+ * @brief Recursive function to calculate exponent in \f$O(\log(n))\f$ using
+ * binary exponent.
+ * @param a base
+ * @param b exponent
+ * @returns \f$a^b\f$
+ */
 int binExpo(int a, int b) {
     if (b == 0) {
         return 1;
@@ -37,8 +48,13 @@ int binExpo(int a, int b) {
     }
 }
 
-/// Iterative function to calculate exponent in \f$O(\log(n))\f$ using binary
-/// exponent.
+/**
+ * @brief Iterative function to calculate exponent in \f$O(\log(n))\f$ using
+ * binary exponent.
+ * @param a base
+ * @param b exponent
+ * @returns \f$a^b\f$
+ */
 int binExpo_alt(int a, int b) {
     int res = 1;
     while (b > 0) {
@@ -50,22 +66,25 @@ int binExpo_alt(int a, int b) {
     }
     return res;
 }
+}  // namespace math
 
-/// Main function
+/**
+ * @brief Self-test implementations
+ * @returns void
+ */
+static void test() {
+    assert(math::binExpo(2, 3) == 8);
+    assert(math::binExpo_alt(2, 3) == 8);
+    assert(math::binExpo(2, 0) == 1);
+    assert(math::binExpo_alt(2, 0) == 1);
+    std::cout << "All tests have successfully passed!\n";
+}
+
+/**
+ * @brief Main function
+ * @returns 0 on exit
+ */
 int main() {
-    int a, b;
-    /// Give two numbers a, b
-    std::cin >> a >> b;
-    if (a == 0 && b == 0) {
-        std::cout << "Math error" << std::endl;
-    } else if (b < 0) {
-        std::cout << "Exponent must be positive !!" << std::endl;
-    } else {
-        int resRecurse = binExpo(a, b);
-        /// int resIterate = binExpo_alt(a, b);
-
-        /// Result of a^b (where '^' denotes exponentiation)
-        std::cout << resRecurse << std::endl;
-        /// std::cout << resIterate << std::endl;
-    }
+    test();  // run self test implementation.
+    return 0;
 }
