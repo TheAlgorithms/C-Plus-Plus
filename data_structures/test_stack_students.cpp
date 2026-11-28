@@ -1,4 +1,4 @@
-/*
+/**
  * This program reads a data file consisting of students' GPAs
  * followed by their names. The program then prints the highest
  * GPA and the names of the students with the highest GPA.
@@ -6,7 +6,7 @@
  * Run:
  *     make all
  *     ./main student.txt
- ************************************************************
+
  * */
 #include <cassert>
 #include <cmath>
